@@ -1,0 +1,141 @@
+# Project Mark — Task Authoring Reference
+
+Distilled from four handbook documents: *Prompt for Mark (example prompts)*, *Key Requirements (9/5 update)*,
+*Golden Example (build + example traps)*, and *Build (input files, writing the prompt, golden deliverables, examples)*.
+Program site: project-mark.learn.joinhandshake.com
+
+## The one-line version
+A task resolves to **one deterministic recommendation** and ships **one to three output deliverables**.
+No cap on asks; each ask is multi-dimensional and hard. Prioritize a visual where it helps.
+The rubric is generated internally (25+ criteria) from the *shape* of the task. The bar: model responses
+average **under 50%** against the rubric, with **at least one model genuinely stumped**.
+
+## Hard gates (all four required)
+1. Rubric reaches 25+ criteria, weighted 30–40% recommendation / 5–10% instruction-following / ~55–60% supplementary asks.
+2. Model responses average under 50% with at least one model stumped.
+3. A deterministic, fair stump: models fail for analytical/methodological reasons on honest data, never a planted defect.
+   Ten domain experts working the files land on the same answer.
+4. One to three deliverables in the formats that fit, prioritizing a visual, each with multi-dimensional hard asks.
+
+## Accepted domains and objectives
+Domains: Product Analytics · Supply Chain & Logistics · Economics · Policy & Education · Demographic & Social Science ·
+Nonprofit & Grant-making (Healthcare and Energy also appear in the example library).
+Axis 1 objectives: Anomaly Detection & Diagnostics · Data Extraction & Conformation (ETL) · Descriptive & Distribution
+Analysis · Experiment & Causal Analysis · Forecasting & Predictive Modeling · Root-Cause Analysis.
+Forecasting is an objective, not a domain; it can live in any accepted domain.
+
+## Build order (procedural)
+Task type/domain/objective → Input files → Prompt → Golden deliverables → Validate → Readiness → Submit on Handshake.
+
+### Twelve-step authoring sequence
+Phase A (set up): 1 task type/domain/objective · 2 prompt + input ZIP.
+Phase B (solve and specify): 3 model responses · 4 final recommendation · 5 supplementary answers · 6 critical components.
+Phase C (validate and deliver): 7 rubric (generated, fixed) · 8 step-by-step solution · 9 justification ·
+10 determinism QC · 11 golden solution · 12 final model rollouts (non-blocking if already under 50%).
+
+## Input files (the evidence package)
+Scale
+- 10 or more files; at least one table with 10,000+ rows; the recommendation requires joining at least two tables.
+Format variety
+- At least three distinct file formats; at least two substantial files, not all the same type.
+Messiness that earns its place (realistic fragmentation, never random dirt, never changes the answer once resolved)
+- Signal fragmented across files; inconsistent timestamps to reconcile; data scattered so the model must seek
+  around; template files or historical reports as reference material to discover.
+Always true
+- Files are real and license-clean with source, pull date, and license recorded.
+- No LLM-generated PDFs, DOCX, PPTX. AI may locate data or write transformation scripts but never creates the
+  empirical source evidence. Scenario or derived files carry explicit provenance.
+Package checklist (ready needs all 7)
+1 necessary files (removing any counted file breaks the answer) · 2 recoverable joins · 3 sufficient signal ·
+4 definitions and governing rules supplied inside the package · 5 reproducibility (every golden figure comes back
+out of the workspace) · 6 no padding · 7 no fabricated or corrupted complexity.
+Common gaps worth filling: definitions, historical context, methodology, policy constraints, targets, predictors,
+revisions, crosswalks. If the package already supports the answer, stop. File count is not difficulty.
+
+## Writing the prompt
+Task contract
+1. One deterministic recommendation (single committed call, no hedge, no blend, no "it depends").
+2. One to three deliverables. Name a file when natural (script, system-of-record file); otherwise request by role
+   and type (a memo PDF, a chart PNG).
+3. Prioritize a visual: chart, waterfall, matrix, heatmap, or a table living inside a memo/workbook/script output.
+4. Multi-dimensional hard asks; no cap, no target. Asks are the body of the prompt; no separate supplementary section.
+
+Prompt anatomy (reads like a message from a busy stakeholder, in prose)
+1 stakeholder context · 2 the decision with the objective fixed · 3 only the constraints a stakeholder would state ·
+4 requested deliverables with their asks · 5 asks per file · 6 no answer-path leakage.
+
+Kinds of asks: Supporting (metric backing the call) · Comparison (winner vs runner-up) · Context or flip
+(what would move the runner-up into first) · Content requirement (what the file must contain, never how to compute it).
+An ask is valid only in the same data universe as the recommendation. A separate dataset or decision is a second task.
+
+Five non-negotiable rules
+1 one committed decision · 2 vague on method, precise on answer (withhold scope, cleaning, window, methodology;
+every valid approach converges) · 3 no leak (never name the trap, the defusing file, or hint a metric misleads) ·
+4 fair and self-contained (everything derivable from the bundle; losing option refuted on the data) ·
+5 one to three deliverables, prioritize a visual.
+Sent back if: names method or trap, allows a hedge, requires outside knowledge, asks for a separate dataset or
+decision, or requests more than three files. Draft the trap into the data before wording the prompt.
+
+Format families (vary across them)
+Data: CSV, TSV, JSON, XLSX, Parquet · Visual: PPTX, PNG, SVG, HTML, JPG · Text: PDF, DOCX · Code: PY, IPYNB, SQL, R.
+Do not default to analysis_report.pdf.
+
+## The eighteen prompt shapes (where the 25+ criteria come from)
+01 Ranked list under a cap · 02 Forecast across many periods · 03 Bridge between two totals · 04 Setting one dial ·
+05 Allocation to a fixed total · 06 Sequenced schedule under capacity · 07 Grid of cells · 08 Rule replayed on
+history · 09 Funnel or chain of stages · 10 Scorecard against thresholds · 11 Before and after with a control ·
+12 Drill-down to one leaf · 13 Scenarios and the flip point · 14 Cuts of a distribution · 15 Fields conformed to
+one schema · 16 Indicators into one score · 17 Periods around a change point · 18 Hypotheses versus evidence.
+Shapes are patterns, not a fixed menu.
+
+### Two canonical worked prompts
+Example 1, Organics route tranche (ranked list under a cap, 2 files): rank districts by unmet design tonnage among
+those whose facility can berth the route; tranche_determination.pdf (selected district, runner-up, gap, full ranked
+table with capacity gate, free weekly shifts at winner and raw-tonnage leader) + unmet_tonnage_chart.png (one bar
+per district, labeled, winner highlighted, ineligible marked).
+Example 2, Fernwood service tier (bridge between two totals, 2 files): growth_decomposition.png waterfall from last
+year's to this year's covered demand, components ordered largest to smallest, tier boundary drawn, excluded intake
+marked; tier_determination.docx one-page memo with tier, organic growth %, both years' qualified demand, flip point.
+
+## Golden deliverables
+- Exact set the prompt prescribed: same types, filenames, count. Missing or mismatched file blocks confirmation.
+- One set of numbers across all files; graders diff file against file.
+- Nothing extra: no answers to unasked questions, no AI disclaimers, placeholders, chat intros, invented citations.
+Content checklist (covered somewhere across the set)
+1 the committed recommendation first in its file, one or two sentences, naming what it rejects ·
+2 one clearly labelled answer per ask in the file the prompt attached it to ·
+3 load-bearing figures each traceable to a shipped input ·
+4 the path from raw files to decision, including at least one trap refused, stated as a decision ·
+5 a short closing on why no other conclusion survives.
+Manual QC: answers the recommendation and every ask · no placeholders/TODOs · no filler · reads like a normal
+professional deliverable in that format.
+
+## Difficulty: honest data only
+The "flip the wrong number" trap is retired. Reported figures must be correct; difficulty comes from forecasting,
+method selection, a binding constraint, decomposition, confirming a number (over-correction is the trap), or a
+justified hold decision. Difficulty must be analytical, never semantic (wording, trick definitions, formatting,
+broken golden, packaging failures never count).
+
+Six mechanisms moved onto honest data
+- Mixed subgroups: the lead is real; the trap is a tempting adjustment that would wrongly reverse it.
+- Definition swap: both metrics correct; the work is choosing the metric the decision rule requires.
+- Coverage gap: all data present; the top-ranked option violates a real capacity limit, so pick the top that fits.
+- Mislabeling: definitions documented and consistent but spread across feeds; conform them and report.
+- Clock/timing: timestamps correct; a real schedule change makes the next period structurally different.
+- Wrong denominator: rate and denominator correct; a real capacity, staffing, or clawback limit changes feasibility.
+
+Trap families that stump current models (from 64 accepted tasks): Controls treated as optional · Wrong unit,
+population or segment · Rules read loosely · Evidence taken at face value · Stops before the last check.
+Top decisive traps: reports a failed back-test and ships anyway (11) · counts file rows instead of the real unit (11) ·
+stops at a close but inexact match (8) · never tests its reading against the control (7) · takes the population a
+flag suggests (5) · treats a mixed segment all one way (5) · uses the ready-made measure (5) · papers over a failed
+reproduction (4) · picks from offered options when none passes (4) · notes a binding limit as a risk (4) ·
+beats the headline trap, misses the quiet one (4).
+
+## Program rules
+- Pay: flat $800 per approved task, paid the Wednesday after approval. Revisions unlimited.
+- Review within 24 hours. Prompt must be original (not resembling another fellow's or your own prior task).
+- Time: ~7 hours first task, ~5 after.
+- Throttles: New Attempter 1 task at a time → Semi-Trusted (after 1 approval) 3 at a time → Trusted (after 3) unlimited.
+- Office hours Monday–Friday via the Slack link.
+- Starter data kits are a foundation, not a finished submission; you still own file count, mess, and the answer.
