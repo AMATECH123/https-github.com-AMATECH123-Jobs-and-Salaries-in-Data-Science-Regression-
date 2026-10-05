@@ -10,3 +10,4 @@
 ## Hardening history
 - v1 (memo spelled out every cleaning rule): a blind attempt by a same-class model scored ~100%. Judged too easy.
 - v2: memo reduced to principles; added re-created zaps/scenarios (new ids missing from the crosswalk, matched by exact name) and rebuilt ones (old id keeps firing after its valid_to); labour rate and custom-build hours retuned so five plausible mistakes flip the winner to n8n.
+- v3: added helper (sub-flow) workflows identified only through free-text catalog notes; their runs are not business runs but their units add to the parent's per-event cost. Memo no longer names the mechanism. n8n prices x4 and n8n rebuild hours reduced so the contest is close (Zapier 32.0k, n8n 35.2k, Make 41.4k).

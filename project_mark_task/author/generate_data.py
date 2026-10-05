@@ -199,6 +199,25 @@ for plat_, lst in (("zapier", _cz), ("make", _cm)):
         new_id = zid() if plat_ == "zapier" else mid()
         (recreated if k < half else rebuilt)[wid_] = (plat_, sw, new_id)
 
+# helper (sub-)workflows: invoked once per parent run, no trigger events of their own
+helper_of = {}
+_excl = set(mig_by_wid) | set(recreated) | set(rebuilt)
+_by_client = {}
+for w_ in workflows:
+    _by_client.setdefault(w_["client_id"], []).append(w_["workflow_id"])
+_cands = [w_["workflow_id"] for w_ in workflows if w_["workflow_id"] not in _excl and w_["client_id"] != "INTERNAL"]
+rnd.shuffle(_cands)
+for h_ in _cands:
+    if len(helper_of) >= 11:
+        break
+    sib = [x for x in _by_client[wf_by_id[h_]["client_id"]] if x != h_ and x not in _excl and x not in helper_of and x not in helper_of.values()]
+    if h_ in helper_of.values() or not sib:
+        continue
+    helper_of[h_] = max(sib, key=lambda x: wf_by_id[x]["base_rate"])
+for h_, p_ in helper_of.items():
+    B[h_] = B[p_].copy()
+B_biz = {k: (np.zeros_like(v) if k in helper_of else v) for k, v in B.items()}
+
 def ids_for(wid, plat, d):
     base_id = native[(wid, plat)]
     for tbl in (recreated, rebuilt):
@@ -407,11 +426,21 @@ for c in clients:
 with pd.ExcelWriter(os.path.join(OUT, "client_master.xlsx")) as xw:
     pd.DataFrame(crows).to_excel(xw, sheet_name="clients", index=False)
 
+_decoys = ["owner: MK", "owner: JL", "client asked for weekday-only handling", "triggered by account manager from the CRM button",
+           "paused over the August holiday", "pilot for the Q2 upsell", "uses client's own API key", "reviewed with client in June"]
+def notes_for(wid):
+    if wid in helper_of:
+        p_ = helper_of[wid]
+        return rnd.choice([f"sub-flow, called by {p_} via webhook for every run",
+                           f"helper scenario invoked by {p_}; no trigger of its own",
+                           f"called from {p_} (one call per run)"])
+    return rnd.choice(_decoys) if rnd.random() < 0.18 else ""
 wrows = []
 for w in workflows:
     wrows.append(dict(workflow_id=w["workflow_id"], workflow_name=w["name"], client_id=w["client_id"],
                       platform_last_reviewed=init_plat[w["workflow_id"]].capitalize() if init_plat[w["workflow_id"]] != "n8n" else "n8n",
-                      nodes=w["nodes"], required_connectors=";".join(w["connectors"])))
+                      nodes=w["nodes"], required_connectors=";".join(w["connectors"]),
+                      notes=notes_for(w["workflow_id"])))
 vdf = pd.DataFrame(versions).sort_values(["workflow_id", "version"])
 vdf["effective_from"] = vdf["effective_from"].astype(str)
 with pd.ExcelWriter(os.path.join(OUT, "workflow_catalog.xlsx")) as xw:
@@ -506,8 +535,8 @@ with open(os.path.join(OUT, "change_log.txt"), "w") as f:
 # stash truth-side helper for the author (NOT shipped)
 with open(os.path.join(HERE, "world_truth.json"), "w") as f:
     json.dump(dict(cur_plat=cur_plat, migrations=[{**m, "parallel_from": str(m["parallel_from"]), "cutover": str(m["cutover"])} for m in migrations],
-                   B_total=int(sum(B[w].sum() for w in ids)),
-                   B_by_wid={w: B[w].tolist() for w in ids}), f)
+                   B_total=int(sum(B_biz[w].sum() for w in ids)),
+                   helpers=helper_of, B_by_wid={w: B_biz[w].tolist() for w in ids}), f)
 print("zapier rows", len(zdf), "make rows", len(mdf), "n8n execs", len(n8n_rows))
 print("current platform counts", pd.Series(cur_plat).value_counts().to_dict())
-print("true business runs", int(sum(B[w].sum() for w in ids)))
+print("true business runs", int(sum(B_biz[w].sum() for w in ids)), "| helpers", len(helper_of))

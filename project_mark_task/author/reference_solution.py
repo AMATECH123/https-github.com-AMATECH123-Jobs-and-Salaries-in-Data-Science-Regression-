@@ -41,6 +41,10 @@ def parse_any(s):
 cm["end"] = cm["end_date"].map(parse_any)
 churned = set(cm[(cm.status_n.isin(["churned", "inactive"])) | (cm.end.notna() & (cm.end <= dt.date(2025, 9, 30)))].client_id)
 
+helper_of = {}
+for r_ in wf.itertuples():
+    mt = re.search(r"(?:called by|invoked by|called from)\s+(W\d{3})", str(r_.notes))
+    if mt: helper_of[r_.workflow_id] = mt.group(1)
 # --- change log
 mig = {}
 for line in open(P("change_log.txt")):
@@ -108,6 +112,7 @@ for wid, mg in mig.items():
     stale = sel & (allr.platform == mg["frm"]) & (allr.date >= mg["cut"])
     keep &= ~(mirror | stale).values
 allr = allr[keep]
+allr = allr[~allr.workflow_id.isin(helper_of)]   # helpers have no trigger events of their own
 allr = allr[allr.runs > 0]
 dups = allr[allr.duplicated(["workflow_id","date"], keep=False)]
 if len(dups): print(dups.sort_values(["workflow_id","date"]).head(12).to_string()); print(dups.workflow_id.nunique(), "wfs")
@@ -130,8 +135,16 @@ src_month = {(2025, 11): "2024-11", (2025, 12): "2024-12"}
 for k in range(1, 10): src_month[(2026, k)] = f"2025-{k:02d}"
 src_month[(2026, 10)] = "2024-10"
 rm = conf[conf.workflow_id.isin(active.workflow_id)].groupby(["workflow_id", "billing_month"]).business_runs.sum().unstack(fill_value=0)
-units = {"make": vv.loc[rm.index, "make_modules_per_run"], "zapier": vv.loc[rm.index, "zapier_billable_steps"],
-         "n8n": pd.Series(1, index=rm.index)}
+def with_helpers(col):
+    u = vv[col].copy()
+    base = u.copy()
+    for h, p in helper_of.items():
+        u[p] = u[p] + base[h]
+    return u.loc[rm.index]
+n_help = pd.Series(1, index=vv.index)
+for h, p in helper_of.items(): n_help[p] += 1
+units = {"make": with_helpers("make_modules_per_run"), "zapier": with_helpers("zapier_billable_steps"),
+         "n8n": n_help.loc[rm.index]}
 vol = {}
 for p in units:
     mv = []

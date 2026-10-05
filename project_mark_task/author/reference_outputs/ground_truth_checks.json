@@ -1,10 +1,10 @@
 {
- "total_runs": 593579,
- "rows": 38360,
+ "total_runs": 549310,
+ "rows": 35132,
  "runs_by_source_platform": {
-  "make": 272698,
-  "n8n": 48479,
-  "zapier": 272402
+  "make": 252215,
+  "n8n": 46864,
+  "zapier": 250231
  },
  "internal_runs": 84051,
  "migrated_workflows": [
@@ -24,22 +24,43 @@
   "W116"
  ],
  "migrated_runs": 64608,
- "incident_zapier_2025-02-11_runs_zapier_source": 821,
- "incident_make_2024-12-17_runs_make_source": 1133,
+ "incident_zapier_2025-02-11_runs_zapier_source": 764,
+ "incident_make_2024-12-17_runs_make_source": 1048,
  "monthly_totals": {
-  "2024-10": 53238,
-  "2024-11": 58120,
-  "2024-12": 66159,
-  "2025-01": 47626,
-  "2025-02": 41274,
-  "2025-03": 48548,
-  "2025-04": 49814,
-  "2025-05": 52763,
-  "2025-06": 45347,
-  "2025-07": 43033,
-  "2025-08": 39799,
-  "2025-09": 47858
+  "2024-10": 49098,
+  "2024-11": 53564,
+  "2024-12": 60934,
+  "2025-01": 43839,
+  "2025-02": 38067,
+  "2025-03": 44589,
+  "2025-04": 45753,
+  "2025-05": 48525,
+  "2025-06": 41900,
+  "2025-07": 40307,
+  "2025-08": 37606,
+  "2025-09": 45128
  },
+ "helpers_to_parent": {
+  "W016": "W110",
+  "W024": "W095",
+  "W039": "W044",
+  "W047": "W096",
+  "W058": "W087",
+  "W069": "W119",
+  "W078": "W057",
+  "W082": "W089",
+  "W104": "W068",
+  "W106": "W040",
+  "W112": "W015"
+ },
+ "active_workflows": 101,
+ "churned_workflows": 19,
+ "churned_clients": [
+  "CL-004",
+  "CL-010",
+  "CL-015",
+  "CL-022"
+ ],
  "runs_on_recreated_ids_not_in_crosswalk": 21057,
  "recreated_workflows": [
   "W019",
@@ -54,6 +75,5 @@
   "W111",
   "W113"
  ],
- "churned_workflows": 19,
- "active_workflows": 101
+ "raw_zapier_make_runs_after_dedupe_only": 594722
 }

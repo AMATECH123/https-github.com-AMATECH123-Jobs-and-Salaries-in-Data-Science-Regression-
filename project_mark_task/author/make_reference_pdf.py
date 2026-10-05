@@ -26,7 +26,7 @@ txt = (f"How the numbers were built\n"
        f"- Migration: {r['zapier']['migration_workflows']} workflows to Zapier ({r['zapier']['migration_hours']:,.0f} h), "
        f"{r['make']['migration_workflows']} to Make ({r['make']['migration_hours']:,.0f} h), {r['n8n']['migration_workflows']} to n8n ({r['n8n']['migration_hours']:,.0f} h) at EUR 30/h.\n"
        f"- USD converted at EURUSD {gt['eurusd']}.\n"
-       f"Zapier is the most expensive subscription but the cheapest platform to move into at this volume. The margin over n8n (runner-up) is about 9%; year-two economics may favour n8n.")
+       f"Zapier is the most expensive subscription but the cheapest platform to move into at this volume. The margin over n8n (runner-up) is about 10%; year-two economics may favour n8n.")
 import textwrap
 y = 0.46
 for para in txt.split("\n"):

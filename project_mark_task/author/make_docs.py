@@ -66,10 +66,11 @@ d.add_paragraph("Platform invoices are not comparable because each vendor counts
                 "Compare platforms on business runs. A business run is one first-attempt, successful, production execution of a workflow "
                 "for one trigger event. Failures, retries, replays, manual or test runs and scratch workflows are not business runs. "
                 "Internal Northgate workflows are real consumption and count. Every event is counted once, however many systems or "
-                "exports happened to record it.")
+                "exports happened to record it. A trigger event that fans out into helper workflows is still one business event.")
 d.add_heading("2. Billable units on a target platform", 2)
 d.add_paragraph("Make bills operations (modules executed per run), Zapier bills tasks (billable steps per run), n8n bills executions "
-                "(one per run). Per-run counts for the build that is currently deployed are in the workflow catalog.")
+                "(one per execution). Per-run counts for the build that is currently deployed are in the workflow catalog. A helper's consumption "
+                "is still billed on any platform, so it belongs to the cost of its parent's business runs.")
 d.add_heading("3. Forward 12-month cost", 2)
 for t in [
     "The forward year is Nov 2025 - Oct 2026 and repeats, month for month, the trailing window Oct 2024 - Sep 2025, for clients we still have.",
