@@ -1,12 +1,12 @@
 {
- "total_runs": 549310,
+ "total_runs": 568666,
  "rows": 35132,
  "runs_by_source_platform": {
-  "make": 252215,
+  "make": 260731,
   "n8n": 46864,
-  "zapier": 250231
+  "zapier": 261071
  },
- "internal_runs": 84051,
+ "internal_runs": 92567,
  "migrated_workflows": [
   "W003",
   "W004",
@@ -28,11 +28,11 @@
  "incident_make_2024-12-17_runs_make_source": 1048,
  "monthly_totals": {
   "2024-10": 49098,
-  "2024-11": 53564,
+  "2024-11": 64404,
   "2024-12": 60934,
   "2025-01": 43839,
   "2025-02": 38067,
-  "2025-03": 44589,
+  "2025-03": 53105,
   "2025-04": 45753,
   "2025-05": 48525,
   "2025-06": 41900,
@@ -53,6 +53,19 @@
   "W106": "W040",
   "W112": "W015"
  },
+ "bursts": [
+  [
+   "W079",
+   "2024-11-12",
+   "2024-11-21"
+  ],
+  [
+   "W012",
+   "2025-03-10",
+   "2025-03-14"
+  ]
+ ],
+ "burst_runs_excluded_from_forward": 20139,
  "active_workflows": 101,
  "churned_workflows": 19,
  "churned_clients": [
@@ -74,6 +87,5 @@
   "W101",
   "W111",
   "W113"
- ],
- "raw_zapier_make_runs_after_dedupe_only": 594722
+ ]
 }

@@ -10,5 +10,5 @@ ZAP_ANNUAL_DISCOUNT = 0.20
 ZAP_OVERAGE_MULT = 1.25
 RATE_EUR_PER_HOUR = 30
 HOURS = {  # base, per node
-    "zapier": (0.6, 0.12), "make": (2.0, 0.40), "n8n": (2.0, 0.40)}
-CUSTOM_BUILD_HOURS = 4
+    "zapier": (1.4, 0.28), "make": (2.0, 0.40), "n8n": (2.0, 0.40)}
+CUSTOM_BUILD_HOURS = 8

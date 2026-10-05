@@ -30,7 +30,7 @@ def labour_h(wfset, curmap, p, conn=True, cb=CUSTOM_BUILD_HOURS, hb=None):
                 if sup.loc[c, p] == "N": hh += cb
         h += hh
     return h
-def subs(vo, mk, zp, n8, incr=True, usd_eur=False):
+def subs(vo, mk, zp, n8, incr=True, usd_eur=False, clause=True):
     out = {}; best = None
     for a, f, o in MAKE_TIERS:
         t = o_ = 0
@@ -39,10 +39,13 @@ def subs(vo, mk, zp, n8, incr=True, usd_eur=False):
             t += f * k; o_ += math.ceil(max(0, u - a) / 1000) * o * k
         if best is None or t + o_ < best: best = t + o_
     out["make"] = best; best = None
-    for a, f in ZAP_TIERS:
-        f2 = f * zp; t = f2 * 0.8 * 12; rate = 1.25 * f2 / (a / 1000)
-        o_ = sum(math.ceil(max(0, u - a) / 1000) * rate for u in vo["zapier"])
-        c = (t + o_) / (1 if usd_eur else R.EURUSD)
+    for start in range(len(ZAP_TIERS)):
+        i = start; fees = over = 0.0
+        for u in vo["zapier"]:
+            a, f = ZAP_TIERS[i]; f2 = f * zp
+            fees += f2 * 0.8; over += math.ceil(max(0, u - a) / 1000) * 1.25 * f2 / (a / 1000)
+            if clause and u > 1.25 * a and i < len(ZAP_TIERS) - 1: i += 1
+        c = (fees + over) / (1 if usd_eur else R.EURUSD)
         if best is None or c < best: best = c
     out["zapier"] = best
     out["n8n"] = next((f * n8 * 12 for a, f in N8N_TIERS if max(vo["n8n"]) <= a), 1e9)
@@ -50,9 +53,11 @@ def subs(vo, mk, zp, n8, incr=True, usd_eur=False):
 
 CASES = {}
 def build():
-    rm = rm_of(conf, active.workflow_id); v = latest()
+    rm = R.rm.copy(); v = latest()
     T = vols(rm, units(v)); CASES["TRUTH"] = dict(vo=T, wfs=active, cur=cur)
     CASES["stale platform"] = dict(vo=T, wfs=active, cur=stale)
+    CASES["no Zapier upgrade clause"] = dict(vo=T, wfs=active, cur=cur, clause=False)
+    CASES["backfill bursts left in"] = dict(vo=vols(rm_of(conf, active.workflow_id), units(v)), wfs=active, cur=cur)
     CASES["incl churned"] = dict(vo=vols(rm_of(conf, wf.workflow_id), units(v)), wfs=wf, cur=cur)
     a2 = active[active.client_id != "INTERNAL"]; CASES["drop internal"] = dict(vo=vols(rm_of(conf, a2.workflow_id), units(v)), wfs=a2, cur=cur)
     CASES["draft versions"] = dict(vo=vols(rm, units(latest(True))), wfs=active, cur=cur)
@@ -71,6 +76,6 @@ build()
 def evaluate(rate, mk, zp, n8, cb, hb):
     res = {}
     for k, c in CASES.items():
-        s = subs(c["vo"], mk, zp, n8, c.get("incr", True), c.get("usd_eur", False))
+        s = subs(c["vo"], mk, zp, n8, c.get("incr", True), c.get("usd_eur", False), c.get("clause", True))
         res[k] = {p: s[p] + (0 if c.get("nolab") else labour_h(c["wfs"], c["cur"], p, c.get("conn", True), cb, hb) * rate) for p in s}
     return res

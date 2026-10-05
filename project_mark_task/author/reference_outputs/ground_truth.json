@@ -3,35 +3,35 @@
   "make": {
    "plan_allowance": 250000,
    "subscription_eur": 17687.999999999996,
-   "overage_eur": 12591.81,
-   "migration_hours": 370.0,
+   "overage_eur": 11519.55,
+   "migration_hours": 402.0,
    "migration_workflows": 56,
-   "migration_eur": 11100.0,
-   "total_eur": 41379.81,
-   "peak_month_units": 514536.0,
-   "annual_units": 4810667.0
+   "migration_eur": 12060.0,
+   "total_eur": 41267.549999999996,
+   "peak_month_units": 495468.0,
+   "annual_units": 4651946.0
   },
   "zapier": {
-   "plan_allowance": 300000,
-   "subscription_eur": 34163.70106761566,
-   "overage_eur": 0.0,
-   "migration_hours": 161.72000000000003,
+   "plan_allowance": 200000,
+   "subscription_eur": 32384.34163701067,
+   "overage_eur": 1636.1766014234875,
+   "migration_hours": 362.68000000000006,
    "migration_workflows": 66,
-   "migration_eur": 4851.6,
-   "total_eur": 39015.301067615655,
-   "peak_month_units": 281749.0,
-   "annual_units": 2617914.0
+   "migration_eur": 10880.400000000001,
+   "total_eur": 44900.91823843416,
+   "peak_month_units": 269025.0,
+   "annual_units": 2528484.0
   },
   "n8n": {
    "plan_allowance": 100000,
    "subscription_eur": 18720,
    "overage_eur": 0.0,
-   "migration_hours": 688.0000000000001,
+   "migration_hours": 896.0,
    "migration_workflows": 80,
-   "migration_eur": 20640.000000000004,
-   "total_eur": 39360.0,
-   "peak_month_units": 63415.0,
-   "annual_units": 580062.0
+   "migration_eur": 26880.0,
+   "total_eur": 45600.0,
+   "peak_month_units": 59514.0,
+   "annual_units": 559923.0
   }
  },
  "eurusd": 1.124,
@@ -58,5 +58,5 @@
   "2025-08": 37606,
   "2025-09": 45128
  },
- "winner": "zapier"
+ "winner": "make"
 }

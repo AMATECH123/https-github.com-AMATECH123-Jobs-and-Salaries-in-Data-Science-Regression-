@@ -56,8 +56,8 @@ for line in open(P("change_log.txt")):
     if "parallel run started" in p[3]:
         a, b = [x.strip() for x in p[2].split("->")]
         mig.setdefault(wid, {}).update(frm=a, to=b, pf=dt.date.fromisoformat(p[0]))
-    elif "one-off bulk backfill" in p[3]:
-        mt = re.search(r"runs (\d{4}-\d{2}-\d{2}) to (\d{4}-\d{2}-\d{2})", p[3])
+    elif "one-off bulk backfill" in p[2]:
+        mt = re.search(r"runs (\d{4}-\d{2}-\d{2}) to (\d{4}-\d{2}-\d{2})", p[2])
         bursts_.append((wid, dt.date.fromisoformat(mt.group(1)), dt.date.fromisoformat(mt.group(2))))
     elif "cutover" in p[2]:
         mig.setdefault(wid, {})["cut"] = dt.datetime.strptime(p[0], "%d %b %Y").date()
