@@ -154,8 +154,25 @@ def main():
     fin_peak, fin_when = peak(minute_profile(f_trips.values()))
     assert fin_peak == FINANCE_PEAK, fin_peak
     fin_s_peak, fin_s_when = peak(minute_profile(s_trips.values()))
-    hourly = [(h, max(s_prof[h * 60:(h + 1) * 60]), max(f_prof[h * 60:(h + 1) * 60])) for h in HOURS]
-    best_hour = max(hourly, key=lambda x: (x[2] - x[1], -x[0]))
+    def starts_ends(blocks):
+        st, en = collections.Counter(), collections.Counter()
+        for a, b in blocks.values():
+            st[a // 60] += 1
+            en[b // 60] += 1
+        return st, en
+    s_st, s_en = starts_ends(s_blocks)
+    f_st, f_en = starts_ends(f_blocks)
+    assert starts_ends(s2_blocks) == (s_st, s_en)
+    for day in [dt.date(2026, 9, 8), dt.date(2026, 9, 30)]:
+        _, b, _, _, _ = day_bounds(fall_feed, day)
+        assert starts_ends(b) == (f_st, f_en), day
+    PULL_HOURS = list(range(3, 27))
+    hourly = [(h, s_st[h], s_en[h], f_st[h], f_en[h]) for h in PULL_HOURS]
+    s_top = max(PULL_HOURS, key=lambda h: (s_st[h], -h))
+    f_top = max(PULL_HOURS, key=lambda h: (f_st[h], -h))
+    grow = sorted(PULL_HOURS, key=lambda h: (-(f_st[h] - s_st[h]), h))
+    best_hour, second_hour = grow[0], grow[1]
+    assert f_st[best_hour] - s_st[best_hour] > f_st[second_hour] - s_st[second_hour]
     s_bus65 = sum(1 for b, rs in s_broutes.items() if driver in rs)
     f_bus65 = sum(1 for b, rs in f_broutes.items() if driver in rs)
     s_first = min(a for k, (a, _) in s_trips.items() if s_tr[k]['route_id'] == driver)
@@ -173,10 +190,10 @@ def main():
     # ---------- 1. CSV hourly profile ----------
     with open(os.path.join(HERE, 'weekday_bus_requirement.csv'), 'w', newline='') as f:
         w = csv.writer(f)
-        w.writerow(['hour', 'summer_buses_in_service', 'fall_buses_in_service', 'change'])
-        for h, sv, fv in hourly:
-            w.writerow([hour_label(h), sv, fv, fv - sv])
-        w.writerow(['DAY PEAK', s_peak, f_peak, f_peak - s_peak])
+        w.writerow(['hour', 'summer_pull_outs', 'summer_pull_ins', 'fall_pull_outs', 'fall_pull_ins'])
+        for h, a, b, c, e in hourly:
+            w.writerow([hour_label(h), a, b, c, e])
+        w.writerow(['TOTAL', sum(s_st.values()), sum(s_en.values()), sum(f_st.values()), sum(f_en.values())])
 
     # ---------- 2. Profile PNG ----------
     import matplotlib
@@ -269,12 +286,14 @@ def main():
                   "bus in service from its first departure to its last arrival, and the number of blocks in service was "
                   "counted at every minute of the service day. The count is identical on every other qualifying day in "
                   "each rating.", body),
-        Paragraph('Buses in service through the day', h),
-        Paragraph(f"The hour that gained the most buses is the <b>{hour_label(best_hour[0])} hour, {best_hour[2] - best_hour[1]:+d}</b> "
-                  f"({best_hour[1]} to {best_hour[2]}). The growth sits in the evening and late night rather than at the peak: "
-                  f"the morning peak gains {f_peak - s_peak}, while every hour from 19:00 onward gains between "
-                  f"{min(fv - sv for hh, sv, fv in hourly if hh >= 19)} and {max(fv - sv for hh, sv, fv in hourly if hh >= 19)} buses. "
-                  f"The full hourly profile is in weekday_bus_requirement.csv and bus_requirement_profile.png.", body),
+        Paragraph('Pull outs through the day', h),
+        Paragraph(f"Under both ratings the hour with the most pull outs is the <b>{hour_label(s_top)} hour</b>: {s_st[s_top]} buses "
+                  f"pull out in that hour under Summer and {f_st[f_top]} under Fall. The hour whose pull outs grew the most is the "
+                  f"<b>{hour_label(best_hour)} hour, {f_st[best_hour] - s_st[best_hour]:+d}</b> ({s_st[best_hour]} to {f_st[best_hour]}), "
+                  f"ahead of the {hour_label(second_hour)} hour at {f_st[second_hour] - s_st[second_hour]:+d}. The Fall rating runs "
+                  f"{sum(f_st.values()):,} pull outs against {sum(s_st.values()):,} under Summer, and the added work sits in the "
+                  f"evening: the morning peak gains {f_peak - s_peak} buses while pull outs from 19:00 onward gain "
+                  f"{sum(f_st[hh] - s_st[hh] for hh in PULL_HOURS if hh >= 19)}. The full profile is in weekday_bus_requirement.csv.", body),
         Paragraph('Routes whose weekday trip count changed, ranked by size of change', h),
     ]
     rows = [['Rank', 'Route', 'Category', 'Summer', 'Fall', 'Change']]
@@ -301,7 +320,7 @@ def main():
                   f"with the span opening about an hour earlier and closing more than four hours later. The added trips come "
                   f"from the longer span and more frequent service through the day, not from the Brighton Center end.", body),
         Paragraph('How close the driving route is to being overtaken', h),
-        Paragraph(f"Route {rn} ({routes[runner]['route_long_name']}) is the runner-up at {delta[runner]:+d}, {gap} trips behind. "
+        Paragraph(f"Route {rn} ({routes[runner]['route_long_name']}) is the runner up at {delta[runner]:+d}, {gap} trips behind. "
                   f"The smallest change in a single route's Fall trip count that would make a different route the driver is "
                   f"<b>{flip} trips</b>: Route {rn} at {fall[runner] + flip} Fall trips ({delta[runner] + flip:+d}), or Route {dn} "
                   f"at {fall[driver] - flip} ({delta[driver] - flip:+d}). The third largest change is {delta[changed[2]]:+d} on "
@@ -321,9 +340,9 @@ def main():
     doc.build(story)
 
     print(f"peak buses {s_peak} at {clock(s_when)} -> {f_peak} at {clock(f_when)} ({f_peak - s_peak:+d}); finance trips-peak {fin_peak} at {clock(fin_when)} (summer {fin_s_peak} at {clock(fin_s_when)})")
-    print(f"trips {S} -> {F} net {net:+d}; driver {dn} {delta[driver]:+d}; runner {rn} {delta[runner]:+d}; flip {flip}; best hour {hour_label(best_hour[0])} {best_hour[2]-best_hour[1]:+d}")
+    print(f"trips {S} -> {F} net {net:+d}; driver {dn} {delta[driver]:+d}; runner {rn} {delta[runner]:+d}; flip {flip}; top pull-out hour {hour_label(s_top)}/{hour_label(f_top)} {s_st[s_top]}/{f_st[f_top]}; biggest growth {hour_label(best_hour)} {f_st[best_hour]-s_st[best_hour]:+d}")
     print(f"route {dn} buses {s_bus65} -> {f_bus65}; span {clock(s_first)}-{clock(s_lastarr)} -> {clock(f_first)}-{clock(f_lastarr)}; ends {s_end} -> {f_end}")
-    print('hourly', [(hour_label(hh), sv, fv) for hh, sv, fv in hourly])
+    print('pull-outs', [(hour_label(hh), a, c) for hh, a, b, c, e in hourly])
 
 
 if __name__ == '__main__':
