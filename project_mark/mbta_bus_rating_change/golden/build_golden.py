@@ -120,6 +120,26 @@ def starts_ends(blocks):
     return st, en
 
 
+def peak_attribution(trips, blocks, tr, minute):
+    """Buses in service at `minute` attributed to a route: the trip in progress, else the trip just completed."""
+    by_block = collections.defaultdict(list)
+    for k, (a, b) in trips.items():
+        by_block[tr[k]['block_id']].append((a, b, k))
+    c, layover = collections.Counter(), 0
+    for blk, (a0, b0) in blocks.items():
+        if not (a0 <= minute < b0):
+            continue
+        ts = sorted(by_block[blk])
+        running = [k for a, b, k in ts if a <= minute < b]
+        if running:
+            c[tr[running[0]]['route_id']] += 1
+        else:
+            done = [k for a, b, k in ts if b <= minute]
+            c[tr[done[-1]]['route_id']] += 1
+            layover += 1
+    return c, layover
+
+
 def weekday_tally(d, start, end):
     """Monday to Thursday dates in [start, end] grouped by the bus trip count of the schedule running that day."""
     tally = collections.Counter()
@@ -183,15 +203,20 @@ def main():
     _, sch_blocks, _, _, _ = day_bounds(aug, dt.date(2026, 9, 2))
     school_peak, school_when = peak(minute_profile(sch_blocks.values()))
 
-    s_st, s_en = starts_ends(s_blocks)
-    f_st, f_en = starts_ends(f_blocks)
-    PULL_HOURS = list(range(3, 27))
-    hourly = [(h, s_st[h], s_en[h], f_st[h], f_en[h]) for h in PULL_HOURS]
-    s_top = max(PULL_HOURS, key=lambda h: (s_st[h], -h))
-    f_top = max(PULL_HOURS, key=lambda h: (f_st[h], -h))
-    grow = sorted(PULL_HOURS, key=lambda h: (-(f_st[h] - s_st[h]), h))
-    best_hour, second_hour = grow[0], grow[1]
-    assert f_st[best_hour] - s_st[best_hour] > f_st[second_hour] - s_st[second_hour]
+    s_attr, s_lay = peak_attribution(s_trips, s_blocks, s_tr, s_when)
+    f_attr, f_lay = peak_attribution(f_trips, f_blocks, f_tr, f_when)
+    assert sum(s_attr.values()) == s_peak and sum(f_attr.values()) == f_peak
+    for feed, day in [(june, dt.date(2026, 7, 22)), (f0821, dt.date(2026, 8, 24))]:
+        t_, b_, _, tr_, _ = day_bounds(feed, day)
+        assert peak_attribution(t_, b_, tr_, s_when)[0] == s_attr, day
+    for feed, day in [(f0821, dt.date(2026, 9, 23)), (cur, dt.date(2026, 10, 7))]:
+        t_, b_, _, tr_, _ = day_bounds(feed, day)
+        assert peak_attribution(t_, b_, tr_, f_when)[0] == f_attr, day
+    peak_routes = sorted(set(s_attr) | set(f_attr), key=lambda r: int(routes[r]['route_sort_order']))
+    f_top = max(peak_routes, key=lambda r: (f_attr[r], -int(routes[r]['route_sort_order'])))
+    f_second = max([r for r in peak_routes if r != f_top], key=lambda r: (f_attr[r], -int(routes[r]['route_sort_order'])))
+    assert f_attr[f_top] > f_attr[f_second]
+    s_top = max(peak_routes, key=lambda r: (s_attr[r], -int(routes[r]['route_sort_order'])))
 
     s_bus65 = sum(1 for b, rs in s_broutes.items() if driver in rs)
     f_bus65 = sum(1 for b, rs in f_broutes.items() if driver in rs)
@@ -208,12 +233,13 @@ def main():
         return f"{h:02d}:00" if h < 24 else f"{h - 24:02d}:00 next day"
 
     # ---------- 1. CSV ----------
-    with open(os.path.join(HERE, 'weekday_bus_requirement.csv'), 'w', newline='') as f:
+    with open(os.path.join(HERE, 'peak_buses_by_route.csv'), 'w', newline='') as f:
         w = csv.writer(f)
-        w.writerow(['hour', 'summer_pull_outs', 'summer_pull_ins', 'fall_pull_outs', 'fall_pull_ins'])
-        for h, a, b, c, e in hourly:
-            w.writerow([hour_label(h), a, b, c, e])
-        w.writerow(['TOTAL', sum(s_st.values()), sum(s_en.values()), sum(f_st.values()), sum(f_en.values())])
+        w.writerow(['route_id', 'route_name', 'service_category', 'summer_buses_at_peak', 'fall_buses_at_peak', 'change'])
+        for r in peak_routes:
+            w.writerow([r, routes[r]['route_short_name'] or routes[r]['route_long_name'], routes[r]['route_desc'],
+                        s_attr[r], f_attr[r], f_attr[r] - s_attr[r]])
+        w.writerow(['TOTAL', 'All MBTA bus routes', '', s_peak, f_peak, f_peak - s_peak])
 
     # ---------- 2. PNG ----------
     import matplotlib
@@ -307,17 +333,18 @@ def main():
                   f"assigned to its block, each block counted as one bus from its first departure to its last arrival, and "
                   f"the count taken at every minute. Every figure is identical on every other qualifying day of its rating "
                   f"and in every archived feed that covers it.", body),
-        Paragraph('Pull outs through the day', h),
-        Paragraph(f"Under both ratings the hour with the most pull outs is the <b>{hour_label(s_top)} hour</b>: {s_st[s_top]} buses "
-                  f"under Summer and {f_st[f_top]} under Fall. The hour whose pull outs grew the most is the "
-                  f"<b>{hour_label(best_hour)} hour, {f_st[best_hour] - s_st[best_hour]:+d}</b> ({s_st[best_hour]} to {f_st[best_hour]}), "
-                  f"ahead of the {hour_label(second_hour)} hour at {f_st[second_hour] - s_st[second_hour]:+d}. The Fall rating runs "
-                  f"{sum(f_st.values()):,} pull outs against {sum(s_st.values()):,} under Summer. The full profile is in "
-                  f"weekday_bus_requirement.csv.", body),
-        Paragraph(f'Routes whose weekday trip count changed, ranked by size of change ({len(changed)} of {len(all_routes)} routes)', h),
+        Paragraph('Buses on the road at the peak, by route', h),
+        Paragraph(f"At the Fall peak minute, {clock(f_when)}, <b>Route {routes[f_top]['route_short_name']}</b> "
+                  f"({routes[f_top]['route_long_name']}) has the most buses on the road, <b>{f_attr[f_top]}</b>, ahead of Route "
+                  f"{routes[f_second]['route_short_name']} at {f_attr[f_second]}. Of the {f_peak} buses in service at that minute, "
+                  f"<b>{f_lay} are between trips</b> and {f_peak - f_lay} are on a trip; each bus between trips is attributed to the "
+                  f"route of the trip it has just completed. At the Summer peak minute, {clock(s_when)}, Route "
+                  f"{routes[s_top]['route_short_name']} led with {s_attr[s_top]} and {s_lay} buses were between trips. The full "
+                  f"allocation for every route is in peak_buses_by_route.csv, and the route rows add up to {s_peak} and {f_peak}.", body),
+        Paragraph(f'The ten largest route changes in weekday trips ({len(changed)} of {len(all_routes)} routes changed)', h),
     ]
     rows = [['Rank', 'Route', 'Category', 'Summer', 'Fall', 'Change']]
-    for i, r in enumerate(changed, 1):
+    for i, r in enumerate(changed[:10], 1):
         rows.append([str(i), routes[r]['route_short_name'], routes[r]['route_desc'], f"{summer[r]}", f"{fall[r]}", f"{delta[r]:+d}"])
     rows.append(['', 'All bus routes', f"{len(all_routes)} routes", f"{S:,}", f"{F:,}", f"{net:+,}"])
     t = Table(rows, colWidths=[0.5 * inch, 0.8 * inch, 1.5 * inch, 0.9 * inch, 0.9 * inch, 0.9 * inch], repeatRows=1)
@@ -329,8 +356,8 @@ def main():
         ('BACKGROUND', (0, 1), (-1, 1), colors.HexColor('#fde7d9')),
     ]))
     story += [t, Spacer(1, 6),
-        Paragraph(f"The other {len(all_routes) - len(changed)} bus routes run the same number of weekday trips under both "
-                  f"ratings, and the {len(changed)} changes sum to {net:+d}.", body),
+        Paragraph(f"The {len(changed)} changed routes sum to {net:+d}; the other {len(all_routes) - len(changed)} bus routes run "
+                  f"the same number of weekday trips under both ratings.", body),
         Paragraph(f"Route {dn}: what changed", h),
         Paragraph(f"Under the Summer rating {s_bus65} buses carry Route {dn} trips during the weekday; under the Fall rating "
                   f"{f_bus65} do. Summer service ran {summer[driver]} trips with the first departure at {clock(s_first)} and the "
@@ -362,7 +389,8 @@ def main():
     print(f"peak {s_peak} at {clock(s_when)} -> {f_peak} at {clock(f_when)} ({f_peak - s_peak:+d}); school-day summer peak {school_peak}; finance trips-peak {fin_peak} at {clock(fin_when)} (summer {fin_s_peak})")
     print(f"trips {S} -> {F} net {net:+d} (school summer {school_summer}); tallies S {dict(s_tally)} F {dict(f_tally)}")
     print(f"driver {dn} {delta[driver]:+d}; runner {rn} {delta[runner]:+d}; third {tn} {delta[third]:+d}; flip {flip}; changed {len(changed)} of {len(all_routes)}")
-    print(f"pull outs top {hour_label(s_top)} {s_st[s_top]} / {hour_label(f_top)} {f_st[f_top]}; growth {hour_label(best_hour)} {f_st[best_hour]-s_st[best_hour]:+d}, {hour_label(second_hour)} {f_st[second_hour]-s_st[second_hour]:+d}; totals {sum(s_st.values())}/{sum(f_st.values())}")
+    print(f"peak allocation: Fall top {routes[f_top]['route_short_name']} {f_attr[f_top]} vs {routes[f_second]['route_short_name']} {f_attr[f_second]}; layover {s_lay}/{f_lay}; Summer top {routes[s_top]['route_short_name']} {s_attr[s_top]}; routes at a peak {len(peak_routes)}")
+    print('allocation:', [(routes[r]['route_short_name'], s_attr[r], f_attr[r]) for r in peak_routes])
     print(f"route {dn} buses {s_bus65} -> {f_bus65}; span {clock(s_first)}-{clock(s_lastarr)} -> {clock(f_first)}-{clock(f_lastarr)}; ends {s_end} -> {f_end}")
     print('changed routes:', [(routes[r]['route_short_name'], summer[r], fall[r], delta[r]) for r in changed])
 

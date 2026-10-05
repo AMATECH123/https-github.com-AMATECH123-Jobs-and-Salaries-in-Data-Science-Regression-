@@ -16,5 +16,12 @@ task. It is not an MBTA publication. The schedule data it is applied to is real 
 4. The population. Every route the MBTA classifies as a bus route in its route category field. Rail replacement
    shuttles are not bus routes. Trips on bus routes are counted once each, under the route that owns the trip.
 
-5. Comparison. The change certified for a rating is measured against the figure certified for the previous
+5. The peak minute. Where the peak count is reached in more than one minute of the day, the peak minute is the
+   first of them.
+
+6. Buses by route at the peak. Each bus in service at the peak minute is attributed to one route: the route of
+   the trip it is operating at that minute, or, if it is between trips, the route of the trip it has just
+   completed. The route figures add up to the requirement.
+
+7. Comparison. The change certified for a rating is measured against the figure certified for the previous
    rating on the same convention.
