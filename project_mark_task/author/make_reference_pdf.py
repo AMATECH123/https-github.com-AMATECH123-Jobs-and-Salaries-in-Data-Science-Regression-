@@ -21,7 +21,7 @@ srt = sorted(r[p]["total_eur"] for p in order); margin = (srt[1] - srt[0]) / srt
 txt = (f"How the numbers were built\n"
        f"- {gt['conformed_total_runs']:,} business runs in Oct 2024 - Sep 2025 after de-duplicating export batches, removing retries, replays, tests, "
        f"parallel-run mirrors, incident duplicates, helper sub-flow runs and scratch items, and mapping re-created ids by workflow name.\n"
-       f"- Forward volume repeats the same calendar months, leaves out the two one-off bulk backfills, and excludes {len(gt['churned_clients'])} churned clients ({gt['active_workflows']} workflows in scope). Helper consumption is added to its parent.\n"
+       f"- Forward volume repeats the same calendar months, leaves out the two one-off bulk backfills, and excludes the {len(gt['churned_clients'])} genuinely churned clients ({gt['active_workflows']} workflows in scope; two flagged clients re-signed under new contracts and stay in). Helper consumption is added to its parent.\n"
        f"- Zapier: starts on the {r['zapier']['plan_allowance']:,} tasks/month plan (annual billing, 20% off) but the December peak exceeds 125% of allowance, "
        f"so the contract moves the account up a plan from January. Make: {r['make']['plan_allowance']:,} ops/month with overage, +14% from Jan 2026. "
        f"n8n: {r['n8n']['plan_allowance']:,} executions/month, sized to the busiest month ({r['n8n']['peak_month_units']:,.0f}).\n"

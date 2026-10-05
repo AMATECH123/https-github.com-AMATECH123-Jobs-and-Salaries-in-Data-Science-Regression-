@@ -40,6 +40,8 @@ for i, nm in enumerate(client_names):
     clients.append(dict(client_id=cid, client_name=nm, churn_date=churn,
                         onboarded=dt.date(2022 + rnd.randint(0, 2), rnd.randint(1, 12), rnd.randint(1, 28))))
 cl_by_id = {c["client_id"]: c for c in clients}
+for _i in (3, 9):   # churn flag in the CRM, but the business re-signed under a new contract id and usage never stopped
+    clients[_i]["resigned"] = True
 
 # ---------------------------------------------------------------- workflows
 FAMILIES = ["Lead intake to CRM", "Invoice reminder", "Client onboarding", "Weekly KPI report", "Booking confirmation",
@@ -89,7 +91,7 @@ for wid, p in init_plat.items():
         wf_by_id[wid]["base_rate"] *= 0.30
 
 active_wids = [w["workflow_id"] for w in workflows
-               if w["client_id"] == "INTERNAL" or cl_by_id[w["client_id"]]["churn_date"] is None]
+               if w["client_id"] == "INTERNAL" or cl_by_id[w["client_id"]]["churn_date"] is None or cl_by_id[w["client_id"]].get("resigned")]
 migrations = []  # dict(workflow_id, from, to, parallel_from, cutover)
 def pick(plat, n, lowvol=False):
     pool = [w for w in active_wids if init_plat[w] == plat and w not in {m["workflow_id"] for m in migrations}]
@@ -149,7 +151,7 @@ for w in workflows:
     lam = w["base_rate"] * tr * wk * mf
     arr = rng.poisson(lam)
     c = cl_by_id.get(w["client_id"])
-    if c and c["churn_date"]:
+    if c and c["churn_date"] and not c.get("resigned"):
         arr = np.where(np.array(DAYS) >= c["churn_date"], 0, arr)
     B[wid] = arr.astype(int)
 
@@ -163,6 +165,12 @@ incidents = [
          note="duplicate deliveries on CRM-triggered zaps only"),
     dict(incident_id="INC-104", platform="make", start=dt.date(2025, 5, 20), end=dt.date(2025, 5, 20), scope="LISTED", rate=0.35,
          note="scenarios on the shared ledger webhook delivered twice"),
+    dict(incident_id="INC-106", platform="zapier", start=dt.date(2025, 8, 12), end=dt.date(2025, 8, 13), scope="ALL", rate=0.50,
+         note="duplicate deliveries after vendor-side retry loop"),
+    dict(incident_id="INC-107", platform="make", start=dt.date(2025, 3, 4), end=dt.date(2025, 3, 4), scope="ALL", rate=0.45,
+         note="scheduler double-fired webhook queue"),
+    dict(incident_id="INC-108", platform="zapier", start=dt.date(2024, 11, 26), end=dt.date(2024, 11, 26), scope="ALL", rate=0.35,
+         note="source CRM re-sent events after outage"),
     dict(incident_id="INC-105", platform="n8n", start=dt.date(2025, 4, 8), end=dt.date(2025, 4, 9), scope="ALL", rate=None,
          note="duplicate webhook deliveries; executions carry eventId, deduplicate on it"),
 ]
@@ -319,20 +327,21 @@ for w in workflows:
             if plat == "zapier":
                 rate = incident_rate("zapier", wid, d)
                 rep = int(round(b * (1 + rate)))
-                err = int(rng.binomial(max(b, 0), 0.02))
-                repl = int(rng.binomial(err, 0.6)) if err else 0
+                err = int(rng.binomial(max(b, 0), 0.06))
+                repl = int(rng.binomial(err, 0.8)) if err else 0
                 test = int(rng.integers(1, 4)) if rnd.random() < 0.05 else 0
                 tasks = zs * (rep + repl + test) + err * max(1, zs // 2)
                 for nid_ in ids_for(wid, "zapier", d):
                     for (bid, exp_at, b0, b1) in batches_for(d):
-                        # earlier batches miss late-arriving runs
                         val = rep
-                        if bid != zap_batches[-1][0] and len(batches_for(d)) > 1 and bid == batches_for(d)[0][0]:
+                        if bid == "EXP-A" and len(batches_for(d)) > 1:   # late-arriving runs missing from the oldest export
                             val = int(math.floor(rep * rnd.uniform(0.94, 0.985)))
+                        # newest export (EXP-C) renamed the column to runs_completed, which also counts replayed runs
                         zap_rows.append(dict(export_batch=bid, exported_at=exp_at.isoformat(), zap_id=nid_,
                                              zap_title=w["name"] if rnd.random() > 0.15 else w["name"].upper(),
-                                             usage_date=d.isoformat(), runs_success=val, runs_errored=err, runs_replayed=repl,
-                                             test_runs=test, tasks_billed=tasks))
+                                             usage_date=d.isoformat(), runs_success=(None if bid == "EXP-C" else val),
+                                             runs_completed=((val + repl) if bid == "EXP-C" else None),
+                                             runs_errored=err, runs_replayed=repl, test_runs=test, tasks_billed=tasks))
             elif plat == "make":
                 rate = incident_rate("make", wid, d)
                 rep = int(round(b * (1 + rate)))
@@ -436,6 +445,13 @@ for c in clients:
                       onboarded=c["onboarded"].isoformat(),
                       end_date=(cd.strftime(rnd.choice(["%d/%m/%Y", "%Y-%m-%d", "%b %d, %Y"])) if cd else None),
                       billing_entity=rnd.choice(["Northgate Automations Ltd", "Northgate Automations Ltd", "Northgate Labs GmbH"])))
+_nxt = 29
+for c in clients:
+    if c.get("resigned"):
+        crows.append(dict(client_id=f"CL-{_nxt:03d}", client_name=c["client_name"] + " (2025 contract)", status="Active",
+                          onboarded=(c["churn_date"] + dt.timedelta(days=1)).isoformat(), end_date=None,
+                          billing_entity="Northgate Automations Ltd"))
+        _nxt += 1
 with pd.ExcelWriter(os.path.join(OUT, "client_master.xlsx")) as xw:
     pd.DataFrame(crows).to_excel(xw, sheet_name="clients", index=False)
 

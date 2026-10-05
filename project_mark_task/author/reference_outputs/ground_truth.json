@@ -2,61 +2,59 @@
  "results": {
   "make": {
    "plan_allowance": 250000,
-   "subscription_eur": 17687.999999999996,
-   "overage_eur": 11519.55,
-   "migration_hours": 402.0,
-   "migration_workflows": 56,
-   "migration_eur": 12060.0,
-   "total_eur": 41267.549999999996,
-   "peak_month_units": 495468.0,
-   "annual_units": 4651946.0
+   "subscription_eur": 20555.6,
+   "overage_eur": 16080.901199999997,
+   "migration_hours": 396.8,
+   "migration_workflows": 63,
+   "migration_eur": 11904.0,
+   "total_eur": 48540.5012,
+   "peak_month_units": 505939.0,
+   "annual_units": 4770958.0
   },
   "zapier": {
    "plan_allowance": 200000,
    "subscription_eur": 32384.34163701067,
-   "overage_eur": 1636.1766014234875,
-   "migration_hours": 362.68000000000006,
-   "migration_workflows": 66,
-   "migration_eur": 10880.400000000001,
-   "total_eur": 44900.91823843416,
-   "peak_month_units": 269025.0,
-   "annual_units": 2528484.0
+   "overage_eur": 1743.2161921708184,
+   "migration_hours": 371.00000000000006,
+   "migration_workflows": 68,
+   "migration_eur": 11130.000000000002,
+   "total_eur": 45257.55782918149,
+   "peak_month_units": 274317.0,
+   "annual_units": 2590454.0
   },
   "n8n": {
    "plan_allowance": 100000,
    "subscription_eur": 18720,
    "overage_eur": 0.0,
-   "migration_hours": 896.0,
-   "migration_workflows": 80,
-   "migration_eur": 26880.0,
-   "total_eur": 45600.0,
-   "peak_month_units": 59514.0,
-   "annual_units": 559923.0
+   "migration_hours": 1025.1999999999998,
+   "migration_workflows": 87,
+   "migration_eur": 30755.999999999993,
+   "total_eur": 49475.99999999999,
+   "peak_month_units": 61111.0,
+   "annual_units": 576349.0
   }
  },
  "eurusd": 1.124,
- "conformed_rows": 35132,
- "conformed_total_runs": 568666,
+ "conformed_rows": 36061,
+ "conformed_total_runs": 573908,
  "churned_clients": [
-  "CL-004",
-  "CL-010",
   "CL-015",
   "CL-022"
  ],
- "active_workflows": 101,
+ "active_workflows": 109,
  "trailing_runs_by_month": {
-  "2024-10": 49098,
-  "2024-11": 64404,
-  "2024-12": 60934,
-  "2025-01": 43839,
-  "2025-02": 38067,
-  "2025-03": 53105,
-  "2025-04": 45753,
-  "2025-05": 48525,
-  "2025-06": 41900,
-  "2025-07": 40307,
-  "2025-08": 37606,
-  "2025-09": 45128
+  "2024-10": 48770,
+  "2024-11": 64169,
+  "2024-12": 60410,
+  "2025-01": 43583,
+  "2025-02": 37771,
+  "2025-03": 53507,
+  "2025-04": 46773,
+  "2025-05": 49512,
+  "2025-06": 42510,
+  "2025-07": 41442,
+  "2025-08": 38900,
+  "2025-09": 46561
  },
- "winner": "make"
+ "winner": "zapier"
 }

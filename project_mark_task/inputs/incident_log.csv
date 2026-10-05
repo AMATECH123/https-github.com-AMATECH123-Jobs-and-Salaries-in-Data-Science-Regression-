@@ -1,6 +1,9 @@
 incident_id,platform,start_date_utc,end_date_utc,scope,scoped_native_ids,duplicate_delivery_rate,note
 INC-101,zapier,2025-02-11,2025-02-11,ALL,,0.4,webhook redelivery storm after vendor-side queue stall; source systems re-sent events
 INC-102,make,2024-12-17,2024-12-17,ALL,,0.25,scheduler replayed triggers after datastore lock
-INC-103,zapier,2025-06-03,2025-06-04,LISTED,zap_11706625;zap_93386457;zap_37270233;zap_55922046;zap_95830736;zap_76143067;zap_60775358;zap_29763986;zap_62761754;zap_44985774;zap_54481032;zap_40439782;zap_20684421;zap_98213738;zap_32902076;zap_17538353,0.3,duplicate deliveries on CRM-triggered zaps only
-INC-104,make,2025-05-20,2025-05-20,LISTED,3096261;3020575;4180192;3259495;3091008;3184832;4198174;3778013;4573777;4078931;3819472;4633565;3629943;4147193;4668023,0.35,scenarios on the shared ledger webhook delivered twice
+INC-103,zapier,2025-06-03,2025-06-04,LISTED,zap_11706625;zap_93386457;zap_84981503;zap_55922046;zap_76143067;zap_35900805;zap_59984292;zap_57834641;zap_73042532;zap_51887314;zap_40439782;zap_57141218;zap_60459419;zap_98213738;zap_32902076;zap_17538353,0.3,duplicate deliveries on CRM-triggered zaps only
+INC-104,make,2025-05-20,2025-05-20,LISTED,3096261;3020575;4180192;3259495;3091008;3631374;4198174;3778013;4573777;4078931;3819472;4633565;3948036;3629943;4668023,0.35,scenarios on the shared ledger webhook delivered twice
+INC-106,zapier,2025-08-12,2025-08-13,ALL,,0.5,duplicate deliveries after vendor-side retry loop
+INC-107,make,2025-03-04,2025-03-04,ALL,,0.45,scheduler double-fired webhook queue
+INC-108,zapier,2024-11-26,2024-11-26,ALL,,0.35,source CRM re-sent events after outage
 INC-105,n8n,2025-04-08,2025-04-09,ALL,,,"duplicate webhook deliveries; executions carry eventId, deduplicate on it"

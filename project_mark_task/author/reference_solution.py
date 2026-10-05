@@ -40,6 +40,10 @@ def parse_any(s):
     return pd.to_datetime(s).date()
 cm["end"] = cm["end_date"].map(parse_any)
 churned = set(cm[(cm.status_n.isin(["churned", "inactive"])) | (cm.end.notna() & (cm.end <= dt.date(2025, 9, 30)))].client_id)
+# a churned client that re-signed under a successor record (same name + new contract) is still a client
+_names = {r_.client_id: r_.client_name for r_ in cm.itertuples()}
+resigned = {cid for cid in churned if any(n.startswith(_names[cid]) and n != _names[cid] for n in _names.values())}
+churned = churned - resigned
 
 helper_of = {}
 for r_ in wf.itertuples():
@@ -77,6 +81,8 @@ frames = []
 # --- Zapier
 z = pd.read_csv(P("zapier_usage_daily.csv"), dtype={"zap_id": str})
 z = z.sort_values("exported_at").drop_duplicates(["zap_id", "usage_date"], keep="last")
+# newest export reports runs_completed = successful runs + replayed runs; older exports report runs_success
+z["runs_success"] = np.where(z.runs_success.isna(), z.runs_completed - z.runs_replayed, z.runs_success)
 z["date"] = pd.to_datetime(z["usage_date"]).dt.date
 z["rate"] = [inc_rate("zapier", n, d) for n, d in zip(z.zap_id, z.date)]
 z["runs"] = np.rint(z.runs_success / (1 + z.rate)).astype(int)
@@ -167,6 +173,7 @@ EURUSD = float(f.rate)
 def cost_make(vols):
     best = None
     for allow, fee, ov in MAKE_TIERS:
+        fee = MAKE_NEGOTIATED.get(allow, fee)
         tot = 0; over_t = 0
         for ym, u in zip(fwd_months, vols):
             k = 1.14 if ym >= (2026, 1) else 1.0

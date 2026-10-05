@@ -43,6 +43,8 @@ s = [Paragraph("Contract terms summary - renewals on 1 November 2025", ss["Title
      Paragraph("Make", ss["Heading3"]),
      pr("Make has notified a list-price increase of 14% effective 1 January 2026. It applies to monthly plan fees and to overage rates "
         "for every plan, including plans bought at this renewal. Overage is billed monthly in blocks of 1,000 operations, rounded up."),
+     pr("Negotiated rate: for the 250,000 ops/month plan on an annual commitment Make has agreed EUR 1,534 per month (the quote sheet shows the list price). "
+        "Other plans stay at list. The January increase applies to the agreed fee as well."),
      Paragraph("Zapier", ss["Heading3"]),
      pr("Annual billing gives a 20% discount on the plan list price. The discount does not apply to overage. Overage is billed monthly "
         "per block of 1,000 tasks, rounded up, at 1.25 x the plan's list price per 1,000 allowance tasks "
@@ -111,6 +113,7 @@ Exports pulled on 2 Oct 2025 covering 1 Oct 2024 - 30 Sep 2025.
 - `workflow_catalog.xlsx` - workflows (platform column last refreshed March 2025) and per-version module/step counts.
 - `client_master.xlsx` - client list from the CRM. Internal workflows use client_id INTERNAL, which is not in this list.
 - `connector_support.csv`, `fx_rates.csv`, `incident_log.csv`, `change_log.txt` - as named.
+- Zapier changed the layout of its admin export in September, so the newest batch looks a bit different from the older ones.
 - Over the year a few zaps and scenarios were rebuilt or re-created by hand, so the crosswalk may not have every newest id.
 - PDFs and the costing standard are as received / as published by Finance.
 - Figures in this folder are synthetic.

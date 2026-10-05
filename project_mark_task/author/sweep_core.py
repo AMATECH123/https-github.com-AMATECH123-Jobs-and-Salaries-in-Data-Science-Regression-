@@ -30,9 +30,10 @@ def labour_h(wfset, curmap, p, conn=True, cb=CUSTOM_BUILD_HOURS, hb=None):
                 if sup.loc[c, p] == "N": hh += cb
         h += hh
     return h
-def subs(vo, mk, zp, n8, incr=True, usd_eur=False, clause=True):
+def subs(vo, mk, zp, n8, incr=True, usd_eur=False, clause=True, make_list=False):
     out = {}; best = None
     for a, f, o in MAKE_TIERS:
+        f = f if make_list else MAKE_NEGOTIATED.get(a, f)
         t = o_ = 0
         for ym, u in zip(R.fwd_months, vo["make"]):
             k = (1.14 if (incr and ym >= (2026, 1)) else 1.0) * mk
@@ -66,6 +67,14 @@ def build():
     CASES["no Make +14%"] = dict(vo=T, wfs=active, cur=cur, incr=False)
     CASES["sub only"] = dict(vo=T, wfs=active, cur=cur, nolab=True)
     # helpers
+    lazy = wf[~wf.client_id.isin(R.churned | R.resigned)]
+    CASES["lazy churn (all 4 flagged excluded)"] = dict(vo=vols(R.rm.loc[R.rm.index.isin(lazy.workflow_id)], units(v)), wfs=lazy, cur=cur)
+    CASES["Make list price (quote not contract)"] = dict(vo=T, wfs=active, cur=cur, make_list=True)
+    add = R.z[R.z.export_batch == "EXP-C"].groupby(["workflow_id", "date"]).runs_replayed.sum().reset_index()
+    cn = R.conf.merge(add, on=["workflow_id", "date"], how="left"); cn["business_runs"] = cn.business_runs + cn.runs_replayed.fillna(0) * (cn.source_platform == "zapier")
+    rmn = cn[cn.workflow_id.isin(active.workflow_id)].groupby(["workflow_id", "billing_month"]).business_runs.sum().unstack(fill_value=0)
+    for w_, a_, b_ in R.bursts_: pass
+    CASES["Zapier replay drift unfixed"] = dict(vo=vols(rmn.reindex(rm.index).fillna(0), units(v)), wfs=active, cur=cur)
     CASES["helper units ignored"] = dict(vo=vols(rm, units(v, merge=False)), wfs=active, cur=cur)
     rmh = rm.copy()
     for h, p in H.items():
@@ -76,6 +85,6 @@ build()
 def evaluate(rate, mk, zp, n8, cb, hb):
     res = {}
     for k, c in CASES.items():
-        s = subs(c["vo"], mk, zp, n8, c.get("incr", True), c.get("usd_eur", False), c.get("clause", True))
+        s = subs(c["vo"], mk, zp, n8, c.get("incr", True), c.get("usd_eur", False), c.get("clause", True), c.get("make_list", False))
         res[k] = {p: s[p] + (0 if c.get("nolab") else labour_h(c["wfs"], c["cur"], p, c.get("conn", True), cb, hb) * rate) for p in s}
     return res
