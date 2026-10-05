@@ -10,6 +10,19 @@ No cap on asks; each ask is multi-dimensional and hard. Prioritize a visual wher
 The rubric is generated internally (25+ criteria) from the *shape* of the task. The bar: model responses
 average **under 50%** against the rubric, with **at least one model genuinely stumped**.
 
+## 9/5 update: the rules every new task must follow
+Each approved task pays a flat $800. Nothing is paid by the hour. Approval rests on quality and on meeting these rules.
+- Bigger, messier inputs. Packages ship 10 or more files across 3 or more formats, with at least one file over 10,000 rows.
+- Request 1 to 3 deliverables. More is not better. Pick the most natural number and file types for the prompt.
+- No excessive number of asks. Each ask should be difficult, multi dimensional, or carry many outputs. No laundry lists.
+- Prioritize visual outputs. Where possible, request a chart, graph, table, waterfall, or diagram in one of the files.
+  An Excel sheet is not a table.
+- Make the asks difficult, realistic, and relevant. Nothing random or unrelated to the main recommendation.
+
+## Working style for this project
+- Build tasks that genuinely stump the model. Difficulty lives in the data and the method, never in wording.
+- Write everything in a plain human voice. No AI tone, no filler, no hyphens, no em dashes.
+
 ## Hard gates (all four required)
 1. Rubric reaches 25+ criteria, weighted 30–40% recommendation / 5–10% instruction-following / ~55–60% supplementary asks.
 2. Model responses average under 50% with at least one model stumped.
