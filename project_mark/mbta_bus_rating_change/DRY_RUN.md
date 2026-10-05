@@ -22,3 +22,12 @@ misses, so this is the honest place to put the difficulty. If the rollouts still
 step is to drop the phrase that names the unit ("from the start of its first trip to the end of its last trip
 of its day's work") and let the 615 control alone pin the method, after confirming that the gap splitting
 variant (620) cannot also reproduce 615.
+
+## Version 3 (certification day is the schedule the rating mostly ran), 2026-10-05
+Local dry run with the strongest model: it read the convention document, found that the no school weekday ran
+most of the Summer rating, reproduced 607 from the August feed, certified 621 (+14), certified Finance's +321
+and rejected the planners' +149 and Finance's 521, and matched the golden on every supplementary ask. So the top
+model clears version 3 as well. Version 3 is still the right submission: it keeps every version 2 trap, adds the
+basis trap that both platform rollouts fell for in versions 1 and 2 by habit, requires reading a convention
+document rather than the prompt, and doubles the ranked table to 59 routes. The platform's own rollouts, not this
+local run, decide the score; version 2 came back at 39 percent with the headline reached.

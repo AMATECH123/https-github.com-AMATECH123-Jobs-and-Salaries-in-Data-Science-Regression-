@@ -1,9 +1,21 @@
-# MBTA Fall 2026 weekday bus requirement: task design (version 2)
+# MBTA Fall 2026 weekday bus requirement: task design (version 3)
 
 Domain: Transportation & Mobility
 Objective: Data Extraction & Conformation (ETL / Pipeline Build)
 Prompt shape: Profile across many periods (hourly buses in service), carried by a conformed trip to block register
 Status: built. Every figure reproduces from inputs/ with golden/build_golden.py.
+
+## Version 3 change
+Version 2 named the certification day in the prompt ("typical school day weekday"), and both platform rollouts
+reached 621. Version 3 moves the convention into a scenario document in the package and changes the
+certification day to the weekday schedule in effect for most of the rating. The Summer rating ran a no school
+weekday on 34 of its 48 Monday to Thursday dates and a school day weekday on 10, so the Summer certification is
+607 buses and 12,721 trips, not 615 and 12,893. Finance's +321 is therefore right and certified; the planners'
++149 is the like for like school day comparison every model reached for in versions 1 and 2, and it is rejected.
+The June feed (20260610.zip) was added because the August feed's calendar starts on 12 August and hides how long
+the no school schedule ran. Forced answer: 621 buses at 07:51, +14 on 607 at 07:59; +321 trips; Route 65 +45;
+Route 465 +32; 59 routes changed; pull outs peak in the 05:00 hour (260 and 266) and grow most in the 14:00 hour
+(+34); Route 65 buses 22 to 33; flip point 14.
 
 ## Why version 2
 Version 1 certified the net trip change (+149) and the driving route. Two platform rollouts and one local dry run
