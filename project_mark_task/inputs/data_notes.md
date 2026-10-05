@@ -12,5 +12,6 @@ Exports pulled on 2 Oct 2025 covering 1 Oct 2024 - 30 Sep 2025.
 - `workflow_catalog.xlsx` - workflows (platform column last refreshed March 2025) and per-version module/step counts.
 - `client_master.xlsx` - client list from the CRM. Internal workflows use client_id INTERNAL, which is not in this list.
 - `connector_support.csv`, `fx_rates.csv`, `incident_log.csv`, `change_log.txt` - as named.
+- Over the year a few zaps and scenarios were rebuilt or re-created by hand, so the crosswalk may not have every newest id.
 - PDFs and the costing standard are as received / as published by Finance.
 - Figures in this folder are synthetic.

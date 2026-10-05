@@ -24,9 +24,9 @@ txt = (f"How the numbers were built\n"
        f"- Zapier plan: {r['zapier']['plan_allowance']:,} tasks/month (annual billing, 20% off); Make plan: {r['make']['plan_allowance']:,} ops/month "
        f"(+14% from Jan 2026); n8n plan: {r['n8n']['plan_allowance']:,} executions/month (peak month {r['n8n']['peak_month_units']:,.0f}).\n"
        f"- Migration: {r['zapier']['migration_workflows']} workflows to Zapier ({r['zapier']['migration_hours']:,.0f} h), "
-       f"{r['make']['migration_workflows']} to Make ({r['make']['migration_hours']:,.0f} h), {r['n8n']['migration_workflows']} to n8n ({r['n8n']['migration_hours']:,.0f} h) at EUR 36/h.\n"
+       f"{r['make']['migration_workflows']} to Make ({r['make']['migration_hours']:,.0f} h), {r['n8n']['migration_workflows']} to n8n ({r['n8n']['migration_hours']:,.0f} h) at EUR 30/h.\n"
        f"- USD converted at EURUSD {gt['eurusd']}.\n"
-       f"Zapier is the most expensive subscription but the cheapest platform to move into at this volume. The margin over n8n is about 8%.")
+       f"Zapier is the most expensive subscription but the cheapest platform to move into at this volume. The margin over n8n (runner-up) is about 9%; year-two economics may favour n8n.")
 import textwrap
 y = 0.46
 for para in txt.split("\n"):

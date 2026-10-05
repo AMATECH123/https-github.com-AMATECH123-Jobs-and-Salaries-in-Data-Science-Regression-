@@ -24,20 +24,36 @@
   "W116"
  ],
  "migrated_runs": 64608,
- "incident_zapier_2025-02-11_runs_all_zapier_source": 821,
+ "incident_zapier_2025-02-11_runs_zapier_source": 821,
  "incident_make_2024-12-17_runs_make_source": 1133,
- "feb2025_total": 41274,
- "churned_client_runs": 64764,
- "churned_workflows": 19,
- "active_workflows": 101,
- "current_platform_counts_all_workflows": {
-  "make": 49,
-  "zapier": 46,
-  "n8n": 25
+ "monthly_totals": {
+  "2024-10": 53238,
+  "2024-11": 58120,
+  "2024-12": 66159,
+  "2025-01": 47626,
+  "2025-02": 41274,
+  "2025-03": 48548,
+  "2025-04": 49814,
+  "2025-05": 52763,
+  "2025-06": 45347,
+  "2025-07": 43033,
+  "2025-08": 39799,
+  "2025-09": 47858
  },
- "catalog_platform_counts_stale": {
-  "zapier": 57,
-  "make": 44,
-  "n8n": 19
- }
+ "runs_on_recreated_ids_not_in_crosswalk": 21057,
+ "recreated_workflows": [
+  "W019",
+  "W021",
+  "W022",
+  "W052",
+  "W063",
+  "W065",
+  "W097",
+  "W100",
+  "W101",
+  "W111",
+  "W113"
+ ],
+ "churned_workflows": 19,
+ "active_workflows": 101
 }

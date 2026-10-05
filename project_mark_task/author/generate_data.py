@@ -68,6 +68,12 @@ wf_by_id = {w["workflow_id"]: w for w in workflows}
 for w in workflows:
     cname = "Internal" if w["client_id"] == "INTERNAL" else cl_by_id[w["client_id"]]["client_name"]
     w["name"] = f"{cname} | {w['family']}"
+_seen = {}
+for w in workflows:
+    k = _seen.get(w["name"], 0); _seen[w["name"]] = k + 1
+    if k:
+        w["name"] = f"{w['name']} - {['EU', 'Phase 2', 'Backup', 'Retail', 'Internal', 'Legacy', 'Pilot'][(k - 1) % 7]}{'' if k < 8 else ' ' + str(k)}"
+assert len({w["name"] for w in workflows}) == len(workflows)
 
 # ------------------------------------------------------- platform timelines
 # initial platform; then pick migrations
@@ -182,6 +188,29 @@ def platform_spans(wid):
 # choose incident scopes
 zap_listed = set(rnd.sample([w for w in ids if init_plat[w] == "zapier" and w not in mig_by_wid], 14))
 make_listed = set(rnd.sample([w for w in ids if init_plat[w] == "make" and w not in mig_by_wid], 12))
+# scenarios/zaps that were re-created (new id, NOT in crosswalk) or rebuilt (new id in crosswalk, old id keeps firing 10 days)
+recreated, rebuilt = {}, {}
+_cz = rnd.sample([w for w in ids if init_plat[w] == "zapier" and w not in mig_by_wid], 12)
+_cm = rnd.sample([w for w in ids if init_plat[w] == "make" and w not in mig_by_wid], 8)
+for plat_, lst in (("zapier", _cz), ("make", _cm)):
+    half = len(lst) // 2 + (1 if plat_ == "zapier" else 0)
+    for k, wid_ in enumerate(lst):
+        sw = dt.date(2025, 1, 15) + dt.timedelta(days=rnd.randint(0, 190))
+        new_id = zid() if plat_ == "zapier" else mid()
+        (recreated if k < half else rebuilt)[wid_] = (plat_, sw, new_id)
+
+def ids_for(wid, plat, d):
+    base_id = native[(wid, plat)]
+    for tbl in (recreated, rebuilt):
+        if wid in tbl and tbl[wid][0] == plat:
+            _, sw, new_id = tbl[wid]
+            if d < sw:
+                return [base_id]
+            if tbl is rebuilt and d < sw + dt.timedelta(days=10):
+                return [base_id, new_id]   # old build still firing (zombie duplicate)
+            return [new_id]
+    return [base_id]
+
 def incident_rate(platform, wid, d):
     for inc in incidents:
         if inc["platform"] != platform or inc["rate"] is None:
@@ -262,15 +291,16 @@ for w in workflows:
                 repl = int(rng.binomial(err, 0.6)) if err else 0
                 test = int(rng.integers(1, 4)) if rnd.random() < 0.05 else 0
                 tasks = zs * (rep + repl + test) + err * max(1, zs // 2)
-                for (bid, exp_at, b0, b1) in batches_for(d):
-                    # earlier batches miss late-arriving runs
-                    val = rep
-                    if bid != zap_batches[-1][0] and len(batches_for(d)) > 1 and bid == batches_for(d)[0][0]:
-                        val = int(math.floor(rep * rnd.uniform(0.94, 0.985)))
-                    zap_rows.append(dict(export_batch=bid, exported_at=exp_at.isoformat(), zap_id=native[(wid, "zapier")],
-                                         zap_title=w["name"] if rnd.random() > 0.15 else w["name"].upper(),
-                                         usage_date=d.isoformat(), runs_success=val, runs_errored=err, runs_replayed=repl,
-                                         test_runs=test, tasks_billed=tasks))
+                for nid_ in ids_for(wid, "zapier", d):
+                    for (bid, exp_at, b0, b1) in batches_for(d):
+                        # earlier batches miss late-arriving runs
+                        val = rep
+                        if bid != zap_batches[-1][0] and len(batches_for(d)) > 1 and bid == batches_for(d)[0][0]:
+                            val = int(math.floor(rep * rnd.uniform(0.94, 0.985)))
+                        zap_rows.append(dict(export_batch=bid, exported_at=exp_at.isoformat(), zap_id=nid_,
+                                             zap_title=w["name"] if rnd.random() > 0.15 else w["name"].upper(),
+                                             usage_date=d.isoformat(), runs_success=val, runs_errored=err, runs_replayed=repl,
+                                             test_runs=test, tasks_billed=tasks))
             elif plat == "make":
                 rate = incident_rate("make", wid, d)
                 rep = int(round(b * (1 + rate)))
@@ -279,9 +309,10 @@ for w in workflows:
                 manual = int(rng.integers(1, 5)) if rnd.random() < 0.06 else 0
                 total = rep + fail + retry + manual
                 ops = mm * (rep + retry + manual) + fail * max(1, mm // 2)
-                make_rows.append(dict(sid=native[(wid, "make")], sname=w["name"] + (" " if rnd.random() < .1 else ""),
-                                      d=d, total=total, fail=fail, retry=retry, manual=manual, ops=ops,
-                                      mb=round(float(rng.uniform(0.2, 9.0)) * (1 + b / 40), 1)))
+                for nid_ in ids_for(wid, "make", d):
+                    make_rows.append(dict(sid=nid_, sname=w["name"] + (" " if rnd.random() < .1 else ""),
+                                          d=d, total=total, fail=fail, retry=retry, manual=manual, ops=ops,
+                                          mb=round(float(rng.uniform(0.2, 9.0)) * (1 + b / 40), 1)))
             else:  # n8n event level
                 events = b
                 # events are on this UTC day (we store UTC instant)
@@ -401,8 +432,19 @@ for w in workflows:
         xrows.append(dict(platform=m["to"], native_id=native[(wid, m["to"])], native_name=w["name"], workflow_id=wid,
                           valid_from=m["parallel_from"].isoformat(), valid_to=""))
     else:
-        xrows.append(dict(platform=init_plat[wid], native_id=native[(wid, init_plat[wid])], native_name=w["name"],
-                          workflow_id=wid, valid_from="", valid_to=""))
+        if wid in recreated:
+            p_, sw, _n = recreated[wid]
+            xrows.append(dict(platform=p_, native_id=native[(wid, p_)], native_name=w["name"], workflow_id=wid,
+                              valid_from="", valid_to=(sw - dt.timedelta(days=1)).isoformat()))
+        elif wid in rebuilt:
+            p_, sw, nn_ = rebuilt[wid]
+            xrows.append(dict(platform=p_, native_id=native[(wid, p_)], native_name=w["name"], workflow_id=wid,
+                              valid_from="", valid_to=(sw - dt.timedelta(days=1)).isoformat()))
+            xrows.append(dict(platform=p_, native_id=nn_, native_name=w["name"], workflow_id=wid,
+                              valid_from=sw.isoformat(), valid_to=""))
+        else:
+            xrows.append(dict(platform=init_plat[wid], native_id=native[(wid, init_plat[wid])], native_name=w["name"],
+                              workflow_id=wid, valid_from="", valid_to=""))
 for p, lst in sandbox.items():
     for s in lst:
         xrows.append(dict(platform=p, native_id=s, native_name="sandbox / scratch", workflow_id="", valid_from="", valid_to=""))
@@ -437,7 +479,8 @@ inc_rows = []
 for i in incidents:
     inc_rows.append(dict(incident_id=i["incident_id"], platform=i["platform"], start_date_utc=i["start"].isoformat(),
                          end_date_utc=i["end"].isoformat(), scope=i["scope"],
-                         scoped_native_ids=(";".join(native[(w, i["platform"])] for w in sorted(zap_listed if i["platform"] == "zapier" else make_listed))
+                         scoped_native_ids=(";".join(x for w in sorted(zap_listed if i["platform"] == "zapier" else make_listed)
+                                                    for x in [native[(w, i["platform"])]] + [t_[w][2] for t_ in (recreated, rebuilt) if w in t_ and t_[w][0] == i["platform"]])
                                             if i["scope"] == "LISTED" else ""),
                          duplicate_delivery_rate=("" if i["rate"] is None else i["rate"]), note=i["note"]))
 pd.DataFrame(inc_rows).to_csv(os.path.join(OUT, "incident_log.csv"), index=False)

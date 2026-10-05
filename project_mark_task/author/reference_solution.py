@@ -10,7 +10,22 @@ P = lambda f: os.path.join(IN, f)
 
 # --- crosswalk
 xw = pd.read_csv(P("id_crosswalk.csv"), dtype=str).fillna("")
-xmap = {(r.platform, r.native_id): r.workflow_id for r in xw.itertuples()}
+xwin = {}
+for r in xw.itertuples():
+    xwin.setdefault((r.platform, r.native_id), []).append(
+        (r.workflow_id, dt.date.fromisoformat(r.valid_from) if r.valid_from else dt.date.min,
+         dt.date.fromisoformat(r.valid_to) if r.valid_to else dt.date.max))
+_wf_names = pd.read_excel(P("workflow_catalog.xlsx"), sheet_name="workflows")
+name2wid = {str(n).strip().casefold(): w for n, w in zip(_wf_names.workflow_name, _wf_names.workflow_id)}
+def map_wid(platform, native, d, title):
+    ent = xwin.get((platform, native))
+    if ent is None:   # id not in crosswalk: recognise re-created items by exact name
+        return name2wid.get(str(title).strip().casefold())
+    for wid, a, b in ent:
+        if a <= d <= b:
+            return wid or None   # blank = scratch item
+    return None                  # outside every valid window (stale/zombie id)
+xmap = {k: v[0][0] for k, v in xwin.items()}  # naive id-only map (used by variant scripts)
 
 # --- workflows, versions, clients
 wf = pd.read_excel(P("workflow_catalog.xlsx"), sheet_name="workflows")
@@ -58,7 +73,8 @@ z["date"] = pd.to_datetime(z["usage_date"]).dt.date
 z["rate"] = [inc_rate("zapier", n, d) for n, d in zip(z.zap_id, z.date)]
 z["runs"] = np.rint(z.runs_success / (1 + z.rate)).astype(int)
 z["native"] = z.zap_id; z["platform"] = "zapier"
-frames.append(z[["platform", "native", "date", "runs"]])
+z["workflow_id"] = [map_wid("zapier", n_, d_, t_) for n_, d_, t_ in zip(z.native, z.date, z.zap_title)]
+frames.append(z[["platform", "native", "date", "runs", "workflow_id"]])
 # --- Make
 m = pd.read_csv(P("make_operations_daily.csv"), sep=";", encoding="utf-8-sig", dtype=str)
 m = m[m["Scenario name"] != "TOTAL"].copy()
@@ -68,7 +84,8 @@ m["rep"] = num(m["Executions"]) - num(m["Failed"]) - num(m["Retries"]) - num(m["
 m["rate"] = [inc_rate("make", n, d) for n, d in zip(m["Scenario ID"], m.date)]
 m["runs"] = np.rint(m.rep / (1 + m.rate)).astype(int)
 m["native"] = m["Scenario ID"]; m["platform"] = "make"
-frames.append(m[["platform", "native", "date", "runs"]])
+m["workflow_id"] = [map_wid("make", n_, d_, t_) for n_, d_, t_ in zip(m.native, m.date, m["Scenario name"])]
+frames.append(m[["platform", "native", "date", "runs", "workflow_id"]])
 # --- n8n
 j = json.load(open(P("n8n_executions.json")))["executions"]
 n = pd.DataFrame(j)
@@ -78,10 +95,10 @@ n = n.drop_duplicates("k")
 n["date"] = pd.to_datetime(n.startedAt, utc=True).dt.date
 g = n.groupby(["workflowId", "date"]).size().reset_index(name="runs").rename(columns={"workflowId": "native"})
 g["platform"] = "n8n"
-frames.append(g[["platform", "native", "date", "runs"]])
+g["workflow_id"] = [map_wid("n8n", n_, d_, "") for n_, d_ in zip(g.native, g.date)]
+frames.append(g[["platform", "native", "date", "runs", "workflow_id"]])
 
 allr = pd.concat(frames, ignore_index=True)
-allr["workflow_id"] = [xmap.get((p, nv), None) for p, nv in zip(allr.platform, allr.native)]
 allr = allr[allr.workflow_id.notna() & (allr.workflow_id != "")]
 # parallel-run handling
 keep = np.ones(len(allr), bool)
@@ -92,7 +109,9 @@ for wid, mg in mig.items():
     keep &= ~(mirror | stale).values
 allr = allr[keep]
 allr = allr[allr.runs > 0]
-assert not allr.duplicated(["workflow_id", "date"]).any(), "workflow-day collision"
+dups = allr[allr.duplicated(["workflow_id","date"], keep=False)]
+if len(dups): print(dups.sort_values(["workflow_id","date"]).head(12).to_string()); print(dups.workflow_id.nunique(), "wfs")
+assert not len(dups), "workflow-day collision"
 allr = allr.merge(wf[["workflow_id", "client_id"]], on="workflow_id", how="left")
 allr["billing_month"] = pd.to_datetime(allr.date).dt.strftime("%Y-%m")
 conf = allr.rename(columns={"platform": "source_platform", "runs": "business_runs"})[

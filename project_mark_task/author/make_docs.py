@@ -61,56 +61,34 @@ st = d.styles["Normal"]; st.font.name = "Calibri"; st.font.size = Pt(10.5)
 d.add_heading("Usage and Capacity Costing Standard (Finance, v3)", 1)
 d.add_paragraph("Applies to any comparison of automation platform cost at Northgate. Written after the 2024 renewal, when three exports "
                 "disagreed with each other and the decision was made on the wrong totals.")
-d.add_heading("1. What counts as one business run", 2)
-for t in [
-    "A business run is one first-attempt, successful, production execution of a workflow for one trigger event.",
-    "Not counted: failed executions, retry attempts and replays of earlier failures, manual or editor test runs, and runs from sandbox "
-    "or scratch workflows (no workflow_id in the crosswalk).",
-    "Internal Northgate workflows (client_id INTERNAL) are real consumption and are counted.",
-    "Where an export lists the same day for the same workflow more than once because of overlapping export batches, the batch with the "
-    "latest exported_at is the one to use (earlier batches are missing late-arriving runs).",
-    "During a parallel run (see the change log), the old build is the system of record. Count the old platform's runs from the "
-    "'parallel run started' date up to the day before cutover; the new platform's runs in that window are mirrors and are not counted. "
-    "From the cutover date on, count the new platform only.",
-    "Incident days: where the incident log gives a duplicate_delivery_rate, the reported successful runs on affected workflows and days "
-    "include duplicate deliveries. Business runs = reported / (1 + rate), rounded to the nearest whole run per workflow per day. "
-    "For n8n, duplicates are removed by eventId (one run per workflow and eventId).",
-    "Days are UTC calendar days. Make and Zapier daily exports already carry calendar dates and are used as given; n8n timestamps carry "
-    "a local UTC offset and must be converted to UTC before taking the date.",
-]:
-    d.add_paragraph(t, style="List Bullet")
-d.add_heading("2. Converting runs into billable units on a target platform", 2)
-for t in [
-    "Make bills operations: runs x make_modules_per_run. Zapier bills tasks: runs x zapier_billable_steps. n8n bills executions: 1 per run.",
-    "The per-run unit counts come from the workflow catalog 'versions' sheet. Use the latest version with status 'deployed' and an "
-    "effective_from on or before 30 Sep 2025. Draft versions are ignored.",
-]:
-    d.add_paragraph(t, style="List Bullet")
+d.add_heading("1. Unit of measure: the business run", 2)
+d.add_paragraph("Platform invoices are not comparable because each vendor counts something different (operations, tasks, executions). "
+                "Compare platforms on business runs. A business run is one first-attempt, successful, production execution of a workflow "
+                "for one trigger event. Failures, retries, replays, manual or test runs and scratch workflows are not business runs. "
+                "Internal Northgate workflows are real consumption and count. Every event is counted once, however many systems or "
+                "exports happened to record it.")
+d.add_heading("2. Billable units on a target platform", 2)
+d.add_paragraph("Make bills operations (modules executed per run), Zapier bills tasks (billable steps per run), n8n bills executions "
+                "(one per run). Per-run counts for the build that is currently deployed are in the workflow catalog.")
 d.add_heading("3. Forward 12-month cost", 2)
 for t in [
-    "The forward year is Nov 2025 - Oct 2026. Each forward month repeats the volume of the same calendar month in the trailing "
-    "window Oct 2024 - Sep 2025 (Nov 2025 uses Nov 2024, ..., Oct 2026 uses Oct 2024).",
-    "Clients that have churned (status churned/inactive, or an end date on or before 30 Sep 2025) drop out of the forward volume "
-    "and out of any migration effort. Internal workflows stay in.",
-    "Subscription: choose the single plan per platform that gives the lowest 12-month cost (plan fees plus overage, with the "
-    "contract adjustments). For n8n the plan must also cover the busiest forward month.",
-    "Convert USD to EUR with the latest published EURUSD rate for 2025-09 in fx_rates.csv (EUR = USD / rate). Ignore the USDEUR rows.",
-    "Do not round monthly figures except where the contract says overage is billed in rounded-up blocks.",
+    "The forward year is Nov 2025 - Oct 2026 and repeats, month for month, the trailing window Oct 2024 - Sep 2025, for clients we still have.",
+    "Subscription: one plan per platform for the year, chosen to minimise plan fees plus overage under the contract terms.",
+    "Northgate budgets in EUR. Use the most recent published rate for the latest month in fx_rates.csv.",
 ]:
     d.add_paragraph(t, style="List Bullet")
 d.add_heading("4. One-off migration effort", 2)
-d.add_paragraph("To standardise on a platform, every in-scope workflow that is not already running on it must be rebuilt. A workflow's current "
-                "platform is where it runs after any cutover in the change log (the catalog's platform column is a snapshot and can be out of date). "
+d.add_paragraph("To standardise on a platform, every in-scope workflow that is not already running on it must be rebuilt. "
                 f"Labour is costed at EUR {RATE_EUR_PER_HOUR} per hour.")
 t = d.add_table(rows=1, cols=3); t.style = "Light Grid Accent 1"
 t.rows[0].cells[0].text = "Target platform"; t.rows[0].cells[1].text = "Base hours per workflow"; t.rows[0].cells[2].text = "Extra hours per node"
 for p, lab in [("zapier", "Zapier"), ("make", "Make"), ("n8n", "n8n")]:
     r = t.add_row().cells; r[0].text = lab; r[1].text = f"{HOURS[p][0]:.1f}"; r[2].text = f"{HOURS[p][1]:.2f}"
-d.add_paragraph(f"Nodes come from the catalog 'workflows' sheet. If a workflow needs a connector that the target platform does not support "
+d.add_paragraph(f"Nodes come from the workflow catalog. If a workflow needs a connector that the target platform does not support "
                 f"(connector_support.csv), add {CUSTOM_BUILD_HOURS} hours of custom build per unsupported connector.")
 d.add_heading("5. Decision rule", 2)
 d.add_paragraph("Compare platforms on total 12-month cost in EUR = subscription (fees + overage) + one-off migration labour. "
-                "Recommend the lowest. Show the components.")
+                "Recommend the lowest and show the components.")
 d.save(os.path.join(OUT, "costing_policy_v3.docx"))
 
 # ---------------- data notes
@@ -128,6 +106,7 @@ Exports pulled on 2 Oct 2025 covering 1 Oct 2024 - 30 Sep 2025.
 - `workflow_catalog.xlsx` - workflows (platform column last refreshed March 2025) and per-version module/step counts.
 - `client_master.xlsx` - client list from the CRM. Internal workflows use client_id INTERNAL, which is not in this list.
 - `connector_support.csv`, `fx_rates.csv`, `incident_log.csv`, `change_log.txt` - as named.
+- Over the year a few zaps and scenarios were rebuilt or re-created by hand, so the crosswalk may not have every newest id.
 - PDFs and the costing standard are as received / as published by Finance.
 - Figures in this folder are synthetic.
 """)

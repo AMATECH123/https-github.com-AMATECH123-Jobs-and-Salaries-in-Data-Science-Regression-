@@ -8,7 +8,7 @@ N8N_TIERS = [  # executions/month, EUR/month (annual prepay price)
 MAKE_INCREASE = 0.14          # from 2026-01-01
 ZAP_ANNUAL_DISCOUNT = 0.20
 ZAP_OVERAGE_MULT = 1.25
-RATE_EUR_PER_HOUR = 36
+RATE_EUR_PER_HOUR = 30
 HOURS = {  # base, per node
     "zapier": (0.6, 0.12), "make": (2.0, 0.40), "n8n": (3.0, 0.55)}
-CUSTOM_BUILD_HOURS = 8
+CUSTOM_BUILD_HOURS = 4
