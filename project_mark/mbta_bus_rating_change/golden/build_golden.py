@@ -1,9 +1,8 @@
 """Builds the three golden deliverables from the shipped input package (version 3).
 
 Summer day: Wednesday 19 August 2026 from 20260812.zip (the feed the archive index assigns to that date),
-cross checked on 22 July in 20260610.zip and 24 August in 20260821.zip.
-Fall day: Wednesday 30 September 2026 from MBTA_GTFS.zip (the published feed, identical to archive 20260925),
-cross checked on 23 September in 20260821.zip.
+cross checked on 22 July in 20260610.zip.
+Fall day: Wednesday 30 September 2026 from MBTA_GTFS.zip (the published feed, identical to archive 20260925).
 """
 import csv, io, zipfile, collections, datetime as dt, os
 
@@ -155,19 +154,17 @@ def weekday_tally(d, start, end):
 def main():
     june = load(os.path.join(INPUTS, '20260610.zip'))
     aug = load(os.path.join(INPUTS, '20260812.zip'))
-    f0821 = load(os.path.join(INPUTS, '20260821.zip'))
     cur = load(os.path.join(INPUTS, 'MBTA_GTFS.zip'))
     routes = cur['routes']
 
     # ---- which weekday schedule ran most of each rating ----
     s_tally = weekday_tally(june, dt.date(2026, 6, 15), dt.date(2026, 9, 3))
-    f_tally = weekday_tally(f0821, dt.date(2026, 9, 8), dt.date(2026, 9, 24)) + \
-        weekday_tally(cur, dt.date(2026, 9, 28), dt.date(2026, 12, 10))
+    f_tally = weekday_tally(cur, dt.date(2026, 9, 28), dt.date(2026, 12, 10))
 
     # ---- trip registers ----
     summer, fall = register(aug, SUMMER_DAY), register(cur, FALL_DAY)
-    assert register(june, dt.date(2026, 7, 22)) == summer and register(f0821, dt.date(2026, 8, 24)) == summer
-    assert register(f0821, dt.date(2026, 9, 23)) == fall and register(cur, dt.date(2026, 10, 7)) == fall
+    assert register(june, dt.date(2026, 7, 22)) == summer
+    assert register(cur, dt.date(2026, 10, 7)) == fall
     S, F = sum(summer.values()), sum(fall.values())
     assert s_tally.most_common(1)[0][0] == S and f_tally.most_common(1)[0][0] == F
     net = F - S
@@ -189,11 +186,11 @@ def main():
     s_peak, s_when = peak(s_prof)
     f_peak, f_when = peak(f_prof)
     assert s_peak == CERTIFIED_SUMMER_PEAK, s_peak
-    for feed, day in [(june, dt.date(2026, 7, 22)), (f0821, dt.date(2026, 8, 24)), (aug, dt.date(2026, 8, 13))]:
+    for feed, day in [(june, dt.date(2026, 7, 22)), (aug, dt.date(2026, 8, 13))]:
         _, b, _, _, _ = day_bounds(feed, day)
         assert peak(minute_profile(b.values())) == (s_peak, s_when), day
         assert starts_ends(b) == starts_ends(s_blocks), day
-    for feed, day in [(f0821, dt.date(2026, 9, 23)), (cur, dt.date(2026, 10, 7)), (cur, dt.date(2026, 11, 4))]:
+    for feed, day in [(cur, dt.date(2026, 10, 7)), (cur, dt.date(2026, 11, 4))]:
         _, b, _, _, _ = day_bounds(feed, day)
         assert peak(minute_profile(b.values())) == (f_peak, f_when), day
         assert starts_ends(b) == starts_ends(f_blocks), day
@@ -206,10 +203,10 @@ def main():
     s_attr, s_lay = peak_attribution(s_trips, s_blocks, s_tr, s_when)
     f_attr, f_lay = peak_attribution(f_trips, f_blocks, f_tr, f_when)
     assert sum(s_attr.values()) == s_peak and sum(f_attr.values()) == f_peak
-    for feed, day in [(june, dt.date(2026, 7, 22)), (f0821, dt.date(2026, 8, 24))]:
+    for feed, day in [(june, dt.date(2026, 7, 22))]:
         t_, b_, _, tr_, _ = day_bounds(feed, day)
         assert peak_attribution(t_, b_, tr_, s_when)[0] == s_attr, day
-    for feed, day in [(f0821, dt.date(2026, 9, 23)), (cur, dt.date(2026, 10, 7))]:
+    for feed, day in [(cur, dt.date(2026, 10, 7))]:
         t_, b_, _, tr_, _ = day_bounds(feed, day)
         assert peak_attribution(t_, b_, tr_, f_when)[0] == f_attr, day
     peak_routes = sorted(set(s_attr) | set(f_attr), key=lambda r: int(routes[r]['route_sort_order']))
@@ -311,7 +308,7 @@ def main():
         Paragraph(f"<b>Finance's {FINANCE_TRIPS:+d} weekday trips: certified.</b> It compares the weekday schedule that ran "
                   f"for most of the Summer rating ({S:,} trips, the no school weekday, {s_tally[S]} of the rating's "
                   f"{s_days} Monday to Thursday dates) with the weekday schedule that runs for most of the Fall rating "
-                  f"({F:,} trips, {f_tally[F]} of {f_days} dates). That is the convention's certification day for each rating, "
+                  f"({F:,} trips, {f_tally[F]} of {f_days} dates from 28 September). That is the convention's certification day for each rating, "
                   f"and the figure stands.", body),
         Paragraph(f"<b>The planners' {PLANNING_TRIPS:+d}: not certified.</b> It replaces the Summer certification day with "
                   f"the Summer rating's school day weekday ({school_summer:,} trips, {s_tally[school_summer]} of {s_days} "

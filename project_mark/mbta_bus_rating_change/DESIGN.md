@@ -76,4 +76,4 @@ has a block_id (13,042 of 13,042 Fall bus trips).
   figures were built; hour with the largest gain; ranked route table (28 rows); Route 65 buses, span and
   extension; flip point; closing.
 
-## Input package (inputs/, zipped as inputs.zip, 82 MB) is unchanged from version 1.
+## Input package (inputs/, zipped as inputs.zip, 79 MB): four feeds became three in version 4 (the 21 August cross check feed was dropped so the ZIP fits a single GitHub download); the June feed, the 12 August feed, the published Fall feed, the archive index, the references, the licences, the convention document and the provenance note remain.
