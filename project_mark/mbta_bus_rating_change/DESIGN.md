@@ -1,9 +1,19 @@
-# MBTA Fall 2026 weekday bus requirement: task design (version 3)
+# MBTA Fall 2026 weekday bus requirement: task design (version 4)
 
 Domain: Transportation & Mobility
 Objective: Data Extraction & Conformation (ETL / Pipeline Build)
 Prompt shape: Profile across many periods (hourly buses in service), carried by a conformed trip to block register
 Status: built. Every figure reproduces from inputs/ with golden/build_golden.py.
+
+## Version 4 change
+Version 3 scored 51 on the platform. Both models now read the convention document and use the control, so the
+easy cells (pull outs per hour, a 59 row trip table) handed them points. Version 4 replaces the register with
+the peak allocation: for every bus route, the buses it has on the road at the exact peak minute under each
+rating, 144 routes adding up to 607 and 621. At the Fall peak minute 118 of 621 buses are between trips and
+belong to the route of the trip they just completed; the peak is reached in five minutes and the convention
+fixes the first; Route 111 leads with 18 buses, two ahead of Route 66, while the trip driver Route 65 has 10.
+The trip table shrinks to the ten largest changes and the hourly profile is gone. The convention document gained
+rules 5 and 6 (first peak minute, attribution). Everything else from version 3 stands.
 
 ## Version 3 change
 Version 2 named the certification day in the prompt ("typical school day weekday"), and both platform rollouts

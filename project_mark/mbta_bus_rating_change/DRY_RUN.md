@@ -31,3 +31,12 @@ model clears version 3 as well. Version 3 is still the right submission: it keep
 basis trap that both platform rollouts fell for in versions 1 and 2 by habit, requires reading a convention
 document rather than the prompt, and doubles the ranked table to 59 routes. The platform's own rollouts, not this
 local run, decide the score; version 2 came back at 39 percent with the headline reached.
+
+## Version 4 (peak allocation by route), 2026-10-05
+Platform result for version 3: 51 percent, above the bar. Local dry run of version 4 with the strongest model:
+solved in full, including the attribution (Route 111 at 18, 118 buses between trips, allocation summing to 607
+and 621). The top model is not the test; the platform's models scored 39 on version 2 and 51 on version 3, and
+version 4 removes the easy cells they scored on while adding a register that fails wholesale under any shortcut
+(buses on a trip only, next trip attribution, a later peak minute, inclusive arrival minute). Note for
+determinism: reproducing 607 requires counting a bus up to but not including its last arrival minute (inclusive
+gives 608), so the 607 control in the prompt is load bearing and must stay.
