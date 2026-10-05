@@ -1,5 +1,5 @@
 {
- "book_pretax": 9480222.44,
+ "book_pretax": 9449775.34,
  "adjustments": {
   "meals_50pct": 105935.13,
   "entertainment": 86643.81,
@@ -10,13 +10,13 @@
   "transit_passes": 213600.0,
   "bad_debts": 82866.53,
   "accruals": 149846.01,
-  "depreciation": -2546590.82,
+  "depreciation": -2516143.71,
   "disposals": 194898.01,
   "sec174": 6242443.95
  },
- "ti_before_163j": 14200000.07,
+ "ti_before_163j": 14200000.08,
  "sec163j": {
-  "ati": 21488000.07,
+  "ati": 21488000.08,
   "limit": 6558400.02,
   "deductible": 6558400.02,
   "disallowed_added_back": 841599.98,
@@ -30,13 +30,13 @@
  "payments": 185000.0,
  "balance_due": 446747.2,
  "depreciation": {
-  "s179_limit": 860000,
-  "s179_taken": 860000.0,
+  "s179_limit": 812453.9100000006,
+  "s179_taken": 812453.9100000006,
   "mid_quarter": true,
-  "q4_share": 0.4416,
-  "new_assets_total": 2822477.6,
+  "q4_share": 0.4316,
+  "new_assets_total": 2839576.58,
   "existing": 1690664.54,
-  "de_minimis": 47546.09
+  "de_minimis": 0.0
  },
  "re": {
   "dom_2024": 10136930.73,

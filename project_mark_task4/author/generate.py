@@ -65,7 +65,7 @@ for i in range(16):
                            round(rnd.uniform(1800, 4900), 2), rdate(dt.date(2024, 1, 15), dt.date(2024, 12, 15)), "std", small=True))
 ELECTION = [("CNC machining center (Haas VF-10)", 1180000), ("Fiber laser cutting system", 760000)]      # CFO memo order of preference
 def build_adds():
-    return [dict(id=a["asset_id"], cls=a["tax_class"], cost=a["cost"], date=a["in_service"], kind=a["kind"], _name=a["description"]) for a in assets if not a["prior"] and not a.get("small")]
+    return [dict(id=a["asset_id"], cls=a["tax_class"], cost=a["cost"], date=a["in_service"], kind=a["kind"], _name=a["description"]) for a in assets if not a["prior"]]   # book policy capitalises >= 1,800, so no item qualifies for the de minimis safe harbor
 adds = build_adds(); id_by_name = {x["_name"]: x["id"] for x in adds}; order = [(id_by_name[n], amt) for n, amt in ELECTION]
 per, summ = T.depreciation_additions(adds, order)
 gross_q4 = sum(x["cost"] for x in adds if x["cls"] != "39" and T.quarter(x["date"]) == 4) / sum(x["cost"] for x in adds if x["cls"] != "39")
@@ -164,11 +164,11 @@ for i in range(40):
     a = float(rng.uniform(450, 1500)); gl(rdate(Y0, Y1), "6400", f"Client entertainment - {rnd.choice(['Bulls','Bears','Cubs','Blackhawks'])} tickets - {rnd.choice(CLIENTS)}", "Ticketmaster", a); tr["ent0"] += a
 for q, a in enumerate((11800, 12400, 11200, 12600)): gl(dt.date(2024, 3 * q + 3, 15), "6400", "Suite rental - client entertainment", "United Center Suites", a); tr["ent0"] += a
 # client gifts ($25 per recipient limit) and employee transit passes (nondeductible)
-RECIP = [f"{rnd.choice(FIRST)} {rnd.choice(LAST)}" for _ in range(70)]
+RECIP = [(f"{rnd.choice(FIRST)} {rnd.choice(LAST)}", rnd.choice(CLIENTS)) for _ in range(70)]   # each recipient belongs to one client company
 gift_by = {}
 for i in range(190):
-    r = rnd.choice(RECIP); a = round(float(rng.choice([45, 60, 75, 90, 120, 185, 240])), 2); gift_by[r] = gift_by.get(r, 0.0) + a
-    gl(rdate(Y0, Y1), "6420", f"Client gift - {r} ({rnd.choice(CLIENTS)}) - {rnd.choice(['gift basket','wine','gift card','steak set'])}", "Gift vendor", a)
+    r, co = rnd.choice(RECIP); a = round(float(rng.choice([45, 60, 75, 90, 120, 185, 240])), 2); gift_by[r] = gift_by.get(r, 0.0) + a
+    gl(rdate(Y0, Y1), "6420", f"Client gift - {r} ({co}) - {rnd.choice(['gift basket','wine','gift card','steak set'])}", "Gift vendor", a)
 tr["gift_excess"] = sum(max(0.0, v - T.GIFT_LIMIT_PER_RECIPIENT) for v in gift_by.values())
 for m in range(1, 13):
     gl(dt.date(2024, m, 3), "6210", "Employee transit pass subsidy - qualified transportation fringe", "Commuter benefits provider", 17800.0); tr["transit"] = tr.get("transit", 0.0) + 17800.0
@@ -220,7 +220,7 @@ prior = dict(re_dom_2022=0.0, re_dom_2023=0.0, re_for_2022=0.0, re_for_2023=0.0)
 dom_re = rd_dom_wages + rd_dom_contr + tr["proto"]; for_re = rd_for_wages + rd_for_contr
 prior["re_dom_2023"] = round(dom_re * 0.93, -3); prior["re_dom_2022"] = round(dom_re * 0.84, -3); prior["re_for_2023"] = round(for_re * 0.88, -3); prior["re_for_2022"] = round(for_re * 0.71, -3)
 amort_dom, amort_for = T.re_amortization(dom_re, for_re, prior["re_dom_2023"], prior["re_for_2023"], prior["re_dom_2022"], prior["re_for_2022"])
-small_cost = sum(a["cost"] for a in assets if a.get("small"))
+small_cost = 0.0   # de minimis safe harbor: nothing expensed on the books below the 5,000 ceiling
 tax_depr_new = sum(v["total"] for v in per.values()); tax_depr_exist = sum(a["tax_depr_2024_existing"] for a in assets if a["prior"])
 tax_depr_total = tax_depr_new + tax_depr_exist + small_cost
 tax_gain = sum(d_["proceeds"] - d_["adjusted_tax_basis"] for d_ in dispos)

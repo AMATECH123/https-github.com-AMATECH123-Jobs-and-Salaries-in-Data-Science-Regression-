@@ -22,7 +22,7 @@ def score(csv_path, pdf_path):
      ("taxable income before NOL", 6, has(both, T["ti_after_163j"])), ("taxable income", 4, has(both, T["taxable_income"])),
      ("permanent items total (or each item present)", 4, has(both, perm) or sum(has(both, A[k]) for k in ("meals_50pct", "entertainment", "fines_penalties", "lobbying", "key_man_life", "gifts_over_25", "transit_passes")) >= 6),
      ("bad debt adjustment", 3, has(both, A["bad_debts"])), ("accrual adjustment (2.5 month rule, owner bonus)", 5, has(both, A["accruals"])),
-     ("depreciation adjustment", 7, has(both, A["depreciation"])), ("section 179 deduction 860,000", 2, has(both, dep["s179_taken"], 0.001)),
+     ("depreciation adjustment", 7, has(both, A["depreciation"])), ("section 179 deduction 812,454", 2, has(both, dep["s179_taken"], 0.001)),
      ("section 1245 gain adjustment", 3, has(both, A["disposals"])), ("section 174 net adjustment", 6, has(both, A["sec174"])),
      ("163(j) deductible interest or disallowed amount", 5, has(both, T["sec163j"]["limit"]) or has(both, T["sec163j"]["disallowed_added_back"])), ("NOL deduction", 5, has(both, T["nol_deduction"])),
      ("tax before payments", 2, has(both, T["tax"])), ("tax payments 185,000", 1, has(both, T["payments"], 0.001)), ("mid-quarter convention stated", 1, bool(re.search(r"mid[- ]?quarter", ptext + ctext, re.I)))]

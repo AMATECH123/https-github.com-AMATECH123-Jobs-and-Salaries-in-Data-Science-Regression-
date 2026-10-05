@@ -41,7 +41,9 @@ for r in acc.itertuples():
 fa = pd.read_excel(P("fixed_assets.xlsx"), sheet_name=None); assets = fa["assets"]; disp = fa["disposals_2024"]
 assets["in_service"] = pd.to_datetime(assets.in_service_date); book_depr = float(gl[gl.account_code == "6900"].debit.sum())
 exist = float(assets[assets.in_service.dt.year < 2024].tax_depreciation_2024_prior_workpapers.fillna(0).sum())
-new = assets[assets.in_service.dt.year == 2024].copy(); small = new[new.cost <= T.DE_MINIMIS_AFS]; big = new[new.cost > T.DE_MINIMIS_AFS]
+new = assets[assets.in_service.dt.year == 2024].copy()
+book_threshold = float(re.search(r"capitalise purchases of USD ([\d,]+) and above", " ".join(p.text for p in Document(P("cfo_election_memo.docx")).paragraphs)).group(1).replace(",", ""))
+small = new[(new.cost < book_threshold) & (new.cost <= T.DE_MINIMIS_AFS)]; big = new[~new.index.isin(small.index)]   # safe harbor only for items expensed on the books
 adds = []
 for r in big.itertuples():
     d = r.description.lower()
