@@ -152,3 +152,95 @@ beats the headline trap, misses the quiet one (4).
 - Throttles: New Attempter 1 task at a time → Semi-Trusted (after 1 approval) 3 at a time → Trusted (after 3) unlimited.
 - Office hours Monday–Friday via the Slack link.
 - Starter data kits are a foundation, not a finished submission; you still own file count, mess, and the answer.
+
+## Objective lock: Data Extraction and Conformation (ETL / Pipeline Build)
+Every task I build sits under this objective. The handbook defines it as work that reconciles messy multi source
+inputs into one analysis ready, contract conforming dataset. The handbook lists 18 traps for this objective.
+The decision is still a single committed call, but the call is about the data itself: which matching rule becomes
+the key, which feed is adopted as the source of record, which reconciling item explains the gap, or whether the
+conformed table passes its contract and can be certified.
+
+### Prompt shapes that fit ETL best
+- 15 Fields conformed to one schema. Map many source columns into one target schema, grading each field on
+  where it came from and how it was transformed. The answer is the entity matching rule adopted as the key.
+  Every target field is its own criterion.
+- 03 Bridge between two totals. Walk a total in one system across to the total in another, one reconciling item
+  at a time. The answer is the source or figure adopted. Each reconciling item is a criterion.
+- 10 Scorecard against thresholds. Run a written data contract, metric by metric, segment by segment. The answer
+  is the single pass or fail the contract resolves to.
+- 08 Rule replayed on history. Replay an adopted dedupe or matching rule across every period and count what it
+  passes, misses, and wrongly passes.
+
+### ETL traps that stump models (from the 64 task study, mapped to this objective)
+- Counts file rows instead of the real unit. Rows are events or snapshots. The unit is the entity.
+- Stops at a close but inexact match. A fuzzy join that looks right on the sample fails on the full key.
+- Joins only on the visible key. The true key is composite or lives in a crosswalk file.
+- Mislabeled feeds. Definitions are documented and consistent but spread across files. The work is conforming
+  every feed to the written definition, not guessing.
+- Papers over a failed reproduction. The pipeline total does not tie to the published total and the model ships anyway.
+- Uses the ready made measure. A pre aggregated column exists and is correct for a different grain.
+- Takes the population a flag suggests. A status flag is a hint, not the population rule in the data dictionary.
+- Adds exclusions the rules do not ask for.
+
+### Golden deliverable shape for ETL tasks
+Data golden (CSV, JSON, XLSX): the conformed table itself, one row per real unit, the named column set in the
+named order, a total or control row where the prompt asks for one, and no extra columns.
+Code golden (PY, SQL, IPYNB): runs top to bottom on the shipped inputs and prints the recommendation and every
+load bearing figure. No hard coded answers.
+Visual golden (PNG, HTML): a bridge waterfall, a field lineage matrix, or a match rate chart that makes the
+reconciliation read at a glance.
+Text golden (PDF, DOCX): the certification memo that opens with the committed call and names what it rejects.
+One set of numbers across all files. The conformed table, the script output, and the memo must agree exactly.
+
+### The two handbook examples rewritten as ETL tasks
+
+Example 1 revised. Organics route tranche becomes a source of record decision.
+Shape: Bridge between two totals. Two files.
+
+    The Board needs one figure for FY2027 organics tonnage accepted across the shortlisted districts before it
+    sets the FY2028 tranche. The regional weighbridge export and the district self reported returns disagree,
+    and the finance office has been using whichever one each district sent last. Adopt one source as the
+    system of record for the tranche calculation and state the accepted tonnage figure the Board should use.
+
+    Prepare tonnage_reconciliation.pdf. Open with the source you are adopting, the FY2027 accepted tonnage
+    under that source, and the gap to the other source. Then walk from the weighbridge total to the self
+    reported total one reconciling item at a time, in whole tonnes, with each item sized and attributed to the
+    district where it arises. Close with the district whose returns move the total the most and what the Board
+    should expect from that district next year.
+
+    Create reconciliation_bridge.png for the slide. Build a waterfall from the weighbridge total to the self
+    reported total with one bar per reconciling item, ordered from largest to smallest, each bar labelled in
+    tonnes, and the adopted source clearly marked.
+
+Where the 25+ criteria come from: each reconciling item on the bridge is a separate checkable step. The two
+totals, the adopted source, the accepted figure, the largest moving district, and the chart labels and order
+account for the rest. The trap lives in the unit: weighbridge rows are tickets, not loads, and some districts
+report net while others report gross. Both feeds are correct. The work is conforming them to the written
+definition in the programme standard before any item is sized.
+
+Example 2 revised. Fernwood service tier becomes a schema conformation decision.
+Shape: Fields conformed to one schema. Three files.
+
+    The Program Council has to publish one membership register for the Fernwood Stewardship Network before
+    the tier review, and the three intake systems each hold a different version of every organization. The
+    protocol defines a covered organization and lists the fields the register must carry. Decide which
+    matching rule the register adopts as its key and publish the register under it.
+
+    Produce fernwood_register.csv with one row per covered organization and exactly the columns the protocol
+    names, in the protocol's order, with a final control row carrying the organization count and the qualified
+    covered demand total.
+
+    Produce build_register.py. It must run against the input package as shipped, apply the adopted matching
+    rule, and print the number of organizations, the number of source records collapsed by the rule, and the
+    qualified covered demand for both program years.
+
+    Produce field_lineage.png as a matrix with one row per register field and one column per intake system,
+    each cell showing whether that system supplied the field, transformed it, or was overridden, so the Council
+    can see where every value came from.
+
+Where the 25+ criteria come from: every register field is graded on its source and its transformation, which
+fills the matrix cell by cell. The organization count, the collapsed record count, both program year totals, the
+adopted rule, and the CSV column set and control row account for the rest. The trap is the close but inexact
+match. Names and addresses match loosely across two systems but the registration identifier is the true key
+and sits in a crosswalk file. Collapsing on name alone merges two legitimately separate organizations and
+changes the count that feeds the tier.
