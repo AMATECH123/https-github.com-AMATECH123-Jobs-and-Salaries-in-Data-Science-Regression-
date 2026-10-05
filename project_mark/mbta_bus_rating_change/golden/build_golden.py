@@ -93,6 +93,29 @@ def span_and_ends(d, date, route_id):
     return first, last, ends, heads
 
 
+def revenue_minutes(d, date):
+    """Scheduled revenue minutes per bus route: last arrival minus first departure of each active trip."""
+    s = active_services(d, date)
+    tr = {t['trip_id']: t['route_id'] for t in d['trips'] if t['service_id'] in s and is_bus(d, t)}
+    first, last = {}, {}
+    with d['zip'].open('stop_times.txt') as f:
+        for r in csv.DictReader(io.TextIOWrapper(f, encoding='utf-8-sig')):
+            if r['trip_id'] not in tr:
+                continue
+            k = r['trip_id']
+            if k not in first or r['departure_time'] < first[k]:
+                first[k] = r['departure_time']
+            if k not in last or r['arrival_time'] > last[k]:
+                last[k] = r['arrival_time']
+    def mins(t):
+        h, m, _ = t.split(':')
+        return int(h) * 60 + int(m)
+    by_route = collections.Counter()
+    for k in first:
+        by_route[tr[k]] += mins(last[k]) - mins(first[k])
+    return by_route
+
+
 def clock(t):
     h, m, _ = t.split(':')
     h = int(h)
@@ -139,17 +162,26 @@ def main():
     s_first, s_last, s_ends, s_heads = span_and_ends(fall_feed, SUMMER_DAY, driver)
     f_first, f_last, f_ends, f_heads = span_and_ends(fall_feed, FALL_DAY, driver)
 
+    min_s, min_f = revenue_minutes(fall_feed, SUMMER_DAY), revenue_minutes(fall_feed, FALL_DAY)
+    MS, MF = sum(min_s.values()), sum(min_f.values())
+    dmin = {r: min_f[r] - min_s[r] for r in all_routes}
+    hours_driver = max(all_routes, key=lambda r: (abs(dmin[r]), -int(routes[r]['route_sort_order'])))
+    hours_second = max([r for r in all_routes if r != hours_driver], key=lambda r: (abs(dmin[r]), -int(routes[r]['route_sort_order'])))
+    hrs = lambda m: f"{m / 60:,.1f}"
+
     # ---------- 1. CSV register ----------
     csv_path = os.path.join(HERE, 'route_service_change.csv')
     with open(csv_path, 'w', newline='') as f:
         w = csv.writer(f)
         w.writerow(['route_id', 'route_name', 'service_category', 'summer_weekday_trips',
-                    'fall_weekday_trips', 'change', 'pct_change'])
+                    'fall_weekday_trips', 'change', 'pct_change',
+                    'summer_weekday_revenue_minutes', 'fall_weekday_revenue_minutes', 'change_minutes'])
         for r in all_routes:
             pct = '' if summer[r] == 0 else f"{100.0 * delta[r] / summer[r]:.1f}"
             w.writerow([r, routes[r]['route_short_name'] or routes[r]['route_long_name'],
-                        routes[r]['route_desc'], summer[r], fall[r], delta[r], pct])
-        w.writerow(['TOTAL', 'All MBTA bus routes', '', S, F, net, f"{100.0 * net / S:.1f}"])
+                        routes[r]['route_desc'], summer[r], fall[r], delta[r], pct,
+                        min_s[r], min_f[r], dmin[r]])
+        w.writerow(['TOTAL', 'All MBTA bus routes', '', S, F, net, f"{100.0 * net / S:.1f}", MS, MF, MF - MS])
 
     # ---------- 2. Waterfall PNG ----------
     import matplotlib
@@ -283,7 +315,14 @@ def main():
         Paragraph(f"Of the {S:,} Summer trips, {sup_s} are school-day supplemental trips; of the {F:,} Fall trips, "
                   f"{sup_f} are. The supplemental service is almost unchanged between ratings and explains "
                   f"{sup_f - sup_s:+d} of the {net:+d}.", body),
-        Paragraph(f"Route {dn}: what changed', h", h) if False else Paragraph(f"Route {dn}: what changed", h),
+        Paragraph('Scheduled revenue time behind the trip count', h),
+        Paragraph(f"Measured from each trip's first scheduled departure to its last scheduled arrival, the Summer "
+                  f"weekday carries {hrs(MS)} revenue hours ({MS:,} minutes) and the Fall weekday {hrs(MF)} "
+                  f"({MF:,} minutes), a change of {hrs(MF - MS)} hours. Route {routes[hours_driver]['route_short_name']} "
+                  f"leads on revenue time as well, at {dmin[hours_driver] / 60:+.1f} hours, ahead of Route "
+                  f"{routes[hours_second]['route_short_name']} at {dmin[hours_second] / 60:+.1f} hours, so the trip "
+                  f"driver and the cost driver are the same route. The register carries both measures for every route.", body),
+        Paragraph(f"Route {dn}: what changed", h),
         Paragraph(f"Under the Summer rating Route {dn} ran {summer[driver]} weekday trips, with the first scheduled "
                   f"departure at {clock(s_first)} and the last scheduled arrival at {clock(s_last)}. Under the Fall "
                   f"rating it runs {fall[driver]} weekday trips, first departure {clock(f_first)} and last arrival "
@@ -315,6 +354,7 @@ def main():
                             title='Certification of the weekday bus service change', author='Service Planning')
     doc.build(story)
 
+    print(f"revenue minutes {MS} -> {MF} ({hrs(MS)} -> {hrs(MF)} h); hours driver {routes[hours_driver]['route_short_name']} {dmin[hours_driver]/60:+.1f}")
     print(f"Summer {S} Fall {F} net {net:+d}; driver {dn} {delta[driver]:+d}; runner {rn} {delta[runner]:+d}; flip {flip}")
     print(f"supplemental {sup_s}/{sup_f}; finance {finance_net:+d} (summer {finance_summer}); planning {planning_net:+d} ({planning_summer}->{planning_fall})")
     print(f"route {dn} span S {s_first}-{s_last} F {f_first}-{f_last}; ends S {dict(s_ends)} F {dict(f_ends)}; heads S {s_heads} F {f_heads}")
