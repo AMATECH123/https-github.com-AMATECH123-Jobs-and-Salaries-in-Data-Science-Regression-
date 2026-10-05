@@ -1,61 +1,57 @@
-# MBTA Fall 2025 bus rating change: task design
+# MBTA Summer 2026 to Fall 2026 bus rating change: task design
 
 Domain: Transportation & Mobility
 Objective: Data Extraction & Conformation (ETL / Pipeline Build)
 Prompt shape: Bridge between two totals, carried by a conformed route register
-Status: design only. Every figure below is to be confirmed against the shipped files before the prompt is final.
+Status: built. Every figure below reproduces from inputs/ with golden/build_golden.py.
 
 ## The decision
-MBTA Service Planning must certify one figure for the net change in scheduled weekday bus trips between the
-Summer 2025 rating and the Fall 2025 rating, and name the single route that drove the largest share of it.
-Two offices quote different totals. The analyst adopts one and shows the bridge that gets there.
+Certify one figure for the net change in scheduled weekday bus trips between the Summer 2026 and Fall 2026
+ratings, counted on a typical school day weekday (Monday to Thursday) across MBTA bus routes, and name the
+route that drives it. Finance says +321 and Service Planning says +121. Both are honest numbers computed under
+their own conventions, and neither is the Board's figure.
 
-## Why it is deterministic
-GTFS is a complete schedule. Once the population, the unit, and the representative weekday are conformed to the
-MBTA's own written definitions, which ship in the package, every analyst lands on the same trip counts per route,
-the same net change, and the same driving route. There is no estimation anywhere in the chain.
+## The forced answer
+| Item | Value |
+|---|---|
+| Summer rating weekday bus trips (Wed 2 Sep 2026) | 12,893 |
+| Fall rating weekday bus trips (Wed 23 Sep 2026) | 13,042 |
+| Certified net change | +149 |
+| Driving route | Route 65, 86 to 131, +45 |
+| Runner up | Route 465, 0 to 32, +32 (gap 13, flip point 14) |
+| Routes with a changed count | 28 of 152 |
+| School day supplemental trips | 137 Summer, 138 Fall |
+| Route 65 span | Summer 05:58 to 21:03; Fall 05:00 to 25:33; inbound end moved from Kenmore to Ruggles |
+| Finance +321 reproduced | first weekday of the feed named Fall 2026 (Mon 24 Aug, 12,721, a no school Summer day) vs 13,042 |
+| Planning +121 reproduced | trips counted on every route they are listed under: 13,128 to 13,249 |
+
+Determinism checks in build_golden.py: the Summer register is identical on 1, 2, and 3 September and identical
+in the 20260812 and 20260821 feeds; the Fall register is identical on 8, 9, 10, 23, and 30 September.
 
 ## Where the honest difficulty lives
-All of these come from how the MBTA really publishes its data. Nothing is planted.
-1. Rows versus the real unit. stop_times rows are stop events. Trips are the unit. A trip listed under a second
-   route in multi_route_trips.txt is one trip at the system level but appears on two route schedules. A route
-   level sum does not equal the system total, and the bridge only closes when the analyst reconciles the two.
-2. Two ratings inside one feed. An MBTA feed can carry service_ids from more than one rating. calendar_attributes
-   gives each service its rating_start_date, rating_end_date, and rating_description. Counting every weekday
-   service in the feed double counts. The feed version is not the rating.
-3. The representative weekday. calendar_attributes.service_schedule_typicality defines typical service. A
-   holiday, a no school day, or a storm schedule is a weekday in calendar.txt but not a typical weekday.
-4. The population. route_type 3 includes rail replacement shuttles and supplemental routes. routes.txt route_desc
-   and listed_route, together with trips.trip_route_type, define what counts as an MBTA bus route. Both the
-   narrow and the wide count are correct numbers; only one is the bus service figure the Board asked for.
-5. The close but inexact join. The ridership dataset keys routes by public route number. GTFS keys by route_id.
-   Silver Line and a few others differ. The join needs route_short_name, not route_id.
-6. A thin margin. The driving route is to be chosen so that one shortcut above flips it.
+All of it is how the MBTA really publishes its data. Nothing is planted.
+1. Rating versus feed. The feed named Fall 2026 starts 21 August but the Fall rating starts 6 September; its first
+   two weeks are still Summer service. The current feed has already dropped the Summer rating entirely.
+2. Rating label versus date. Long running services labelled Spring/Summer keep operating under the Fall rating.
+   Counting by label misses them; counting by date catches them. Summing every weekday service in a rating
+   (Monday to Thursday, Weekday, Friday variants) double counts to 45,221 against 37,275.
+3. School day versus no school day. The Summer rating runs a no school weekday until 28 August (12,721) and a
+   school day weekday from 31 August (12,893). Only the second matches the Board's convention.
+4. Typicality. Holiday (7 Sep), modified, and reduced weekday services carry typicality 3, 4, or 5 and are not a
+   typical weekday. Fridays differ from Monday to Thursday.
+5. Population. 216 rail replacement shuttle routes and 3,939 shuttle trips sit in the feed as bus type routes.
+   The five bus categories in route_desc define the population. On 24 August the wide count is 13,806.
+6. Rows versus the real unit. stop_times has 5.2 million rows; the unit is the trip, counted once under its own
+   route. multi_route_trips lists trips under extra routes for timetable display, which is Planning's +121.
+7. Offered options. Neither office's number is right, so picking one of the two offered figures fails.
 
-## Deliverables (three files, one visual)
-- route_service_change.csv: one row per bus route with summer weekday trips, fall weekday trips, change,
-  percent change, and average weekday boardings from the latest ridership season, plus one control row carrying
-  the system totals that the memo certifies.
-- service_change_bridge.png: a waterfall from the Summer 2025 weekday total to the Fall 2025 weekday total,
-  one bar per route whose schedule changed, ordered largest to smallest by absolute change, net change labelled,
-  the driving route highlighted.
-- certification_memo.pdf: opens with the certified net change and the driving route, names the total it rejects
-  and why, then the ranked table of changed routes with riders affected, and the figure that would result if the
-  rejected population were adopted so the Board sees the gap.
+## Deliverables
+- route_service_change.csv: 152 route rows plus a TOTAL row; rows tie exactly to the totals.
+- service_change_bridge.png: waterfall, 28 route bars ordered by absolute change, driver highlighted.
+- certification_memo.pdf: two pages, recommendation first, rejects both figures with their reproductions,
+  ranked table, supplemental counts, Route 65 span and extension, flip point, closing.
 
-## Asks (multi dimensional, no laundry list)
-- Every bus route's weekday trips under both ratings and the change, as the register.
-- The ten largest reductions ranked, each with average weekday boardings per trip removed.
-- The net change under the alternative population the other office used, stated once, so the Board sees why it
-  is rejected.
-- The nearest change in a single route's trip count at which a different route would become the driver.
-
-## Input package plan (target 10+ files, 3+ formats, one table over 10,000 rows)
-See MANIFEST.csv. The two archived GTFS feeds each hold roughly 30 text tables; stop_times alone exceeds one
-million rows. The ridership extract, the GTFS reference, the developer licence, the archived feed index, and the
-Service Delivery Policy complete the package. Every file does work; nothing decorative is counted.
-
-## Validation plan before submission
-1. Rebuild every number in the golden set from the shipped files with build_register.py and diff against the CSV.
-2. Confirm the margin between the driving route and the runner up is thin enough that each shortcut flips it.
-3. Dry run the prompt against a model here and score it against the rubric shape. Target well under 50 percent.
+## Input package (inputs/, zipped as inputs.zip, 82 MB)
+Three MBTA GTFS feeds (32 tables each), the archive index, the MBTA GTFS reference, the GTFS specification and
+its licence, the MassDOT developer licence, and a provenance note. Formats: txt, csv, md, pdf, zip. Largest table
+stop_times.txt at 5.2 million rows. See MANIFEST.csv and inputs/README_provenance.md.
