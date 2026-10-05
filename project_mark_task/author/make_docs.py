@@ -47,6 +47,9 @@ s = [Paragraph("Contract terms summary - renewals on 1 November 2025", ss["Title
      pr("Annual billing gives a 20% discount on the plan list price. The discount does not apply to overage. Overage is billed monthly "
         "per block of 1,000 tasks, rounded up, at 1.25 x the plan's list price per 1,000 allowance tasks "
         "(list price divided by allowance in thousands)."),
+     pr("Plan changes: if tasks used in a month exceed 125% of the plan allowance, Zapier moves the account up one plan from the "
+        "following month for the rest of the term, at that plan's price with the annual discount. Overage in the month that triggered the "
+        "move is billed on the plan the account was on. The check repeats each month until the top plan."),
      Paragraph("n8n", ss["Heading3"]),
      pr("The quoted price is the annual-prepay price. There is no overage: executions above the monthly allowance are not run. "
         "The plan therefore has to cover the busiest month of the year."),
@@ -73,7 +76,8 @@ d.add_paragraph("Make bills operations (modules executed per run), Zapier bills 
                 "is still billed on any platform, so it belongs to the cost of its parent's business runs.")
 d.add_heading("3. Forward 12-month cost", 2)
 for t in [
-    "The forward year is Nov 2025 - Oct 2026 and repeats, month for month, the trailing window Oct 2024 - Sep 2025, for clients we still have.",
+    "The forward year is Nov 2025 - Oct 2026 and repeats, month for month, the trailing window Oct 2024 - Sep 2025, for clients we still have. "
+    "It reflects recurring usage only: one-off bulk loads recorded in the change log are not part of the baseline.",
     "Subscription: one plan per platform for the year, chosen to minimise plan fees plus overage under the contract terms.",
     "Northgate budgets in EUR. Use the most recent published rate for the latest month in fx_rates.csv.",
 ]:

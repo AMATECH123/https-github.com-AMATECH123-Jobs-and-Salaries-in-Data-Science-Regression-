@@ -218,6 +218,19 @@ for h_, p_ in helper_of.items():
     B[h_] = B[p_].copy()
 B_biz = {k: (np.zeros_like(v) if k in helper_of else v) for k, v in B.items()}
 
+# one-off bulk backfills (real runs, but not recurring usage)
+_busy = set(helper_of) | set(helper_of.values()) | set(mig_by_wid) | set(recreated) | set(rebuilt)
+def _pick_burst(plat):
+    pool = [w_ for w_ in ids if init_plat[w_] == plat and w_ not in _busy and w_ in set(active_wids)]
+    return max(pool, key=lambda x: wf_by_id[x]["base_rate"])
+bursts = []
+for plat_, d0_, d1_, lam_ in (("zapier", dt.date(2024, 11, 12), dt.date(2024, 11, 21), 1100), ("make", dt.date(2025, 3, 10), dt.date(2025, 3, 14), 1700)):
+    w_ = _pick_burst(plat_); _busy.add(w_)
+    for d_ in DAYS:
+        if d0_ <= d_ <= d1_:
+            B[w_][DIDX[d_]] += int(rng.poisson(lam_)); B_biz[w_][DIDX[d_]] = B[w_][DIDX[d_]]
+    bursts.append(dict(workflow_id=w_, start=d0_, end=d1_))
+
 def ids_for(wid, plat, d):
     base_id = native[(wid, plat)]
     for tbl in (recreated, rebuilt):
@@ -526,6 +539,8 @@ for m in migrations:
 for k in range(9):
     d = dt.date(2024, 10, 3) + dt.timedelta(days=rnd.randint(0, 360))
     events.append((d, f"{d} | - | misc | {rnd.choice(noise)} | MK"))
+for b_ in bursts:
+    events.append((b_["start"], f"{b_['start']} | {b_['workflow_id']} | one-off bulk backfill of historic records, runs {b_['start']} to {b_['end']} on this workflow only; not recurring usage, leave out of capacity planning for those dates | JL"))
 events.sort(key=lambda x: x[0])
 with open(os.path.join(OUT, "change_log.txt"), "w") as f:
     f.write("# Northgate ops change log (append-only, informal)\n")

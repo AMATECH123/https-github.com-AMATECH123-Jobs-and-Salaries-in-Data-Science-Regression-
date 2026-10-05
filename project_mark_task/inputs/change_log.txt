@@ -1,23 +1,26 @@
 # Northgate ops change log (append-only, informal)
-2025-01-03 | - | misc | moved docs to new drive | MK
+2024-10-24 | - | misc | onboarded intern to Airtable base | MK
+2024-11-06 | - | misc | updated brand footer on report emails | MK
+2024-11-12 | W079 | one-off bulk backfill of historic records, runs 2024-11-12 to 2024-11-21 on this workflow only; not recurring usage, leave out of capacity planning for those dates | JL
+2024-11-15 | - | misc | rotated shared API credentials | MK
 2025-01-15 | W071 | make -> n8n | parallel run started (new build live, old build still primary) | JL
 29 Jan 2025 | W071 | cutover to n8n done, old build switched off | JL
+2025-02-08 | - | misc | updated brand footer on report emails | MK
+2025-02-11 | - | misc | onboarded intern to Airtable base | MK
 2025-02-20 | W062 | zapier -> make | parallel run started (new build live, old build still primary) | JL
-2025-02-20 | - | misc | updated brand footer on report emails | MK
 2025-03-04 | W003 | make -> n8n | parallel run started (new build live, old build still primary) | JL
 06 Mar 2025 | W062 | cutover to make done, old build switched off | JL
-2025-03-08 | - | misc | onboarded intern to Airtable base | MK
+2025-03-10 | W012 | one-off bulk backfill of historic records, runs 2025-03-10 to 2025-03-14 on this workflow only; not recurring usage, leave out of capacity planning for those dates | JL
 18 Mar 2025 | W003 | cutover to n8n done, old build switched off | JL
 2025-03-22 | W116 | zapier -> make | parallel run started (new build live, old build still primary) | JL
-2025-03-25 | - | misc | renewed agency domain | MK
 2025-04-03 | W092 | zapier -> make | parallel run started (new build live, old build still primary) | JL
 05 Apr 2025 | W116 | cutover to make done, old build switched off | JL
-2025-04-13 | - | misc | renewed agency domain | MK
+2025-04-07 | - | misc | moved docs to new drive | MK
 2025-04-15 | W009 | zapier -> make | parallel run started (new build live, old build still primary) | JL
-2025-04-16 | - | misc | added second approver for invoices | MK
 17 Apr 2025 | W092 | cutover to make done, old build switched off | JL
 29 Apr 2025 | W009 | cutover to make done, old build switched off | JL
 2025-05-03 | W053 | zapier -> make | parallel run started (new build live, old build still primary) | JL
+2025-05-09 | - | misc | onboarded intern to Airtable base | MK
 17 May 2025 | W053 | cutover to make done, old build switched off | JL
 2025-05-23 | W035 | make -> n8n | parallel run started (new build live, old build still primary) | JL
 2025-05-29 | W080 | zapier -> n8n | parallel run started (new build live, old build still primary) | JL
@@ -31,8 +34,7 @@
 21 Jun 2025 | W105 | cutover to n8n done, old build switched off | JL
 22 Jun 2025 | W029 | cutover to make done, old build switched off | JL
 30 Jun 2025 | W074 | cutover to make done, old build switched off | JL
+2025-07-05 | - | misc | retired unused Slack app | MK
 2025-07-07 | W004 | zapier -> make | parallel run started (new build live, old build still primary) | JL
 21 Jul 2025 | W004 | cutover to make done, old build switched off | JL
-2025-08-19 | - | misc | onboarded intern to Airtable base | MK
-2025-08-20 | - | misc | onboarded intern to Airtable base | MK
-2025-09-13 | - | misc | renewed agency domain | MK
+2025-08-14 | - | misc | added second approver for invoices | MK

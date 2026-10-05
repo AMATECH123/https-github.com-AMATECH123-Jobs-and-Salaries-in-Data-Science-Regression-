@@ -47,6 +47,7 @@ for r_ in wf.itertuples():
     if mt: helper_of[r_.workflow_id] = mt.group(1)
 # --- change log
 mig = {}
+bursts_ = []
 for line in open(P("change_log.txt")):
     if line.startswith("#"): continue
     p = [x.strip() for x in line.split("|")]
@@ -55,6 +56,9 @@ for line in open(P("change_log.txt")):
     if "parallel run started" in p[3]:
         a, b = [x.strip() for x in p[2].split("->")]
         mig.setdefault(wid, {}).update(frm=a, to=b, pf=dt.date.fromisoformat(p[0]))
+    elif "one-off bulk backfill" in p[3]:
+        mt = re.search(r"runs (\d{4}-\d{2}-\d{2}) to (\d{4}-\d{2}-\d{2})", p[3])
+        bursts_.append((wid, dt.date.fromisoformat(mt.group(1)), dt.date.fromisoformat(mt.group(2))))
     elif "cutover" in p[2]:
         mig.setdefault(wid, {})["cut"] = dt.datetime.strptime(p[0], "%d %b %Y").date()
 
@@ -134,7 +138,10 @@ fwd_months = [(2025, 11), (2025, 12)] + [(2026, k) for k in range(1, 11)]
 src_month = {(2025, 11): "2024-11", (2025, 12): "2024-12"}
 for k in range(1, 10): src_month[(2026, k)] = f"2025-{k:02d}"
 src_month[(2026, 10)] = "2024-10"
-rm = conf[conf.workflow_id.isin(active.workflow_id)].groupby(["workflow_id", "billing_month"]).business_runs.sum().unstack(fill_value=0)
+_fc = conf.copy()
+for w_, a_, b_ in bursts_:
+    _fc = _fc[~((_fc.workflow_id == w_) & (_fc.date >= a_) & (_fc.date <= b_))]
+rm = _fc[_fc.workflow_id.isin(active.workflow_id)].groupby(["workflow_id", "billing_month"]).business_runs.sum().unstack(fill_value=0)
 def with_helpers(col):
     u = vv[col].copy()
     base = u.copy()
@@ -169,12 +176,15 @@ def cost_make(vols):
     return best
 def cost_zap(vols):
     best = None
-    for allow, fee in ZAP_TIERS:
-        tot = fee * (1 - ZAP_ANNUAL_DISCOUNT) * 12; over_t = 0
-        rate = ZAP_OVERAGE_MULT * fee / (allow / 1000)
-        for u in vols: over_t += math.ceil(max(0, u - allow) / 1000) * rate
-        tot_e, over_e = tot / EURUSD, over_t / EURUSD
-        if best is None or tot_e + over_e < best[1] + best[2]: best = (allow, tot_e, over_e)
+    for start in range(len(ZAP_TIERS)):
+        i = start; fees = over = 0.0
+        for u in vols:
+            allow, fee = ZAP_TIERS[i]
+            fees += fee * (1 - ZAP_ANNUAL_DISCOUNT)
+            over += math.ceil(max(0, u - allow) / 1000) * ZAP_OVERAGE_MULT * fee / (allow / 1000)
+            if u > 1.25 * allow and i < len(ZAP_TIERS) - 1: i += 1
+        tot_e, over_e = fees / EURUSD, over / EURUSD
+        if best is None or tot_e + over_e < best[1] + best[2]: best = (ZAP_TIERS[start][0], tot_e, over_e)
     return best
 def cost_n8n(vols):
     for allow, fee in N8N_TIERS:
