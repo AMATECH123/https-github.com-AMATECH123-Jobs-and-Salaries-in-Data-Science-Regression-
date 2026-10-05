@@ -1,0 +1,6 @@
+# Brightwater finance systems change log
+2024-01-02 | ERP | Chart of accounts unchanged for 2024
+2024-07-01 | ERP | Upgrade: post_date now exports as MM/DD/YYYY; some account names shortened (codes unchanged)
+2024-12-31 | FA | Fixed-asset subledger closed; 2024 additions entered with in-service dates
+2025-02-14 | Payroll | Payroll register refreshed with R&D time percentages from engineering managers
+2025-03-04 | Tax | Prior-year accrual schedule rolled forward

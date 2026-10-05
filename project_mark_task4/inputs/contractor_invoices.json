@@ -1,0 +1,709 @@
+{
+"year": 2024,
+"invoices": [
+{
+"invoice_id": "CTR-0001",
+"vendor": "Summit Prototyping Inc",
+"vendor_country": "US",
+"invoice_date": "2024-01-08",
+"description": "Prototype engineering - new actuator design",
+"amount": 44739.03
+},
+{
+"invoice_id": "CTR-0002",
+"vendor": "Bengaluru Simulation Labs Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-03-03",
+"description": "Software development - controller firmware",
+"amount": 11123.88
+},
+{
+"invoice_id": "CTR-0003",
+"vendor": "Lakeshore Software Partners",
+"vendor_country": "US",
+"invoice_date": "2024-11-15",
+"description": "Development of simulation models for new alloy process",
+"amount": 12834.43
+},
+{
+"invoice_id": "CTR-0004",
+"vendor": "Summit Prototyping Inc",
+"vendor_country": "US",
+"invoice_date": "2024-06-30",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 22260.32
+},
+{
+"invoice_id": "CTR-0005",
+"vendor": "Bengaluru Simulation Labs Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-10-19",
+"description": "Routine inspection and calibration testing",
+"amount": 20319.35
+},
+{
+"invoice_id": "CTR-0006",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-01-30",
+"description": "Software development - controller firmware",
+"amount": 13555.78
+},
+{
+"invoice_id": "CTR-0007",
+"vendor": "Lakeshore Software Partners",
+"vendor_country": "US",
+"invoice_date": "2024-04-06",
+"description": "Software development - controller firmware",
+"amount": 20250.73
+},
+{
+"invoice_id": "CTR-0008",
+"vendor": "Northgate Engineering LLC",
+"vendor_country": "US",
+"invoice_date": "2024-01-24",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 10071.49
+},
+{
+"invoice_id": "CTR-0009",
+"vendor": "Northgate Engineering LLC",
+"vendor_country": "US",
+"invoice_date": "2024-05-10",
+"description": "Software development - MES integration module",
+"amount": 18182.85
+},
+{
+"invoice_id": "CTR-0010",
+"vendor": "Northgate Engineering LLC",
+"vendor_country": "US",
+"invoice_date": "2024-12-12",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 41954.56
+},
+{
+"invoice_id": "CTR-0011",
+"vendor": "Northgate Engineering LLC",
+"vendor_country": "US",
+"invoice_date": "2024-03-12",
+"description": "Software development - MES integration module",
+"amount": 31002.2
+},
+{
+"invoice_id": "CTR-0012",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-09-25",
+"description": "Development of simulation models for new alloy process",
+"amount": 59992.54
+},
+{
+"invoice_id": "CTR-0013",
+"vendor": "Bengaluru Simulation Labs Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-12-11",
+"description": "Software development - controller firmware",
+"amount": 12442.99
+},
+{
+"invoice_id": "CTR-0014",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-10-31",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 28558.88
+},
+{
+"invoice_id": "CTR-0015",
+"vendor": "Northgate Engineering LLC",
+"vendor_country": "US",
+"invoice_date": "2024-06-03",
+"description": "Development of simulation models for new alloy process",
+"amount": 21400.87
+},
+{
+"invoice_id": "CTR-0016",
+"vendor": "Summit Prototyping Inc",
+"vendor_country": "US",
+"invoice_date": "2024-07-15",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 57318.63
+},
+{
+"invoice_id": "CTR-0017",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-04-08",
+"description": "Development of simulation models for new alloy process",
+"amount": 10308.6
+},
+{
+"invoice_id": "CTR-0018",
+"vendor": "Pune Embedded Systems Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-05-20",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 17460.1
+},
+{
+"invoice_id": "CTR-0019",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-11-15",
+"description": "Software development - MES integration module",
+"amount": 26529.67
+},
+{
+"invoice_id": "CTR-0020",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-07-28",
+"description": "Software development - MES integration module",
+"amount": 44639.07
+},
+{
+"invoice_id": "CTR-0021",
+"vendor": "Chennai Software Works Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-11-11",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 14503.67
+},
+{
+"invoice_id": "CTR-0022",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-07-21",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 20781.0
+},
+{
+"invoice_id": "CTR-0023",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-09-25",
+"description": "Metallurgical testing for product quality control",
+"amount": 45432.21
+},
+{
+"invoice_id": "CTR-0024",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-06-25",
+"description": "Development of simulation models for new alloy process",
+"amount": 15582.66
+},
+{
+"invoice_id": "CTR-0025",
+"vendor": "Northgate Engineering LLC",
+"vendor_country": "US",
+"invoice_date": "2024-07-03",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 69558.49
+},
+{
+"invoice_id": "CTR-0026",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-05-17",
+"description": "Software development - MES integration module",
+"amount": 11526.25
+},
+{
+"invoice_id": "CTR-0027",
+"vendor": "Lakeshore Software Partners",
+"vendor_country": "US",
+"invoice_date": "2024-07-17",
+"description": "Development of simulation models for new alloy process",
+"amount": 13905.06
+},
+{
+"invoice_id": "CTR-0028",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-08-31",
+"description": "Software development - MES integration module",
+"amount": 36208.46
+},
+{
+"invoice_id": "CTR-0029",
+"vendor": "Bengaluru Simulation Labs Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-06-17",
+"description": "Prototype engineering - new actuator design",
+"amount": 18157.86
+},
+{
+"invoice_id": "CTR-0030",
+"vendor": "Pune Embedded Systems Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-07-01",
+"description": "Development of simulation models for new alloy process",
+"amount": 11982.8
+},
+{
+"invoice_id": "CTR-0031",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-03-17",
+"description": "Market research study - customer survey",
+"amount": 15938.41
+},
+{
+"invoice_id": "CTR-0032",
+"vendor": "Lakeshore Software Partners",
+"vendor_country": "US",
+"invoice_date": "2024-08-19",
+"description": "Development of simulation models for new alloy process",
+"amount": 13228.5
+},
+{
+"invoice_id": "CTR-0033",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-11-26",
+"description": "Prototype engineering - new actuator design",
+"amount": 10636.1
+},
+{
+"invoice_id": "CTR-0034",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-01-23",
+"description": "Software development - controller firmware",
+"amount": 18057.83
+},
+{
+"invoice_id": "CTR-0035",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-06-19",
+"description": "Software development - MES integration module",
+"amount": 9879.13
+},
+{
+"invoice_id": "CTR-0036",
+"vendor": "Lakeshore Software Partners",
+"vendor_country": "US",
+"invoice_date": "2024-06-08",
+"description": "Development of simulation models for new alloy process",
+"amount": 20555.4
+},
+{
+"invoice_id": "CTR-0037",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-05-31",
+"description": "Software development - MES integration module",
+"amount": 51634.24
+},
+{
+"invoice_id": "CTR-0038",
+"vendor": "Pune Embedded Systems Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-06-09",
+"description": "Development of simulation models for new alloy process",
+"amount": 10968.76
+},
+{
+"invoice_id": "CTR-0039",
+"vendor": "Summit Prototyping Inc",
+"vendor_country": "US",
+"invoice_date": "2024-04-08",
+"description": "Routine inspection and calibration testing",
+"amount": 15920.2
+},
+{
+"invoice_id": "CTR-0040",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-03-06",
+"description": "Production-line efficiency survey",
+"amount": 28610.59
+},
+{
+"invoice_id": "CTR-0041",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-09-10",
+"description": "Development of simulation models for new alloy process",
+"amount": 25504.32
+},
+{
+"invoice_id": "CTR-0042",
+"vendor": "Northgate Engineering LLC",
+"vendor_country": "US",
+"invoice_date": "2024-02-26",
+"description": "Development of simulation models for new alloy process",
+"amount": 21040.45
+},
+{
+"invoice_id": "CTR-0043",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-07-16",
+"description": "Prototype engineering - new actuator design",
+"amount": 24021.92
+},
+{
+"invoice_id": "CTR-0044",
+"vendor": "Bengaluru Simulation Labs Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-07-09",
+"description": "Software development - controller firmware",
+"amount": 7168.4
+},
+{
+"invoice_id": "CTR-0045",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-08-27",
+"description": "Development of simulation models for new alloy process",
+"amount": 6999.31
+},
+{
+"invoice_id": "CTR-0046",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-05-01",
+"description": "Software development - MES integration module",
+"amount": 6535.35
+},
+{
+"invoice_id": "CTR-0047",
+"vendor": "Bengaluru Simulation Labs Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-11-14",
+"description": "Software development - MES integration module",
+"amount": 24353.57
+},
+{
+"invoice_id": "CTR-0048",
+"vendor": "Chennai Software Works Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-03-15",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 6141.18
+},
+{
+"invoice_id": "CTR-0049",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-12-19",
+"description": "Software development - controller firmware",
+"amount": 14650.48
+},
+{
+"invoice_id": "CTR-0050",
+"vendor": "Chennai Software Works Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-05-31",
+"description": "Metallurgical testing for product quality control",
+"amount": 19890.33
+},
+{
+"invoice_id": "CTR-0051",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-01-03",
+"description": "Development of simulation models for new alloy process",
+"amount": 24393.7
+},
+{
+"invoice_id": "CTR-0052",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-08-03",
+"description": "Software development - MES integration module",
+"amount": 49119.21
+},
+{
+"invoice_id": "CTR-0053",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-07-02",
+"description": "Production-line efficiency survey",
+"amount": 12792.62
+},
+{
+"invoice_id": "CTR-0054",
+"vendor": "Northgate Engineering LLC",
+"vendor_country": "US",
+"invoice_date": "2024-04-30",
+"description": "Software development - controller firmware",
+"amount": 25027.14
+},
+{
+"invoice_id": "CTR-0055",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-01-20",
+"description": "Software development - controller firmware",
+"amount": 23029.98
+},
+{
+"invoice_id": "CTR-0056",
+"vendor": "Northgate Engineering LLC",
+"vendor_country": "US",
+"invoice_date": "2024-07-18",
+"description": "Prototype engineering - new actuator design",
+"amount": 16531.23
+},
+{
+"invoice_id": "CTR-0057",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-03-07",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 14641.9
+},
+{
+"invoice_id": "CTR-0058",
+"vendor": "Summit Prototyping Inc",
+"vendor_country": "US",
+"invoice_date": "2024-05-06",
+"description": "Market research study - customer survey",
+"amount": 39945.29
+},
+{
+"invoice_id": "CTR-0059",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-05-17",
+"description": "Software development - MES integration module",
+"amount": 19816.2
+},
+{
+"invoice_id": "CTR-0060",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-12-19",
+"description": "Software development - controller firmware",
+"amount": 22849.87
+},
+{
+"invoice_id": "CTR-0061",
+"vendor": "Summit Prototyping Inc",
+"vendor_country": "US",
+"invoice_date": "2024-01-19",
+"description": "Development of simulation models for new alloy process",
+"amount": 26562.9
+},
+{
+"invoice_id": "CTR-0062",
+"vendor": "Summit Prototyping Inc",
+"vendor_country": "US",
+"invoice_date": "2024-10-25",
+"description": "Prototype engineering - new actuator design",
+"amount": 17918.28
+},
+{
+"invoice_id": "CTR-0063",
+"vendor": "Summit Prototyping Inc",
+"vendor_country": "US",
+"invoice_date": "2024-07-15",
+"description": "Software development - MES integration module",
+"amount": 14263.56
+},
+{
+"invoice_id": "CTR-0064",
+"vendor": "Northgate Engineering LLC",
+"vendor_country": "US",
+"invoice_date": "2024-01-11",
+"description": "Production-line efficiency survey",
+"amount": 45536.22
+},
+{
+"invoice_id": "CTR-0065",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-08-22",
+"description": "Software development - MES integration module",
+"amount": 16637.07
+},
+{
+"invoice_id": "CTR-0066",
+"vendor": "Pune Embedded Systems Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-05-03",
+"description": "Software development - controller firmware",
+"amount": 5579.89
+},
+{
+"invoice_id": "CTR-0067",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-04-25",
+"description": "Market research study - customer survey",
+"amount": 7338.93
+},
+{
+"invoice_id": "CTR-0068",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-06-26",
+"description": "Software development - controller firmware",
+"amount": 32322.64
+},
+{
+"invoice_id": "CTR-0069",
+"vendor": "Summit Prototyping Inc",
+"vendor_country": "US",
+"invoice_date": "2024-08-20",
+"description": "Routine inspection and calibration testing",
+"amount": 26951.05
+},
+{
+"invoice_id": "CTR-0070",
+"vendor": "Bengaluru Simulation Labs Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-05-05",
+"description": "Production-line efficiency survey",
+"amount": 6190.31
+},
+{
+"invoice_id": "CTR-0071",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-03-08",
+"description": "Routine inspection and calibration testing",
+"amount": 14226.38
+},
+{
+"invoice_id": "CTR-0072",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-03-11",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 58332.36
+},
+{
+"invoice_id": "CTR-0073",
+"vendor": "Lakeshore Software Partners",
+"vendor_country": "US",
+"invoice_date": "2024-07-22",
+"description": "Routine inspection and calibration testing",
+"amount": 9210.32
+},
+{
+"invoice_id": "CTR-0074",
+"vendor": "Lakeshore Software Partners",
+"vendor_country": "US",
+"invoice_date": "2024-10-17",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 27097.79
+},
+{
+"invoice_id": "CTR-0075",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-06-20",
+"description": "Prototype engineering - new actuator design",
+"amount": 5491.81
+},
+{
+"invoice_id": "CTR-0076",
+"vendor": "Lakeshore Software Partners",
+"vendor_country": "US",
+"invoice_date": "2024-07-12",
+"description": "Software development - MES integration module",
+"amount": 38207.48
+},
+{
+"invoice_id": "CTR-0077",
+"vendor": "Bengaluru Simulation Labs Pvt Ltd",
+"vendor_country": "IN",
+"invoice_date": "2024-08-23",
+"description": "Development of simulation models for new alloy process",
+"amount": 48668.34
+},
+{
+"invoice_id": "CTR-0078",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-11-30",
+"description": "Development of simulation models for new alloy process",
+"amount": 19825.17
+},
+{
+"invoice_id": "CTR-0079",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-04-21",
+"description": "Software development - controller firmware",
+"amount": 33934.56
+},
+{
+"invoice_id": "CTR-0080",
+"vendor": "Northgate Engineering LLC",
+"vendor_country": "US",
+"invoice_date": "2024-09-04",
+"description": "Production-line efficiency survey",
+"amount": 15992.74
+},
+{
+"invoice_id": "CTR-0081",
+"vendor": "Ironwood Test Labs",
+"vendor_country": "US",
+"invoice_date": "2024-12-23",
+"description": "Software development - controller firmware",
+"amount": 18824.96
+},
+{
+"invoice_id": "CTR-0082",
+"vendor": "Northgate Engineering LLC",
+"vendor_country": "US",
+"invoice_date": "2024-07-28",
+"description": "Software development - MES integration module",
+"amount": 18876.18
+},
+{
+"invoice_id": "CTR-0083",
+"vendor": "Lakeshore Software Partners",
+"vendor_country": "US",
+"invoice_date": "2024-12-28",
+"description": "Software development - MES integration module",
+"amount": 26481.27
+},
+{
+"invoice_id": "CTR-0084",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-07-31",
+"description": "Prototype engineering - new actuator design",
+"amount": 27949.97
+},
+{
+"invoice_id": "CTR-0085",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-06-20",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 6837.02
+},
+{
+"invoice_id": "CTR-0086",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-04-27",
+"description": "Software development - MES integration module",
+"amount": 25132.6
+},
+{
+"invoice_id": "CTR-0087",
+"vendor": "Meridian Design Group",
+"vendor_country": "US",
+"invoice_date": "2024-01-23",
+"description": "Design and build of pre-production tooling prototype",
+"amount": 15236.49
+},
+{
+"invoice_id": "CTR-0088",
+"vendor": "Summit Prototyping Inc",
+"vendor_country": "US",
+"invoice_date": "2024-02-29",
+"description": "Routine inspection and calibration testing",
+"amount": 20182.15
+}
+]
+}

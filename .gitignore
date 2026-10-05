@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 project_mark_task2/author/persons_truth.pkl
+project_mark_task4/author/stage1.pkl
+project_mark_task4/author/stage2.pkl
+project_mark_task4/author/truth.pkl

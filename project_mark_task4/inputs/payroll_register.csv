@@ -1,0 +1,444 @@
+emp_id,name,dept,location,annual_wages_2024,pct_time_qualified_research
+EMP0001,Vikram Miller,R&D Engineering,US,114100.0,0.56
+EMP0002,Arjun Miller,R&D Engineering,US,110800.0,0.97
+EMP0003,Daniel Hill,R&D Engineering,US,145700.0,0.75
+EMP0004,Jennifer Adams,R&D Engineering,US,151100.0,0.6
+EMP0005,Donna Martin,R&D Engineering,US,170900.0,0.95
+EMP0006,Mark Martin,R&D Engineering,US,218100.0,0.86
+EMP0007,Vikram Moore,R&D Engineering,US,103100.0,0.76
+EMP0008,Stephanie Baker,R&D Engineering,US,92800.0,0.68
+EMP0009,Patricia Jackson,R&D Engineering,US,218100.0,0.71
+EMP0010,Vikram Hill,R&D Engineering,US,167200.0,0.98
+EMP0011,William Walker,R&D Engineering,US,100800.0,0.88
+EMP0012,Donna Flores,R&D Engineering,US,153600.0,0.58
+EMP0013,Joseph Sanchez,R&D Engineering,US,94500.0,0.62
+EMP0014,Donald Martin,R&D Engineering,US,153000.0,0.97
+EMP0015,Mary Martinez,R&D Engineering,US,75400.0,0.6
+EMP0016,Rebecca Hernandez,R&D Engineering,US,127500.0,0.69
+EMP0017,Amanda Walker,R&D Engineering,US,187600.0,0.71
+EMP0018,Sandra Nguyen,R&D Engineering,US,106000.0,0.94
+EMP0019,Emily Allen,R&D Engineering,US,261900.0,0.81
+EMP0020,Matthew Wright,R&D Engineering,US,137300.0,0.93
+EMP0021,James Baker,R&D Engineering,US,120600.0,0.66
+EMP0022,Patricia Torres,R&D Engineering,US,109900.0,0.62
+EMP0023,Andrew Smith,R&D Engineering,US,158600.0,0.74
+EMP0024,Neha Adams,R&D Engineering,US,133100.0,0.72
+EMP0025,William Brown,R&D Engineering,US,136400.0,0.64
+EMP0026,Donna Martinez,R&D Engineering,US,155500.0,0.91
+EMP0027,Cynthia Thomas,R&D Engineering,US,125700.0,0.96
+EMP0028,Timothy Johnson,R&D Engineering,US,188200.0,0.73
+EMP0029,Cynthia Perez,R&D Engineering,US,166600.0,0.91
+EMP0030,Cynthia Williams,R&D Engineering,US,110300.0,0.81
+EMP0031,Ashley Perez,R&D Engineering,US,159300.0,0.92
+EMP0032,Kenneth Sharma,R&D Engineering,US,104700.0,0.77
+EMP0033,Michael Nair,R&D Engineering,US,121300.0,0.83
+EMP0034,Thomas Jackson,R&D Engineering,US,117400.0,0.78
+EMP0035,John Nair,R&D Engineering,US,195800.0,0.92
+EMP0036,John Rao,R&D Engineering,US,130300.0,0.85
+EMP0037,Kimberly Nair,R&D Engineering,US,99700.0,0.94
+EMP0038,Jennifer Iyer,R&D Engineering,US,80100.0,0.64
+EMP0039,Donna Wilson,R&D Engineering,US,161000.0,0.59
+EMP0040,William Johnson,R&D Engineering,US,104400.0,0.97
+EMP0041,Rohan Martinez,R&D Engineering,US,110400.0,0.58
+EMP0042,Daniel Anderson,R&D Engineering,US,114800.0,0.88
+EMP0043,David Martin,R&D Engineering,US,91800.0,0.97
+EMP0044,Donna Hill,R&D Engineering,US,152800.0,0.64
+EMP0045,Matthew Martinez,R&D Engineering,US,110400.0,0.86
+EMP0046,Neha Nguyen,R&D Engineering,US,124000.0,0.71
+EMP0047,Sarah Wright,R&D Engineering,US,123000.0,0.69
+EMP0048,Mark Brown,R&D Engineering,US,102700.0,0.67
+EMP0049,Arjun Thomas,R&D Engineering,US,134500.0,0.83
+EMP0050,Donna Hernandez,R&D Engineering,US,147100.0,0.66
+EMP0051,Linda Lopez,R&D Engineering,US,91100.0,0.7
+EMP0052,Nancy Walker,R&D Engineering,US,137600.0,0.77
+EMP0053,Jessica Williams,Software Development,US,101800.0,1.0
+EMP0054,Andrew Garcia,Software Development,US,192100.0,1.0
+EMP0055,Andrew Adams,Software Development,US,142600.0,1.0
+EMP0056,Mary Martin,Software Development,US,126300.0,1.0
+EMP0057,Lisa Davis,Software Development,US,113900.0,1.0
+EMP0058,Ronald Nair,Software Development,US,152300.0,1.0
+EMP0059,Anthony Green,Software Development,US,127200.0,1.0
+EMP0060,Neha Gonzalez,Software Development,US,143500.0,1.0
+EMP0061,Barbara Adams,Software Development,US,119500.0,1.0
+EMP0062,Arjun Flores,Software Development,US,161700.0,1.0
+EMP0063,Kimberly Williams,Software Development,US,184700.0,1.0
+EMP0064,Cynthia Gonzalez,Software Development,US,122300.0,1.0
+EMP0065,Thomas Johnson,Software Development,US,151400.0,1.0
+EMP0066,Vikram Lewis,Software Development,US,122800.0,1.0
+EMP0067,Edward Williams,Software Development,US,120800.0,1.0
+EMP0068,Thomas Baker,Software Development,US,183400.0,1.0
+EMP0069,Brian Rodriguez,Software Development,US,114400.0,1.0
+EMP0070,Melissa Rao,Software Development,US,121300.0,1.0
+EMP0071,Joseph Martinez,R&D Engineering India,IN,50800.0,0.95
+EMP0072,John Anderson,R&D Engineering India,IN,48100.0,0.76
+EMP0073,John Nguyen,R&D Engineering India,IN,59700.0,0.87
+EMP0074,Robert Thompson,R&D Engineering India,IN,49300.0,0.76
+EMP0075,Nancy Patel,R&D Engineering India,IN,46500.0,0.89
+EMP0076,George Brown,R&D Engineering India,IN,53000.0,0.92
+EMP0077,Kevin Flores,R&D Engineering India,IN,47700.0,0.82
+EMP0078,Steven Torres,R&D Engineering India,IN,40100.0,0.83
+EMP0079,Sandra Lewis,R&D Engineering India,IN,49300.0,1.0
+EMP0080,Ashley Wilson,R&D Engineering India,IN,47300.0,1.0
+EMP0081,Carol Sanchez,R&D Engineering India,IN,67400.0,0.85
+EMP0082,Laura Smith,R&D Engineering India,IN,32400.0,0.86
+EMP0083,Steven Sharma,R&D Engineering India,IN,46800.0,0.98
+EMP0084,Elizabeth Nguyen,R&D Engineering India,IN,76900.0,0.9
+EMP0085,Rohan Gupta,Quality Lab,US,70800.0,0.0
+EMP0086,James Wright,Quality Lab,US,108100.0,0.0
+EMP0087,Betty Adams,Quality Lab,US,105200.0,0.0
+EMP0088,Anthony Miller,Quality Lab,US,77100.0,0.0
+EMP0089,Steven Lewis,Quality Lab,US,87300.0,0.0
+EMP0090,Neha Anderson,Quality Lab,US,86800.0,0.0
+EMP0091,Carol Miller,Quality Lab,US,60500.0,0.0
+EMP0092,Priya Rao,Quality Lab,US,67300.0,0.0
+EMP0093,Ashley King,Quality Lab,US,66500.0,0.0
+EMP0094,Michelle Clark,Quality Lab,US,77900.0,0.0
+EMP0095,David Wright,Quality Lab,US,52300.0,0.0
+EMP0096,Richard Martin,Quality Lab,US,100500.0,0.0
+EMP0097,Laura Brown,Quality Lab,US,62800.0,0.0
+EMP0098,Emily Lee,Quality Lab,US,72400.0,0.0
+EMP0099,Susan Green,Quality Lab,US,63500.0,0.0
+EMP0100,Joseph Moore,Quality Lab,US,68300.0,0.0
+EMP0101,Ronald Sharma,Quality Lab,US,65700.0,0.0
+EMP0102,Nancy Moore,Quality Lab,US,82000.0,0.0
+EMP0103,Anthony Garcia,Quality Lab,US,58100.0,0.0
+EMP0104,Joseph Lee,Quality Lab,US,48600.0,0.0
+EMP0105,Neha Jackson,Quality Lab,US,61200.0,0.0
+EMP0106,Ashley Martin,Quality Lab,US,52800.0,0.0
+EMP0107,Melissa Martin,Production,US,50400.0,0.0
+EMP0108,Charles Patel,Production,US,44200.0,0.0
+EMP0109,Susan Young,Production,US,54100.0,0.0
+EMP0110,Vikram Young,Production,US,57800.0,0.0
+EMP0111,Charles Jackson,Production,US,52500.0,0.0
+EMP0112,Ronald Martin,Production,US,64800.0,0.0
+EMP0113,Kimberly Smith,Production,US,53300.0,0.0
+EMP0114,Barbara Lee,Production,US,74500.0,0.0
+EMP0115,Kevin Harris,Production,US,34100.0,0.0
+EMP0116,Sarah Iyer,Production,US,65600.0,0.0
+EMP0117,Cynthia Anderson,Production,US,81800.0,0.0
+EMP0118,Joshua Green,Production,US,64200.0,0.0
+EMP0119,Jason Clark,Production,US,70300.0,0.0
+EMP0120,Edward Green,Production,US,49400.0,0.0
+EMP0121,Mary Garcia,Production,US,44000.0,0.0
+EMP0122,Jennifer Garcia,Production,US,65800.0,0.0
+EMP0123,Timothy Hernandez,Production,US,56700.0,0.0
+EMP0124,Betty Iyer,Production,US,45900.0,0.0
+EMP0125,Edward Anderson,Production,US,70300.0,0.0
+EMP0126,David Lee,Production,US,99700.0,0.0
+EMP0127,Chris Adams,Production,US,62700.0,0.0
+EMP0128,Rebecca Torres,Production,US,47400.0,0.0
+EMP0129,Steven Young,Production,US,58000.0,0.0
+EMP0130,Timothy Gupta,Production,US,44100.0,0.0
+EMP0131,James Gupta,Production,US,50400.0,0.0
+EMP0132,Ronald Johnson,Production,US,61300.0,0.0
+EMP0133,Amanda Brown,Production,US,52900.0,0.0
+EMP0134,Donald Robinson,Production,US,61500.0,0.0
+EMP0135,Matthew Moore,Production,US,42400.0,0.0
+EMP0136,Edward Anderson,Production,US,47200.0,0.0
+EMP0137,Donald Thomas,Production,US,47600.0,0.0
+EMP0138,Cynthia Gupta,Production,US,48500.0,0.0
+EMP0139,Steven Rao,Production,US,66700.0,0.0
+EMP0140,David Thomas,Production,US,57900.0,0.0
+EMP0141,Timothy Adams,Production,US,66700.0,0.0
+EMP0142,John Lee,Production,US,40800.0,0.0
+EMP0143,Vikram Iyer,Production,US,44500.0,0.0
+EMP0144,William Sanchez,Production,US,45600.0,0.0
+EMP0145,Mark Sharma,Production,US,67700.0,0.0
+EMP0146,Steven Johnson,Production,US,55400.0,0.0
+EMP0147,William White,Production,US,62000.0,0.0
+EMP0148,Kevin White,Production,US,59200.0,0.0
+EMP0149,Edward Flores,Production,US,55800.0,0.0
+EMP0150,Steven Sanchez,Production,US,42200.0,0.0
+EMP0151,Steven Clark,Production,US,54500.0,0.0
+EMP0152,Priya White,Production,US,87800.0,0.0
+EMP0153,Stephanie Thompson,Production,US,68300.0,0.0
+EMP0154,Donald Hill,Production,US,47200.0,0.0
+EMP0155,Neha Davis,Production,US,43400.0,0.0
+EMP0156,Brian King,Production,US,38300.0,0.0
+EMP0157,Neha Scott,Production,US,65500.0,0.0
+EMP0158,Michael Miller,Production,US,46400.0,0.0
+EMP0159,Kenneth Baker,Production,US,54900.0,0.0
+EMP0160,Linda Sharma,Production,US,62500.0,0.0
+EMP0161,Michelle Johnson,Production,US,52100.0,0.0
+EMP0162,Joshua Hernandez,Production,US,39900.0,0.0
+EMP0163,Ronald Jones,Production,US,73600.0,0.0
+EMP0164,Mary Nguyen,Production,US,48400.0,0.0
+EMP0165,Mary Adams,Production,US,60100.0,0.0
+EMP0166,Karen Perez,Production,US,56900.0,0.0
+EMP0167,Rebecca Miller,Production,US,40800.0,0.0
+EMP0168,Kimberly Wilson,Production,US,66200.0,0.0
+EMP0169,Kenneth Smith,Production,US,54400.0,0.0
+EMP0170,Michael King,Production,US,49500.0,0.0
+EMP0171,Timothy Harris,Production,US,40400.0,0.0
+EMP0172,Barbara Gonzalez,Production,US,57100.0,0.0
+EMP0173,Betty Green,Production,US,49200.0,0.0
+EMP0174,Andrew Anderson,Production,US,58300.0,0.0
+EMP0175,Susan Johnson,Production,US,52400.0,0.0
+EMP0176,Laura Walker,Production,US,47500.0,0.0
+EMP0177,Carol Lee,Production,US,63300.0,0.0
+EMP0178,Daniel Gupta,Production,US,67100.0,0.0
+EMP0179,Robert Wilson,Production,US,58300.0,0.0
+EMP0180,Andrew Rodriguez,Production,US,57700.0,0.0
+EMP0181,Stephanie Clark,Production,US,56400.0,0.0
+EMP0182,Lisa Ramirez,Production,US,65000.0,0.0
+EMP0183,Neha Miller,Production,US,75400.0,0.0
+EMP0184,Brian Lee,Production,US,70600.0,0.0
+EMP0185,Brian Torres,Production,US,64600.0,0.0
+EMP0186,Sarah Green,Production,US,85400.0,0.0
+EMP0187,Priya Ramirez,Production,US,65800.0,0.0
+EMP0188,Betty Wilson,Production,US,90800.0,0.0
+EMP0189,William Patel,Production,US,77700.0,0.0
+EMP0190,Brian Nelson,Production,US,45300.0,0.0
+EMP0191,Ashley Rao,Production,US,50900.0,0.0
+EMP0192,Joseph Harris,Production,US,53200.0,0.0
+EMP0193,Michael Moore,Production,US,60100.0,0.0
+EMP0194,Deborah Gupta,Production,US,41300.0,0.0
+EMP0195,Chris Brown,Production,US,44000.0,0.0
+EMP0196,Sandra Jackson,Production,US,48200.0,0.0
+EMP0197,Jennifer Torres,Production,US,33400.0,0.0
+EMP0198,Joseph Scott,Production,US,63500.0,0.0
+EMP0199,Paul Nguyen,Production,US,44100.0,0.0
+EMP0200,Edward Patel,Production,US,54800.0,0.0
+EMP0201,Rohan Taylor,Production,US,59800.0,0.0
+EMP0202,Edward Young,Production,US,61600.0,0.0
+EMP0203,Kevin Adams,Production,US,46300.0,0.0
+EMP0204,Patricia Perez,Production,US,59300.0,0.0
+EMP0205,David Davis,Production,US,43200.0,0.0
+EMP0206,Carol Adams,Production,US,42700.0,0.0
+EMP0207,Daniel Moore,Production,US,62200.0,0.0
+EMP0208,Betty Martin,Production,US,68500.0,0.0
+EMP0209,Sharon Martinez,Production,US,44200.0,0.0
+EMP0210,Lisa Brown,Production,US,56400.0,0.0
+EMP0211,Michelle Lee,Production,US,42400.0,0.0
+EMP0212,Mary Garcia,Production,US,44000.0,0.0
+EMP0213,Thomas Rodriguez,Production,US,63700.0,0.0
+EMP0214,Michael Flores,Production,US,42600.0,0.0
+EMP0215,Donna Martinez,Production,US,85800.0,0.0
+EMP0216,Elizabeth Clark,Production,US,56400.0,0.0
+EMP0217,Linda Thomas,Production,US,91500.0,0.0
+EMP0218,Deborah Thomas,Production,US,54900.0,0.0
+EMP0219,Kevin Scott,Production,US,52400.0,0.0
+EMP0220,Mary Robinson,Production,US,63400.0,0.0
+EMP0221,Melissa Wilson,Production,US,47500.0,0.0
+EMP0222,Jennifer Martinez,Production,US,54600.0,0.0
+EMP0223,Robert Wright,Production,US,48100.0,0.0
+EMP0224,Richard King,Production,US,54300.0,0.0
+EMP0225,Stephanie Taylor,Production,US,50700.0,0.0
+EMP0226,Daniel Brown,Production,US,43300.0,0.0
+EMP0227,Mary Martinez,Production,US,61200.0,0.0
+EMP0228,Linda Clark,Production,US,62200.0,0.0
+EMP0229,Sarah Nair,Production,US,40900.0,0.0
+EMP0230,Ronald Nair,Production,US,42700.0,0.0
+EMP0231,Kevin Clark,Production,US,49900.0,0.0
+EMP0232,Betty King,Production,US,59600.0,0.0
+EMP0233,William Smith,Production,US,61100.0,0.0
+EMP0234,Nancy Rodriguez,Production,US,92600.0,0.0
+EMP0235,Carol Gupta,Production,US,41700.0,0.0
+EMP0236,Mark Jones,Production,US,44200.0,0.0
+EMP0237,John Nelson,Production,US,44900.0,0.0
+EMP0238,Cynthia Miller,Production,US,63300.0,0.0
+EMP0239,Mary Sharma,Production,US,65400.0,0.0
+EMP0240,John Allen,Production,US,58700.0,0.0
+EMP0241,Matthew Baker,Production,US,55800.0,0.0
+EMP0242,Edward Nguyen,Production,US,41200.0,0.0
+EMP0243,Susan Harris,Production,US,75000.0,0.0
+EMP0244,William Hernandez,Production,US,70800.0,0.0
+EMP0245,Sarah Jackson,Production,US,67200.0,0.0
+EMP0246,Amanda Nair,Production,US,48300.0,0.0
+EMP0247,Mark Thomas,Production,US,41700.0,0.0
+EMP0248,Sharon Davis,Production,US,61400.0,0.0
+EMP0249,Kenneth Patel,Production,US,46600.0,0.0
+EMP0250,Neha Nair,Production,US,47900.0,0.0
+EMP0251,Rebecca Rodriguez,Production,US,33000.0,0.0
+EMP0252,Donna Sharma,Production,US,53600.0,0.0
+EMP0253,Nancy Lopez,Production,US,52900.0,0.0
+EMP0254,Thomas Lopez,Production,US,46400.0,0.0
+EMP0255,Ananya Nelson,Production,US,48900.0,0.0
+EMP0256,Matthew Allen,Production,US,48800.0,0.0
+EMP0257,Betty Baker,Production,US,73000.0,0.0
+EMP0258,Melissa Iyer,Production,US,59200.0,0.0
+EMP0259,Donna Robinson,Production,US,46600.0,0.0
+EMP0260,Matthew Thompson,Production,US,72300.0,0.0
+EMP0261,Laura Nair,Production,US,46900.0,0.0
+EMP0262,Joshua Thompson,Production,US,44400.0,0.0
+EMP0263,Andrew Sharma,Production,US,74800.0,0.0
+EMP0264,Jessica Miller,Production,US,48800.0,0.0
+EMP0265,Steven Smith,Production,US,72300.0,0.0
+EMP0266,Edward Torres,Production,US,51100.0,0.0
+EMP0267,Jason Young,Production,US,60800.0,0.0
+EMP0268,Cynthia Lewis,Production,US,51900.0,0.0
+EMP0269,Joseph Adams,Production,US,48700.0,0.0
+EMP0270,Chris Young,Production,US,45100.0,0.0
+EMP0271,Deborah Smith,Production,US,80000.0,0.0
+EMP0272,Edward Jackson,Production,US,89100.0,0.0
+EMP0273,Rohan Johnson,Production,US,63900.0,0.0
+EMP0274,Charles White,Production,US,70800.0,0.0
+EMP0275,Laura Martinez,Production,US,57900.0,0.0
+EMP0276,Rebecca Thompson,Production,US,59200.0,0.0
+EMP0277,Mary Hernandez,Production,US,48900.0,0.0
+EMP0278,Steven Perez,Production,US,50600.0,0.0
+EMP0279,Brian Johnson,Production,US,49500.0,0.0
+EMP0280,Jessica Lee,Production,US,50000.0,0.0
+EMP0281,Andrew Lee,Production,US,58400.0,0.0
+EMP0282,George Nair,Production,US,58600.0,0.0
+EMP0283,Robert Scott,Production,US,46300.0,0.0
+EMP0284,Robert Hall,Production,US,45500.0,0.0
+EMP0285,Melissa Lee,Production,US,37500.0,0.0
+EMP0286,Stephanie Martinez,Production,US,69700.0,0.0
+EMP0287,Kimberly Lopez,Production,US,63300.0,0.0
+EMP0288,Paul Patel,Production,US,42900.0,0.0
+EMP0289,Deborah Adams,Production,US,65600.0,0.0
+EMP0290,Sarah Wilson,Production,US,59600.0,0.0
+EMP0291,Jennifer Young,Production,US,45000.0,0.0
+EMP0292,Laura Martin,Production,US,50200.0,0.0
+EMP0293,Donald Brown,Production,US,51800.0,0.0
+EMP0294,Mary Nair,Production,US,42500.0,0.0
+EMP0295,Donna Gupta,Production,US,43400.0,0.0
+EMP0296,James Flores,Production,US,64100.0,0.0
+EMP0297,Jessica Sanchez,Production,US,53000.0,0.0
+EMP0298,Carol Smith,Production,US,60200.0,0.0
+EMP0299,Nancy White,Production,US,49400.0,0.0
+EMP0300,Matthew Perez,Production,US,61100.0,0.0
+EMP0301,Carol Sanchez,Production,US,62900.0,0.0
+EMP0302,Ananya Perez,Production,US,72600.0,0.0
+EMP0303,Michelle Nelson,Production,US,65300.0,0.0
+EMP0304,Stephanie Moore,Production,US,57800.0,0.0
+EMP0305,Melissa Martinez,Production,US,50400.0,0.0
+EMP0306,Neha Green,Production,US,67100.0,0.0
+EMP0307,David King,Production,US,63800.0,0.0
+EMP0308,Priya Miller,Production,US,51000.0,0.0
+EMP0309,Susan Hill,Production,US,48000.0,0.0
+EMP0310,Ananya Gonzalez,Production,US,37000.0,0.0
+EMP0311,Amanda Jackson,Production,US,56400.0,0.0
+EMP0312,Richard King,Production,US,63300.0,0.0
+EMP0313,Ronald Martinez,Production,US,54600.0,0.0
+EMP0314,Sharon Nelson,Production,US,67900.0,0.0
+EMP0315,Sarah Lewis,Production,US,68000.0,0.0
+EMP0316,James Robinson,Production,US,50000.0,0.0
+EMP0317,Mary White,Production,US,40800.0,0.0
+EMP0318,Matthew Torres,Production,US,94800.0,0.0
+EMP0319,Nancy Johnson,Production,US,45700.0,0.0
+EMP0320,Chris White,Production,US,41100.0,0.0
+EMP0321,Vikram Rodriguez,Production,US,63900.0,0.0
+EMP0322,Matthew Williams,Production,US,68600.0,0.0
+EMP0323,William Hernandez,Production,US,46900.0,0.0
+EMP0324,Ananya Brown,Production,US,54200.0,0.0
+EMP0325,Sarah Hernandez,Production,US,62400.0,0.0
+EMP0326,Nancy Rao,Production,US,67100.0,0.0
+EMP0327,Matthew Rodriguez,Production,US,55300.0,0.0
+EMP0328,George Hill,Production,US,56200.0,0.0
+EMP0329,Deborah Flores,Production,US,61900.0,0.0
+EMP0330,Elizabeth King,Production,US,42900.0,0.0
+EMP0331,Edward King,Production,US,39300.0,0.0
+EMP0332,Joseph Nair,Production,US,69000.0,0.0
+EMP0333,Barbara Williams,Production,US,46900.0,0.0
+EMP0334,Jason Davis,Production,US,61800.0,0.0
+EMP0335,Paul Hill,Production,US,32000.0,0.0
+EMP0336,Vikram White,Production,US,54100.0,0.0
+EMP0337,Steven Rodriguez,Production,US,68600.0,0.0
+EMP0338,Vikram Moore,Production,US,58300.0,0.0
+EMP0339,Sarah Jones,Production,US,50100.0,0.0
+EMP0340,John Hernandez,Production,US,57200.0,0.0
+EMP0341,Deborah Lopez,Production,US,51400.0,0.0
+EMP0342,Brian Scott,Production,US,78500.0,0.0
+EMP0343,Jessica Nguyen,Production,US,56400.0,0.0
+EMP0344,Robert Smith,Production,US,48700.0,0.0
+EMP0345,Timothy Torres,Production,US,49900.0,0.0
+EMP0346,James Torres,Production,US,58200.0,0.0
+EMP0347,Donna Sharma,Administration,US,77300.0,0.0
+EMP0348,Cynthia Sanchez,Administration,US,77500.0,0.0
+EMP0349,Michelle Patel,Administration,US,67800.0,0.0
+EMP0350,Michael Wright,Administration,US,110100.0,0.0
+EMP0351,Kimberly Wilson,Administration,US,41300.0,0.0
+EMP0352,David Young,Administration,US,79400.0,0.0
+EMP0353,Cynthia Rao,Administration,US,76200.0,0.0
+EMP0354,Andrew Rodriguez,Administration,US,110200.0,0.0
+EMP0355,Rohan Thomas,Administration,US,109400.0,0.0
+EMP0356,Melissa Lopez,Administration,US,76200.0,0.0
+EMP0357,Arjun Garcia,Administration,US,86200.0,0.0
+EMP0358,Carol King,Administration,US,104200.0,0.0
+EMP0359,Ashley Rao,Administration,US,67700.0,0.0
+EMP0360,John Rao,Administration,US,95800.0,0.0
+EMP0361,Stephanie Nelson,Administration,US,84100.0,0.0
+EMP0362,Lisa Martinez,Administration,US,71700.0,0.0
+EMP0363,Jessica Rao,Administration,US,65500.0,0.0
+EMP0364,Joshua Lee,Administration,US,64900.0,0.0
+EMP0365,George White,Administration,US,87000.0,0.0
+EMP0366,Cynthia Wright,Administration,US,93600.0,0.0
+EMP0367,Jason Allen,Administration,US,65900.0,0.0
+EMP0368,Betty Lopez,Administration,US,91200.0,0.0
+EMP0369,Chris Flores,Administration,US,82500.0,0.0
+EMP0370,Rebecca Gonzalez,Administration,US,65900.0,0.0
+EMP0371,Charles Baker,Administration,US,83600.0,0.0
+EMP0372,Thomas King,Administration,US,77700.0,0.0
+EMP0373,Jason Hall,Administration,US,127200.0,0.0
+EMP0374,Michelle Lee,Administration,US,70400.0,0.0
+EMP0375,Deborah Martinez,Administration,US,65500.0,0.0
+EMP0376,John Walker,Administration,US,78900.0,0.0
+EMP0377,Susan Martin,Administration,US,76500.0,0.0
+EMP0378,Joseph Robinson,Administration,US,93200.0,0.0
+EMP0379,Michelle Adams,Administration,US,77500.0,0.0
+EMP0380,Ashley Johnson,Administration,US,55500.0,0.0
+EMP0381,Mark Green,Administration,US,110600.0,0.0
+EMP0382,Vikram Jackson,Administration,US,63200.0,0.0
+EMP0383,Jason Iyer,Administration,US,90800.0,0.0
+EMP0384,Sarah Hill,Administration,US,97900.0,0.0
+EMP0385,David Smith,Administration,US,83400.0,0.0
+EMP0386,John King,Administration,US,63800.0,0.0
+EMP0387,Mark Scott,Administration,US,109100.0,0.0
+EMP0388,Mary Clark,Administration,US,70600.0,0.0
+EMP0389,Joseph Moore,Administration,US,74600.0,0.0
+EMP0390,Timothy Smith,Administration,US,77600.0,0.0
+EMP0391,Michael Young,Administration,US,76300.0,0.0
+EMP0392,Barbara White,Administration,US,92200.0,0.0
+EMP0393,Linda Lewis,Administration,US,100000.0,0.0
+EMP0394,Thomas Lewis,Administration,US,88300.0,0.0
+EMP0395,Robert Smith,Administration,US,97500.0,0.0
+EMP0396,Joseph King,Administration,US,57700.0,0.0
+EMP0397,Sarah Walker,Administration,US,109000.0,0.0
+EMP0398,Sandra King,Administration,US,68500.0,0.0
+EMP0399,Robert Ramirez,Administration,US,105700.0,0.0
+EMP0400,Kimberly Anderson,Administration,US,72500.0,0.0
+EMP0401,Jennifer Iyer,Administration,US,65600.0,0.0
+EMP0402,Vikram Perez,Sales & Marketing,US,74400.0,0.0
+EMP0403,Kevin Lewis,Sales & Marketing,US,104500.0,0.0
+EMP0404,Betty Hall,Sales & Marketing,US,79400.0,0.0
+EMP0405,Kimberly Clark,Sales & Marketing,US,73400.0,0.0
+EMP0406,Paul Young,Sales & Marketing,US,115500.0,0.0
+EMP0407,Arjun White,Sales & Marketing,US,115300.0,0.0
+EMP0408,Amanda Lopez,Sales & Marketing,US,123800.0,0.0
+EMP0409,Michael Walker,Sales & Marketing,US,87600.0,0.0
+EMP0410,Steven Ramirez,Sales & Marketing,US,83100.0,0.0
+EMP0411,Jason Davis,Sales & Marketing,US,106000.0,0.0
+EMP0412,Barbara Sanchez,Sales & Marketing,US,60800.0,0.0
+EMP0413,Neha Gupta,Sales & Marketing,US,102000.0,0.0
+EMP0414,Priya Clark,Sales & Marketing,US,81300.0,0.0
+EMP0415,Deborah Hernandez,Sales & Marketing,US,92900.0,0.0
+EMP0416,Mark Martin,Sales & Marketing,US,104300.0,0.0
+EMP0417,Rebecca Sanchez,Sales & Marketing,US,93100.0,0.0
+EMP0418,Brian Martin,Sales & Marketing,US,101800.0,0.0
+EMP0419,Steven Iyer,Sales & Marketing,US,75400.0,0.0
+EMP0420,Susan Gonzalez,Sales & Marketing,US,93900.0,0.0
+EMP0421,Kevin Young,Sales & Marketing,US,145600.0,0.0
+EMP0422,Cynthia Young,Sales & Marketing,US,97600.0,0.0
+EMP0423,William Clark,Sales & Marketing,US,127600.0,0.0
+EMP0424,Ananya Gonzalez,Sales & Marketing,US,86200.0,0.0
+EMP0425,Carol Miller,Sales & Marketing,US,101800.0,0.0
+EMP0426,Susan Nelson,Sales & Marketing,US,83900.0,0.0
+EMP0427,Emily Lee,Sales & Marketing,US,161900.0,0.0
+EMP0428,Vikram Nair,Sales & Marketing,US,120500.0,0.0
+EMP0429,Charles Hill,Sales & Marketing,US,60900.0,0.0
+EMP0430,Timothy Patel,Sales & Marketing,US,113800.0,0.0
+EMP0431,Charles Iyer,Sales & Marketing,US,118000.0,0.0
+EMP0432,Patricia Clark,Sales & Marketing,US,81900.0,0.0
+EMP0433,Susan Harris,Sales & Marketing,US,78800.0,0.0
+EMP0434,Ananya Lee,Sales & Marketing,US,77700.0,0.0
+EMP0435,Ashley King,Sales & Marketing,US,86100.0,0.0
+EMP0436,Susan Iyer,Sales & Marketing,US,136000.0,0.0
+EMP0437,Charles Clark,Sales & Marketing,US,93900.0,0.0
+EMP0438,Joseph Lopez,Sales & Marketing,US,121000.0,0.0
+EMP0439,Daniel Wilson,Sales & Marketing,US,114200.0,0.0
+EMP0440,Ashley Walker,Sales & Marketing,US,128600.0,0.0
+EMP0441,Mark Garcia,Sales & Marketing,US,91600.0,0.0
+EMP0442,Charles Smith,Sales & Marketing,US,94900.0,0.0
+EMP0443,Carol Rao,Sales & Marketing,US,88100.0,0.0
