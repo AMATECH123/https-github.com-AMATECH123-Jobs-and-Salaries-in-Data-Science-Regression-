@@ -1,0 +1,10 @@
+# Harbor & Pine ops change log (informal)
+2024-01-02 | GHL pipeline set up; web forms and call tracking numbers live
+2024-03-10 | US daylight saving started; call tracking vendor reports in UTC
+2024-06-28 | GHL export switched from local (Central) time to ISO UTC timestamps from 1 Jul 2024
+2024-09-05 | Added a second Meta instant-form with a shorter questionnaire
+2025-02-03 | Geo holdout test started (see design note)
+2025-04-14 | New lead-qualification script launched for Meta and display leads; close rates moved after this date
+2025-04-28 | Geo holdout test ended; all clusters back to normal
+2025-06-10 | Rotated shared API keys
+2025-08-01 | Front desk now logs phone leads in GHL the same day

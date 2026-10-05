@@ -1,0 +1,114 @@
+{
+ "persons": 54073,
+ "persons_by_channel": {
+  "organic": 12254,
+  "meta": 11288,
+  "brand": 11166,
+  "lsa": 9535,
+  "nonbrand": 6159,
+  "retarget": 3671
+ },
+ "T_brand": [
+  "G01",
+  "G02",
+  "G06",
+  "G10",
+  "G15",
+  "G17",
+  "G24"
+ ],
+ "T_retarget": [
+  "G07",
+  "G08",
+  "G11",
+  "G14",
+  "G16",
+  "G19",
+  "G22"
+ ],
+ "control": [
+  "G03",
+  "G04",
+  "G05",
+  "G09",
+  "G12",
+  "G13",
+  "G18",
+  "G20",
+  "G21",
+  "G23"
+ ],
+ "channels": {
+  "brand": {
+   "run_rate_spend": 1465.3807381287056,
+   "attr_persons_per_week": 128.8037451370369,
+   "beta": 0.3,
+   "rho": 0.7,
+   "incremental_share": 0.30000000000000004,
+   "p_win_current": 0.4,
+   "contrib_per_win": 225.1007636902179,
+   "u_per_person": 90.04030547608716,
+   "completion_window": 0.9505660444315561,
+   "marginal_attr_persons_per_usd": 0.026369340428519534,
+   "marginal_incremental_contribution_per_usd": 0.7122910402160503,
+   "attributed_roas_platform": null
+  },
+  "nonbrand": {
+   "run_rate_spend": 4586.225263747914,
+   "attr_persons_per_week": 67.33922883566622,
+   "beta": 0.7,
+   "rho": 0.0,
+   "incremental_share": 1.0,
+   "p_win_current": 0.3,
+   "contrib_per_win": 343.17790963014863,
+   "u_per_person": 102.95337288904459,
+   "completion_window": 0.885431261937405,
+   "marginal_attr_persons_per_usd": 0.010278051659949449,
+   "marginal_incremental_contribution_per_usd": 1.0581600851196393,
+   "attributed_roas_platform": null
+  },
+  "meta": {
+   "run_rate_spend": 6476.679015243239,
+   "attr_persons_per_week": 122.05359353027585,
+   "beta": 0.75,
+   "rho": 0.0,
+   "incremental_share": 1.0,
+   "p_win_current": 0.22,
+   "contrib_per_win": 535.1863216023495,
+   "u_per_person": 117.7409907525169,
+   "completion_window": 0.4701507060230848,
+   "marginal_attr_persons_per_usd": 0.014133816873163197,
+   "marginal_incremental_contribution_per_usd": 1.664129601760875,
+   "attributed_roas_platform": null
+  },
+  "lsa": {
+   "run_rate_spend": 3007.0126736193233,
+   "attr_persons_per_week": 101.2147811527962,
+   "beta": 0.4,
+   "rho": 0.0,
+   "incremental_share": 1.0,
+   "p_win_current": 0.42,
+   "contrib_per_win": 196.99419759121656,
+   "u_per_person": 82.73756298831096,
+   "completion_window": 0.9696784753586734,
+   "marginal_attr_persons_per_usd": 0.013463831667988459,
+   "marginal_incremental_contribution_per_usd": 1.1139646206942109,
+   "attributed_roas_platform": null
+  },
+  "retarget": {
+   "run_rate_spend": 1846.3133959177676,
+   "attr_persons_per_week": 42.28471597637082,
+   "beta": 0.45,
+   "rho": 0.55,
+   "incremental_share": 0.44999999999999996,
+   "p_win_current": 0.22,
+   "contrib_per_win": 466.4831672085883,
+   "u_per_person": 102.62629678588944,
+   "completion_window": 0.83807767491659,
+   "marginal_attr_persons_per_usd": 0.010306008845214681,
+   "marginal_incremental_contribution_per_usd": 0.47595038509215154,
+   "attributed_roas_platform": null
+  }
+ },
+ "season_last8": 0.9594108821908485
+}

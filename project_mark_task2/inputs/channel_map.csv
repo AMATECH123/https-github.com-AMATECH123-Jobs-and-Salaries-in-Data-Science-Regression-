@@ -1,0 +1,38 @@
+kind,value,channel
+source_label,Google Ads - Brand,brand
+source_label,google brand search,brand
+source_label,GAds BRAND,brand
+source_label,Brand Search (Google),brand
+source_label,google_ads_brand,brand
+source_label,Google Ads - Non-Brand,nonbrand
+source_label,google nonbrand,nonbrand
+source_label,GAds NB,nonbrand
+source_label,Search - Generic,nonbrand
+source_label,google_ads_nonbrand,nonbrand
+source_label,Facebook Lead Form,meta
+source_label,Meta Lead Ads,meta
+source_label,FB Instant Form,meta
+source_label,fb_leadform,meta
+source_label,Meta Instant Form,meta
+source_label,Google LSA,lsa
+source_label,Local Services Ad,lsa
+source_label,Google Guaranteed,lsa
+source_label,LSA,lsa
+source_label,Retargeting,retarget
+source_label,FB Retargeting,retarget
+source_label,Display Remarketing,retarget
+source_label,remarketing_display,retarget
+source_label,Organic Search,organic
+source_label,Direct,organic
+source_label,Website,organic
+source_label,Referral,organic
+source_label,Google Organic,organic
+source_label,Walk-in/Referral,organic
+tracking_number,3125550101,brand
+tracking_number,3125550102,nonbrand
+tracking_number,3125550103,meta
+tracking_number,3125550104,lsa
+tracking_number,3125550105,retarget
+tracking_number,3125550100,organic
+source_label,Phone Call,(generic - use call tracking)
+source_label,Website,(generic)

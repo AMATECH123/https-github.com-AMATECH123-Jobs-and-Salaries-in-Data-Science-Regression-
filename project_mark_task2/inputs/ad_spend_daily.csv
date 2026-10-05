@@ -1,0 +1,3186 @@
+date,channel,spend_usd,impressions,clicks,platform_reported_conversions
+2024-01-01,Google Search - Brand,308.48,25191,180,25.3
+2024-01-02,Google Search - Brand,308.48,30304,143,25.8
+2024-01-03,Google Search - Brand,308.48,28189,140,29.8
+2024-01-04,Google Search - Brand,308.48,22146,126,32.7
+2024-01-05,Google Search - Brand,308.48,31842,126,25.8
+2024-01-06,Google Search - Brand,215.94,22260,122,18.0
+2024-01-07,Google Search - Brand,215.94,18281,76,22.0
+2024-01-08,Google Search - Brand,256.69,23940,124,27.5
+2024-01-09,Google Search - Brand,256.69,19300,120,26.4
+2024-01-10,Google Search - Brand,256.69,25571,108,26.9
+2024-01-11,Google Search - Brand,256.69,18977,133,29.5
+2024-01-12,Google Search - Brand,256.69,22254,134,24.9
+2024-01-13,Google Search - Brand,179.68,14931,74,16.8
+2024-01-14,Google Search - Brand,179.68,15230,104,16.4
+2024-01-15,Google Search - Brand,198.72,19339,96,25.9
+2024-01-16,Google Search - Brand,198.72,14023,86,27.2
+2024-01-17,Google Search - Brand,198.72,20690,74,23.5
+2024-01-18,Google Search - Brand,198.72,15599,75,20.5
+2024-01-19,Google Search - Brand,198.72,15734,81,23.9
+2024-01-20,Google Search - Brand,139.1,10258,55,14.7
+2024-01-21,Google Search - Brand,139.1,11784,60,18.0
+2024-01-22,Google Search - Brand,220.28,21705,83,23.3
+2024-01-23,Google Search - Brand,220.28,19306,120,26.9
+2024-01-24,Google Search - Brand,220.28,24043,81,26.3
+2024-01-25,Google Search - Brand,220.28,21650,79,26.9
+2024-01-26,Google Search - Brand,220.28,19547,97,23.9
+2024-01-27,Google Search - Brand,154.19,13006,75,19.1
+2024-01-28,Google Search - Brand,154.19,16780,88,18.8
+2024-01-29,Google Search - Brand,152.21,12222,78,21.1
+2024-01-30,Google Search - Brand,152.21,11129,62,21.5
+2024-01-31,Google Search - Brand,152.21,12127,69,24.7
+2024-02-01,Google Search - Brand,152.21,14040,76,24.7
+2024-02-02,Google Search - Brand,152.21,13158,59,20.6
+2024-02-03,Google Search - Brand,106.55,9810,62,18.0
+2024-02-04,Google Search - Brand,106.55,11559,45,18.0
+2024-02-05,Google Search - Brand,225.81,19420,133,26.4
+2024-02-06,Google Search - Brand,225.81,17617,104,32.1
+2024-02-07,Google Search - Brand,225.81,16700,123,29.5
+2024-02-08,Google Search - Brand,225.81,18290,104,30.2
+2024-02-09,Google Search - Brand,225.81,21161,114,28.9
+2024-02-10,Google Search - Brand,158.07,11979,75,21.5
+2024-02-11,Google Search - Brand,158.07,14780,66,19.4
+2024-02-12,Google Search - Brand,147.68,15294,72,21.8
+2024-02-13,Google Search - Brand,147.68,15700,79,21.6
+2024-02-14,Google Search - Brand,147.68,11459,76,22.4
+2024-02-15,Google Search - Brand,147.68,12661,85,21.6
+2024-02-16,Google Search - Brand,147.68,12166,56,27.4
+2024-02-17,Google Search - Brand,103.37,10504,49,17.5
+2024-02-18,Google Search - Brand,103.37,9182,36,15.4
+2024-02-19,Google Search - Brand,157.33,12160,74,23.1
+2024-02-20,Google Search - Brand,157.33,15054,79,25.9
+2024-02-21,Google Search - Brand,157.33,16802,87,23.5
+2024-02-22,Google Search - Brand,157.33,13727,70,26.6
+2024-02-23,Google Search - Brand,157.33,17122,82,25.6
+2024-02-24,Google Search - Brand,110.13,8712,48,15.8
+2024-02-25,Google Search - Brand,110.13,10910,51,16.8
+2024-02-26,Google Search - Brand,179.19,13478,79,30.2
+2024-02-27,Google Search - Brand,179.19,15131,100,30.3
+2024-02-28,Google Search - Brand,179.19,15853,77,30.5
+2024-02-29,Google Search - Brand,179.19,13218,75,29.4
+2024-03-01,Google Search - Brand,179.19,17146,85,34.3
+2024-03-02,Google Search - Brand,125.43,9101,44,21.0
+2024-03-03,Google Search - Brand,125.43,8871,75,20.5
+2024-03-04,Google Search - Brand,162.21,15019,73,23.3
+2024-03-05,Google Search - Brand,162.21,16783,81,27.3
+2024-03-06,Google Search - Brand,162.21,15933,58,29.5
+2024-03-07,Google Search - Brand,162.21,16586,58,27.5
+2024-03-08,Google Search - Brand,162.21,12165,86,29.1
+2024-03-09,Google Search - Brand,113.55,12485,46,19.7
+2024-03-10,Google Search - Brand,113.55,12253,64,17.6
+2024-03-11,Google Search - Brand,135.55,12913,58,27.4
+2024-03-12,Google Search - Brand,135.55,13954,67,24.3
+2024-03-13,Google Search - Brand,135.55,13814,70,23.9
+2024-03-14,Google Search - Brand,135.55,11779,80,29.0
+2024-03-15,Google Search - Brand,135.55,13207,49,25.6
+2024-03-16,Google Search - Brand,94.88,7845,41,20.7
+2024-03-17,Google Search - Brand,94.88,6918,40,16.2
+2024-03-18,Google Search - Brand,191.89,13783,77,27.3
+2024-03-19,Google Search - Brand,191.89,17098,102,29.6
+2024-03-20,Google Search - Brand,191.89,14339,72,32.1
+2024-03-21,Google Search - Brand,191.89,13737,88,34.6
+2024-03-22,Google Search - Brand,191.89,14728,108,28.7
+2024-03-23,Google Search - Brand,134.32,11859,54,21.1
+2024-03-24,Google Search - Brand,134.32,13820,53,24.1
+2024-03-25,Google Search - Brand,145.01,14762,54,25.2
+2024-03-26,Google Search - Brand,145.01,15520,67,27.4
+2024-03-27,Google Search - Brand,145.01,12232,67,30.8
+2024-03-28,Google Search - Brand,145.01,12986,83,25.5
+2024-03-29,Google Search - Brand,145.01,11449,74,27.7
+2024-03-30,Google Search - Brand,101.51,8732,44,16.8
+2024-03-31,Google Search - Brand,101.51,8252,59,20.3
+2024-04-01,Google Search - Brand,227.12,22382,124,29.4
+2024-04-02,Google Search - Brand,227.12,23536,99,31.0
+2024-04-03,Google Search - Brand,227.12,17182,114,33.1
+2024-04-04,Google Search - Brand,227.12,16162,108,33.7
+2024-04-05,Google Search - Brand,227.12,24361,128,36.3
+2024-04-06,Google Search - Brand,158.99,12727,71,19.0
+2024-04-07,Google Search - Brand,158.99,12845,90,22.9
+2024-04-08,Google Search - Brand,188.71,15274,92,32.6
+2024-04-09,Google Search - Brand,188.71,18946,74,36.1
+2024-04-10,Google Search - Brand,188.71,14108,102,33.2
+2024-04-11,Google Search - Brand,188.71,17352,108,32.7
+2024-04-12,Google Search - Brand,188.71,14016,107,31.6
+2024-04-13,Google Search - Brand,132.09,13922,50,21.6
+2024-04-14,Google Search - Brand,132.09,14263,54,21.5
+2024-04-15,Google Search - Brand,298.44,28911,128,41.1
+2024-04-16,Google Search - Brand,298.44,25483,172,31.2
+2024-04-17,Google Search - Brand,298.44,32588,130,38.3
+2024-04-18,Google Search - Brand,298.44,26545,143,33.4
+2024-04-19,Google Search - Brand,298.44,29810,151,34.0
+2024-04-20,Google Search - Brand,208.91,19270,81,27.8
+2024-04-21,Google Search - Brand,208.91,20720,123,27.4
+2024-04-22,Google Search - Brand,182.42,14330,70,32.2
+2024-04-23,Google Search - Brand,182.42,12894,107,34.2
+2024-04-24,Google Search - Brand,182.42,14606,72,30.6
+2024-04-25,Google Search - Brand,182.42,16882,76,30.4
+2024-04-26,Google Search - Brand,182.42,18307,65,34.9
+2024-04-27,Google Search - Brand,127.7,10096,52,25.6
+2024-04-28,Google Search - Brand,127.7,13203,52,25.4
+2024-04-29,Google Search - Brand,273.07,28778,159,31.7
+2024-04-30,Google Search - Brand,273.07,19844,110,32.7
+2024-05-01,Google Search - Brand,273.07,21731,107,35.9
+2024-05-02,Google Search - Brand,273.07,23807,100,38.9
+2024-05-03,Google Search - Brand,273.07,29547,101,39.7
+2024-05-04,Google Search - Brand,191.15,14933,101,27.4
+2024-05-05,Google Search - Brand,191.15,15748,73,23.6
+2024-05-06,Google Search - Brand,196.51,18714,84,30.4
+2024-05-07,Google Search - Brand,196.51,15547,78,33.1
+2024-05-08,Google Search - Brand,196.51,14513,95,37.3
+2024-05-09,Google Search - Brand,196.51,18830,96,32.7
+2024-05-10,Google Search - Brand,196.51,19087,89,33.9
+2024-05-11,Google Search - Brand,137.56,14137,49,26.0
+2024-05-12,Google Search - Brand,137.56,13293,69,24.5
+2024-05-13,Google Search - Brand,269.17,23557,144,32.1
+2024-05-14,Google Search - Brand,269.17,25650,122,35.8
+2024-05-15,Google Search - Brand,269.17,23221,127,34.1
+2024-05-16,Google Search - Brand,269.17,25907,147,37.0
+2024-05-17,Google Search - Brand,269.17,28977,148,39.9
+2024-05-18,Google Search - Brand,188.42,15151,83,25.7
+2024-05-19,Google Search - Brand,188.42,14525,78,27.2
+2024-05-20,Google Search - Brand,187.31,14929,68,28.4
+2024-05-21,Google Search - Brand,187.31,14850,95,29.5
+2024-05-22,Google Search - Brand,187.31,20210,67,36.0
+2024-05-23,Google Search - Brand,187.31,20524,75,31.9
+2024-05-24,Google Search - Brand,187.31,14054,104,37.6
+2024-05-25,Google Search - Brand,131.12,12408,66,24.9
+2024-05-26,Google Search - Brand,131.12,10262,60,24.4
+2024-05-27,Google Search - Brand,204.77,22359,120,35.8
+2024-05-28,Google Search - Brand,204.77,22052,110,31.5
+2024-05-29,Google Search - Brand,204.77,15817,120,36.1
+2024-05-30,Google Search - Brand,204.77,18871,87,32.2
+2024-05-31,Google Search - Brand,204.77,17811,109,32.7
+2024-06-01,Google Search - Brand,143.34,12278,80,27.1
+2024-06-02,Google Search - Brand,143.34,11774,76,23.2
+2024-06-03,Google Search - Brand,202.6,17812,100,37.8
+2024-06-04,Google Search - Brand,202.6,20815,76,39.6
+2024-06-05,Google Search - Brand,202.6,19114,116,40.4
+2024-06-06,Google Search - Brand,202.6,20150,108,36.3
+2024-06-07,Google Search - Brand,202.6,20430,117,39.5
+2024-06-08,Google Search - Brand,141.82,10907,83,21.9
+2024-06-09,Google Search - Brand,141.82,11542,79,22.2
+2024-06-10,Google Search - Brand,169.36,14686,61,33.4
+2024-06-11,Google Search - Brand,169.36,14276,90,30.5
+2024-06-12,Google Search - Brand,169.36,13924,61,29.9
+2024-06-13,Google Search - Brand,169.36,15057,62,30.3
+2024-06-14,Google Search - Brand,169.36,12160,99,30.2
+2024-06-15,Google Search - Brand,118.55,8858,66,24.9
+2024-06-16,Google Search - Brand,118.55,10405,68,23.1
+2024-06-17,Google Search - Brand,262.93,22152,130,39.0
+2024-06-18,Google Search - Brand,262.93,25182,139,37.6
+2024-06-19,Google Search - Brand,262.93,21153,124,33.4
+2024-06-20,Google Search - Brand,262.93,26663,99,36.7
+2024-06-21,Google Search - Brand,262.93,25703,134,31.5
+2024-06-22,Google Search - Brand,184.05,14305,82,29.7
+2024-06-23,Google Search - Brand,184.05,15107,105,22.8
+2024-06-24,Google Search - Brand,231.64,21954,129,38.4
+2024-06-25,Google Search - Brand,231.64,21127,124,31.7
+2024-06-26,Google Search - Brand,231.64,18295,138,38.0
+2024-06-27,Google Search - Brand,231.64,24836,117,34.2
+2024-06-28,Google Search - Brand,231.64,21871,112,38.9
+2024-06-29,Google Search - Brand,162.15,14674,88,21.6
+2024-06-30,Google Search - Brand,162.15,12862,79,21.8
+2024-07-01,Google Search - Brand,297.26,29922,160,32.7
+2024-07-02,Google Search - Brand,297.26,26871,125,42.7
+2024-07-03,Google Search - Brand,297.26,31726,110,33.5
+2024-07-04,Google Search - Brand,297.26,27875,106,38.1
+2024-07-05,Google Search - Brand,297.26,24680,161,38.7
+2024-07-06,Google Search - Brand,208.09,18365,83,30.9
+2024-07-07,Google Search - Brand,208.09,19194,74,29.5
+2024-07-08,Google Search - Brand,206.78,20345,116,34.0
+2024-07-09,Google Search - Brand,206.78,18778,109,36.5
+2024-07-10,Google Search - Brand,206.78,22694,89,31.6
+2024-07-11,Google Search - Brand,206.78,17671,93,37.4
+2024-07-12,Google Search - Brand,206.78,21487,109,31.3
+2024-07-13,Google Search - Brand,144.75,15191,80,23.2
+2024-07-14,Google Search - Brand,144.75,11936,61,22.0
+2024-07-15,Google Search - Brand,257.82,26071,122,30.0
+2024-07-16,Google Search - Brand,257.82,22417,110,30.3
+2024-07-17,Google Search - Brand,257.82,18634,151,30.3
+2024-07-18,Google Search - Brand,257.82,18329,150,35.3
+2024-07-19,Google Search - Brand,257.82,18185,135,38.1
+2024-07-20,Google Search - Brand,180.48,18958,100,24.2
+2024-07-21,Google Search - Brand,180.48,13523,82,21.1
+2024-07-22,Google Search - Brand,213.79,23342,93,27.4
+2024-07-23,Google Search - Brand,213.79,22724,90,28.7
+2024-07-24,Google Search - Brand,213.79,21275,116,36.3
+2024-07-25,Google Search - Brand,213.79,22775,86,34.9
+2024-07-26,Google Search - Brand,213.79,16952,126,28.6
+2024-07-27,Google Search - Brand,149.65,14022,77,22.5
+2024-07-28,Google Search - Brand,149.65,15330,81,19.4
+2024-07-29,Google Search - Brand,150.29,13741,63,28.9
+2024-07-30,Google Search - Brand,150.29,11175,68,28.9
+2024-07-31,Google Search - Brand,150.29,16471,57,26.5
+2024-08-01,Google Search - Brand,150.29,10867,83,30.3
+2024-08-02,Google Search - Brand,150.29,12487,88,26.3
+2024-08-03,Google Search - Brand,105.2,9060,39,19.7
+2024-08-04,Google Search - Brand,105.2,11492,37,23.9
+2024-08-05,Google Search - Brand,166.42,15032,74,28.5
+2024-08-06,Google Search - Brand,166.42,13384,94,30.1
+2024-08-07,Google Search - Brand,166.42,15895,91,30.2
+2024-08-08,Google Search - Brand,166.42,14346,90,30.5
+2024-08-09,Google Search - Brand,166.42,14445,76,26.0
+2024-08-10,Google Search - Brand,116.49,9098,51,22.5
+2024-08-11,Google Search - Brand,116.49,12109,51,19.9
+2024-08-12,Google Search - Brand,234.06,20474,96,34.2
+2024-08-13,Google Search - Brand,234.06,23231,137,35.4
+2024-08-14,Google Search - Brand,234.06,22960,90,29.4
+2024-08-15,Google Search - Brand,234.06,23629,98,36.0
+2024-08-16,Google Search - Brand,234.06,19816,114,29.2
+2024-08-17,Google Search - Brand,163.84,16574,78,20.7
+2024-08-18,Google Search - Brand,163.84,14392,64,26.2
+2024-08-19,Google Search - Brand,186.42,19582,93,29.3
+2024-08-20,Google Search - Brand,186.42,13156,95,31.9
+2024-08-21,Google Search - Brand,186.42,17545,79,34.2
+2024-08-22,Google Search - Brand,186.42,13426,96,27.4
+2024-08-23,Google Search - Brand,186.42,13271,85,26.4
+2024-08-24,Google Search - Brand,130.5,11720,56,24.0
+2024-08-25,Google Search - Brand,130.5,12539,72,21.3
+2024-08-26,Google Search - Brand,144.63,12835,64,26.9
+2024-08-27,Google Search - Brand,144.63,15351,74,26.4
+2024-08-28,Google Search - Brand,144.63,14939,53,24.9
+2024-08-29,Google Search - Brand,144.63,15516,73,27.1
+2024-08-30,Google Search - Brand,144.63,12361,76,27.8
+2024-08-31,Google Search - Brand,101.24,7797,38,19.7
+2024-09-01,Google Search - Brand,101.24,8732,49,19.9
+2024-09-02,Google Search - Brand,266.44,25294,108,30.4
+2024-09-03,Google Search - Brand,266.44,28027,141,33.4
+2024-09-04,Google Search - Brand,266.44,21876,95,30.2
+2024-09-05,Google Search - Brand,266.44,26335,136,32.9
+2024-09-06,Google Search - Brand,266.44,21817,103,34.2
+2024-09-07,Google Search - Brand,186.51,14169,83,24.5
+2024-09-08,Google Search - Brand,186.51,14637,72,21.5
+2024-09-09,Google Search - Brand,244.85,18701,94,31.9
+2024-09-10,Google Search - Brand,244.85,21171,111,26.3
+2024-09-11,Google Search - Brand,244.85,22297,107,27.4
+2024-09-12,Google Search - Brand,244.85,23139,132,27.7
+2024-09-13,Google Search - Brand,244.85,21280,106,30.7
+2024-09-14,Google Search - Brand,171.4,15635,86,19.8
+2024-09-15,Google Search - Brand,171.4,17507,65,22.5
+2024-09-16,Google Search - Brand,244.66,23819,103,24.7
+2024-09-17,Google Search - Brand,244.66,21297,144,31.7
+2024-09-18,Google Search - Brand,244.66,25917,132,31.5
+2024-09-19,Google Search - Brand,244.66,18239,137,24.7
+2024-09-20,Google Search - Brand,244.66,24569,112,28.3
+2024-09-21,Google Search - Brand,171.26,15339,87,23.1
+2024-09-22,Google Search - Brand,171.26,17360,60,20.6
+2024-09-23,Google Search - Brand,253.82,17868,99,27.2
+2024-09-24,Google Search - Brand,253.82,20107,111,23.7
+2024-09-25,Google Search - Brand,253.82,21897,120,27.3
+2024-09-26,Google Search - Brand,253.82,23369,118,28.6
+2024-09-27,Google Search - Brand,253.82,20895,94,26.3
+2024-09-28,Google Search - Brand,177.67,14491,81,20.5
+2024-09-29,Google Search - Brand,177.67,16866,65,21.2
+2024-09-30,Google Search - Brand,184.08,19652,68,28.5
+2024-10-01,Google Search - Brand,184.08,19046,79,28.7
+2024-10-02,Google Search - Brand,184.08,16686,83,24.5
+2024-10-03,Google Search - Brand,184.08,15998,71,29.0
+2024-10-04,Google Search - Brand,184.08,17927,69,24.7
+2024-10-05,Google Search - Brand,128.86,11024,48,16.4
+2024-10-06,Google Search - Brand,128.86,10837,66,15.7
+2024-10-07,Google Search - Brand,171.44,16483,62,23.4
+2024-10-08,Google Search - Brand,171.44,14883,92,25.5
+2024-10-09,Google Search - Brand,171.44,14454,97,25.5
+2024-10-10,Google Search - Brand,171.44,17167,66,26.1
+2024-10-11,Google Search - Brand,171.44,18725,74,22.0
+2024-10-12,Google Search - Brand,120.01,12125,65,18.3
+2024-10-13,Google Search - Brand,120.01,12170,61,17.4
+2024-10-14,Google Search - Brand,316.31,27938,164,28.2
+2024-10-15,Google Search - Brand,316.31,34499,125,27.8
+2024-10-16,Google Search - Brand,316.31,25429,182,28.4
+2024-10-17,Google Search - Brand,316.31,33548,134,33.0
+2024-10-18,Google Search - Brand,316.31,22380,128,30.8
+2024-10-19,Google Search - Brand,221.42,17059,93,21.5
+2024-10-20,Google Search - Brand,221.42,23446,122,18.6
+2024-10-21,Google Search - Brand,151.55,16156,65,23.3
+2024-10-22,Google Search - Brand,151.55,16084,82,21.4
+2024-10-23,Google Search - Brand,151.55,10837,57,22.9
+2024-10-24,Google Search - Brand,151.55,11387,84,21.4
+2024-10-25,Google Search - Brand,151.55,12525,85,23.1
+2024-10-26,Google Search - Brand,106.09,10032,45,17.2
+2024-10-27,Google Search - Brand,106.09,11574,37,13.0
+2024-10-28,Google Search - Brand,293.47,30652,105,22.8
+2024-10-29,Google Search - Brand,293.47,26331,168,22.2
+2024-10-30,Google Search - Brand,293.47,29184,146,27.7
+2024-10-31,Google Search - Brand,293.47,27367,133,28.9
+2024-11-01,Google Search - Brand,293.47,30806,114,26.3
+2024-11-02,Google Search - Brand,205.43,14767,82,15.5
+2024-11-03,Google Search - Brand,205.43,19311,118,19.6
+2024-11-04,Google Search - Brand,168.29,15697,59,24.2
+2024-11-05,Google Search - Brand,168.29,14268,100,26.3
+2024-11-06,Google Search - Brand,168.29,16543,91,24.8
+2024-11-07,Google Search - Brand,168.29,12308,77,23.4
+2024-11-08,Google Search - Brand,168.29,16299,88,21.5
+2024-11-09,Google Search - Brand,117.8,12135,43,16.0
+2024-11-10,Google Search - Brand,117.8,8626,58,14.7
+2024-11-11,Google Search - Brand,148.5,13264,70,20.5
+2024-11-12,Google Search - Brand,148.5,11447,65,24.9
+2024-11-13,Google Search - Brand,148.5,13826,83,23.7
+2024-11-14,Google Search - Brand,148.5,12978,58,20.5
+2024-11-15,Google Search - Brand,148.5,12288,86,19.9
+2024-11-16,Google Search - Brand,103.95,7734,41,17.7
+2024-11-17,Google Search - Brand,103.95,10506,40,17.6
+2024-11-18,Google Search - Brand,129.41,9765,53,22.6
+2024-11-19,Google Search - Brand,129.41,12858,70,22.2
+2024-11-20,Google Search - Brand,129.41,11036,72,20.9
+2024-11-21,Google Search - Brand,129.41,9481,73,18.2
+2024-11-22,Google Search - Brand,129.41,10635,46,21.2
+2024-11-23,Google Search - Brand,90.59,7229,34,12.7
+2024-11-24,Google Search - Brand,90.59,7788,47,13.8
+2024-11-25,Google Search - Brand,269.69,22297,135,26.1
+2024-11-26,Google Search - Brand,269.69,29083,159,27.1
+2024-11-27,Google Search - Brand,269.69,26286,119,25.9
+2024-11-28,Google Search - Brand,269.69,29549,100,22.4
+2024-11-29,Google Search - Brand,269.69,21424,158,25.9
+2024-11-30,Google Search - Brand,188.78,17110,106,17.2
+2024-12-01,Google Search - Brand,188.78,17522,104,19.0
+2024-12-02,Google Search - Brand,204.37,21634,111,22.3
+2024-12-03,Google Search - Brand,204.37,15794,78,23.2
+2024-12-04,Google Search - Brand,204.37,16462,118,25.7
+2024-12-05,Google Search - Brand,204.37,17982,114,20.5
+2024-12-06,Google Search - Brand,204.37,18663,100,22.3
+2024-12-07,Google Search - Brand,143.06,13178,70,16.6
+2024-12-08,Google Search - Brand,143.06,13193,67,16.4
+2024-12-09,Google Search - Brand,166.91,12999,74,22.2
+2024-12-10,Google Search - Brand,166.91,18038,73,23.6
+2024-12-11,Google Search - Brand,166.91,15031,83,22.6
+2024-12-12,Google Search - Brand,166.91,17072,97,19.6
+2024-12-13,Google Search - Brand,166.91,15395,97,20.9
+2024-12-14,Google Search - Brand,116.84,8234,64,15.6
+2024-12-15,Google Search - Brand,116.84,12607,57,17.0
+2024-12-16,Google Search - Brand,164.3,13313,66,22.9
+2024-12-17,Google Search - Brand,164.3,12283,91,24.5
+2024-12-18,Google Search - Brand,164.3,12033,71,25.1
+2024-12-19,Google Search - Brand,164.3,16968,85,22.7
+2024-12-20,Google Search - Brand,164.3,13280,62,21.1
+2024-12-21,Google Search - Brand,115.01,12238,60,16.0
+2024-12-22,Google Search - Brand,115.01,8587,51,17.5
+2024-12-23,Google Search - Brand,190.66,18056,66,21.5
+2024-12-24,Google Search - Brand,190.66,14806,89,24.3
+2024-12-25,Google Search - Brand,190.66,20735,70,20.2
+2024-12-26,Google Search - Brand,190.66,13894,100,23.1
+2024-12-27,Google Search - Brand,190.66,20754,113,20.3
+2024-12-28,Google Search - Brand,133.46,13790,57,13.6
+2024-12-29,Google Search - Brand,133.46,13456,70,14.7
+2024-12-30,Google Search - Brand,180.05,13118,104,23.2
+2024-12-31,Google Search - Brand,180.05,14466,89,23.0
+2025-01-01,Google Search - Brand,180.05,13214,92,24.0
+2025-01-02,Google Search - Brand,180.05,13371,94,21.4
+2025-01-03,Google Search - Brand,180.05,15279,103,20.0
+2025-01-04,Google Search - Brand,126.03,12218,58,16.4
+2025-01-05,Google Search - Brand,126.03,13041,68,15.5
+2025-01-06,Google Search - Brand,179.24,19088,75,27.2
+2025-01-07,Google Search - Brand,179.24,18989,83,23.2
+2025-01-08,Google Search - Brand,179.24,13121,99,24.6
+2025-01-09,Google Search - Brand,179.24,15518,74,21.0
+2025-01-10,Google Search - Brand,179.24,14263,105,25.4
+2025-01-11,Google Search - Brand,125.47,12744,62,18.6
+2025-01-12,Google Search - Brand,125.47,9634,56,14.4
+2025-01-13,Google Search - Brand,166.94,15382,98,24.2
+2025-01-14,Google Search - Brand,166.94,18166,60,25.1
+2025-01-15,Google Search - Brand,166.94,14895,64,26.5
+2025-01-16,Google Search - Brand,166.94,18136,69,22.9
+2025-01-17,Google Search - Brand,166.94,17256,94,26.9
+2025-01-18,Google Search - Brand,116.86,10036,49,17.6
+2025-01-19,Google Search - Brand,116.86,12112,58,17.4
+2025-01-20,Google Search - Brand,330.04,29430,152,29.7
+2025-01-21,Google Search - Brand,330.04,26054,193,27.1
+2025-01-22,Google Search - Brand,330.04,27128,147,27.3
+2025-01-23,Google Search - Brand,330.04,29404,165,31.3
+2025-01-24,Google Search - Brand,330.04,24094,134,26.8
+2025-01-25,Google Search - Brand,231.03,16725,99,22.7
+2025-01-26,Google Search - Brand,231.03,19109,126,22.4
+2025-01-27,Google Search - Brand,109.09,8784,52,24.3
+2025-01-28,Google Search - Brand,109.09,11842,42,23.3
+2025-01-29,Google Search - Brand,109.09,10497,44,19.3
+2025-01-30,Google Search - Brand,109.09,10794,41,20.4
+2025-01-31,Google Search - Brand,109.09,10992,46,23.6
+2025-02-01,Google Search - Brand,76.37,7407,42,13.8
+2025-02-02,Google Search - Brand,76.37,5450,39,14.0
+2025-02-03,Google Search - Brand,126.51,9652,71,24.0
+2025-02-04,Google Search - Brand,126.51,10292,70,23.9
+2025-02-05,Google Search - Brand,126.51,11517,63,27.2
+2025-02-06,Google Search - Brand,126.51,10661,60,23.3
+2025-02-07,Google Search - Brand,126.51,9371,67,25.1
+2025-02-08,Google Search - Brand,88.56,8972,40,17.0
+2025-02-09,Google Search - Brand,88.56,6259,36,18.5
+2025-02-10,Google Search - Brand,107.37,10112,40,25.2
+2025-02-11,Google Search - Brand,107.37,11535,51,25.5
+2025-02-12,Google Search - Brand,107.37,9394,53,31.6
+2025-02-13,Google Search - Brand,107.37,10824,52,30.5
+2025-02-14,Google Search - Brand,107.37,9540,48,28.5
+2025-02-15,Google Search - Brand,75.16,6029,41,20.6
+2025-02-16,Google Search - Brand,75.16,6552,36,22.0
+2025-02-17,Google Search - Brand,107.61,10728,63,32.0
+2025-02-18,Google Search - Brand,107.61,8874,55,31.2
+2025-02-19,Google Search - Brand,107.61,11494,64,30.2
+2025-02-20,Google Search - Brand,107.61,8949,64,27.3
+2025-02-21,Google Search - Brand,107.61,10912,46,25.7
+2025-02-22,Google Search - Brand,75.33,6970,29,18.3
+2025-02-23,Google Search - Brand,75.33,6191,30,16.9
+2025-02-24,Google Search - Brand,114.42,10490,42,22.9
+2025-02-25,Google Search - Brand,114.42,9842,46,25.1
+2025-02-26,Google Search - Brand,114.42,10094,53,26.8
+2025-02-27,Google Search - Brand,114.42,8679,60,28.8
+2025-02-28,Google Search - Brand,114.42,11631,64,29.3
+2025-03-01,Google Search - Brand,80.09,7836,32,19.3
+2025-03-02,Google Search - Brand,80.09,6565,47,19.6
+2025-03-03,Google Search - Brand,114.84,10593,42,27.9
+2025-03-04,Google Search - Brand,114.84,9195,60,25.8
+2025-03-05,Google Search - Brand,114.84,9307,43,34.0
+2025-03-06,Google Search - Brand,114.84,11698,55,29.6
+2025-03-07,Google Search - Brand,114.84,8718,65,29.2
+2025-03-08,Google Search - Brand,80.38,6065,33,23.4
+2025-03-09,Google Search - Brand,80.38,8029,29,21.8
+2025-03-10,Google Search - Brand,143.28,10115,54,27.7
+2025-03-11,Google Search - Brand,143.28,14667,85,33.7
+2025-03-12,Google Search - Brand,143.28,11330,57,29.7
+2025-03-13,Google Search - Brand,143.28,10545,61,28.2
+2025-03-14,Google Search - Brand,143.28,12315,57,35.4
+2025-03-15,Google Search - Brand,100.3,10516,40,20.6
+2025-03-16,Google Search - Brand,100.3,10880,36,23.0
+2025-03-17,Google Search - Brand,149.29,14813,72,28.3
+2025-03-18,Google Search - Brand,149.29,14365,52,26.4
+2025-03-19,Google Search - Brand,149.29,15244,53,35.1
+2025-03-20,Google Search - Brand,149.29,14669,80,29.1
+2025-03-21,Google Search - Brand,149.29,14006,54,26.5
+2025-03-22,Google Search - Brand,104.51,10587,50,22.5
+2025-03-23,Google Search - Brand,104.51,9001,56,22.7
+2025-03-24,Google Search - Brand,130.63,13410,48,33.0
+2025-03-25,Google Search - Brand,130.63,10152,59,27.9
+2025-03-26,Google Search - Brand,130.63,11263,61,26.7
+2025-03-27,Google Search - Brand,130.63,12525,68,29.5
+2025-03-28,Google Search - Brand,130.63,11607,56,33.3
+2025-03-29,Google Search - Brand,91.44,9665,40,19.3
+2025-03-30,Google Search - Brand,91.44,6558,37,24.7
+2025-03-31,Google Search - Brand,179.01,17064,69,34.4
+2025-04-01,Google Search - Brand,179.01,19293,95,31.1
+2025-04-02,Google Search - Brand,179.01,19308,69,33.4
+2025-04-03,Google Search - Brand,179.01,16996,105,34.0
+2025-04-04,Google Search - Brand,179.01,18503,71,37.3
+2025-04-05,Google Search - Brand,125.31,11349,51,27.2
+2025-04-06,Google Search - Brand,125.31,10316,57,25.5
+2025-04-07,Google Search - Brand,130.4,10994,55,34.0
+2025-04-08,Google Search - Brand,130.4,11714,75,29.2
+2025-04-09,Google Search - Brand,130.4,10465,67,33.4
+2025-04-10,Google Search - Brand,130.4,14254,71,32.9
+2025-04-11,Google Search - Brand,130.4,11046,71,27.5
+2025-04-12,Google Search - Brand,91.28,9911,41,22.3
+2025-04-13,Google Search - Brand,91.28,9852,33,22.7
+2025-04-14,Google Search - Brand,120.62,9554,49,32.9
+2025-04-15,Google Search - Brand,120.62,9467,55,36.2
+2025-04-16,Google Search - Brand,120.62,12959,49,27.4
+2025-04-17,Google Search - Brand,120.62,11891,51,35.5
+2025-04-18,Google Search - Brand,120.62,10141,47,31.4
+2025-04-19,Google Search - Brand,84.44,6059,46,21.4
+2025-04-20,Google Search - Brand,84.44,7609,42,20.5
+2025-04-21,Google Search - Brand,133.49,12800,64,33.7
+2025-04-22,Google Search - Brand,133.49,13953,58,28.8
+2025-04-23,Google Search - Brand,133.49,12963,59,30.3
+2025-04-24,Google Search - Brand,133.49,9519,69,30.6
+2025-04-25,Google Search - Brand,133.49,11601,71,35.7
+2025-04-26,Google Search - Brand,93.44,8959,34,23.6
+2025-04-27,Google Search - Brand,93.44,6907,34,22.3
+2025-04-28,Google Search - Brand,176.16,15362,94,33.5
+2025-04-29,Google Search - Brand,176.16,18133,61,31.4
+2025-04-30,Google Search - Brand,176.16,13419,70,31.7
+2025-05-01,Google Search - Brand,176.16,17964,69,28.5
+2025-05-02,Google Search - Brand,176.16,16264,100,29.0
+2025-05-03,Google Search - Brand,123.31,12635,56,26.0
+2025-05-04,Google Search - Brand,123.31,8731,49,25.7
+2025-05-05,Google Search - Brand,116.66,9171,62,25.4
+2025-05-06,Google Search - Brand,116.66,9578,44,29.8
+2025-05-07,Google Search - Brand,116.66,11951,62,29.1
+2025-05-08,Google Search - Brand,116.66,12669,48,28.0
+2025-05-09,Google Search - Brand,116.66,9541,62,26.5
+2025-05-10,Google Search - Brand,81.66,6818,28,20.8
+2025-05-11,Google Search - Brand,81.66,7949,30,21.2
+2025-05-12,Google Search - Brand,151.26,14734,66,35.0
+2025-05-13,Google Search - Brand,151.26,12062,79,36.8
+2025-05-14,Google Search - Brand,151.26,10664,86,36.6
+2025-05-15,Google Search - Brand,151.26,11572,70,32.3
+2025-05-16,Google Search - Brand,151.26,15049,58,38.0
+2025-05-17,Google Search - Brand,105.88,7740,38,21.4
+2025-05-18,Google Search - Brand,105.88,8766,54,20.9
+2025-05-19,Google Search - Brand,248.34,25537,109,37.9
+2025-05-20,Google Search - Brand,248.34,26094,97,35.2
+2025-05-21,Google Search - Brand,248.34,21948,141,30.2
+2025-05-22,Google Search - Brand,248.34,25787,130,39.3
+2025-05-23,Google Search - Brand,248.34,26537,118,30.4
+2025-05-24,Google Search - Brand,173.84,12498,93,26.6
+2025-05-25,Google Search - Brand,173.84,12572,86,23.4
+2025-05-26,Google Search - Brand,193.76,18453,105,36.4
+2025-05-27,Google Search - Brand,193.76,19680,95,38.3
+2025-05-28,Google Search - Brand,193.76,19085,86,29.6
+2025-05-29,Google Search - Brand,193.76,16908,73,38.8
+2025-05-30,Google Search - Brand,193.76,16661,99,33.0
+2025-05-31,Google Search - Brand,135.63,10836,73,21.6
+2025-06-01,Google Search - Brand,135.63,10768,76,22.9
+2025-06-02,Google Search - Brand,138.22,13814,62,33.3
+2025-06-03,Google Search - Brand,138.22,14622,57,29.0
+2025-06-04,Google Search - Brand,138.22,10201,70,34.3
+2025-06-05,Google Search - Brand,138.22,10714,60,36.5
+2025-06-06,Google Search - Brand,138.22,12350,53,35.8
+2025-06-07,Google Search - Brand,96.75,9632,55,21.2
+2025-06-08,Google Search - Brand,96.75,9146,53,24.3
+2025-06-09,Google Search - Brand,246.88,22578,89,34.4
+2025-06-10,Google Search - Brand,246.88,23602,113,36.9
+2025-06-11,Google Search - Brand,246.88,25935,110,35.3
+2025-06-12,Google Search - Brand,246.88,26349,142,35.2
+2025-06-13,Google Search - Brand,246.88,23572,92,39.0
+2025-06-14,Google Search - Brand,172.82,18174,93,22.3
+2025-06-15,Google Search - Brand,172.82,12896,95,24.5
+2025-06-16,Google Search - Brand,196.43,19408,112,34.6
+2025-06-17,Google Search - Brand,196.43,19619,111,32.0
+2025-06-18,Google Search - Brand,196.43,17449,71,38.4
+2025-06-19,Google Search - Brand,196.43,15810,112,35.7
+2025-06-20,Google Search - Brand,196.43,16251,76,35.4
+2025-06-21,Google Search - Brand,137.5,10763,60,27.3
+2025-06-22,Google Search - Brand,137.5,11859,77,21.6
+2025-06-23,Google Search - Brand,176.99,15670,75,29.4
+2025-06-24,Google Search - Brand,176.99,18724,69,31.7
+2025-06-25,Google Search - Brand,176.99,13011,70,30.3
+2025-06-26,Google Search - Brand,176.99,17045,99,32.4
+2025-06-27,Google Search - Brand,176.99,18138,84,29.0
+2025-06-28,Google Search - Brand,123.89,13622,69,24.7
+2025-06-29,Google Search - Brand,123.89,9705,62,22.3
+2025-06-30,Google Search - Brand,240.47,22544,131,39.8
+2025-07-01,Google Search - Brand,240.47,17671,88,31.1
+2025-07-02,Google Search - Brand,240.47,20528,101,35.1
+2025-07-03,Google Search - Brand,240.47,21481,124,37.4
+2025-07-04,Google Search - Brand,240.47,22657,126,34.3
+2025-07-05,Google Search - Brand,168.33,13301,74,26.8
+2025-07-06,Google Search - Brand,168.33,15851,80,23.8
+2025-07-07,Google Search - Brand,170.16,15326,59,30.9
+2025-07-08,Google Search - Brand,170.16,18275,77,27.9
+2025-07-09,Google Search - Brand,170.16,12989,86,27.8
+2025-07-10,Google Search - Brand,170.16,14394,72,28.1
+2025-07-11,Google Search - Brand,170.16,12467,67,33.6
+2025-07-12,Google Search - Brand,119.11,12339,55,20.6
+2025-07-13,Google Search - Brand,119.11,10504,45,20.4
+2025-07-14,Google Search - Brand,187.04,15614,74,34.6
+2025-07-15,Google Search - Brand,187.04,19808,69,36.7
+2025-07-16,Google Search - Brand,187.04,15846,82,37.2
+2025-07-17,Google Search - Brand,187.04,19192,76,28.5
+2025-07-18,Google Search - Brand,187.04,19891,102,29.4
+2025-07-19,Google Search - Brand,130.93,9666,68,21.0
+2025-07-20,Google Search - Brand,130.93,12050,66,25.1
+2025-07-21,Google Search - Brand,278.29,25964,131,36.4
+2025-07-22,Google Search - Brand,278.29,24498,151,34.0
+2025-07-23,Google Search - Brand,278.29,24919,156,40.5
+2025-07-24,Google Search - Brand,278.29,19754,121,35.0
+2025-07-25,Google Search - Brand,278.29,21214,134,34.9
+2025-07-26,Google Search - Brand,194.8,15772,94,28.1
+2025-07-27,Google Search - Brand,194.8,13756,110,26.0
+2025-07-28,Google Search - Brand,215.05,19004,118,29.4
+2025-07-29,Google Search - Brand,215.05,20380,127,34.6
+2025-07-30,Google Search - Brand,215.05,22079,104,33.0
+2025-07-31,Google Search - Brand,215.05,22649,76,33.8
+2025-08-01,Google Search - Brand,215.05,21165,85,28.2
+2025-08-02,Google Search - Brand,150.53,16021,81,18.3
+2025-08-03,Google Search - Brand,150.53,10792,57,24.8
+2025-08-04,Google Search - Brand,256.5,28033,100,36.2
+2025-08-05,Google Search - Brand,256.5,21705,95,30.8
+2025-08-06,Google Search - Brand,256.5,24436,141,35.8
+2025-08-07,Google Search - Brand,256.5,18565,145,32.2
+2025-08-08,Google Search - Brand,256.5,18205,94,33.2
+2025-08-09,Google Search - Brand,179.55,13725,69,23.3
+2025-08-10,Google Search - Brand,179.55,13128,98,22.4
+2025-08-11,Google Search - Brand,167.78,16873,99,30.0
+2025-08-12,Google Search - Brand,167.78,12607,81,25.4
+2025-08-13,Google Search - Brand,167.78,18293,72,25.5
+2025-08-14,Google Search - Brand,167.78,16535,80,24.5
+2025-08-15,Google Search - Brand,167.78,12063,81,25.5
+2025-08-16,Google Search - Brand,117.45,11051,59,22.0
+2025-08-17,Google Search - Brand,117.45,10228,54,21.2
+2025-08-18,Google Search - Brand,233.42,22719,92,36.3
+2025-08-19,Google Search - Brand,233.42,20669,120,30.0
+2025-08-20,Google Search - Brand,233.42,25612,100,37.7
+2025-08-21,Google Search - Brand,233.42,23278,86,34.9
+2025-08-22,Google Search - Brand,233.42,25318,122,35.1
+2025-08-23,Google Search - Brand,163.39,17006,90,23.1
+2025-08-24,Google Search - Brand,163.39,13144,76,20.1
+2025-08-25,Google Search - Brand,224.55,16615,81,27.3
+2025-08-26,Google Search - Brand,224.55,17777,128,34.2
+2025-08-27,Google Search - Brand,224.55,19419,124,27.8
+2025-08-28,Google Search - Brand,224.55,22461,106,32.6
+2025-08-29,Google Search - Brand,224.55,19542,121,34.8
+2025-08-30,Google Search - Brand,157.19,16874,85,23.3
+2025-08-31,Google Search - Brand,157.19,16792,86,21.7
+2025-09-01,Google Search - Brand,194.56,20249,114,29.1
+2025-09-02,Google Search - Brand,194.56,13801,108,28.4
+2025-09-03,Google Search - Brand,194.56,14156,77,27.9
+2025-09-04,Google Search - Brand,194.56,16379,99,27.7
+2025-09-05,Google Search - Brand,194.56,17885,88,27.6
+2025-09-06,Google Search - Brand,136.2,14414,59,17.9
+2025-09-07,Google Search - Brand,136.2,13282,64,17.6
+2025-09-08,Google Search - Brand,342.68,36209,163,26.2
+2025-09-09,Google Search - Brand,342.68,36085,195,27.0
+2025-09-10,Google Search - Brand,342.68,32696,130,29.2
+2025-09-11,Google Search - Brand,342.68,33102,192,34.0
+2025-09-12,Google Search - Brand,342.68,35480,138,29.1
+2025-09-13,Google Search - Brand,239.87,21784,138,20.6
+2025-09-14,Google Search - Brand,239.87,21970,123,22.7
+2025-09-15,Google Search - Brand,259.41,27966,144,30.3
+2025-09-16,Google Search - Brand,259.41,27311,115,24.8
+2025-09-17,Google Search - Brand,259.41,19549,123,24.6
+2025-09-18,Google Search - Brand,259.41,25363,112,28.5
+2025-09-19,Google Search - Brand,259.41,27745,123,25.5
+2025-09-20,Google Search - Brand,181.59,18071,81,18.3
+2025-09-21,Google Search - Brand,181.59,19630,106,21.7
+2025-09-22,Google Search - Brand,152.82,13960,66,25.3
+2025-09-23,Google Search - Brand,152.82,14355,67,22.4
+2025-09-24,Google Search - Brand,152.82,14491,85,26.0
+2025-09-25,Google Search - Brand,152.82,16356,53,23.3
+2025-09-26,Google Search - Brand,152.82,12257,73,24.2
+2025-09-27,Google Search - Brand,106.97,9454,56,15.7
+2025-09-28,Google Search - Brand,106.97,10548,56,13.9
+2024-01-01,Google Search - Non-brand,492.99,38440,224,10.1
+2024-01-02,Google Search - Non-brand,492.99,35237,202,11.3
+2024-01-03,Google Search - Non-brand,492.99,45137,209,9.5
+2024-01-04,Google Search - Non-brand,492.99,41432,225,9.4
+2024-01-05,Google Search - Non-brand,492.99,38701,185,10.9
+2024-01-06,Google Search - Non-brand,345.1,37634,164,7.5
+2024-01-07,Google Search - Non-brand,345.1,29242,184,7.8
+2024-01-08,Google Search - Non-brand,572.34,40864,307,9.8
+2024-01-09,Google Search - Non-brand,572.34,45711,266,9.9
+2024-01-10,Google Search - Non-brand,572.34,60514,288,11.7
+2024-01-11,Google Search - Non-brand,572.34,41095,244,11.1
+2024-01-12,Google Search - Non-brand,572.34,53433,270,11.6
+2024-01-13,Google Search - Non-brand,400.64,31524,176,8.5
+2024-01-14,Google Search - Non-brand,400.64,32005,220,6.8
+2024-01-15,Google Search - Non-brand,693.4,65755,393,12.4
+2024-01-16,Google Search - Non-brand,693.4,63998,313,11.1
+2024-01-17,Google Search - Non-brand,693.4,65326,318,14.8
+2024-01-18,Google Search - Non-brand,693.4,75685,314,12.6
+2024-01-19,Google Search - Non-brand,693.4,59115,334,12.5
+2024-01-20,Google Search - Non-brand,485.38,43501,188,9.2
+2024-01-21,Google Search - Non-brand,485.38,38358,220,10.2
+2024-01-22,Google Search - Non-brand,625.08,61283,225,14.8
+2024-01-23,Google Search - Non-brand,625.08,62898,371,11.0
+2024-01-24,Google Search - Non-brand,625.08,52812,363,14.1
+2024-01-25,Google Search - Non-brand,625.08,57015,310,14.7
+2024-01-26,Google Search - Non-brand,625.08,57962,310,11.5
+2024-01-27,Google Search - Non-brand,437.56,32059,200,10.2
+2024-01-28,Google Search - Non-brand,437.56,45651,244,10.4
+2024-01-29,Google Search - Non-brand,1048.29,105190,571,20.8
+2024-01-30,Google Search - Non-brand,1048.29,88376,617,17.0
+2024-01-31,Google Search - Non-brand,1048.29,113516,509,20.7
+2024-02-01,Google Search - Non-brand,1048.29,100077,427,19.1
+2024-02-02,Google Search - Non-brand,1048.29,88442,443,16.9
+2024-02-03,Google Search - Non-brand,733.8,74937,319,12.5
+2024-02-04,Google Search - Non-brand,733.8,78334,347,13.0
+2024-02-05,Google Search - Non-brand,782.63,68385,387,14.0
+2024-02-06,Google Search - Non-brand,782.63,75937,312,14.4
+2024-02-07,Google Search - Non-brand,782.63,71840,454,15.3
+2024-02-08,Google Search - Non-brand,782.63,64687,461,13.9
+2024-02-09,Google Search - Non-brand,782.63,68133,433,15.1
+2024-02-10,Google Search - Non-brand,547.84,59867,215,10.9
+2024-02-11,Google Search - Non-brand,547.84,48216,245,10.2
+2024-02-12,Google Search - Non-brand,529.12,44064,253,11.4
+2024-02-13,Google Search - Non-brand,529.12,53053,295,10.0
+2024-02-14,Google Search - Non-brand,529.12,57140,295,11.5
+2024-02-15,Google Search - Non-brand,529.12,52828,202,11.1
+2024-02-16,Google Search - Non-brand,529.12,39934,226,10.5
+2024-02-17,Google Search - Non-brand,370.38,36725,147,8.5
+2024-02-18,Google Search - Non-brand,370.38,34240,170,8.9
+2024-02-19,Google Search - Non-brand,657.02,62877,268,13.1
+2024-02-20,Google Search - Non-brand,657.02,66239,262,15.1
+2024-02-21,Google Search - Non-brand,657.02,50088,240,16.1
+2024-02-22,Google Search - Non-brand,657.02,48602,315,13.5
+2024-02-23,Google Search - Non-brand,657.02,64598,254,13.6
+2024-02-24,Google Search - Non-brand,459.92,48257,194,9.7
+2024-02-25,Google Search - Non-brand,459.92,38678,252,9.6
+2024-02-26,Google Search - Non-brand,698.37,50823,351,16.0
+2024-02-27,Google Search - Non-brand,698.37,71866,384,15.3
+2024-02-28,Google Search - Non-brand,698.37,64606,403,17.1
+2024-02-29,Google Search - Non-brand,698.37,62281,387,18.8
+2024-03-01,Google Search - Non-brand,698.37,68729,299,14.3
+2024-03-02,Google Search - Non-brand,488.86,52035,203,12.0
+2024-03-03,Google Search - Non-brand,488.86,48679,171,12.3
+2024-03-04,Google Search - Non-brand,648.9,47023,236,14.0
+2024-03-05,Google Search - Non-brand,648.9,53480,354,16.1
+2024-03-06,Google Search - Non-brand,648.9,59693,261,15.3
+2024-03-07,Google Search - Non-brand,648.9,64328,293,15.6
+2024-03-08,Google Search - Non-brand,648.9,51388,357,15.4
+2024-03-09,Google Search - Non-brand,454.23,45036,219,10.7
+2024-03-10,Google Search - Non-brand,454.23,37739,247,9.6
+2024-03-11,Google Search - Non-brand,602.18,64448,252,15.7
+2024-03-12,Google Search - Non-brand,602.18,44689,331,13.6
+2024-03-13,Google Search - Non-brand,602.18,44094,259,15.6
+2024-03-14,Google Search - Non-brand,602.18,53206,317,15.7
+2024-03-15,Google Search - Non-brand,602.18,61736,252,13.3
+2024-03-16,Google Search - Non-brand,421.53,30703,162,11.7
+2024-03-17,Google Search - Non-brand,421.53,34882,247,10.8
+2024-03-18,Google Search - Non-brand,783.53,83477,410,15.6
+2024-03-19,Google Search - Non-brand,783.53,57688,391,15.3
+2024-03-20,Google Search - Non-brand,783.53,82082,461,16.0
+2024-03-21,Google Search - Non-brand,783.53,62780,314,18.2
+2024-03-22,Google Search - Non-brand,783.53,83299,308,19.0
+2024-03-23,Google Search - Non-brand,548.47,53505,296,12.5
+2024-03-24,Google Search - Non-brand,548.47,45107,210,13.9
+2024-03-25,Google Search - Non-brand,555.52,40220,276,15.3
+2024-03-26,Google Search - Non-brand,555.52,59000,307,14.1
+2024-03-27,Google Search - Non-brand,555.52,55143,280,14.6
+2024-03-28,Google Search - Non-brand,555.52,40877,313,14.7
+2024-03-29,Google Search - Non-brand,555.52,59668,269,13.7
+2024-03-30,Google Search - Non-brand,388.87,29415,218,10.2
+2024-03-31,Google Search - Non-brand,388.87,28093,148,10.9
+2024-04-01,Google Search - Non-brand,538.94,56403,310,14.7
+2024-04-02,Google Search - Non-brand,538.94,38495,228,15.4
+2024-04-03,Google Search - Non-brand,538.94,51288,249,15.3
+2024-04-04,Google Search - Non-brand,538.94,38984,237,15.2
+2024-04-05,Google Search - Non-brand,538.94,43953,269,12.5
+2024-04-06,Google Search - Non-brand,377.26,39175,151,10.4
+2024-04-07,Google Search - Non-brand,377.26,29443,195,9.5
+2024-04-08,Google Search - Non-brand,785.98,57324,452,20.4
+2024-04-09,Google Search - Non-brand,785.98,66036,408,16.7
+2024-04-10,Google Search - Non-brand,785.98,77399,405,16.9
+2024-04-11,Google Search - Non-brand,785.98,69390,299,21.1
+2024-04-12,Google Search - Non-brand,785.98,60819,321,16.2
+2024-04-13,Google Search - Non-brand,550.19,59570,200,14.1
+2024-04-14,Google Search - Non-brand,550.19,44697,199,12.1
+2024-04-15,Google Search - Non-brand,962.17,82743,570,22.1
+2024-04-16,Google Search - Non-brand,962.17,102127,474,20.3
+2024-04-17,Google Search - Non-brand,962.17,94916,504,22.8
+2024-04-18,Google Search - Non-brand,962.17,97836,484,19.3
+2024-04-19,Google Search - Non-brand,962.17,85410,551,21.7
+2024-04-20,Google Search - Non-brand,673.52,60683,346,13.4
+2024-04-21,Google Search - Non-brand,673.52,62934,242,15.3
+2024-04-22,Google Search - Non-brand,886.36,93746,354,23.8
+2024-04-23,Google Search - Non-brand,886.36,66371,522,19.0
+2024-04-24,Google Search - Non-brand,886.36,73274,417,17.8
+2024-04-25,Google Search - Non-brand,886.36,74626,313,18.9
+2024-04-26,Google Search - Non-brand,886.36,96101,409,23.0
+2024-04-27,Google Search - Non-brand,620.46,45597,283,12.8
+2024-04-28,Google Search - Non-brand,620.46,52046,341,12.5
+2024-04-29,Google Search - Non-brand,596.17,46321,321,15.7
+2024-04-30,Google Search - Non-brand,596.17,62798,236,16.5
+2024-05-01,Google Search - Non-brand,596.17,57543,288,14.4
+2024-05-02,Google Search - Non-brand,596.17,45269,250,18.1
+2024-05-03,Google Search - Non-brand,596.17,44902,289,13.7
+2024-05-04,Google Search - Non-brand,417.32,41376,245,11.6
+2024-05-05,Google Search - Non-brand,417.32,39947,231,11.5
+2024-05-06,Google Search - Non-brand,588.29,47666,262,16.3
+2024-05-07,Google Search - Non-brand,588.29,43743,255,15.3
+2024-05-08,Google Search - Non-brand,588.29,44561,279,16.9
+2024-05-09,Google Search - Non-brand,588.29,63636,277,17.5
+2024-05-10,Google Search - Non-brand,588.29,41925,265,16.3
+2024-05-11,Google Search - Non-brand,411.8,40727,220,9.5
+2024-05-12,Google Search - Non-brand,411.8,32296,205,12.1
+2024-05-13,Google Search - Non-brand,581.6,45696,308,14.0
+2024-05-14,Google Search - Non-brand,581.6,44250,297,17.0
+2024-05-15,Google Search - Non-brand,581.6,61516,240,16.0
+2024-05-16,Google Search - Non-brand,581.6,43869,304,17.5
+2024-05-17,Google Search - Non-brand,581.6,62605,333,15.4
+2024-05-18,Google Search - Non-brand,407.12,37891,221,10.5
+2024-05-19,Google Search - Non-brand,407.12,38764,169,10.2
+2024-05-20,Google Search - Non-brand,506.9,44745,178,14.3
+2024-05-21,Google Search - Non-brand,506.9,38046,230,15.2
+2024-05-22,Google Search - Non-brand,506.9,36945,200,14.1
+2024-05-23,Google Search - Non-brand,506.9,45706,282,13.5
+2024-05-24,Google Search - Non-brand,506.9,40399,271,15.2
+2024-05-25,Google Search - Non-brand,354.83,34659,208,11.3
+2024-05-26,Google Search - Non-brand,354.83,29301,185,9.9
+2024-05-27,Google Search - Non-brand,644.69,64037,343,19.9
+2024-05-28,Google Search - Non-brand,644.69,57309,254,16.5
+2024-05-29,Google Search - Non-brand,644.69,61983,246,16.1
+2024-05-30,Google Search - Non-brand,644.69,56099,281,17.8
+2024-05-31,Google Search - Non-brand,644.69,55648,384,16.0
+2024-06-01,Google Search - Non-brand,451.28,35867,241,13.8
+2024-06-02,Google Search - Non-brand,451.28,39144,204,12.0
+2024-06-03,Google Search - Non-brand,539.72,56358,213,14.0
+2024-06-04,Google Search - Non-brand,539.72,49916,280,17.6
+2024-06-05,Google Search - Non-brand,539.72,45818,267,13.5
+2024-06-06,Google Search - Non-brand,539.72,54568,262,16.1
+2024-06-07,Google Search - Non-brand,539.72,48712,243,13.6
+2024-06-08,Google Search - Non-brand,377.8,28749,203,12.0
+2024-06-09,Google Search - Non-brand,377.8,32505,150,11.9
+2024-06-10,Google Search - Non-brand,535.59,51736,262,13.9
+2024-06-11,Google Search - Non-brand,535.59,51475,262,14.6
+2024-06-12,Google Search - Non-brand,535.59,52531,273,14.2
+2024-06-13,Google Search - Non-brand,535.59,41905,206,16.0
+2024-06-14,Google Search - Non-brand,535.59,52528,208,13.8
+2024-06-15,Google Search - Non-brand,374.91,33395,196,11.7
+2024-06-16,Google Search - Non-brand,374.91,35967,198,11.2
+2024-06-17,Google Search - Non-brand,655.31,62042,322,18.5
+2024-06-18,Google Search - Non-brand,655.31,66174,276,18.3
+2024-06-19,Google Search - Non-brand,655.31,69378,303,18.1
+2024-06-20,Google Search - Non-brand,655.31,55801,265,18.5
+2024-06-21,Google Search - Non-brand,655.31,72061,335,16.5
+2024-06-22,Google Search - Non-brand,458.72,36396,216,13.9
+2024-06-23,Google Search - Non-brand,458.72,49876,233,12.1
+2024-06-24,Google Search - Non-brand,991.29,95872,509,25.6
+2024-06-25,Google Search - Non-brand,991.29,87952,454,22.8
+2024-06-26,Google Search - Non-brand,991.29,82550,521,23.6
+2024-06-27,Google Search - Non-brand,991.29,95920,454,25.9
+2024-06-28,Google Search - Non-brand,991.29,100406,487,22.3
+2024-06-29,Google Search - Non-brand,693.9,57074,262,14.8
+2024-06-30,Google Search - Non-brand,693.9,54659,391,14.9
+2024-07-01,Google Search - Non-brand,607.82,56570,327,14.2
+2024-07-02,Google Search - Non-brand,607.82,64113,258,15.2
+2024-07-03,Google Search - Non-brand,607.82,63478,345,18.9
+2024-07-04,Google Search - Non-brand,607.82,48726,249,16.0
+2024-07-05,Google Search - Non-brand,607.82,46690,263,15.6
+2024-07-06,Google Search - Non-brand,425.47,42502,151,10.1
+2024-07-07,Google Search - Non-brand,425.47,42366,224,11.4
+2024-07-08,Google Search - Non-brand,675.41,68013,338,15.1
+2024-07-09,Google Search - Non-brand,675.41,64505,255,18.3
+2024-07-10,Google Search - Non-brand,675.41,62443,332,17.1
+2024-07-11,Google Search - Non-brand,675.41,55310,391,18.1
+2024-07-12,Google Search - Non-brand,675.41,60153,297,18.5
+2024-07-13,Google Search - Non-brand,472.78,35817,233,10.6
+2024-07-14,Google Search - Non-brand,472.78,34120,217,13.3
+2024-07-15,Google Search - Non-brand,696.0,55973,297,15.6
+2024-07-16,Google Search - Non-brand,696.0,66025,341,16.5
+2024-07-17,Google Search - Non-brand,696.0,68229,336,15.4
+2024-07-18,Google Search - Non-brand,696.0,55657,345,18.7
+2024-07-19,Google Search - Non-brand,696.0,63045,276,15.1
+2024-07-20,Google Search - Non-brand,487.2,49397,251,12.9
+2024-07-21,Google Search - Non-brand,487.2,49655,214,10.4
+2024-07-22,Google Search - Non-brand,720.33,50470,276,17.1
+2024-07-23,Google Search - Non-brand,720.33,73137,397,19.7
+2024-07-24,Google Search - Non-brand,720.33,52406,265,19.8
+2024-07-25,Google Search - Non-brand,720.33,59245,306,15.7
+2024-07-26,Google Search - Non-brand,720.33,71064,395,18.8
+2024-07-27,Google Search - Non-brand,504.23,49992,195,11.9
+2024-07-28,Google Search - Non-brand,504.23,51805,298,13.9
+2024-07-29,Google Search - Non-brand,598.98,50440,337,15.0
+2024-07-30,Google Search - Non-brand,598.98,59943,269,15.8
+2024-07-31,Google Search - Non-brand,598.98,61423,255,15.7
+2024-08-01,Google Search - Non-brand,598.98,58805,240,16.9
+2024-08-02,Google Search - Non-brand,598.98,45873,243,18.0
+2024-08-03,Google Search - Non-brand,419.29,42296,161,11.6
+2024-08-04,Google Search - Non-brand,419.29,38668,222,11.3
+2024-08-05,Google Search - Non-brand,596.45,44558,230,15.1
+2024-08-06,Google Search - Non-brand,596.45,56142,221,15.9
+2024-08-07,Google Search - Non-brand,596.45,52349,331,14.1
+2024-08-08,Google Search - Non-brand,596.45,51932,285,15.6
+2024-08-09,Google Search - Non-brand,596.45,55790,337,16.7
+2024-08-10,Google Search - Non-brand,417.51,31407,237,10.8
+2024-08-11,Google Search - Non-brand,417.51,45668,242,10.7
+2024-08-12,Google Search - Non-brand,580.27,62844,257,15.1
+2024-08-13,Google Search - Non-brand,580.27,62731,232,13.6
+2024-08-14,Google Search - Non-brand,580.27,61915,298,16.2
+2024-08-15,Google Search - Non-brand,580.27,41090,304,16.2
+2024-08-16,Google Search - Non-brand,580.27,48593,210,17.1
+2024-08-17,Google Search - Non-brand,406.19,31721,201,10.6
+2024-08-18,Google Search - Non-brand,406.19,33894,184,11.6
+2024-08-19,Google Search - Non-brand,710.02,71252,424,18.7
+2024-08-20,Google Search - Non-brand,710.02,77832,306,14.3
+2024-08-21,Google Search - Non-brand,710.02,74773,399,17.8
+2024-08-22,Google Search - Non-brand,710.02,75450,393,18.1
+2024-08-23,Google Search - Non-brand,710.02,71426,316,17.9
+2024-08-24,Google Search - Non-brand,497.01,53089,195,11.7
+2024-08-25,Google Search - Non-brand,497.01,50181,178,11.1
+2024-08-26,Google Search - Non-brand,976.92,105346,429,18.4
+2024-08-27,Google Search - Non-brand,976.92,93287,350,17.5
+2024-08-28,Google Search - Non-brand,976.92,84293,408,20.3
+2024-08-29,Google Search - Non-brand,976.92,104169,451,21.6
+2024-08-30,Google Search - Non-brand,976.92,106509,530,17.0
+2024-08-31,Google Search - Non-brand,683.85,62297,251,11.8
+2024-09-01,Google Search - Non-brand,683.85,70944,372,11.7
+2024-09-02,Google Search - Non-brand,1040.6,78242,390,19.9
+2024-09-03,Google Search - Non-brand,1040.6,90375,402,18.3
+2024-09-04,Google Search - Non-brand,1040.6,103069,492,21.7
+2024-09-05,Google Search - Non-brand,1040.6,111727,531,22.7
+2024-09-06,Google Search - Non-brand,1040.6,79177,622,18.2
+2024-09-07,Google Search - Non-brand,728.42,71128,281,16.5
+2024-09-08,Google Search - Non-brand,728.42,65643,334,15.7
+2024-09-09,Google Search - Non-brand,811.79,79093,289,18.2
+2024-09-10,Google Search - Non-brand,811.79,81001,399,15.0
+2024-09-11,Google Search - Non-brand,811.79,64636,311,17.6
+2024-09-12,Google Search - Non-brand,811.79,73213,332,17.8
+2024-09-13,Google Search - Non-brand,811.79,73688,404,17.5
+2024-09-14,Google Search - Non-brand,568.25,39801,232,12.3
+2024-09-15,Google Search - Non-brand,568.25,41575,250,10.7
+2024-09-16,Google Search - Non-brand,631.45,52986,344,13.6
+2024-09-17,Google Search - Non-brand,631.45,60306,357,12.5
+2024-09-18,Google Search - Non-brand,631.45,48183,264,14.3
+2024-09-19,Google Search - Non-brand,631.45,66421,247,13.0
+2024-09-20,Google Search - Non-brand,631.45,56768,340,15.5
+2024-09-21,Google Search - Non-brand,442.02,31790,168,10.7
+2024-09-22,Google Search - Non-brand,442.02,41569,165,10.8
+2024-09-23,Google Search - Non-brand,459.56,48599,271,9.9
+2024-09-24,Google Search - Non-brand,459.56,38032,236,9.6
+2024-09-25,Google Search - Non-brand,459.56,46058,204,10.6
+2024-09-26,Google Search - Non-brand,459.56,39224,239,10.0
+2024-09-27,Google Search - Non-brand,459.56,44458,184,10.9
+2024-09-28,Google Search - Non-brand,321.69,27835,183,7.3
+2024-09-29,Google Search - Non-brand,321.69,32971,117,7.7
+2024-09-30,Google Search - Non-brand,668.48,48984,268,15.5
+2024-10-01,Google Search - Non-brand,668.48,60638,385,13.1
+2024-10-02,Google Search - Non-brand,668.48,60052,365,12.0
+2024-10-03,Google Search - Non-brand,668.48,47243,248,13.4
+2024-10-04,Google Search - Non-brand,668.48,58674,295,12.4
+2024-10-05,Google Search - Non-brand,467.94,48733,177,8.3
+2024-10-06,Google Search - Non-brand,467.94,45244,210,10.8
+2024-10-07,Google Search - Non-brand,890.87,79166,342,16.1
+2024-10-08,Google Search - Non-brand,890.87,75335,441,16.4
+2024-10-09,Google Search - Non-brand,890.87,85673,413,15.4
+2024-10-10,Google Search - Non-brand,890.87,87365,510,17.3
+2024-10-11,Google Search - Non-brand,890.87,64434,461,17.2
+2024-10-12,Google Search - Non-brand,623.61,61500,323,10.8
+2024-10-13,Google Search - Non-brand,623.61,68329,284,10.8
+2024-10-14,Google Search - Non-brand,607.76,56810,286,13.6
+2024-10-15,Google Search - Non-brand,607.76,47892,277,13.1
+2024-10-16,Google Search - Non-brand,607.76,59685,297,13.4
+2024-10-17,Google Search - Non-brand,607.76,47586,315,12.8
+2024-10-18,Google Search - Non-brand,607.76,44947,237,12.8
+2024-10-19,Google Search - Non-brand,425.43,45765,171,7.3
+2024-10-20,Google Search - Non-brand,425.43,35843,179,9.3
+2024-10-21,Google Search - Non-brand,498.74,40131,233,8.5
+2024-10-22,Google Search - Non-brand,498.74,51098,272,9.8
+2024-10-23,Google Search - Non-brand,498.74,39895,280,11.2
+2024-10-24,Google Search - Non-brand,498.74,41325,255,10.0
+2024-10-25,Google Search - Non-brand,498.74,50747,251,11.2
+2024-10-26,Google Search - Non-brand,349.12,26968,190,6.6
+2024-10-27,Google Search - Non-brand,349.12,34516,153,7.8
+2024-10-28,Google Search - Non-brand,544.6,48319,199,11.9
+2024-10-29,Google Search - Non-brand,544.6,54647,241,9.8
+2024-10-30,Google Search - Non-brand,544.6,46367,192,9.8
+2024-10-31,Google Search - Non-brand,544.6,42357,247,9.6
+2024-11-01,Google Search - Non-brand,544.6,46761,228,10.3
+2024-11-02,Google Search - Non-brand,381.22,32099,213,7.4
+2024-11-03,Google Search - Non-brand,381.22,37591,222,8.2
+2024-11-04,Google Search - Non-brand,445.06,37894,233,11.3
+2024-11-05,Google Search - Non-brand,445.06,36704,161,9.9
+2024-11-06,Google Search - Non-brand,445.06,45761,251,8.7
+2024-11-07,Google Search - Non-brand,445.06,33771,172,9.1
+2024-11-08,Google Search - Non-brand,445.06,40428,170,8.5
+2024-11-09,Google Search - Non-brand,311.54,22394,127,5.9
+2024-11-10,Google Search - Non-brand,311.54,23625,120,7.0
+2024-11-11,Google Search - Non-brand,636.27,57755,313,12.1
+2024-11-12,Google Search - Non-brand,636.27,60767,346,11.5
+2024-11-13,Google Search - Non-brand,636.27,59115,312,11.4
+2024-11-14,Google Search - Non-brand,636.27,50857,322,13.7
+2024-11-15,Google Search - Non-brand,636.27,55911,242,10.7
+2024-11-16,Google Search - Non-brand,445.39,31191,264,9.5
+2024-11-17,Google Search - Non-brand,445.39,42824,196,9.0
+2024-11-18,Google Search - Non-brand,544.52,57394,267,11.7
+2024-11-19,Google Search - Non-brand,544.52,44041,304,9.7
+2024-11-20,Google Search - Non-brand,544.52,43951,291,10.1
+2024-11-21,Google Search - Non-brand,544.52,50718,271,10.4
+2024-11-22,Google Search - Non-brand,544.52,42237,206,11.1
+2024-11-23,Google Search - Non-brand,381.17,32193,200,7.6
+2024-11-24,Google Search - Non-brand,381.17,40747,228,7.0
+2024-11-25,Google Search - Non-brand,657.17,54417,292,10.5
+2024-11-26,Google Search - Non-brand,657.17,48088,268,13.3
+2024-11-27,Google Search - Non-brand,657.17,58247,317,11.5
+2024-11-28,Google Search - Non-brand,657.17,60915,351,12.6
+2024-11-29,Google Search - Non-brand,657.17,59253,343,10.7
+2024-11-30,Google Search - Non-brand,460.02,47670,193,7.7
+2024-12-01,Google Search - Non-brand,460.02,32357,227,8.0
+2024-12-02,Google Search - Non-brand,927.69,75492,455,17.3
+2024-12-03,Google Search - Non-brand,927.69,89577,542,14.7
+2024-12-04,Google Search - Non-brand,927.69,87158,452,16.9
+2024-12-05,Google Search - Non-brand,927.69,79836,378,16.9
+2024-12-06,Google Search - Non-brand,927.69,80906,417,15.2
+2024-12-07,Google Search - Non-brand,649.38,58991,241,9.2
+2024-12-08,Google Search - Non-brand,649.38,50728,248,12.3
+2024-12-09,Google Search - Non-brand,574.65,42640,272,12.6
+2024-12-10,Google Search - Non-brand,574.65,42313,217,10.8
+2024-12-11,Google Search - Non-brand,574.65,58225,268,10.7
+2024-12-12,Google Search - Non-brand,574.65,43040,243,12.5
+2024-12-13,Google Search - Non-brand,574.65,46961,255,10.7
+2024-12-14,Google Search - Non-brand,402.26,42121,163,7.8
+2024-12-15,Google Search - Non-brand,402.26,28222,144,7.5
+2024-12-16,Google Search - Non-brand,763.86,77536,383,15.8
+2024-12-17,Google Search - Non-brand,763.86,58833,332,14.6
+2024-12-18,Google Search - Non-brand,763.86,58913,330,12.7
+2024-12-19,Google Search - Non-brand,763.86,70757,389,12.7
+2024-12-20,Google Search - Non-brand,763.86,78692,293,12.0
+2024-12-21,Google Search - Non-brand,534.7,41884,202,10.3
+2024-12-22,Google Search - Non-brand,534.7,46510,305,9.5
+2024-12-23,Google Search - Non-brand,594.31,52221,262,11.2
+2024-12-24,Google Search - Non-brand,594.31,49955,264,11.8
+2024-12-25,Google Search - Non-brand,594.31,47727,226,9.1
+2024-12-26,Google Search - Non-brand,594.31,47575,220,9.1
+2024-12-27,Google Search - Non-brand,594.31,52561,211,10.6
+2024-12-28,Google Search - Non-brand,416.01,38790,169,6.6
+2024-12-29,Google Search - Non-brand,416.01,33036,151,8.5
+2024-12-30,Google Search - Non-brand,644.92,66695,243,11.0
+2024-12-31,Google Search - Non-brand,644.92,45969,358,13.9
+2025-01-01,Google Search - Non-brand,644.92,49567,363,13.1
+2025-01-02,Google Search - Non-brand,644.92,54152,231,13.5
+2025-01-03,Google Search - Non-brand,644.92,69255,311,13.9
+2025-01-04,Google Search - Non-brand,451.44,32713,204,7.8
+2025-01-05,Google Search - Non-brand,451.44,39782,213,7.3
+2025-01-06,Google Search - Non-brand,595.34,53647,219,12.6
+2025-01-07,Google Search - Non-brand,595.34,54651,321,12.6
+2025-01-08,Google Search - Non-brand,595.34,58207,330,12.4
+2025-01-09,Google Search - Non-brand,595.34,49074,327,10.6
+2025-01-10,Google Search - Non-brand,595.34,51487,288,13.0
+2025-01-11,Google Search - Non-brand,416.74,29891,181,7.8
+2025-01-12,Google Search - Non-brand,416.74,32061,151,7.1
+2025-01-13,Google Search - Non-brand,636.73,46483,365,11.2
+2025-01-14,Google Search - Non-brand,636.73,56718,362,13.5
+2025-01-15,Google Search - Non-brand,636.73,58981,273,10.8
+2025-01-16,Google Search - Non-brand,636.73,57312,370,13.6
+2025-01-17,Google Search - Non-brand,636.73,66049,337,12.7
+2025-01-18,Google Search - Non-brand,445.71,44521,229,8.8
+2025-01-19,Google Search - Non-brand,445.71,34032,168,9.5
+2025-01-20,Google Search - Non-brand,820.25,72174,407,13.9
+2025-01-21,Google Search - Non-brand,820.25,65417,474,16.0
+2025-01-22,Google Search - Non-brand,820.25,83059,402,14.3
+2025-01-23,Google Search - Non-brand,820.25,63892,471,13.4
+2025-01-24,Google Search - Non-brand,820.25,89905,380,13.1
+2025-01-25,Google Search - Non-brand,574.17,42938,265,9.6
+2025-01-26,Google Search - Non-brand,574.17,61972,304,12.1
+2025-01-27,Google Search - Non-brand,644.25,67228,304,12.1
+2025-01-28,Google Search - Non-brand,644.25,56178,306,12.7
+2025-01-29,Google Search - Non-brand,644.25,68906,285,11.5
+2025-01-30,Google Search - Non-brand,644.25,68937,231,13.3
+2025-01-31,Google Search - Non-brand,644.25,59539,378,12.4
+2025-02-01,Google Search - Non-brand,450.98,37287,192,8.5
+2025-02-02,Google Search - Non-brand,450.98,48379,261,10.3
+2025-02-03,Google Search - Non-brand,778.77,58274,407,14.2
+2025-02-04,Google Search - Non-brand,778.77,80596,332,16.9
+2025-02-05,Google Search - Non-brand,778.77,83143,378,17.0
+2025-02-06,Google Search - Non-brand,778.77,56478,405,15.9
+2025-02-07,Google Search - Non-brand,778.77,63380,329,16.3
+2025-02-08,Google Search - Non-brand,545.14,44273,262,9.6
+2025-02-09,Google Search - Non-brand,545.14,46138,242,11.6
+2025-02-10,Google Search - Non-brand,938.04,96669,423,21.3
+2025-02-11,Google Search - Non-brand,938.04,81182,350,17.9
+2025-02-12,Google Search - Non-brand,938.04,87367,462,20.8
+2025-02-13,Google Search - Non-brand,938.04,69014,365,18.8
+2025-02-14,Google Search - Non-brand,938.04,85862,382,21.1
+2025-02-15,Google Search - Non-brand,656.63,67694,313,15.6
+2025-02-16,Google Search - Non-brand,656.63,68695,372,13.5
+2025-02-17,Google Search - Non-brand,780.54,71708,449,15.4
+2025-02-18,Google Search - Non-brand,780.54,83870,428,19.4
+2025-02-19,Google Search - Non-brand,780.54,81425,385,18.3
+2025-02-20,Google Search - Non-brand,780.54,64072,440,18.2
+2025-02-21,Google Search - Non-brand,780.54,65975,428,17.5
+2025-02-22,Google Search - Non-brand,546.38,57990,200,12.9
+2025-02-23,Google Search - Non-brand,546.38,41737,248,11.3
+2025-02-24,Google Search - Non-brand,607.29,47590,332,12.5
+2025-02-25,Google Search - Non-brand,607.29,54281,293,12.5
+2025-02-26,Google Search - Non-brand,607.29,47574,355,15.1
+2025-02-27,Google Search - Non-brand,607.29,64333,226,13.4
+2025-02-28,Google Search - Non-brand,607.29,52407,305,15.2
+2025-03-01,Google Search - Non-brand,425.1,35927,238,10.0
+2025-03-02,Google Search - Non-brand,425.1,42413,252,8.1
+2025-03-03,Google Search - Non-brand,614.94,49044,324,15.3
+2025-03-04,Google Search - Non-brand,614.94,57900,221,16.0
+2025-03-05,Google Search - Non-brand,614.94,60248,272,13.8
+2025-03-06,Google Search - Non-brand,614.94,50357,233,16.0
+2025-03-07,Google Search - Non-brand,614.94,44463,368,13.7
+2025-03-08,Google Search - Non-brand,430.46,41713,257,12.2
+2025-03-09,Google Search - Non-brand,430.46,40870,188,11.6
+2025-03-10,Google Search - Non-brand,725.02,58746,278,17.0
+2025-03-11,Google Search - Non-brand,725.02,56778,280,17.4
+2025-03-12,Google Search - Non-brand,725.02,70260,322,18.2
+2025-03-13,Google Search - Non-brand,725.02,75162,277,17.6
+2025-03-14,Google Search - Non-brand,725.02,51626,423,16.1
+2025-03-15,Google Search - Non-brand,507.52,53042,281,10.6
+2025-03-16,Google Search - Non-brand,507.52,53388,229,12.1
+2025-03-17,Google Search - Non-brand,493.53,48287,195,11.1
+2025-03-18,Google Search - Non-brand,493.53,39932,259,10.8
+2025-03-19,Google Search - Non-brand,493.53,38536,200,12.6
+2025-03-20,Google Search - Non-brand,493.53,40126,248,11.3
+2025-03-21,Google Search - Non-brand,493.53,41820,265,12.9
+2025-03-22,Google Search - Non-brand,345.47,30555,177,9.4
+2025-03-23,Google Search - Non-brand,345.47,27306,183,9.0
+2025-03-24,Google Search - Non-brand,901.18,91282,361,21.5
+2025-03-25,Google Search - Non-brand,901.18,87017,357,19.9
+2025-03-26,Google Search - Non-brand,901.18,73371,457,17.3
+2025-03-27,Google Search - Non-brand,901.18,65446,501,21.5
+2025-03-28,Google Search - Non-brand,901.18,75591,522,19.9
+2025-03-29,Google Search - Non-brand,630.83,49092,253,15.0
+2025-03-30,Google Search - Non-brand,630.83,44718,325,12.7
+2025-03-31,Google Search - Non-brand,521.25,46639,188,14.2
+2025-04-01,Google Search - Non-brand,521.25,53694,236,14.3
+2025-04-02,Google Search - Non-brand,521.25,48695,220,14.7
+2025-04-03,Google Search - Non-brand,521.25,46296,241,12.0
+2025-04-04,Google Search - Non-brand,521.25,51797,196,13.4
+2025-04-05,Google Search - Non-brand,364.88,27718,187,8.5
+2025-04-06,Google Search - Non-brand,364.88,35833,207,10.3
+2025-04-07,Google Search - Non-brand,642.66,63256,335,14.3
+2025-04-08,Google Search - Non-brand,642.66,65377,236,18.0
+2025-04-09,Google Search - Non-brand,642.66,68636,235,15.4
+2025-04-10,Google Search - Non-brand,642.66,45069,299,18.2
+2025-04-11,Google Search - Non-brand,642.66,53580,291,15.8
+2025-04-12,Google Search - Non-brand,449.86,32210,206,12.9
+2025-04-13,Google Search - Non-brand,449.86,35588,229,10.6
+2025-04-14,Google Search - Non-brand,659.52,66607,385,16.3
+2025-04-15,Google Search - Non-brand,659.52,52465,327,14.6
+2025-04-16,Google Search - Non-brand,659.52,71701,258,16.6
+2025-04-17,Google Search - Non-brand,659.52,62919,259,17.3
+2025-04-18,Google Search - Non-brand,659.52,63946,242,17.6
+2025-04-19,Google Search - Non-brand,461.66,35786,247,11.1
+2025-04-20,Google Search - Non-brand,461.66,38044,196,12.0
+2025-04-21,Google Search - Non-brand,647.01,69263,361,18.3
+2025-04-22,Google Search - Non-brand,647.01,60768,371,16.2
+2025-04-23,Google Search - Non-brand,647.01,56352,283,14.2
+2025-04-24,Google Search - Non-brand,647.01,67717,267,16.2
+2025-04-25,Google Search - Non-brand,647.01,71167,370,15.2
+2025-04-26,Google Search - Non-brand,452.9,37648,258,10.6
+2025-04-27,Google Search - Non-brand,452.9,47978,193,10.2
+2025-04-28,Google Search - Non-brand,503.14,48924,257,15.2
+2025-04-29,Google Search - Non-brand,503.14,45090,271,14.8
+2025-04-30,Google Search - Non-brand,503.14,49355,219,12.4
+2025-05-01,Google Search - Non-brand,503.14,43789,179,14.1
+2025-05-02,Google Search - Non-brand,503.14,48085,221,13.0
+2025-05-03,Google Search - Non-brand,352.2,25861,171,9.1
+2025-05-04,Google Search - Non-brand,352.2,28577,208,10.6
+2025-05-05,Google Search - Non-brand,864.96,86981,486,17.9
+2025-05-06,Google Search - Non-brand,864.96,61668,379,19.8
+2025-05-07,Google Search - Non-brand,864.96,92538,311,23.5
+2025-05-08,Google Search - Non-brand,864.96,67986,463,24.2
+2025-05-09,Google Search - Non-brand,864.96,90275,513,21.7
+2025-05-10,Google Search - Non-brand,605.47,48544,294,13.5
+2025-05-11,Google Search - Non-brand,605.47,46587,361,12.8
+2025-05-12,Google Search - Non-brand,573.89,57283,288,18.8
+2025-05-13,Google Search - Non-brand,573.89,57975,257,14.7
+2025-05-14,Google Search - Non-brand,573.89,60772,236,14.9
+2025-05-15,Google Search - Non-brand,573.89,55520,260,16.1
+2025-05-16,Google Search - Non-brand,573.89,61173,252,16.8
+2025-05-17,Google Search - Non-brand,401.73,41034,187,10.8
+2025-05-18,Google Search - Non-brand,401.73,33748,169,12.4
+2025-05-19,Google Search - Non-brand,721.02,55344,289,17.7
+2025-05-20,Google Search - Non-brand,721.02,78863,334,15.4
+2025-05-21,Google Search - Non-brand,721.02,59959,272,19.7
+2025-05-22,Google Search - Non-brand,721.02,66405,411,15.6
+2025-05-23,Google Search - Non-brand,721.02,52919,342,16.4
+2025-05-24,Google Search - Non-brand,504.71,49999,210,11.5
+2025-05-25,Google Search - Non-brand,504.71,48786,242,12.8
+2025-05-26,Google Search - Non-brand,721.54,62720,333,21.3
+2025-05-27,Google Search - Non-brand,721.54,60548,365,20.4
+2025-05-28,Google Search - Non-brand,721.54,71439,296,21.4
+2025-05-29,Google Search - Non-brand,721.54,59890,340,18.7
+2025-05-30,Google Search - Non-brand,721.54,74427,419,16.3
+2025-05-31,Google Search - Non-brand,505.08,55471,261,13.0
+2025-06-01,Google Search - Non-brand,505.08,40723,300,13.5
+2025-06-02,Google Search - Non-brand,580.23,59112,267,17.0
+2025-06-03,Google Search - Non-brand,580.23,42756,207,14.4
+2025-06-04,Google Search - Non-brand,580.23,41835,312,15.7
+2025-06-05,Google Search - Non-brand,580.23,44979,266,16.8
+2025-06-06,Google Search - Non-brand,580.23,54230,281,14.6
+2025-06-07,Google Search - Non-brand,406.16,35155,178,11.0
+2025-06-08,Google Search - Non-brand,406.16,32237,197,10.2
+2025-06-09,Google Search - Non-brand,819.86,82304,346,17.5
+2025-06-10,Google Search - Non-brand,819.86,72967,312,17.0
+2025-06-11,Google Search - Non-brand,819.86,59147,337,19.2
+2025-06-12,Google Search - Non-brand,819.86,68789,394,18.6
+2025-06-13,Google Search - Non-brand,819.86,61000,483,20.5
+2025-06-14,Google Search - Non-brand,573.9,53257,309,14.6
+2025-06-15,Google Search - Non-brand,573.9,47418,209,15.0
+2025-06-16,Google Search - Non-brand,925.52,73997,380,23.3
+2025-06-17,Google Search - Non-brand,925.52,99592,525,24.4
+2025-06-18,Google Search - Non-brand,925.52,65344,352,25.5
+2025-06-19,Google Search - Non-brand,925.52,68901,368,22.0
+2025-06-20,Google Search - Non-brand,925.52,87770,350,24.1
+2025-06-21,Google Search - Non-brand,647.86,62424,287,17.4
+2025-06-22,Google Search - Non-brand,647.86,48869,315,17.9
+2025-06-23,Google Search - Non-brand,969.09,85955,349,25.0
+2025-06-24,Google Search - Non-brand,969.09,73868,576,22.5
+2025-06-25,Google Search - Non-brand,969.09,83971,568,24.1
+2025-06-26,Google Search - Non-brand,969.09,89040,411,20.0
+2025-06-27,Google Search - Non-brand,969.09,76986,365,25.2
+2025-06-28,Google Search - Non-brand,678.36,50112,328,13.2
+2025-06-29,Google Search - Non-brand,678.36,59626,340,16.4
+2025-06-30,Google Search - Non-brand,824.97,66243,416,18.2
+2025-07-01,Google Search - Non-brand,824.97,85577,319,17.5
+2025-07-02,Google Search - Non-brand,824.97,70572,307,18.7
+2025-07-03,Google Search - Non-brand,824.97,71869,460,20.5
+2025-07-04,Google Search - Non-brand,824.97,80811,477,18.9
+2025-07-05,Google Search - Non-brand,577.48,42390,321,14.6
+2025-07-06,Google Search - Non-brand,577.48,52740,226,12.8
+2025-07-07,Google Search - Non-brand,713.29,50675,280,15.5
+2025-07-08,Google Search - Non-brand,713.29,60714,390,19.4
+2025-07-09,Google Search - Non-brand,713.29,64014,305,19.4
+2025-07-10,Google Search - Non-brand,713.29,57007,417,17.8
+2025-07-11,Google Search - Non-brand,713.29,56134,389,18.5
+2025-07-12,Google Search - Non-brand,499.3,49609,246,14.1
+2025-07-13,Google Search - Non-brand,499.3,50819,257,13.0
+2025-07-14,Google Search - Non-brand,626.23,53141,233,15.0
+2025-07-15,Google Search - Non-brand,626.23,68649,285,16.5
+2025-07-16,Google Search - Non-brand,626.23,50089,252,16.2
+2025-07-17,Google Search - Non-brand,626.23,56094,296,18.7
+2025-07-18,Google Search - Non-brand,626.23,48667,219,14.8
+2025-07-19,Google Search - Non-brand,438.36,35093,216,12.1
+2025-07-20,Google Search - Non-brand,438.36,43770,228,12.3
+2025-07-21,Google Search - Non-brand,534.5,47791,215,14.9
+2025-07-22,Google Search - Non-brand,534.5,55015,230,13.9
+2025-07-23,Google Search - Non-brand,534.5,51558,206,15.6
+2025-07-24,Google Search - Non-brand,534.5,56141,255,16.4
+2025-07-25,Google Search - Non-brand,534.5,51139,203,16.2
+2025-07-26,Google Search - Non-brand,374.15,26495,162,10.7
+2025-07-27,Google Search - Non-brand,374.15,33715,133,9.6
+2025-07-28,Google Search - Non-brand,517.34,50817,272,11.7
+2025-07-29,Google Search - Non-brand,517.34,52219,184,14.4
+2025-07-30,Google Search - Non-brand,517.34,54983,182,13.7
+2025-07-31,Google Search - Non-brand,517.34,50375,304,11.5
+2025-08-01,Google Search - Non-brand,517.34,36310,236,13.0
+2025-08-02,Google Search - Non-brand,362.14,35874,181,9.3
+2025-08-03,Google Search - Non-brand,362.14,27606,167,10.2
+2025-08-04,Google Search - Non-brand,725.57,68928,302,18.7
+2025-08-05,Google Search - Non-brand,725.57,59817,401,14.7
+2025-08-06,Google Search - Non-brand,725.57,68067,402,14.1
+2025-08-07,Google Search - Non-brand,725.57,68744,365,16.4
+2025-08-08,Google Search - Non-brand,725.57,66446,393,17.1
+2025-08-09,Google Search - Non-brand,507.9,42872,180,11.8
+2025-08-10,Google Search - Non-brand,507.9,42909,217,11.1
+2025-08-11,Google Search - Non-brand,675.87,60669,386,17.0
+2025-08-12,Google Search - Non-brand,675.87,73015,246,15.9
+2025-08-13,Google Search - Non-brand,675.87,68413,296,15.5
+2025-08-14,Google Search - Non-brand,675.87,56089,394,16.7
+2025-08-15,Google Search - Non-brand,675.87,59664,384,14.2
+2025-08-16,Google Search - Non-brand,473.11,33267,269,12.2
+2025-08-17,Google Search - Non-brand,473.11,48550,217,11.3
+2025-08-18,Google Search - Non-brand,992.43,88817,482,20.7
+2025-08-19,Google Search - Non-brand,992.43,96251,379,21.7
+2025-08-20,Google Search - Non-brand,992.43,87414,364,19.6
+2025-08-21,Google Search - Non-brand,992.43,103728,438,23.1
+2025-08-22,Google Search - Non-brand,992.43,94287,505,22.9
+2025-08-23,Google Search - Non-brand,694.7,75339,399,16.8
+2025-08-24,Google Search - Non-brand,694.7,54275,415,16.3
+2025-08-25,Google Search - Non-brand,742.22,74689,273,17.6
+2025-08-26,Google Search - Non-brand,742.22,73792,297,18.6
+2025-08-27,Google Search - Non-brand,742.22,51968,273,16.5
+2025-08-28,Google Search - Non-brand,742.22,61956,278,14.8
+2025-08-29,Google Search - Non-brand,742.22,65306,260,16.2
+2025-08-30,Google Search - Non-brand,519.56,45579,192,12.1
+2025-08-31,Google Search - Non-brand,519.56,36437,254,12.8
+2025-09-01,Google Search - Non-brand,750.32,73311,315,18.8
+2025-09-02,Google Search - Non-brand,750.32,66191,427,14.3
+2025-09-03,Google Search - Non-brand,750.32,75837,382,14.4
+2025-09-04,Google Search - Non-brand,750.32,75391,443,15.0
+2025-09-05,Google Search - Non-brand,750.32,61387,407,14.3
+2025-09-06,Google Search - Non-brand,525.22,47506,272,12.8
+2025-09-07,Google Search - Non-brand,525.22,57083,301,11.7
+2025-09-08,Google Search - Non-brand,970.25,88853,474,16.4
+2025-09-09,Google Search - Non-brand,970.25,105068,504,19.8
+2025-09-10,Google Search - Non-brand,970.25,74816,392,16.0
+2025-09-11,Google Search - Non-brand,970.25,82374,572,17.4
+2025-09-12,Google Search - Non-brand,970.25,72878,445,15.5
+2025-09-13,Google Search - Non-brand,679.17,51572,267,12.9
+2025-09-14,Google Search - Non-brand,679.17,65156,322,13.9
+2025-09-15,Google Search - Non-brand,459.28,39824,209,11.9
+2025-09-16,Google Search - Non-brand,459.28,49665,226,10.1
+2025-09-17,Google Search - Non-brand,459.28,44737,220,10.5
+2025-09-18,Google Search - Non-brand,459.28,50318,190,11.9
+2025-09-19,Google Search - Non-brand,459.28,43860,243,11.4
+2025-09-20,Google Search - Non-brand,321.49,32355,123,6.7
+2025-09-21,Google Search - Non-brand,321.49,23484,176,8.5
+2025-09-22,Google Search - Non-brand,416.85,43936,171,9.7
+2025-09-23,Google Search - Non-brand,416.85,35304,179,8.1
+2025-09-24,Google Search - Non-brand,416.85,30767,160,7.9
+2025-09-25,Google Search - Non-brand,416.85,34560,229,9.2
+2025-09-26,Google Search - Non-brand,416.85,30204,179,9.1
+2025-09-27,Google Search - Non-brand,291.8,29711,108,7.2
+2025-09-28,Google Search - Non-brand,291.8,23179,171,5.7
+2024-01-01,Meta Lead Ads,862.35,62233,358,23.7
+2024-01-02,Meta Lead Ads,862.35,68704,335,20.2
+2024-01-03,Meta Lead Ads,862.35,84452,403,22.6
+2024-01-04,Meta Lead Ads,862.35,82262,470,21.1
+2024-01-05,Meta Lead Ads,862.35,61673,401,21.4
+2024-01-06,Meta Lead Ads,603.65,51374,221,15.8
+2024-01-07,Meta Lead Ads,603.65,49449,301,17.2
+2024-01-08,Meta Lead Ads,883.61,73038,462,19.8
+2024-01-09,Meta Lead Ads,883.61,91977,476,20.6
+2024-01-10,Meta Lead Ads,883.61,95825,377,20.3
+2024-01-11,Meta Lead Ads,883.61,66564,521,20.8
+2024-01-12,Meta Lead Ads,883.61,63748,311,19.4
+2024-01-13,Meta Lead Ads,618.53,49246,342,15.4
+2024-01-14,Meta Lead Ads,618.53,59671,226,13.8
+2024-01-15,Meta Lead Ads,1039.6,88312,596,24.6
+2024-01-16,Meta Lead Ads,1039.6,98965,569,21.0
+2024-01-17,Meta Lead Ads,1039.6,103280,444,27.8
+2024-01-18,Meta Lead Ads,1039.6,78303,524,22.7
+2024-01-19,Meta Lead Ads,1039.6,96829,466,23.3
+2024-01-20,Meta Lead Ads,727.72,51467,344,16.3
+2024-01-21,Meta Lead Ads,727.72,71578,404,18.8
+2024-01-22,Meta Lead Ads,972.03,72089,507,23.8
+2024-01-23,Meta Lead Ads,972.03,78022,448,24.4
+2024-01-24,Meta Lead Ads,972.03,72031,398,24.9
+2024-01-25,Meta Lead Ads,972.03,71160,462,23.1
+2024-01-26,Meta Lead Ads,972.03,69071,569,27.5
+2024-01-27,Meta Lead Ads,680.42,70234,260,15.3
+2024-01-28,Meta Lead Ads,680.42,51678,368,16.1
+2024-01-29,Meta Lead Ads,1319.57,134259,493,26.7
+2024-01-30,Meta Lead Ads,1319.57,139916,649,28.9
+2024-01-31,Meta Lead Ads,1319.57,141084,634,32.8
+2024-02-01,Meta Lead Ads,1319.57,104594,580,32.5
+2024-02-02,Meta Lead Ads,1319.57,111268,467,33.8
+2024-02-03,Meta Lead Ads,923.7,98385,436,18.4
+2024-02-04,Meta Lead Ads,923.7,92588,471,19.8
+2024-02-05,Meta Lead Ads,781.63,66265,342,22.8
+2024-02-06,Meta Lead Ads,781.63,63102,431,20.7
+2024-02-07,Meta Lead Ads,781.63,60919,348,21.8
+2024-02-08,Meta Lead Ads,781.63,75207,294,20.6
+2024-02-09,Meta Lead Ads,781.63,59802,446,20.5
+2024-02-10,Meta Lead Ads,547.14,45298,220,16.2
+2024-02-11,Meta Lead Ads,547.14,40403,259,14.6
+2024-02-12,Meta Lead Ads,919.6,80337,548,21.6
+2024-02-13,Meta Lead Ads,919.6,72526,409,23.2
+2024-02-14,Meta Lead Ads,919.6,70264,491,27.1
+2024-02-15,Meta Lead Ads,919.6,73408,486,24.2
+2024-02-16,Meta Lead Ads,919.6,66326,375,27.3
+2024-02-17,Meta Lead Ads,643.72,59964,251,15.9
+2024-02-18,Meta Lead Ads,643.72,59771,258,16.3
+2024-02-19,Meta Lead Ads,1117.42,103216,458,32.8
+2024-02-20,Meta Lead Ads,1117.42,80663,479,28.0
+2024-02-21,Meta Lead Ads,1117.42,109630,410,27.6
+2024-02-22,Meta Lead Ads,1117.42,110650,590,28.3
+2024-02-23,Meta Lead Ads,1117.42,78739,593,32.1
+2024-02-24,Meta Lead Ads,782.2,60163,434,18.1
+2024-02-25,Meta Lead Ads,782.2,83551,336,23.1
+2024-02-26,Meta Lead Ads,880.28,90809,415,30.4
+2024-02-27,Meta Lead Ads,880.28,82778,485,24.6
+2024-02-28,Meta Lead Ads,880.28,88962,313,31.2
+2024-02-29,Meta Lead Ads,880.28,75313,467,31.7
+2024-03-01,Meta Lead Ads,880.28,90065,428,29.5
+2024-03-02,Meta Lead Ads,616.19,66666,330,21.8
+2024-03-03,Meta Lead Ads,616.19,47243,340,16.6
+2024-03-04,Meta Lead Ads,806.99,73323,368,23.0
+2024-03-05,Meta Lead Ads,806.99,83914,329,25.4
+2024-03-06,Meta Lead Ads,806.99,59304,437,25.0
+2024-03-07,Meta Lead Ads,806.99,64805,286,21.2
+2024-03-08,Meta Lead Ads,806.99,58926,308,23.9
+2024-03-09,Meta Lead Ads,564.89,59527,229,15.3
+2024-03-10,Meta Lead Ads,564.89,54466,321,19.3
+2024-03-11,Meta Lead Ads,960.76,90706,514,31.8
+2024-03-12,Meta Lead Ads,960.76,94483,377,31.7
+2024-03-13,Meta Lead Ads,960.76,87792,561,31.3
+2024-03-14,Meta Lead Ads,960.76,82663,375,31.0
+2024-03-15,Meta Lead Ads,960.76,102868,339,26.0
+2024-03-16,Meta Lead Ads,672.53,61913,326,20.5
+2024-03-17,Meta Lead Ads,672.53,54671,396,18.5
+2024-03-18,Meta Lead Ads,721.24,56197,309,21.9
+2024-03-19,Meta Lead Ads,721.24,65466,386,24.4
+2024-03-20,Meta Lead Ads,721.24,75904,425,21.7
+2024-03-21,Meta Lead Ads,721.24,67146,403,23.2
+2024-03-22,Meta Lead Ads,721.24,67066,414,26.5
+2024-03-23,Meta Lead Ads,504.87,37485,211,18.7
+2024-03-24,Meta Lead Ads,504.87,50716,265,18.2
+2024-03-25,Meta Lead Ads,740.76,55896,346,27.8
+2024-03-26,Meta Lead Ads,740.76,65921,329,27.4
+2024-03-27,Meta Lead Ads,740.76,52592,395,20.6
+2024-03-28,Meta Lead Ads,740.76,69603,375,27.2
+2024-03-29,Meta Lead Ads,740.76,52344,280,25.3
+2024-03-30,Meta Lead Ads,518.53,41547,311,17.5
+2024-03-31,Meta Lead Ads,518.53,42511,232,19.1
+2024-04-01,Meta Lead Ads,903.33,92081,452,24.0
+2024-04-02,Meta Lead Ads,903.33,83942,350,26.3
+2024-04-03,Meta Lead Ads,903.33,77093,331,26.3
+2024-04-04,Meta Lead Ads,903.33,78525,537,31.5
+2024-04-05,Meta Lead Ads,903.33,73066,505,28.9
+2024-04-06,Meta Lead Ads,632.33,68780,305,21.7
+2024-04-07,Meta Lead Ads,632.33,48038,260,17.0
+2024-04-08,Meta Lead Ads,1029.31,78696,567,28.2
+2024-04-09,Meta Lead Ads,1029.31,111416,447,31.2
+2024-04-10,Meta Lead Ads,1029.31,80237,392,30.8
+2024-04-11,Meta Lead Ads,1029.31,112172,552,29.4
+2024-04-12,Meta Lead Ads,1029.31,72617,558,28.3
+2024-04-13,Meta Lead Ads,720.52,66344,297,19.3
+2024-04-14,Meta Lead Ads,720.52,63404,385,19.2
+2024-04-15,Meta Lead Ads,735.57,75119,419,27.5
+2024-04-16,Meta Lead Ads,735.57,72579,413,26.6
+2024-04-17,Meta Lead Ads,735.57,54818,322,28.6
+2024-04-18,Meta Lead Ads,735.57,55239,340,28.0
+2024-04-19,Meta Lead Ads,735.57,72474,384,21.2
+2024-04-20,Meta Lead Ads,514.9,45129,229,15.5
+2024-04-21,Meta Lead Ads,514.9,41154,289,17.0
+2024-04-22,Meta Lead Ads,1217.31,86505,590,39.9
+2024-04-23,Meta Lead Ads,1217.31,105037,690,37.6
+2024-04-24,Meta Lead Ads,1217.31,102456,712,39.3
+2024-04-25,Meta Lead Ads,1217.31,94538,617,38.6
+2024-04-26,Meta Lead Ads,1217.31,127545,499,36.6
+2024-04-27,Meta Lead Ads,852.12,80938,301,23.6
+2024-04-28,Meta Lead Ads,852.12,69243,394,24.1
+2024-04-29,Meta Lead Ads,1098.18,110652,509,33.5
+2024-04-30,Meta Lead Ads,1098.18,117618,627,37.3
+2024-05-01,Meta Lead Ads,1098.18,88766,632,32.9
+2024-05-02,Meta Lead Ads,1098.18,106313,629,30.7
+2024-05-03,Meta Lead Ads,1098.18,119952,425,36.9
+2024-05-04,Meta Lead Ads,768.72,65212,313,21.4
+2024-05-05,Meta Lead Ads,768.72,84227,279,24.0
+2024-05-06,Meta Lead Ads,937.19,79392,492,30.2
+2024-05-07,Meta Lead Ads,937.19,74817,375,28.7
+2024-05-08,Meta Lead Ads,937.19,85334,477,29.0
+2024-05-09,Meta Lead Ads,937.19,89320,473,31.0
+2024-05-10,Meta Lead Ads,937.19,89231,550,32.4
+2024-05-11,Meta Lead Ads,656.03,53236,375,20.1
+2024-05-12,Meta Lead Ads,656.03,56342,287,19.8
+2024-05-13,Meta Lead Ads,840.91,70338,325,26.7
+2024-05-14,Meta Lead Ads,840.91,66846,423,32.2
+2024-05-15,Meta Lead Ads,840.91,66753,449,28.8
+2024-05-16,Meta Lead Ads,840.91,69711,461,28.0
+2024-05-17,Meta Lead Ads,840.91,67513,307,29.0
+2024-05-18,Meta Lead Ads,588.64,60832,282,19.4
+2024-05-19,Meta Lead Ads,588.64,41505,215,20.6
+2024-05-20,Meta Lead Ads,648.05,70592,240,23.6
+2024-05-21,Meta Lead Ads,648.05,58399,290,20.7
+2024-05-22,Meta Lead Ads,648.05,63890,319,22.7
+2024-05-23,Meta Lead Ads,648.05,56587,356,21.3
+2024-05-24,Meta Lead Ads,648.05,60278,368,25.7
+2024-05-25,Meta Lead Ads,453.64,31827,217,17.9
+2024-05-26,Meta Lead Ads,453.64,37132,260,17.2
+2024-05-27,Meta Lead Ads,971.9,95885,541,29.7
+2024-05-28,Meta Lead Ads,971.9,99695,466,35.2
+2024-05-29,Meta Lead Ads,971.9,77156,445,29.3
+2024-05-30,Meta Lead Ads,971.9,104855,386,38.0
+2024-05-31,Meta Lead Ads,971.9,100375,423,36.9
+2024-06-01,Meta Lead Ads,680.33,68109,280,22.8
+2024-06-02,Meta Lead Ads,680.33,63137,259,22.4
+2024-06-03,Meta Lead Ads,999.42,89646,549,30.6
+2024-06-04,Meta Lead Ads,999.42,84537,570,35.2
+2024-06-05,Meta Lead Ads,999.42,73673,404,39.5
+2024-06-06,Meta Lead Ads,999.42,108431,437,36.6
+2024-06-07,Meta Lead Ads,999.42,97431,371,35.8
+2024-06-08,Meta Lead Ads,699.59,76603,354,21.4
+2024-06-09,Meta Lead Ads,699.59,53280,380,26.7
+2024-06-10,Meta Lead Ads,984.77,99718,507,33.5
+2024-06-11,Meta Lead Ads,984.77,86814,499,36.9
+2024-06-12,Meta Lead Ads,984.77,105262,589,32.8
+2024-06-13,Meta Lead Ads,984.77,80937,541,31.3
+2024-06-14,Meta Lead Ads,984.77,84882,458,33.3
+2024-06-15,Meta Lead Ads,689.34,61832,404,20.1
+2024-06-16,Meta Lead Ads,689.34,73092,310,24.5
+2024-06-17,Meta Lead Ads,880.99,75034,339,26.8
+2024-06-18,Meta Lead Ads,880.99,68025,451,28.4
+2024-06-19,Meta Lead Ads,880.99,69204,476,27.0
+2024-06-20,Meta Lead Ads,880.99,92785,494,29.7
+2024-06-21,Meta Lead Ads,880.99,66814,456,25.9
+2024-06-22,Meta Lead Ads,616.69,45405,269,20.1
+2024-06-23,Meta Lead Ads,616.69,50314,331,21.1
+2024-06-24,Meta Lead Ads,921.43,74522,468,33.7
+2024-06-25,Meta Lead Ads,921.43,77216,410,28.2
+2024-06-26,Meta Lead Ads,921.43,73900,334,36.7
+2024-06-27,Meta Lead Ads,921.43,65902,435,35.2
+2024-06-28,Meta Lead Ads,921.43,94387,354,32.0
+2024-06-29,Meta Lead Ads,645.0,56899,332,19.0
+2024-06-30,Meta Lead Ads,645.0,62380,227,24.4
+2024-07-01,Meta Lead Ads,939.5,82369,457,33.6
+2024-07-02,Meta Lead Ads,939.5,71749,482,34.0
+2024-07-03,Meta Lead Ads,939.5,89397,543,34.1
+2024-07-04,Meta Lead Ads,939.5,67517,409,27.7
+2024-07-05,Meta Lead Ads,939.5,75613,341,33.7
+2024-07-06,Meta Lead Ads,657.65,52142,274,22.4
+2024-07-07,Meta Lead Ads,657.65,67276,282,24.9
+2024-07-08,Meta Lead Ads,1143.52,122522,556,36.0
+2024-07-09,Meta Lead Ads,1143.52,125087,680,31.5
+2024-07-10,Meta Lead Ads,1143.52,110074,616,38.1
+2024-07-11,Meta Lead Ads,1143.52,123396,677,38.2
+2024-07-12,Meta Lead Ads,1143.52,111637,511,36.8
+2024-07-13,Meta Lead Ads,800.47,86125,320,22.9
+2024-07-14,Meta Lead Ads,800.47,86731,474,24.3
+2024-07-15,Meta Lead Ads,1144.96,121468,628,35.7
+2024-07-16,Meta Lead Ads,1144.96,93271,567,38.9
+2024-07-17,Meta Lead Ads,1144.96,108349,524,34.1
+2024-07-18,Meta Lead Ads,1144.96,88769,652,38.7
+2024-07-19,Meta Lead Ads,1144.96,109791,599,40.5
+2024-07-20,Meta Lead Ads,801.47,80635,447,25.3
+2024-07-21,Meta Lead Ads,801.47,87442,352,25.4
+2024-07-22,Meta Lead Ads,1480.33,135206,614,36.2
+2024-07-23,Meta Lead Ads,1480.33,144768,641,36.0
+2024-07-24,Meta Lead Ads,1480.33,134806,543,45.0
+2024-07-25,Meta Lead Ads,1480.33,130350,756,44.8
+2024-07-26,Meta Lead Ads,1480.33,154406,690,41.2
+2024-07-27,Meta Lead Ads,1036.23,94365,609,27.4
+2024-07-28,Meta Lead Ads,1036.23,100839,620,32.4
+2024-07-29,Meta Lead Ads,1029.67,79418,539,28.2
+2024-07-30,Meta Lead Ads,1029.67,87339,588,35.8
+2024-07-31,Meta Lead Ads,1029.67,87212,603,32.2
+2024-08-01,Meta Lead Ads,1029.67,104941,421,30.8
+2024-08-02,Meta Lead Ads,1029.67,86307,391,36.3
+2024-08-03,Meta Lead Ads,720.77,54376,423,21.6
+2024-08-04,Meta Lead Ads,720.77,60020,382,21.3
+2024-08-05,Meta Lead Ads,1033.78,107575,577,34.1
+2024-08-06,Meta Lead Ads,1033.78,91507,528,27.6
+2024-08-07,Meta Lead Ads,1033.78,76229,456,30.2
+2024-08-08,Meta Lead Ads,1033.78,75449,389,35.6
+2024-08-09,Meta Lead Ads,1033.78,80742,405,35.1
+2024-08-10,Meta Lead Ads,723.65,63568,323,19.9
+2024-08-11,Meta Lead Ads,723.65,67373,303,22.1
+2024-08-12,Meta Lead Ads,1085.89,116329,399,30.9
+2024-08-13,Meta Lead Ads,1085.89,101317,529,35.8
+2024-08-14,Meta Lead Ads,1085.89,112572,583,37.6
+2024-08-15,Meta Lead Ads,1085.89,80059,469,29.3
+2024-08-16,Meta Lead Ads,1085.89,106219,428,29.1
+2024-08-17,Meta Lead Ads,760.12,57371,347,23.6
+2024-08-18,Meta Lead Ads,760.12,74626,366,23.5
+2024-08-19,Meta Lead Ads,1141.55,84055,459,32.5
+2024-08-20,Meta Lead Ads,1141.55,109247,679,30.3
+2024-08-21,Meta Lead Ads,1141.55,87409,452,37.8
+2024-08-22,Meta Lead Ads,1141.55,82957,425,30.2
+2024-08-23,Meta Lead Ads,1141.55,113927,657,36.4
+2024-08-24,Meta Lead Ads,799.09,77463,289,26.0
+2024-08-25,Meta Lead Ads,799.09,75103,345,20.7
+2024-08-26,Meta Lead Ads,875.46,85076,467,29.1
+2024-08-27,Meta Lead Ads,875.46,85480,353,22.0
+2024-08-28,Meta Lead Ads,875.46,79521,358,24.3
+2024-08-29,Meta Lead Ads,875.46,92301,398,25.9
+2024-08-30,Meta Lead Ads,875.46,72416,411,25.4
+2024-08-31,Meta Lead Ads,612.82,59013,334,17.8
+2024-09-01,Meta Lead Ads,612.82,62244,243,16.9
+2024-09-02,Meta Lead Ads,757.84,67166,371,23.3
+2024-09-03,Meta Lead Ads,757.84,76584,266,23.8
+2024-09-04,Meta Lead Ads,757.84,54066,426,21.4
+2024-09-05,Meta Lead Ads,757.84,67017,413,26.2
+2024-09-06,Meta Lead Ads,757.84,57087,387,23.5
+2024-09-07,Meta Lead Ads,530.49,42654,221,15.2
+2024-09-08,Meta Lead Ads,530.49,55550,252,16.8
+2024-09-09,Meta Lead Ads,1089.35,117831,561,30.2
+2024-09-10,Meta Lead Ads,1089.35,94878,556,27.4
+2024-09-11,Meta Lead Ads,1089.35,89277,410,29.4
+2024-09-12,Meta Lead Ads,1089.35,85572,544,28.4
+2024-09-13,Meta Lead Ads,1089.35,94432,505,25.8
+2024-09-14,Meta Lead Ads,762.54,69064,436,22.9
+2024-09-15,Meta Lead Ads,762.54,81560,431,19.0
+2024-09-16,Meta Lead Ads,966.21,95274,410,24.0
+2024-09-17,Meta Lead Ads,966.21,93868,383,27.6
+2024-09-18,Meta Lead Ads,966.21,72406,487,25.6
+2024-09-19,Meta Lead Ads,966.21,98098,558,26.9
+2024-09-20,Meta Lead Ads,966.21,85235,562,28.2
+2024-09-21,Meta Lead Ads,676.35,61806,314,16.0
+2024-09-22,Meta Lead Ads,676.35,63771,395,18.1
+2024-09-23,Meta Lead Ads,1160.64,93351,430,30.4
+2024-09-24,Meta Lead Ads,1160.64,107603,579,23.9
+2024-09-25,Meta Lead Ads,1160.64,82663,685,24.3
+2024-09-26,Meta Lead Ads,1160.64,101117,564,26.0
+2024-09-27,Meta Lead Ads,1160.64,115657,485,31.5
+2024-09-28,Meta Lead Ads,812.45,58095,289,20.2
+2024-09-29,Meta Lead Ads,812.45,65361,445,21.1
+2024-09-30,Meta Lead Ads,1388.01,110835,503,38.3
+2024-10-01,Meta Lead Ads,1388.01,135067,671,36.8
+2024-10-02,Meta Lead Ads,1388.01,117408,678,33.3
+2024-10-03,Meta Lead Ads,1388.01,145600,633,32.7
+2024-10-04,Meta Lead Ads,1388.01,130845,783,30.8
+2024-10-05,Meta Lead Ads,971.6,96043,426,25.7
+2024-10-06,Meta Lead Ads,971.6,106644,400,23.8
+2024-10-07,Meta Lead Ads,1106.22,88197,522,26.9
+2024-10-08,Meta Lead Ads,1106.22,83825,462,27.4
+2024-10-09,Meta Lead Ads,1106.22,88270,436,28.2
+2024-10-10,Meta Lead Ads,1106.22,119733,635,25.1
+2024-10-11,Meta Lead Ads,1106.22,106684,612,25.4
+2024-10-12,Meta Lead Ads,774.36,76437,332,20.4
+2024-10-13,Meta Lead Ads,774.36,82643,330,20.5
+2024-10-14,Meta Lead Ads,1003.43,108652,457,23.6
+2024-10-15,Meta Lead Ads,1003.43,82189,588,21.7
+2024-10-16,Meta Lead Ads,1003.43,108979,401,21.2
+2024-10-17,Meta Lead Ads,1003.43,72981,577,23.1
+2024-10-18,Meta Lead Ads,1003.43,90322,502,27.4
+2024-10-19,Meta Lead Ads,702.4,69870,284,17.2
+2024-10-20,Meta Lead Ads,702.4,55937,257,17.1
+2024-10-21,Meta Lead Ads,1110.99,101818,409,26.4
+2024-10-22,Meta Lead Ads,1110.99,113239,650,24.8
+2024-10-23,Meta Lead Ads,1110.99,78001,662,21.9
+2024-10-24,Meta Lead Ads,1110.99,116152,638,26.4
+2024-10-25,Meta Lead Ads,1110.99,102526,524,27.7
+2024-10-26,Meta Lead Ads,777.69,73380,282,15.3
+2024-10-27,Meta Lead Ads,777.69,58693,321,18.7
+2024-10-28,Meta Lead Ads,765.49,69553,444,18.8
+2024-10-29,Meta Lead Ads,765.49,69783,418,19.0
+2024-10-30,Meta Lead Ads,765.49,83713,282,19.8
+2024-10-31,Meta Lead Ads,765.49,63247,409,19.6
+2024-11-01,Meta Lead Ads,765.49,82823,391,19.5
+2024-11-02,Meta Lead Ads,535.85,54383,263,14.5
+2024-11-03,Meta Lead Ads,535.85,58355,234,14.0
+2024-11-04,Meta Lead Ads,1109.48,85547,632,30.8
+2024-11-05,Meta Lead Ads,1109.48,105504,646,28.0
+2024-11-06,Meta Lead Ads,1109.48,90177,525,24.8
+2024-11-07,Meta Lead Ads,1109.48,84828,447,27.7
+2024-11-08,Meta Lead Ads,1109.48,91857,408,27.1
+2024-11-09,Meta Lead Ads,776.64,54606,373,20.1
+2024-11-10,Meta Lead Ads,776.64,72527,328,20.5
+2024-11-11,Meta Lead Ads,1053.47,98402,543,27.4
+2024-11-12,Meta Lead Ads,1053.47,108469,373,28.4
+2024-11-13,Meta Lead Ads,1053.47,105213,550,25.5
+2024-11-14,Meta Lead Ads,1053.47,100439,445,25.9
+2024-11-15,Meta Lead Ads,1053.47,101474,546,26.1
+2024-11-16,Meta Lead Ads,737.43,69916,429,15.8
+2024-11-17,Meta Lead Ads,737.43,57071,401,17.1
+2024-11-18,Meta Lead Ads,1463.66,134134,704,31.7
+2024-11-19,Meta Lead Ads,1463.66,135560,640,32.2
+2024-11-20,Meta Lead Ads,1463.66,143272,660,34.6
+2024-11-21,Meta Lead Ads,1463.66,144364,604,29.7
+2024-11-22,Meta Lead Ads,1463.66,108850,651,28.3
+2024-11-23,Meta Lead Ads,1024.56,74932,379,21.3
+2024-11-24,Meta Lead Ads,1024.56,89597,609,23.2
+2024-11-25,Meta Lead Ads,958.16,73983,568,20.7
+2024-11-26,Meta Lead Ads,958.16,87981,464,18.6
+2024-11-27,Meta Lead Ads,958.16,91713,556,19.3
+2024-11-28,Meta Lead Ads,958.16,83938,485,20.8
+2024-11-29,Meta Lead Ads,958.16,80459,367,19.6
+2024-11-30,Meta Lead Ads,670.71,57928,260,15.0
+2024-12-01,Meta Lead Ads,670.71,51132,324,13.1
+2024-12-02,Meta Lead Ads,760.24,69545,393,19.6
+2024-12-03,Meta Lead Ads,760.24,64455,302,18.0
+2024-12-04,Meta Lead Ads,760.24,65111,345,21.1
+2024-12-05,Meta Lead Ads,760.24,73447,326,17.7
+2024-12-06,Meta Lead Ads,760.24,64236,335,16.8
+2024-12-07,Meta Lead Ads,532.17,43049,232,13.8
+2024-12-08,Meta Lead Ads,532.17,38909,246,13.7
+2024-12-09,Meta Lead Ads,1309.51,108662,538,28.3
+2024-12-10,Meta Lead Ads,1309.51,122766,700,24.6
+2024-12-11,Meta Lead Ads,1309.51,141113,465,26.0
+2024-12-12,Meta Lead Ads,1309.51,143837,771,28.0
+2024-12-13,Meta Lead Ads,1309.51,114046,491,32.3
+2024-12-14,Meta Lead Ads,916.65,79857,377,18.6
+2024-12-15,Meta Lead Ads,916.65,100491,416,18.4
+2024-12-16,Meta Lead Ads,934.3,92748,469,21.6
+2024-12-17,Meta Lead Ads,934.3,80225,530,20.2
+2024-12-18,Meta Lead Ads,934.3,92057,453,23.8
+2024-12-19,Meta Lead Ads,934.3,75570,498,24.0
+2024-12-20,Meta Lead Ads,934.3,86647,465,20.6
+2024-12-21,Meta Lead Ads,654.01,61599,264,15.0
+2024-12-22,Meta Lead Ads,654.01,69636,368,13.7
+2024-12-23,Meta Lead Ads,1387.82,101309,643,26.0
+2024-12-24,Meta Lead Ads,1387.82,122013,620,30.6
+2024-12-25,Meta Lead Ads,1387.82,139871,659,31.9
+2024-12-26,Meta Lead Ads,1387.82,132125,653,26.3
+2024-12-27,Meta Lead Ads,1387.82,107774,768,30.5
+2024-12-28,Meta Lead Ads,971.47,88546,395,20.0
+2024-12-29,Meta Lead Ads,971.47,105056,349,16.9
+2024-12-30,Meta Lead Ads,784.27,74997,428,20.2
+2024-12-31,Meta Lead Ads,784.27,72193,439,17.2
+2025-01-01,Meta Lead Ads,784.27,63102,363,20.0
+2025-01-02,Meta Lead Ads,784.27,75303,314,19.5
+2025-01-03,Meta Lead Ads,784.27,82604,397,22.0
+2025-01-04,Meta Lead Ads,548.99,59394,228,15.4
+2025-01-05,Meta Lead Ads,548.99,54399,225,15.7
+2025-01-06,Meta Lead Ads,597.34,47088,215,17.3
+2025-01-07,Meta Lead Ads,597.34,56833,290,16.3
+2025-01-08,Meta Lead Ads,597.34,42823,266,16.0
+2025-01-09,Meta Lead Ads,597.34,50818,316,16.2
+2025-01-10,Meta Lead Ads,597.34,58470,357,17.4
+2025-01-11,Meta Lead Ads,418.14,32998,234,12.0
+2025-01-12,Meta Lead Ads,418.14,35237,155,10.1
+2025-01-13,Meta Lead Ads,795.82,57440,422,20.1
+2025-01-14,Meta Lead Ads,795.82,78132,392,17.6
+2025-01-15,Meta Lead Ads,795.82,82895,334,18.4
+2025-01-16,Meta Lead Ads,795.82,63670,442,21.8
+2025-01-17,Meta Lead Ads,795.82,73024,455,23.2
+2025-01-18,Meta Lead Ads,557.07,40837,200,14.7
+2025-01-19,Meta Lead Ads,557.07,59256,244,15.1
+2025-01-20,Meta Lead Ads,794.86,79463,358,19.3
+2025-01-21,Meta Lead Ads,794.86,80127,322,23.1
+2025-01-22,Meta Lead Ads,794.86,81287,474,23.2
+2025-01-23,Meta Lead Ads,794.86,60066,325,23.4
+2025-01-24,Meta Lead Ads,794.86,87433,386,20.9
+2025-01-25,Meta Lead Ads,556.4,58987,273,14.9
+2025-01-26,Meta Lead Ads,556.4,45119,198,13.0
+2025-01-27,Meta Lead Ads,967.89,69327,362,23.7
+2025-01-28,Meta Lead Ads,967.89,74606,471,23.7
+2025-01-29,Meta Lead Ads,967.89,84979,488,26.5
+2025-01-30,Meta Lead Ads,967.89,93230,506,21.3
+2025-01-31,Meta Lead Ads,967.89,70623,528,20.6
+2025-02-01,Meta Lead Ads,677.52,61228,249,19.0
+2025-02-02,Meta Lead Ads,677.52,70103,389,16.0
+2025-02-03,Meta Lead Ads,723.81,61502,399,19.6
+2025-02-04,Meta Lead Ads,723.81,65538,260,17.4
+2025-02-05,Meta Lead Ads,723.81,77015,294,20.3
+2025-02-06,Meta Lead Ads,723.81,66941,386,22.2
+2025-02-07,Meta Lead Ads,723.81,53633,374,22.7
+2025-02-08,Meta Lead Ads,506.67,44165,215,15.9
+2025-02-09,Meta Lead Ads,506.67,38300,239,14.5
+2025-02-10,Meta Lead Ads,1595.47,139306,713,46.7
+2025-02-11,Meta Lead Ads,1595.47,159428,858,44.8
+2025-02-12,Meta Lead Ads,1595.47,171937,698,39.3
+2025-02-13,Meta Lead Ads,1595.47,131364,581,44.0
+2025-02-14,Meta Lead Ads,1595.47,167925,830,40.0
+2025-02-15,Meta Lead Ads,1116.83,110639,498,26.0
+2025-02-16,Meta Lead Ads,1116.83,104730,515,31.1
+2025-02-17,Meta Lead Ads,1003.39,91258,503,25.8
+2025-02-18,Meta Lead Ads,1003.39,107936,508,25.3
+2025-02-19,Meta Lead Ads,1003.39,106780,485,31.1
+2025-02-20,Meta Lead Ads,1003.39,92413,449,27.9
+2025-02-21,Meta Lead Ads,1003.39,94339,582,26.5
+2025-02-22,Meta Lead Ads,702.37,52404,416,17.8
+2025-02-23,Meta Lead Ads,702.37,60039,360,21.6
+2025-02-24,Meta Lead Ads,1169.59,93819,573,31.9
+2025-02-25,Meta Lead Ads,1169.59,113272,530,34.0
+2025-02-26,Meta Lead Ads,1169.59,86851,691,34.1
+2025-02-27,Meta Lead Ads,1169.59,105186,653,29.1
+2025-02-28,Meta Lead Ads,1169.59,101459,656,30.9
+2025-03-01,Meta Lead Ads,818.71,67891,383,23.3
+2025-03-02,Meta Lead Ads,818.71,64044,459,24.2
+2025-03-03,Meta Lead Ads,1125.26,119104,401,31.6
+2025-03-04,Meta Lead Ads,1125.26,88982,402,30.8
+2025-03-05,Meta Lead Ads,1125.26,92918,616,34.3
+2025-03-06,Meta Lead Ads,1125.26,118525,552,38.0
+2025-03-07,Meta Lead Ads,1125.26,90806,402,30.2
+2025-03-08,Meta Lead Ads,787.68,71352,380,22.5
+2025-03-09,Meta Lead Ads,787.68,55700,365,20.7
+2025-03-10,Meta Lead Ads,536.27,50623,195,18.3
+2025-03-11,Meta Lead Ads,536.27,57471,260,19.1
+2025-03-12,Meta Lead Ads,536.27,46345,195,19.8
+2025-03-13,Meta Lead Ads,536.27,45791,195,19.5
+2025-03-14,Meta Lead Ads,536.27,46874,191,17.0
+2025-03-15,Meta Lead Ads,375.39,39604,219,14.0
+2025-03-16,Meta Lead Ads,375.39,33923,207,14.6
+2025-03-17,Meta Lead Ads,1144.76,112534,422,35.5
+2025-03-18,Meta Lead Ads,1144.76,121748,516,32.7
+2025-03-19,Meta Lead Ads,1144.76,99831,647,32.1
+2025-03-20,Meta Lead Ads,1144.76,113521,470,30.1
+2025-03-21,Meta Lead Ads,1144.76,81909,426,32.4
+2025-03-22,Meta Lead Ads,801.33,83897,343,22.5
+2025-03-23,Meta Lead Ads,801.33,66992,305,22.8
+2025-03-24,Meta Lead Ads,925.26,71515,491,25.3
+2025-03-25,Meta Lead Ads,925.26,81010,351,28.3
+2025-03-26,Meta Lead Ads,925.26,81518,475,32.1
+2025-03-27,Meta Lead Ads,925.26,97197,375,25.7
+2025-03-28,Meta Lead Ads,925.26,82511,342,29.3
+2025-03-29,Meta Lead Ads,647.68,61224,340,22.2
+2025-03-30,Meta Lead Ads,647.68,67736,342,19.4
+2025-03-31,Meta Lead Ads,1107.79,79814,515,29.0
+2025-04-01,Meta Lead Ads,1107.79,94544,468,32.2
+2025-04-02,Meta Lead Ads,1107.79,94672,462,35.6
+2025-04-03,Meta Lead Ads,1107.79,109552,591,35.3
+2025-04-04,Meta Lead Ads,1107.79,79061,653,29.4
+2025-04-05,Meta Lead Ads,775.45,78419,394,20.9
+2025-04-06,Meta Lead Ads,775.45,75799,341,23.6
+2025-04-07,Meta Lead Ads,1020.36,76791,524,36.1
+2025-04-08,Meta Lead Ads,1020.36,105766,534,30.3
+2025-04-09,Meta Lead Ads,1020.36,79640,434,27.7
+2025-04-10,Meta Lead Ads,1020.36,96961,552,36.2
+2025-04-11,Meta Lead Ads,1020.36,93469,455,31.8
+2025-04-12,Meta Lead Ads,714.25,70445,282,22.9
+2025-04-13,Meta Lead Ads,714.25,63146,368,24.1
+2025-04-14,Meta Lead Ads,1084.99,77064,503,34.0
+2025-04-15,Meta Lead Ads,1084.99,84037,575,36.8
+2025-04-16,Meta Lead Ads,1084.99,118517,519,32.5
+2025-04-17,Meta Lead Ads,1084.99,95423,627,36.5
+2025-04-18,Meta Lead Ads,1084.99,84148,471,31.1
+2025-04-19,Meta Lead Ads,759.5,54039,424,23.7
+2025-04-20,Meta Lead Ads,759.5,68914,396,25.0
+2025-04-21,Meta Lead Ads,853.14,63900,372,26.3
+2025-04-22,Meta Lead Ads,853.14,83638,478,30.7
+2025-04-23,Meta Lead Ads,853.14,84839,385,30.4
+2025-04-24,Meta Lead Ads,853.14,86929,470,26.7
+2025-04-25,Meta Lead Ads,853.14,70272,372,24.6
+2025-04-26,Meta Lead Ads,597.2,45517,253,19.4
+2025-04-27,Meta Lead Ads,597.2,58864,245,21.5
+2025-04-28,Meta Lead Ads,770.94,72568,458,30.9
+2025-04-29,Meta Lead Ads,770.94,84235,343,29.1
+2025-04-30,Meta Lead Ads,770.94,76930,362,26.0
+2025-05-01,Meta Lead Ads,770.94,73259,394,30.6
+2025-05-02,Meta Lead Ads,770.94,70232,336,25.1
+2025-05-03,Meta Lead Ads,539.66,42599,210,21.4
+2025-05-04,Meta Lead Ads,539.66,49724,207,18.3
+2025-05-05,Meta Lead Ads,1084.59,93068,443,40.4
+2025-05-06,Meta Lead Ads,1084.59,84069,550,37.7
+2025-05-07,Meta Lead Ads,1084.59,105613,639,35.8
+2025-05-08,Meta Lead Ads,1084.59,101701,626,32.0
+2025-05-09,Meta Lead Ads,1084.59,116291,388,36.2
+2025-05-10,Meta Lead Ads,759.21,77191,278,22.3
+2025-05-11,Meta Lead Ads,759.21,57946,335,22.6
+2025-05-12,Meta Lead Ads,695.9,60192,349,25.7
+2025-05-13,Meta Lead Ads,695.9,60577,306,24.4
+2025-05-14,Meta Lead Ads,695.9,49692,345,25.3
+2025-05-15,Meta Lead Ads,695.9,72301,284,23.4
+2025-05-16,Meta Lead Ads,695.9,57690,341,28.4
+2025-05-17,Meta Lead Ads,487.13,49129,236,16.8
+2025-05-18,Meta Lead Ads,487.13,53201,236,21.3
+2025-05-19,Meta Lead Ads,1073.69,79321,489,35.2
+2025-05-20,Meta Lead Ads,1073.69,110384,516,37.8
+2025-05-21,Meta Lead Ads,1073.69,87851,377,37.8
+2025-05-22,Meta Lead Ads,1073.69,116484,618,36.3
+2025-05-23,Meta Lead Ads,1073.69,103800,583,33.8
+2025-05-24,Meta Lead Ads,751.58,62460,397,23.9
+2025-05-25,Meta Lead Ads,751.58,60836,431,26.8
+2025-05-26,Meta Lead Ads,764.72,80564,395,24.5
+2025-05-27,Meta Lead Ads,764.72,66937,283,24.2
+2025-05-28,Meta Lead Ads,764.72,64914,438,25.8
+2025-05-29,Meta Lead Ads,764.72,54136,412,24.5
+2025-05-30,Meta Lead Ads,764.72,79305,392,28.6
+2025-05-31,Meta Lead Ads,535.31,58596,312,17.4
+2025-06-01,Meta Lead Ads,535.31,46751,194,21.7
+2025-06-02,Meta Lead Ads,1206.9,116149,569,35.0
+2025-06-03,Meta Lead Ads,1206.9,125766,581,41.7
+2025-06-04,Meta Lead Ads,1206.9,130592,530,45.2
+2025-06-05,Meta Lead Ads,1206.9,128782,451,37.0
+2025-06-06,Meta Lead Ads,1206.9,88124,521,40.3
+2025-06-07,Meta Lead Ads,844.83,90498,422,27.7
+2025-06-08,Meta Lead Ads,844.83,76046,459,26.8
+2025-06-09,Meta Lead Ads,902.33,92810,422,27.9
+2025-06-10,Meta Lead Ads,902.33,73384,432,32.4
+2025-06-11,Meta Lead Ads,902.33,70850,416,33.2
+2025-06-12,Meta Lead Ads,902.33,90482,442,27.8
+2025-06-13,Meta Lead Ads,902.33,88628,422,33.3
+2025-06-14,Meta Lead Ads,631.63,50805,311,18.0
+2025-06-15,Meta Lead Ads,631.63,63937,315,17.9
+2025-06-16,Meta Lead Ads,893.15,84491,386,29.0
+2025-06-17,Meta Lead Ads,893.15,80969,486,35.6
+2025-06-18,Meta Lead Ads,893.15,72657,318,27.0
+2025-06-19,Meta Lead Ads,893.15,84075,398,32.1
+2025-06-20,Meta Lead Ads,893.15,70367,494,30.3
+2025-06-21,Meta Lead Ads,625.21,58066,288,20.5
+2025-06-22,Meta Lead Ads,625.21,57285,329,25.2
+2025-06-23,Meta Lead Ads,1240.53,106881,544,39.4
+2025-06-24,Meta Lead Ads,1240.53,105536,616,37.0
+2025-06-25,Meta Lead Ads,1240.53,121997,623,40.8
+2025-06-26,Meta Lead Ads,1240.53,94720,466,39.3
+2025-06-27,Meta Lead Ads,1240.53,132896,722,42.5
+2025-06-28,Meta Lead Ads,868.37,94939,465,24.0
+2025-06-29,Meta Lead Ads,868.37,85244,484,23.2
+2025-06-30,Meta Lead Ads,1378.74,109441,625,36.8
+2025-07-01,Meta Lead Ads,1378.74,149739,635,46.7
+2025-07-02,Meta Lead Ads,1378.74,127306,614,47.0
+2025-07-03,Meta Lead Ads,1378.74,135023,681,40.9
+2025-07-04,Meta Lead Ads,1378.74,122729,592,40.3
+2025-07-05,Meta Lead Ads,965.12,79007,501,30.1
+2025-07-06,Meta Lead Ads,965.12,68066,365,31.7
+2025-07-07,Meta Lead Ads,1078.28,95830,410,33.1
+2025-07-08,Meta Lead Ads,1078.28,78765,621,34.0
+2025-07-09,Meta Lead Ads,1078.28,85966,611,29.2
+2025-07-10,Meta Lead Ads,1078.28,85097,616,37.3
+2025-07-11,Meta Lead Ads,1078.28,102373,560,37.5
+2025-07-12,Meta Lead Ads,754.79,70936,441,22.7
+2025-07-13,Meta Lead Ads,754.79,67661,426,25.0
+2025-07-14,Meta Lead Ads,1101.36,105106,547,34.0
+2025-07-15,Meta Lead Ads,1101.36,121126,507,40.8
+2025-07-16,Meta Lead Ads,1101.36,78999,575,35.3
+2025-07-17,Meta Lead Ads,1101.36,90746,558,35.7
+2025-07-18,Meta Lead Ads,1101.36,114391,636,31.3
+2025-07-19,Meta Lead Ads,770.95,63804,442,21.9
+2025-07-20,Meta Lead Ads,770.95,69408,324,24.9
+2025-07-21,Meta Lead Ads,956.48,96052,345,31.0
+2025-07-22,Meta Lead Ads,956.48,91365,413,29.5
+2025-07-23,Meta Lead Ads,956.48,103711,477,32.9
+2025-07-24,Meta Lead Ads,956.48,80190,555,32.4
+2025-07-25,Meta Lead Ads,956.48,101739,443,34.3
+2025-07-26,Meta Lead Ads,669.53,69194,325,21.7
+2025-07-27,Meta Lead Ads,669.53,72383,347,24.3
+2025-07-28,Meta Lead Ads,1118.76,114589,657,31.1
+2025-07-29,Meta Lead Ads,1118.76,113959,654,28.2
+2025-07-30,Meta Lead Ads,1118.76,88368,469,35.2
+2025-07-31,Meta Lead Ads,1118.76,91916,532,34.8
+2025-08-01,Meta Lead Ads,1118.76,113376,655,28.3
+2025-08-02,Meta Lead Ads,783.13,78143,323,25.1
+2025-08-03,Meta Lead Ads,783.13,79491,314,21.8
+2025-08-04,Meta Lead Ads,1112.08,84248,415,28.0
+2025-08-05,Meta Lead Ads,1112.08,90297,586,28.2
+2025-08-06,Meta Lead Ads,1112.08,115081,517,33.6
+2025-08-07,Meta Lead Ads,1112.08,82074,414,34.6
+2025-08-08,Meta Lead Ads,1112.08,105532,428,31.3
+2025-08-09,Meta Lead Ads,778.46,79892,313,21.0
+2025-08-10,Meta Lead Ads,778.46,72652,377,21.3
+2025-08-11,Meta Lead Ads,571.37,53963,232,16.6
+2025-08-12,Meta Lead Ads,571.37,50954,222,21.9
+2025-08-13,Meta Lead Ads,571.37,55907,273,22.3
+2025-08-14,Meta Lead Ads,571.37,49505,264,21.0
+2025-08-15,Meta Lead Ads,571.37,43462,259,22.0
+2025-08-16,Meta Lead Ads,399.96,33497,143,15.2
+2025-08-17,Meta Lead Ads,399.96,37349,185,15.6
+2025-08-18,Meta Lead Ads,852.03,84223,408,25.9
+2025-08-19,Meta Lead Ads,852.03,73383,462,25.1
+2025-08-20,Meta Lead Ads,852.03,64089,496,30.9
+2025-08-21,Meta Lead Ads,852.03,60920,355,27.9
+2025-08-22,Meta Lead Ads,852.03,89213,421,26.1
+2025-08-23,Meta Lead Ads,596.42,51811,227,16.5
+2025-08-24,Meta Lead Ads,596.42,59192,356,17.6
+2025-08-25,Meta Lead Ads,1072.14,98113,387,27.7
+2025-08-26,Meta Lead Ads,1072.14,75177,635,33.3
+2025-08-27,Meta Lead Ads,1072.14,90143,545,26.2
+2025-08-28,Meta Lead Ads,1072.14,86562,537,32.1
+2025-08-29,Meta Lead Ads,1072.14,91459,527,29.4
+2025-08-30,Meta Lead Ads,750.5,66589,286,24.7
+2025-08-31,Meta Lead Ads,750.5,57124,406,20.4
+2025-09-01,Meta Lead Ads,1298.45,96174,547,32.8
+2025-09-02,Meta Lead Ads,1298.45,137011,545,31.7
+2025-09-03,Meta Lead Ads,1298.45,137291,569,38.5
+2025-09-04,Meta Lead Ads,1298.45,134816,626,31.0
+2025-09-05,Meta Lead Ads,1298.45,102779,467,30.7
+2025-09-06,Meta Lead Ads,908.92,94887,326,27.4
+2025-09-07,Meta Lead Ads,908.92,75643,454,24.8
+2025-09-08,Meta Lead Ads,1173.67,108458,671,33.0
+2025-09-09,Meta Lead Ads,1173.67,113825,433,29.6
+2025-09-10,Meta Lead Ads,1173.67,126164,692,30.7
+2025-09-11,Meta Lead Ads,1173.67,118256,597,29.4
+2025-09-12,Meta Lead Ads,1173.67,94006,681,26.9
+2025-09-13,Meta Lead Ads,821.57,73989,396,20.8
+2025-09-14,Meta Lead Ads,821.57,77456,309,18.9
+2025-09-15,Meta Lead Ads,1434.72,132096,521,32.9
+2025-09-16,Meta Lead Ads,1434.72,147099,639,29.1
+2025-09-17,Meta Lead Ads,1434.72,112604,817,32.7
+2025-09-18,Meta Lead Ads,1434.72,114906,692,38.2
+2025-09-19,Meta Lead Ads,1434.72,121726,564,31.5
+2025-09-20,Meta Lead Ads,1004.3,109158,542,22.9
+2025-09-21,Meta Lead Ads,1004.3,103785,416,25.4
+2025-09-22,Meta Lead Ads,581.39,47024,300,16.5
+2025-09-23,Meta Lead Ads,581.39,55888,205,16.2
+2025-09-24,Meta Lead Ads,581.39,60366,297,14.8
+2025-09-25,Meta Lead Ads,581.39,59036,222,18.2
+2025-09-26,Meta Lead Ads,581.39,47422,249,17.0
+2025-09-27,Meta Lead Ads,406.97,39751,160,10.2
+2025-09-28,Meta Lead Ads,406.97,31535,228,12.8
+2024-01-01,Google Local Services Ads,381.99,32270,135,21.0
+2024-01-02,Google Local Services Ads,381.99,40115,209,18.5
+2024-01-03,Google Local Services Ads,381.99,29391,162,18.3
+2024-01-04,Google Local Services Ads,381.99,32858,223,16.5
+2024-01-05,Google Local Services Ads,381.99,33704,176,16.1
+2024-01-06,Google Local Services Ads,267.39,20362,120,13.1
+2024-01-07,Google Local Services Ads,267.39,26549,135,12.8
+2024-01-08,Google Local Services Ads,340.81,34233,182,17.5
+2024-01-09,Google Local Services Ads,340.81,34400,191,16.8
+2024-01-10,Google Local Services Ads,340.81,30439,175,17.1
+2024-01-11,Google Local Services Ads,340.81,33069,204,15.6
+2024-01-12,Google Local Services Ads,340.81,25910,123,19.1
+2024-01-13,Google Local Services Ads,238.57,22045,121,11.1
+2024-01-14,Google Local Services Ads,238.57,20482,121,13.5
+2024-01-15,Google Local Services Ads,368.75,27673,210,18.3
+2024-01-16,Google Local Services Ads,368.75,27578,211,15.2
+2024-01-17,Google Local Services Ads,368.75,39670,147,16.8
+2024-01-18,Google Local Services Ads,368.75,39397,203,19.8
+2024-01-19,Google Local Services Ads,368.75,36183,129,15.9
+2024-01-20,Google Local Services Ads,258.12,22371,128,13.3
+2024-01-21,Google Local Services Ads,258.12,22527,90,10.9
+2024-01-22,Google Local Services Ads,282.84,29712,128,15.9
+2024-01-23,Google Local Services Ads,282.84,26107,134,18.8
+2024-01-24,Google Local Services Ads,282.84,25319,152,17.5
+2024-01-25,Google Local Services Ads,282.84,21127,143,17.2
+2024-01-26,Google Local Services Ads,282.84,24761,157,17.5
+2024-01-27,Google Local Services Ads,197.99,13993,83,10.4
+2024-01-28,Google Local Services Ads,197.99,14628,95,12.0
+2024-01-29,Google Local Services Ads,494.37,44551,283,19.9
+2024-01-30,Google Local Services Ads,494.37,48262,287,20.1
+2024-01-31,Google Local Services Ads,494.37,47584,201,20.5
+2024-02-01,Google Local Services Ads,494.37,51768,220,21.6
+2024-02-02,Google Local Services Ads,494.37,50217,199,18.5
+2024-02-03,Google Local Services Ads,346.06,36278,149,14.5
+2024-02-04,Google Local Services Ads,346.06,35602,156,13.0
+2024-02-05,Google Local Services Ads,646.37,68673,323,23.5
+2024-02-06,Google Local Services Ads,646.37,57800,387,25.6
+2024-02-07,Google Local Services Ads,646.37,60002,289,22.3
+2024-02-08,Google Local Services Ads,646.37,63103,291,22.6
+2024-02-09,Google Local Services Ads,646.37,68455,355,23.6
+2024-02-10,Google Local Services Ads,452.46,46475,204,17.1
+2024-02-11,Google Local Services Ads,452.46,33231,215,17.9
+2024-02-12,Google Local Services Ads,390.62,34629,162,22.2
+2024-02-13,Google Local Services Ads,390.62,29449,211,19.6
+2024-02-14,Google Local Services Ads,390.62,42777,175,22.6
+2024-02-15,Google Local Services Ads,390.62,28533,164,18.9
+2024-02-16,Google Local Services Ads,390.62,36326,210,17.3
+2024-02-17,Google Local Services Ads,273.43,22300,108,13.2
+2024-02-18,Google Local Services Ads,273.43,25912,154,16.1
+2024-02-19,Google Local Services Ads,704.02,67597,387,30.0
+2024-02-20,Google Local Services Ads,704.02,53738,315,24.9
+2024-02-21,Google Local Services Ads,704.02,59021,382,24.6
+2024-02-22,Google Local Services Ads,704.02,53801,287,28.2
+2024-02-23,Google Local Services Ads,704.02,70102,253,25.3
+2024-02-24,Google Local Services Ads,492.82,52183,240,19.4
+2024-02-25,Google Local Services Ads,492.82,46016,226,21.2
+2024-02-26,Google Local Services Ads,238.17,21792,117,17.5
+2024-02-27,Google Local Services Ads,238.17,17681,92,21.0
+2024-02-28,Google Local Services Ads,238.17,20824,105,22.2
+2024-02-29,Google Local Services Ads,238.17,19478,103,22.2
+2024-03-01,Google Local Services Ads,238.17,20928,99,22.2
+2024-03-02,Google Local Services Ads,166.72,16800,84,14.5
+2024-03-03,Google Local Services Ads,166.72,12742,89,13.6
+2024-03-04,Google Local Services Ads,501.86,50415,199,20.6
+2024-03-05,Google Local Services Ads,501.86,54443,184,23.9
+2024-03-06,Google Local Services Ads,501.86,54426,234,24.9
+2024-03-07,Google Local Services Ads,501.86,50534,231,21.9
+2024-03-08,Google Local Services Ads,501.86,53694,264,21.8
+2024-03-09,Google Local Services Ads,351.3,31745,127,17.0
+2024-03-10,Google Local Services Ads,351.3,36396,169,17.9
+2024-03-11,Google Local Services Ads,464.99,44945,249,22.7
+2024-03-12,Google Local Services Ads,464.99,40069,182,25.5
+2024-03-13,Google Local Services Ads,464.99,38625,271,26.1
+2024-03-14,Google Local Services Ads,464.99,44454,226,26.8
+2024-03-15,Google Local Services Ads,464.99,48423,241,21.4
+2024-03-16,Google Local Services Ads,325.5,33667,189,19.6
+2024-03-17,Google Local Services Ads,325.5,26148,115,18.0
+2024-03-18,Google Local Services Ads,317.54,26025,177,19.9
+2024-03-19,Google Local Services Ads,317.54,32812,179,22.8
+2024-03-20,Google Local Services Ads,317.54,25296,163,19.7
+2024-03-21,Google Local Services Ads,317.54,31866,147,22.6
+2024-03-22,Google Local Services Ads,317.54,24662,121,22.9
+2024-03-23,Google Local Services Ads,222.28,15642,127,16.8
+2024-03-24,Google Local Services Ads,222.28,23458,87,15.2
+2024-03-25,Google Local Services Ads,758.41,80890,430,32.1
+2024-03-26,Google Local Services Ads,758.41,69117,291,26.1
+2024-03-27,Google Local Services Ads,758.41,66207,342,28.2
+2024-03-28,Google Local Services Ads,758.41,75083,365,26.6
+2024-03-29,Google Local Services Ads,758.41,77690,323,29.1
+2024-03-30,Google Local Services Ads,530.89,37419,194,23.5
+2024-03-31,Google Local Services Ads,530.89,40166,263,18.5
+2024-04-01,Google Local Services Ads,524.79,41351,311,24.8
+2024-04-02,Google Local Services Ads,524.79,54225,228,28.5
+2024-04-03,Google Local Services Ads,524.79,48775,297,24.0
+2024-04-04,Google Local Services Ads,524.79,44961,186,29.2
+2024-04-05,Google Local Services Ads,524.79,45876,218,29.4
+2024-04-06,Google Local Services Ads,367.35,35715,192,15.7
+2024-04-07,Google Local Services Ads,367.35,40210,154,16.8
+2024-04-08,Google Local Services Ads,454.77,38865,227,25.0
+2024-04-09,Google Local Services Ads,454.77,47927,222,24.3
+2024-04-10,Google Local Services Ads,454.77,34900,257,27.5
+2024-04-11,Google Local Services Ads,454.77,37558,263,22.1
+2024-04-12,Google Local Services Ads,454.77,48760,241,29.2
+2024-04-13,Google Local Services Ads,318.34,26638,147,19.5
+2024-04-14,Google Local Services Ads,318.34,25282,157,20.8
+2024-04-15,Google Local Services Ads,368.51,27990,167,27.2
+2024-04-16,Google Local Services Ads,368.51,34982,195,23.7
+2024-04-17,Google Local Services Ads,368.51,34526,211,27.1
+2024-04-18,Google Local Services Ads,368.51,32693,150,26.2
+2024-04-19,Google Local Services Ads,368.51,28786,158,23.9
+2024-04-20,Google Local Services Ads,257.96,22249,94,14.6
+2024-04-21,Google Local Services Ads,257.96,27365,151,17.2
+2024-04-22,Google Local Services Ads,457.05,40889,220,23.7
+2024-04-23,Google Local Services Ads,457.05,35182,163,28.6
+2024-04-24,Google Local Services Ads,457.05,48554,264,26.5
+2024-04-25,Google Local Services Ads,457.05,46790,225,23.2
+2024-04-26,Google Local Services Ads,457.05,34511,240,27.3
+2024-04-27,Google Local Services Ads,319.93,26366,124,16.1
+2024-04-28,Google Local Services Ads,319.93,35089,187,15.9
+2024-04-29,Google Local Services Ads,713.4,77824,428,33.9
+2024-04-30,Google Local Services Ads,713.4,70537,284,32.7
+2024-05-01,Google Local Services Ads,713.4,57434,365,29.4
+2024-05-02,Google Local Services Ads,713.4,55857,268,31.7
+2024-05-03,Google Local Services Ads,713.4,66858,417,30.0
+2024-05-04,Google Local Services Ads,499.38,45390,218,24.3
+2024-05-05,Google Local Services Ads,499.38,47824,280,25.4
+2024-05-06,Google Local Services Ads,535.92,53651,265,24.7
+2024-05-07,Google Local Services Ads,535.92,52706,221,32.0
+2024-05-08,Google Local Services Ads,535.92,37789,289,25.1
+2024-05-09,Google Local Services Ads,535.92,37985,267,25.5
+2024-05-10,Google Local Services Ads,535.92,42749,320,25.5
+2024-05-11,Google Local Services Ads,375.14,36952,154,17.5
+2024-05-12,Google Local Services Ads,375.14,30105,192,19.1
+2024-05-13,Google Local Services Ads,459.33,43109,179,29.4
+2024-05-14,Google Local Services Ads,459.33,48840,263,29.9
+2024-05-15,Google Local Services Ads,459.33,41880,174,31.4
+2024-05-16,Google Local Services Ads,459.33,39341,182,31.1
+2024-05-17,Google Local Services Ads,459.33,36560,189,31.1
+2024-05-18,Google Local Services Ads,321.53,29838,160,21.9
+2024-05-19,Google Local Services Ads,321.53,33933,173,20.1
+2024-05-20,Google Local Services Ads,871.14,90253,397,38.8
+2024-05-21,Google Local Services Ads,871.14,69035,383,39.8
+2024-05-22,Google Local Services Ads,871.14,85579,327,36.5
+2024-05-23,Google Local Services Ads,871.14,65070,324,35.1
+2024-05-24,Google Local Services Ads,871.14,86185,370,33.4
+2024-05-25,Google Local Services Ads,609.8,60921,243,24.8
+2024-05-26,Google Local Services Ads,609.8,57014,310,26.3
+2024-05-27,Google Local Services Ads,624.6,68378,344,27.6
+2024-05-28,Google Local Services Ads,624.6,68473,294,31.8
+2024-05-29,Google Local Services Ads,624.6,60440,236,30.3
+2024-05-30,Google Local Services Ads,624.6,67948,313,33.7
+2024-05-31,Google Local Services Ads,624.6,60337,310,28.6
+2024-06-01,Google Local Services Ads,437.22,43930,181,24.8
+2024-06-02,Google Local Services Ads,437.22,46055,153,24.0
+2024-06-03,Google Local Services Ads,336.01,29823,155,21.7
+2024-06-04,Google Local Services Ads,336.01,24266,118,22.7
+2024-06-05,Google Local Services Ads,336.01,24963,118,22.8
+2024-06-06,Google Local Services Ads,336.01,31167,146,22.8
+2024-06-07,Google Local Services Ads,336.01,31036,141,26.7
+2024-06-08,Google Local Services Ads,235.21,18128,106,19.1
+2024-06-09,Google Local Services Ads,235.21,20149,97,18.9
+2024-06-10,Google Local Services Ads,440.44,32632,227,26.0
+2024-06-11,Google Local Services Ads,440.44,43375,172,26.9
+2024-06-12,Google Local Services Ads,440.44,32032,170,23.3
+2024-06-13,Google Local Services Ads,440.44,41819,231,23.5
+2024-06-14,Google Local Services Ads,440.44,39750,226,26.7
+2024-06-15,Google Local Services Ads,308.31,31328,141,17.0
+2024-06-16,Google Local Services Ads,308.31,26247,168,20.0
+2024-06-17,Google Local Services Ads,711.41,57401,283,35.2
+2024-06-18,Google Local Services Ads,711.41,55828,410,36.3
+2024-06-19,Google Local Services Ads,711.41,71471,284,31.6
+2024-06-20,Google Local Services Ads,711.41,64855,344,28.9
+2024-06-21,Google Local Services Ads,711.41,64694,399,32.6
+2024-06-22,Google Local Services Ads,497.99,45609,178,25.2
+2024-06-23,Google Local Services Ads,497.99,46849,228,21.7
+2024-06-24,Google Local Services Ads,558.08,60154,266,32.7
+2024-06-25,Google Local Services Ads,558.08,44160,289,29.0
+2024-06-26,Google Local Services Ads,558.08,57651,199,28.8
+2024-06-27,Google Local Services Ads,558.08,56352,306,27.5
+2024-06-28,Google Local Services Ads,558.08,51321,310,29.8
+2024-06-29,Google Local Services Ads,390.65,31245,200,23.1
+2024-06-30,Google Local Services Ads,390.65,36909,210,22.8
+2024-07-01,Google Local Services Ads,567.07,57841,291,30.9
+2024-07-02,Google Local Services Ads,567.07,45400,308,28.4
+2024-07-03,Google Local Services Ads,567.07,60464,265,32.5
+2024-07-04,Google Local Services Ads,567.07,43229,223,32.8
+2024-07-05,Google Local Services Ads,567.07,50517,204,29.6
+2024-07-06,Google Local Services Ads,396.95,36856,224,22.1
+2024-07-07,Google Local Services Ads,396.95,32724,161,21.7
+2024-07-08,Google Local Services Ads,417.6,45085,190,27.3
+2024-07-09,Google Local Services Ads,417.6,39307,239,23.2
+2024-07-10,Google Local Services Ads,417.6,34143,198,26.8
+2024-07-11,Google Local Services Ads,417.6,29594,200,21.6
+2024-07-12,Google Local Services Ads,417.6,32539,213,28.1
+2024-07-13,Google Local Services Ads,292.32,21623,137,16.8
+2024-07-14,Google Local Services Ads,292.32,22058,134,20.0
+2024-07-15,Google Local Services Ads,396.82,40701,144,21.4
+2024-07-16,Google Local Services Ads,396.82,35183,222,27.0
+2024-07-17,Google Local Services Ads,396.82,32749,216,24.7
+2024-07-18,Google Local Services Ads,396.82,33291,232,28.1
+2024-07-19,Google Local Services Ads,396.82,29815,221,25.8
+2024-07-20,Google Local Services Ads,277.78,20820,100,18.5
+2024-07-21,Google Local Services Ads,277.78,20278,156,17.2
+2024-07-22,Google Local Services Ads,650.28,52875,387,30.1
+2024-07-23,Google Local Services Ads,650.28,58305,228,30.6
+2024-07-24,Google Local Services Ads,650.28,60709,228,26.2
+2024-07-25,Google Local Services Ads,650.28,52036,328,33.3
+2024-07-26,Google Local Services Ads,650.28,57011,310,26.7
+2024-07-27,Google Local Services Ads,455.2,42048,213,23.3
+2024-07-28,Google Local Services Ads,455.2,49460,261,17.6
+2024-07-29,Google Local Services Ads,354.24,30106,186,22.9
+2024-07-30,Google Local Services Ads,354.24,28826,160,21.9
+2024-07-31,Google Local Services Ads,354.24,25839,133,26.0
+2024-08-01,Google Local Services Ads,354.24,25654,171,22.1
+2024-08-02,Google Local Services Ads,354.24,35018,177,26.4
+2024-08-03,Google Local Services Ads,247.97,18649,143,15.3
+2024-08-04,Google Local Services Ads,247.97,21039,96,15.4
+2024-08-05,Google Local Services Ads,541.73,51614,226,24.1
+2024-08-06,Google Local Services Ads,541.73,51288,282,23.2
+2024-08-07,Google Local Services Ads,541.73,50064,202,24.1
+2024-08-08,Google Local Services Ads,541.73,39484,281,28.0
+2024-08-09,Google Local Services Ads,541.73,39549,243,26.1
+2024-08-10,Google Local Services Ads,379.21,35793,143,17.6
+2024-08-11,Google Local Services Ads,379.21,29209,183,18.1
+2024-08-12,Google Local Services Ads,511.91,37083,264,24.4
+2024-08-13,Google Local Services Ads,511.91,43465,305,27.1
+2024-08-14,Google Local Services Ads,511.91,36368,277,24.4
+2024-08-15,Google Local Services Ads,511.91,51263,207,26.5
+2024-08-16,Google Local Services Ads,511.91,47937,212,24.8
+2024-08-17,Google Local Services Ads,358.34,34911,130,20.1
+2024-08-18,Google Local Services Ads,358.34,27376,156,17.3
+2024-08-19,Google Local Services Ads,344.92,31439,188,23.7
+2024-08-20,Google Local Services Ads,344.92,34652,172,22.8
+2024-08-21,Google Local Services Ads,344.92,29537,153,19.1
+2024-08-22,Google Local Services Ads,344.92,27919,138,19.3
+2024-08-23,Google Local Services Ads,344.92,36324,197,23.4
+2024-08-24,Google Local Services Ads,241.44,21719,106,17.1
+2024-08-25,Google Local Services Ads,241.44,20718,92,13.7
+2024-08-26,Google Local Services Ads,340.72,32956,195,21.7
+2024-08-27,Google Local Services Ads,340.72,31870,199,23.4
+2024-08-28,Google Local Services Ads,340.72,29240,140,23.8
+2024-08-29,Google Local Services Ads,340.72,34864,192,21.0
+2024-08-30,Google Local Services Ads,340.72,23987,185,22.2
+2024-08-31,Google Local Services Ads,238.5,22689,141,14.6
+2024-09-01,Google Local Services Ads,238.5,17444,126,15.2
+2024-09-02,Google Local Services Ads,589.1,54126,239,28.9
+2024-09-03,Google Local Services Ads,589.1,55519,269,22.9
+2024-09-04,Google Local Services Ads,589.1,62072,221,25.0
+2024-09-05,Google Local Services Ads,589.1,64737,272,28.0
+2024-09-06,Google Local Services Ads,589.1,51710,273,29.0
+2024-09-07,Google Local Services Ads,412.37,37198,189,20.8
+2024-09-08,Google Local Services Ads,412.37,44137,197,15.6
+2024-09-09,Google Local Services Ads,408.57,33635,222,19.0
+2024-09-10,Google Local Services Ads,408.57,43812,214,23.1
+2024-09-11,Google Local Services Ads,408.57,36023,180,24.6
+2024-09-12,Google Local Services Ads,408.57,37709,165,22.9
+2024-09-13,Google Local Services Ads,408.57,36214,218,19.6
+2024-09-14,Google Local Services Ads,286.0,30648,143,13.2
+2024-09-15,Google Local Services Ads,286.0,27807,155,17.0
+2024-09-16,Google Local Services Ads,294.67,30044,116,18.0
+2024-09-17,Google Local Services Ads,294.67,23867,115,19.7
+2024-09-18,Google Local Services Ads,294.67,24200,133,21.2
+2024-09-19,Google Local Services Ads,294.67,21131,125,19.1
+2024-09-20,Google Local Services Ads,294.67,25524,139,16.1
+2024-09-21,Google Local Services Ads,206.27,14952,109,14.7
+2024-09-22,Google Local Services Ads,206.27,15354,82,14.5
+2024-09-23,Google Local Services Ads,320.14,28675,116,19.7
+2024-09-24,Google Local Services Ads,320.14,31984,117,16.5
+2024-09-25,Google Local Services Ads,320.14,28688,147,17.3
+2024-09-26,Google Local Services Ads,320.14,29088,153,16.5
+2024-09-27,Google Local Services Ads,320.14,29607,171,15.3
+2024-09-28,Google Local Services Ads,224.1,16915,110,12.7
+2024-09-29,Google Local Services Ads,224.1,21229,103,12.9
+2024-09-30,Google Local Services Ads,336.68,28516,131,19.0
+2024-10-01,Google Local Services Ads,336.68,30548,150,17.0
+2024-10-02,Google Local Services Ads,336.68,24260,191,17.4
+2024-10-03,Google Local Services Ads,336.68,30185,154,19.8
+2024-10-04,Google Local Services Ads,336.68,33318,170,19.7
+2024-10-05,Google Local Services Ads,235.67,22631,114,14.6
+2024-10-06,Google Local Services Ads,235.67,16801,91,12.1
+2024-10-07,Google Local Services Ads,624.94,51810,238,23.8
+2024-10-08,Google Local Services Ads,624.94,61702,273,24.7
+2024-10-09,Google Local Services Ads,624.94,56239,372,23.0
+2024-10-10,Google Local Services Ads,624.94,68585,373,21.6
+2024-10-11,Google Local Services Ads,624.94,50747,246,25.4
+2024-10-12,Google Local Services Ads,437.46,39831,187,16.5
+2024-10-13,Google Local Services Ads,437.46,36315,215,17.8
+2024-10-14,Google Local Services Ads,349.39,32157,158,16.0
+2024-10-15,Google Local Services Ads,349.39,32493,185,17.2
+2024-10-16,Google Local Services Ads,349.39,30787,130,17.5
+2024-10-17,Google Local Services Ads,349.39,35326,194,19.3
+2024-10-18,Google Local Services Ads,349.39,33371,183,17.3
+2024-10-19,Google Local Services Ads,244.57,23196,92,11.5
+2024-10-20,Google Local Services Ads,244.57,18307,110,11.8
+2024-10-21,Google Local Services Ads,253.4,25775,97,13.2
+2024-10-22,Google Local Services Ads,253.4,17967,116,13.0
+2024-10-23,Google Local Services Ads,253.4,19802,150,13.3
+2024-10-24,Google Local Services Ads,253.4,21970,137,15.1
+2024-10-25,Google Local Services Ads,253.4,25610,150,15.4
+2024-10-26,Google Local Services Ads,177.38,16391,62,10.0
+2024-10-27,Google Local Services Ads,177.38,16549,105,10.5
+2024-10-28,Google Local Services Ads,629.75,49853,374,18.8
+2024-10-29,Google Local Services Ads,629.75,53243,374,22.9
+2024-10-30,Google Local Services Ads,629.75,54830,364,21.4
+2024-10-31,Google Local Services Ads,629.75,61526,298,24.0
+2024-11-01,Google Local Services Ads,629.75,67971,373,19.5
+2024-11-02,Google Local Services Ads,440.82,43863,158,14.6
+2024-11-03,Google Local Services Ads,440.82,39362,239,15.9
+2024-11-04,Google Local Services Ads,375.79,34856,144,17.8
+2024-11-05,Google Local Services Ads,375.79,26595,220,16.8
+2024-11-06,Google Local Services Ads,375.79,40490,181,20.2
+2024-11-07,Google Local Services Ads,375.79,34933,174,20.9
+2024-11-08,Google Local Services Ads,375.79,35007,184,19.2
+2024-11-09,Google Local Services Ads,263.05,28393,152,13.9
+2024-11-10,Google Local Services Ads,263.05,28138,119,12.5
+2024-11-11,Google Local Services Ads,292.02,26870,116,18.8
+2024-11-12,Google Local Services Ads,292.02,23534,119,14.3
+2024-11-13,Google Local Services Ads,292.02,23802,125,18.9
+2024-11-14,Google Local Services Ads,292.02,23119,160,16.8
+2024-11-15,Google Local Services Ads,292.02,27162,146,16.1
+2024-11-16,Google Local Services Ads,204.41,17043,96,13.2
+2024-11-17,Google Local Services Ads,204.41,19604,80,11.6
+2024-11-18,Google Local Services Ads,468.03,36296,266,21.7
+2024-11-19,Google Local Services Ads,468.03,45029,264,20.8
+2024-11-20,Google Local Services Ads,468.03,39479,193,16.1
+2024-11-21,Google Local Services Ads,468.03,44520,189,21.7
+2024-11-22,Google Local Services Ads,468.03,42002,248,21.7
+2024-11-23,Google Local Services Ads,327.62,34128,145,13.0
+2024-11-24,Google Local Services Ads,327.62,34954,189,12.3
+2024-11-25,Google Local Services Ads,313.1,33935,153,15.9
+2024-11-26,Google Local Services Ads,313.1,25655,132,15.9
+2024-11-27,Google Local Services Ads,313.1,34159,152,14.0
+2024-11-28,Google Local Services Ads,313.1,28306,150,15.8
+2024-11-29,Google Local Services Ads,313.1,30055,178,17.4
+2024-11-30,Google Local Services Ads,219.17,21699,110,9.8
+2024-12-01,Google Local Services Ads,219.17,21868,91,9.9
+2024-12-02,Google Local Services Ads,349.51,26062,160,18.6
+2024-12-03,Google Local Services Ads,349.51,28389,207,15.0
+2024-12-04,Google Local Services Ads,349.51,38130,187,18.5
+2024-12-05,Google Local Services Ads,349.51,34278,180,17.7
+2024-12-06,Google Local Services Ads,349.51,25010,137,15.2
+2024-12-07,Google Local Services Ads,244.66,22023,103,13.8
+2024-12-08,Google Local Services Ads,244.66,20575,95,10.9
+2024-12-09,Google Local Services Ads,275.68,24651,106,17.2
+2024-12-10,Google Local Services Ads,275.68,23051,123,15.4
+2024-12-11,Google Local Services Ads,275.68,22032,129,15.9
+2024-12-12,Google Local Services Ads,275.68,22204,162,17.0
+2024-12-13,Google Local Services Ads,275.68,23225,131,13.8
+2024-12-14,Google Local Services Ads,192.97,14187,87,9.9
+2024-12-15,Google Local Services Ads,192.97,20966,112,10.9
+2024-12-16,Google Local Services Ads,289.82,21003,115,13.9
+2024-12-17,Google Local Services Ads,289.82,26654,136,15.0
+2024-12-18,Google Local Services Ads,289.82,29846,118,16.2
+2024-12-19,Google Local Services Ads,289.82,29339,140,16.4
+2024-12-20,Google Local Services Ads,289.82,22228,155,15.2
+2024-12-21,Google Local Services Ads,202.87,21908,115,12.2
+2024-12-22,Google Local Services Ads,202.87,16816,97,12.8
+2024-12-23,Google Local Services Ads,455.29,33642,252,20.2
+2024-12-24,Google Local Services Ads,455.29,39250,166,19.3
+2024-12-25,Google Local Services Ads,455.29,39006,204,16.6
+2024-12-26,Google Local Services Ads,455.29,33493,262,17.5
+2024-12-27,Google Local Services Ads,455.29,42858,202,19.7
+2024-12-28,Google Local Services Ads,318.7,27024,148,12.9
+2024-12-29,Google Local Services Ads,318.7,32941,183,11.6
+2024-12-30,Google Local Services Ads,252.26,25313,94,17.7
+2024-12-31,Google Local Services Ads,252.26,18577,91,14.5
+2025-01-01,Google Local Services Ads,252.26,27030,90,14.1
+2025-01-02,Google Local Services Ads,252.26,24085,90,15.0
+2025-01-03,Google Local Services Ads,252.26,17667,114,14.9
+2025-01-04,Google Local Services Ads,176.58,14834,67,12.2
+2025-01-05,Google Local Services Ads,176.58,18819,70,9.5
+2025-01-06,Google Local Services Ads,238.89,24063,117,13.7
+2025-01-07,Google Local Services Ads,238.89,22711,99,14.2
+2025-01-08,Google Local Services Ads,238.89,24724,119,16.9
+2025-01-09,Google Local Services Ads,238.89,24647,103,13.6
+2025-01-10,Google Local Services Ads,238.89,22740,118,14.7
+2025-01-11,Google Local Services Ads,167.22,15355,75,10.3
+2025-01-12,Google Local Services Ads,167.22,15730,95,11.7
+2025-01-13,Google Local Services Ads,395.62,40568,227,21.6
+2025-01-14,Google Local Services Ads,395.62,39096,197,22.0
+2025-01-15,Google Local Services Ads,395.62,31529,164,20.9
+2025-01-16,Google Local Services Ads,395.62,29134,157,19.6
+2025-01-17,Google Local Services Ads,395.62,29441,220,16.2
+2025-01-18,Google Local Services Ads,276.93,28478,149,13.5
+2025-01-19,Google Local Services Ads,276.93,24545,103,15.0
+2025-01-20,Google Local Services Ads,357.11,33036,150,21.6
+2025-01-21,Google Local Services Ads,357.11,26586,126,21.6
+2025-01-22,Google Local Services Ads,357.11,34709,182,17.7
+2025-01-23,Google Local Services Ads,357.11,26262,190,17.3
+2025-01-24,Google Local Services Ads,357.11,36517,138,16.9
+2025-01-25,Google Local Services Ads,249.98,18680,131,14.3
+2025-01-26,Google Local Services Ads,249.98,25629,117,11.8
+2025-01-27,Google Local Services Ads,439.02,33732,226,17.3
+2025-01-28,Google Local Services Ads,439.02,31421,218,19.5
+2025-01-29,Google Local Services Ads,439.02,45631,258,18.5
+2025-01-30,Google Local Services Ads,439.02,34424,225,23.2
+2025-01-31,Google Local Services Ads,439.02,38490,235,22.2
+2025-02-01,Google Local Services Ads,307.31,31220,169,15.4
+2025-02-02,Google Local Services Ads,307.31,25105,161,16.0
+2025-02-03,Google Local Services Ads,425.97,42390,181,19.7
+2025-02-04,Google Local Services Ads,425.97,40245,179,23.9
+2025-02-05,Google Local Services Ads,425.97,30581,178,22.3
+2025-02-06,Google Local Services Ads,425.97,32713,248,22.3
+2025-02-07,Google Local Services Ads,425.97,32850,228,20.5
+2025-02-08,Google Local Services Ads,298.18,29536,160,15.0
+2025-02-09,Google Local Services Ads,298.18,21173,111,14.2
+2025-02-10,Google Local Services Ads,438.88,46152,262,24.6
+2025-02-11,Google Local Services Ads,438.88,46603,224,23.7
+2025-02-12,Google Local Services Ads,438.88,47902,176,22.6
+2025-02-13,Google Local Services Ads,438.88,44029,183,27.1
+2025-02-14,Google Local Services Ads,438.88,47205,219,26.9
+2025-02-15,Google Local Services Ads,307.22,21834,145,16.4
+2025-02-16,Google Local Services Ads,307.22,27978,148,15.4
+2025-02-17,Google Local Services Ads,413.06,44311,244,21.0
+2025-02-18,Google Local Services Ads,413.06,43610,243,26.6
+2025-02-19,Google Local Services Ads,413.06,38197,179,23.8
+2025-02-20,Google Local Services Ads,413.06,30605,151,25.1
+2025-02-21,Google Local Services Ads,413.06,35053,172,19.8
+2025-02-22,Google Local Services Ads,289.14,30872,147,17.0
+2025-02-23,Google Local Services Ads,289.14,31021,143,16.6
+2025-02-24,Google Local Services Ads,328.09,35074,141,20.0
+2025-02-25,Google Local Services Ads,328.09,23668,162,20.0
+2025-02-26,Google Local Services Ads,328.09,31381,182,18.9
+2025-02-27,Google Local Services Ads,328.09,25650,186,17.8
+2025-02-28,Google Local Services Ads,328.09,27335,146,20.6
+2025-03-01,Google Local Services Ads,229.66,24350,109,13.6
+2025-03-02,Google Local Services Ads,229.66,22321,106,13.2
+2025-03-03,Google Local Services Ads,847.24,86394,349,33.9
+2025-03-04,Google Local Services Ads,847.24,80501,333,33.5
+2025-03-05,Google Local Services Ads,847.24,92642,490,33.4
+2025-03-06,Google Local Services Ads,847.24,76779,364,32.8
+2025-03-07,Google Local Services Ads,847.24,87495,390,36.6
+2025-03-08,Google Local Services Ads,593.07,51397,279,25.6
+2025-03-09,Google Local Services Ads,593.07,60013,234,20.2
+2025-03-10,Google Local Services Ads,520.13,38612,242,24.5
+2025-03-11,Google Local Services Ads,520.13,50001,249,28.6
+2025-03-12,Google Local Services Ads,520.13,45702,286,28.9
+2025-03-13,Google Local Services Ads,520.13,57153,278,28.0
+2025-03-14,Google Local Services Ads,520.13,48521,254,24.3
+2025-03-15,Google Local Services Ads,364.09,37365,188,18.8
+2025-03-16,Google Local Services Ads,364.09,31433,203,20.6
+2025-03-17,Google Local Services Ads,377.53,26787,162,23.5
+2025-03-18,Google Local Services Ads,377.53,32862,165,21.1
+2025-03-19,Google Local Services Ads,377.53,34669,217,22.8
+2025-03-20,Google Local Services Ads,377.53,40352,146,20.2
+2025-03-21,Google Local Services Ads,377.53,35991,201,19.3
+2025-03-22,Google Local Services Ads,264.27,21416,139,13.3
+2025-03-23,Google Local Services Ads,264.27,26988,151,13.7
+2025-03-24,Google Local Services Ads,413.66,36805,223,23.8
+2025-03-25,Google Local Services Ads,413.66,31403,212,25.5
+2025-03-26,Google Local Services Ads,413.66,38459,202,27.4
+2025-03-27,Google Local Services Ads,413.66,31769,167,22.6
+2025-03-28,Google Local Services Ads,413.66,44413,225,25.3
+2025-03-29,Google Local Services Ads,289.56,30698,130,14.4
+2025-03-30,Google Local Services Ads,289.56,21012,139,17.3
+2025-03-31,Google Local Services Ads,364.59,32403,131,24.5
+2025-04-01,Google Local Services Ads,364.59,25965,163,25.1
+2025-04-02,Google Local Services Ads,364.59,36108,150,20.8
+2025-04-03,Google Local Services Ads,364.59,31990,170,20.2
+2025-04-04,Google Local Services Ads,364.59,29523,217,24.5
+2025-04-05,Google Local Services Ads,255.21,27514,140,15.8
+2025-04-06,Google Local Services Ads,255.21,23396,135,16.7
+2025-04-07,Google Local Services Ads,405.62,41741,188,25.0
+2025-04-08,Google Local Services Ads,405.62,33684,239,21.3
+2025-04-09,Google Local Services Ads,405.62,42066,160,27.4
+2025-04-10,Google Local Services Ads,405.62,36328,187,25.1
+2025-04-11,Google Local Services Ads,405.62,40323,206,26.9
+2025-04-12,Google Local Services Ads,283.94,30303,106,17.8
+2025-04-13,Google Local Services Ads,283.94,27445,116,16.9
+2025-04-14,Google Local Services Ads,763.03,73785,406,30.4
+2025-04-15,Google Local Services Ads,763.03,80691,420,32.6
+2025-04-16,Google Local Services Ads,763.03,83242,281,34.6
+2025-04-17,Google Local Services Ads,763.03,57537,274,29.1
+2025-04-18,Google Local Services Ads,763.03,57146,417,33.4
+2025-04-19,Google Local Services Ads,534.12,51013,233,20.8
+2025-04-20,Google Local Services Ads,534.12,51224,193,24.7
+2025-04-21,Google Local Services Ads,591.8,48192,315,30.1
+2025-04-22,Google Local Services Ads,591.8,53300,292,29.1
+2025-04-23,Google Local Services Ads,591.8,59293,327,33.4
+2025-04-24,Google Local Services Ads,591.8,60531,243,26.7
+2025-04-25,Google Local Services Ads,591.8,42977,341,29.8
+2025-04-26,Google Local Services Ads,414.26,33540,202,20.6
+2025-04-27,Google Local Services Ads,414.26,31815,240,22.9
+2025-04-28,Google Local Services Ads,420.32,39163,215,28.8
+2025-04-29,Google Local Services Ads,420.32,29747,191,24.7
+2025-04-30,Google Local Services Ads,420.32,40395,196,24.5
+2025-05-01,Google Local Services Ads,420.32,39513,177,27.5
+2025-05-02,Google Local Services Ads,420.32,36531,179,27.9
+2025-05-03,Google Local Services Ads,294.22,24622,124,17.8
+2025-05-04,Google Local Services Ads,294.22,21185,170,15.6
+2025-05-05,Google Local Services Ads,719.8,58614,316,30.5
+2025-05-06,Google Local Services Ads,719.8,62417,264,28.6
+2025-05-07,Google Local Services Ads,719.8,61995,393,27.9
+2025-05-08,Google Local Services Ads,719.8,77662,258,28.2
+2025-05-09,Google Local Services Ads,719.8,71363,274,35.9
+2025-05-10,Google Local Services Ads,503.86,51669,176,21.2
+2025-05-11,Google Local Services Ads,503.86,54101,259,21.9
+2025-05-12,Google Local Services Ads,657.13,64955,297,34.4
+2025-05-13,Google Local Services Ads,657.13,46829,348,37.3
+2025-05-14,Google Local Services Ads,657.13,52432,269,33.2
+2025-05-15,Google Local Services Ads,657.13,56283,351,30.3
+2025-05-16,Google Local Services Ads,657.13,51729,352,32.0
+2025-05-17,Google Local Services Ads,459.99,33541,233,25.1
+2025-05-18,Google Local Services Ads,459.99,40492,200,25.0
+2025-05-19,Google Local Services Ads,645.29,51484,275,30.2
+2025-05-20,Google Local Services Ads,645.29,66911,364,28.5
+2025-05-21,Google Local Services Ads,645.29,60787,304,32.9
+2025-05-22,Google Local Services Ads,645.29,57758,328,31.7
+2025-05-23,Google Local Services Ads,645.29,45976,358,32.3
+2025-05-24,Google Local Services Ads,451.7,49130,262,23.6
+2025-05-25,Google Local Services Ads,451.7,37813,232,19.6
+2025-05-26,Google Local Services Ads,590.74,64393,327,29.5
+2025-05-27,Google Local Services Ads,590.74,60528,327,26.2
+2025-05-28,Google Local Services Ads,590.74,49342,292,30.4
+2025-05-29,Google Local Services Ads,590.74,50208,247,33.4
+2025-05-30,Google Local Services Ads,590.74,61105,332,34.2
+2025-05-31,Google Local Services Ads,413.52,42405,240,20.7
+2025-06-01,Google Local Services Ads,413.52,37378,190,18.3
+2025-06-02,Google Local Services Ads,471.93,47868,191,31.4
+2025-06-03,Google Local Services Ads,471.93,42044,182,29.8
+2025-06-04,Google Local Services Ads,471.93,36694,168,32.9
+2025-06-05,Google Local Services Ads,471.93,35356,249,31.7
+2025-06-06,Google Local Services Ads,471.93,35199,252,31.1
+2025-06-07,Google Local Services Ads,330.35,26649,160,20.5
+2025-06-08,Google Local Services Ads,330.35,32330,194,18.9
+2025-06-09,Google Local Services Ads,576.04,49755,233,30.9
+2025-06-10,Google Local Services Ads,576.04,42743,251,25.4
+2025-06-11,Google Local Services Ads,576.04,51473,221,26.7
+2025-06-12,Google Local Services Ads,576.04,55198,257,26.7
+2025-06-13,Google Local Services Ads,576.04,58689,277,31.9
+2025-06-14,Google Local Services Ads,403.23,37689,158,17.9
+2025-06-15,Google Local Services Ads,403.23,39948,213,19.3
+2025-06-16,Google Local Services Ads,588.51,46354,316,26.9
+2025-06-17,Google Local Services Ads,588.51,60425,344,33.5
+2025-06-18,Google Local Services Ads,588.51,61903,296,28.9
+2025-06-19,Google Local Services Ads,588.51,54586,317,31.7
+2025-06-20,Google Local Services Ads,588.51,61122,323,32.0
+2025-06-21,Google Local Services Ads,411.95,34100,210,23.0
+2025-06-22,Google Local Services Ads,411.95,38229,159,23.3
+2025-06-23,Google Local Services Ads,777.82,71159,312,32.0
+2025-06-24,Google Local Services Ads,777.82,60224,454,31.1
+2025-06-25,Google Local Services Ads,777.82,58131,372,28.1
+2025-06-26,Google Local Services Ads,777.82,69175,347,37.6
+2025-06-27,Google Local Services Ads,777.82,84090,277,35.3
+2025-06-28,Google Local Services Ads,544.48,47951,304,25.1
+2025-06-29,Google Local Services Ads,544.48,40003,306,22.8
+2025-06-30,Google Local Services Ads,446.83,33802,264,27.1
+2025-07-01,Google Local Services Ads,446.83,31403,216,27.5
+2025-07-02,Google Local Services Ads,446.83,43430,203,31.1
+2025-07-03,Google Local Services Ads,446.83,39732,248,26.2
+2025-07-04,Google Local Services Ads,446.83,44861,250,26.5
+2025-07-05,Google Local Services Ads,312.78,25699,136,21.4
+2025-07-06,Google Local Services Ads,312.78,23570,143,22.0
+2025-07-07,Google Local Services Ads,579.73,47944,290,27.0
+2025-07-08,Google Local Services Ads,579.73,49234,263,26.4
+2025-07-09,Google Local Services Ads,579.73,47081,301,26.1
+2025-07-10,Google Local Services Ads,579.73,51717,340,31.8
+2025-07-11,Google Local Services Ads,579.73,43290,288,24.8
+2025-07-12,Google Local Services Ads,405.81,31576,209,19.4
+2025-07-13,Google Local Services Ads,405.81,32226,222,21.2
+2025-07-14,Google Local Services Ads,484.8,42200,198,29.5
+2025-07-15,Google Local Services Ads,484.8,45801,238,30.5
+2025-07-16,Google Local Services Ads,484.8,52721,186,24.2
+2025-07-17,Google Local Services Ads,484.8,46412,183,28.4
+2025-07-18,Google Local Services Ads,484.8,50677,176,27.0
+2025-07-19,Google Local Services Ads,339.36,26662,130,22.1
+2025-07-20,Google Local Services Ads,339.36,29952,162,20.8
+2025-07-21,Google Local Services Ads,573.81,54878,289,31.8
+2025-07-22,Google Local Services Ads,573.81,58774,255,27.5
+2025-07-23,Google Local Services Ads,573.81,52742,255,29.0
+2025-07-24,Google Local Services Ads,573.81,48976,267,32.2
+2025-07-25,Google Local Services Ads,573.81,55172,343,31.5
+2025-07-26,Google Local Services Ads,401.66,37398,230,18.8
+2025-07-27,Google Local Services Ads,401.66,32116,173,18.6
+2025-07-28,Google Local Services Ads,682.19,53353,253,26.1
+2025-07-29,Google Local Services Ads,682.19,66581,247,28.7
+2025-07-30,Google Local Services Ads,682.19,57328,370,24.9
+2025-07-31,Google Local Services Ads,682.19,72219,286,29.0
+2025-08-01,Google Local Services Ads,682.19,68999,385,25.1
+2025-08-02,Google Local Services Ads,477.53,51328,172,19.5
+2025-08-03,Google Local Services Ads,477.53,46268,245,18.2
+2025-08-04,Google Local Services Ads,674.39,52595,330,30.8
+2025-08-05,Google Local Services Ads,674.39,59959,262,27.9
+2025-08-06,Google Local Services Ads,674.39,49228,302,26.3
+2025-08-07,Google Local Services Ads,674.39,66649,294,28.9
+2025-08-08,Google Local Services Ads,674.39,49685,338,29.5
+2025-08-09,Google Local Services Ads,472.08,50489,231,17.7
+2025-08-10,Google Local Services Ads,472.08,51824,188,21.0
+2025-08-11,Google Local Services Ads,436.46,36292,170,27.3
+2025-08-12,Google Local Services Ads,436.46,32916,161,21.0
+2025-08-13,Google Local Services Ads,436.46,47569,188,20.6
+2025-08-14,Google Local Services Ads,436.46,35377,244,22.7
+2025-08-15,Google Local Services Ads,436.46,31495,174,22.3
+2025-08-16,Google Local Services Ads,305.52,27216,161,14.7
+2025-08-17,Google Local Services Ads,305.52,29156,162,19.3
+2025-08-18,Google Local Services Ads,517.53,43850,271,26.7
+2025-08-19,Google Local Services Ads,517.53,46613,238,27.6
+2025-08-20,Google Local Services Ads,517.53,44068,193,23.6
+2025-08-21,Google Local Services Ads,517.53,36870,291,28.6
+2025-08-22,Google Local Services Ads,517.53,44539,255,25.9
+2025-08-23,Google Local Services Ads,362.27,32624,181,19.8
+2025-08-24,Google Local Services Ads,362.27,27175,214,16.6
+2025-08-25,Google Local Services Ads,407.25,44032,203,23.0
+2025-08-26,Google Local Services Ads,407.25,34474,210,21.8
+2025-08-27,Google Local Services Ads,407.25,38278,143,23.7
+2025-08-28,Google Local Services Ads,407.25,34221,146,23.1
+2025-08-29,Google Local Services Ads,407.25,36153,183,19.7
+2025-08-30,Google Local Services Ads,285.08,28570,117,18.2
+2025-08-31,Google Local Services Ads,285.08,30794,144,14.0
+2025-09-01,Google Local Services Ads,511.75,42602,231,22.5
+2025-09-02,Google Local Services Ads,511.75,49727,263,27.8
+2025-09-03,Google Local Services Ads,511.75,48028,290,21.1
+2025-09-04,Google Local Services Ads,511.75,48904,209,24.6
+2025-09-05,Google Local Services Ads,511.75,46205,198,24.8
+2025-09-06,Google Local Services Ads,358.22,32813,185,15.1
+2025-09-07,Google Local Services Ads,358.22,37203,163,17.8
+2025-09-08,Google Local Services Ads,363.31,32974,196,17.0
+2025-09-09,Google Local Services Ads,363.31,27613,201,17.4
+2025-09-10,Google Local Services Ads,363.31,25606,179,19.6
+2025-09-11,Google Local Services Ads,363.31,27757,133,16.5
+2025-09-12,Google Local Services Ads,363.31,25714,133,17.1
+2025-09-13,Google Local Services Ads,254.32,21468,120,11.5
+2025-09-14,Google Local Services Ads,254.32,21536,97,12.9
+2025-09-15,Google Local Services Ads,390.68,39978,172,22.2
+2025-09-16,Google Local Services Ads,390.68,36148,233,20.7
+2025-09-17,Google Local Services Ads,390.68,31747,177,20.0
+2025-09-18,Google Local Services Ads,390.68,36989,188,23.1
+2025-09-19,Google Local Services Ads,390.68,36576,158,18.9
+2025-09-20,Google Local Services Ads,273.48,26350,97,15.4
+2025-09-21,Google Local Services Ads,273.48,22035,98,12.8
+2025-09-22,Google Local Services Ads,457.4,43542,191,19.4
+2025-09-23,Google Local Services Ads,457.4,36289,204,21.2
+2025-09-24,Google Local Services Ads,457.4,48214,216,17.5
+2025-09-25,Google Local Services Ads,457.4,41785,206,19.9
+2025-09-26,Google Local Services Ads,457.4,49189,178,17.9
+2025-09-27,Google Local Services Ads,320.18,30455,156,12.9
+2025-09-28,Google Local Services Ads,320.18,30383,182,13.8
+2024-01-01,Retargeting (Display/Meta),204.44,15627,83,7.2
+2024-01-02,Retargeting (Display/Meta),204.44,17564,122,7.6
+2024-01-03,Retargeting (Display/Meta),204.44,20674,113,8.1
+2024-01-04,Retargeting (Display/Meta),204.44,21947,75,8.2
+2024-01-05,Retargeting (Display/Meta),204.44,19780,114,8.4
+2024-01-06,Retargeting (Display/Meta),143.11,13107,52,5.7
+2024-01-07,Retargeting (Display/Meta),143.11,15361,68,4.5
+2024-01-08,Retargeting (Display/Meta),466.35,34234,178,11.7
+2024-01-09,Retargeting (Display/Meta),466.35,33311,193,9.0
+2024-01-10,Retargeting (Display/Meta),466.35,41453,274,10.7
+2024-01-11,Retargeting (Display/Meta),466.35,37146,194,10.3
+2024-01-12,Retargeting (Display/Meta),466.35,34968,264,10.9
+2024-01-13,Retargeting (Display/Meta),326.44,31487,136,7.9
+2024-01-14,Retargeting (Display/Meta),326.44,31803,120,7.9
+2024-01-15,Retargeting (Display/Meta),353.39,30428,141,8.5
+2024-01-16,Retargeting (Display/Meta),353.39,38620,196,8.8
+2024-01-17,Retargeting (Display/Meta),353.39,35365,143,8.9
+2024-01-18,Retargeting (Display/Meta),353.39,36608,135,8.3
+2024-01-19,Retargeting (Display/Meta),353.39,35736,184,8.8
+2024-01-20,Retargeting (Display/Meta),247.37,26033,117,6.0
+2024-01-21,Retargeting (Display/Meta),247.37,25910,122,6.0
+2024-01-22,Retargeting (Display/Meta),401.37,30505,203,9.2
+2024-01-23,Retargeting (Display/Meta),401.37,39253,142,10.1
+2024-01-24,Retargeting (Display/Meta),401.37,35854,205,11.6
+2024-01-25,Retargeting (Display/Meta),401.37,33161,150,11.5
+2024-01-26,Retargeting (Display/Meta),401.37,41803,154,10.4
+2024-01-27,Retargeting (Display/Meta),280.96,20521,124,6.2
+2024-01-28,Retargeting (Display/Meta),280.96,30483,102,6.7
+2024-01-29,Retargeting (Display/Meta),242.85,24789,127,7.1
+2024-01-30,Retargeting (Display/Meta),242.85,23978,142,7.7
+2024-01-31,Retargeting (Display/Meta),242.85,21827,117,8.0
+2024-02-01,Retargeting (Display/Meta),242.85,25734,134,9.3
+2024-02-02,Retargeting (Display/Meta),242.85,22260,98,6.9
+2024-02-03,Retargeting (Display/Meta),170.0,16883,89,5.6
+2024-02-04,Retargeting (Display/Meta),170.0,12757,65,5.8
+2024-02-05,Retargeting (Display/Meta),253.99,23563,142,8.2
+2024-02-06,Retargeting (Display/Meta),253.99,17992,93,8.8
+2024-02-07,Retargeting (Display/Meta),253.99,26545,138,9.6
+2024-02-08,Retargeting (Display/Meta),253.99,24491,137,8.4
+2024-02-09,Retargeting (Display/Meta),253.99,25662,128,9.0
+2024-02-10,Retargeting (Display/Meta),177.79,18350,72,7.0
+2024-02-11,Retargeting (Display/Meta),177.79,12952,66,6.6
+2024-02-12,Retargeting (Display/Meta),322.33,31035,121,10.6
+2024-02-13,Retargeting (Display/Meta),322.33,35387,148,9.3
+2024-02-14,Retargeting (Display/Meta),322.33,26956,138,8.6
+2024-02-15,Retargeting (Display/Meta),322.33,32303,165,9.0
+2024-02-16,Retargeting (Display/Meta),322.33,23421,181,9.9
+2024-02-17,Retargeting (Display/Meta),225.63,17075,92,6.0
+2024-02-18,Retargeting (Display/Meta),225.63,15802,124,6.5
+2024-02-19,Retargeting (Display/Meta),348.85,37354,195,9.0
+2024-02-20,Retargeting (Display/Meta),348.85,28279,208,9.6
+2024-02-21,Retargeting (Display/Meta),348.85,24584,165,10.3
+2024-02-22,Retargeting (Display/Meta),348.85,27234,149,11.6
+2024-02-23,Retargeting (Display/Meta),348.85,36463,161,10.1
+2024-02-24,Retargeting (Display/Meta),244.19,23848,112,7.9
+2024-02-25,Retargeting (Display/Meta),244.19,26280,140,7.5
+2024-02-26,Retargeting (Display/Meta),356.03,34884,181,10.8
+2024-02-27,Retargeting (Display/Meta),356.03,27258,184,10.1
+2024-02-28,Retargeting (Display/Meta),356.03,34739,138,13.0
+2024-02-29,Retargeting (Display/Meta),356.03,37038,128,13.3
+2024-03-01,Retargeting (Display/Meta),356.03,30999,177,12.6
+2024-03-02,Retargeting (Display/Meta),249.22,21728,119,9.4
+2024-03-03,Retargeting (Display/Meta),249.22,21872,140,8.2
+2024-03-04,Retargeting (Display/Meta),362.2,29517,135,10.7
+2024-03-05,Retargeting (Display/Meta),362.2,39634,149,10.2
+2024-03-06,Retargeting (Display/Meta),362.2,35572,176,12.4
+2024-03-07,Retargeting (Display/Meta),362.2,29093,155,12.2
+2024-03-08,Retargeting (Display/Meta),362.2,28564,130,9.8
+2024-03-09,Retargeting (Display/Meta),253.54,22897,142,8.7
+2024-03-10,Retargeting (Display/Meta),253.54,20111,128,7.1
+2024-03-11,Retargeting (Display/Meta),217.98,21486,101,9.0
+2024-03-12,Retargeting (Display/Meta),217.98,15466,113,9.1
+2024-03-13,Retargeting (Display/Meta),217.98,21610,80,10.4
+2024-03-14,Retargeting (Display/Meta),217.98,15515,112,10.5
+2024-03-15,Retargeting (Display/Meta),217.98,22810,107,9.0
+2024-03-16,Retargeting (Display/Meta),152.58,11101,88,6.0
+2024-03-17,Retargeting (Display/Meta),152.58,13384,84,6.6
+2024-03-18,Retargeting (Display/Meta),578.3,45884,243,16.5
+2024-03-19,Retargeting (Display/Meta),578.3,49099,336,14.3
+2024-03-20,Retargeting (Display/Meta),578.3,60069,341,12.8
+2024-03-21,Retargeting (Display/Meta),578.3,60390,259,14.3
+2024-03-22,Retargeting (Display/Meta),578.3,53092,313,15.5
+2024-03-23,Retargeting (Display/Meta),404.81,31663,166,11.0
+2024-03-24,Retargeting (Display/Meta),404.81,38046,226,10.0
+2024-03-25,Retargeting (Display/Meta),232.05,24126,134,9.2
+2024-03-26,Retargeting (Display/Meta),232.05,19730,95,9.5
+2024-03-27,Retargeting (Display/Meta),232.05,21855,118,9.9
+2024-03-28,Retargeting (Display/Meta),232.05,22215,93,10.0
+2024-03-29,Retargeting (Display/Meta),232.05,25481,125,9.8
+2024-03-30,Retargeting (Display/Meta),162.43,15371,67,6.1
+2024-03-31,Retargeting (Display/Meta),162.43,14076,82,7.7
+2024-04-01,Retargeting (Display/Meta),283.4,30740,161,11.8
+2024-04-02,Retargeting (Display/Meta),283.4,20582,125,10.1
+2024-04-03,Retargeting (Display/Meta),283.4,28003,103,10.0
+2024-04-04,Retargeting (Display/Meta),283.4,23657,141,9.6
+2024-04-05,Retargeting (Display/Meta),283.4,22619,144,9.6
+2024-04-06,Retargeting (Display/Meta),198.38,16339,94,7.9
+2024-04-07,Retargeting (Display/Meta),198.38,18528,84,8.3
+2024-04-08,Retargeting (Display/Meta),252.36,23859,120,8.9
+2024-04-09,Retargeting (Display/Meta),252.36,26836,140,11.4
+2024-04-10,Retargeting (Display/Meta),252.36,24669,124,10.2
+2024-04-11,Retargeting (Display/Meta),252.36,27493,90,11.0
+2024-04-12,Retargeting (Display/Meta),252.36,24570,133,9.0
+2024-04-13,Retargeting (Display/Meta),176.65,17350,91,7.3
+2024-04-14,Retargeting (Display/Meta),176.65,14205,98,7.5
+2024-04-15,Retargeting (Display/Meta),508.2,46902,183,13.2
+2024-04-16,Retargeting (Display/Meta),508.2,53380,192,14.7
+2024-04-17,Retargeting (Display/Meta),508.2,44280,194,13.6
+2024-04-18,Retargeting (Display/Meta),508.2,36864,267,15.4
+2024-04-19,Retargeting (Display/Meta),508.2,45611,238,15.2
+2024-04-20,Retargeting (Display/Meta),355.74,31411,152,9.6
+2024-04-21,Retargeting (Display/Meta),355.74,25592,163,10.9
+2024-04-22,Retargeting (Display/Meta),445.73,35631,242,12.5
+2024-04-23,Retargeting (Display/Meta),445.73,38932,197,14.8
+2024-04-24,Retargeting (Display/Meta),445.73,44801,265,15.1
+2024-04-25,Retargeting (Display/Meta),445.73,44134,169,15.2
+2024-04-26,Retargeting (Display/Meta),445.73,48252,266,12.0
+2024-04-27,Retargeting (Display/Meta),312.01,22358,119,10.3
+2024-04-28,Retargeting (Display/Meta),312.01,33640,113,9.7
+2024-04-29,Retargeting (Display/Meta),301.58,23452,159,11.0
+2024-04-30,Retargeting (Display/Meta),301.58,21629,165,13.4
+2024-05-01,Retargeting (Display/Meta),301.58,22592,173,10.1
+2024-05-02,Retargeting (Display/Meta),301.58,25579,132,12.8
+2024-05-03,Retargeting (Display/Meta),301.58,29535,172,12.4
+2024-05-04,Retargeting (Display/Meta),211.1,19781,95,7.1
+2024-05-05,Retargeting (Display/Meta),211.1,19021,85,9.4
+2024-05-06,Retargeting (Display/Meta),372.15,27599,210,11.1
+2024-05-07,Retargeting (Display/Meta),372.15,32280,221,13.6
+2024-05-08,Retargeting (Display/Meta),372.15,27023,167,11.6
+2024-05-09,Retargeting (Display/Meta),372.15,26629,196,13.1
+2024-05-10,Retargeting (Display/Meta),372.15,37217,213,13.4
+2024-05-11,Retargeting (Display/Meta),260.51,27213,154,9.5
+2024-05-12,Retargeting (Display/Meta),260.51,20692,136,9.3
+2024-05-13,Retargeting (Display/Meta),409.03,36363,241,13.9
+2024-05-14,Retargeting (Display/Meta),409.03,33580,160,13.3
+2024-05-15,Retargeting (Display/Meta),409.03,40651,172,15.4
+2024-05-16,Retargeting (Display/Meta),409.03,40226,232,12.1
+2024-05-17,Retargeting (Display/Meta),409.03,40169,211,15.5
+2024-05-18,Retargeting (Display/Meta),286.32,26116,136,8.3
+2024-05-19,Retargeting (Display/Meta),286.32,31279,110,8.4
+2024-05-20,Retargeting (Display/Meta),290.58,26170,147,12.1
+2024-05-21,Retargeting (Display/Meta),290.58,25266,172,11.9
+2024-05-22,Retargeting (Display/Meta),290.58,21012,148,11.1
+2024-05-23,Retargeting (Display/Meta),290.58,21378,120,12.0
+2024-05-24,Retargeting (Display/Meta),290.58,25343,170,11.2
+2024-05-25,Retargeting (Display/Meta),203.41,19082,104,8.3
+2024-05-26,Retargeting (Display/Meta),203.41,15109,77,8.0
+2024-05-27,Retargeting (Display/Meta),287.61,27847,114,10.1
+2024-05-28,Retargeting (Display/Meta),287.61,21410,137,12.8
+2024-05-29,Retargeting (Display/Meta),287.61,24251,132,13.3
+2024-05-30,Retargeting (Display/Meta),287.61,25704,105,13.2
+2024-05-31,Retargeting (Display/Meta),287.61,20296,131,11.6
+2024-06-01,Retargeting (Display/Meta),201.33,20507,82,8.6
+2024-06-02,Retargeting (Display/Meta),201.33,20362,107,7.1
+2024-06-03,Retargeting (Display/Meta),251.97,25048,93,12.9
+2024-06-04,Retargeting (Display/Meta),251.97,21278,97,11.4
+2024-06-05,Retargeting (Display/Meta),251.97,22126,115,10.9
+2024-06-06,Retargeting (Display/Meta),251.97,22822,141,10.8
+2024-06-07,Retargeting (Display/Meta),251.97,19475,138,12.8
+2024-06-08,Retargeting (Display/Meta),176.38,15918,76,7.7
+2024-06-09,Retargeting (Display/Meta),176.38,17837,95,7.3
+2024-06-10,Retargeting (Display/Meta),282.48,21871,153,11.4
+2024-06-11,Retargeting (Display/Meta),282.48,27573,110,12.6
+2024-06-12,Retargeting (Display/Meta),282.48,30965,98,9.7
+2024-06-13,Retargeting (Display/Meta),282.48,27616,153,12.6
+2024-06-14,Retargeting (Display/Meta),282.48,29328,128,11.9
+2024-06-15,Retargeting (Display/Meta),197.74,21634,113,8.2
+2024-06-16,Retargeting (Display/Meta),197.74,15911,100,8.3
+2024-06-17,Retargeting (Display/Meta),278.17,22219,120,11.5
+2024-06-18,Retargeting (Display/Meta),278.17,30123,101,13.0
+2024-06-19,Retargeting (Display/Meta),278.17,20364,141,10.0
+2024-06-20,Retargeting (Display/Meta),278.17,23781,109,12.2
+2024-06-21,Retargeting (Display/Meta),278.17,23090,166,11.2
+2024-06-22,Retargeting (Display/Meta),194.72,15105,70,7.4
+2024-06-23,Retargeting (Display/Meta),194.72,14854,80,7.3
+2024-06-24,Retargeting (Display/Meta),268.75,24631,96,10.4
+2024-06-25,Retargeting (Display/Meta),268.75,24473,104,10.3
+2024-06-26,Retargeting (Display/Meta),268.75,21220,151,12.2
+2024-06-27,Retargeting (Display/Meta),268.75,24714,111,11.7
+2024-06-28,Retargeting (Display/Meta),268.75,20463,160,11.5
+2024-06-29,Retargeting (Display/Meta),188.13,13301,66,7.6
+2024-06-30,Retargeting (Display/Meta),188.13,14376,90,8.0
+2024-07-01,Retargeting (Display/Meta),298.48,29433,140,13.5
+2024-07-02,Retargeting (Display/Meta),298.48,32311,160,11.7
+2024-07-03,Retargeting (Display/Meta),298.48,31741,122,13.6
+2024-07-04,Retargeting (Display/Meta),298.48,23541,165,12.0
+2024-07-05,Retargeting (Display/Meta),298.48,31307,107,11.1
+2024-07-06,Retargeting (Display/Meta),208.94,21191,101,7.2
+2024-07-07,Retargeting (Display/Meta),208.94,15065,123,7.5
+2024-07-08,Retargeting (Display/Meta),200.83,17069,112,8.1
+2024-07-09,Retargeting (Display/Meta),200.83,17800,104,10.6
+2024-07-10,Retargeting (Display/Meta),200.83,14808,114,8.4
+2024-07-11,Retargeting (Display/Meta),200.83,18189,75,9.2
+2024-07-12,Retargeting (Display/Meta),200.83,21806,103,8.7
+2024-07-13,Retargeting (Display/Meta),140.58,12411,82,5.7
+2024-07-14,Retargeting (Display/Meta),140.58,14798,71,7.4
+2024-07-15,Retargeting (Display/Meta),442.44,47243,166,13.3
+2024-07-16,Retargeting (Display/Meta),442.44,41944,254,11.7
+2024-07-17,Retargeting (Display/Meta),442.44,46104,251,15.0
+2024-07-18,Retargeting (Display/Meta),442.44,32665,228,14.4
+2024-07-19,Retargeting (Display/Meta),442.44,47070,217,15.5
+2024-07-20,Retargeting (Display/Meta),309.71,21875,127,8.2
+2024-07-21,Retargeting (Display/Meta),309.71,30864,121,9.3
+2024-07-22,Retargeting (Display/Meta),419.76,43534,222,12.0
+2024-07-23,Retargeting (Display/Meta),419.76,42620,162,11.0
+2024-07-24,Retargeting (Display/Meta),419.76,34924,161,12.3
+2024-07-25,Retargeting (Display/Meta),419.76,34367,156,12.3
+2024-07-26,Retargeting (Display/Meta),419.76,36582,222,11.1
+2024-07-27,Retargeting (Display/Meta),293.83,26676,114,8.3
+2024-07-28,Retargeting (Display/Meta),293.83,23334,124,9.9
+2024-07-29,Retargeting (Display/Meta),208.45,18273,121,8.5
+2024-07-30,Retargeting (Display/Meta),208.45,16685,82,9.3
+2024-07-31,Retargeting (Display/Meta),208.45,20694,100,9.5
+2024-08-01,Retargeting (Display/Meta),208.45,15330,112,9.2
+2024-08-02,Retargeting (Display/Meta),208.45,22509,111,9.4
+2024-08-03,Retargeting (Display/Meta),145.91,10934,66,7.2
+2024-08-04,Retargeting (Display/Meta),145.91,15400,81,7.2
+2024-08-05,Retargeting (Display/Meta),275.03,26084,134,10.5
+2024-08-06,Retargeting (Display/Meta),275.03,28938,132,11.7
+2024-08-07,Retargeting (Display/Meta),275.03,22204,153,9.4
+2024-08-08,Retargeting (Display/Meta),275.03,21049,147,9.9
+2024-08-09,Retargeting (Display/Meta),275.03,29245,152,11.7
+2024-08-10,Retargeting (Display/Meta),192.52,15433,112,6.3
+2024-08-11,Retargeting (Display/Meta),192.52,19286,74,6.2
+2024-08-12,Retargeting (Display/Meta),194.27,17643,74,10.0
+2024-08-13,Retargeting (Display/Meta),194.27,16399,77,8.5
+2024-08-14,Retargeting (Display/Meta),194.27,17057,89,10.2
+2024-08-15,Retargeting (Display/Meta),194.27,20065,114,9.0
+2024-08-16,Retargeting (Display/Meta),194.27,15100,69,8.2
+2024-08-17,Retargeting (Display/Meta),135.99,13691,55,6.9
+2024-08-18,Retargeting (Display/Meta),135.99,14263,71,7.0
+2024-08-19,Retargeting (Display/Meta),273.27,29643,100,10.0
+2024-08-20,Retargeting (Display/Meta),273.27,28642,110,11.0
+2024-08-21,Retargeting (Display/Meta),273.27,24694,120,11.7
+2024-08-22,Retargeting (Display/Meta),273.27,28273,142,9.1
+2024-08-23,Retargeting (Display/Meta),273.27,23899,100,9.1
+2024-08-24,Retargeting (Display/Meta),191.29,17573,103,8.1
+2024-08-25,Retargeting (Display/Meta),191.29,18872,96,6.2
+2024-08-26,Retargeting (Display/Meta),181.35,19010,106,7.3
+2024-08-27,Retargeting (Display/Meta),181.35,16068,88,7.4
+2024-08-28,Retargeting (Display/Meta),181.35,18249,71,8.5
+2024-08-29,Retargeting (Display/Meta),181.35,13108,108,9.1
+2024-08-30,Retargeting (Display/Meta),181.35,13349,64,8.5
+2024-08-31,Retargeting (Display/Meta),126.94,9946,65,6.1
+2024-09-01,Retargeting (Display/Meta),126.94,13339,66,6.0
+2024-09-02,Retargeting (Display/Meta),217.81,19243,93,8.6
+2024-09-03,Retargeting (Display/Meta),217.81,21275,95,9.2
+2024-09-04,Retargeting (Display/Meta),217.81,21978,99,9.7
+2024-09-05,Retargeting (Display/Meta),217.81,22631,80,9.6
+2024-09-06,Retargeting (Display/Meta),217.81,21567,78,10.1
+2024-09-07,Retargeting (Display/Meta),152.47,11884,61,6.0
+2024-09-08,Retargeting (Display/Meta),152.47,10991,91,5.9
+2024-09-09,Retargeting (Display/Meta),393.51,43135,203,12.8
+2024-09-10,Retargeting (Display/Meta),393.51,38394,203,11.2
+2024-09-11,Retargeting (Display/Meta),393.51,43282,206,11.4
+2024-09-12,Retargeting (Display/Meta),393.51,41169,204,10.8
+2024-09-13,Retargeting (Display/Meta),393.51,41642,175,10.8
+2024-09-14,Retargeting (Display/Meta),275.46,21186,123,7.0
+2024-09-15,Retargeting (Display/Meta),275.46,28144,120,8.7
+2024-09-16,Retargeting (Display/Meta),299.24,30342,115,8.6
+2024-09-17,Retargeting (Display/Meta),299.24,27045,109,8.2
+2024-09-18,Retargeting (Display/Meta),299.24,28219,171,8.9
+2024-09-19,Retargeting (Display/Meta),299.24,24605,125,9.5
+2024-09-20,Retargeting (Display/Meta),299.24,24346,105,10.2
+2024-09-21,Retargeting (Display/Meta),209.47,16305,85,7.4
+2024-09-22,Retargeting (Display/Meta),209.47,15254,88,5.8
+2024-09-23,Retargeting (Display/Meta),206.98,20754,111,7.1
+2024-09-24,Retargeting (Display/Meta),206.98,16357,123,7.4
+2024-09-25,Retargeting (Display/Meta),206.98,19257,106,7.1
+2024-09-26,Retargeting (Display/Meta),206.98,22206,97,8.4
+2024-09-27,Retargeting (Display/Meta),206.98,22373,118,7.3
+2024-09-28,Retargeting (Display/Meta),144.89,11397,78,5.9
+2024-09-29,Retargeting (Display/Meta),144.89,11954,78,6.0
+2024-09-30,Retargeting (Display/Meta),336.47,25423,198,9.4
+2024-10-01,Retargeting (Display/Meta),336.47,28056,168,10.1
+2024-10-02,Retargeting (Display/Meta),336.47,29010,124,10.7
+2024-10-03,Retargeting (Display/Meta),336.47,24453,140,8.8
+2024-10-04,Retargeting (Display/Meta),336.47,32823,149,8.7
+2024-10-05,Retargeting (Display/Meta),235.53,21178,85,6.1
+2024-10-06,Retargeting (Display/Meta),235.53,23424,99,6.6
+2024-10-07,Retargeting (Display/Meta),313.18,26418,127,9.7
+2024-10-08,Retargeting (Display/Meta),313.18,24458,157,8.6
+2024-10-09,Retargeting (Display/Meta),313.18,31664,124,7.7
+2024-10-10,Retargeting (Display/Meta),313.18,22955,162,9.4
+2024-10-11,Retargeting (Display/Meta),313.18,23337,160,9.1
+2024-10-12,Retargeting (Display/Meta),219.23,22425,126,5.6
+2024-10-13,Retargeting (Display/Meta),219.23,18895,118,6.4
+2024-10-14,Retargeting (Display/Meta),211.63,17176,89,8.3
+2024-10-15,Retargeting (Display/Meta),211.63,15036,109,7.8
+2024-10-16,Retargeting (Display/Meta),211.63,19976,100,7.2
+2024-10-17,Retargeting (Display/Meta),211.63,19170,94,7.0
+2024-10-18,Retargeting (Display/Meta),211.63,22843,115,6.6
+2024-10-19,Retargeting (Display/Meta),148.14,12937,69,4.7
+2024-10-20,Retargeting (Display/Meta),148.14,13814,77,4.5
+2024-10-21,Retargeting (Display/Meta),306.56,32192,157,9.3
+2024-10-22,Retargeting (Display/Meta),306.56,27644,151,9.1
+2024-10-23,Retargeting (Display/Meta),306.56,32957,158,8.8
+2024-10-24,Retargeting (Display/Meta),306.56,32212,181,7.1
+2024-10-25,Retargeting (Display/Meta),306.56,32463,141,8.4
+2024-10-26,Retargeting (Display/Meta),214.6,23051,123,6.0
+2024-10-27,Retargeting (Display/Meta),214.6,21596,78,5.2
+2024-10-28,Retargeting (Display/Meta),253.31,20180,88,7.9
+2024-10-29,Retargeting (Display/Meta),253.31,18870,92,7.2
+2024-10-30,Retargeting (Display/Meta),253.31,20954,94,8.3
+2024-10-31,Retargeting (Display/Meta),253.31,21950,134,8.2
+2024-11-01,Retargeting (Display/Meta),253.31,20779,97,7.0
+2024-11-02,Retargeting (Display/Meta),177.32,18828,78,4.9
+2024-11-03,Retargeting (Display/Meta),177.32,16478,72,5.4
+2024-11-04,Retargeting (Display/Meta),320.16,22870,149,8.9
+2024-11-05,Retargeting (Display/Meta),320.16,22705,140,8.7
+2024-11-06,Retargeting (Display/Meta),320.16,30177,173,9.7
+2024-11-07,Retargeting (Display/Meta),320.16,22504,142,8.2
+2024-11-08,Retargeting (Display/Meta),320.16,32388,137,8.7
+2024-11-09,Retargeting (Display/Meta),224.11,15862,125,6.2
+2024-11-10,Retargeting (Display/Meta),224.11,17858,96,7.2
+2024-11-11,Retargeting (Display/Meta),258.45,18961,91,7.9
+2024-11-12,Retargeting (Display/Meta),258.45,20865,128,8.8
+2024-11-13,Retargeting (Display/Meta),258.45,26060,97,8.8
+2024-11-14,Retargeting (Display/Meta),258.45,22861,93,8.7
+2024-11-15,Retargeting (Display/Meta),258.45,27000,143,7.9
+2024-11-16,Retargeting (Display/Meta),180.91,15572,66,5.9
+2024-11-17,Retargeting (Display/Meta),180.91,13119,94,5.1
+2024-11-18,Retargeting (Display/Meta),339.49,30061,170,8.4
+2024-11-19,Retargeting (Display/Meta),339.49,30199,123,8.6
+2024-11-20,Retargeting (Display/Meta),339.49,32702,120,7.9
+2024-11-21,Retargeting (Display/Meta),339.49,32799,181,9.6
+2024-11-22,Retargeting (Display/Meta),339.49,31392,175,7.6
+2024-11-23,Retargeting (Display/Meta),237.64,20760,139,6.3
+2024-11-24,Retargeting (Display/Meta),237.64,18549,140,6.2
+2024-11-25,Retargeting (Display/Meta),279.79,28160,112,7.9
+2024-11-26,Retargeting (Display/Meta),279.79,25212,141,8.0
+2024-11-27,Retargeting (Display/Meta),279.79,26760,163,7.8
+2024-11-28,Retargeting (Display/Meta),279.79,25235,152,8.5
+2024-11-29,Retargeting (Display/Meta),279.79,28869,137,6.7
+2024-11-30,Retargeting (Display/Meta),195.85,19399,87,5.0
+2024-12-01,Retargeting (Display/Meta),195.85,20575,116,5.6
+2024-12-02,Retargeting (Display/Meta),291.07,30594,109,8.1
+2024-12-03,Retargeting (Display/Meta),291.07,25924,139,8.7
+2024-12-04,Retargeting (Display/Meta),291.07,28952,152,7.3
+2024-12-05,Retargeting (Display/Meta),291.07,23978,143,7.3
+2024-12-06,Retargeting (Display/Meta),291.07,27684,105,7.4
+2024-12-07,Retargeting (Display/Meta),203.75,17265,80,6.4
+2024-12-08,Retargeting (Display/Meta),203.75,20959,99,5.1
+2024-12-09,Retargeting (Display/Meta),314.02,21995,110,8.9
+2024-12-10,Retargeting (Display/Meta),314.02,29124,111,7.6
+2024-12-11,Retargeting (Display/Meta),314.02,31401,135,8.2
+2024-12-12,Retargeting (Display/Meta),314.02,34403,162,9.1
+2024-12-13,Retargeting (Display/Meta),314.02,33147,122,8.2
+2024-12-14,Retargeting (Display/Meta),219.81,15750,131,6.3
+2024-12-15,Retargeting (Display/Meta),219.81,18489,102,6.3
+2024-12-16,Retargeting (Display/Meta),323.84,32263,174,7.9
+2024-12-17,Retargeting (Display/Meta),323.84,23389,138,7.9
+2024-12-18,Retargeting (Display/Meta),323.84,27088,129,9.7
+2024-12-19,Retargeting (Display/Meta),323.84,33898,123,7.6
+2024-12-20,Retargeting (Display/Meta),323.84,27362,177,9.4
+2024-12-21,Retargeting (Display/Meta),226.69,17413,81,5.5
+2024-12-22,Retargeting (Display/Meta),226.69,20607,114,6.0
+2024-12-23,Retargeting (Display/Meta),245.02,17413,120,7.4
+2024-12-24,Retargeting (Display/Meta),245.02,25850,140,6.1
+2024-12-25,Retargeting (Display/Meta),245.02,24188,146,7.9
+2024-12-26,Retargeting (Display/Meta),245.02,26595,91,7.1
+2024-12-27,Retargeting (Display/Meta),245.02,21587,132,7.5
+2024-12-28,Retargeting (Display/Meta),171.52,12126,97,4.9
+2024-12-29,Retargeting (Display/Meta),171.52,16964,73,5.3
+2024-12-30,Retargeting (Display/Meta),259.44,24160,140,7.7
+2024-12-31,Retargeting (Display/Meta),259.44,19112,132,7.8
+2025-01-01,Retargeting (Display/Meta),259.44,21002,105,8.3
+2025-01-02,Retargeting (Display/Meta),259.44,19419,148,7.4
+2025-01-03,Retargeting (Display/Meta),259.44,20815,127,8.8
+2025-01-04,Retargeting (Display/Meta),181.6,16150,73,5.4
+2025-01-05,Retargeting (Display/Meta),181.6,19633,66,5.7
+2025-01-06,Retargeting (Display/Meta),488.44,51085,202,10.5
+2025-01-07,Retargeting (Display/Meta),488.44,40395,231,9.7
+2025-01-08,Retargeting (Display/Meta),488.44,45943,215,11.3
+2025-01-09,Retargeting (Display/Meta),488.44,46047,173,11.0
+2025-01-10,Retargeting (Display/Meta),488.44,47170,212,11.4
+2025-01-11,Retargeting (Display/Meta),341.91,32371,186,7.0
+2025-01-12,Retargeting (Display/Meta),341.91,27448,120,7.8
+2025-01-13,Retargeting (Display/Meta),310.65,31137,110,9.4
+2025-01-14,Retargeting (Display/Meta),310.65,23311,156,7.7
+2025-01-15,Retargeting (Display/Meta),310.65,24203,113,9.2
+2025-01-16,Retargeting (Display/Meta),310.65,25211,137,9.4
+2025-01-17,Retargeting (Display/Meta),310.65,25176,178,8.1
+2025-01-18,Retargeting (Display/Meta),217.45,16668,79,7.1
+2025-01-19,Retargeting (Display/Meta),217.45,20998,124,6.8
+2025-01-20,Retargeting (Display/Meta),374.65,28600,179,10.5
+2025-01-21,Retargeting (Display/Meta),374.65,37845,144,10.4
+2025-01-22,Retargeting (Display/Meta),374.65,28340,221,11.4
+2025-01-23,Retargeting (Display/Meta),374.65,37152,174,8.9
+2025-01-24,Retargeting (Display/Meta),374.65,37751,188,9.6
+2025-01-25,Retargeting (Display/Meta),262.25,18870,147,8.0
+2025-01-26,Retargeting (Display/Meta),262.25,21652,110,7.9
+2025-01-27,Retargeting (Display/Meta),289.25,22094,104,7.5
+2025-01-28,Retargeting (Display/Meta),289.25,27758,104,8.4
+2025-01-29,Retargeting (Display/Meta),289.25,24170,153,9.8
+2025-01-30,Retargeting (Display/Meta),289.25,30329,112,9.9
+2025-01-31,Retargeting (Display/Meta),289.25,23870,130,7.5
+2025-02-01,Retargeting (Display/Meta),202.47,17269,111,5.5
+2025-02-02,Retargeting (Display/Meta),202.47,20954,98,5.9
+2025-02-03,Retargeting (Display/Meta),163.07,17481,63,10.5
+2025-02-04,Retargeting (Display/Meta),163.07,14897,80,8.6
+2025-02-05,Retargeting (Display/Meta),163.07,14407,90,10.5
+2025-02-06,Retargeting (Display/Meta),163.07,17832,60,9.4
+2025-02-07,Retargeting (Display/Meta),163.07,12138,61,10.8
+2025-02-08,Retargeting (Display/Meta),114.15,10317,48,7.8
+2025-02-09,Retargeting (Display/Meta),114.15,9821,66,7.5
+2025-02-10,Retargeting (Display/Meta),195.68,13789,82,11.9
+2025-02-11,Retargeting (Display/Meta),195.68,13778,79,11.9
+2025-02-12,Retargeting (Display/Meta),195.68,15429,71,12.4
+2025-02-13,Retargeting (Display/Meta),195.68,20883,97,10.8
+2025-02-14,Retargeting (Display/Meta),195.68,15593,94,11.5
+2025-02-15,Retargeting (Display/Meta),136.98,13288,61,7.6
+2025-02-16,Retargeting (Display/Meta),136.98,11024,52,8.4
+2025-02-17,Retargeting (Display/Meta),176.14,13401,91,10.9
+2025-02-18,Retargeting (Display/Meta),176.14,15351,91,12.0
+2025-02-19,Retargeting (Display/Meta),176.14,15985,81,11.5
+2025-02-20,Retargeting (Display/Meta),176.14,12770,76,10.2
+2025-02-21,Retargeting (Display/Meta),176.14,14193,90,9.8
+2025-02-22,Retargeting (Display/Meta),123.3,9577,66,7.6
+2025-02-23,Retargeting (Display/Meta),123.3,13483,49,8.1
+2025-02-24,Retargeting (Display/Meta),149.1,15947,68,10.1
+2025-02-25,Retargeting (Display/Meta),149.1,11645,52,10.7
+2025-02-26,Retargeting (Display/Meta),149.1,12348,88,10.0
+2025-02-27,Retargeting (Display/Meta),149.1,13760,77,9.8
+2025-02-28,Retargeting (Display/Meta),149.1,10590,79,9.6
+2025-03-01,Retargeting (Display/Meta),104.37,9149,61,6.4
+2025-03-02,Retargeting (Display/Meta),104.37,9498,40,7.2
+2025-03-03,Retargeting (Display/Meta),134.05,11117,66,11.2
+2025-03-04,Retargeting (Display/Meta),134.05,9465,48,9.6
+2025-03-05,Retargeting (Display/Meta),134.05,10496,69,11.9
+2025-03-06,Retargeting (Display/Meta),134.05,14039,72,11.8
+2025-03-07,Retargeting (Display/Meta),134.05,14018,74,11.1
+2025-03-08,Retargeting (Display/Meta),93.83,7897,37,7.9
+2025-03-09,Retargeting (Display/Meta),93.83,6832,38,7.6
+2025-03-10,Retargeting (Display/Meta),123.21,13331,70,9.8
+2025-03-11,Retargeting (Display/Meta),123.21,10583,69,9.5
+2025-03-12,Retargeting (Display/Meta),123.21,8703,61,8.7
+2025-03-13,Retargeting (Display/Meta),123.21,10034,48,10.5
+2025-03-14,Retargeting (Display/Meta),123.21,11729,61,10.8
+2025-03-15,Retargeting (Display/Meta),86.25,7030,48,7.2
+2025-03-16,Retargeting (Display/Meta),86.25,6833,36,7.6
+2025-03-17,Retargeting (Display/Meta),133.64,10970,58,11.3
+2025-03-18,Retargeting (Display/Meta),133.64,9489,72,9.8
+2025-03-19,Retargeting (Display/Meta),133.64,12234,48,8.8
+2025-03-20,Retargeting (Display/Meta),133.64,12216,51,9.9
+2025-03-21,Retargeting (Display/Meta),133.64,9939,78,10.0
+2025-03-22,Retargeting (Display/Meta),93.55,8748,43,6.8
+2025-03-23,Retargeting (Display/Meta),93.55,6798,49,7.4
+2025-03-24,Retargeting (Display/Meta),130.67,9899,72,10.0
+2025-03-25,Retargeting (Display/Meta),130.67,10996,72,9.4
+2025-03-26,Retargeting (Display/Meta),130.67,10543,49,10.3
+2025-03-27,Retargeting (Display/Meta),130.67,10037,74,11.7
+2025-03-28,Retargeting (Display/Meta),130.67,14095,66,10.4
+2025-03-29,Retargeting (Display/Meta),91.47,9273,39,7.6
+2025-03-30,Retargeting (Display/Meta),91.47,6560,40,6.1
+2025-03-31,Retargeting (Display/Meta),117.7,10197,49,10.4
+2025-04-01,Retargeting (Display/Meta),117.7,10489,66,9.5
+2025-04-02,Retargeting (Display/Meta),117.7,8894,56,11.1
+2025-04-03,Retargeting (Display/Meta),117.7,11660,43,9.2
+2025-04-04,Retargeting (Display/Meta),117.7,12496,66,10.0
+2025-04-05,Retargeting (Display/Meta),82.39,6012,29,5.8
+2025-04-06,Retargeting (Display/Meta),82.39,8308,41,5.9
+2025-04-07,Retargeting (Display/Meta),144.1,11274,57,11.9
+2025-04-08,Retargeting (Display/Meta),144.1,14850,79,12.1
+2025-04-09,Retargeting (Display/Meta),144.1,14828,84,11.8
+2025-04-10,Retargeting (Display/Meta),144.1,13372,70,10.9
+2025-04-11,Retargeting (Display/Meta),144.1,12902,78,12.8
+2025-04-12,Retargeting (Display/Meta),100.87,8287,43,7.7
+2025-04-13,Retargeting (Display/Meta),100.87,9967,56,7.4
+2025-04-14,Retargeting (Display/Meta),113.78,12241,49,8.9
+2025-04-15,Retargeting (Display/Meta),113.78,8113,57,11.3
+2025-04-16,Retargeting (Display/Meta),113.78,7979,48,9.2
+2025-04-17,Retargeting (Display/Meta),113.78,8859,59,11.4
+2025-04-18,Retargeting (Display/Meta),113.78,8177,52,9.5
+2025-04-19,Retargeting (Display/Meta),79.65,5941,29,8.1
+2025-04-20,Retargeting (Display/Meta),79.65,8351,34,6.2
+2025-04-21,Retargeting (Display/Meta),121.98,11234,55,9.8
+2025-04-22,Retargeting (Display/Meta),121.98,8804,59,11.9
+2025-04-23,Retargeting (Display/Meta),121.98,10484,48,10.7
+2025-04-24,Retargeting (Display/Meta),121.98,13282,67,9.2
+2025-04-25,Retargeting (Display/Meta),121.98,12820,68,10.6
+2025-04-26,Retargeting (Display/Meta),85.39,9037,45,7.1
+2025-04-27,Retargeting (Display/Meta),85.39,8731,49,7.5
+2025-04-28,Retargeting (Display/Meta),455.54,33830,163,13.6
+2025-04-29,Retargeting (Display/Meta),455.54,39941,166,15.1
+2025-04-30,Retargeting (Display/Meta),455.54,35822,210,12.6
+2025-05-01,Retargeting (Display/Meta),455.54,35043,239,13.8
+2025-05-02,Retargeting (Display/Meta),455.54,39455,248,13.0
+2025-05-03,Retargeting (Display/Meta),318.88,24606,164,10.8
+2025-05-04,Retargeting (Display/Meta),318.88,30073,172,9.7
+2025-05-05,Retargeting (Display/Meta),240.49,17427,97,10.2
+2025-05-06,Retargeting (Display/Meta),240.49,25976,135,9.9
+2025-05-07,Retargeting (Display/Meta),240.49,24668,86,9.7
+2025-05-08,Retargeting (Display/Meta),240.49,19393,90,10.6
+2025-05-09,Retargeting (Display/Meta),240.49,23305,87,10.8
+2025-05-10,Retargeting (Display/Meta),168.34,13452,86,7.3
+2025-05-11,Retargeting (Display/Meta),168.34,15785,84,6.7
+2025-05-12,Retargeting (Display/Meta),409.17,42553,197,15.7
+2025-05-13,Retargeting (Display/Meta),409.17,37730,186,15.1
+2025-05-14,Retargeting (Display/Meta),409.17,28698,183,15.9
+2025-05-15,Retargeting (Display/Meta),409.17,29558,236,12.5
+2025-05-16,Retargeting (Display/Meta),409.17,38369,190,14.9
+2025-05-17,Retargeting (Display/Meta),286.42,26261,104,9.8
+2025-05-18,Retargeting (Display/Meta),286.42,26640,147,9.8
+2025-05-19,Retargeting (Display/Meta),298.91,24175,139,12.9
+2025-05-20,Retargeting (Display/Meta),298.91,24422,162,10.2
+2025-05-21,Retargeting (Display/Meta),298.91,25592,139,11.5
+2025-05-22,Retargeting (Display/Meta),298.91,24698,161,13.0
+2025-05-23,Retargeting (Display/Meta),298.91,31627,158,12.8
+2025-05-24,Retargeting (Display/Meta),209.24,22370,77,8.7
+2025-05-25,Retargeting (Display/Meta),209.24,17048,87,7.6
+2025-05-26,Retargeting (Display/Meta),369.43,35156,165,13.2
+2025-05-27,Retargeting (Display/Meta),369.43,38933,191,13.0
+2025-05-28,Retargeting (Display/Meta),369.43,31131,201,14.0
+2025-05-29,Retargeting (Display/Meta),369.43,34128,164,14.1
+2025-05-30,Retargeting (Display/Meta),369.43,28189,162,13.6
+2025-05-31,Retargeting (Display/Meta),258.6,24690,119,8.1
+2025-06-01,Retargeting (Display/Meta),258.6,27283,94,9.4
+2025-06-02,Retargeting (Display/Meta),265.47,24886,107,11.1
+2025-06-03,Retargeting (Display/Meta),265.47,28225,157,11.8
+2025-06-04,Retargeting (Display/Meta),265.47,26567,101,11.7
+2025-06-05,Retargeting (Display/Meta),265.47,20586,136,11.3
+2025-06-06,Retargeting (Display/Meta),265.47,18994,115,10.1
+2025-06-07,Retargeting (Display/Meta),185.83,13785,95,9.3
+2025-06-08,Retargeting (Display/Meta),185.83,18425,88,8.6
+2025-06-09,Retargeting (Display/Meta),230.91,18701,136,11.8
+2025-06-10,Retargeting (Display/Meta),230.91,21719,138,9.1
+2025-06-11,Retargeting (Display/Meta),230.91,20752,118,11.7
+2025-06-12,Retargeting (Display/Meta),230.91,17122,138,8.8
+2025-06-13,Retargeting (Display/Meta),230.91,17998,112,10.5
+2025-06-14,Retargeting (Display/Meta),161.63,16600,83,6.2
+2025-06-15,Retargeting (Display/Meta),161.63,16249,86,7.5
+2025-06-16,Retargeting (Display/Meta),223.05,17484,110,11.9
+2025-06-17,Retargeting (Display/Meta),223.05,19451,131,9.6
+2025-06-18,Retargeting (Display/Meta),223.05,21738,132,11.5
+2025-06-19,Retargeting (Display/Meta),223.05,19855,92,9.4
+2025-06-20,Retargeting (Display/Meta),223.05,23228,115,9.9
+2025-06-21,Retargeting (Display/Meta),156.13,11824,55,8.3
+2025-06-22,Retargeting (Display/Meta),156.13,14680,65,7.0
+2025-06-23,Retargeting (Display/Meta),277.25,22607,125,9.9
+2025-06-24,Retargeting (Display/Meta),277.25,27194,162,9.9
+2025-06-25,Retargeting (Display/Meta),277.25,19778,163,11.3
+2025-06-26,Retargeting (Display/Meta),277.25,29653,129,10.5
+2025-06-27,Retargeting (Display/Meta),277.25,26379,123,10.1
+2025-06-28,Retargeting (Display/Meta),194.07,19656,102,7.5
+2025-06-29,Retargeting (Display/Meta),194.07,18663,74,7.2
+2025-06-30,Retargeting (Display/Meta),264.86,25107,140,11.5
+2025-07-01,Retargeting (Display/Meta),264.86,27753,102,12.2
+2025-07-02,Retargeting (Display/Meta),264.86,28076,112,12.6
+2025-07-03,Retargeting (Display/Meta),264.86,26250,155,11.8
+2025-07-04,Retargeting (Display/Meta),264.86,18806,111,11.2
+2025-07-05,Retargeting (Display/Meta),185.4,16901,108,7.6
+2025-07-06,Retargeting (Display/Meta),185.4,16410,95,6.9
+2025-07-07,Retargeting (Display/Meta),262.52,24373,148,10.2
+2025-07-08,Retargeting (Display/Meta),262.52,23500,138,9.1
+2025-07-09,Retargeting (Display/Meta),262.52,28789,123,10.8
+2025-07-10,Retargeting (Display/Meta),262.52,28380,106,11.2
+2025-07-11,Retargeting (Display/Meta),262.52,25037,123,9.9
+2025-07-12,Retargeting (Display/Meta),183.77,13511,87,7.3
+2025-07-13,Retargeting (Display/Meta),183.77,15896,73,8.0
+2025-07-14,Retargeting (Display/Meta),165.88,13468,70,8.1
+2025-07-15,Retargeting (Display/Meta),165.88,17614,98,9.6
+2025-07-16,Retargeting (Display/Meta),165.88,15051,76,9.5
+2025-07-17,Retargeting (Display/Meta),165.88,11861,63,9.7
+2025-07-18,Retargeting (Display/Meta),165.88,15874,82,9.9
+2025-07-19,Retargeting (Display/Meta),116.12,8882,41,6.6
+2025-07-20,Retargeting (Display/Meta),116.12,10589,45,5.4
+2025-07-21,Retargeting (Display/Meta),177.65,17182,67,9.9
+2025-07-22,Retargeting (Display/Meta),177.65,18356,81,7.9
+2025-07-23,Retargeting (Display/Meta),177.65,15339,92,9.2
+2025-07-24,Retargeting (Display/Meta),177.65,12607,104,8.3
+2025-07-25,Retargeting (Display/Meta),177.65,13270,104,10.0
+2025-07-26,Retargeting (Display/Meta),124.35,10554,47,5.7
+2025-07-27,Retargeting (Display/Meta),124.35,13138,56,5.9
+2025-07-28,Retargeting (Display/Meta),242.97,23419,127,8.6
+2025-07-29,Retargeting (Display/Meta),242.97,22840,119,9.1
+2025-07-30,Retargeting (Display/Meta),242.97,23672,137,8.1
+2025-07-31,Retargeting (Display/Meta),242.97,26525,122,8.3
+2025-08-01,Retargeting (Display/Meta),242.97,18219,101,10.8
+2025-08-02,Retargeting (Display/Meta),170.08,14128,99,5.8
+2025-08-03,Retargeting (Display/Meta),170.08,14241,67,5.9
+2025-08-04,Retargeting (Display/Meta),234.31,24884,115,8.9
+2025-08-05,Retargeting (Display/Meta),234.31,22824,123,8.9
+2025-08-06,Retargeting (Display/Meta),234.31,19805,82,8.6
+2025-08-07,Retargeting (Display/Meta),234.31,25399,89,8.2
+2025-08-08,Retargeting (Display/Meta),234.31,21415,118,9.2
+2025-08-09,Retargeting (Display/Meta),164.02,11882,95,6.0
+2025-08-10,Retargeting (Display/Meta),164.02,14367,94,5.8
+2025-08-11,Retargeting (Display/Meta),292.24,22551,147,10.9
+2025-08-12,Retargeting (Display/Meta),292.24,21736,152,11.9
+2025-08-13,Retargeting (Display/Meta),292.24,29139,144,12.0
+2025-08-14,Retargeting (Display/Meta),292.24,25904,126,8.9
+2025-08-15,Retargeting (Display/Meta),292.24,27225,106,11.1
+2025-08-16,Retargeting (Display/Meta),204.57,17937,120,6.8
+2025-08-17,Retargeting (Display/Meta),204.57,20264,99,6.4
+2025-08-18,Retargeting (Display/Meta),335.11,30076,181,12.8
+2025-08-19,Retargeting (Display/Meta),335.11,35015,176,13.0
+2025-08-20,Retargeting (Display/Meta),335.11,26878,184,10.7
+2025-08-21,Retargeting (Display/Meta),335.11,26084,152,9.9
+2025-08-22,Retargeting (Display/Meta),335.11,25374,142,11.0
+2025-08-23,Retargeting (Display/Meta),234.58,20192,92,7.2
+2025-08-24,Retargeting (Display/Meta),234.58,16655,113,8.6
+2025-08-25,Retargeting (Display/Meta),311.83,27621,145,11.4
+2025-08-26,Retargeting (Display/Meta),311.83,24506,157,9.2
+2025-08-27,Retargeting (Display/Meta),311.83,27496,112,10.8
+2025-08-28,Retargeting (Display/Meta),311.83,25297,169,9.1
+2025-08-29,Retargeting (Display/Meta),311.83,32063,152,9.7
+2025-08-30,Retargeting (Display/Meta),218.28,22561,83,7.9
+2025-08-31,Retargeting (Display/Meta),218.28,21908,126,7.9
+2025-09-01,Retargeting (Display/Meta),270.35,29330,132,11.2
+2025-09-02,Retargeting (Display/Meta),270.35,20265,156,9.2
+2025-09-03,Retargeting (Display/Meta),270.35,27934,139,10.9
+2025-09-04,Retargeting (Display/Meta),270.35,25126,128,11.1
+2025-09-05,Retargeting (Display/Meta),270.35,29568,96,8.9
+2025-09-06,Retargeting (Display/Meta),189.24,15741,93,7.1
+2025-09-07,Retargeting (Display/Meta),189.24,15048,103,6.4
+2025-09-08,Retargeting (Display/Meta),282.13,21282,165,9.3
+2025-09-09,Retargeting (Display/Meta),282.13,22685,142,9.5
+2025-09-10,Retargeting (Display/Meta),282.13,21543,103,7.8
+2025-09-11,Retargeting (Display/Meta),282.13,23581,143,8.0
+2025-09-12,Retargeting (Display/Meta),282.13,20375,148,8.3
+2025-09-13,Retargeting (Display/Meta),197.49,21132,116,6.4
+2025-09-14,Retargeting (Display/Meta),197.49,18614,99,6.1
+2025-09-15,Retargeting (Display/Meta),374.36,26747,198,8.9
+2025-09-16,Retargeting (Display/Meta),374.36,34639,166,9.8
+2025-09-17,Retargeting (Display/Meta),374.36,27228,166,9.2
+2025-09-18,Retargeting (Display/Meta),374.36,39095,158,10.3
+2025-09-19,Retargeting (Display/Meta),374.36,28825,136,10.6
+2025-09-20,Retargeting (Display/Meta),262.05,28284,154,6.4
+2025-09-21,Retargeting (Display/Meta),262.05,25719,94,7.5
+2025-09-22,Retargeting (Display/Meta),207.56,17264,102,6.6
+2025-09-23,Retargeting (Display/Meta),207.56,18506,100,8.1
+2025-09-24,Retargeting (Display/Meta),207.56,18450,102,6.4
+2025-09-25,Retargeting (Display/Meta),207.56,18101,85,7.9
+2025-09-26,Retargeting (Display/Meta),207.56,15953,95,7.2
+2025-09-27,Retargeting (Display/Meta),145.29,14237,76,4.4
+2025-09-28,Retargeting (Display/Meta),145.29,14743,57,4.6
