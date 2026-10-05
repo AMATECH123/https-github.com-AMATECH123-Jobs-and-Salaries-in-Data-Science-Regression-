@@ -1,0 +1,7 @@
+# Calloway AP / ERP change log (informal)
+2024-01-02 | AP | New procure-to-pay controls effective (see delegation of authority)
+2024-06-14 | IT | Treasury payment export now writes dates as MM/DD/YYYY
+2025-03-01 | ERP | Migration cut-over. About a third of vendors re-keyed from V##### to VN-######; invoices re-entered from the old system carry the vendor's own number in whatever format was typed
+2025-03-01 | ERP | Treasury export unchanged; bank accounts are typed in several formats
+2025-04-22 | AP | Finance asked AP to clean up duplicate vendor records after the migration
+2025-07-30 | HR | HR extract refreshed; payroll accounts exported separately
