@@ -275,7 +275,7 @@ def main():
                   f"route, gives {net:+d}.", body),
         Paragraph('How the certified figures were built', h),
         Paragraph("The archive index assigns the feed published 21 August 2026 to every date from 21 August onward, so both "
-                  "comparison days come from that feed, and the Summer day was re-run on the feed published 12 August with "
+                  "comparison days come from that feed, and the Summer day was rerun on the feed published 12 August with "
                   "an identical result. The Summer day is Wednesday 2 September 2026 and the Fall day is Wednesday 23 "
                   "September 2026, both Monday to Thursday school days on which every active service is flagged typical. "
                   "Trips were taken from the services active on each date rather than from the rating label on the service, "
