@@ -1,0 +1,13 @@
+connector,make,zapier,n8n
+crm_core,Y,Y,Y
+ledger_sync,Y,Y,N
+sms_gateway,N,Y,Y
+esign,Y,Y,Y
+helpdesk,Y,Y,Y
+ecom_orders,Y,Y,N
+calendar_booking,Y,N,Y
+forms,Y,Y,Y
+warehouse_api,Y,N,Y
+ai_extract,Y,N,Y
+chat_ops,Y,Y,Y
+sheet_store,Y,Y,N

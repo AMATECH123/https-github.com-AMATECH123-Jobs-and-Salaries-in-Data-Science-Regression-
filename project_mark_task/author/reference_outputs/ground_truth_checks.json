@@ -1,0 +1,43 @@
+{
+ "total_runs": 593579,
+ "rows": 38360,
+ "runs_by_source_platform": {
+  "make": 272698,
+  "n8n": 48479,
+  "zapier": 272402
+ },
+ "internal_runs": 84051,
+ "migrated_workflows": [
+  "W003",
+  "W004",
+  "W009",
+  "W029",
+  "W035",
+  "W037",
+  "W053",
+  "W062",
+  "W071",
+  "W074",
+  "W080",
+  "W092",
+  "W105",
+  "W116"
+ ],
+ "migrated_runs": 64608,
+ "incident_zapier_2025-02-11_runs_all_zapier_source": 821,
+ "incident_make_2024-12-17_runs_make_source": 1133,
+ "feb2025_total": 41274,
+ "churned_client_runs": 64764,
+ "churned_workflows": 19,
+ "active_workflows": 101,
+ "current_platform_counts_all_workflows": {
+  "make": 49,
+  "zapier": 46,
+  "n8n": 25
+ },
+ "catalog_platform_counts_stale": {
+  "zapier": 57,
+  "make": 44,
+  "n8n": 19
+ }
+}

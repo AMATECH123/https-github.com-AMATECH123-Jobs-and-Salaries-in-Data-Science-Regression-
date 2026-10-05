@@ -1,0 +1,62 @@
+{
+ "results": {
+  "make": {
+   "plan_allowance": 250000,
+   "subscription_eur": 17687.999999999996,
+   "overage_eur": 9616.32,
+   "migration_hours": 418.0000000000001,
+   "migration_workflows": 56,
+   "migration_eur": 15048.000000000004,
+   "total_eur": 42352.32,
+   "peak_month_units": 464359.0,
+   "annual_units": 4377422.0
+  },
+  "zapier": {
+   "plan_allowance": 200000,
+   "subscription_eur": 23487.544483985763,
+   "overage_eur": 1697.3420818505335,
+   "migration_hours": 381.72000000000014,
+   "migration_workflows": 66,
+   "migration_eur": 13741.920000000006,
+   "total_eur": 38926.806565836305,
+   "peak_month_units": 253903.0,
+   "annual_units": 2395546.0
+  },
+  "n8n": {
+   "plan_allowance": 100000,
+   "subscription_eur": 4680,
+   "overage_eur": 0.0,
+   "migration_hours": 1040.0000000000002,
+   "migration_workflows": 80,
+   "migration_eur": 37440.00000000001,
+   "total_eur": 42120.00000000001,
+   "peak_month_units": 56019.0,
+   "annual_units": 528815.0
+  }
+ },
+ "eurusd": 1.124,
+ "conformed_rows": 38360,
+ "conformed_total_runs": 593579,
+ "churned_clients": [
+  "CL-004",
+  "CL-010",
+  "CL-015",
+  "CL-022"
+ ],
+ "active_workflows": 101,
+ "trailing_runs_by_month": {
+  "2024-10": 53238,
+  "2024-11": 58120,
+  "2024-12": 66159,
+  "2025-01": 47626,
+  "2025-02": 41274,
+  "2025-03": 48548,
+  "2025-04": 49814,
+  "2025-05": 52763,
+  "2025-06": 45347,
+  "2025-07": 43033,
+  "2025-08": 39799,
+  "2025-09": 47858
+ },
+ "winner": "zapier"
+}
