@@ -1,57 +1,57 @@
-# MBTA Summer 2026 to Fall 2026 bus rating change: task design
+# MBTA Fall 2026 weekday bus requirement: task design (version 2)
 
 Domain: Transportation & Mobility
 Objective: Data Extraction & Conformation (ETL / Pipeline Build)
-Prompt shape: Bridge between two totals, carried by a conformed route register
-Status: built. Every figure below reproduces from inputs/ with golden/build_golden.py.
+Prompt shape: Profile across many periods (hourly buses in service), carried by a conformed trip to block register
+Status: built. Every figure reproduces from inputs/ with golden/build_golden.py.
+
+## Why version 2
+Version 1 certified the net trip change (+149) and the driving route. Two platform rollouts and one local dry run
+solved it in full: with the counting convention explicit, trip counting on clean GTFS is mechanical. Version 2
+keeps that work as supplementary and moves the certified figure to the unit that models get wrong: buses, not
+trips. The platform's trap record names "counts file rows instead of the real unit" as the most common decisive
+miss, and the real data makes it bite here.
 
 ## The decision
-Certify one figure for the net change in scheduled weekday bus trips between the Summer 2026 and Fall 2026
-ratings, counted on a typical school day weekday (Monday to Thursday) across MBTA bus routes, and name the
-route that drives it. Finance says +321 and Service Planning says +121. Both are honest numbers computed under
-their own conventions, and neither is the Board's figure.
+Certify the Fall 2026 weekday bus requirement: the most buses in service at one time on a typical school day
+weekday, Monday to Thursday, across MBTA bus routes, a bus counted from its first departure to its last arrival
+of its block. The Summer rating was certified at 615 (the control). Finance's draft says 521.
 
 ## The forced answer
 | Item | Value |
 |---|---|
-| Summer rating weekday bus trips (Wed 2 Sep 2026) | 12,893 |
-| Fall rating weekday bus trips (Wed 23 Sep 2026) | 13,042 |
-| Certified net change | +149 |
-| Driving route | Route 65, 86 to 131, +45 |
-| Runner up | Route 465, 0 to 32, +32 (gap 13, flip point 14) |
-| Routes with a changed count | 28 of 152 |
-| School day supplemental trips | 137 Summer, 138 Fall |
-| Route 65 span | Summer 05:58 to 21:03; Fall 05:00 to 25:33; inbound end moved from Kenmore to Ruggles |
-| Finance +321 reproduced | first weekday of the feed named Fall 2026 (Mon 24 Aug, 12,721, a no school Summer day) vs 13,042 |
-| Planning +121 reproduced | trips counted on every route they are listed under: 13,128 to 13,249 |
+| Fall 2026 weekday bus requirement | 621 buses at 07:51 |
+| Summer 2026 reproduced | 615 buses at 07:50 |
+| Change | +6 |
+| Finance's 521 reproduced | most trips underway at once, 17:26 (Summer equivalent 513) |
+| Net weekday trip change | +149 (12,893 to 13,042) |
+| Driving route | Route 65, 86 to 131, +45; runner up Route 465 +32; flip point 14 |
+| Hour with the largest gain | 22:00 hour, +16 (233 to 249) |
+| Buses carrying Route 65 trips | 23 Summer, 33 Fall |
+| Route 65 span | 05:58 to 21:03 Summer; 05:00 to 25:33 Fall; inbound end Kenmore to Ruggles |
+| Hourly profile | 23 hours (04:00 to the 02:00 hour next day), both ratings, in weekday_bus_requirement.csv |
 
-Determinism checks in build_golden.py: the Summer register is identical on 1, 2, and 3 September and identical
-in the 20260812 and 20260821 feeds; the Fall register is identical on 8, 9, 10, 23, and 30 September.
+Determinism checks in build_golden.py: peak and time identical in the 20260812 and 20260821 feeds, on 1, 2, 3
+September and 8, 23, 30 September; identical whether the last arrival minute is counted in or out; every block
+has a block_id (13,042 of 13,042 Fall bus trips).
 
 ## Where the honest difficulty lives
-All of it is how the MBTA really publishes its data. Nothing is planted.
-1. Rating versus feed. The feed named Fall 2026 starts 21 August but the Fall rating starts 6 September; its first
-   two weeks are still Summer service. The current feed has already dropped the Summer rating entirely.
-2. Rating label versus date. Long running services labelled Spring/Summer keep operating under the Fall rating.
-   Counting by label misses them; counting by date catches them. Summing every weekday service in a rating
-   (Monday to Thursday, Weekday, Friday variants) double counts to 45,221 against 37,275.
-3. School day versus no school day. The Summer rating runs a no school weekday until 28 August (12,721) and a
-   school day weekday from 31 August (12,893). Only the second matches the Board's convention.
-4. Typicality. Holiday (7 Sep), modified, and reduced weekday services carry typicality 3, 4, or 5 and are not a
-   typical weekday. Fridays differ from Monday to Thursday.
-5. Population. 216 rail replacement shuttle routes and 3,939 shuttle trips sit in the feed as bus type routes.
-   The five bus categories in route_desc define the population. On 24 August the wide count is 13,806.
-6. Rows versus the real unit. stop_times has 5.2 million rows; the unit is the trip, counted once under its own
-   route. multi_route_trips lists trips under extra routes for timetable display, which is Planning's +121.
-7. Offered options. Neither office's number is right, so picking one of the two offered figures fails.
+1. Trips are rows, buses are the unit. Concurrent trips peak at 521 in the afternoon; concurrent blocks peak at
+   621 in the morning. Both numbers are correct measurements; only one is the requirement, and the control 615
+   tells the analyst which. Between trips a bus is on layover and still out.
+2. Blocks interline. 760 of 1,824 Fall blocks carry more than one route, so per route bus counts are not asked;
+   the driving route is defined on trips, and "buses carrying its trips" is a block count.
+3. Everything from version 1 still applies underneath: the feed named Fall 2026 starts two weeks before the
+   Fall rating; rating labels versus dates; the no school versus school day Summer weekday (Finance's +321);
+   timetable listings versus trips (the planners' +121); shuttles stored as bus type routes; typicality flags.
+4. Offered options. Finance's 521, 321 and the planners' 121 are all honest computations and none is certified.
 
 ## Deliverables
-- route_service_change.csv: 152 route rows plus a TOTAL row; rows tie exactly to the totals.
-- service_change_bridge.png: waterfall, 28 route bars ordered by absolute change, driver highlighted.
-- certification_memo.pdf: two pages, recommendation first, rejects both figures with their reproductions,
-  ranked table, supplemental counts, Route 65 span and extension, flip point, closing.
+- weekday_bus_requirement.csv: 23 hourly rows plus a DAY PEAK row; columns hour, summer_buses_in_service,
+  fall_buses_in_service, change.
+- bus_requirement_profile.png: two minute level lines across the service day, peaks marked and labelled.
+- fleet_certification_memo.pdf: two pages. Certified figure first; what each other figure counted; how the
+  figures were built; hour with the largest gain; ranked route table (28 rows); Route 65 buses, span and
+  extension; flip point; closing.
 
-## Input package (inputs/, zipped as inputs.zip, 82 MB)
-Three MBTA GTFS feeds (32 tables each), the archive index, the MBTA GTFS reference, the GTFS specification and
-its licence, the MassDOT developer licence, and a provenance note. Formats: txt, csv, md, pdf, zip. Largest table
-stop_times.txt at 5.2 million rows. See MANIFEST.csv and inputs/README_provenance.md.
+## Input package (inputs/, zipped as inputs.zip, 82 MB) is unchanged from version 1.
