@@ -19,21 +19,18 @@ unaltered.
    them. Its first stop is the first stop in the count's stop order, and its counted departure is the time the
    count gives at that stop.
 
-5. Operated in the rating. Train numbers are reassigned between schedules, so a counted train is not identified
-   in the rating's schedule by its number. The rating's weekday schedule operates a counted train when it
-   contains a train on the same line, in the same direction, whose own first stop is the counted train's first
-   stop and whose scheduled departure from it is within ten minutes of the counted departure, compared on the
-   clock. Where more than one train qualifies, the one whose departure is nearest operates it, and the earlier
-   of two equally near. That train's number and scheduled departure are reported as the train operating the
-   counted train.
+5. Operated in the rating. The rating's weekday schedule operates a counted train when it still runs that
+   train: a train on the same line, in the same direction, from the same first stop, leaving at the counted
+   departure or within ten minutes of it on the clock. Where more than one qualifies, the one whose departure is
+   nearest operates it, and the earlier of two equally near. The number and scheduled departure of the train that
+   operates a counted train are reported with it.
 
 6. Stations. The feed's stop names govern. The count spells some stations differently from the feed, and the
    feed renames and replaces stations between years; a count name is resolved to the feed station it denotes
    before stops are compared.
 
 7. The rating's weekday schedule. The weekday schedule in effect on the greatest number of Monday to Friday
-   dates of the rating, taken by date from the feed. The Fall 2026 rating runs from 28 September 2026 to
-   11 December 2026.
+   dates of the rating. The Fall 2026 rating runs from 28 September 2026 to 11 December 2026.
 
 8. Lines. Every route the feed places in the Commuter Rail fare class. A counted train on a line the rating's
    weekday schedule does not operate is not operated. A line the rating operates without a published count

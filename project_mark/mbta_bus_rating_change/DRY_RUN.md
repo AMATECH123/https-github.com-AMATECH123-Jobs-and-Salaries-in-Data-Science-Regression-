@@ -62,3 +62,17 @@ Expected platform behaviour: the platform's models scored 39 and 51 on the sched
 asks them to join a count keyed by train number to a schedule that reused the numbers, to keep a measured count
 that fails a reconciliation check, to keep a schedule flagged as modified service, and to pick neither offered
 figure. The top model clears it with the convention in hand; the platform's rollouts decide the score.
+
+### Platform result and second tightening, 2026-10-06
+The platform's stumped check came back failed: both models certified 829 at 1,064 operated by 867. The
+convention was doing the models' work for them. Rule 5 had said "train numbers are reassigned between
+schedules, so a counted train is not identified in the rating's schedule by its number" and rule 7 had said
+the schedule is "taken by date from the feed". Those two sentences named traps 1 and 4 outright. They are
+removed. Rule 5 now defines operation as the schedule still running that train (same line, direction, first
+stop, departure within ten minutes) without a word about numbers; rule 7 names only the dates. The data still
+settles the question for an expert: the Fall 2024 feed shows 434 of 514 counted numbers valid at the counted
+minute in 2024, the Fall 2026 feed shows those numbers on other trains (827 at 09:25, 829 absent), and a number
+join under the ten minute clause leaves two Fitchburg trains at 162 and 72 riders, which no expert would certify
+as the system's crowding priority. The golden set is unchanged. A second isolated dry run with the strongest
+model was launched on the revised wording to confirm that the slot reading still converges; its result is
+recorded below.

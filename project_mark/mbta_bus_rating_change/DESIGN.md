@@ -88,7 +88,20 @@ resolves to a feed station or is documented as gone.
 - crowding_priority_memo.pdf: two pages. Certified priority; the two draft figures; the conformation and coverage
   both ways; runner up and flip; the certified train stop by stop; Spring 2018 reproduced; closing.
 
-## Convention wording fixed after the dry run
+## Platform result for the first wording and the second tightening
+The platform's stumped check failed on the first version 5 wording: both models certified 829 at 1,064 operated by
+867. Every trap was being neutralised by a sentence in the convention that named it: rule 5 said train numbers are
+reassigned and defined the slot, rule 7 said the schedule is taken by date. Both sentences are gone. Rule 5 now
+says the schedule operates a counted train when it still runs that train, on the same line, direction and first
+stop, at the counted departure or within ten minutes, and never mentions numbers; the Fall 2024 archived feed is
+the only place that shows the count's numbers were valid when taken and belong to other trains in Fall 2026. A
+model that joins on number finds 829 absent and 827 present (Finance's figure), or, applying the ten minute clause
+to number matches, finds only two Fitchburg trains and certifies a 162 rider train. Rule 7 now says only the
+schedule in effect on the most weekday dates of the rating, so the modified service flag on the south side is a
+temptation the rule neither names nor excuses. Both rules remain deterministic: the headline is the same under
+every window from 5 to 30 minutes, and the register's operated column is fixed by the ten minute clause.
+
+## Convention wording fixed after the first dry run
 Rule 5 now says the operating train's own first stop must be the counted train's first stop. The first wording
 ("scheduled to leave the counted train's first stop") was read by the dry run agent as "calls at", which matched
 twelve counted Bradford trains to Haverhill trains that pass through Bradford and moved the coverage figures
