@@ -69,6 +69,7 @@ def evaluate(G, window, test, unit='poll', has_active=True, drop_partisan_rows=F
                  bias=st.mean(r['bias'] for r in rs),
                  right=(st.mean((float(r['margin_poll']) > 0) == (float(r['margin_actual']) > 0) for r in rs if float(r['margin_poll']) != 0)
                         if any(float(r['margin_poll']) != 0 for r in rs) else None),
+                 calls=sum(1 for r in rs if float(r['margin_poll']) != 0),
                  rows=rs, polls_by_id=polls)
         d['volume'] = active and partisan == 0 and len(polls) >= min_polls
         d['recency'] = d['volume'] and len(tp) >= min_test
@@ -105,8 +106,10 @@ def main():
     assert nyt['passes'] and nyt['rank'] == 4
     raw_order = sorted([d for d in win if d['volume']], key=lambda d: d['score'])
     assert [d['name'] for d in raw_order[:3]] == [DESK[0], 'InsiderAdvantage', w['name']]
-    flip = round(ru['score'], 2) - round(w['score'], 2)
-    assert abs(flip - 0.16) < 1e-9
+    tie = round(round(ru['score'], 2) - round(w['score'], 2), 2)
+    flip = round(tie + 0.01, 2)   # at a tie the partner keeps the selection on polls, so the hand over needs one more hundredth
+    assert tie == 0.16 and flip == 0.17 and w['polls'] > ru['polls']
+    assert any(len({r['race']: 1 for r in v}) > 1 for v in w['polls_by_id'].values())  # one poll can cover several races
 
     # ---- determinism: the selection holds under the honest variants
     for kw in (dict(unit='question'), dict(drop_partisan_rows=True), dict(min_polls=50), dict(min_test=5), dict(median_all=False)):
@@ -205,7 +208,7 @@ def main():
                        Line2D([], [], marker='o', color=C_FAIL, lw=0, ms=8, label=f'Fails the {TEST} test (error above the median)'),
                        Line2D([], [], marker='o', color=C_NONE, markerfacecolor=SURF, markeredgewidth=1.8, lw=0, ms=8, label=f'Fewer than {MIN_TEST} polls in {TEST}: no test record')],
               loc='upper left', frameon=False, fontsize=8.4, labelcolor=INK2)
-    fig.text(0.01, 0.975, f"The {len(vol)} pollsters with at least {MIN_POLLS} eligible polls, 2016 to 2022: certified error against the {TEST} test", fontsize=11, color=INK, fontweight='bold')
+    fig.text(0.01, 0.975, f"The {len(vol)} active, non partisan pollsters with at least {MIN_POLLS} polls, 2016 to 2022: certified error against the {TEST} test", fontsize=11, color=INK, fontweight='bold')
     fig.text(0.01, 0.948, f"Selected partner: {w['name']}, {w['score']:.2f} points ({TEST}: {w['etest']:.2f}). Labels show certified error / {TEST} error.", fontsize=9.6, color=INK2)
     fig.text(0.01, 0.012, 'Source: FiveThirtyEight pollster ratings data, raw_polls.csv (current vintage), general election polls including the generic ballot; '
              'partisan sponsored and inactive pollsters excluded under the standard.', fontsize=7.4, color=INK2)
@@ -273,9 +276,9 @@ def main():
     story += [t2, Spacer(1, 5),
         Paragraph('Runner up and flip point', h),
         Paragraph(f"The runner up is <b>{ru['name']}</b> at {ru['score']:.2f} points ({ru['polls']} polls; {TEST}: {ru['etest']:.2f} over {ru['ntest']}), then "
-                  f"{third['name']} at {third['score']:.2f}. The partner leads by {flip:.2f} points, so a rise of <b>{flip:.2f} points</b> in its certified error "
-                  f"(to {ru['score']:.2f}, where the tie goes to the pollster with more polls, {w['name']} with {w['polls']} against {ru['polls']}) is the smallest "
-                  f"change that would hand the selection to Marist; a rise of {flip + 0.01:.2f} hands it outright. Spread over {w['polls']} polls that is "
+                  f"{third['name']} at {third['score']:.2f}. The partner leads by {tie:.2f} points. A rise of {tie:.2f} in its certified error only ties it at "
+                  f"{ru['score']:.2f}, and the tie goes to the pollster with more polls, {w['name']} with {w['polls']} against {ru['polls']}; the smallest change "
+                  f"that hands the selection to Marist is a rise of <b>{flip:.2f} points</b>, to {round(w['score'], 2) + flip:.2f}. Spread over {w['polls']} polls that is "
                   f"{flip * w['polls']:.1f} points of added error.", body),
         Paragraph(f"The partner's record", h)]
     rows_c = [['Cycle', 'Polls', 'Mean poll error']] + [[str(c), str(n), f"{e:.2f}"] for c, n, e in cyc_tab]
@@ -284,9 +287,9 @@ def main():
     tt = Table(rows_t, colWidths=[1.3 * inch, 0.9 * inch, 1.0 * inch]); tt.setStyle(tstyle(len(rows_t)))
     both = Table([[tc, tt]], colWidths=[3.0 * inch, 3.5 * inch]); both.setStyle(TableStyle([('VALIGN', (0, 0), (-1, -1), 'TOP')]))
     story += [both, Spacer(1, 5),
-        Paragraph(f"All {w['questions']} questions were live telephone polls. The signed bias over the window is <b>{w['bias']:+.2f} points</b> "
-                  f"(positive overstates the Democratic margin), and the partner called the winner in <b>{100 * w['right']:.1f} percent</b> of questions with a "
-                  f"non zero poll margin. Its weakest cycle was 2020 ({[e for c, n, e in cyc_tab if c == 2020][0]:.2f}) and its strongest {TEST}; its weakest race type "
+        Paragraph(f"All {w['questions']} questions were live telephone polls. The signed bias over the window, question by question, is <b>{w['bias']:+.2f} points</b> "
+                  f"(positive overstates the Democratic margin), and the partner called the winner in <b>{100 * w['right']:.1f} percent</b> of its "
+                  f"{w['calls']} questions with a non zero poll margin ({round(w['right'] * w['calls'])} of {w['calls']}). Its weakest cycle was 2020 ({[e for c, n, e in cyc_tab if c == 2020][0]:.2f}) and its strongest {TEST}; its weakest race type "
                   f"was House districts ({[e for t, n, e in type_tab if t == 'House-G'][0]:.2f} over {[n for t, n, e in type_tab if t == 'House-G'][0]} questions). The published ratings "
                   f"file ranks it {comb[w['id']]['rank']}th with a numeric grade of {comb[w['id']]['numeric_grade']}.", body),
         Paragraph('The previous selection reproduced', h),
@@ -312,10 +315,10 @@ def main():
     doc.build(story)
 
     print(f"partner {w['name']} {w['score']:.4f} polls {w['polls']} q {w['questions']} test {w['etest']:.4f}/{w['ntest']}; median {median:.4f}")
-    print(f"runner {ru['name']} {ru['score']:.4f}; third {third['name']} {third['score']:.4f}; flip {flip:.2f}; funnel {funnel}")
+    print(f"runner {ru['name']} {ru['score']:.4f}; third {third['name']} {third['score']:.4f}; tie {tie:.2f} flip {flip:.2f}; funnel {funnel}")
     print(f"harris {harris['score']:.3f} polls {harris['polls']} test {harris['ntest']} {harris['etest']:.3f}; IA {ia['score']:.3f} test {ia['etest']:.3f}; nyt {nyt['score']:.3f} rank {nyt['rank']} test {nyt['etest']:.3f}/{nyt['ntest']}")
     print('volume eligible order:', [(d['name'], round(d['score'], 2), d['ntest'], round(d['etest'], 2), 'sel' if d is w else ('pass' if d['passes'] else 'fail')) for d in raw_order])
-    print(f"partner cycles {[(c, n, round(e, 2)) for c, n, e in cyc_tab]} types {[(t, n, round(e, 2)) for t, n, e in type_tab]} bias {w['bias']:+.2f} right {w['right']:.3f} methods {dict(methods)}")
+    print(f"partner cycles {[(c, n, round(e, 2)) for c, n, e in cyc_tab]} types {[(t, n, round(e, 2)) for t, n, e in type_tab]} bias {w['bias']:+.2f} right {w['right']:.3f} of {w['calls']} methods {dict(methods)}")
     print(f"previous {prev['name']} {prev['score']:.3f} median20 {med21:.3f}; raw21 {raw21['name']} {raw21['score']:.3f} test {raw21['etest']:.3f}; current vintage same cycles: {rk_cur[0]['name']} {rk_cur[0]['score']:.3f}, Emerson {cur_prev['score']:.3f} rank {cur_prev.get('rank')}; same={same}")
     print(f"traps: old vintage {rk_old[0]['name']} {rk_old[0]['score']:.2f}; 30 gate {rk30[0]['name']} {rk30[0]['score']:.2f}; plus minus leader {out[min(pm, key=pm.get)]['name']} {min(pm.values()):.2f}; published rank partner {comb[w['id']]['rank']}")
 

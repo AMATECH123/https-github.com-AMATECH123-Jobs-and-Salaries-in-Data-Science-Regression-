@@ -31,8 +31,8 @@ number one. Both are rejected.
 | Standards editor's draft, NYT/Siena | rank 1 in the published ratings (a different measure); fourth among passing at 4.69; best 2022 record (2.11); not certified |
 | Funnel | 356 pollsters with a poll in the window; 280 active; 182 with no partisan polls; 13 with 40 polls; 8 with 10 polls in 2022; 5 pass the test |
 | Volume eligible, in order | Harris 3.05 (1 in 2022), InsiderAdvantage 3.75 (fails, 4.92), Beacon 4.13 (selected), Marist 4.29, Emerson 4.38, Suffolk 4.45 (fails, 4.12), NYT/Siena 4.69, Morning Consult 4.79 (fails, 6.05), YouGov 4.94, Monmouth 5.62 (2 in 2022), Quinnipiac 5.67 (7), SurveyMonkey 5.88 (1), Redfield & Wilton 6.03 (1) |
-| Runner up and flip | Marist 4.29; a rise of 0.16 points ties and the tie goes to Beacon on polls (58 to 56); 0.17 hands it to Marist |
-| Partner's record | by cycle 2016 2.69 (11), 2017 3.15 (7), 2018 4.87 (17), 2020 5.83 (10), 2021 6.31 (3), 2022 2.77 (10); by race type Governor 3.08, House district 6.96, generic ballot 3.30, President 3.97, Senate 4.22; bias +1.96; called the winner 79.7 percent; all live phone; published rank 16 |
+| Runner up and flip | Marist 4.29; a rise of 0.16 points only ties, and the tie goes to Beacon on polls (58 to 56); the smallest change that hands the selection to Marist is a rise of 0.17 points |
+| Partner's record | by cycle 2016 2.69 (11), 2017 3.15 (7), 2018 4.87 (17), 2020 5.83 (10), 2021 6.31 (3), 2022 2.77 (10); by race type Governor 3.08, House district 6.96, generic ballot 3.30, President 3.97, Senate 4.22; bias +1.96 (question level, rule 9); called the winner in 79.7 percent of its 79 questions with a non zero margin (63 of 79); all live phone; published rank 16 |
 | Previous selection reproduced | 2021 vintage, 2014 to 2020 with 2020 as test (median 4.79): Emerson College 4.62; the raw leader Siena/NYT Upshot 4.11 fails the 2020 test at 5.55 |
 | Same cycles on the current vintage | not the same pollster: Harris 3.04 is selected, Emerson 5.03 third of four |
 
@@ -62,12 +62,21 @@ the 2021 vintage; the flip is 0.16; the traps give their recorded answers.
 - pollster_scorecard.csv: 356 rows, one per pollster with a poll in the window, columns pollster,
   pollster_rating_id, active, partisan_polls, polls, questions, certified_error, polls_2022, error_2022,
   meets_volume, meets_recency, passes_test, selection_rank; passing pollsters first by rank, then by error.
-- accuracy_vs_test.png: a scatter of the 13 volume eligible pollsters, certified error against 2022 error, the
+- accuracy_vs_test.png: a scatter of the 13 active, non partisan pollsters with at least 40 polls, certified error against 2022 error, the
   4.02 test line, passing in blue, failing in orange, no test record hollow, every point labelled with name and
   both figures, the partner marked.
 - polling_partner_memo.pdf: two pages. Selection; the two drafts; the funnel table; the 13 pollster table; runner
   up and flip; the partner's record by cycle and race type with bias and call rate; the previous selection
   reproduced and the vintage comparison; closing.
+
+## Wording fixed after the dry run
+The dry run agent read "the pollsters that meet the volume test" as every pollster with 40 polls (25, partisan and
+inactive ones included) where the golden applies the tests in order (13); the prompt now names the population.
+It computed bias and winner calls at the poll level where the golden used questions, and one poll can cover
+several races, so rule 9 of the standard now defines both at the question level. It read the flip as 0.17 (the
+smallest change that hands the selection over) where the golden had reported the 0.16 tie; the golden now states
+0.17. The tightening applied after the headline was reproduced: the prompt no longer says that the standards
+editor's choice is the top of the published ratings, so the reader must find what that draft measured.
 
 ## Input package (inputs/, zipped as inputs.zip, 2.3 MB, 13 files, four formats)
 The current vintage record and published ratings, the 2023 and 2021 vintages (record, ratings, statistics

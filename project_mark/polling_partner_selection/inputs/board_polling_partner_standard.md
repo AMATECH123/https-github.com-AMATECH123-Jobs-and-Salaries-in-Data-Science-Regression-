@@ -30,3 +30,9 @@ is not a FiveThirtyEight publication. The polling record it is applied to is rea
 8. Previous selection. The partner for the 2022 cycle was selected on the record's 2021 vintage, with the cycles
    2014 through 2020 as the record and 2020 as the test cycle, under these rules (that vintage carries no activity
    flag, so the activity test did not apply): Emerson College, 4.62 points.
+
+9. Record figures. Where a pollster's bias or winner calls are reported, they are taken over its questions in the
+   record, because one poll can cover more than one race: a question's bias is its poll margin less the actual
+   margin, positive when the Democratic margin is overstated, and the pollster's bias is the mean over its
+   questions; a question calls the winner when its poll margin and the actual margin have the same sign, a
+   question with a zero poll margin is not a call, and the call rate is over questions that make a call.
