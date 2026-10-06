@@ -37,8 +37,8 @@ Spring 2018,CR-Fairmount,Fairmount Line,783,Outbound,South Station,01:15,20:15,o
 Spring 2018,CR-Fairmount,Fairmount Line,784,Inbound,Readville,02:00,21:00,off peak,4,yes
 Spring 2018,CR-Fairmount,Fairmount Line,785,Outbound,South Station,02:00,21:00,off peak,28,yes
 Spring 2018,CR-Fairmount,Fairmount Line,786,Inbound,Readville,02:45,21:45,off peak,3,yes
-Spring 2018,CR-Fairmount,Fairmount Line,787,Outbound,South Station,03:00,,,12,no
-Spring 2018,CR-Fairmount,Fairmount Line,789,Outbound,South Station,04:00,,,13,no
+Spring 2018,CR-Fairmount,Fairmount Line,787,Outbound,South Station,03:00,22:00,off peak,12,yes
+Spring 2018,CR-Fairmount,Fairmount Line,789,Outbound,South Station,04:00,23:00,off peak,13,yes
 Spring 2018,CR-Fairmount,Fairmount Line,790,Inbound,Readville,10:39,04:55,off peak,33,yes
 Spring 2018,CR-Fitchburg,Fitchburg Line,400,Inbound,Wachusett,09:50,04:50,off peak,300,yes
 Spring 2018,CR-Fitchburg,Fitchburg Line,401,Outbound,North Station,11:25,06:25,off peak,16,yes
@@ -493,9 +493,9 @@ Spring 2018,CR-Providence,Providence/Stoughton Line,906,Inbound,Stoughton,13:30,
 Spring 2018,CR-Providence,Providence/Stoughton Line,907,Outbound,South Station,13:23,08:23,off peak,114,yes
 Spring 2018,CR-Providence,Providence/Stoughton Line,908,Inbound,Stoughton,14:15,09:15,off peak,208,yes
 Spring 2018,CR-Providence,Providence/Stoughton Line,909,Outbound,South Station,14:45,09:45,off peak,13,yes
-Spring 2018,CR-Providence,Providence/Stoughton Line,910,Inbound,Stoughton,15:40,,,31,no
+Spring 2018,CR-Providence,Providence/Stoughton Line,910,Inbound,Stoughton,15:40,10:40,off peak,31,yes
 Spring 2018,CR-Providence,Providence/Stoughton Line,911,Outbound,South Station,18:20,13:20,off peak,104,yes
-Spring 2018,CR-Providence,Providence/Stoughton Line,912,Inbound,Stoughton,19:15,,,40,no
+Spring 2018,CR-Providence,Providence/Stoughton Line,912,Inbound,Stoughton,19:15,14:15,off peak,40,yes
 Spring 2018,CR-Providence,Providence/Stoughton Line,913,Outbound,South Station,20:35,15:35,peak,372,yes
 Spring 2018,CR-Providence,Providence/Stoughton Line,914,Inbound,Stoughton,21:30,16:30,off peak,73,yes
 Spring 2018,CR-Providence,Providence/Stoughton Line,915,Outbound,South Station,21:20,16:20,peak,606,yes

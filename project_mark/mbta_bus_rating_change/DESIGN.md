@@ -26,25 +26,25 @@ the claim that the share has risen since 2018. Both are rejected.
 | Item | Value |
 |---|---|
 | Placement | off peak |
-| Peak share, Spring 2018 certification | 72.0 percent (91,167 peak of 126,653 placed boardings) |
+| Peak share, Spring 2018 certification | 71.9 percent (91,167 peak of 126,749 placed boardings) |
 | Peak share, Fall 2024 count | 59.9 percent (58,456 of 97,537) |
-| Change | minus 12.0 points (minus 12.05 before rounding) |
+| Change | minus 12.0 points (minus 11.995 before rounding) |
 | Finance's 59.9, peak | the Fall 2024 share alone; the convention tests the change; not certified |
-| Planning's "share has risen", peak | the Spring 2018 periods read from the count's own stop times, which run five hours ahead of the schedule (497 of 511 matched trains at exactly 300 minutes); read that way the 2018 share is 1.4 percent and the change plus 58.5; not certified |
+| Planning's "share has risen", peak | the Spring 2018 periods read from the count's own stop times, which run five hours ahead of the schedule (501 of 515 matched trains at exactly 300 minutes); read that way the 2018 share is 1.4 percent and the change plus 58.5; not certified |
 | Peak boardings | 91,167 to 58,456, 64.1 percent of 2018 |
-| Off peak boardings | 35,486 to 39,081, 110.1 percent of 2018 |
-| Placed trains | Fall 2024: 514 of 514. Spring 2018: 511 of 516; unplaced Fairmount 789 and 787 outbound, Providence 8805 outbound, 912 and 910 inbound (102 boardings) |
-| Join | train number (zero stripped) and direction; the feeds write Old Colony numbers 044, the count 44; matched as text 80 Fall 2024 trains (15,720 boardings) and 77 Spring 2018 trains fall out |
+| Off peak boardings | 35,582 to 39,081, 109.8 percent of 2018 |
+| Placed trains | Fall 2024: 514 of 514. Spring 2018: 515 of 516; the one unplaced is Providence 8805 outbound (6 boardings), listed in the feed only under a service that ended 18 May 2018 |
+| Join | train number compared by its digits, and direction; the feeds write Old Colony numbers 044, the count 44, and the 2018 feed prefixes four numbers with B (B787, B789, B910, B912); matched as text 80 Fall 2024 trains (15,720 boardings) and 77 Spring 2018 trains fall out |
 | Lines | every line fell; Fitchburg fell most (73.2 to 50.9, minus 22.2); Haverhill held best (71.9 to 70.2, minus 1.7) |
 | Off peak above 2018 | 8 lines: Fairmount 206 percent, Middleborough/Lakeville 171, Franklin 152, Needham 132, Fitchburg 126, Kingston 125, Worcester 111, Newburyport 105 |
 | Fall 2026 weekday supply | 547 trains on 54 of 55 weekdays: 126 peak, 421 off peak |
-| Flip point | 11,753 Fall 2024 boardings would have to move from off peak to peak to hold 72.0 percent |
+| Flip point | 11,700 Fall 2024 boardings would have to move from off peak to peak to hold 71.9 percent |
 
 Determinism checks in build_golden.py: the four count formats hold the same rows; the sign and size of the change
 hold under four boundary variants (always below minus 10 points); the Spring 2018 share is the same to one decimal
 on the 16 May 2018 schedule; the Fall 2024 share is the same on 15 and 17 October 2024; the number and direction
 key is unique in both feeds; the counted clock agrees with the schedule on 498 of 514 Fall 2024 trains and sits
-300 minutes ahead on 497 of 511 Spring 2018 trains; the count clock reading flips the sign; the text join leaves
+300 minutes ahead on 501 of 515 Spring 2018 trains; the count clock reading flips the sign; the text join leaves
 80 Fall 2024 trains unplaced; the flip point brackets the 2018 share exactly.
 
 ## Where the honest difficulty lives (trap inventory)
@@ -58,8 +58,9 @@ key is unique in both feeds; the counted clock agrees with the schedule on 498 o
    moves the supplementary figures (placed counts, line table) rather than the headline.
 3. Definition swap. Finance's 59.9 percent is correct and is not the test; the convention tests the change.
 4. Rows versus units. Rows are stops; the unit is the train; boardings are summed per train before placement.
-5. Unplaced trains. Five Spring 2018 trains have no scheduled train of their number; the convention leaves them
-   out rather than placing them by a clock that is wrong.
+5. Unplaced train. One Spring 2018 train (Providence 8805) has no scheduled train of its number on 23 May 2018;
+   the convention leaves it out rather than placing it by a clock that is wrong. Four others carry a B prefix in
+   the feed and are placed once numbers are compared by their digits.
 6. Population by flag and label. The Fall 2026 supply by period comes from the schedule in effect on most rating
    weekdays, which carries a Spring/Summer label and a modified service flag on the south side.
 7. Line replaced. Middleborough/Lakeville is in both counts and has no Fall 2026 service; Fall River/New Bedford
@@ -73,6 +74,12 @@ key is unique in both feeds; the counted clock agrees with the schedule on 498 o
 - service_allocation_memo.pdf: two pages. Placement and shares; the two drafts; the boardings and recovery
   table; how the counts were placed; the line table ranked by change; Fall 2026 supply by period; flip point;
   closing.
+
+## Convention wording after the dry run
+Rule 5 now says train numbers are compared by their digits, because the 2018 feed prefixes four numbers with a
+letter and an expert would place them. Rule 4 no longer says that the scheduled departure is the one in the
+season's feed; rules 5 and 7 already make the counted train the scheduled train of its season, so the guard is
+intact without a sentence that points straight at the time source.
 
 ## Input package (inputs/, zipped as inputs.zip, 55 MB, 14 files, seven formats)
 Four exports of the ridership layer, the Fall 2026 feed, the Fall 2024 and Spring 2018 archived feeds, the archive

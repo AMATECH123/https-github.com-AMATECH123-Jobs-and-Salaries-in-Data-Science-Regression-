@@ -16,12 +16,11 @@ an MBTA publication. The ridership counts and the schedule feeds it is applied t
 
 4. Periods. A train is a peak train when it is an inbound train scheduled to leave its first stop between 05:30
    and 08:29, or an outbound train scheduled to leave its first stop between 15:30 and 18:29, both inclusive.
-   Every other train is an off peak train. The scheduled departure is the one in the schedule feed in effect for
-   the count's season.
+   Every other train is an off peak train.
 
 5. The counted train in the schedule. A counted train is the scheduled train of its season carrying the same train
-   number in the same direction. A counted train that the season's schedule does not list cannot be placed; it is
-   left out of the period totals and reported.
+   number in the same direction, train numbers being compared by their digits. A counted train that the season's
+   schedule does not list cannot be placed; it is left out of the period totals and reported.
 
 6. The share. The peak share is peak boardings as a percentage of all placed boardings, stated to one decimal
    place. The change is the difference in percentage points between the two shares, taken before either is

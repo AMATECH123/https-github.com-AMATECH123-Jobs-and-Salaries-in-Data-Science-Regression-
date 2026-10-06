@@ -142,7 +142,8 @@ def period(departure, direction, am=AM, pm=PM):
 
 
 def key(number, direction):
-    return (number.lstrip('0'), direction)
+    """Convention rule 5: train numbers are compared by their digits (the feeds pad with zeros and prefix a few with B)."""
+    return (''.join(ch for ch in number if ch.isdigit()).lstrip('0'), direction)
 
 
 def place(counted, sched, am=AM, pm=PM, use_count_clock=False, strip=True):
@@ -191,8 +192,8 @@ def main():
     s18, s24 = share(tot[PREVIOUS]), share(tot[LATEST])
     change = s24 - s18
     placement = 'peak' if change >= 0 else 'off peak'
-    assert placement == 'off peak' and round(s18, 1) == 72.0 and round(s24, 1) == 59.9
-    assert len(unplaced[PREVIOUS]) == 5 and len(unplaced[LATEST]) == 0
+    assert placement == 'off peak' and round(s18, 1) == 71.9 and round(s24, 1) == 59.9 and round(change, 1) == -12.0
+    assert len(unplaced[PREVIOUS]) == 1 and len(unplaced[LATEST]) == 0
     assert all(placed[LATEST][k][2]['line'] == counted[LATEST][k]['line'] for k in counted[LATEST])
 
     # ---- determinism: boundaries, the other 2018 schedule, and the count's own clock
@@ -223,6 +224,8 @@ def main():
     raw_un = {s: len(raw[s][2]) for s in SEASONS}
     raw_change = share(raw[LATEST][0]) - share(raw[PREVIOUS][0])
     assert raw_un[LATEST] == 80 and raw_change < 0
+    letters = [s_['number'] for s_ in sched[PREVIOUS].values() if not s_['number'].isdigit()]
+    assert sorted(letters) == ['B787', 'B789', 'B910', 'B912']
 
     # ---- recovery, lines, flip, Fall 2026 supply
     rec = {p: 100.0 * tot[LATEST][p] / tot[PREVIOUS][p] for p in ('peak', 'off peak')}
@@ -371,11 +374,11 @@ def main():
                   f"direction in the feed in effect for its season, 23 May 2018 and 16 October 2024, and placed by that train's "
                   f"scheduled departure from its first stop. The feeds write Old Colony train numbers with a leading zero (044) and "
                   f"the count without (44); matched as numbers, every one of the {len(counted[LATEST])} Fall 2024 trains is placed "
-                  f"and {len(counted[PREVIOUS]) - len(unplaced[PREVIOUS])} of the {len(counted[PREVIOUS])} Spring 2018 trains. Matched "
-                  f"as text, the {oc[LATEST]} Greenbush, Kingston and Middleborough/Lakeville trains of Fall 2024 ({sum(c['boardings'] for k, c in counted[LATEST].items() if k in raw[LATEST][2]):,} "
-                  f"boardings) and {raw_un[PREVIOUS]} Spring 2018 trains would fall out. The {len(unplaced[PREVIOUS])} Spring 2018 "
-                  f"trains the schedule does not list ({un18}; {sum(counted[PREVIOUS][k]['boardings'] for k in unplaced[PREVIOUS])} "
-                  f"boardings in all) are left out of the totals as the convention directs. Counted stop times were not used for "
+                  f"and {len(counted[PREVIOUS]) - len(unplaced[PREVIOUS])} of the {len(counted[PREVIOUS])} Spring 2018 trains; the 2018 feed "
+                  f"also prefixes four numbers with a letter (B787, B789, B910, B912), which the digits resolve. Matched as text, the {oc[LATEST]} Greenbush, Kingston and Middleborough/Lakeville trains of Fall 2024 ({sum(c['boardings'] for k, c in counted[LATEST].items() if k in raw[LATEST][2]):,} "
+                  f"boardings) and {raw_un[PREVIOUS]} Spring 2018 trains would fall out. The one Spring 2018 train the 23 May schedule "
+                  f"does not list ({un18}; {sum(counted[PREVIOUS][k]['boardings'] for k in unplaced[PREVIOUS])} boardings) is left out "
+                  f"of the totals as the convention directs. Counted stop times were not used for "
                   f"placement; where they were compared with the schedule they agreed to the minute in Fall 2024 and ran five hours "
                   f"ahead in Spring 2018.", body),
         Paragraph('Lines ranked by the change in peak share', h),
