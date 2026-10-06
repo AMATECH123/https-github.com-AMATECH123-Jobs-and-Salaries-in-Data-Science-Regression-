@@ -1,0 +1,19 @@
+file,role,format,source_url,publisher,license,pull_date,note,load_bearing
+ghcnd/readme.txt,"Element codes, units, flag definitions",txt,https://noaa-ghcn-pds.s3.amazonaws.com/readme.txt,NOAA NCEI,US Government public domain,2026-10-06,version 3.35,yes
+ghcnd/readme-by_station.txt,Field definitions of station csv files,txt,https://noaa-ghcn-pds.s3.amazonaws.com/readme-by_station.txt,NOAA NCEI,US Government public domain,2026-10-06,,yes
+ghcnd/readme-by_year.txt,Field definitions of yearly extracts,txt,https://noaa-ghcn-pds.s3.amazonaws.com/readme-by_year.txt,NOAA NCEI,US Government public domain,2026-10-06,,yes
+ghcnd/status.txt,Dataset status and version history,txt,https://noaa-ghcn-pds.s3.amazonaws.com/status.txt,NOAA NCEI,US Government public domain,2026-10-06,,context
+ghcnd/status-by_station.txt,Status note for station files,txt,https://noaa-ghcn-pds.s3.amazonaws.com/status-by_station.txt,NOAA NCEI,US Government public domain,2026-10-06,"dated 2021, as served",context
+ghcnd/status-by_year.txt,Status note for yearly files,txt,https://noaa-ghcn-pds.s3.amazonaws.com/status-by_year.txt,NOAA NCEI,US Government public domain,2026-10-06,"dated 2021, as served",context
+ghcnd/ghcnd-version.txt,Version in force,txt,https://noaa-ghcn-pds.s3.amazonaws.com/ghcnd-version.txt,NOAA NCEI,US Government public domain,2026-10-06,,context
+ghcnd/ghcnd-stations.txt,Station registry,txt,https://noaa-ghcn-pds.s3.amazonaws.com/ghcnd-stations.txt,NOAA NCEI,US Government public domain,2026-10-06,"133,039 stations",yes
+ghcnd/ghcnd-inventory.txt,Period of record by station and element,txt,https://noaa-ghcn-pds.s3.amazonaws.com/ghcnd-inventory.txt,NOAA NCEI,US Government public domain,2026-10-06,"791,127 rows",yes
+ghcnd/ghcnd-states.txt,State codes,txt,https://noaa-ghcn-pds.s3.amazonaws.com/ghcnd-states.txt,NOAA NCEI,US Government public domain,2026-10-06,,context
+ghcnd/parquet/by_year/YEAR=2025/ELEMENT=PRCP (22 files),"2025 daily precipitation, all stations",parquet,https://noaa-ghcn-pds.s3.amazonaws.com/parquet/by_year/YEAR=2025/ELEMENT=PRCP/,NOAA NCEI,US Government public domain,2026-10-06,as published,yes
+ghcnd/parquet/by_year/YEAR=2025/ELEMENT=MDPR (1 file),2025 multi day precipitation totals,parquet,https://noaa-ghcn-pds.s3.amazonaws.com/parquet/by_year/YEAR=2025/ELEMENT=MDPR/,NOAA NCEI,US Government public domain,2026-10-06,as published,yes
+ghcnd/parquet/by_year/YEAR=2025/ELEMENT=DAPR (1 file),2025 day counts for multi day totals,parquet,https://noaa-ghcn-pds.s3.amazonaws.com/parquet/by_year/YEAR=2025/ELEMENT=DAPR/,NOAA NCEI,US Government public domain,2026-10-06,as published,yes
+ghcnd/csv/by_station/USW00014739.csv,Boston Logan station file 1936 to 6 Feb 2025,csv,https://noaa-ghcn-pds.s3.amazonaws.com/csv/by_station/USW00014739.csv,NOAA NCEI,US Government public domain,2026-10-06,last updated 2025-02-09 as served,yes
+ghcnd/csv/by_station/USC00190736.csv,Blue Hill cooperative station file 1885 to date,csv,https://noaa-ghcn-pds.s3.amazonaws.com/csv/by_station/USC00190736.csv,NOAA NCEI,US Government public domain,2026-10-06,,yes
+ghcnd/csv/by_station/USW00014753.csv,Blue Hill LCD station file 1959 to Sep 2024,csv,https://noaa-ghcn-pds.s3.amazonaws.com/csv/by_station/USW00014753.csv,NOAA NCEI,US Government public domain,2026-10-06,last updated 2024-09-30 as served,yes
+bulletin_compilation_standard.md,Scenario document: the bulletin standard,md,written by task author,task author,n/a,2026-10-06,provenance stated inside,yes
+README_provenance.md,Provenance note,md,written by task author,task author,n/a,2026-10-06,,provenance
