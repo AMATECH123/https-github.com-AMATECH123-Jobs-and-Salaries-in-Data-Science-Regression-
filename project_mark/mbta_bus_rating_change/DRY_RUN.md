@@ -88,3 +88,14 @@ One supplementary figure was improved by the run: it counted the Fall 2026 train
 train (139 of 547, with three Fall 2026 trains each operating two counted trains) where the golden had
 counted trains with no counted departure within ten minutes (137). The one to one reading follows rule 5,
 and the golden now uses it.
+
+### Platform result for the revised wording, 2026-10-06
+Both model responses reviewed the full package (91 and 113 resources) and scored 94 percent each against the
+28 criterion rubric (average 94). Both certified 829 at 1,064 operated by 867 at 17:37, rejected 827 and 723,
+reported 411 operated, 103 not operated, 139 uncovered, the flip of 29, South Station 789, and the Spring 2018
+control. The only criteria missed were the register's separate operation location column (weight 1) and the
+explanation that Planning's 723 ranks first only when 829 is set aside for its terminal residue (weight 5).
+Reading: once the identity rule is stated, in any wording, the platform's models execute the slot join from
+the data. Version 5 cannot be brought under the bar by wording. Any further attempt needs a decision whose
+honest answer is counter to the obvious computation, with the deciding fact in the data rather than in a
+rule written for the task.
