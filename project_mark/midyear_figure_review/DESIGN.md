@@ -64,6 +64,11 @@ two exchanged weeks have the stated order.
 - figure_review_memo.pdf: two pages. Outcome and figures; the committee member's figures; what the figure
   measured and the search; the week by week exchange table; the state table with Missouri shaded; the reply.
 
+## Wording fixed after the dry run
+The dry run agent reproduced the headline by a brute force search over every span of weeks. The one tightening
+applied: the prompt no longer states the committee member's figures, only that the note does not reproduce on
+its own label.
+
 ## Input package (inputs/, zipped as inputs.zip, 10 MB, 19 files)
 The Opportunity Insights Economic Tracker files pulled at commit b8adef9 (5 October 2026) exactly as served:
 seven data files, six documentation files, the repository readme; plus the two scenario documents (the review
