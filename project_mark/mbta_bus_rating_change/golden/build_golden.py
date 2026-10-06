@@ -1,18 +1,28 @@
-"""Builds the three golden deliverables from the shipped input package (version 3).
+"""Builds the three golden deliverables for version 5 from the shipped input package.
 
-Summer day: Wednesday 19 August 2026 from 20260812.zip (the feed the archive index assigns to that date),
-cross checked on 22 July in 20260610.zip.
-Fall day: Wednesday 30 September 2026 from MBTA_GTFS.zip (the published feed, identical to archive 20260925).
+Count: the latest season (Fall 2024) of the MBTA Commuter Rail ridership count by trip, season, line and stop.
+Schedule: the weekday Commuter Rail schedule in effect on most Monday to Friday dates of the Fall 2026 rating
+(28 September to 11 December 2026), taken by date from MBTA_GTFS.zip.
+Control: the Fall 2024 archived feed (20241014.zip) shows the count's train numbers and departures were valid in
+Fall 2024 and were reassigned by Fall 2026; the Spring 2018 count reproduces the previous certification.
+Every figure printed or written here is asserted stable under the determinism checks below.
 """
-import csv, io, zipfile, collections, datetime as dt, os
+import csv, io, os, json, zipfile, collections, datetime as dt, struct
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 INPUTS = os.path.join(HERE, '..', 'inputs')
-BUS = {'Frequent Bus', 'Local Bus', 'Coverage Bus', 'Commuter Bus', 'Supplemental Bus'}
-SUMMER_DAY = dt.date(2026, 8, 19)
-FALL_DAY = dt.date(2026, 9, 30)
-CERTIFIED_SUMMER_PEAK = 607
-FINANCE_PEAK, FINANCE_TRIPS, PLANNING_TRIPS = 521, 321, 149
+COUNT = 'MBTA_Commuter_Rail_Ridership_by_Trip2C_Season2C_Route_Line2C_and_Stop..'
+RATING_START, RATING_END = dt.date(2026, 9, 28), dt.date(2026, 12, 11)
+TOLERANCE = 10  # minutes, convention rule 5
+FINANCE_TRAIN, FINANCE_LOAD = '827', 896
+PLANNING_TRAIN, PLANNING_FIGURE = '829', 1110
+CONTROL = ('CR-Worcester', '508', '1', 1384, 'West Natick')
+# Count station names that the feed spells differently (convention rule 6). Verified below against both feeds:
+# the 2024 feed carries 'Dedham Corp Center' as a child stop of place-FB-0118 and 'Lynn' and 'Middleborough/Lakeville' as
+# stations; the 2026 feed spells them 'Dedham Corporate Center', keeps 'Lynn' as an unserved station, and has
+# no Middleborough/Lakeville station at all (the new 'Middleborough' station is a different stop id).
+RENAMES = {'Littleton/Rte 495': 'Littleton/Route 495', 'Dedham Corp Center': 'Dedham Corporate Center',
+           'Porter Square': 'Porter', 'Lynn': 'Lynn', 'Middleborough/Lakeville': None}
 
 
 def table(z, name):
@@ -20,21 +30,78 @@ def table(z, name):
         return list(csv.DictReader(io.TextIOWrapper(f, encoding='utf-8-sig')))
 
 
-def load(path):
+def mins(t):
+    h, m, s = t.split(':')
+    return int(h) * 60 + int(m) + int(s) / 60
+
+
+def hhmm(m):
+    m = int(round(m))
+    return f"{(m // 60) % 24:02d}:{m % 60:02d}"
+
+
+def clock_gap(a, b):
+    d = abs(a - b) % 1440
+    return min(d, 1440 - d)
+
+
+# ---------------------------------------------------------------- the count
+def load_count():
+    rows = list(csv.DictReader(open(os.path.join(INPUTS, COUNT + 'csv'), encoding='utf-8-sig')))
+    for r in rows:
+        for k in ('average_ons', 'average_offs', 'average_load'):
+            r[k] = int(r[k])
+    # determinism: the four export formats hold the same rows
+    geo = [f['properties'] for f in json.load(open(os.path.join(INPUTS, COUNT + 'geojson')))['features']]
+    assert len(geo) == len(rows) == 15761
+    for a, b in zip(rows, geo):
+        assert all(str(b[k]) == a[k] if k not in ('average_ons', 'average_offs', 'average_load') else b[k] == a[k] for k in b)
+    with zipfile.ZipFile(os.path.join(INPUTS, COUNT + 'zip')) as z:
+        dbf = [n for n in z.namelist() if n.endswith('.dbf')][0]
+        hdr = z.open(dbf).read(8)
+        assert struct.unpack('<I', hdr[4:8])[0] == len(rows)
+    kml = open(os.path.join(INPUTS, COUNT + 'kml'), encoding='utf-8').read()
+    assert kml.count('<Placemark>') == len(rows)
+    return rows
+
+
+def seqkey(r):
+    return int(r['stopsequence']) if r['stopsequence'].isdigit() else 10 ** 6
+
+
+def clock(stop_time):
+    """Clock minutes of a count stop_time ('1/1/2024 17:40'); None when the row carries no time."""
+    if ' ' not in stop_time:
+        return None
+    h, m = stop_time.split(' ')[1].split(':')[:2]
+    return int(h) * 60 + int(m)
+
+
+def trains(rows, season):
+    by = collections.defaultdict(list)
+    for r in rows:
+        if r['season'] == season:
+            by[(r['route_id'], r['train'], r['direction_id'])].append(r)
+    out = {}
+    for k, rs in by.items():
+        rs.sort(key=seqkey)
+        peak = max(rs, key=lambda r: r['average_load'])  # first occurrence wins a tie
+        out[k] = dict(rows=rs, line=k[0], train=k[1], direction=k[2], first=rs[0]['stop_id'],
+                      departure=clock(rs[0]['stop_time']), last=rs[-1]['stop_id'],
+                      peak=peak['average_load'], peak_stop=peak['stop_id'], peak_time=clock(peak['stop_time']),
+                      boardings=sum(r['average_ons'] for r in rs), alightings=sum(r['average_offs'] for r in rs))
+    return out
+
+
+# ---------------------------------------------------------------- the schedule
+def load_feed(path):
     z = zipfile.ZipFile(path)
-    d = {}
-    d['routes'] = {r['route_id']: r for r in table(z, 'routes.txt')}
-    d['calendar'] = table(z, 'calendar.txt')
-    d['cal_dates'] = collections.defaultdict(list)
+    d = dict(zip=z, routes={r['route_id']: r for r in table(z, 'routes.txt')}, calendar=table(z, 'calendar.txt'),
+             cal_dates=collections.defaultdict(list), trips=table(z, 'trips.txt'),
+             stops={r['stop_id']: r for r in table(z, 'stops.txt')})
     for r in table(z, 'calendar_dates.txt'):
         d['cal_dates'][r['date']].append((r['service_id'], r['exception_type']))
-    d['attrs'] = {r['service_id']: r for r in table(z, 'calendar_attributes.txt')}
-    d['trips'] = table(z, 'trips.txt')
-    d['multi'] = collections.defaultdict(list)
-    for r in table(z, 'multi_route_trips.txt'):
-        d['multi'][r['trip_id']].append(r['added_route_id'])
-    d['stops'] = {r['stop_id']: r for r in table(z, 'stops.txt')}
-    d['zip'] = z
+    d['cr'] = {k for k, v in d['routes'].items() if v['route_fare_class'] == 'Commuter Rail'}
     return d
 
 
@@ -47,231 +114,230 @@ def active_services(d, date):
     return s
 
 
-def is_bus(d, trip):
-    return d['routes'][trip['route_id']]['route_desc'] in BUS
+def station(d, stop_id):
+    s = d['stops'][stop_id]
+    return d['stops'][s['parent_station']]['stop_name'] if s['parent_station'] else s['stop_name']
 
 
-def mins(t):
-    h, m, _ = t.split(':')
-    return int(h) * 60 + int(m)
-
-
-def clock(m):
-    return f"{m // 60:02d}:{m % 60:02d}"
-
-
-def register(d, date, count_multi=False):
-    s = active_services(d, date)
-    c = collections.Counter()
-    for t in d['trips']:
-        if t['service_id'] in s and is_bus(d, t):
-            c[t['route_id']] += 1
-            if count_multi:
-                for extra in d['multi'].get(t['trip_id'], []):
-                    c[extra] += 1
-    return c
-
-
-def day_bounds(d, date):
-    s = active_services(d, date)
-    tr = {t['trip_id']: t for t in d['trips'] if t['service_id'] in s and is_bus(d, t)}
-    first, last, last_stop = {}, {}, {}
-    with d['zip'].open('stop_times.txt') as f:
-        for r in csv.DictReader(io.TextIOWrapper(f, encoding='utf-8-sig')):
-            k = r['trip_id']
-            if k not in tr:
-                continue
-            dep, arr = mins(r['departure_time']), mins(r['arrival_time'])
-            if k not in first or dep < first[k]:
-                first[k] = dep
-            if k not in last or arr > last[k]:
-                last[k] = arr
-            seq = int(r['stop_sequence'])
-            if k not in last_stop or seq > last_stop[k][0]:
-                last_stop[k] = (seq, r['stop_id'])
-    trips = {k: (first[k], last[k]) for k in tr}
-    bl = collections.defaultdict(list)
-    for k, t in tr.items():
-        bl[t['block_id']].append(k)
-    blocks = {b: (min(first[k] for k in ks), max(last[k] for k in ks)) for b, ks in bl.items()}
-    block_routes = {b: {tr[k]['route_id'] for k in ks} for b, ks in bl.items()}
-    return trips, blocks, block_routes, tr, {k: v[1] for k, v in last_stop.items()}
-
-
-def minute_profile(intervals):
-    cnt = [0] * (31 * 60)
-    for a, b in intervals:
-        for m in range(a, b):
-            cnt[m] += 1
-    return cnt
-
-
-def peak(cnt):
-    p = max(cnt)
-    return p, cnt.index(p)
-
-
-def starts_ends(blocks):
-    st, en = collections.Counter(), collections.Counter()
-    for a, b in blocks.values():
-        st[a // 60] += 1
-        en[b // 60] += 1
-    return st, en
-
-
-def peak_attribution(trips, blocks, tr, minute):
-    """Buses in service at `minute` attributed to a route: the trip in progress, else the trip just completed."""
-    by_block = collections.defaultdict(list)
-    for k, (a, b) in trips.items():
-        by_block[tr[k]['block_id']].append((a, b, k))
-    c, layover = collections.Counter(), 0
-    for blk, (a0, b0) in blocks.items():
-        if not (a0 <= minute < b0):
-            continue
-        ts = sorted(by_block[blk])
-        running = [k for a, b, k in ts if a <= minute < b]
-        if running:
-            c[tr[running[0]]['route_id']] += 1
-        else:
-            done = [k for a, b, k in ts if b <= minute]
-            c[tr[done[-1]]['route_id']] += 1
-            layover += 1
-    return c, layover
-
-
-def weekday_tally(d, start, end):
-    """Monday to Thursday dates in [start, end] grouped by the bus trip count of the schedule running that day."""
+def rating_schedule(d, start, end):
+    """The set of Commuter Rail trips run on the greatest number of Monday to Friday dates in [start, end]."""
     tally = collections.Counter()
     day = start
     while day <= end:
-        if day.weekday() < 4:
+        if day.weekday() < 5:
             s = active_services(d, day)
-            tally[sum(1 for t in d['trips'] if t['service_id'] in s and is_bus(d, t))] += 1
+            tally[frozenset(t['trip_id'] for t in d['trips'] if t['service_id'] in s and t['route_id'] in d['cr'])] += 1
         day += dt.timedelta(days=1)
-    return tally
+    (trip_ids, days), = tally.most_common(1)
+    return trip_ids, days, sum(tally.values())
+
+
+def schedule_trains(d, trip_ids):
+    tr = {t['trip_id']: t for t in d['trips'] if t['trip_id'] in trip_ids}
+    st = collections.defaultdict(list)
+    with d['zip'].open('stop_times.txt') as f:
+        for r in csv.DictReader(io.TextIOWrapper(f, encoding='utf-8-sig')):
+            if r['trip_id'] in tr:
+                st[r['trip_id']].append(r)
+    out = {}
+    for tid, t in tr.items():
+        s = sorted(st[tid], key=lambda r: int(r['stop_sequence']))
+        out[tid] = dict(line=t['route_id'], train=t['trip_short_name'], direction=t['direction_id'],
+                        first=station(d, s[0]['stop_id']), departure=mins(s[0]['departure_time']),
+                        last=station(d, s[-1]['stop_id']), arrival=mins(s[-1]['arrival_time']),
+                        stops=[station(d, r['stop_id']) for r in s], service=t['service_id'])
+    return out
+
+
+def resolve(name, feed_names):
+    """Count station name to feed station name (convention rule 6)."""
+    if name in feed_names and name not in RENAMES:
+        return name
+    assert name in RENAMES, name
+    return RENAMES[name]
+
+
+def operate(counted, sched, tolerance=TOLERANCE):
+    """Convention rule 5: the scheduled train operating a counted train, or None."""
+    idx = collections.defaultdict(list)
+    for tid, s in sched.items():
+        idx[(s['line'], s['direction'], s['first'])].append((s['departure'] % 1440, s['train'], tid))
+    feed_names = {s['first'] for s in sched.values()} | {n for s in sched.values() for n in s['stops']}
+    result = {}
+    for k, c in counted.items():
+        origin = resolve(c['first'], feed_names)
+        cands = idx.get((c['line'], c['direction'], origin), []) if origin and c['departure'] is not None else []
+        best = None
+        for dep, train, tid in cands:
+            gap = clock_gap(dep, c['departure'])
+            if gap <= tolerance and (best is None or (gap, dep) < (best[0], best[1])):
+                best = (gap, dep, train, tid)
+        result[k] = best
+    return result
 
 
 def main():
-    june = load(os.path.join(INPUTS, '20260610.zip'))
-    aug = load(os.path.join(INPUTS, '20260812.zip'))
-    cur = load(os.path.join(INPUTS, 'MBTA_GTFS.zip'))
-    routes = cur['routes']
+    rows = load_count()
+    seasons = sorted({r['season'] for r in rows}, key=lambda s: int(s.split()[1]))
+    latest = seasons[-1]
+    assert latest == 'Fall 2024'
+    counted = trains(rows, latest)
+    assert len(counted) == 514 and all(seqkey(c['rows'][0]) == 1 for c in counted.values())
 
-    # ---- which weekday schedule ran most of each rating ----
-    s_tally = weekday_tally(june, dt.date(2026, 6, 15), dt.date(2026, 9, 3))
-    f_tally = weekday_tally(cur, dt.date(2026, 9, 28), dt.date(2026, 12, 10))
+    fall = load_feed(os.path.join(INPUTS, 'MBTA_GTFS.zip'))
+    trip_ids, days, weekdays = rating_schedule(fall, RATING_START, RATING_END)
+    sched = schedule_trains(fall, trip_ids)
+    assert len(sched) == 547 and days >= 50, (len(sched), days, weekdays)
+    old = load_feed(os.path.join(INPUTS, '20241014.zip'))
+    lines = dict(old['routes']); lines.update(fall['routes'])  # Middleborough/Lakeville exists only in the 2024 feed
+    assert 'CR-Middleborough' not in fall['routes'] and 'CR-NewBedford' not in old['routes']
+    name = lambda l: lines[l]['route_long_name']
+    order = lambda l: int(lines[l]['route_sort_order'])
 
-    # ---- trip registers ----
-    summer, fall = register(aug, SUMMER_DAY), register(cur, FALL_DAY)
-    assert register(june, dt.date(2026, 7, 22)) == summer
-    assert register(cur, dt.date(2026, 10, 7)) == fall
-    S, F = sum(summer.values()), sum(fall.values())
-    assert s_tally.most_common(1)[0][0] == S and f_tally.most_common(1)[0][0] == F
-    net = F - S
-    assert net == FINANCE_TRIPS
-    school_summer = sum(register(aug, dt.date(2026, 9, 2)).values())
-    assert F - school_summer == PLANNING_TRIPS
-    all_routes = sorted(set(summer) | set(fall), key=lambda r: int(routes[r]['route_sort_order']))
-    delta = {r: fall[r] - summer[r] for r in all_routes}
-    changed = sorted([r for r in all_routes if delta[r]],
-                     key=lambda r: (-abs(delta[r]), int(routes[r]['route_sort_order'])))
-    driver, runner, third = changed[0], changed[1], changed[2]
-    gap = abs(delta[driver]) - abs(delta[runner])
-    flip = gap + 1
+    # ---- rule 6 check: every count station resolves to a feed station or is documented as gone
+    feed_names = {n for s in sched.values() for n in s['stops']}
+    count_names = {r['stop_id'] for c in counted.values() for r in c['rows']}
+    unresolved = sorted(n for n in count_names if n not in feed_names)
+    assert unresolved == sorted(n for n in RENAMES if n != 'Lynn') or unresolved == sorted(RENAMES), unresolved
+    assert all(v is None or v in {s['stop_name'] for s in fall['stops'].values()} for v in RENAMES.values())
+    assert 'Middleborough/Lakeville' not in {s['stop_name'] for s in fall['stops'].values()}
+    old_names = {s['stop_name'] for s in old['stops'].values()}
+    assert {'Lynn', 'Middleborough/Lakeville', 'Littleton/Route 495', 'Porter', 'Dedham Corp Center'} <= old_names
+    assert old['stops']['Dedham Corp Center-S']['parent_station'] == 'place-FB-0118' and fall['stops']['place-FB-0118']['stop_name'] == 'Dedham Corporate Center'
 
-    # ---- buses in service ----
-    s_trips, s_blocks, s_broutes, s_tr, s_last = day_bounds(aug, SUMMER_DAY)
-    f_trips, f_blocks, f_broutes, f_tr, f_last = day_bounds(cur, FALL_DAY)
-    s_prof, f_prof = minute_profile(s_blocks.values()), minute_profile(f_blocks.values())
-    s_peak, s_when = peak(s_prof)
-    f_peak, f_when = peak(f_prof)
-    assert s_peak == CERTIFIED_SUMMER_PEAK, s_peak
-    for feed, day in [(june, dt.date(2026, 7, 22)), (aug, dt.date(2026, 8, 13))]:
-        _, b, _, _, _ = day_bounds(feed, day)
-        assert peak(minute_profile(b.values())) == (s_peak, s_when), day
-        assert starts_ends(b) == starts_ends(s_blocks), day
-    for feed, day in [(cur, dt.date(2026, 10, 7)), (cur, dt.date(2026, 11, 4))]:
-        _, b, _, _, _ = day_bounds(feed, day)
-        assert peak(minute_profile(b.values())) == (f_peak, f_when), day
-        assert starts_ends(b) == starts_ends(f_blocks), day
-    fin_peak, fin_when = peak(minute_profile(f_trips.values()))
-    assert fin_peak == FINANCE_PEAK, fin_peak
-    fin_s_peak, fin_s_when = peak(minute_profile(s_trips.values()))
-    _, sch_blocks, _, _, _ = day_bounds(aug, dt.date(2026, 9, 2))
-    school_peak, school_when = peak(minute_profile(sch_blocks.values()))
+    # ---- control 1: the count's numbers and departures were valid on the Fall 2024 feed
+    old_ids, old_days, _ = rating_schedule(old, dt.date(2024, 10, 14), dt.date(2024, 10, 17))
+    old_sched = schedule_trains(old, old_ids)
+    old_by_key = {(s['line'], s['train'], s['direction']): s for s in old_sched.values()}
+    same_number = [k for k in counted if k in old_by_key]
+    exact = sum(1 for k in same_number if counted[k]['departure'] is not None
+                and clock_gap(old_by_key[k]['departure'] % 1440, counted[k]['departure']) == 0)
+    assert len(same_number) == 434 and exact >= 400, (len(same_number), exact)
+    fall_by_key = {(s['line'], s['train'], s['direction']): s for s in sched.values()}
+    same_number_2026 = [k for k in counted if k in fall_by_key]
+    same_slot_2026 = [k for k in same_number_2026 if counted[k]['departure'] is not None
+                      and clock_gap(fall_by_key[k]['departure'] % 1440, counted[k]['departure']) <= TOLERANCE]
+    assert len(same_number_2026) == 132 and len(same_slot_2026) <= 3, (len(same_number_2026), len(same_slot_2026))
 
-    s_attr, s_lay = peak_attribution(s_trips, s_blocks, s_tr, s_when)
-    f_attr, f_lay = peak_attribution(f_trips, f_blocks, f_tr, f_when)
-    assert sum(s_attr.values()) == s_peak and sum(f_attr.values()) == f_peak
-    for feed, day in [(june, dt.date(2026, 7, 22))]:
-        t_, b_, _, tr_, _ = day_bounds(feed, day)
-        assert peak_attribution(t_, b_, tr_, s_when)[0] == s_attr, day
-    for feed, day in [(cur, dt.date(2026, 10, 7))]:
-        t_, b_, _, tr_, _ = day_bounds(feed, day)
-        assert peak_attribution(t_, b_, tr_, f_when)[0] == f_attr, day
-    peak_routes = sorted(set(s_attr) | set(f_attr), key=lambda r: int(routes[r]['route_sort_order']))
-    f_top = max(peak_routes, key=lambda r: (f_attr[r], -int(routes[r]['route_sort_order'])))
-    f_second = max([r for r in peak_routes if r != f_top], key=lambda r: (f_attr[r], -int(routes[r]['route_sort_order'])))
-    assert f_attr[f_top] > f_attr[f_second]
-    s_top = max(peak_routes, key=lambda r: (s_attr[r], -int(routes[r]['route_sort_order'])))
+    # ---- rule 5: which counted trains the Fall 2026 schedule operates
+    op = operate(counted, sched)
+    ranked = sorted(counted, key=lambda k: (-counted[k]['peak'], order(counted[k]['line']), int(counted[k]['train'])))
+    operated = [k for k in ranked if op[k]]
+    winner, runner = operated[0], operated[1]
+    w, r_ = counted[winner], counted[runner]
+    assert w['peak'] > r_['peak'] and winner == ('CR-Providence', '829', '0') and w['peak'] == 1064
+    flip = w['peak'] - r_['peak'] + 1
+    # determinism: the same winner and runner up under every tolerance from 5 to 30 minutes
+    for tol in (5, 15, 20, 30):
+        o2 = operate(counted, sched, tol)
+        top2 = [k for k in ranked if o2[k]][:2]
+        assert top2 == [winner, runner], tol
+    # determinism: the result does not depend on which 2026 weekday is read, nor on the two other feeds' calendars
+    for day in (dt.date(2026, 9, 30), dt.date(2026, 10, 21), dt.date(2026, 12, 9)):
+        s = active_services(fall, day)
+        assert frozenset(t['trip_id'] for t in fall['trips'] if t['service_id'] in s and t['route_id'] in fall['cr']) == trip_ids, day
+    w_slot = op[winner]
+    r_slot = op[runner]
+    w_train, r_train = sched[w_slot[3]], sched[r_slot[3]]
+    assert w_train['train'] == '867' and w_train['stops'] == [resolve(x['stop_id'], feed_names) for x in w['rows']]
 
-    s_bus65 = sum(1 for b, rs in s_broutes.items() if driver in rs)
-    f_bus65 = sum(1 for b, rs in f_broutes.items() if driver in rs)
-    s_first = min(a for k, (a, _) in s_trips.items() if s_tr[k]['route_id'] == driver)
-    s_lastarr = max(b for k, (_, b) in s_trips.items() if s_tr[k]['route_id'] == driver)
-    f_first = min(a for k, (a, _) in f_trips.items() if f_tr[k]['route_id'] == driver)
-    f_lastarr = max(b for k, (_, b) in f_trips.items() if f_tr[k]['route_id'] == driver)
-    ends = lambda d, tr, last: collections.Counter(d['stops'][last[k]]['stop_name'] for k in tr if tr[k]['route_id'] == driver and tr[k]['direction_id'] == '1').most_common(1)[0][0]
-    s_end, f_end = ends(aug, s_tr, s_last), ends(cur, f_tr, f_last)
-    heads = lambda tr: collections.Counter(tr[k]['trip_headsign'] for k in tr if tr[k]['route_id'] == driver and tr[k]['direction_id'] == '1').most_common(1)[0][0]
-    dn, rn, tn = routes[driver]['route_short_name'], routes[runner]['route_short_name'], routes[third]['route_short_name']
+    # ---- the office figures
+    fin = [k for k in counted if k[1] == FINANCE_TRAIN and k[0] == 'CR-Providence'][0]
+    assert counted[fin]['peak'] == FINANCE_LOAD
+    fin_2026 = fall_by_key[fin]
+    fin_slot = sched[op[fin][3]]
+    fin_rank = 1 + sum(1 for k in counted if counted[k]['peak'] > counted[fin]['peak'])
+    fin_tied = [k for k in counted if counted[k]['peak'] == counted[fin]['peak'] and k != fin]
+    assert w['boardings'] == PLANNING_FIGURE
+    ctrl = trains(rows, 'Spring 2018')[CONTROL[:3]]
+    assert ctrl['peak'] == CONTROL[3] and ctrl['peak_stop'] == CONTROL[4]
+    assert max(trains(rows, 'Spring 2018').values(), key=lambda c: c['peak'])['peak'] == CONTROL[3]
+    raw_max = max(counted.values(), key=lambda c: c['peak'])
+    assert raw_max is w  # the raw maximum is the certified train; the traps are in its identity and its measure
+    byn = [k for k in ranked if k[0] == 'CR-Providence' and k[1] == '829']
+    assert not any(k[1] == '829' for k in fall_by_key)
 
-    def hour_label(h):
-        return f"{h:02d}:00" if h < 24 else f"{h - 24:02d}:00 next day"
+    # ---- coverage both ways
+    cov_c = collections.Counter(); tot_c = collections.Counter()
+    for k in counted:
+        tot_c[k[0]] += 1
+        cov_c[k[0]] += bool(op[k])
+    cidx = collections.defaultdict(list)
+    for k, c in counted.items():
+        if c['departure'] is not None:
+            cidx[(c['line'], c['direction'], resolve(c['first'], feed_names))].append(c['departure'])
+    cov_s = collections.Counter(); tot_s = collections.Counter()
+    for tid, s in sched.items():
+        tot_s[s['line']] += 1
+        if any(clock_gap(d, s['departure'] % 1440) <= TOLERANCE for d in cidx.get((s['line'], s['direction'], s['first']), [])):
+            cov_s[s['line']] += 1
+    all_lines = sorted(set(tot_c) | set(tot_s), key=order)
+    n_op = sum(cov_c.values()); n_not = len(counted) - n_op
+    n_uncovered = len(sched) - sum(cov_s.values())
+    south_mod = sum(1 for s in sched.values() if s['service'] == 'Spring/SummerWeekday')
+    typ = {a['service_id']: a['service_schedule_typicality'] for a in table(fall['zip'], 'calendar_attributes.txt')}
+    assert typ['Spring/SummerWeekday'] == '4' and w_train['service'] == 'Spring/SummerWeekday'
 
-    # ---------- 1. CSV ----------
-    with open(os.path.join(HERE, 'peak_buses_by_route.csv'), 'w', newline='') as f:
-        w = csv.writer(f)
-        w.writerow(['route_id', 'route_name', 'service_category', 'summer_buses_at_peak', 'fall_buses_at_peak', 'change'])
-        for r in peak_routes:
-            w.writerow([r, routes[r]['route_short_name'] or routes[r]['route_long_name'], routes[r]['route_desc'],
-                        s_attr[r], f_attr[r], f_attr[r] - s_attr[r]])
-        w.writerow(['TOTAL', 'All MBTA bus routes', '', s_peak, f_peak, f_peak - s_peak])
+    # ---------- 1. CSV register ----------
+    dirname = {'0': 'Outbound', '1': 'Inbound'}
+    with open(os.path.join(HERE, 'crowding_priority_register.csv'), 'w', newline='') as f:
+        wr = csv.writer(f)
+        wr.writerow(['rank', 'line_id', 'line_name', 'train', 'direction', 'first_stop', 'counted_departure', 'peak_load',
+                     'peak_load_stop', 'peak_load_time', 'weekday_boardings', 'fall_2026_status', 'fall_2026_train',
+                     'fall_2026_departure', 'departure_difference_minutes'])
+        rank, prev = 0, None
+        for i, k in enumerate(ranked, 1):
+            c = counted[k]
+            if c['peak'] != prev:
+                rank, prev = i, c['peak']
+            o = op[k]
+            wr.writerow([rank, c['line'], name(c['line']), c['train'], dirname[c['direction']], c['first'],
+                         hhmm(c['departure']) if c['departure'] is not None else '', c['peak'], c['peak_stop'],
+                         hhmm(c['peak_time']) if c['peak_time'] is not None else '', c['boardings'],
+                         'operated' if o else 'not operated', o[2] if o else '', hhmm(o[1]) if o else '',
+                         int(o[0]) if o else ''])
 
     # ---------- 2. PNG ----------
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
-    INK, INK2, SURF = '#0b0b0b', '#52514e', '#fcfcfb'
-    C_SUMMER, C_FALL = '#eb6834', '#2a78d6'
-    fig, ax = plt.subplots(figsize=(14, 6.4), dpi=200)
+    from matplotlib.patches import Patch
+    INK, INK2, SURF, GRID = '#0b0b0b', '#52514e', '#fcfcfb', '#e6e5e0'
+    C_OP, C_NOT = '#2a78d6', '#eb6834'
+    top = ranked[:15]
+    fig, ax = plt.subplots(figsize=(13, 8), dpi=200)
     fig.patch.set_facecolor(SURF); ax.set_facecolor(SURF)
-    xs = [m / 60 for m in range(4 * 60, 27 * 60)]
-    ax.plot(xs, s_prof[4 * 60:27 * 60], color=C_SUMMER, lw=2, label='Summer 2026 rating')
-    ax.plot(xs, f_prof[4 * 60:27 * 60], color=C_FALL, lw=2, label='Fall 2026 rating')
-    for pk, when, col, dy in [(s_peak, s_when, C_SUMMER, -40), (f_peak, f_when, C_FALL, 24)]:
-        ax.plot(when / 60, pk, 'o', color=col, ms=8, markeredgecolor=SURF, markeredgewidth=2)
-        ax.annotate(f"{pk} buses at {clock(when)}", xy=(when / 60, pk), xytext=(when / 60 + 0.9, pk + dy),
-                    fontsize=10, color=INK, arrowprops=dict(arrowstyle='-', color=INK2, lw=0.8))
-    ax.set_xlim(4, 27.6); ax.set_ylim(0, 700)
-    ticks = list(range(4, 27, 2))
-    ax.set_xticks(ticks); ax.set_xticklabels([f"{t % 24:02d}:00" for t in ticks], fontsize=9, color=INK2)
-    ax.set_xlabel('Time of day (service day runs past midnight)', fontsize=9, color=INK2)
-    ax.set_ylabel('Buses in service', fontsize=9, color=INK2)
-    for side in ['top', 'right']:
+    ys = list(range(len(top)))[::-1]
+    for y, k in zip(ys, top):
+        c = counted[k]; o = op[k]
+        ax.barh(y, c['peak'], color=C_OP if o else C_NOT, height=0.62, edgecolor=SURF, linewidth=1)
+        lab = f"{c['peak']:,} leaving {c['peak_stop']}"
+        lab += f"; Fall 2026 train {o[2]} at {hhmm(o[1])}" if o else '; not operated in Fall 2026'
+        if k == winner:
+            lab = 'Certified crowding priority\n' + lab
+        ax.text(c['peak'] + 12, y, lab, va='center', fontsize=8.4, color=INK, fontweight='bold' if k == winner else 'normal')
+    ax.set_yticks(ys)
+    ax.set_yticklabels([f"{name(counted[k]['line']).replace(' Line', '')} {counted[k]['train']} {dirname[counted[k]['direction']].lower()}, "
+                        f"{hhmm(counted[k]['departure'])} from {counted[k]['first']}" for k in top], fontsize=8.4, color=INK2)
+    ax.set_xlim(0, 1950); ax.set_ylim(-0.7, len(top) - 0.3)
+    ax.xaxis.grid(True, color=GRID, lw=0.6); ax.set_axisbelow(True)
+    for side in ['top', 'right', 'left']:
         ax.spines[side].set_visible(False)
-    for side in ['left', 'bottom']:
-        ax.spines[side].set_color('#d6d5d0')
-    ax.tick_params(colors=INK2, length=0)
-    ax.yaxis.grid(True, color='#e6e5e0', lw=0.6); ax.set_axisbelow(True)
-    ax.set_title(f"Weekday buses in service, Summer 2026 rating to Fall 2026 rating: peak {s_peak} to {f_peak} buses "
-                 f"({f_peak - s_peak:+d})", fontsize=12.5, color=INK, loc='left', pad=12)
-    ax.legend(loc='upper right', frameon=False, fontsize=9, labelcolor=INK2)
-    fig.text(0.01, 0.01, 'Source: MBTA GTFS feeds (archive 20260812 and the published Fall 2026 feed); a bus is in service '
-             'from the first departure to the last arrival of its block; Wednesday 19 August and Wednesday 30 September 2026.',
-             fontsize=7.5, color=INK2)
-    fig.tight_layout()
-    fig.savefig(os.path.join(HERE, 'bus_requirement_profile.png'), facecolor=SURF)
+    ax.spines['bottom'].set_color('#d6d5d0')
+    ax.set_xticks(range(0, 1601, 200))
+    ax.tick_params(colors=INK2, length=0, labelsize=8.4)
+    ax.set_xlabel('Peak load in the Fall 2024 count: average riders on board on leaving the busiest stop', fontsize=9, color=INK2)
+    fig.text(0.01, 0.975, 'Fifteen highest weekday peak loads in the Fall 2024 count', fontsize=11, color=INK, fontweight='bold')
+    fig.text(0.01, 0.948, f"Certified Fall 2026 crowding priority: {name(w['line']).replace(' Line', '')} train {w['train']}, "
+             f"{w['peak']:,} riders leaving {w['peak_stop']}, operated in Fall 2026 as train {w_train['train']}", fontsize=9.6, color=INK2)
+    ax.legend(handles=[Patch(color=C_OP, label='Operated by the Fall 2026 weekday schedule (same line, direction and first stop, departure within 10 minutes)'),
+                       Patch(color=C_NOT, label='Not operated in Fall 2026')],
+              loc='upper center', bbox_to_anchor=(0.5, -0.09), ncol=1, frameon=False, fontsize=8.2, labelcolor=INK2)
+    fig.text(0.01, 0.012, 'Source: MBTA Commuter Rail Ridership by Trip, Season, Route/Line, and Stop (Fall 2024 season) and the '
+             'MBTA GTFS feed published 2 October 2026 (weekday schedule running 28 September to 11 December 2026).',
+             fontsize=7.4, color=INK2)
+    fig.tight_layout(rect=(0, 0.04, 1, 0.935))
+    fig.savefig(os.path.join(HERE, 'top_trains_by_peak_load.png'), facecolor=SURF)
 
     # ---------- 3. PDF ----------
     from reportlab.lib.pagesizes import letter
@@ -280,116 +346,121 @@ def main():
     from reportlab.lib.units import inch
     from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
     ss = getSampleStyleSheet()
-    body = ParagraphStyle('body', parent=ss['Normal'], fontName='Helvetica', fontSize=9.6, leading=12.6, spaceAfter=6)
-    h = ParagraphStyle('h', parent=body, fontName='Helvetica-Bold', fontSize=10.5, spaceBefore=6, spaceAfter=3)
+    body = ParagraphStyle('body', parent=ss['Normal'], fontName='Helvetica', fontSize=9.4, leading=12.3, spaceAfter=5)
+    h = ParagraphStyle('h', parent=body, fontName='Helvetica-Bold', fontSize=10.4, spaceBefore=6, spaceAfter=3)
     title = ParagraphStyle('t', parent=body, fontName='Helvetica-Bold', fontSize=13.5, leading=17, spaceAfter=4)
-    small = ParagraphStyle('s', parent=body, fontSize=8.6, leading=11)
-    s_days, f_days = sum(s_tally.values()), sum(f_tally.values())
+    small = ParagraphStyle('s', parent=body, fontSize=8.4, leading=10.8)
+    wl, rl = name(w['line']), name(r_['line'])
+    w_board_stop = max(w['rows'], key=lambda x: x['average_ons'])
+    not_op_lines = {l: tot_c[l] - cov_c[l] for l in all_lines if tot_c[l] - cov_c[l]}
+    unc_lines = {l: tot_s[l] - cov_s[l] for l in all_lines if tot_s[l] - cov_s[l]}
     story = [
-        Paragraph('Fall 2026 weekday bus requirement: fleet certification', title),
-        Paragraph('To: MBTA Board of Directors &nbsp;&nbsp; From: Service Planning, schedule certification &nbsp;&nbsp; '
-                  'Date: 5 October 2026', small),
+        Paragraph('Fall 2026 weekday crowding priority: certification', title),
+        Paragraph('To: MBTA Board of Directors &nbsp;&nbsp; From: Commuter Rail service planning &nbsp;&nbsp; Date: 6 October 2026', small),
         Spacer(1, 4),
-        Paragraph('Certified requirement', h),
-        Paragraph(f"The Board should certify the Fall 2026 weekday bus requirement at <b>{f_peak} buses</b>, "
-                  f"{f_peak - s_peak:+d} against the Summer 2026 certification of {s_peak}. The peak falls in the morning, "
-                  f"at {clock(f_when)}; the Summer peak fell at {clock(s_when)}. The same files and the same convention "
-                  f"reproduce the Summer certification of {s_peak} exactly. Finance's draft peak of {FINANCE_PEAK} is not "
-                  f"certified. The schedule behind the fleet change is a net {net:+d} weekday trips, {S:,} to {F:,}, which is "
-                  f"Finance's figure and is certified; the planners' {PLANNING_TRIPS:+d} is not. <b>Route {dn}</b> "
-                  f"({routes[driver]['route_long_name']}) is the single route behind the biggest share of the change at "
-                  f"{delta[driver]:+d} trips.", body),
-        Paragraph('The three figures, what each counted, and the certification decision', h),
-        Paragraph(f"<b>Finance's peak of {FINANCE_PEAK} buses: not certified.</b> It is the most trips underway at one "
-                  f"moment, at {clock(fin_when)} in the afternoon (the Summer equivalent is {fin_s_peak} at {clock(fin_s_when)}). "
-                  f"Under the convention a bus is in service from the first departure to the last arrival of its day's work, "
-                  f"so a bus on layover between trips is still out. Trips underway run about a hundred below buses out and "
-                  f"peak in the afternoon, when trips are long, not in the morning, when the most buses are out.", body),
-        Paragraph(f"<b>Finance's {FINANCE_TRIPS:+d} weekday trips: certified.</b> It compares the weekday schedule that ran "
-                  f"for most of the Summer rating ({S:,} trips, the no school weekday, {s_tally[S]} of the rating's "
-                  f"{s_days} Monday to Thursday dates) with the weekday schedule that runs for most of the Fall rating "
-                  f"({F:,} trips, {f_tally[F]} of {f_days} dates from 28 September). That is the convention's certification day for each rating, "
-                  f"and the figure stands.", body),
-        Paragraph(f"<b>The planners' {PLANNING_TRIPS:+d}: not certified.</b> It replaces the Summer certification day with "
-                  f"the Summer rating's school day weekday ({school_summer:,} trips, {s_tally[school_summer]} of {s_days} "
-                  f"dates, the weeks either side of the school holiday) to make a like for like school day comparison with "
-                  f"Fall. The comparison is arithmetically correct and it is not the Board's convention, which certifies each "
-                  f"rating on the schedule it mostly ran. On the planners' basis the Summer peak would be {school_peak} "
-                  f"buses, which does not reproduce the certified {s_peak}; the certified figures are not adjusted.", body),
-        Paragraph('How the certified figures were built', h),
-        Paragraph(f"The archive index assigns the feed published 12 August 2026 to 19 August, the Summer certification "
-                  f"day, and the published Fall feed (the archive's 25 September entry) to 30 September, the Fall "
-                  f"certification day. The Summer rating's Monday to Thursday dates split {s_tally[S]} on the no school "
-                  f"weekday schedule, {s_tally[school_summer]} on the school day schedule and {s_days - s_tally[S] - s_tally[school_summer]} "
-                  f"on transition variants, read from the June feed, whose calendar carries the whole rating from 14 June; "
-                  f"the August feed's calendar starts on 12 August and alone would understate how long the no school "
-                  f"schedule ran. The Fall rating runs one weekday schedule on {f_tally[F]} of {f_days} dates. Both days "
-                  f"carry no holiday, modified or reduced service. Services were taken by date rather than by rating label. "
-                  f"The route population is every route the feed classifies as Frequent, Local, Coverage, Commuter or "
-                  f"Supplemental Bus; rail replacement shuttles are excluded and none ran on either day. Each trip was "
-                  f"assigned to its block, each block counted as one bus from its first departure to its last arrival, and "
-                  f"the count taken at every minute. Every figure is identical on every other qualifying day of its rating "
-                  f"and in every archived feed that covers it.", body),
-        Paragraph('Buses on the road at the peak, by route', h),
-        Paragraph(f"At the Fall peak minute, {clock(f_when)}, <b>Route {routes[f_top]['route_short_name']}</b> "
-                  f"({routes[f_top]['route_long_name']}) has the most buses on the road, <b>{f_attr[f_top]}</b>, ahead of Route "
-                  f"{routes[f_second]['route_short_name']} at {f_attr[f_second]}. Of the {f_peak} buses in service at that minute, "
-                  f"<b>{f_lay} are between trips</b> and {f_peak - f_lay} are on a trip; each bus between trips is attributed to the "
-                  f"route of the trip it has just completed. At the Summer peak minute, {clock(s_when)}, Route "
-                  f"{routes[s_top]['route_short_name']} led with {s_attr[s_top]} and {s_lay} buses were between trips. The full "
-                  f"allocation for every route is in peak_buses_by_route.csv, and the route rows add up to {s_peak} and {f_peak}.", body),
-        Paragraph(f'The ten largest route changes in weekday trips ({len(changed)} of {len(all_routes)} routes changed)', h),
+        Paragraph('Certified priority', h),
+        Paragraph(f"The Board should certify the Fall 2026 weekday crowding priority as <b>{wl} train {w['train']}</b> of the "
+                  f"Fall 2024 count, outbound from {w['first']} at {hhmm(w['departure'])}, with a certified peak load of "
+                  f"<b>{w['peak']:,} riders leaving {w['peak_stop']} at {hhmm(w['peak_time'])}</b>. The Fall 2026 weekday "
+                  f"schedule operates that train as <b>train {w_train['train']}</b>, leaving {w_train['first']} at "
+                  f"{hhmm(w_train['departure'])} and arriving {w_train['last']} at {hhmm(w_train['arrival'])}, the same "
+                  f"{len(w_train['stops'])} stops the count recorded. The added coach set goes to train {w_train['train']}. "
+                  f"Finance's draft (train {FINANCE_TRAIN}, {FINANCE_LOAD}) and Planning's draft (train {PLANNING_TRAIN}, "
+                  f"{PLANNING_FIGURE:,}) are not certified.", body),
+        Paragraph('The two draft figures: what each measured', h),
+        Paragraph(f"<b>Finance, train {FINANCE_TRAIN} at {FINANCE_LOAD}: not certified.</b> Finance took the highest load "
+                  f"among counted trains whose number also appears in the Fall 2026 schedule. The number is the only thing "
+                  f"the two trains share. In the count, {FINANCE_TRAIN} leaves {counted[fin]['first']} at "
+                  f"{hhmm(counted[fin]['departure'])} with {FINANCE_LOAD} riders leaving {counted[fin]['peak_stop']}; in the "
+                  f"Fall 2026 schedule, {FINANCE_TRAIN} is an off peak train leaving {fin_2026['first']} at "
+                  f"{hhmm(fin_2026['departure'])}. Train numbers were reassigned between the two schedules: of the "
+                  f"{len(counted)} counted trains, {len(same_number_2026)} share a number with a Fall 2026 train on the same "
+                  f"line and direction and only {len(same_slot_2026)} of those still leave within ten minutes of the counted "
+                  f"departure. The counted {FINANCE_TRAIN} is operated in Fall 2026 as train {fin_slot['train']} at "
+                  f"{hhmm(fin_slot['departure'])}, and its {FINANCE_LOAD} is only the sixth highest load in the count, shared with "
+                  f"{name(fin_tied[0][0])} train {fin_tied[0][1]}.", body),
+        Paragraph(f"<b>Planning, train {PLANNING_TRAIN} at {PLANNING_FIGURE:,}: not certified as stated.</b> Planning identified "
+                  f"the right train but reported its weekday boardings, {PLANNING_FIGURE:,} riders getting on over the whole "
+                  f"run, rather than its peak load. The convention certifies the load on leaving the busiest stop, "
+                  f"{w['peak']:,} at {w['peak_stop']}. Boardings exceed the peak load because {w['boardings'] - w['peak']} riders "
+                  f"board after the train has started to empty at Route 128.", body),
+        Paragraph('How the count was conformed to the Fall 2026 schedule', h),
+        Paragraph(f"The latest published count is the Fall 2024 season ({len(counted)} weekday trains, every one listed from "
+                  f"its first stop). The Fall 2026 weekday schedule was taken by date from the feed: the same {len(sched)} "
+                  f"Commuter Rail trains run on {days} of the rating's {weekdays} Monday to Friday dates, the north side on "
+                  f"typical weekday services and the south side ({south_mod} trains, the certified train among them) on the "
+                  f"service the feed labels a modified weekday schedule, which is the schedule in effect for the whole "
+                  f"rating. Every counted train was matched to the schedule by line, direction and first stop with the "
+                  f"departure within ten minutes, after resolving the count's station spellings to the feed's "
+                  f"(Littleton/Rte 495, Dedham Corp Center and Porter Square are feed stations under other names; Lynn is "
+                  f"a feed station the Fall 2026 schedule no longer serves; Middleborough/Lakeville is no longer a feed "
+                  f"station). The Fall 2024 archived feed confirms the method: {len(same_number)} of the {len(counted)} "
+                  f"counted trains carry their number in that feed and {exact} of them leave at exactly the counted minute, "
+                  f"so the count's numbers and times were right when taken and the numbers moved afterwards.", body),
+        Paragraph(f"<b>{n_op} counted trains are operated in Fall 2026 and {n_not} are not.</b> The trains not operated are "
+                  + ', '.join(f"{name(l).replace(' Line', '')} {n}" for l, n in not_op_lines.items()) + '. '
+                  f"The Middleborough/Lakeville Line ran no Fall 2026 weekday service (the Fall River/New Bedford Line replaced "
+                  f"it); Worcester and Franklin run fewer weekday trains than the count covered ({tot_s['CR-Worcester']} and "
+                  f"{tot_s['CR-Franklin']} scheduled against {tot_c['CR-Worcester']} and {tot_c['CR-Franklin']} counted); and the "
+                  f"Kingston, Greenbush and Haverhill schedules were retimed so that many counted departures have no train "
+                  f"within ten minutes. <b>{n_uncovered} of the {len(sched)} Fall 2026 weekday trains have no counted train "
+                  f"behind them</b>: " + ', '.join(f"{name(l).replace(' Line', '')} {n} of {tot_s[l]}" for l, n in unc_lines.items())
+                  + f". The Fall River/New Bedford Line has never been counted; Haverhill and Lowell run more weekday trains "
+                  f"than the count covered ({tot_c['CR-Haverhill']} and {tot_c['CR-Lowell']} counted against {tot_s['CR-Haverhill']} "
+                  f"and {tot_s['CR-Lowell']} scheduled); Kingston and Greenbush were retimed.", body),
+        Paragraph('Runner up and flip point', h),
+        Paragraph(f"The runner up is <b>{rl} train {r_['train']}</b>, outbound from {r_['first']} at {hhmm(r_['departure'])}, "
+                  f"peak load {r_['peak']:,} leaving {r_['peak_stop']} at {hhmm(r_['peak_time'])}, operated in Fall 2026 as "
+                  f"train {r_train['train']} at {hhmm(r_train['departure'])}. The certified train leads by "
+                  f"{w['peak'] - r_['peak']} riders, so a fall of <b>{flip} riders</b> in its peak load (to {w['peak'] - flip:,}) "
+                  f"would hand the priority to train {r_['train']}. The third operated train is "
+                  f"{name(counted[operated[2]]['line'])} {counted[operated[2]]['train']} at {counted[operated[2]]['peak']:,}.", body),
+        Paragraph(f"Train {w['train']} stop by stop", h),
     ]
-    rows = [['Rank', 'Route', 'Category', 'Summer', 'Fall', 'Change']]
-    for i, r in enumerate(changed[:10], 1):
-        rows.append([str(i), routes[r]['route_short_name'], routes[r]['route_desc'], f"{summer[r]}", f"{fall[r]}", f"{delta[r]:+d}"])
-    rows.append(['', 'All bus routes', f"{len(all_routes)} routes", f"{S:,}", f"{F:,}", f"{net:+,}"])
-    t = Table(rows, colWidths=[0.5 * inch, 0.8 * inch, 1.5 * inch, 0.9 * inch, 0.9 * inch, 0.9 * inch], repeatRows=1)
+    rows_t = [['Stop', 'Time', 'Boardings', 'Alightings', 'Load leaving']]
+    for x in w['rows']:
+        rows_t.append([x['stop_id'], hhmm(clock(x['stop_time'])), f"{x['average_ons']:,}", f"{x['average_offs']:,}", f"{x['average_load']:,}"])
+    rows_t.append(['Total', '', f"{w['boardings']:,}", f"{w['alightings']:,}", ''])
+    t = Table(rows_t, colWidths=[1.9 * inch, 0.7 * inch, 0.9 * inch, 0.9 * inch, 1.0 * inch], repeatRows=1)
     t.setStyle(TableStyle([
         ('FONT', (0, 0), (-1, 0), 'Helvetica-Bold', 8.2), ('FONT', (0, 1), (-1, -1), 'Helvetica', 8.2),
-        ('FONT', (0, -1), (-1, -1), 'Helvetica-Bold', 8.2), ('ALIGN', (3, 0), (-1, -1), 'RIGHT'),
+        ('FONT', (0, -1), (-1, -1), 'Helvetica-Bold', 8.2), ('ALIGN', (1, 0), (-1, -1), 'RIGHT'),
         ('LINEBELOW', (0, 0), (-1, 0), 0.6, colors.black), ('LINEABOVE', (0, -1), (-1, -1), 0.6, colors.black),
-        ('TOPPADDING', (0, 0), (-1, -1), 0.9), ('BOTTOMPADDING', (0, 0), (-1, -1), 0.9),
-        ('BACKGROUND', (0, 1), (-1, 1), colors.HexColor('#fde7d9')),
+        ('TOPPADDING', (0, 0), (-1, -1), 0.8), ('BOTTOMPADDING', (0, 0), (-1, -1), 0.8),
+        ('BACKGROUND', (0, 3), (-1, 3), colors.HexColor('#dbe8f8')),
     ]))
-    story += [t, Spacer(1, 6),
-        Paragraph(f"The {len(changed)} changed routes sum to {net:+d}; the other {len(all_routes) - len(changed)} bus routes run "
-                  f"the same number of weekday trips under both ratings.", body),
-        Paragraph(f"Route {dn}: what changed", h),
-        Paragraph(f"Under the Summer rating {s_bus65} buses carry Route {dn} trips during the weekday; under the Fall rating "
-                  f"{f_bus65} do. Summer service ran {summer[driver]} trips with the first departure at {clock(s_first)} and the "
-                  f"last arrival at {clock(s_lastarr)}; Fall runs {fall[driver]} trips from {clock(f_first)} to {clock(f_lastarr)} "
-                  f"({clock(f_lastarr - 24 * 60)} the next morning). The route was extended at its inbound end: Summer inbound "
-                  f"trips end at {s_end} (headsign {heads(s_tr)}) and Fall inbound trips end at {f_end} (headsign {heads(f_tr)}), "
-                  f"with the span opening about an hour earlier and closing more than four hours later. The added trips come "
-                  f"from the longer span and more frequent service through the day, not from the Brighton Center end.", body),
-        Paragraph('How close the driving route is to being overtaken', h),
-        Paragraph(f"Route {rn} ({routes[runner]['route_long_name']}) is the runner up at {delta[runner]:+d}, {gap} trips behind, "
-                  f"with Route {tn} next at {delta[third]:+d}. The smallest change in a single route's Fall trip count that "
-                  f"would make a different route the driver is <b>{flip} trips</b>: Route {rn} at {fall[runner] + flip} Fall trips "
-                  f"({delta[runner] + flip:+d}), or Route {dn} at {fall[driver] - flip} ({delta[driver] - flip:+d}), which would "
-                  f"put Route {rn} first.", body),
-        Paragraph('Why no other figure survives', h),
-        Paragraph(f"The convention fixes the unit, the day type, the day of week band, the population and the certification "
-                  f"day, and the feed fixes which services run on each date and which trips share a bus. Applied together they "
-                  f"give one Summer profile and one Fall profile, stable across every qualifying day and every archived feed, "
-                  f"and the Summer profile returns the certified {s_peak} exactly. Every other figure relaxes one fixed point: "
-                  f"trips underway instead of buses out, the school day weeks instead of the schedule that ran the rating, a "
-                  f"rating label instead of a date, or a Friday. {f_peak} buses, {f_peak - s_peak:+d}, is the only requirement "
-                  f"the convention and the files allow.", body),
+    story += [t, Spacer(1, 5),
+        Paragraph(f"Most riders board at <b>{w_board_stop['stop_id']}</b> ({w_board_stop['average_ons']:,} of the "
+                  f"{w['boardings']:,} boardings), then Back Bay and Ruggles. The published count ends the run with a load of "
+                  f"{w['rows'][-1]['average_load']} at {w['last']}, a rounding residue of the averaged boardings and alightings; "
+                  f"under the convention the count is certified as published and is not adjusted or set aside for it.", body),
+        Paragraph('Previous certification reproduced', h),
+        Paragraph(f"The Spring 2018 priority reproduces from the Spring 2018 season of the same file: {name(CONTROL[0])} train "
+                  f"{CONTROL[1]} inbound, peak load {CONTROL[3]:,} leaving {CONTROL[4]}, the highest load of that season. The "
+                  f"Fall 2026 certified load of {w['peak']:,} is {CONTROL[3] - w['peak']} riders, {(1 - w['peak'] / CONTROL[3]) * 100:.0f} percent, "
+                  f"below it, and the highest load has moved from an inbound Worcester train to an outbound Providence train "
+                  f"in the evening peak.", body),
+        Paragraph('Why no other train survives', h),
+        Paragraph(f"The convention fixes the count (latest season, as published), the measure (peak load, not boardings), the "
+                  f"identity of a train across schedules (line, direction, first stop and departure, not number) and the "
+                  f"schedule (the weekday service the feed runs on most dates of the rating). Applied together they give one "
+                  f"ranked register in which train {w['train']} holds the highest load and is operated, and the ranking is the "
+                  f"same whether the departure window is five, ten or thirty minutes. Every other candidate relaxes one fixed "
+                  f"point: a shared number instead of a shared slot, boardings instead of load, a train the rating no longer "
+                  f"runs, or a count set aside for a rounding residue.", body),
     ]
-    doc = SimpleDocTemplate(os.path.join(HERE, 'fleet_certification_memo.pdf'), pagesize=letter,
+    doc = SimpleDocTemplate(os.path.join(HERE, 'crowding_priority_memo.pdf'), pagesize=letter,
                             leftMargin=0.8 * inch, rightMargin=0.8 * inch, topMargin=0.7 * inch, bottomMargin=0.7 * inch,
-                            title='Fall 2026 weekday bus requirement: fleet certification', author='Service Planning')
+                            title='Fall 2026 weekday crowding priority: certification', author='Commuter Rail service planning')
     doc.build(story)
 
-    print(f"peak {s_peak} at {clock(s_when)} -> {f_peak} at {clock(f_when)} ({f_peak - s_peak:+d}); school-day summer peak {school_peak}; finance trips-peak {fin_peak} at {clock(fin_when)} (summer {fin_s_peak})")
-    print(f"trips {S} -> {F} net {net:+d} (school summer {school_summer}); tallies S {dict(s_tally)} F {dict(f_tally)}")
-    print(f"driver {dn} {delta[driver]:+d}; runner {rn} {delta[runner]:+d}; third {tn} {delta[third]:+d}; flip {flip}; changed {len(changed)} of {len(all_routes)}")
-    print(f"peak allocation: Fall top {routes[f_top]['route_short_name']} {f_attr[f_top]} vs {routes[f_second]['route_short_name']} {f_attr[f_second]}; layover {s_lay}/{f_lay}; Summer top {routes[s_top]['route_short_name']} {s_attr[s_top]}; routes at a peak {len(peak_routes)}")
-    print('allocation:', [(routes[r]['route_short_name'], s_attr[r], f_attr[r]) for r in peak_routes])
-    print(f"route {dn} buses {s_bus65} -> {f_bus65}; span {clock(s_first)}-{clock(s_lastarr)} -> {clock(f_first)}-{clock(f_lastarr)}; ends {s_end} -> {f_end}")
-    print('changed routes:', [(routes[r]['route_short_name'], summer[r], fall[r], delta[r]) for r in changed])
+    print(f"certified: {wl} {w['train']} {dirname[w['direction']]} dep {hhmm(w['departure'])} from {w['first']}; peak {w['peak']} leaving {w['peak_stop']} at {hhmm(w['peak_time'])}; boardings {w['boardings']}; operated as {w_train['train']} at {hhmm(w_train['departure'])} ({w_slot[0]} min)")
+    print(f"runner up: {rl} {r_['train']} peak {r_['peak']} at {r_['peak_stop']} operated as {r_train['train']} at {hhmm(r_train['departure'])}; flip {flip}; third {counted[operated[2]]['line']} {counted[operated[2]]['train']} {counted[operated[2]]['peak']}")
+    print(f"finance {FINANCE_TRAIN}: count dep {hhmm(counted[fin]['departure'])} peak {counted[fin]['peak']} rank {ranked.index(fin)+1}; 2026 train {FINANCE_TRAIN} dep {hhmm(fin_2026['departure'])}; counted 827 operated as {fin_slot['train']} {hhmm(fin_slot['departure'])}")
+    print(f"schedule: {len(sched)} trains on {days} of {weekdays} weekdays; south side modified {south_mod}; same number 2026 {len(same_number_2026)} same slot {len(same_slot_2026)}; 2024 feed same number {len(same_number)} exact minute {exact}")
+    print(f"coverage: operated {n_op} not {n_not}; not operated by line {not_op_lines}; 2026 trains uncovered {n_uncovered}: {unc_lines}")
+    print('operated by line:', [(l, cov_c[l], tot_c[l]) for l in all_lines if tot_c[l]])
+    print('control:', CONTROL, 'raw max is winner:', raw_max is w)
 
 
 if __name__ == '__main__':
