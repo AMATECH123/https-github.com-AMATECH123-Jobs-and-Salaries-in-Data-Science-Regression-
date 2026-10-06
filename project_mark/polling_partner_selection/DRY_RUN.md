@@ -26,3 +26,10 @@ Failed. Both models certified Beacon Research/Shaw & Co. Research at 4.13 points
 test cycle are stated in the standard, and both models applied them in order, as the dry run agent did. Seven
 headlines across two datasets have now been reached by both platform models whenever the deciding rule is
 written down, and the handbook's determinism bar requires it to be written down.
+
+### Platform rubric evaluation, 2026-10-06
+Both responses passed every criterion but one. Response 1 failed criterion 19 only (weight 3, the predictive plus
+minus named as the scoring measure); Response 2 passed all criteria. Percentages were not shown on the rubric
+page, so the scores are recorded as the evaluation stands: roughly 97 percent and 100 percent, average roughly
+98 percent, above the 50 percent bar. This matches the stumped check above. The task is retired and the
+Forecasting objective task (project_mark/midwest_claims_outlook) replaces it.
