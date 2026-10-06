@@ -35,7 +35,7 @@ the Fall 2026 train that operates it. Finance's draft names train 827 at 896; Pl
 | Runner up | Franklin/Foxboro 723, outbound 16:27, 1,036 leaving Ruggles 16:36, operated as 759 at 16:27 |
 | Flip point | a fall of 29 in the certified load (to 1,035) hands the priority to 723; third is Franklin 706 at 979 |
 | Counted trains operated / not | 411 / 103 (Middleborough/Lakeville 28, Kingston 21, Greenbush 15, Haverhill 12, Franklin 10, Worcester 9, and 2 each on Fairmount, Lowell, Newburyport, Providence) |
-| Fall 2026 trains with no counted train behind them | 137 of 547 (Fall River/New Bedford 57 of 57, Haverhill 23 of 44, Kingston 20 of 25, Greenbush 13 of 24, Lowell 12 of 46, Franklin 6, Fairmount 3, Providence 2, Worcester 1) |
+| Fall 2026 trains with no counted train behind them | 139 of 547, meaning they operate no counted train (Fall River/New Bedford 57 of 57, Haverhill 23 of 44, Kingston 20 of 25, Greenbush 13 of 24, Lowell 12 of 46, Franklin 6, Fairmount 3, Providence 3, Worcester 1, Newburyport 1); three Fall 2026 trains each operate two counted trains, so 411 operated counted trains map to 408 Fall 2026 trains |
 | Certified train stop by stop | 13 stops; 789 of 1,110 boardings at South Station; 1,111 alightings; load ends at minus 1 at Wickford Junction |
 | Spring 2018 reproduced | Worcester 508 inbound, 1,384 leaving West Natick; Fall 2026 load is 320 (23 percent) below it |
 | Fall 2026 weekday schedule | 547 Commuter Rail trains on 54 of the rating's 55 weekdays; south side (361 trains) on the service the feed labels modified (typicality 4), north side on typical services |
@@ -105,7 +105,7 @@ every window from 5 to 30 minutes, and the register's operated column is fixed b
 Rule 5 now says the operating train's own first stop must be the counted train's first stop. The first wording
 ("scheduled to leave the counted train's first stop") was read by the dry run agent as "calls at", which matched
 twelve counted Bradford trains to Haverhill trains that pass through Bradford and moved the coverage figures
-(424 operated instead of 411, 126 uncovered instead of 137) without touching the headline. Rule 2 now says only
+(424 operated instead of 411, 126 uncovered instead of 139) without touching the headline. Rule 2 now says only
 that counts are certified as published and none is rescaled or adjusted; the first wording listed the residues
 by name, which defused trap 2.
 

@@ -44,7 +44,7 @@ first wording of convention rule 2 told it to.
 Two things came out of the run.
 1. A determinism flaw. Rule 5 said the operating train is "scheduled to leave the counted train's first stop";
    the agent read that as calling at the stop, matched twelve counted Bradford trains to Haverhill trains that
-   pass through Bradford, and reported 424 operated and 126 uncovered where the golden has 411 and 137. The
+   pass through Bradford, and reported 424 operated and 126 uncovered where the golden has 411 and 139. The
    headline and the top fifteen were unaffected. Rule 5 now says the operating train's own first stop must be
    the counted train's first stop.
 2. The stump was tightened once, as the brief requires when the agent reproduces the headline. The prompt had
@@ -76,3 +76,15 @@ join under the ten minute clause leaves two Fitchburg trains at 162 and 72 rider
 as the system's crowding priority. The golden set is unchanged. A second isolated dry run with the strongest
 model was launched on the revised wording to confirm that the slot reading still converges; its result is
 recorded below.
+
+Second dry run (revised wording), 2026-10-06: a fresh agent, prompt only, isolated inputs, 40 tool calls over
+eleven minutes. It certified 829 at 1,064 operated by 867 at 17:37, with train numbers playing no part in the
+matching ("only 2 of 411 matches happen to share the counted number"), rejected 827 as a number match and 723
+as the runner up, and matched the golden on operated and not operated counts by line (411 and 103), the flip
+(29), the stop profile (South Station 789; 1,110 and 1,111) and the control (508 at 1,384). So the softened
+rule 5 still converges for a careful reader working from the data, which is the determinism the handbook
+asks for; whether the platform's models discover the number reuse unaided is what the next rollout tests.
+One supplementary figure was improved by the run: it counted the Fall 2026 trains that operate no counted
+train (139 of 547, with three Fall 2026 trains each operating two counted trains) where the golden had
+counted trains with no counted departure within ten minutes (137). The one to one reading follows rule 5,
+and the golden now uses it.

@@ -264,17 +264,15 @@ def main():
     for k in counted:
         tot_c[k[0]] += 1
         cov_c[k[0]] += bool(op[k])
-    cidx = collections.defaultdict(list)
-    for k, c in counted.items():
-        if c['departure'] is not None:
-            cidx[(c['line'], c['direction'], resolve(c['first'], feed_names))].append(c['departure'])
+    n_op = sum(cov_c.values()); n_not = len(counted) - n_op
+    # a Fall 2026 train has a counted train behind it when it operates at least one counted train (rule 5)
+    operating = {o[3] for o in op.values() if o}
     cov_s = collections.Counter(); tot_s = collections.Counter()
     for tid, s in sched.items():
         tot_s[s['line']] += 1
-        if any(clock_gap(d, s['departure'] % 1440) <= TOLERANCE for d in cidx.get((s['line'], s['direction'], s['first']), [])):
-            cov_s[s['line']] += 1
+        cov_s[s['line']] += tid in operating
+    assert len(operating) == 408 and n_op == 411
     all_lines = sorted(set(tot_c) | set(tot_s), key=order)
-    n_op = sum(cov_c.values()); n_not = len(counted) - n_op
     n_uncovered = len(sched) - sum(cov_s.values())
     south_mod = sum(1 for s in sched.values() if s['service'] == 'Spring/SummerWeekday')
     typ = {a['service_id']: a['service_schedule_typicality'] for a in table(fall['zip'], 'calendar_attributes.txt')}
@@ -411,8 +409,9 @@ def main():
                   f"{tot_s['CR-Franklin']} scheduled against {tot_c['CR-Worcester']} and {tot_c['CR-Franklin']} counted); and the "
                   f"Kingston, Greenbush and Haverhill schedules were retimed so that many counted departures have no train "
                   f"within ten minutes. <b>{n_uncovered} of the {len(sched)} Fall 2026 weekday trains have no counted train "
-                  f"behind them</b>: " + ', '.join(f"{name(l).replace(' Line', '')} {n} of {tot_s[l]}" for l, n in unc_lines.items())
-                  + f". The Fall River/New Bedford Line has never been counted; Haverhill and Lowell run more weekday trains "
+                  f"behind them</b>, meaning they operate no counted train: " + ', '.join(f"{name(l).replace(' Line', '')} {n} of {tot_s[l]}" for l, n in unc_lines.items())
+                  + f" (three Fall 2026 trains each operate two counted trains, so {n_op} operated counted trains map to "
+                  f"{len(operating)} Fall 2026 trains). The Fall River/New Bedford Line has never been counted; Haverhill and Lowell run more weekday trains "
                   f"than the count covered ({tot_c['CR-Haverhill']} and {tot_c['CR-Lowell']} counted against {tot_s['CR-Haverhill']} "
                   f"and {tot_s['CR-Lowell']} scheduled); Kingston and Greenbush were retimed.", body),
         Paragraph('Runner up and flip point', h),
