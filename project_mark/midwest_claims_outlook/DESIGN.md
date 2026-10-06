@@ -25,12 +25,12 @@ methods lead's holds five. The standard publishes nine and holds three.
 |---|---|
 | Published on the model path | Illinois, Indiana, Kansas, Michigan, Minnesota, Missouri, Ohio, South Dakota, Wisconsin |
 | Held on the benchmark path | Iowa (24.42 against 17.69), Nebraska (26.94 against 22.59), North Dakota (53.13 against 27.95) |
-| Regional thirteen week total | 539,951 initial claims, weeks ending 3 October to 26 December 2026 |
-| Desk's draft | all twelve on the model path, 560,749; its ground is true (pooled 18.71 against 23.34; region as one series 6.18 against 16.00) and is not the test; not adopted |
-| Methods lead's draft | holds Iowa, Michigan, Missouri, Nebraska, North Dakota (model error above 20), 475,040; the level is not the test, Michigan and Missouri beat their benchmarks; not adopted |
+| Regional thirteen week total | 539,964 initial claims, weeks ending 3 October to 26 December 2026 (weekly figures rounded half up, then summed) |
+| Desk's draft | all twelve on the model path, 560,749; its ground is true (pooled 18.71 against 23.34; the standard applied to the twelve states summed as one series 6.65 against 16.00) and is not the test; not adopted |
+| Methods lead's draft | holds Iowa, Michigan, Missouri, Nebraska, North Dakota (model error above 20), 475,053; the level is not the test, Michigan and Missouri beat their benchmarks; not adopted |
 | Back test, model against benchmark | MN 5.20/34.39, WI 6.82/23.77, KS 19.60/30.37, MO 24.54/34.10, MI 21.67/30.88, IN 11.02/17.05, IL 9.19/13.16, OH 9.97/13.61, SD 12.00/14.54, NE 26.94/22.59, IA 24.42/17.69, ND 53.13/27.95 |
 | Why the held states miss | last year's profile over the back test span does not repeat: Iowa peaked at 3,168 in July 2025 against 2,466 in March 2026; Nebraska at 2,149 in May 2025 against 1,095 in September 2026; North Dakota at 1,452 in May 2025 against 488 in June 2026; the base year is sharper (coefficient of variation 28, 40 and 74 percent) than this year (20, 27 and 29) |
-| Against a year earlier | 539,951 against 680,645 in the same thirteen weeks of 2025, minus 140,694 (minus 20.7 percent); largest published change Illinois, minus 50,990 |
+| Against a year earlier | 539,964 against 680,645 in the same thirteen weeks of 2025, minus 140,681 (minus 20.7 percent); largest published change Illinois, minus 50,990 |
 | Smallest improvement that publishes a held state | Iowa 6.74 points, Nebraska 4.36, North Dakota 25.19 |
 
 Determinism checks in build_golden.py: 352 weeks ending Saturday with no gaps for every state; the same three
@@ -62,6 +62,14 @@ methods lead's figures reproduce; the record's combined column is empty on 9,640
 - claims_outlook_memo.pdf: two pages. Decision and total; the two drafts; the back test table with held rows
   shaded; why the held states miss; the outlook against a year earlier; what would publish the held states;
   closing.
+
+## Wording fixed after the dry run
+The dry run agent rounded weekly figures half up where the golden had used round half to even, which moved one
+Nebraska week by a claim and the regional total by 13; rule 7 now states half up rounding and the golden uses it
+(539,964). It read "the region as a whole" as the standard applied to the twelve states summed into one series
+(6.65 against 16.00) where the golden had summed the state forecasts (6.18); the golden now uses the summed
+series. The tightening applied after the headline was reproduced: the prompt no longer states the desk's ground
+for publishing all twelve, so the reader must find what the desk measured.
 
 ## Input package (inputs/, zipped as inputs.zip, 10 MB, 16 files, three formats)
 Seven tracker data files (state, national and county claims, two crosswalks, employment and job postings), six

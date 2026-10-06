@@ -4,7 +4,12 @@ Record: Opportunity Insights Economic Tracker, UI Claims - State - Weekly.csv (D
 claims by state), repository commit b8adef9 of 5 October 2026. Standard: inputs/office_forecasting_standard.md.
 Every figure printed or written here is asserted stable under the determinism checks below.
 """
-import csv, os, collections, datetime as dt, statistics as st
+import csv, os, collections, datetime as dt, statistics as st, math
+
+
+def rnd(x):
+    """Round half up to a whole claim (convention rule 7)."""
+    return int(math.floor(x + 0.5))
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 INPUTS = os.path.join(HERE, '..', 'inputs')
@@ -64,10 +69,11 @@ def main():
         pub = mp if published else bp
         prior = [s[t - dt.timedelta(days=LAG)] for t in targets]
         res[a] = dict(name=geo[abbr[a]]['statename'], em=em, eb=eb, published=published, model=mp, bench=bp, pub=pub,
-                      prior=prior, total=sum(round(x) for x in pub), prior_total=sum(prior), latest=s[last], series=s)
+                      prior=prior, total=sum(rnd(x) for x in pub), prior_total=sum(prior), latest=s[last], series=s)
     held = [a for a in MIDWEST if not res[a]['published']]
     pubs = [a for a in MIDWEST if res[a]['published']]
     assert held == ['IA', 'NE', 'ND'] and len(pubs) == 9
+    assert sum(res[a]['total'] for a in MIDWEST) == 539964
     regional = sum(res[a]['total'] for a in MIDWEST)
     regional_prior = sum(res[a]['prior_total'] for a in MIDWEST)
     # determinism: the same three holds under MAE, 20 and 30 origins, a 4 and a 13 week ratio and a 371 day lag
@@ -84,19 +90,13 @@ def main():
                 t = o + dt.timedelta(days=7 * j); pooled_m.append(abs(model(s, o, t) - s[t]) / s[t]); pooled_b.append(abs(bench(s, o) - s[t]) / s[t])
     pooled = (100 * st.mean(pooled_m), 100 * st.mean(pooled_b))
     assert pooled[0] < pooled[1]                      # the desk's regional reading is true and is not the test
-    region_sum_m, region_sum_b = [], []               # the region as one series
-    for k in range(ORIGINS):
-        o = last - dt.timedelta(days=7 * (k + H_BACK))
-        for j in range(1, H_BACK + 1):
-            t = o + dt.timedelta(days=7 * j)
-            a_ = sum(S[abbr[a]][t] for a in MIDWEST); m_ = sum(model(S[abbr[a]], o, t) for a in MIDWEST); b_ = sum(bench(S[abbr[a]], o) for a in MIDWEST)
-            region_sum_m.append(abs(m_ - a_) / a_); region_sum_b.append(abs(b_ - a_) / a_)
-    region_series = (100 * st.mean(region_sum_m), 100 * st.mean(region_sum_b))
+    agg = {d: sum(S[abbr[a]][d] for a in MIDWEST) for d in dates}   # the region as one series, the standard applied to it
+    region_series = backtest(agg, last)
     assert region_series[0] < region_series[1]
     lead_holds = [a for a in MIDWEST if res[a]['em'] > METHODS_LEAD_CUT]
     assert set(lead_holds) == {'IA', 'MI', 'MO', 'NE', 'ND'}, lead_holds
-    desk_total = sum(sum(round(x) for x in res[a]['model']) for a in MIDWEST)
-    lead_total = sum(sum(round(x) for x in (res[a]['bench'] if a in lead_holds else res[a]['model'])) for a in MIDWEST)
+    desk_total = sum(sum(rnd(x) for x in res[a]['model']) for a in MIDWEST)
+    lead_total = sum(sum(rnd(x) for x in (res[a]['bench'] if a in lead_holds else res[a]['model'])) for a in MIDWEST)
     # change against a year earlier, by state
     change = {a: res[a]['total'] - res[a]['prior_total'] for a in MIDWEST}
     biggest = max(MIDWEST, key=lambda a: abs(change[a]))
@@ -121,7 +121,7 @@ def main():
         for a in MIDWEST:
             r = res[a]
             for t, m, b, p in zip(targets, r['model'], r['bench'], r['pub']):
-                w.writerow([a, t.isoformat(), round(m), round(b), round(p), 'model' if r['published'] else 'benchmark', '', '', ''])
+                w.writerow([a, t.isoformat(), rnd(m), rnd(b), rnd(p), 'model' if r['published'] else 'benchmark', '', '', ''])
         for a in MIDWEST:
             r = res[a]
             w.writerow([a, 'backtest', '', '', '', '', f"{r['em']:.2f}", f"{r['eb']:.2f}", 'published' if r['published'] else 'held'])
@@ -190,8 +190,8 @@ def main():
                   f"(five states held, {lead_total:,}) are not adopted.", body),
         Paragraph('The two drafts: what each measured', h),
         Paragraph(f"<b>The desk, all twelve states on the model path: not adopted.</b> Its ground is true: pooled over the twelve states' "
-                  f"1,248 back test forecasts the model's error is {pooled[0]:.2f} percent against {pooled[1]:.2f} for the benchmark, and on the region "
-                  f"summed as one series it is {region_series[0]:.2f} against {region_series[1]:.2f}. The standard has no regional test; each state is "
+                  f"1,248 back test forecasts the model's error is {pooled[0]:.2f} percent against {pooled[1]:.2f} for the benchmark, and with the "
+                  f"standard applied to the twelve states summed as one series it is {region_series[0]:.2f} against {region_series[1]:.2f}. The standard has no regional test; each state is "
                   f"published on its own back test, and three states fail theirs. The regional result is carried by the large states where the model "
                   f"is strong (Illinois, Ohio, Michigan, Minnesota, Wisconsin) and hides the three where it is not.", body),
         Paragraph(f"<b>The methods lead, hold every state with model error above {METHODS_LEAD_CUT:.0f} percent: not adopted.</b> That holds "

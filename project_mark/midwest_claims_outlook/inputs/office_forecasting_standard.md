@@ -30,5 +30,5 @@ unaltered.
    benchmark's. Otherwise the state is held: the benchmark path is published in place of the model path and
    the state is flagged as held. There is no regional test; each state stands on its own back test.
 
-7. Figures. Forecasts are stated as whole claims, rounded at the end. The outlook's regional total is the sum of
-   the twelve published paths.
+7. Figures. Forecasts are stated as whole claims, rounded at the end with halves rounded up. The outlook's
+   regional total is the sum of the published weekly figures as stated.
