@@ -20,3 +20,9 @@ Expected platform behaviour: the headline is reachable by applying every stated 
 traps are the ones the handbook records as most common: shipping the raw leader (Harris) without the test cycle
 count, shipping InsiderAdvantage after it fails the test, taking the published rating (NYT/Siena) as the measure,
 or working from the older vintage with its precomputed error column (Emerson). The platform's rollouts decide.
+
+### Platform stumped check, 2026-10-06
+Failed. Both models certified Beacon Research/Shaw & Co. Research at 4.13 points. The eligibility tests and the
+test cycle are stated in the standard, and both models applied them in order, as the dry run agent did. Seven
+headlines across two datasets have now been reached by both platform models whenever the deciding rule is
+written down, and the handbook's determinism bar requires it to be written down.
