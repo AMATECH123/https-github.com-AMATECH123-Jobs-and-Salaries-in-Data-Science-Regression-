@@ -1,116 +1,79 @@
-# MBTA Fall 2026 weekday crowding priority: task design (version 5)
+# MBTA Fall 2026 added weekday round trip: task design (version 6)
 
 Domain: Transportation & Mobility
 Objective: Data Extraction & Conformation (ETL / Pipeline Build)
-Prompt shape: Ranked list under a cap (counted trains by certified peak load, the top operated one certified),
-carried by a conformation of a ridership count to a later schedule.
+Prompt shape: Before and after with a control (peak share of boardings at two certifications), carried by the
+conformation of two count seasons to their own schedules.
 Status: built. Every figure reproduces from inputs/ with golden/build_golden.py. The folder keeps its version 1
-name (mbta_bus_rating_change) so the branch history stays in one place; version 5 is a Commuter Rail task.
+name (mbta_bus_rating_change) so the branch history stays in one place.
 
-## Version 5 change: ridership data with real measurement mess
-Versions 1 to 4 were built on GTFS schedule feeds alone, and the platform's models solved every version at the
-headline (scores 39, 51 and expected above 51), because clean schedule data cannot stump them once the counting
-convention is stated. Version 5 moves the certified figure onto ridership: the MBTA's published Commuter Rail
-count by trip, season, line and stop (Spring 2012, Spring 2018, Fall 2024; 15,761 rows), supplied by the user as
-the hub's four export formats because the build container's network policy blocks the MassDOT hub. The bus count
-asked for in the brief was not available; the Commuter Rail count is the same publisher's series with the same
-mechanics (sampled averages, loads by stop, seasons), and the Fall 2026 GTFS feed carries the Commuter Rail
-schedule, so the design transfers. The schedule conformation (count to the Fall 2026 weekday schedule) is the
-layer underneath the decision.
+## Why version 6
+Version 5 (crowding priority) scored 94 and 94 on the platform: both models executed every stated rule from the
+data, including the slot join, once the rule existed in any wording. Five versions showed that a convention
+precise enough for ten experts to converge is also precise enough for these models, as long as the deciding
+fact is in the convention. Version 6 keeps the convention precise and moves the deciding fact into the data: the
+Spring 2018 season of the count carries every stop time five hours ahead of the schedule, while the Fall 2024
+season's times are right. Nothing in the convention says so. A reader who uses the count's own clock gets the
+opposite placement, and the convention's rule that periods come from the scheduled departure is the only guard.
 
 ## The decision
-Certify the Fall 2026 weekday crowding priority: the one counted train, among those the Fall 2026 weekday
-schedule operates, with the highest peak load in the latest published count. The added bilevel coach set goes to
-the Fall 2026 train that operates it. Finance's draft names train 827 at 896; Planning's names Franklin 723 at
-1,036; the Spring 2018 certification (1,384) is the control. Neither offered figure is the certified one.
+Certify the Fall 2026 weekday peak share of Commuter Rail boardings and its change since the Spring 2018
+certification, and place the Fall 2026 added weekday round trip: peak if the share held or rose, off peak if it
+fell. Finance places it in the peak on the Fall 2024 share alone (59.9 percent); Planning places it in the peak on
+the claim that the share has risen since 2018. Both are rejected.
 
 ## The forced answer
 | Item | Value |
 |---|---|
-| Certified priority | Providence/Stoughton Line train 829 (Fall 2024 count), outbound from South Station 17:40 |
-| Certified peak load | 1,064 riders leaving Ruggles at 17:49 |
-| Fall 2026 train operating it | train 867, South Station 17:37 to Wickford Junction 19:29, same 13 stops |
-| Finance's 827 at 896 | the counted 827 (16:52, 896 at Ruggles) shares only a number with the Fall 2026 827, a 09:25 off peak train; the counted 827 is operated as 861 at 16:52; 896 is sixth, tied with Needham 606; not certified |
-| Planning's 723 at 1,036 | the runner up's correct peak load; it ranks first only if 829 is set aside for its minus 1 terminal residue, which the convention (counts certified as published) does not allow; neither 829 nor 723 is a Fall 2026 number; not certified |
-| Runner up | Franklin/Foxboro 723, outbound 16:27, 1,036 leaving Ruggles 16:36, operated as 759 at 16:27 |
-| Flip point | a fall of 29 in the certified load (to 1,035) hands the priority to 723; third is Franklin 706 at 979 |
-| Counted trains operated / not | 411 / 103 (Middleborough/Lakeville 28, Kingston 21, Greenbush 15, Haverhill 12, Franklin 10, Worcester 9, and 2 each on Fairmount, Lowell, Newburyport, Providence) |
-| Fall 2026 trains with no counted train behind them | 139 of 547, meaning they operate no counted train (Fall River/New Bedford 57 of 57, Haverhill 23 of 44, Kingston 20 of 25, Greenbush 13 of 24, Lowell 12 of 46, Franklin 6, Fairmount 3, Providence 3, Worcester 1, Newburyport 1); three Fall 2026 trains each operate two counted trains, so 411 operated counted trains map to 408 Fall 2026 trains |
-| Certified train stop by stop | 13 stops; 789 of 1,110 boardings at South Station; 1,111 alightings; load ends at minus 1 at Wickford Junction |
-| Spring 2018 reproduced | Worcester 508 inbound, 1,384 leaving West Natick; Fall 2026 load is 320 (23 percent) below it |
-| Fall 2026 weekday schedule | 547 Commuter Rail trains on 54 of the rating's 55 weekdays; south side (361 trains) on the service the feed labels modified (typicality 4), north side on typical services |
+| Placement | off peak |
+| Peak share, Spring 2018 certification | 72.0 percent (91,167 peak of 126,653 placed boardings) |
+| Peak share, Fall 2024 count | 59.9 percent (58,456 of 97,537) |
+| Change | minus 12.0 points (minus 12.05 before rounding) |
+| Finance's 59.9, peak | the Fall 2024 share alone; the convention tests the change; not certified |
+| Planning's "share has risen", peak | the Spring 2018 periods read from the count's own stop times, which run five hours ahead of the schedule (497 of 511 matched trains at exactly 300 minutes); read that way the 2018 share is 1.4 percent and the change plus 58.5; not certified |
+| Peak boardings | 91,167 to 58,456, 64.1 percent of 2018 |
+| Off peak boardings | 35,486 to 39,081, 110.1 percent of 2018 |
+| Placed trains | Fall 2024: 514 of 514. Spring 2018: 511 of 516; unplaced Fairmount 789 and 787 outbound, Providence 8805 outbound, 912 and 910 inbound (102 boardings) |
+| Join | train number (zero stripped) and direction; the feeds write Old Colony numbers 044, the count 44; matched as text 80 Fall 2024 trains (15,720 boardings) and 77 Spring 2018 trains fall out |
+| Lines | every line fell; Fitchburg fell most (73.2 to 50.9, minus 22.2); Haverhill held best (71.9 to 70.2, minus 1.7) |
+| Off peak above 2018 | 8 lines: Fairmount 206 percent, Middleborough/Lakeville 171, Franklin 152, Needham 132, Fitchburg 126, Kingston 125, Worcester 111, Newburyport 105 |
+| Fall 2026 weekday supply | 547 trains on 54 of 55 weekdays: 126 peak, 421 off peak |
+| Flip point | 11,753 Fall 2024 boardings would have to move from off peak to peak to hold 72.0 percent |
 
-Determinism checks in build_golden.py: the four count formats hold the same rows; every Fall 2024 train is listed
-from stop sequence 1; the same winner and runner up under departure windows of 5, 10, 15, 20 and 30 minutes; the
-same trip set on 30 September, 21 October and 9 December; the certified train's 13 counted stops equal the Fall
-2026 train's stops; 434 of 514 counted trains carry their number in the Fall 2024 feed and 421 leave at the counted
-minute (the count's keys were valid when taken); only 132 share a number with a Fall 2026 train on the same line
-and direction and only 2 of those keep their departure (numbers were reassigned); every count station name
-resolves to a feed station or is documented as gone.
+Determinism checks in build_golden.py: the four count formats hold the same rows; the sign and size of the change
+hold under four boundary variants (always below minus 10 points); the Spring 2018 share is the same to one decimal
+on the 16 May 2018 schedule; the Fall 2024 share is the same on 15 and 17 October 2024; the number and direction
+key is unique in both feeds; the counted clock agrees with the schedule on 498 of 514 Fall 2024 trains and sits
+300 minutes ahead on 497 of 511 Spring 2018 trains; the count clock reading flips the sign; the text join leaves
+80 Fall 2024 trains unplaced; the flip point brackets the 2018 share exactly.
 
 ## Where the honest difficulty lives (trap inventory)
-1. Train number taken as identity (evidence at face value; close but inexact match). The count keys trains by
-   number; the Fall 2026 feed reuses nearly every number for a different train. 829 is not in the Fall 2026 feed
-   and 827 is, so a number join certifies 827 at 896 (Finance). The honest key is the slot: line, direction,
-   first stop and departure, which the Fall 2024 archived feed shows was valid when the count was taken. Decisive
-   at the headline.
-2. Over correction of a correct measured number (Planning's figure). The certified train's count ends at minus 1
-   at Wickford Junction, a rounding residue of averaged boardings and alightings; 57 of 514 Fall 2024 trains end
-   off zero, one fails the cumulative load identity, one has an NA stop sequence, six rows have no stop time. The
-   convention certifies counts as published and adjusts none; it does not enumerate the residues. A model that
-   validates the count and sets aside the trains that fail certifies 723 at 1,036, which the prompt offers as
-   Planning's figure. Decisive. Both offered figures are honest computations and neither is certified.
-3. Measure swap (definition swap, both numbers correct). Peak load is the largest load on leaving a stop (1,064);
-   boardings summed over the run are 1,110. The data dictionary that defines average_load lives only in the
-   shapefile's metadata xml.
-4. Population a flag suggests. The whole south side weekday schedule in the Fall 2026 feed (361 of 547 trains, the
-   certified train among them) runs on a service the feed flags typicality 4, modified service, for the entire
-   rating. The convention takes the schedule by date; excluding modified service removes every south side train and
-   hands the priority to a north side train. Wholesale failure.
-5. Line replaced and station renamed (mislabeling, crosswalk). The Middleborough/Lakeville Line in the count has no
-   Fall 2026 service and its terminal is no longer a feed station; the Fall River/New Bedford Line has no count.
-   Count spellings differ from the feed (Littleton/Rte 495, Dedham Corp Center, Porter Square), Lynn is a feed
-   station the schedule no longer serves, and the 2024 feed carries the old spellings under the same stop ids. Five
-   Fitchburg trains originate at Littleton and are operated only after the name is resolved.
-6. Clock and timing. The Fall 2024 count stores every stop time on a placeholder date, earlier seasons store after
-   midnight stops on the next placeholder day, and the Spring 2018 and 2012 clocks are offset from the schedule.
-   The Spring 2018 control is reproduced from the count alone (max load), so the offset is mess, not a trap.
-7. Rating label. The Commuter Rail services in the Fall 2026 feed carry a Spring/Summer rating label with no end
-   date; the schedule in effect for the Fall 2026 rating is found by date, not by label.
-8. Rows versus units. Rows are stops; the unit is the train (line, number, direction); 514 trains in 5,773 rows.
+1. Clock and timing, decisive. The Spring 2018 count's stop_time field is five hours ahead of the schedule on
+   every train and evening trains carry the next day's placeholder date; the Fall 2024 field is right to the
+   minute. The convention places trains by scheduled departure from the season's feed. A reader who takes the
+   count's ready made time, having checked it against the 2024 feed, gets a 2018 peak share of 1.4 percent, a
+   rise of 58.5 points, and the peak placement. Planning's draft is that reading.
+2. Close but inexact key. Old Colony train numbers are 044 in the feeds and 44 in the count; a text join drops
+   80 Fall 2024 trains (16 percent of boardings) and 77 Spring 2018 trains. The share still falls, so this trap
+   moves the supplementary figures (placed counts, line table) rather than the headline.
+3. Definition swap. Finance's 59.9 percent is correct and is not the test; the convention tests the change.
+4. Rows versus units. Rows are stops; the unit is the train; boardings are summed per train before placement.
+5. Unplaced trains. Five Spring 2018 trains have no scheduled train of their number; the convention leaves them
+   out rather than placing them by a clock that is wrong.
+6. Population by flag and label. The Fall 2026 supply by period comes from the schedule in effect on most rating
+   weekdays, which carries a Spring/Summer label and a modified service flag on the south side.
+7. Line replaced. Middleborough/Lakeville is in both counts and has no Fall 2026 service; Fall River/New Bedford
+   has Fall 2026 service and no count.
 
 ## Deliverables
-- crowding_priority_register.csv: 514 rows ranked by peak load (competition ranking), columns rank, line_id,
-  line_name, train, direction, first_stop, counted_departure, peak_load, peak_load_stop, peak_load_time,
-  weekday_boardings, fall_2026_status, fall_2026_train, fall_2026_departure, departure_difference_minutes.
-- top_trains_by_peak_load.png: fifteen ranked bars, operated in blue and not operated in orange, each labelled with
-  the load, the stop and the Fall 2026 train and departure; the certified priority labelled.
-- crowding_priority_memo.pdf: two pages. Certified priority; the two draft figures; the conformation and coverage
-  both ways; runner up and flip; the certified train stop by stop; Spring 2018 reproduced; closing.
+- period_register.csv: 1,030 rows (516 Spring 2018 and 514 Fall 2024 counted trains), columns season, line_id,
+  line_name, train, direction, first_stop, counted_time, scheduled_departure, period, weekday_boardings, placed.
+- peak_share_by_line.png: a dumbbell chart, one row per line ordered by the change plus a system row, Spring
+  2018 and Fall 2024 shares labelled, the change in points at the right, the placement stated in the subtitle.
+- service_allocation_memo.pdf: two pages. Placement and shares; the two drafts; the boardings and recovery
+  table; how the counts were placed; the line table ranked by change; Fall 2026 supply by period; flip point;
+  closing.
 
-## Platform result for the first wording and the second tightening
-The platform's stumped check failed on the first version 5 wording: both models certified 829 at 1,064 operated by
-867. Every trap was being neutralised by a sentence in the convention that named it: rule 5 said train numbers are
-reassigned and defined the slot, rule 7 said the schedule is taken by date. Both sentences are gone. Rule 5 now
-says the schedule operates a counted train when it still runs that train, on the same line, direction and first
-stop, at the counted departure or within ten minutes, and never mentions numbers; the Fall 2024 archived feed is
-the only place that shows the count's numbers were valid when taken and belong to other trains in Fall 2026. A
-model that joins on number finds 829 absent and 827 present (Finance's figure), or, applying the ten minute clause
-to number matches, finds only two Fitchburg trains and certifies a 162 rider train. Rule 7 now says only the
-schedule in effect on the most weekday dates of the rating, so the modified service flag on the south side is a
-temptation the rule neither names nor excuses. Both rules remain deterministic: the headline is the same under
-every window from 5 to 30 minutes, and the register's operated column is fixed by the ten minute clause.
-
-## Convention wording fixed after the first dry run
-Rule 5 now says the operating train's own first stop must be the counted train's first stop. The first wording
-("scheduled to leave the counted train's first stop") was read by the dry run agent as "calls at", which matched
-twelve counted Bradford trains to Haverhill trains that pass through Bradford and moved the coverage figures
-(424 operated instead of 411, 126 uncovered instead of 139) without touching the headline. Rule 2 now says only
-that counts are certified as published and none is rescaled or adjusted; the first wording listed the residues
-by name, which defused trap 2.
-
-## Input package (inputs/, zipped as inputs.zip, 43 MB, 13 files, seven formats)
-Four exports of the ridership layer (csv, geojson, kml, shapefile zip with the metadata xml), the Fall 2026 feed,
-the Fall 2024 archived feed, the archive index, the two references, the two licences, the convention document and
-the provenance note. The June and August 2026 feeds from version 4 were dropped: the Commuter Rail schedule for
-the rating lives in the Fall 2026 feed and the zip must stay under 100 MB.
+## Input package (inputs/, zipped as inputs.zip, 55 MB, 14 files, seven formats)
+Four exports of the ridership layer, the Fall 2026 feed, the Fall 2024 and Spring 2018 archived feeds, the archive
+index, the two references, the two licences, the convention document and the provenance note.

@@ -9,6 +9,7 @@ S3=https://mbta-gtfs-s3.s3.amazonaws.com
 curl -fsSL -o archived_feeds.txt $S3/archive/archived_feeds.txt && echo "archived_feeds.txt pulled $stamp"
 curl -fsSL -o MBTA_GTFS.zip https://cdn.mbta.com/MBTA_GTFS.zip && echo "MBTA_GTFS.zip pulled $stamp"
 curl -fsSL -o 20241014.zip $S3/archive/20241014.zip && echo "20241014.zip pulled $stamp"
+curl -fsSL -o 20180516.zip $S3/archive/20180516.zip && echo "20180516.zip pulled $stamp"
 RAW=https://raw.githubusercontent.com
 curl -fsSL -o mbta_gtfs_reference.md $RAW/mbta/gtfs-documentation/master/reference/gtfs.md
 curl -fsSL -o massdot_developers_license_agreement.pdf $RAW/mbta/gtfs-documentation/master/developers-license-agreement.pdf

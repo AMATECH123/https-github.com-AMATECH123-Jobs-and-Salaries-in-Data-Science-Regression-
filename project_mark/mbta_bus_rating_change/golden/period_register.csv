@@ -1,0 +1,1031 @@
+season,line_id,line_name,train,direction,first_stop,counted_time,scheduled_departure,period,weekday_boardings,placed
+Spring 2018,CR-Fairmount,Fairmount Line,746,Inbound,Readville,23:30,18:08,off peak,13,yes
+Spring 2018,CR-Fairmount,Fairmount Line,750,Inbound,Readville,11:25,06:25,peak,120,yes
+Spring 2018,CR-Fairmount,Fairmount Line,751,Outbound,South Station,11:24,06:24,off peak,58,yes
+Spring 2018,CR-Fairmount,Fairmount Line,752,Inbound,Readville,12:15,07:15,peak,321,yes
+Spring 2018,CR-Fairmount,Fairmount Line,753,Outbound,South Station,12:10,07:10,off peak,136,yes
+Spring 2018,CR-Fairmount,Fairmount Line,754,Inbound,Readville,12:55,07:55,peak,303,yes
+Spring 2018,CR-Fairmount,Fairmount Line,755,Outbound,South Station,13:00,08:00,off peak,31,yes
+Spring 2018,CR-Fairmount,Fairmount Line,756,Inbound,Readville,13:45,08:45,off peak,100,yes
+Spring 2018,CR-Fairmount,Fairmount Line,757,Outbound,South Station,13:40,08:40,off peak,16,yes
+Spring 2018,CR-Fairmount,Fairmount Line,758,Inbound,Readville,15:00,10:00,off peak,41,yes
+Spring 2018,CR-Fairmount,Fairmount Line,759,Outbound,South Station,14:45,09:45,off peak,6,yes
+Spring 2018,CR-Fairmount,Fairmount Line,760,Inbound,Readville,16:00,11:00,off peak,36,yes
+Spring 2018,CR-Fairmount,Fairmount Line,761,Outbound,South Station,15:45,10:45,off peak,14,yes
+Spring 2018,CR-Fairmount,Fairmount Line,762,Inbound,Readville,17:00,12:00,off peak,22,yes
+Spring 2018,CR-Fairmount,Fairmount Line,763,Outbound,South Station,16:45,11:45,off peak,16,yes
+Spring 2018,CR-Fairmount,Fairmount Line,764,Inbound,Readville,18:01,13:00,off peak,30,yes
+Spring 2018,CR-Fairmount,Fairmount Line,765,Outbound,South Station,17:45,12:45,off peak,16,yes
+Spring 2018,CR-Fairmount,Fairmount Line,766,Inbound,Readville,19:00,14:00,off peak,20,yes
+Spring 2018,CR-Fairmount,Fairmount Line,767,Outbound,South Station,18:45,13:45,off peak,28,yes
+Spring 2018,CR-Fairmount,Fairmount Line,768,Inbound,Readville,19:40,14:40,off peak,95,yes
+Spring 2018,CR-Fairmount,Fairmount Line,769,Outbound,South Station,19:45,14:45,off peak,59,yes
+Spring 2018,CR-Fairmount,Fairmount Line,770,Inbound,Readville,20:30,15:30,off peak,84,yes
+Spring 2018,CR-Fairmount,Fairmount Line,771,Outbound,South Station,20:30,15:30,peak,70,yes
+Spring 2018,CR-Fairmount,Fairmount Line,772,Inbound,Readville,21:15,16:15,off peak,42,yes
+Spring 2018,CR-Fairmount,Fairmount Line,773,Outbound,South Station,21:15,16:15,peak,142,yes
+Spring 2018,CR-Fairmount,Fairmount Line,774,Inbound,Readville,22:00,17:00,off peak,49,yes
+Spring 2018,CR-Fairmount,Fairmount Line,775,Outbound,South Station,22:00,17:00,peak,210,yes
+Spring 2018,CR-Fairmount,Fairmount Line,776,Inbound,Readville,22:45,17:45,off peak,17,yes
+Spring 2018,CR-Fairmount,Fairmount Line,777,Outbound,South Station,22:45,17:45,peak,255,yes
+Spring 2018,CR-Fairmount,Fairmount Line,778,Inbound,Readville,23:25,18:25,off peak,1,yes
+Spring 2018,CR-Fairmount,Fairmount Line,779,Outbound,South Station,23:30,18:30,off peak,81,yes
+Spring 2018,CR-Fairmount,Fairmount Line,780,Inbound,Readville,00:15,19:15,off peak,8,yes
+Spring 2018,CR-Fairmount,Fairmount Line,781,Outbound,South Station,00:15,19:15,off peak,65,yes
+Spring 2018,CR-Fairmount,Fairmount Line,782,Inbound,Readville,01:00,20:00,off peak,3,yes
+Spring 2018,CR-Fairmount,Fairmount Line,783,Outbound,South Station,01:15,20:15,off peak,51,yes
+Spring 2018,CR-Fairmount,Fairmount Line,784,Inbound,Readville,02:00,21:00,off peak,4,yes
+Spring 2018,CR-Fairmount,Fairmount Line,785,Outbound,South Station,02:00,21:00,off peak,28,yes
+Spring 2018,CR-Fairmount,Fairmount Line,786,Inbound,Readville,02:45,21:45,off peak,3,yes
+Spring 2018,CR-Fairmount,Fairmount Line,787,Outbound,South Station,03:00,,,12,no
+Spring 2018,CR-Fairmount,Fairmount Line,789,Outbound,South Station,04:00,,,13,no
+Spring 2018,CR-Fairmount,Fairmount Line,790,Inbound,Readville,10:39,04:55,off peak,33,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,400,Inbound,Wachusett,09:50,04:50,off peak,300,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,401,Outbound,North Station,11:25,06:25,off peak,16,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,402,Inbound,Wachusett,10:45,05:45,peak,602,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,403,Outbound,North Station,12:43,07:43,off peak,216,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,404,Inbound,Wachusett,11:20,06:20,peak,685,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,405,Outbound,North Station,13:45,08:45,off peak,165,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,406,Inbound,Wachusett,11:45,06:45,peak,677,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,407,Outbound,North Station,15:00,10:00,off peak,63,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,408,Inbound,Wachusett,12:10,07:10,peak,651,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,409,Outbound,North Station,16:15,11:15,off peak,81,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,410,Inbound,Wachusett,13:00,08:00,peak,474,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,411,Outbound,North Station,17:45,12:45,off peak,87,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,412,Inbound,Wachusett,14:37,09:37,off peak,142,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,413,Outbound,North Station,18:55,13:55,off peak,142,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,414,Inbound,Wachusett,15:50,10:50,off peak,81,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,415,Outbound,North Station,20:30,15:30,peak,330,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,416,Inbound,Wachusett,17:00,12:05,off peak,75,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,417,Outbound,North Station,21:30,16:30,peak,607,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,418,Inbound,Wachusett,18:30,13:30,off peak,77,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,419,Outbound,North Station,22:00,17:00,peak,633,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,420,Inbound,Wachusett,19:50,14:50,off peak,117,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,421,Outbound,North Station,22:35,17:35,peak,744,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,422,Inbound,Wachusett,21:05,16:05,off peak,188,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,423,Outbound,North Station,22:55,17:55,peak,385,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,424,Inbound,Wachusett,22:43,17:43,off peak,99,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,425,Outbound,North Station,23:25,18:25,peak,386,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,426,Inbound,Wachusett,23:59,18:59,off peak,44,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,427,Outbound,North Station,00:15,19:15,off peak,186,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,428,Inbound,Wachusett,01:25,20:25,off peak,54,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,429,Outbound,North Station,01:45,20:45,off peak,116,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,430,Inbound,Wachusett,02:30,21:30,off peak,13,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,431,Outbound,North Station,03:40,22:40,off peak,56,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,432,Inbound,Wachusett,03:35,22:35,off peak,9,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,433,Outbound,North Station,05:10,00:10,off peak,21,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,491,Outbound,North Station,11:45,06:45,off peak,34,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,492,Inbound,Littleton/Rte 495,12:55,07:55,peak,383,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,493,Outbound,North Station,20:59,15:59,peak,249,yes
+Spring 2018,CR-Fitchburg,Fitchburg Line,494,Inbound,Littleton/Rte 495,22:15,17:15,off peak,114,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,500,Inbound,Worcester,09:45,04:45,off peak,173,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,501,Outbound,South Station,09:50,04:50,off peak,2,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,502,Inbound,Worcester,10:15,05:15,off peak,378,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,503,Outbound,South Station,10:55,05:55,off peak,33,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,504,Inbound,Worcester,10:50,05:50,peak,686,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,505,Outbound,South Station,11:10,06:10,off peak,30,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,506,Inbound,Worcester,11:22,06:22,peak,751,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,507,Outbound,South Station,12:20,07:20,off peak,98,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,508,Inbound,Worcester,11:57,06:57,peak,1404,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,509,Outbound,South Station,13:50,08:50,off peak,228,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,510,Inbound,Worcester,12:24,07:24,peak,974,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,511,Outbound,South Station,15:15,10:15,off peak,82,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,512,Inbound,Worcester,13:50,08:50,off peak,384,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,513,Outbound,South Station,16:55,11:55,off peak,127,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,514,Inbound,Worcester,15:35,10:35,off peak,173,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,515,Outbound,South Station,19:00,14:00,off peak,247,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,516,Inbound,Worcester,17:05,12:05,off peak,143,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,517,Outbound,South Station,20:30,15:30,peak,624,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,518,Inbound,Worcester,18:55,13:55,off peak,176,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,519,Outbound,South Station,21:20,16:20,peak,1142,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,520,Inbound,Worcester,20:50,15:50,off peak,347,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,521,Outbound,South Station,22:00,17:00,peak,1342,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,522,Inbound,Worcester,22:20,17:20,off peak,101,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,523,Outbound,South Station,22:40,17:40,peak,1037,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,524,Inbound,Worcester,23:05,18:05,off peak,58,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,525,Outbound,South Station,23:15,18:15,peak,638,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,526,Inbound,Worcester,00:20,19:20,off peak,51,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,527,Outbound,South Station,23:45,18:45,off peak,441,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,528,Inbound,Worcester,01:30,20:30,off peak,36,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,529,Outbound,South Station,00:45,19:45,off peak,252,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,530,Inbound,Worcester,02:00,21:00,off peak,15,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,531,Outbound,South Station,01:35,20:35,off peak,226,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,532,Inbound,Worcester,02:35,21:35,off peak,12,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,533,Outbound,South Station,02:35,21:35,off peak,118,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,534,Inbound,Worcester,04:20,23:20,off peak,7,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,535,Outbound,South Station,03:30,22:30,off peak,193,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,536,Inbound,Worcester,05:20,00:20,off peak,4,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,537,Outbound,South Station,04:30,23:30,off peak,89,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,551,Outbound,South Station,00:35,19:35,off peak,70,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,552,Inbound,Worcester,13:00,08:00,peak,266,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,581,Outbound,South Station,09:57,04:57,off peak,3,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,582,Inbound,Framingham,11:04,06:04,peak,203,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,583,Outbound,South Station,10:30,05:30,off peak,3,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,584,Inbound,Framingham,11:39,06:39,peak,544,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,586,Inbound,Framingham,12:15,07:15,peak,825,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,587,Outbound,South Station,11:48,06:48,off peak,48,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,588,Inbound,Framingham,12:49,07:49,peak,984,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,589,Outbound,South Station,12:30,07:30,off peak,127,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,590,Inbound,Ashland,13:34,08:34,off peak,476,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,591,Outbound,South Station,21:30,16:30,peak,522,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,592,Inbound,Framingham,22:40,17:40,off peak,109,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,593,Outbound,South Station,22:10,17:10,peak,899,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,594,Inbound,Framingham,23:20,18:20,off peak,46,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,595,Outbound,South Station,22:50,17:50,peak,663,yes
+Spring 2018,CR-Worcester,Framingham/Worcester Line,596,Inbound,Framingham,00:05,19:05,off peak,27,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,700,Inbound,Forge Park/495,10:30,05:30,peak,408,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,701,Outbound,South Station,08:50,03:50,off peak,0,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,702,Inbound,Forge Park/495,11:05,06:05,peak,763,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,703,Outbound,South Station,13:04,08:04,off peak,55,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,704,Inbound,Forge Park/495,11:35,06:35,peak,862,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,705,Outbound,South Station,14:40,09:40,off peak,34,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,706,Inbound,Forge Park/495,12:08,07:08,peak,1267,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,707,Outbound,South Station,16:00,11:00,off peak,45,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,708,Inbound,Forge Park/495,12:50,07:50,peak,934,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,709,Outbound,South Station,17:20,12:20,off peak,113,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,710,Inbound,Forge Park/495,14:22,09:22,off peak,267,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,711,Outbound,South Station,18:35,13:35,off peak,87,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,712,Inbound,Forge Park/495,15:55,10:55,off peak,132,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,713,Outbound,South Station,19:40,14:40,off peak,198,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,714,Inbound,Forge Park/495,17:20,12:20,off peak,64,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,715,Outbound,South Station,20:48,15:48,peak,582,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,716,Inbound,Forge Park/495,18:35,13:35,off peak,61,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,717,Outbound,South Station,21:43,16:43,peak,1007,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,718,Inbound,Forge Park/495,19:57,14:57,off peak,68,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,719,Outbound,South Station,22:20,17:20,peak,970,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,720,Inbound,Forge Park/495,21:01,16:01,off peak,110,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,721,Outbound,South Station,22:45,17:45,peak,679,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,722,Inbound,Forge Park/495,22:03,17:03,off peak,64,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,723,Outbound,South Station,23:20,18:20,peak,554,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,724,Inbound,Forge Park/495,00:05,19:05,off peak,28,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,725,Outbound,South Station,00:45,19:45,off peak,191,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,726,Inbound,Forge Park/495,00:43,19:43,off peak,17,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,727,Outbound,South Station,02:00,21:00,off peak,187,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,728,Inbound,Forge Park/495,02:01,21:01,off peak,23,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,729,Outbound,South Station,03:30,22:30,off peak,80,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,730,Inbound,Forge Park/495,03:25,22:25,off peak,6,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,731,Outbound,South Station,04:50,23:50,off peak,41,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,732,Inbound,Forge Park/495,04:46,23:46,off peak,2,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,740,Inbound,Walpole,12:40,07:40,peak,486,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,741,Outbound,South Station,11:45,06:45,off peak,17,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,742,Inbound,Norwood Central,13:31,08:31,off peak,226,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,743,Outbound,South Station,21:15,16:15,peak,315,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,744,Inbound,Norwood Central,22:05,17:05,off peak,23,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,745,Outbound,South Station,22:02,17:02,peak,590,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,746,Inbound,Walpole,23:08,18:08,off peak,15,yes
+Spring 2018,CR-Franklin,Franklin/Foxboro Line,790,Inbound,Forge Park/495,09:55,04:55,off peak,100,yes
+Spring 2018,CR-Greenbush,Greenbush Line,70,Inbound,Greenbush,10:40,05:40,peak,355,yes
+Spring 2018,CR-Greenbush,Greenbush Line,71,Outbound,South Station,11:54,06:54,off peak,17,yes
+Spring 2018,CR-Greenbush,Greenbush Line,72,Inbound,Greenbush,11:37,06:37,peak,728,yes
+Spring 2018,CR-Greenbush,Greenbush Line,73,Outbound,South Station,14:25,09:25,off peak,14,yes
+Spring 2018,CR-Greenbush,Greenbush Line,74,Inbound,Greenbush,12:03,07:03,peak,741,yes
+Spring 2018,CR-Greenbush,Greenbush Line,75,Outbound,South Station,15:30,10:30,off peak,10,yes
+Spring 2018,CR-Greenbush,Greenbush Line,76,Inbound,Greenbush,12:50,07:50,peak,806,yes
+Spring 2018,CR-Greenbush,Greenbush Line,77,Outbound,South Station,17:41,12:41,off peak,37,yes
+Spring 2018,CR-Greenbush,Greenbush Line,78,Inbound,Greenbush,13:50,08:50,off peak,173,yes
+Spring 2018,CR-Greenbush,Greenbush Line,79,Outbound,South Station,19:27,14:27,off peak,118,yes
+Spring 2018,CR-Greenbush,Greenbush Line,80,Inbound,Greenbush,15:35,10:35,off peak,42,yes
+Spring 2018,CR-Greenbush,Greenbush Line,81,Outbound,South Station,21:02,16:02,peak,442,yes
+Spring 2018,CR-Greenbush,Greenbush Line,82,Inbound,Greenbush,16:50,11:50,off peak,32,yes
+Spring 2018,CR-Greenbush,Greenbush Line,83,Outbound,South Station,21:52,16:52,peak,660,yes
+Spring 2018,CR-Greenbush,Greenbush Line,84,Inbound,Greenbush,19:11,14:11,off peak,18,yes
+Spring 2018,CR-Greenbush,Greenbush Line,85,Outbound,South Station,22:20,17:19,peak,761,yes
+Spring 2018,CR-Greenbush,Greenbush Line,86,Inbound,Greenbush,20:47,15:47,off peak,26,yes
+Spring 2018,CR-Greenbush,Greenbush Line,87,Outbound,South Station,22:45,17:45,peak,569,yes
+Spring 2018,CR-Greenbush,Greenbush Line,88,Inbound,Greenbush,22:20,17:20,off peak,19,yes
+Spring 2018,CR-Greenbush,Greenbush Line,89,Outbound,South Station,23:38,18:38,off peak,378,yes
+Spring 2018,CR-Greenbush,Greenbush Line,90,Inbound,Greenbush,00:05,19:05,off peak,10,yes
+Spring 2018,CR-Greenbush,Greenbush Line,91,Outbound,South Station,01:25,20:25,off peak,114,yes
+Spring 2018,CR-Greenbush,Greenbush Line,92,Inbound,Greenbush,01:10,20:10,off peak,7,yes
+Spring 2018,CR-Greenbush,Greenbush Line,93,Outbound,South Station,03:00,22:00,off peak,37,yes
+Spring 2018,CR-Haverhill,Haverhill Line,200,Inbound,Haverhill,10:05,05:05,off peak,242,yes
+Spring 2018,CR-Haverhill,Haverhill Line,201,Outbound,North Station,12:35,07:35,off peak,55,yes
+Spring 2018,CR-Haverhill,Haverhill Line,202,Inbound,Haverhill,10:40,05:40,peak,304,yes
+Spring 2018,CR-Haverhill,Haverhill Line,203,Outbound,North Station,14:20,09:20,off peak,21,yes
+Spring 2018,CR-Haverhill,Haverhill Line,204,Inbound,Haverhill,11:10,06:10,peak,433,yes
+Spring 2018,CR-Haverhill,Haverhill Line,205,Outbound,North Station,15:30,10:30,off peak,37,yes
+Spring 2018,CR-Haverhill,Haverhill Line,206,Inbound,Haverhill,11:40,06:40,peak,433,yes
+Spring 2018,CR-Haverhill,Haverhill Line,207,Outbound,North Station,17:20,12:20,off peak,59,yes
+Spring 2018,CR-Haverhill,Haverhill Line,208,Inbound,Haverhill,12:35,07:35,peak,367,yes
+Spring 2018,CR-Haverhill,Haverhill Line,209,Outbound,North Station,18:44,13:44,off peak,114,yes
+Spring 2018,CR-Haverhill,Haverhill Line,210,Inbound,Haverhill,14:05,09:05,off peak,114,yes
+Spring 2018,CR-Haverhill,Haverhill Line,211,Outbound,North Station,20:15,15:15,off peak,214,yes
+Spring 2018,CR-Haverhill,Haverhill Line,212,Inbound,Haverhill,15:49,10:49,off peak,79,yes
+Spring 2018,CR-Haverhill,Haverhill Line,213,Outbound,North Station,21:30,16:30,peak,551,yes
+Spring 2018,CR-Haverhill,Haverhill Line,214,Inbound,Haverhill,17:05,12:05,off peak,52,yes
+Spring 2018,CR-Haverhill,Haverhill Line,215,Outbound,North Station,22:15,17:15,peak,533,yes
+Spring 2018,CR-Haverhill,Haverhill Line,216,Inbound,Haverhill,18:50,14:00,off peak,44,yes
+Spring 2018,CR-Haverhill,Haverhill Line,217,Outbound,North Station,22:35,17:35,peak,529,yes
+Spring 2018,CR-Haverhill,Haverhill Line,218,Inbound,Haverhill,20:25,15:25,off peak,49,yes
+Spring 2018,CR-Haverhill,Haverhill Line,219,Outbound,North Station,23:25,18:25,peak,361,yes
+Spring 2018,CR-Haverhill,Haverhill Line,220,Inbound,Haverhill,21:47,16:47,off peak,51,yes
+Spring 2018,CR-Haverhill,Haverhill Line,221,Outbound,North Station,23:55,18:55,off peak,89,yes
+Spring 2018,CR-Haverhill,Haverhill Line,222,Inbound,Haverhill,23:09,18:25,off peak,42,yes
+Spring 2018,CR-Haverhill,Haverhill Line,223,Outbound,North Station,00:40,19:40,off peak,140,yes
+Spring 2018,CR-Haverhill,Haverhill Line,224,Inbound,Haverhill,00:45,19:45,off peak,25,yes
+Spring 2018,CR-Haverhill,Haverhill Line,225,Outbound,North Station,02:20,21:20,off peak,90,yes
+Spring 2018,CR-Haverhill,Haverhill Line,226,Inbound,Haverhill,02:10,21:10,off peak,19,yes
+Spring 2018,CR-Haverhill,Haverhill Line,227,Outbound,North Station,04:00,23:00,off peak,25,yes
+Spring 2018,CR-Haverhill,Haverhill Line,228,Inbound,Haverhill,03:50,22:50,off peak,11,yes
+Spring 2018,CR-Haverhill,Haverhill Line,229,Outbound,North Station,05:10,00:10,off peak,16,yes
+Spring 2018,CR-Haverhill,Haverhill Line,285,Outbound,North Station,11:43,06:43,off peak,10,yes
+Spring 2018,CR-Haverhill,Haverhill Line,286,Inbound,Reading,12:30,07:30,peak,552,yes
+Spring 2018,CR-Haverhill,Haverhill Line,287,Outbound,North Station,12:10,07:10,off peak,9,yes
+Spring 2018,CR-Haverhill,Haverhill Line,288,Inbound,Reading,13:00,08:00,peak,406,yes
+Spring 2018,CR-Haverhill,Haverhill Line,289,Outbound,North Station,12:55,07:55,off peak,2,yes
+Spring 2018,CR-Haverhill,Haverhill Line,290,Inbound,Reading,13:30,08:30,off peak,235,yes
+Spring 2018,CR-Haverhill,Haverhill Line,291,Outbound,North Station,20:50,15:50,peak,153,yes
+Spring 2018,CR-Haverhill,Haverhill Line,292,Inbound,Reading,21:50,16:50,off peak,20,yes
+Spring 2018,CR-Haverhill,Haverhill Line,293,Outbound,North Station,21:48,16:48,peak,231,yes
+Spring 2018,CR-Haverhill,Haverhill Line,294,Inbound,Reading,22:38,17:37,off peak,17,yes
+Spring 2018,CR-Haverhill,Haverhill Line,295,Outbound,North Station,23:05,18:05,peak,258,yes
+Spring 2018,CR-Haverhill,Haverhill Line,296,Inbound,Reading,23:55,18:55,off peak,24,yes
+Spring 2018,CR-Haverhill,Haverhill Line,297,Outbound,North Station,00:20,19:20,off peak,91,yes
+Spring 2018,CR-Haverhill,Haverhill Line,298,Inbound,Reading,01:07,20:07,off peak,5,yes
+Spring 2018,CR-Kingston,Kingston Line,32,Inbound,Kingston,10:32,05:32,peak,377,yes
+Spring 2018,CR-Kingston,Kingston Line,33,Outbound,South Station,12:11,07:11,off peak,12,yes
+Spring 2018,CR-Kingston,Kingston Line,34,Inbound,Kingston,11:19,06:19,peak,688,yes
+Spring 2018,CR-Kingston,Kingston Line,36,Inbound,Kingston,12:11,07:11,peak,857,yes
+Spring 2018,CR-Kingston,Kingston Line,38,Inbound,Kingston,12:36,07:36,peak,688,yes
+Spring 2018,CR-Kingston,Kingston Line,40,Inbound,Kingston,13:37,08:37,off peak,176,yes
+Spring 2018,CR-Kingston,Kingston Line,41,Outbound,South Station,19:47,14:47,off peak,328,yes
+Spring 2018,CR-Kingston,Kingston Line,43,Outbound,South Station,21:20,16:20,peak,614,yes
+Spring 2018,CR-Kingston,Kingston Line,45,Outbound,South Station,22:00,17:00,peak,643,yes
+Spring 2018,CR-Kingston,Kingston Line,47,Outbound,South Station,22:38,17:38,peak,773,yes
+Spring 2018,CR-Kingston,Kingston Line,48,Inbound,Kingston,21:02,16:02,off peak,39,yes
+Spring 2018,CR-Kingston,Kingston Line,51,Outbound,South Station,00:29,19:29,off peak,159,yes
+Spring 2018,CR-Kingston,Kingston Line,52,Inbound,Kingston,23:27,18:27,off peak,19,yes
+Spring 2018,CR-Kingston,Kingston Line,55,Outbound,South Station,02:30,21:30,off peak,79,yes
+Spring 2018,CR-Kingston,Kingston Line,56,Inbound,Kingston,01:53,20:53,off peak,7,yes
+Spring 2018,CR-Kingston,Kingston Line,57,Outbound,South Station,03:40,22:40,off peak,25,yes
+Spring 2018,CR-Kingston,Kingston Line,60,Inbound,Plymouth,15:08,10:08,off peak,72,yes
+Spring 2018,CR-Kingston,Kingston Line,61,Outbound,South Station,13:56,08:56,off peak,19,yes
+Spring 2018,CR-Kingston,Kingston Line,62,Inbound,Plymouth,17:06,12:06,off peak,37,yes
+Spring 2018,CR-Kingston,Kingston Line,63,Outbound,South Station,15:50,10:50,off peak,26,yes
+Spring 2018,CR-Kingston,Kingston Line,64,Inbound,Plymouth,19:28,13:35,off peak,30,yes
+Spring 2018,CR-Kingston,Kingston Line,65,Outbound,South Station,17:25,12:25,off peak,58,yes
+Spring 2018,CR-Kingston,Kingston Line,66,Inbound,Plymouth,00:45,19:23,off peak,10,yes
+Spring 2018,CR-Kingston,Kingston Line,67,Outbound,South Station,23:15,18:15,peak,353,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,2,Inbound,Middleborough/Lakeville,10:20,05:20,off peak,303,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,3,Outbound,South Station,11:35,06:35,off peak,57,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,4,Inbound,Middleborough/Lakeville,11:00,06:00,peak,633,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,5,Outbound,South Station,13:24,08:24,off peak,32,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,6,Inbound,Middleborough/Lakeville,11:58,06:58,peak,961,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,7,Outbound,South Station,14:57,09:57,off peak,59,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,8,Inbound,Middleborough/Lakeville,12:20,07:20,peak,753,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,9,Outbound,South Station,16:57,11:57,off peak,59,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,10,Inbound,Middleborough/Lakeville,13:07,08:07,peak,451,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,12,Inbound,Middleborough/Lakeville,14:38,09:38,off peak,62,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,14,Inbound,Middleborough/Lakeville,16:10,11:10,off peak,108,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,15,Outbound,South Station,19:10,14:10,off peak,148,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,16,Inbound,Middleborough/Lakeville,18:08,13:08,off peak,59,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,17,Outbound,South Station,20:43,15:43,peak,524,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,18,Inbound,Middleborough/Lakeville,20:25,15:25,off peak,74,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,19,Outbound,South Station,21:40,16:40,peak,659,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,20,Inbound,Middleborough/Lakeville,21:54,16:54,off peak,45,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,21,Outbound,South Station,22:12,17:12,peak,806,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,22,Inbound,Middleborough/Lakeville,23:05,18:05,off peak,38,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,23,Outbound,South Station,22:57,17:57,peak,592,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,25,Outbound,South Station,23:52,18:52,off peak,213,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,27,Outbound,South Station,01:07,20:07,off peak,144,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,28,Inbound,Middleborough/Lakeville,02:25,21:25,off peak,25,yes
+Spring 2018,CR-Middleborough,Middleborough/Lakeville Line,29,Outbound,South Station,03:30,22:30,off peak,58,yes
+Spring 2018,CR-Lowell,Lowell Line,208,Inbound,Anderson/Woburn,13:12,07:35,peak,308,yes
+Spring 2018,CR-Lowell,Lowell Line,221,Outbound,North Station,23:55,18:55,off peak,148,yes
+Spring 2018,CR-Lowell,Lowell Line,300,Inbound,Lowell,10:35,05:35,peak,328,yes
+Spring 2018,CR-Lowell,Lowell Line,301,Outbound,North Station,10:35,05:35,off peak,9,yes
+Spring 2018,CR-Lowell,Lowell Line,302,Inbound,Lowell,11:10,06:10,peak,466,yes
+Spring 2018,CR-Lowell,Lowell Line,303,Outbound,North Station,11:15,06:15,off peak,18,yes
+Spring 2018,CR-Lowell,Lowell Line,304,Inbound,Lowell,11:35,06:35,peak,483,yes
+Spring 2018,CR-Lowell,Lowell Line,305,Outbound,North Station,11:37,06:37,off peak,33,yes
+Spring 2018,CR-Lowell,Lowell Line,306,Inbound,Lowell,12:00,07:00,peak,675,yes
+Spring 2018,CR-Lowell,Lowell Line,307,Outbound,North Station,12:16,07:16,off peak,42,yes
+Spring 2018,CR-Lowell,Lowell Line,308,Inbound,Lowell,12:20,07:20,peak,686,yes
+Spring 2018,CR-Lowell,Lowell Line,309,Outbound,North Station,13:16,08:16,off peak,53,yes
+Spring 2018,CR-Lowell,Lowell Line,310,Inbound,Lowell,12:40,07:40,peak,710,yes
+Spring 2018,CR-Lowell,Lowell Line,311,Outbound,North Station,14:12,09:12,off peak,31,yes
+Spring 2018,CR-Lowell,Lowell Line,312,Inbound,Lowell,13:15,08:15,peak,498,yes
+Spring 2018,CR-Lowell,Lowell Line,313,Outbound,North Station,15:12,10:12,off peak,37,yes
+Spring 2018,CR-Lowell,Lowell Line,314,Inbound,Lowell,13:45,08:45,off peak,279,yes
+Spring 2018,CR-Lowell,Lowell Line,315,Outbound,North Station,16:12,11:12,off peak,59,yes
+Spring 2018,CR-Lowell,Lowell Line,316,Inbound,Lowell,14:15,09:15,off peak,145,yes
+Spring 2018,CR-Lowell,Lowell Line,317,Outbound,North Station,17:12,12:12,off peak,49,yes
+Spring 2018,CR-Lowell,Lowell Line,318,Inbound,Lowell,15:15,10:15,off peak,118,yes
+Spring 2018,CR-Lowell,Lowell Line,319,Outbound,North Station,18:15,13:15,off peak,79,yes
+Spring 2018,CR-Lowell,Lowell Line,320,Inbound,Lowell,16:15,11:15,off peak,69,yes
+Spring 2018,CR-Lowell,Lowell Line,321,Outbound,North Station,19:12,14:12,off peak,80,yes
+Spring 2018,CR-Lowell,Lowell Line,322,Inbound,Lowell,17:15,12:15,off peak,59,yes
+Spring 2018,CR-Lowell,Lowell Line,323,Outbound,North Station,20:00,15:00,off peak,155,yes
+Spring 2018,CR-Lowell,Lowell Line,324,Inbound,Lowell,18:18,13:18,off peak,67,yes
+Spring 2018,CR-Lowell,Lowell Line,325,Outbound,North Station,20:40,15:40,peak,263,yes
+Spring 2018,CR-Lowell,Lowell Line,326,Inbound,Lowell,19:15,14:15,off peak,71,yes
+Spring 2018,CR-Lowell,Lowell Line,327,Outbound,North Station,21:15,16:15,peak,524,yes
+Spring 2018,CR-Lowell,Lowell Line,328,Inbound,Lowell,20:14,15:14,off peak,59,yes
+Spring 2018,CR-Lowell,Lowell Line,329,Outbound,North Station,21:45,16:45,peak,653,yes
+Spring 2018,CR-Lowell,Lowell Line,330,Inbound,Lowell,21:00,16:00,off peak,82,yes
+Spring 2018,CR-Lowell,Lowell Line,331,Outbound,North Station,22:10,17:10,peak,725,yes
+Spring 2018,CR-Lowell,Lowell Line,332,Inbound,Lowell,21:47,16:47,off peak,88,yes
+Spring 2018,CR-Lowell,Lowell Line,333,Outbound,North Station,22:35,17:35,peak,736,yes
+Spring 2018,CR-Lowell,Lowell Line,334,Inbound,Lowell,22:17,17:17,off peak,73,yes
+Spring 2018,CR-Lowell,Lowell Line,335,Outbound,North Station,22:50,17:50,peak,586,yes
+Spring 2018,CR-Lowell,Lowell Line,336,Inbound,Lowell,22:47,17:47,off peak,71,yes
+Spring 2018,CR-Lowell,Lowell Line,337,Outbound,North Station,23:30,18:30,off peak,509,yes
+Spring 2018,CR-Lowell,Lowell Line,338,Inbound,Lowell,23:15,18:15,off peak,78,yes
+Spring 2018,CR-Lowell,Lowell Line,339,Outbound,North Station,00:25,19:25,off peak,243,yes
+Spring 2018,CR-Lowell,Lowell Line,340,Inbound,Lowell,23:52,18:52,off peak,62,yes
+Spring 2018,CR-Lowell,Lowell Line,341,Outbound,North Station,01:35,20:35,off peak,125,yes
+Spring 2018,CR-Lowell,Lowell Line,342,Inbound,Lowell,00:32,19:32,off peak,20,yes
+Spring 2018,CR-Lowell,Lowell Line,343,Outbound,North Station,02:45,21:45,off peak,85,yes
+Spring 2018,CR-Lowell,Lowell Line,344,Inbound,Lowell,01:45,20:45,off peak,28,yes
+Spring 2018,CR-Lowell,Lowell Line,345,Outbound,North Station,03:55,22:55,off peak,81,yes
+Spring 2018,CR-Lowell,Lowell Line,346,Inbound,Lowell,02:55,21:55,off peak,10,yes
+Spring 2018,CR-Lowell,Lowell Line,347,Outbound,North Station,05:15,00:15,off peak,30,yes
+Spring 2018,CR-Lowell,Lowell Line,348,Inbound,Lowell,04:05,23:05,off peak,2,yes
+Spring 2018,CR-Lowell,Lowell Line,391,Outbound,North Station,12:55,07:55,off peak,37,yes
+Spring 2018,CR-Needham,Needham Line,600,Inbound,Needham Heights,11:05,06:05,peak,375,yes
+Spring 2018,CR-Needham,Needham Line,601,Outbound,South Station,12:05,07:05,off peak,84,yes
+Spring 2018,CR-Needham,Needham Line,602,Inbound,Needham Heights,11:40,06:40,peak,621,yes
+Spring 2018,CR-Needham,Needham Line,603,Outbound,South Station,12:52,07:52,off peak,47,yes
+Spring 2018,CR-Needham,Needham Line,604,Inbound,Needham Heights,12:32,07:32,peak,844,yes
+Spring 2018,CR-Needham,Needham Line,605,Outbound,South Station,14:05,09:05,off peak,48,yes
+Spring 2018,CR-Needham,Needham Line,606,Inbound,Needham Heights,13:02,08:02,peak,672,yes
+Spring 2018,CR-Needham,Needham Line,607,Outbound,South Station,14:53,09:53,off peak,25,yes
+Spring 2018,CR-Needham,Needham Line,608,Inbound,Needham Heights,13:45,08:45,off peak,329,yes
+Spring 2018,CR-Needham,Needham Line,609,Outbound,South Station,16:50,11:50,off peak,37,yes
+Spring 2018,CR-Needham,Needham Line,610,Inbound,Needham Heights,15:05,10:05,off peak,92,yes
+Spring 2018,CR-Needham,Needham Line,611,Outbound,South Station,18:52,13:52,off peak,81,yes
+Spring 2018,CR-Needham,Needham Line,612,Inbound,Needham Heights,16:05,11:05,off peak,65,yes
+Spring 2018,CR-Needham,Needham Line,613,Outbound,South Station,20:00,15:00,off peak,255,yes
+Spring 2018,CR-Needham,Needham Line,614,Inbound,Needham Heights,17:50,12:50,off peak,39,yes
+Spring 2018,CR-Needham,Needham Line,615,Outbound,South Station,21:05,16:05,peak,302,yes
+Spring 2018,CR-Needham,Needham Line,616,Inbound,Needham Heights,19:50,14:50,off peak,73,yes
+Spring 2018,CR-Needham,Needham Line,617,Outbound,South Station,21:47,16:47,peak,648,yes
+Spring 2018,CR-Needham,Needham Line,618,Inbound,Needham Heights,20:55,15:55,off peak,48,yes
+Spring 2018,CR-Needham,Needham Line,619,Outbound,South Station,22:26,17:26,peak,751,yes
+Spring 2018,CR-Needham,Needham Line,620,Inbound,Needham Heights,22:04,17:04,off peak,56,yes
+Spring 2018,CR-Needham,Needham Line,621,Outbound,South Station,22:58,17:58,peak,510,yes
+Spring 2018,CR-Needham,Needham Line,622,Inbound,Needham Heights,22:44,17:44,off peak,35,yes
+Spring 2018,CR-Needham,Needham Line,623,Outbound,South Station,23:36,18:36,off peak,268,yes
+Spring 2018,CR-Needham,Needham Line,624,Inbound,Needham Heights,23:25,18:25,off peak,26,yes
+Spring 2018,CR-Needham,Needham Line,625,Outbound,South Station,00:30,19:30,off peak,179,yes
+Spring 2018,CR-Needham,Needham Line,626,Inbound,Needham Heights,00:50,19:50,off peak,8,yes
+Spring 2018,CR-Needham,Needham Line,627,Outbound,South Station,01:50,20:50,off peak,87,yes
+Spring 2018,CR-Needham,Needham Line,628,Inbound,Needham Heights,01:37,20:37,off peak,11,yes
+Spring 2018,CR-Needham,Needham Line,629,Outbound,South Station,02:50,21:50,off peak,48,yes
+Spring 2018,CR-Needham,Needham Line,630,Inbound,Needham Heights,03:02,22:02,off peak,13,yes
+Spring 2018,CR-Needham,Needham Line,631,Outbound,South Station,04:20,23:20,off peak,13,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,100,Inbound,Rockport,09:55,04:55,off peak,250,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,101,Outbound,North Station,11:39,06:39,off peak,27,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,102,Inbound,Rockport,10:48,05:48,peak,351,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,103,Outbound,North Station,12:50,07:50,off peak,51,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,104,Inbound,Rockport,11:30,06:30,peak,631,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,105,Outbound,North Station,13:35,08:35,off peak,52,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,106,Inbound,Rockport,12:10,07:10,peak,706,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,107,Outbound,North Station,15:35,10:35,off peak,129,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,108,Inbound,Rockport,13:15,08:15,peak,294,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,109,Outbound,North Station,17:00,12:00,off peak,95,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,110,Inbound,Rockport,14:20,09:20,off peak,90,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,111,Outbound,North Station,18:50,13:50,off peak,122,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,112,Inbound,Rockport,16:00,11:00,off peak,109,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,113,Outbound,North Station,20:35,15:35,peak,311,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,114,Inbound,Rockport,17:30,12:30,off peak,91,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,115,Outbound,North Station,21:15,16:15,peak,469,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,116,Inbound,Rockport,18:50,13:50,off peak,118,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,117,Outbound,North Station,22:00,17:00,peak,604,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,118,Inbound,Rockport,20:20,15:30,off peak,76,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,119,Outbound,North Station,22:30,17:30,peak,599,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,120,Inbound,Rockport,22:08,17:08,off peak,103,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,121,Outbound,North Station,23:25,18:25,peak,395,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,122,Inbound,Rockport,22:45,17:45,off peak,53,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,123,Outbound,North Station,00:15,19:15,off peak,251,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,124,Inbound,Rockport,00:15,19:15,off peak,32,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,125,Outbound,North Station,01:45,20:45,off peak,206,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,126,Inbound,Rockport,01:45,20:45,off peak,27,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,127,Outbound,North Station,03:20,22:20,off peak,134,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,128,Inbound,Rockport,03:30,22:30,off peak,24,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,129,Outbound,North Station,05:10,00:10,off peak,107,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,150,Inbound,Newburyport,10:20,05:20,off peak,229,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,152,Inbound,Newburyport,10:50,05:50,peak,417,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,153,Outbound,North Station,11:26,06:26,off peak,31,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,154,Inbound,Newburyport,11:25,06:25,peak,686,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,155,Outbound,North Station,12:37,07:37,off peak,65,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,156,Inbound,Newburyport,12:00,07:00,peak,768,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,157,Outbound,North Station,13:10,08:10,off peak,70,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,158,Inbound,Newburyport,12:30,07:30,peak,556,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,159,Outbound,North Station,14:40,09:40,off peak,143,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,160,Inbound,Newburyport,12:55,07:55,peak,445,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,161,Outbound,North Station,16:20,11:20,off peak,79,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,162,Inbound,Newburyport,14:15,09:15,off peak,183,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,163,Outbound,North Station,18:20,13:20,off peak,144,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,164,Inbound,Newburyport,15:00,10:00,off peak,90,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,165,Outbound,North Station,20:15,15:15,off peak,387,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,166,Inbound,Newburyport,16:40,11:40,off peak,127,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,167,Outbound,North Station,21:30,16:30,peak,495,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,168,Inbound,Newburyport,18:10,13:10,off peak,56,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,169,Outbound,North Station,22:15,17:15,peak,750,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,170,Inbound,Newburyport,19:55,14:55,off peak,93,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,171,Outbound,North Station,22:40,17:40,peak,537,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,172,Inbound,Newburyport,21:44,16:42,off peak,201,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,173,Outbound,North Station,23:05,18:05,peak,491,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,174,Inbound,Newburyport,22:48,17:48,off peak,78,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,175,Outbound,North Station,23:45,18:45,off peak,290,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,176,Inbound,Newburyport,00:08,19:08,off peak,77,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,177,Outbound,North Station,00:35,19:35,off peak,169,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,178,Inbound,Newburyport,01:10,20:10,off peak,47,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,179,Outbound,North Station,02:10,21:10,off peak,102,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,180,Inbound,Newburyport,02:25,21:25,off peak,33,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,181,Outbound,North Station,03:50,22:50,off peak,66,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,182,Inbound,Newburyport,04:03,23:03,off peak,4,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,183,Outbound,North Station,05:15,00:15,off peak,8,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,191,Outbound,North Station,12:08,07:08,off peak,37,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,192,Inbound,Beverly,13:33,08:33,off peak,187,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,193,Outbound,North Station,21:40,16:40,peak,275,yes
+Spring 2018,CR-Newburyport,Newburyport/Rockport Line,194,Inbound,Beverly,22:35,17:35,off peak,49,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,800,Inbound,Providence,10:00,05:00,off peak,539,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,801,Outbound,South Station,10:30,05:30,off peak,19,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,802,Inbound,Wickford Junction,09:45,04:45,off peak,553,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,803,Outbound,South Station,11:31,06:31,off peak,102,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,804,Inbound,Providence,11:00,06:00,peak,800,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,805,Outbound,South Station,12:25,07:25,off peak,259,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,806,Inbound,Wickford Junction,10:45,05:45,peak,1248,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,807,Outbound,South Station,14:35,09:35,off peak,83,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,808,Inbound,Wickford Junction,11:35,06:35,peak,1279,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,809,Outbound,South Station,15:25,10:25,off peak,77,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,810,Inbound,Providence,12:30,07:30,peak,804,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,811,Outbound,South Station,16:25,11:25,off peak,156,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,812,Inbound,Providence,12:50,07:50,peak,897,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,813,Outbound,South Station,18:43,13:43,off peak,306,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,814,Inbound,Wickford Junction,12:45,07:45,peak,858,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,815,Outbound,South Station,19:30,14:30,off peak,167,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,816,Inbound,Wickford Junction,14:20,09:20,off peak,314,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,817,Outbound,South Station,20:25,15:25,off peak,594,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,818,Inbound,Providence,16:10,11:10,off peak,250,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,819,Outbound,South Station,20:55,15:55,peak,676,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,820,Inbound,Providence,18:05,13:05,off peak,170,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,821,Outbound,South Station,21:30,16:30,peak,1242,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,822,Inbound,Wickford Junction,18:25,13:25,off peak,153,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,823,Outbound,South Station,21:53,16:53,peak,1302,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,824,Inbound,Providence,20:02,15:02,off peak,286,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,825,Outbound,South Station,22:40,17:40,peak,1346,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,826,Inbound,Providence,21:08,16:08,off peak,113,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,827,Outbound,South Station,23:10,18:10,peak,1056,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,828,Inbound,Providence,22:20,17:20,off peak,207,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,829,Outbound,South Station,23:50,18:50,off peak,602,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,830,Inbound,Wickford Junction,22:30,17:30,off peak,62,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,831,Outbound,South Station,00:30,19:30,off peak,354,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,832,Inbound,Wickford Junction,23:55,18:55,off peak,75,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,833,Outbound,South Station,01:30,20:30,off peak,329,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,834,Inbound,Wickford Junction,00:45,19:45,off peak,59,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,835,Outbound,South Station,03:00,22:00,off peak,167,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,836,Inbound,Providence,02:23,20:53,off peak,72,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,837,Outbound,South Station,04:00,23:00,off peak,154,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,838,Inbound,Providence,03:30,22:30,off peak,19,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,839,Outbound,South Station,04:59,23:59,off peak,162,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,842,Inbound,Attleboro,12:12,07:12,peak,1317,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,843,Outbound,South Station,11:18,06:18,off peak,11,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,900,Inbound,Stoughton,11:20,06:20,peak,407,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,901,Outbound,South Station,10:20,05:20,off peak,5,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,902,Inbound,Stoughton,11:45,06:45,peak,687,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,903,Outbound,South Station,11:59,06:59,off peak,12,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,904,Inbound,Stoughton,12:50,07:50,peak,799,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,905,Outbound,South Station,12:35,07:35,off peak,23,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,906,Inbound,Stoughton,13:30,08:30,off peak,455,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,907,Outbound,South Station,13:23,08:23,off peak,114,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,908,Inbound,Stoughton,14:15,09:15,off peak,208,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,909,Outbound,South Station,14:45,09:45,off peak,13,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,910,Inbound,Stoughton,15:40,,,31,no
+Spring 2018,CR-Providence,Providence/Stoughton Line,911,Outbound,South Station,18:20,13:20,off peak,104,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,912,Inbound,Stoughton,19:15,,,40,no
+Spring 2018,CR-Providence,Providence/Stoughton Line,913,Outbound,South Station,20:35,15:35,peak,372,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,914,Inbound,Stoughton,21:30,16:30,off peak,73,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,915,Outbound,South Station,21:20,16:20,peak,606,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,916,Inbound,Stoughton,22:15,17:15,off peak,92,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,917,Outbound,South Station,22:12,17:12,peak,986,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,918,Inbound,Stoughton,23:14,18:14,off peak,54,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,919,Outbound,South Station,22:50,17:50,peak,648,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,920,Inbound,Stoughton,00:20,19:20,off peak,24,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,921,Outbound,South Station,23:30,18:30,off peak,447,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,922,Inbound,Stoughton,00:40,19:40,off peak,0,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,923,Outbound,South Station,00:20,19:20,off peak,144,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,924,Inbound,Stoughton,01:35,20:35,off peak,11,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,925,Outbound,South Station,02:40,21:40,off peak,76,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,926,Inbound,Stoughton,03:35,22:35,off peak,4,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,927,Outbound,South Station,03:40,22:40,off peak,41,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,928,Inbound,Stoughton,04:35,23:35,off peak,5,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,8801,Outbound,Providence,09:58,04:58,off peak,1,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,8803,Outbound,Providence,10:49,05:49,off peak,1,yes
+Spring 2018,CR-Providence,Providence/Stoughton Line,8805,Outbound,Providence,11:55,,,6,no
+Fall 2024,CR-Fairmount,Fairmount Line,900,Inbound,Readville,04:45,04:45,off peak,74,yes
+Fall 2024,CR-Fairmount,Fairmount Line,902,Inbound,Readville,05:30,05:30,peak,78,yes
+Fall 2024,CR-Fairmount,Fairmount Line,904,Inbound,Readville,06:00,06:00,peak,71,yes
+Fall 2024,CR-Fairmount,Fairmount Line,907,Outbound,South Station,06:17,06:17,off peak,30,yes
+Fall 2024,CR-Fairmount,Fairmount Line,908,Inbound,Readville,07:00,07:00,peak,192,yes
+Fall 2024,CR-Fairmount,Fairmount Line,909,Outbound,South Station,06:47,06:47,off peak,58,yes
+Fall 2024,CR-Fairmount,Fairmount Line,910,Inbound,Readville,07:30,07:30,peak,215,yes
+Fall 2024,CR-Fairmount,Fairmount Line,911,Outbound,South Station,07:17,07:17,off peak,147,yes
+Fall 2024,CR-Fairmount,Fairmount Line,912,Inbound,Readville,08:00,08:00,peak,218,yes
+Fall 2024,CR-Fairmount,Fairmount Line,913,Outbound,South Station,07:47,07:47,off peak,41,yes
+Fall 2024,CR-Fairmount,Fairmount Line,914,Inbound,Readville,08:30,08:30,off peak,148,yes
+Fall 2024,CR-Fairmount,Fairmount Line,915,Outbound,South Station,08:17,08:17,off peak,38,yes
+Fall 2024,CR-Fairmount,Fairmount Line,916,Inbound,Readville,09:00,09:00,off peak,82,yes
+Fall 2024,CR-Fairmount,Fairmount Line,917,Outbound,South Station,08:47,08:47,off peak,14,yes
+Fall 2024,CR-Fairmount,Fairmount Line,918,Inbound,Readville,09:30,09:30,off peak,64,yes
+Fall 2024,CR-Fairmount,Fairmount Line,919,Outbound,South Station,09:17,09:17,off peak,25,yes
+Fall 2024,CR-Fairmount,Fairmount Line,920,Inbound,Readville,10:00,10:00,off peak,55,yes
+Fall 2024,CR-Fairmount,Fairmount Line,921,Outbound,South Station,09:47,09:47,off peak,9,yes
+Fall 2024,CR-Fairmount,Fairmount Line,922,Inbound,Fairmount,10:33,10:33,off peak,32,yes
+Fall 2024,CR-Fairmount,Fairmount Line,923,Outbound,South Station,10:17,10:17,off peak,20,yes
+Fall 2024,CR-Fairmount,Fairmount Line,924,Inbound,Readville,11:00,11:00,off peak,47,yes
+Fall 2024,CR-Fairmount,Fairmount Line,927,Outbound,South Station,11:02,11:02,off peak,13,yes
+Fall 2024,CR-Fairmount,Fairmount Line,928,Inbound,Readville,11:45,11:45,off peak,52,yes
+Fall 2024,CR-Fairmount,Fairmount Line,929,Outbound,South Station,11:47,11:47,off peak,28,yes
+Fall 2024,CR-Fairmount,Fairmount Line,930,Inbound,Fairmount,12:33,12:33,off peak,59,yes
+Fall 2024,CR-Fairmount,Fairmount Line,931,Outbound,South Station,12:17,12:17,off peak,31,yes
+Fall 2024,CR-Fairmount,Fairmount Line,932,Inbound,Readville,13:00,13:00,off peak,41,yes
+Fall 2024,CR-Fairmount,Fairmount Line,933,Outbound,South Station,12:47,12:47,off peak,30,yes
+Fall 2024,CR-Fairmount,Fairmount Line,934,Inbound,Fairmount,13:33,13:33,off peak,47,yes
+Fall 2024,CR-Fairmount,Fairmount Line,935,Outbound,South Station,13:17,13:17,off peak,31,yes
+Fall 2024,CR-Fairmount,Fairmount Line,936,Inbound,Readville,14:00,14:00,off peak,68,yes
+Fall 2024,CR-Fairmount,Fairmount Line,937,Outbound,South Station,13:47,13:47,off peak,54,yes
+Fall 2024,CR-Fairmount,Fairmount Line,938,Inbound,Fairmount,14:33,14:33,off peak,96,yes
+Fall 2024,CR-Fairmount,Fairmount Line,939,Outbound,South Station,14:17,14:17,off peak,64,yes
+Fall 2024,CR-Fairmount,Fairmount Line,940,Inbound,Readville,15:00,15:00,off peak,51,yes
+Fall 2024,CR-Fairmount,Fairmount Line,941,Outbound,South Station,14:47,14:47,off peak,84,yes
+Fall 2024,CR-Fairmount,Fairmount Line,942,Inbound,Fairmount,15:33,15:33,off peak,68,yes
+Fall 2024,CR-Fairmount,Fairmount Line,943,Outbound,South Station,15:17,15:17,off peak,131,yes
+Fall 2024,CR-Fairmount,Fairmount Line,944,Inbound,Readville,16:00,16:00,off peak,93,yes
+Fall 2024,CR-Fairmount,Fairmount Line,945,Outbound,South Station,15:47,15:47,peak,156,yes
+Fall 2024,CR-Fairmount,Fairmount Line,946,Inbound,Readville,16:30,16:30,off peak,59,yes
+Fall 2024,CR-Fairmount,Fairmount Line,947,Outbound,South Station,16:17,16:17,peak,188,yes
+Fall 2024,CR-Fairmount,Fairmount Line,948,Inbound,Readville,17:00,17:00,off peak,50,yes
+Fall 2024,CR-Fairmount,Fairmount Line,949,Outbound,South Station,16:47,16:47,peak,285,yes
+Fall 2024,CR-Fairmount,Fairmount Line,950,Inbound,Readville,17:30,17:30,off peak,50,yes
+Fall 2024,CR-Fairmount,Fairmount Line,951,Outbound,South Station,17:17,17:17,peak,207,yes
+Fall 2024,CR-Fairmount,Fairmount Line,952,Inbound,Readville,18:00,18:00,off peak,33,yes
+Fall 2024,CR-Fairmount,Fairmount Line,953,Outbound,South Station,17:47,17:47,peak,186,yes
+Fall 2024,CR-Fairmount,Fairmount Line,954,Inbound,Readville,18:00,18:30,off peak,26,yes
+Fall 2024,CR-Fairmount,Fairmount Line,955,Outbound,South Station,18:17,18:17,peak,128,yes
+Fall 2024,CR-Fairmount,Fairmount Line,956,Inbound,Readville,19:00,19:00,off peak,19,yes
+Fall 2024,CR-Fairmount,Fairmount Line,957,Outbound,South Station,18:47,18:47,off peak,78,yes
+Fall 2024,CR-Fairmount,Fairmount Line,959,Outbound,South Station,19:47,19:47,off peak,58,yes
+Fall 2024,CR-Fairmount,Fairmount Line,960,Inbound,Readville,20:40,20:40,off peak,23,yes
+Fall 2024,CR-Fairmount,Fairmount Line,961,Outbound,South Station,20:17,20:17,off peak,52,yes
+Fall 2024,CR-Fairmount,Fairmount Line,963,Outbound,South Station,20:47,20:47,off peak,59,yes
+Fall 2024,CR-Fairmount,Fairmount Line,965,Outbound,South Station,22:17,22:17,off peak,46,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,400,Inbound,Wachusett,04:25,04:25,off peak,79,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,402,Inbound,Wachusett,05:20,05:20,off peak,188,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,403,Outbound,North Station,06:20,06:20,off peak,38,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,404,Inbound,Wachusett,06:10,06:10,peak,461,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,405,Outbound,North Station,07:30,07:30,off peak,167,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,406,Inbound,Wachusett,07:15,07:15,peak,520,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,407,Outbound,North Station,08:30,08:30,off peak,172,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,408,Inbound,Wachusett,08:20,08:20,peak,146,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,410,Inbound,Wachusett,09:25,09:25,off peak,89,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,411,Outbound,North Station,10:30,10:30,off peak,56,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,414,Inbound,Wachusett,11:25,11:25,off peak,73,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,415,Outbound,North Station,12:30,12:30,off peak,75,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,418,Inbound,Wachusett,13:25,13:25,off peak,89,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,419,Outbound,North Station,14:30,14:30,off peak,137,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,421,Outbound,North Station,15:40,15:40,peak,275,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,422,Inbound,Wachusett,15:25,15:25,off peak,292,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,423,Outbound,North Station,17:00,17:00,peak,408,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,424,Inbound,Wachusett,16:35,16:35,off peak,264,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,425,Outbound,North Station,17:30,17:30,peak,523,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,426,Inbound,Wachusett,18:15,18:15,off peak,146,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,427,Outbound,North Station,18:30,18:30,off peak,195,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,428,Inbound,Wachusett,19:30,19:30,off peak,39,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,429,Outbound,North Station,19:30,19:30,off peak,199,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,430,Inbound,Wachusett,21:25,21:25,off peak,44,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,431,Outbound,North Station,21:00,21:00,off peak,76,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,432,Inbound,Wachusett,22:55,22:55,off peak,6,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,433,Outbound,North Station,22:30,22:30,off peak,179,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,435,Outbound,North Station,23:50,23:50,off peak,52,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,481,Outbound,North Station,05:40,05:40,off peak,5,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,482,Inbound,Littleton/Rte 495,07:03,07:03,peak,560,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,485,Outbound,North Station,09:30,09:30,off peak,61,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,486,Inbound,Littleton/Rte 495,11:01,11:01,off peak,52,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,489,Outbound,North Station,11:30,11:30,off peak,51,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,490,Inbound,Littleton/Rte 495,13:01,13:01,off peak,41,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,493,Outbound,North Station,13:30,13:30,off peak,53,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,494,Inbound,Littleton/Rte 495,15:01,15:01,off peak,77,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,497,Outbound,North Station,16:25,16:25,peak,360,yes
+Fall 2024,CR-Fitchburg,Fitchburg Line,498,Inbound,Littleton/Rte 495,17:48,17:48,off peak,140,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,500,Inbound,Worcester,04:15,04:15,off peak,70,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,501,Outbound,South Station,04:45,04:45,off peak,7,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,502,Inbound,Worcester,05:00,05:00,off peak,484,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,503,Outbound,South Station,05:25,05:25,off peak,20,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,504,Inbound,Worcester,05:45,05:45,peak,391,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,505,Outbound,South Station,06:02,06:02,off peak,59,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,506,Inbound,Worcester,06:30,06:30,peak,540,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,507,Outbound,South Station,07:30,07:30,off peak,105,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,508,Inbound,Grafton,07:20,07:07,peak,840,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,509,Outbound,South Station,07:55,07:55,off peak,246,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,510,Inbound,Worcester,08:13,08:13,peak,498,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,511,Outbound,South Station,08:55,08:55,off peak,183,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,512,Inbound,Worcester,09:05,09:05,off peak,186,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,513,Outbound,South Station,09:50,09:50,off peak,78,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,514,Inbound,Worcester,10:00,10:00,off peak,157,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,515,Outbound,South Station,10:50,10:50,off peak,76,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,516,Inbound,Worcester,11:00,11:00,off peak,115,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,517,Outbound,South Station,11:45,11:45,off peak,125,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,518,Inbound,Worcester,12:00,12:00,off peak,312,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,519,Outbound,South Station,12:55,12:55,off peak,37,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,520,Inbound,Worcester,13:05,13:05,off peak,125,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,521,Outbound,South Station,13:45,13:45,off peak,241,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,522,Inbound,Worcester,14:00,14:00,off peak,186,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,523,Outbound,South Station,14:40,14:40,off peak,265,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,524,Inbound,Worcester,15:00,15:00,off peak,264,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,525,Outbound,South Station,16:00,16:00,peak,863,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,526,Inbound,Worcester,15:47,15:47,off peak,149,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,527,Outbound,South Station,16:45,16:45,peak,718,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,528,Inbound,Worcester,16:30,16:30,off peak,133,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,529,Outbound,South Station,17:30,17:30,peak,850,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,530,Inbound,Worcester,17:45,17:45,off peak,123,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,531,Outbound,South Station,18:15,18:15,peak,425,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,532,Inbound,Worcester,18:35,18:35,off peak,83,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,533,Outbound,South Station,18:35,18:35,off peak,272,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,534,Inbound,Worcester,19:55,19:55,off peak,71,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,535,Outbound,South Station,19:35,19:35,off peak,230,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,536,Inbound,Worcester,20:55,20:55,off peak,33,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,537,Outbound,South Station,21:00,21:00,off peak,142,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,538,Inbound,Worcester,22:50,22:50,off peak,16,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,539,Outbound,South Station,22:00,22:00,off peak,95,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,541,Outbound,South Station,23:45,23:45,off peak,60,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,549,Outbound,South Station,06:52,06:52,off peak,34,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,552,Inbound,Worcester,07:35,07:40,peak,274,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,582,Inbound,Framingham,06:35,06:35,peak,400,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,583,Outbound,South Station,06:15,06:15,off peak,55,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,584,Inbound,Framingham,07:25,07:25,peak,913,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,585,Outbound,South Station,07:10,07:10,off peak,134,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,586,Inbound,Framingham,08:15,08:15,peak,562,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,591,Outbound,South Station,15:25,15:25,off peak,348,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,592,Inbound,Framingham,16:40,16:40,off peak,166,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,593,Outbound,South Station,16:10,16:10,peak,595,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,594,Inbound,Framingham,17:20,17:20,off peak,184,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,595,Outbound,South Station,16:55,16:55,peak,728,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,597,Outbound,South Station,17:45,17:45,peak,626,yes
+Fall 2024,CR-Worcester,Framingham/Worcester Line,598,Inbound,Framingham,18:55,18:55,off peak,50,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,700,Inbound,Forge Park/495,04:59,04:59,off peak,205,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,702,Inbound,Forge Park/495,05:59,05:59,peak,376,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,704,Inbound,Forge Park/495,06:33,06:33,peak,624,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,705,Outbound,South Station,07:40,07:40,off peak,122,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,706,Inbound,Forge Park/495,07:23,07:23,peak,1041,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,708,Inbound,Forge Park/495,08:10,08:10,peak,552,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,709,Outbound,South Station,09:35,09:35,off peak,36,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,710,Inbound,Forge Park/495,09:20,09:20,off peak,193,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,713,Outbound,South Station,11:25,11:25,off peak,56,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,714,Inbound,Forge Park/495,11:15,11:15,off peak,98,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,717,Outbound,South Station,13:28,13:28,off peak,129,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,718,Inbound,Forge Park/495,13:13,13:13,off peak,88,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,721,Outbound,South Station,15:20,15:20,off peak,338,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,722,Inbound,Forge Park/495,15:25,15:25,off peak,154,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,723,Outbound,South Station,16:27,16:27,peak,1068,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,725,Outbound,South Station,17:05,17:05,peak,938,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,726,Inbound,Forge Park/495,16:51,16:51,off peak,150,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,727,Outbound,South Station,17:50,17:50,peak,502,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,728,Inbound,Franklin,19:04,19:04,off peak,42,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,729,Outbound,South Station,18:35,18:35,off peak,397,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,730,Inbound,Forge Park/495,20:00,20:00,off peak,29,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,731,Outbound,South Station,20:10,20:10,off peak,145,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,732,Inbound,Forge Park/495,21:28,21:28,off peak,24,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,733,Outbound,South Station,22:10,22:10,off peak,86,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,734,Inbound,Forge Park/495,23:28,23:28,off peak,0,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,735,Outbound,South Station,23:55,23:55,off peak,41,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,740,Inbound,Foxboro,05:57,05:57,peak,274,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,741,Outbound,South Station,05:47,05:47,off peak,28,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,742,Inbound,Foxboro,07:15,07:15,peak,574,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,743,Outbound,South Station,07:20,07:20,off peak,72,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,744,Inbound,Foxboro,08:45,08:45,off peak,154,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,745,Outbound,South Station,08:43,08:43,off peak,57,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,746,Inbound,Foxboro,10:36,10:36,off peak,85,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,747,Outbound,South Station,10:35,10:35,off peak,39,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,748,Inbound,Foxboro,12:31,12:31,off peak,60,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,749,Outbound,South Station,12:28,12:28,off peak,39,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,750,Inbound,Foxboro,14:09,14:09,off peak,35,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,751,Outbound,South Station,14:28,14:28,off peak,205,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,752,Inbound,Foxboro,16:06,16:06,off peak,41,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,753,Outbound,South Station,16:05,16:05,peak,609,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,754,Inbound,Foxboro,17:50,17:50,off peak,36,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,755,Outbound,South Station,17:32,17:32,peak,417,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,756,Inbound,Foxboro,18:48,18:48,off peak,29,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,757,Outbound,South Station,19:18,19:17,off peak,119,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,758,Inbound,Foxboro,20:59,20:59,off peak,23,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,759,Outbound,South Station,21:32,21:32,off peak,63,yes
+Fall 2024,CR-Franklin,Franklin/Foxboro Line,760,Inbound,Foxboro,22:49,22:49,off peak,5,yes
+Fall 2024,CR-Greenbush,Greenbush Line,70,Inbound,Greenbush,05:05,05:05,off peak,81,yes
+Fall 2024,CR-Greenbush,Greenbush Line,71,Outbound,South Station,06:25,06:25,off peak,12,yes
+Fall 2024,CR-Greenbush,Greenbush Line,72,Inbound,Greenbush,06:10,06:10,peak,466,yes
+Fall 2024,CR-Greenbush,Greenbush Line,73,Outbound,South Station,08:00,08:00,off peak,29,yes
+Fall 2024,CR-Greenbush,Greenbush Line,74,Inbound,Greenbush,07:07,07:07,peak,695,yes
+Fall 2024,CR-Greenbush,Greenbush Line,75,Outbound,South Station,09:12,09:12,off peak,14,yes
+Fall 2024,CR-Greenbush,Greenbush Line,76,Inbound,Greenbush,08:10,08:10,peak,341,yes
+Fall 2024,CR-Greenbush,Greenbush Line,77,Outbound,South Station,10:30,10:30,off peak,6,yes
+Fall 2024,CR-Greenbush,Greenbush Line,78,Inbound,Greenbush,09:25,09:25,off peak,84,yes
+Fall 2024,CR-Greenbush,Greenbush Line,79,Outbound,South Station,11:45,11:45,off peak,42,yes
+Fall 2024,CR-Greenbush,Greenbush Line,80,Inbound,Greenbush,10:35,10:35,off peak,51,yes
+Fall 2024,CR-Greenbush,Greenbush Line,81,Outbound,South Station,13:00,13:00,off peak,53,yes
+Fall 2024,CR-Greenbush,Greenbush Line,82,Inbound,Greenbush,11:50,11:50,off peak,35,yes
+Fall 2024,CR-Greenbush,Greenbush Line,83,Outbound,South Station,14:15,14:15,off peak,102,yes
+Fall 2024,CR-Greenbush,Greenbush Line,84,Inbound,Greenbush,13:05,13:05,off peak,28,yes
+Fall 2024,CR-Greenbush,Greenbush Line,85,Outbound,South Station,15:15,15:15,off peak,247,yes
+Fall 2024,CR-Greenbush,Greenbush Line,86,Inbound,Greenbush,14:20,14:20,off peak,48,yes
+Fall 2024,CR-Greenbush,Greenbush Line,87,Outbound,South Station,16:15,16:15,peak,523,yes
+Fall 2024,CR-Greenbush,Greenbush Line,88,Inbound,Greenbush,15:42,15:42,off peak,45,yes
+Fall 2024,CR-Greenbush,Greenbush Line,89,Outbound,South Station,17:15,17:15,peak,582,yes
+Fall 2024,CR-Greenbush,Greenbush Line,90,Inbound,Greenbush,17:42,17:42,off peak,20,yes
+Fall 2024,CR-Greenbush,Greenbush Line,91,Outbound,South Station,18:23,18:23,peak,153,yes
+Fall 2024,CR-Greenbush,Greenbush Line,92,Inbound,Greenbush,19:41,19:41,off peak,10,yes
+Fall 2024,CR-Greenbush,Greenbush Line,93,Outbound,South Station,20:55,20:55,off peak,51,yes
+Fall 2024,CR-Greenbush,Greenbush Line,94,Inbound,Greenbush,22:15,22:15,off peak,4,yes
+Fall 2024,CR-Greenbush,Greenbush Line,95,Outbound,South Station,23:20,23:20,off peak,19,yes
+Fall 2024,CR-Haverhill,Haverhill Line,200,Inbound,Bradford,05:27,05:27,off peak,115,yes
+Fall 2024,CR-Haverhill,Haverhill Line,201,Outbound,North Station,05:55,05:55,off peak,14,yes
+Fall 2024,CR-Haverhill,Haverhill Line,202,Inbound,Bradford,06:12,06:12,peak,366,yes
+Fall 2024,CR-Haverhill,Haverhill Line,203,Outbound,North Station,08:15,08:15,off peak,55,yes
+Fall 2024,CR-Haverhill,Haverhill Line,204,Inbound,Bradford,07:25,07:25,peak,468,yes
+Fall 2024,CR-Haverhill,Haverhill Line,205,Outbound,North Station,09:40,09:40,off peak,34,yes
+Fall 2024,CR-Haverhill,Haverhill Line,206,Inbound,Bradford,08:35,08:27,peak,120,yes
+Fall 2024,CR-Haverhill,Haverhill Line,207,Outbound,North Station,11:10,11:10,off peak,26,yes
+Fall 2024,CR-Haverhill,Haverhill Line,208,Inbound,Bradford,09:55,09:57,off peak,103,yes
+Fall 2024,CR-Haverhill,Haverhill Line,209,Outbound,North Station,12:40,12:40,off peak,44,yes
+Fall 2024,CR-Haverhill,Haverhill Line,210,Inbound,Bradford,11:22,11:27,off peak,41,yes
+Fall 2024,CR-Haverhill,Haverhill Line,211,Outbound,North Station,14:10,14:10,off peak,103,yes
+Fall 2024,CR-Haverhill,Haverhill Line,212,Inbound,Bradford,12:55,12:57,off peak,51,yes
+Fall 2024,CR-Haverhill,Haverhill Line,213,Outbound,North Station,15:45,15:45,peak,234,yes
+Fall 2024,CR-Haverhill,Haverhill Line,214,Inbound,Bradford,14:27,14:27,off peak,37,yes
+Fall 2024,CR-Haverhill,Haverhill Line,215,Outbound,North Station,16:25,16:25,peak,391,yes
+Fall 2024,CR-Haverhill,Haverhill Line,216,Inbound,Bradford,16:02,16:02,off peak,44,yes
+Fall 2024,CR-Haverhill,Haverhill Line,217,Outbound,North Station,17:35,17:35,peak,307,yes
+Fall 2024,CR-Haverhill,Haverhill Line,218,Inbound,Bradford,17:35,17:35,off peak,56,yes
+Fall 2024,CR-Haverhill,Haverhill Line,219,Outbound,North Station,18:40,18:40,off peak,125,yes
+Fall 2024,CR-Haverhill,Haverhill Line,220,Inbound,Bradford,18:57,18:57,off peak,24,yes
+Fall 2024,CR-Haverhill,Haverhill Line,221,Outbound,North Station,19:30,19:30,off peak,99,yes
+Fall 2024,CR-Haverhill,Haverhill Line,223,Outbound,North Station,21:40,21:40,off peak,57,yes
+Fall 2024,CR-Haverhill,Haverhill Line,224,Inbound,Bradford,21:15,21:15,off peak,9,yes
+Fall 2024,CR-Haverhill,Haverhill Line,225,Outbound,North Station,23:40,23:40,off peak,20,yes
+Fall 2024,CR-Haverhill,Haverhill Line,280,Inbound,Lawrence,04:51,04:51,off peak,75,yes
+Fall 2024,CR-Haverhill,Haverhill Line,281,Outbound,North Station,06:40,06:40,off peak,4,yes
+Fall 2024,CR-Haverhill,Haverhill Line,282,Inbound,Reading,07:33,07:33,peak,123,yes
+Fall 2024,CR-Haverhill,Haverhill Line,283,Outbound,North Station,07:30,07:30,off peak,10,yes
+Fall 2024,CR-Haverhill,Haverhill Line,284,Inbound,Reading,08:18,08:18,peak,203,yes
+Fall 2024,CR-Haverhill,Haverhill Line,295,Outbound,North Station,17:10,17:10,peak,280,yes
+Fall 2024,CR-Haverhill,Haverhill Line,297,Outbound,North Station,17:55,17:55,peak,214,yes
+Fall 2024,CR-Haverhill,Haverhill Line,298,Inbound,Reading,18:48,18:48,off peak,4,yes
+Fall 2024,CR-Kingston,Kingston Line,40,Inbound,Kingston,05:30,05:30,peak,408,yes
+Fall 2024,CR-Kingston,Kingston Line,42,Inbound,Kingston,06:30,06:30,peak,671,yes
+Fall 2024,CR-Kingston,Kingston Line,43,Outbound,South Station,08:25,08:25,off peak,35,yes
+Fall 2024,CR-Kingston,Kingston Line,44,Inbound,Kingston,07:25,07:25,peak,840,yes
+Fall 2024,CR-Kingston,Kingston Line,45,Outbound,South Station,09:33,09:33,off peak,15,yes
+Fall 2024,CR-Kingston,Kingston Line,46,Inbound,Kingston,08:37,08:37,off peak,297,yes
+Fall 2024,CR-Kingston,Kingston Line,47,Outbound,South Station,10:48,10:48,off peak,26,yes
+Fall 2024,CR-Kingston,Kingston Line,48,Inbound,Kingston,09:52,09:52,off peak,103,yes
+Fall 2024,CR-Kingston,Kingston Line,49,Outbound,South Station,12:03,12:03,off peak,48,yes
+Fall 2024,CR-Kingston,Kingston Line,50,Inbound,Kingston,11:07,11:07,off peak,61,yes
+Fall 2024,CR-Kingston,Kingston Line,51,Outbound,South Station,13:18,13:18,off peak,51,yes
+Fall 2024,CR-Kingston,Kingston Line,52,Inbound,Kingston,12:22,12:22,off peak,38,yes
+Fall 2024,CR-Kingston,Kingston Line,53,Outbound,South Station,14:33,14:33,off peak,202,yes
+Fall 2024,CR-Kingston,Kingston Line,54,Inbound,Kingston,13:37,13:37,off peak,36,yes
+Fall 2024,CR-Kingston,Kingston Line,55,Outbound,South Station,15:33,15:33,peak,498,yes
+Fall 2024,CR-Kingston,Kingston Line,56,Inbound,Kingston,14:52,14:52,off peak,28,yes
+Fall 2024,CR-Kingston,Kingston Line,57,Outbound,South Station,16:33,16:33,peak,556,yes
+Fall 2024,CR-Kingston,Kingston Line,58,Inbound,Kingston,16:07,16:07,off peak,37,yes
+Fall 2024,CR-Kingston,Kingston Line,59,Outbound,South Station,17:33,17:33,peak,963,yes
+Fall 2024,CR-Kingston,Kingston Line,60,Inbound,Kingston,18:22,18:22,off peak,18,yes
+Fall 2024,CR-Kingston,Kingston Line,61,Outbound,South Station,18:45,18:45,off peak,204,yes
+Fall 2024,CR-Kingston,Kingston Line,62,Inbound,Kingston,20:02,20:02,off peak,19,yes
+Fall 2024,CR-Kingston,Kingston Line,63,Outbound,South Station,20:15,20:15,off peak,114,yes
+Fall 2024,CR-Kingston,Kingston Line,65,Outbound,South Station,21:55,21:55,off peak,36,yes
+Fall 2024,CR-Kingston,Kingston Line,66,Inbound,Kingston,23:10,23:10,off peak,2,yes
+Fall 2024,CR-Kingston,Kingston Line,67,Outbound,Braintree,00:20,00:20,off peak,4,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,2,Inbound,Middleborough/Lakeville,04:50,04:50,off peak,308,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,4,Inbound,Middleborough/Lakeville,05:50,05:50,peak,536,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,5,Outbound,South Station,07:25,07:25,off peak,121,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,6,Inbound,Middleborough/Lakeville,06:50,06:50,peak,927,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,7,Outbound,South Station,08:45,08:45,off peak,43,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,8,Inbound,Middleborough/Lakeville,07:50,07:50,peak,746,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,9,Outbound,South Station,10:00,10:00,off peak,66,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,10,Inbound,Middleborough/Lakeville,08:58,08:58,off peak,154,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,11,Outbound,South Station,11:15,11:15,off peak,45,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,12,Inbound,Middleborough/Lakeville,10:13,10:13,off peak,115,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,13,Outbound,South Station,12:30,12:30,off peak,85,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,14,Inbound,Middleborough/Lakeville,11:28,11:28,off peak,112,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,15,Outbound,South Station,13:45,13:45,off peak,148,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,16,Inbound,Middleborough/Lakeville,12:43,12:43,off peak,112,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,17,Outbound,South Station,15:00,15:00,off peak,338,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,18,Inbound,Middleborough/Lakeville,13:58,13:58,off peak,83,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,19,Outbound,South Station,16:05,16:05,peak,712,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,20,Inbound,Middleborough/Lakeville,15:13,15:13,off peak,65,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,21,Outbound,South Station,16:55,16:55,peak,857,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,22,Inbound,Middleborough/Lakeville,16:33,16:33,off peak,117,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,23,Outbound,South Station,17:55,17:55,peak,352,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,24,Inbound,Middleborough/Lakeville,18:10,18:10,off peak,57,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,25,Outbound,South Station,19:05,19:05,off peak,196,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,27,Outbound,South Station,20:35,20:35,off peak,171,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,28,Inbound,Middleborough/Lakeville,20:20,20:20,off peak,27,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,29,Outbound,South Station,22:15,22:15,off peak,80,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,30,Inbound,Middleborough/Lakeville,22:00,22:00,off peak,16,yes
+Fall 2024,CR-Middleborough,Middleborough/Lakeville Line,31,Outbound,South Station,23:55,23:55,off peak,80,yes
+Fall 2024,CR-Lowell,Lowell Line,300,Inbound,Lowell,17:00,05:00,off peak,59,yes
+Fall 2024,CR-Lowell,Lowell Line,301,Outbound,North Station,05:25,05:20,off peak,2,yes
+Fall 2024,CR-Lowell,Lowell Line,302,Inbound,Lowell,05:45,05:45,peak,148,yes
+Fall 2024,CR-Lowell,Lowell Line,304,Inbound,Lowell,06:25,06:25,peak,300,yes
+Fall 2024,CR-Lowell,Lowell Line,305,Outbound,North Station,06:25,06:25,off peak,21,yes
+Fall 2024,CR-Lowell,Lowell Line,306,Inbound,Lowell,06:55,06:55,peak,528,yes
+Fall 2024,CR-Lowell,Lowell Line,307,Outbound,North Station,07:00,07:00,off peak,37,yes
+Fall 2024,CR-Lowell,Lowell Line,308,Inbound,Lowell,07:30,07:30,peak,546,yes
+Fall 2024,CR-Lowell,Lowell Line,309,Outbound,North Station,07:35,07:35,off peak,67,yes
+Fall 2024,CR-Lowell,Lowell Line,310,Inbound,Lowell,08:05,08:05,peak,419,yes
+Fall 2024,CR-Lowell,Lowell Line,312,Inbound,Lowell,08:40,08:40,off peak,241,yes
+Fall 2024,CR-Lowell,Lowell Line,313,Outbound,North Station,09:20,09:20,off peak,51,yes
+Fall 2024,CR-Lowell,Lowell Line,316,Inbound,Lowell,10:22,10:22,off peak,172,yes
+Fall 2024,CR-Lowell,Lowell Line,317,Outbound,North Station,11:20,11:20,off peak,76,yes
+Fall 2024,CR-Lowell,Lowell Line,320,Inbound,Lowell,12:22,12:22,off peak,148,yes
+Fall 2024,CR-Lowell,Lowell Line,321,Outbound,North Station,13:20,13:20,off peak,125,yes
+Fall 2024,CR-Lowell,Lowell Line,324,Inbound,Lowell,14:22,14:22,off peak,100,yes
+Fall 2024,CR-Lowell,Lowell Line,325,Outbound,North Station,15:07,15:07,off peak,209,yes
+Fall 2024,CR-Lowell,Lowell Line,327,Outbound,North Station,15:55,15:55,peak,283,yes
+Fall 2024,CR-Lowell,Lowell Line,328,Inbound,Lowell,16:07,16:07,off peak,125,yes
+Fall 2024,CR-Lowell,Lowell Line,329,Outbound,North Station,16:30,16:30,peak,459,yes
+Fall 2024,CR-Lowell,Lowell Line,330,Inbound,Lowell,17:07,17:07,off peak,224,yes
+Fall 2024,CR-Lowell,Lowell Line,331,Outbound,North Station,17:05,17:05,peak,433,yes
+Fall 2024,CR-Lowell,Lowell Line,333,Outbound,North Station,17:42,17:42,peak,586,yes
+Fall 2024,CR-Lowell,Lowell Line,334,Inbound,Lowell,18:07,18:08,off peak,136,yes
+Fall 2024,CR-Lowell,Lowell Line,335,Outbound,North Station,18:20,18:20,peak,199,yes
+Fall 2024,CR-Lowell,Lowell Line,336,Inbound,Lowell,18:44,18:45,off peak,30,yes
+Fall 2024,CR-Lowell,Lowell Line,337,Outbound,North Station,19:00,19:00,off peak,154,yes
+Fall 2024,CR-Lowell,Lowell Line,338,Inbound,Lowell,19:25,19:25,off peak,10,yes
+Fall 2024,CR-Lowell,Lowell Line,339,Outbound,North Station,19:45,19:45,off peak,108,yes
+Fall 2024,CR-Lowell,Lowell Line,340,Inbound,Lowell,20:00,20:02,off peak,11,yes
+Fall 2024,CR-Lowell,Lowell Line,341,Outbound,North Station,20:45,20:45,off peak,108,yes
+Fall 2024,CR-Lowell,Lowell Line,342,Inbound,Lowell,20:50,20:50,off peak,13,yes
+Fall 2024,CR-Lowell,Lowell Line,343,Outbound,North Station,22:15,22:15,off peak,137,yes
+Fall 2024,CR-Lowell,Lowell Line,344,Inbound,Lowell,21:50,21:50,off peak,9,yes
+Fall 2024,CR-Lowell,Lowell Line,345,Outbound,North Station,23:45,23:45,off peak,21,yes
+Fall 2024,CR-Lowell,Lowell Line,346,Inbound,Lowell,23:15,23:15,off peak,2,yes
+Fall 2024,CR-Needham,Needham Line,600,Inbound,Needham Heights,05:05,05:05,off peak,38,yes
+Fall 2024,CR-Needham,Needham Line,602,Inbound,Needham Heights,06:05,06:05,peak,318,yes
+Fall 2024,CR-Needham,Needham Line,603,Outbound,South Station,06:50,06:50,off peak,75,yes
+Fall 2024,CR-Needham,Needham Line,604,Inbound,Needham Heights,07:05,07:05,peak,674,yes
+Fall 2024,CR-Needham,Needham Line,605,Outbound,South Station,07:50,07:50,off peak,57,yes
+Fall 2024,CR-Needham,Needham Line,606,Inbound,Needham Heights,08:05,08:05,peak,914,yes
+Fall 2024,CR-Needham,Needham Line,607,Outbound,South Station,08:50,08:50,off peak,23,yes
+Fall 2024,CR-Needham,Needham Line,608,Inbound,Needham Heights,09:05,09:05,off peak,218,yes
+Fall 2024,CR-Needham,Needham Line,609,Outbound,South Station,09:50,09:50,off peak,37,yes
+Fall 2024,CR-Needham,Needham Line,610,Inbound,Needham Heights,10:05,10:05,off peak,121,yes
+Fall 2024,CR-Needham,Needham Line,611,Outbound,South Station,10:50,10:50,off peak,26,yes
+Fall 2024,CR-Needham,Needham Line,612,Inbound,Needham Heights,11:05,11:05,off peak,75,yes
+Fall 2024,CR-Needham,Needham Line,613,Outbound,South Station,11:50,11:50,off peak,93,yes
+Fall 2024,CR-Needham,Needham Line,614,Inbound,Needham Heights,12:05,12:05,off peak,67,yes
+Fall 2024,CR-Needham,Needham Line,615,Outbound,South Station,12:50,12:50,off peak,53,yes
+Fall 2024,CR-Needham,Needham Line,616,Inbound,Needham Heights,13:05,13:05,off peak,50,yes
+Fall 2024,CR-Needham,Needham Line,617,Outbound,South Station,13:55,13:55,off peak,155,yes
+Fall 2024,CR-Needham,Needham Line,618,Inbound,Needham Heights,14:05,14:05,off peak,48,yes
+Fall 2024,CR-Needham,Needham Line,619,Outbound,South Station,14:55,14:55,off peak,270,yes
+Fall 2024,CR-Needham,Needham Line,620,Inbound,Needham Heights,15:05,15:05,off peak,142,yes
+Fall 2024,CR-Needham,Needham Line,621,Outbound,South Station,15:55,15:55,peak,426,yes
+Fall 2024,CR-Needham,Needham Line,622,Inbound,Needham Heights,16:05,16:05,off peak,100,yes
+Fall 2024,CR-Needham,Needham Line,623,Outbound,South Station,16:55,16:55,peak,777,yes
+Fall 2024,CR-Needham,Needham Line,624,Inbound,Needham Heights,17:07,17:07,off peak,156,yes
+Fall 2024,CR-Needham,Needham Line,625,Outbound,South Station,17:55,17:55,peak,362,yes
+Fall 2024,CR-Needham,Needham Line,626,Inbound,Needham Heights,18:05,18:05,off peak,53,yes
+Fall 2024,CR-Needham,Needham Line,627,Outbound,South Station,18:55,18:55,off peak,328,yes
+Fall 2024,CR-Needham,Needham Line,628,Inbound,Needham Heights,19:05,19:05,off peak,45,yes
+Fall 2024,CR-Needham,Needham Line,629,Outbound,South Station,19:55,19:55,off peak,184,yes
+Fall 2024,CR-Needham,Needham Line,630,Inbound,Needham Heights,20:50,20:50,off peak,42,yes
+Fall 2024,CR-Needham,Needham Line,631,Outbound,South Station,21:20,21:20,off peak,105,yes
+Fall 2024,CR-Needham,Needham Line,632,Inbound,Needham Heights,22:15,22:15,off peak,6,yes
+Fall 2024,CR-Needham,Needham Line,633,Outbound,Forest Hills,23:03,23:03,off peak,18,yes
+Fall 2024,CR-Needham,Needham Line,635,Outbound,Forest Hills,00:13,00:13,off peak,8,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,100,Inbound,Rockport,05:06,05:06,off peak,212,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,101,Outbound,North Station,06:35,06:35,off peak,64,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,102,Inbound,Rockport,06:13,06:13,peak,498,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,103,Outbound,North Station,07:38,07:38,off peak,129,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,104,Inbound,Rockport,07:13,07:13,peak,551,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,105,Outbound,North Station,09:05,09:05,off peak,58,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,106,Inbound,Rockport,08:13,08:13,peak,168,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,107,Outbound,North Station,10:35,10:35,off peak,69,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,108,Inbound,Rockport,09:13,09:13,off peak,114,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,109,Outbound,North Station,12:05,12:05,off peak,102,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,110,Inbound,Rockport,10:43,10:43,off peak,84,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,111,Outbound,North Station,13:35,13:35,off peak,94,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,112,Inbound,Rockport,12:13,12:13,off peak,105,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,113,Outbound,North Station,15:05,15:05,off peak,289,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,114,Inbound,Rockport,13:43,13:43,off peak,180,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,115,Outbound,North Station,16:05,16:05,peak,346,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,116,Inbound,Rockport,15:13,15:13,off peak,141,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,117,Outbound,North Station,17:05,17:05,peak,614,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,118,Inbound,Rockport,16:37,16:37,off peak,430,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,119,Outbound,North Station,18:05,18:05,peak,298,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,120,Inbound,Rockport,17:48,17:48,off peak,125,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,121,Outbound,North Station,19:15,19:15,off peak,83,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,122,Inbound,Rockport,19:48,19:48,off peak,46,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,123,Outbound,North Station,20:55,20:55,off peak,194,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,124,Inbound,Rockport,20:45,20:45,off peak,38,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,125,Outbound,North Station,22:50,22:50,off peak,84,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,126,Inbound,Rockport,22:25,22:25,off peak,24,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,127,Outbound,North Station,23:50,23:50,off peak,25,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,140,Inbound,Newburyport,04:49,04:49,off peak,132,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,141,Outbound,North Station,05:35,05:35,off peak,41,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,142,Inbound,Newburyport,05:54,05:54,peak,298,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,143,Outbound,North Station,07:07,07:07,off peak,63,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,144,Inbound,Newburyport,06:54,06:54,peak,537,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,145,Outbound,North Station,08:35,08:35,off peak,103,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,146,Inbound,Newburyport,07:54,07:54,peak,401,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,147,Outbound,North Station,10:05,10:05,off peak,110,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,148,Inbound,Newburyport,08:54,08:54,off peak,157,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,149,Outbound,North Station,11:35,11:35,off peak,193,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,150,Inbound,Newburyport,09:54,09:54,off peak,122,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,151,Outbound,North Station,13:05,13:05,off peak,136,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,152,Inbound,Newburyport,11:24,11:24,off peak,92,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,153,Outbound,North Station,14:35,14:35,off peak,168,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,154,Inbound,Newburyport,12:54,12:54,off peak,122,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,155,Outbound,North Station,15:35,15:35,peak,273,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,156,Inbound,Newburyport,14:24,14:24,off peak,81,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,157,Outbound,North Station,16:30,16:30,peak,494,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,158,Inbound,Newburyport,15:54,15:54,off peak,261,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,159,Outbound,North Station,17:35,17:35,peak,448,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,160,Inbound,Newburyport,17:02,17:02,off peak,120,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,161,Outbound,North Station,18:40,18:40,off peak,93,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,162,Inbound,Newburyport,18:59,18:59,off peak,96,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,163,Outbound,North Station,20:05,20:05,off peak,163,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,164,Inbound,Newburyport,21:29,21:29,off peak,47,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,165,Outbound,North Station,21:50,21:50,off peak,216,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,167,Outbound,Salem,00:30,00:30,off peak,12,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,191,Outbound,North Station,09:35,09:35,off peak,93,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,192,Inbound,Beverly,10:50,10:50,off peak,32,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,197,Outbound,North Station,14:05,14:05,off peak,65,yes
+Fall 2024,CR-Newburyport,Newburyport/Rockport Line,198,Inbound,Beverly,15:20,15:20,off peak,58,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,800,Inbound,Providence,04:12,04:12,off peak,152,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,801,Outbound,South Station,04:20,04:20,off peak,21,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,802,Inbound,Providence,05:10,05:10,off peak,464,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,803,Outbound,South Station,06:30,06:30,off peak,96,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,804,Inbound,Providence,06:00,06:00,peak,399,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,805,Outbound,South Station,07:30,07:30,off peak,119,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,806,Inbound,Wickford Junction,06:02,06:02,peak,931,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,807,Outbound,South Station,08:25,08:25,off peak,111,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,808,Inbound,Providence,07:10,07:10,peak,951,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,809,Outbound,South Station,09:25,09:25,off peak,87,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,810,Inbound,Wickford Junction,07:02,07:02,peak,825,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,811,Outbound,South Station,10:25,10:25,off peak,83,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,812,Inbound,Providence,08:10,08:10,peak,609,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,813,Outbound,South Station,11:18,11:18,off peak,83,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,814,Inbound,Wickford Junction,08:45,08:45,off peak,340,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,815,Outbound,South Station,12:20,12:20,off peak,221,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,816,Inbound,Providence,10:15,10:15,off peak,145,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,817,Outbound,South Station,13:20,13:20,off peak,154,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,818,Inbound,Providence,11:12,11:12,off peak,185,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,819,Outbound,South Station,14:20,14:20,off peak,397,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,820,Inbound,Wickford Junction,11:35,11:35,off peak,124,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,821,Outbound,South Station,15:20,15:20,off peak,620,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,822,Inbound,Providence,13:15,13:15,off peak,113,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,823,Outbound,South Station,15:52,15:52,peak,496,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,824,Inbound,Providence,14:10,14:10,off peak,65,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,825,Outbound,South Station,16:20,16:20,peak,847,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,826,Inbound,Wickford Junction,14:25,14:25,off peak,157,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,827,Outbound,South Station,16:52,16:52,peak,938,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,828,Inbound,Providence,15:56,15:56,off peak,331,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,829,Outbound,South Station,17:40,17:40,peak,1110,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,830,Inbound,Wickford Junction,16:35,16:35,off peak,276,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,831,Outbound,South Station,18:22,18:22,peak,506,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,832,Inbound,Providence,18:10,18:10,off peak,92,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,833,Outbound,South Station,19:20,19:20,off peak,435,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,834,Inbound,Wickford Junction,18:46,18:46,off peak,94,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,835,Outbound,South Station,20:35,20:35,off peak,264,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,836,Inbound,Wickford Junction,19:42,19:42,off peak,90,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,837,Outbound,South Station,21:35,21:35,off peak,207,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,838,Inbound,Providence,22:15,22:15,off peak,40,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,839,Outbound,South Station,22:45,22:45,off peak,255,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,840,Inbound,Providence,23:25,23:25,off peak,6,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,841,Outbound,South Station,23:55,23:55,off peak,116,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,860,Inbound,Stoughton,05:15,05:15,off peak,139,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,861,Outbound,South Station,05:25,05:25,off peak,4,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,862,Inbound,Stoughton,06:18,06:18,peak,457,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,864,Inbound,Stoughton,07:15,07:15,peak,813,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,865,Outbound,South Station,07:00,07:00,off peak,47,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,866,Inbound,Stoughton,08:12,08:12,peak,676,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,867,Outbound,South Station,08:00,08:00,off peak,131,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,868,Inbound,Stoughton,09:15,09:15,off peak,160,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,869,Outbound,South Station,08:57,08:57,off peak,46,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,870,Inbound,Stoughton,10:15,10:15,off peak,77,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,871,Outbound,South Station,10:02,10:02,off peak,20,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,872,Inbound,Stoughton,11:20,11:20,off peak,82,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,873,Outbound,South Station,12:00,12:00,off peak,38,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,874,Inbound,Stoughton,13:20,13:20,off peak,41,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,875,Outbound,South Station,13:05,13:05,off peak,63,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,876,Inbound,Stoughton,14:15,14:15,off peak,67,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,877,Outbound,South Station,14:05,14:05,off peak,115,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,878,Inbound,Stoughton,15:05,15:05,off peak,81,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,879,Outbound,South Station,14:55,14:55,off peak,91,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,880,Inbound,Stoughton,16:05,16:05,off peak,96,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,881,Outbound,South Station,16:00,16:00,peak,411,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,882,Inbound,Stoughton,17:05,17:05,off peak,125,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,883,Outbound,South Station,17:00,17:00,peak,923,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,884,Inbound,Stoughton,18:15,18:15,off peak,32,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,885,Outbound,South Station,18:00,18:00,peak,359,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,886,Inbound,Stoughton,19:18,19:18,off peak,7,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,887,Outbound,South Station,19:05,19:05,off peak,168,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,888,Inbound,Stoughton,20:05,20:05,off peak,14,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,889,Outbound,South Station,20:00,20:00,off peak,117,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,891,Outbound,South Station,21:00,21:00,off peak,70,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,892,Inbound,Stoughton,21:58,21:58,off peak,18,yes
+Fall 2024,CR-Providence,Providence/Stoughton Line,893,Outbound,South Station,23:05,23:05,off peak,35,yes
