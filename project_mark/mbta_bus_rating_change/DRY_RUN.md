@@ -14,29 +14,51 @@ depending on whether the last arrival minute counts as in service, while the dai
 was changed to pull outs and pull ins per hour, which is exact under any convention, and the memo ask changed
 with it. The chart still shows the minute level in service profile, and its only labelled values are the peaks.
 
-Expected platform behaviour: version 1 showed that the platform models solve explicit trip counting. Version 2
-requires them to recognise that a trip is not a bus, to assemble trips into blocks across five million stop
-rows, and to test their method against the 615 control. The platform's own trap record puts "counts file rows
-instead of the real unit" and "never tests its reading against the control" among the most common decisive
-misses, so this is the honest place to put the difficulty. If the rollouts still clear 50 percent, the next
-step is to drop the phrase that names the unit ("from the start of its first trip to the end of its last trip
-of its day's work") and let the 615 control alone pin the method, after confirming that the gap splitting
-variant (620) cannot also reproduce 615.
-
 ## Version 3 (certification day is the schedule the rating mostly ran), 2026-10-05
 Local dry run with the strongest model: it read the convention document, found that the no school weekday ran
 most of the Summer rating, reproduced 607 from the August feed, certified 621 (+14), certified Finance's +321
-and rejected the planners' +149 and Finance's 521, and matched the golden on every supplementary ask. So the top
-model clears version 3 as well. Version 3 is still the right submission: it keeps every version 2 trap, adds the
-basis trap that both platform rollouts fell for in versions 1 and 2 by habit, requires reading a convention
-document rather than the prompt, and doubles the ranked table to 59 routes. The platform's own rollouts, not this
-local run, decide the score; version 2 came back at 39 percent with the headline reached.
+and rejected the planners' +149 and Finance's 521, and matched the golden on every supplementary ask. Platform
+result: 51 percent, above the bar.
 
 ## Version 4 (peak allocation by route), 2026-10-05
-Platform result for version 3: 51 percent, above the bar. Local dry run of version 4 with the strongest model:
-solved in full, including the attribution (Route 111 at 18, 118 buses between trips, allocation summing to 607
-and 621). The top model is not the test; the platform's models scored 39 on version 2 and 51 on version 3, and
-version 4 removes the easy cells they scored on while adding a register that fails wholesale under any shortcut
-(buses on a trip only, next trip attribution, a later peak minute, inclusive arrival minute). Note for
-determinism: reproducing 607 requires counting a bus up to but not including its last arrival minute (inclusive
-gives 608), so the 607 control in the prompt is load bearing and must stay.
+Local dry run with the strongest model: solved in full, including the attribution (Route 111 at 18, 118 buses
+between trips, allocation summing to 607 and 621). Conclusion recorded for the next version: clean schedule
+data cannot stump these models once the counting convention is stated, and a convention has to be stated for
+determinism. The fix is data with real measurement mess, which means ridership.
+
+## Version 5 (crowding priority from the Commuter Rail ridership count), 2026-10-06
+The MassDOT hub, the FTA site and www.mbta.com stayed blocked by the network policy, so the user supplied the
+MBTA Commuter Rail ridership count in the hub's four export formats; the Fall 2024 archived feed came from the
+S3 archive, which is open. The task was rebuilt on that count (see DESIGN.md).
+
+Local dry run with the strongest model: a fresh general purpose agent, the prompt text only, an isolated copy
+of inputs/, no access to golden/ or the design notes; 36 tool calls over about ten minutes. It reproduced the
+golden headline in full: Providence 829 outbound 17:40, 1,064 leaving Ruggles 17:49, operated by Fall 2026 train
+867 at 17:37. It rejected Finance's 827 (number only, the Fall 2026 827 is a 09:25 train; the counted 827 is
+operated as 861), rejected the then offered Planning figure, found the runner up (723 at 1,036, operated as
+759), the flip (29), South Station as the boarding stop (789 of 1,110), and the Spring 2018 control (508 at
+1,384). It read the schedule by date (547 trains on 54 of 55 weekdays, south side on the modified service),
+resolved the station spellings, and certified the count as published despite the minus 1 residue, because the
+first wording of convention rule 2 told it to.
+
+Two things came out of the run.
+1. A determinism flaw. Rule 5 said the operating train is "scheduled to leave the counted train's first stop";
+   the agent read that as calling at the stop, matched twelve counted Bradford trains to Haverhill trains that
+   pass through Bradford, and reported 424 operated and 126 uncovered where the golden has 411 and 137. The
+   headline and the top fifteen were unaffected. Rule 5 now says the operating train's own first stop must be
+   the counted train's first stop.
+2. The stump was tightened once, as the brief requires when the agent reproduces the headline. The prompt had
+   offered Planning's figure as "train 829 at 1,110" (boardings instead of load), which named the certified
+   train. Planning's figure is now "Franklin train 723 at 1,036": the runner up's correct peak load, which is
+   the answer a model reaches when it validates the count and sets aside train 829 for its minus 1 terminal
+   residue. Rule 2 of the convention no longer lists the residues it tolerates; it says only that counts are
+   certified as published and none is rescaled or adjusted. Both offered figures (827 at 896, 723 at 1,036) are
+   now honest computations that fail one fixed point each, and the certified figure is named nowhere in the
+   prompt. The golden memo explains what each office measured. The conformation itself (numbers reassigned, the
+   slot key, the modified service flag, the retired line and the renamed stations) stands as the layer under
+   the headline, and the register, coverage and flip asks carry the supplementary weight.
+
+Expected platform behaviour: the platform's models scored 39 and 51 on the schedule only versions. Version 5
+asks them to join a count keyed by train number to a schedule that reused the numbers, to keep a measured count
+that fails a reconciliation check, to keep a schedule flagged as modified service, and to pick neither offered
+figure. The top model clears it with the convention in hand; the platform's rollouts decide the score.

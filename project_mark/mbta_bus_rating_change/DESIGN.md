@@ -21,8 +21,8 @@ layer underneath the decision.
 ## The decision
 Certify the Fall 2026 weekday crowding priority: the one counted train, among those the Fall 2026 weekday
 schedule operates, with the highest peak load in the latest published count. The added bilevel coach set goes to
-the Fall 2026 train that operates it. Finance's draft names train 827 at 896; Planning's names 829 at 1,110; the
-Spring 2018 certification (1,384) is the control.
+the Fall 2026 train that operates it. Finance's draft names train 827 at 896; Planning's names Franklin 723 at
+1,036; the Spring 2018 certification (1,384) is the control. Neither offered figure is the certified one.
 
 ## The forced answer
 | Item | Value |
@@ -31,7 +31,7 @@ Spring 2018 certification (1,384) is the control.
 | Certified peak load | 1,064 riders leaving Ruggles at 17:49 |
 | Fall 2026 train operating it | train 867, South Station 17:37 to Wickford Junction 19:29, same 13 stops |
 | Finance's 827 at 896 | the counted 827 (16:52, 896 at Ruggles) shares only a number with the Fall 2026 827, a 09:25 off peak train; the counted 827 is operated as 861 at 16:52; 896 is sixth, tied with Needham 606; not certified |
-| Planning's 829 at 1,110 | right train, wrong measure: 1,110 is the train's weekday boardings, not its peak load; not certified as stated |
+| Planning's 723 at 1,036 | the runner up's correct peak load; it ranks first only if 829 is set aside for its minus 1 terminal residue, which the convention (counts certified as published) does not allow; neither 829 nor 723 is a Fall 2026 number; not certified |
 | Runner up | Franklin/Foxboro 723, outbound 16:27, 1,036 leaving Ruggles 16:36, operated as 759 at 16:27 |
 | Flip point | a fall of 29 in the certified load (to 1,035) hands the priority to 723; third is Franklin 706 at 979 |
 | Counted trains operated / not | 411 / 103 (Middleborough/Lakeville 28, Kingston 21, Greenbush 15, Haverhill 12, Franklin 10, Worcester 9, and 2 each on Fairmount, Lowell, Newburyport, Providence) |
@@ -54,13 +54,15 @@ resolves to a feed station or is documented as gone.
    and 827 is, so a number join certifies 827 at 896 (Finance). The honest key is the slot: line, direction,
    first stop and departure, which the Fall 2024 archived feed shows was valid when the count was taken. Decisive
    at the headline.
-2. Measure swap (definition swap, both numbers correct). Peak load is the largest load on leaving a stop (1,064);
-   boardings summed over the run are 1,110 (Planning). The data dictionary that defines average_load lives only in
-   the shapefile's metadata xml.
-3. Over correction of a correct measured number. The certified train's count ends at minus 1 at Wickford Junction,
-   a rounding residue of averaged boardings and alightings; 57 of 514 Fall 2024 trains end off zero, one fails the
-   cumulative load identity, one has an NA stop sequence, six rows have no stop time. The convention certifies
-   counts as published; a model that sets aside the certified train for its residue certifies 723. Decisive.
+2. Over correction of a correct measured number (Planning's figure). The certified train's count ends at minus 1
+   at Wickford Junction, a rounding residue of averaged boardings and alightings; 57 of 514 Fall 2024 trains end
+   off zero, one fails the cumulative load identity, one has an NA stop sequence, six rows have no stop time. The
+   convention certifies counts as published and adjusts none; it does not enumerate the residues. A model that
+   validates the count and sets aside the trains that fail certifies 723 at 1,036, which the prompt offers as
+   Planning's figure. Decisive. Both offered figures are honest computations and neither is certified.
+3. Measure swap (definition swap, both numbers correct). Peak load is the largest load on leaving a stop (1,064);
+   boardings summed over the run are 1,110. The data dictionary that defines average_load lives only in the
+   shapefile's metadata xml.
 4. Population a flag suggests. The whole south side weekday schedule in the Fall 2026 feed (361 of 547 trains, the
    certified train among them) runs on a service the feed flags typicality 4, modified service, for the entire
    rating. The convention takes the schedule by date; excluding modified service removes every south side train and
@@ -85,6 +87,14 @@ resolves to a feed station or is documented as gone.
   the load, the stop and the Fall 2026 train and departure; the certified priority labelled.
 - crowding_priority_memo.pdf: two pages. Certified priority; the two draft figures; the conformation and coverage
   both ways; runner up and flip; the certified train stop by stop; Spring 2018 reproduced; closing.
+
+## Convention wording fixed after the dry run
+Rule 5 now says the operating train's own first stop must be the counted train's first stop. The first wording
+("scheduled to leave the counted train's first stop") was read by the dry run agent as "calls at", which matched
+twelve counted Bradford trains to Haverhill trains that pass through Bradford and moved the coverage figures
+(424 operated instead of 411, 126 uncovered instead of 137) without touching the headline. Rule 2 now says only
+that counts are certified as published and none is rescaled or adjusted; the first wording listed the residues
+by name, which defused trap 2.
 
 ## Input package (inputs/, zipped as inputs.zip, 43 MB, 13 files, seven formats)
 Four exports of the ridership layer (csv, geojson, kml, shapefile zip with the metadata xml), the Fall 2026 feed,

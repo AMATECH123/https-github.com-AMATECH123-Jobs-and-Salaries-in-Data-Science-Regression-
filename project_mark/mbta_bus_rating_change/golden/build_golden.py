@@ -15,7 +15,7 @@ COUNT = 'MBTA_Commuter_Rail_Ridership_by_Trip2C_Season2C_Route_Line2C_and_Stop..
 RATING_START, RATING_END = dt.date(2026, 9, 28), dt.date(2026, 12, 11)
 TOLERANCE = 10  # minutes, convention rule 5
 FINANCE_TRAIN, FINANCE_LOAD = '827', 896
-PLANNING_TRAIN, PLANNING_FIGURE = '829', 1110
+PLANNING_TRAIN, PLANNING_FIGURE = '723', 1036
 CONTROL = ('CR-Worcester', '508', '1', 1384, 'West Natick')
 # Count station names that the feed spells differently (convention rule 6). Verified below against both feeds:
 # the 2024 feed carries 'Dedham Corp Center' as a child stop of place-FB-0118 and 'Lynn' and 'Middleborough/Lakeville' as
@@ -248,7 +248,9 @@ def main():
     fin_slot = sched[op[fin][3]]
     fin_rank = 1 + sum(1 for k in counted if counted[k]['peak'] > counted[fin]['peak'])
     fin_tied = [k for k in counted if counted[k]['peak'] == counted[fin]['peak'] and k != fin]
-    assert w['boardings'] == PLANNING_FIGURE
+    assert r_['train'] == PLANNING_TRAIN and r_['peak'] == PLANNING_FIGURE and w['rows'][-1]['average_load'] != 0 and r_['rows'][-1]['average_load'] == 0
+    assert not any(k[1] in (PLANNING_TRAIN, w['train']) for k in fall_by_key)  # neither number exists in Fall 2026
+    assert [k for k in ranked if counted[k]['peak'] > PLANNING_FIGURE] == [winner]
     ctrl = trains(rows, 'Spring 2018')[CONTROL[:3]]
     assert ctrl['peak'] == CONTROL[3] and ctrl['peak_stop'] == CONTROL[4]
     assert max(trains(rows, 'Spring 2018').values(), key=lambda c: c['peak'])['peak'] == CONTROL[3]
@@ -366,7 +368,8 @@ def main():
                   f"{hhmm(w_train['departure'])} and arriving {w_train['last']} at {hhmm(w_train['arrival'])}, the same "
                   f"{len(w_train['stops'])} stops the count recorded. The added coach set goes to train {w_train['train']}. "
                   f"Finance's draft (train {FINANCE_TRAIN}, {FINANCE_LOAD}) and Planning's draft (train {PLANNING_TRAIN}, "
-                  f"{PLANNING_FIGURE:,}) are not certified.", body),
+                  f"{PLANNING_FIGURE:,}) are not certified; the certified train's weekday boardings are {w['boardings']:,}, "
+                  f"which is not a load.", body),
         Paragraph('The two draft figures: what each measured', h),
         Paragraph(f"<b>Finance, train {FINANCE_TRAIN} at {FINANCE_LOAD}: not certified.</b> Finance took the highest load "
                   f"among counted trains whose number also appears in the Fall 2026 schedule. The number is the only thing "
@@ -379,11 +382,15 @@ def main():
                   f"departure. The counted {FINANCE_TRAIN} is operated in Fall 2026 as train {fin_slot['train']} at "
                   f"{hhmm(fin_slot['departure'])}, and its {FINANCE_LOAD} is only the sixth highest load in the count, shared with "
                   f"{name(fin_tied[0][0])} train {fin_tied[0][1]}.", body),
-        Paragraph(f"<b>Planning, train {PLANNING_TRAIN} at {PLANNING_FIGURE:,}: not certified as stated.</b> Planning identified "
-                  f"the right train but reported its weekday boardings, {PLANNING_FIGURE:,} riders getting on over the whole "
-                  f"run, rather than its peak load. The convention certifies the load on leaving the busiest stop, "
-                  f"{w['peak']:,} at {w['peak_stop']}. Boardings exceed the peak load because {w['boardings'] - w['peak']} riders "
-                  f"board after the train has started to empty at Route 128.", body),
+        Paragraph(f"<b>Planning, train {PLANNING_TRAIN} at {PLANNING_FIGURE:,}: not certified.</b> Train {PLANNING_TRAIN} is the "
+                  f"runner up, and {PLANNING_FIGURE:,} is its correct peak load. It can only rank first if train {w['train']} is "
+                  f"set aside, and the one thing that distinguishes {w['train']}'s count is that it does not reconcile to zero: "
+                  f"the published load on leaving its last stop is {w['rows'][-1]['average_load']}, a rounding residue of averaged "
+                  f"boardings ({w['boardings']:,}) and alightings ({w['alightings']:,}), where {PLANNING_TRAIN}'s count ends at "
+                  f"{r_['rows'][-1]['average_load']}. The convention certifies counts as published and adjusts none, and 57 of the "
+                  f"{len(counted)} counted trains carry the same kind of residue; setting them aside is not a rule the Board "
+                  f"applies. Neither {w['train']} nor {PLANNING_TRAIN} appears as a number in the Fall 2026 feed, so Planning's "
+                  f"figure is not a number match either.", body),
         Paragraph('How the count was conformed to the Fall 2026 schedule', h),
         Paragraph(f"The latest published count is the Fall 2024 season ({len(counted)} weekday trains, every one listed from "
                   f"its first stop). The Fall 2026 weekday schedule was taken by date from the feed: the same {len(sched)} "
@@ -433,7 +440,7 @@ def main():
         Paragraph(f"Most riders board at <b>{w_board_stop['stop_id']}</b> ({w_board_stop['average_ons']:,} of the "
                   f"{w['boardings']:,} boardings), then Back Bay and Ruggles. The published count ends the run with a load of "
                   f"{w['rows'][-1]['average_load']} at {w['last']}, a rounding residue of the averaged boardings and alightings; "
-                  f"under the convention the count is certified as published and is not adjusted or set aside for it.", body),
+                  f"under the convention the count is certified as published and is not adjusted for it.", body),
         Paragraph('Previous certification reproduced', h),
         Paragraph(f"The Spring 2018 priority reproduces from the Spring 2018 season of the same file: {name(CONTROL[0])} train "
                   f"{CONTROL[1]} inbound, peak load {CONTROL[3]:,} leaving {CONTROL[4]}, the highest load of that season. The "
@@ -446,8 +453,8 @@ def main():
                   f"schedule (the weekday service the feed runs on most dates of the rating). Applied together they give one "
                   f"ranked register in which train {w['train']} holds the highest load and is operated, and the ranking is the "
                   f"same whether the departure window is five, ten or thirty minutes. Every other candidate relaxes one fixed "
-                  f"point: a shared number instead of a shared slot, boardings instead of load, a train the rating no longer "
-                  f"runs, or a count set aside for a rounding residue.", body),
+                  f"point: a shared number instead of a shared slot, a count set aside for a rounding residue, boardings instead "
+                  f"of load, or a train the rating no longer runs.", body),
     ]
     doc = SimpleDocTemplate(os.path.join(HERE, 'crowding_priority_memo.pdf'), pagesize=letter,
                             leftMargin=0.8 * inch, rightMargin=0.8 * inch, topMargin=0.7 * inch, bottomMargin=0.7 * inch,

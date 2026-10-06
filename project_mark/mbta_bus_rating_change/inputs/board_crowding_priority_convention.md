@@ -9,9 +9,8 @@ unaltered.
    certified peak load. The added coach set is assigned to that train.
 
 2. The count. Peak loads are taken from the latest season in the MBTA's published count of Commuter Rail
-   ridership by trip, season, line and stop. Counts are certified as published. No count is rescaled, adjusted
-   or set aside because its boardings, alightings and loads do not reconcile exactly at every stop, or because
-   a stop sequence or a stop time is missing.
+   ridership by trip, season, line and stop. Counts are certified as published: no count is rescaled or
+   adjusted.
 
 3. Peak load. A train's peak load is the largest average load the count reports for it at any stop, which is
    the load on leaving that stop. Boardings and alightings are not loads.
@@ -22,10 +21,11 @@ unaltered.
 
 5. Operated in the rating. Train numbers are reassigned between schedules, so a counted train is not identified
    in the rating's schedule by its number. The rating's weekday schedule operates a counted train when it
-   contains a train on the same line, in the same direction, scheduled to leave the counted train's first stop
-   within ten minutes of the counted departure, compared on the clock. Where more than one train qualifies, the
-   one whose departure is nearest operates it, and the earlier of two equally near. That train's number and
-   scheduled departure are reported as the train operating the counted train.
+   contains a train on the same line, in the same direction, whose own first stop is the counted train's first
+   stop and whose scheduled departure from it is within ten minutes of the counted departure, compared on the
+   clock. Where more than one train qualifies, the one whose departure is nearest operates it, and the earlier
+   of two equally near. That train's number and scheduled departure are reported as the train operating the
+   counted train.
 
 6. Stations. The feed's stop names govern. The count spells some stations differently from the feed, and the
    feed renames and replaces stations between years; a count name is resolved to the feed station it denotes
