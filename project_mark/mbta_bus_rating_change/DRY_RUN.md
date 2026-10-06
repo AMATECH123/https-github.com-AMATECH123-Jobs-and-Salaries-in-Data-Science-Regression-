@@ -39,3 +39,14 @@ Expected platform behaviour: the headline is reachable by a model that joins bot
 takes the departure from the feed. A model that takes the count's ready made time after checking it on the
 2024 season certifies the peak with a rise of 58.5 points, which Planning's draft invites it to confirm. The
 decisive fact is in the data, not in any rule.
+
+### Platform result for version 6, 2026-10-06
+Both models solved it: 99 and 100 percent against a 31 criterion rubric (average 99.5). Both placed the round
+trip in the off peak at 59.9 against 71.9 percent, found the five hour offset in the Spring 2018 count by
+comparing it with the 2018 feed, normalised the zero padded and letter prefixed train numbers, and matched every
+supplementary figure (91,167 and 35,582; 58,456 and 39,081; 64.1 and 109.8 percent; 515 and 514 placed, one
+unplaced; Fitchburg and Haverhill; eight lines; 126 and 421; 11,700). The one point lost was a chart legend
+covering a label. Reading across six versions: the platform's models read every file in the package, check
+the count against the schedule as a matter of course, and execute any deterministic convention. On this dataset
+there is no honest stump left that also meets the ten expert determinism bar. The next attempt should be a
+different dataset and a different kind of difficulty, not a seventh wording of this one.
