@@ -16,3 +16,17 @@ converge on that call, so the five affected indicators (the four plus SUICIDE1, 
 web sample) were replaced with items fielded to the whole 2024 sample: health excellent, confidence in
 television, moderate, lower class, America a better country. The golden set is still 9 moved; Research's
 draft stays at 15 and the editor's becomes 10. A second dry run on the final package follows.
+
+## Second dry run on the final package, 2026-10-07
+A fresh agent, the prompt only, an isolated copy of the final inputs/. It matched the golden on every item:
+9 moved (happy, health, abortion, welfare, environment, financially satisfied, Democrat, no religion,
+confidence in medicine); every 1987, 2014 and 2024 figure and sampling error to the published precision; all
+forty 2016 figures and counts reproduced, none held; OVERSAMP not applied on WTSSPS (it checked the Black share,
+11.0 against 29.5 unweighted); Research's draft as unweighted binomial errors and the editor's as the 2016
+WTSSALL figures carried beside WTSSPS 2024 figures, with gun permits the one flag that turns on it; largest
+restatement Democrat 44.7 to 43.6; movers welfare +13.9 and confidence in medicine minus 26.7; closest call
+death penalty, 0.20 points, 61.9 instead of 62.1, next lower class at 0.28. It noted the codebook's stale 2024
+year list for CLASS and followed the file, as the golden does. No reading differed from the golden.
+
+Reading: the task is deterministic and the package is final. The strongest local model solved it in full,
+including the design based variance, so the platform's rollouts decide whether it clears the 50 percent bar.
