@@ -1,9 +1,9 @@
 indicator,gss_variable,first_edition_1987,figure_2014,figure_2024,decade_change_points,sampling_error,reported_as_moved,note
 Very happy,happy,33.6,31.9,23.4,-8.5,1.55,Yes,
-Most people can be trusted,trust,43.1,29.6,24.8,-4.8,2.57,No,
+Own health is excellent,health,34.9,25.8,18.9,-6.9,1.49,Yes,
 Favours the death penalty for persons convicted of murder,cappun,73.5,65.7,62.1,-3.6,1.95,No,
 Favours a police permit before a person can buy a gun,gunlaw,70.9,71.9,68.5,-3.4,2.01,No,
-Use of marijuana should be made legal,grass,17.4,55.3,67.0,11.7,2.95,Yes,
+A great deal of confidence in the people running television,contv,11.3,10.2,8.2,-2.0,1.29,No,
 Abortion should be possible if the woman wants it for any reason,abany,41.0,45.0,58.0,13.0,2.46,Yes,
 Too little is being spent on welfare,natfare,23.4,19.5,33.4,13.9,2.17,Yes,
 Too little is being spent on improving and protecting the environment,natenvir,69.3,58.2,65.7,7.5,2.43,Yes,
@@ -15,7 +15,7 @@ Liberal,polviews,28.2,25.8,27.5,1.7,1.66,No,
 No religious preference,relig,7.6,21.0,25.7,4.7,1.39,Yes,
 A great deal of confidence in the people running the press,conpress,18.3,7.8,7.5,-0.3,1.13,No,
 A great deal of confidence in the people running medicine,conmedic,53.1,39.1,26.3,-12.8,1.95,Yes,
-A person with an incurable disease has the right to end their own life,suicide1,,59.5,63.8,4.3,2.68,No,not fielded in 1987
-The Bible is the actual word of God,bible,34.9,31.5,35.3,3.9,2.29,No,
-People get ahead by their own hard work,getahead,65.8,70.3,65.4,-4.9,2.64,No,
+"Moderate, middle of the road",polviews,39.7,40.3,37.5,-2.9,1.85,No,
+Identifies with the lower class,class,4.9,8.0,9.7,1.7,1.00,No,
+Strongly agrees that America is a better country than most other countries,ambetter,,26.4,22.5,-3.9,2.36,No,not fielded in 1987
 A good idea for older people to share a home with their grown children,aged,52.7,54.9,,,,not updated,not fielded in 2024; not updated this edition

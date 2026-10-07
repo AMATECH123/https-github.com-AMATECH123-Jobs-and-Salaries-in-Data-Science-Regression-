@@ -14,27 +14,25 @@
   "Abortion should be possible if the woman wants it for any reason",
   "Democrat, including independents close to the Democrats",
   "No religious preference",
+  "Own health is excellent",
   "Pretty well satisfied with present financial situation",
   "Too little is being spent on improving and protecting the environment",
   "Too little is being spent on welfare",
-  "Use of marijuana should be made legal",
   "Very happy"
  ],
  "moved_n": 9,
  "research_n": 15,
- "editor_n": 12,
+ "editor_n": 10,
  "research_extra": [
-  "A person with an incurable disease has the right to end their own life",
+  "A great deal of confidence in the people running television",
   "Favours a police permit before a person can buy a gun",
   "Favours the death penalty for persons convicted of murder",
-  "Most people can be trusted",
-  "People get ahead by their own hard work",
-  "The Bible is the actual word of God"
+  "Identifies with the lower class",
+  "Moderate, middle of the road",
+  "Strongly agrees that America is a better country than most other countries"
  ],
  "editor_extra": [
-  "Favours a police permit before a person can buy a gun",
-  "Most people can be trusted",
-  "People get ahead by their own hard work"
+  "Favours a police permit before a person can buy a gun"
  ],
  "research_missing": [],
  "editor_missing": [],
@@ -61,15 +59,15 @@
   "change": 13.0
  },
  "long_mover": {
-  "indicator": "Use of marijuana should be made legal",
-  "variable": "grass",
-  "p87": 17.4,
-  "p24": 67.0,
-  "change": 49.6
+  "indicator": "A great deal of confidence in the people running medicine",
+  "variable": "conmedic",
+  "p87": 53.1,
+  "p24": 26.3,
+  "change": -26.7
  },
  "long_runner_up": {
-  "indicator": "A great deal of confidence in the people running medicine",
-  "change": -26.7
+  "indicator": "No religious preference",
+  "change": 18.1
  },
  "closest": {
   "indicator": "Favours the death penalty for persons convicted of murder",
@@ -83,29 +81,28 @@
   "p24_at_flip": 61.9
  },
  "closest_next": {
-  "indicator": "Most people can be trusted",
-  "need_points": 0.26
+  "indicator": "Identifies with the lower class",
+  "need_points": 0.28
  },
  "t_values": {
   "happy": -5.49,
-  "trust": -1.86,
+  "health": -4.63,
   "cappun": -1.86,
   "gunlaw": -1.7,
-  "grass": 3.98,
+  "contv": -1.56,
   "abany": 5.27,
   "natfare": 6.43,
   "natenvir": 3.08,
   "natpark": NaN,
   "satfin": -2.77,
   "fear": 1.16,
-  "polviews": 1.01,
+  "polviews": -1.55,
   "partyid": -4.42,
   "relig": 3.37,
   "conpress": -0.26,
   "conmedic": -6.54,
-  "suicide1": 1.62,
-  "bible": 1.68,
-  "getahead": -1.86,
+  "class": 1.68,
+  "ambetter": -1.66,
   "aged": NaN
  }
 }

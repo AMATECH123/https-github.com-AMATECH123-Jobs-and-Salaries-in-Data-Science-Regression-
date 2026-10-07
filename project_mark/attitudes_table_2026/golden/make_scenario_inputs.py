@@ -8,7 +8,7 @@ from indicators import INDICATORS, FIRST_YEAR, BASE_YEAR, EDITION_YEAR
 from svylib import estimate
 HERE = os.path.dirname(os.path.abspath(__file__))
 INP = os.path.join(HERE, "..", "inputs")
-cols = ["year", "vstrat", "vpsu", "wtssps", "wtssall", "oversamp"] + [v for _, v, _, _ in INDICATORS]
+cols = list(dict.fromkeys(["year", "vstrat", "vpsu", "wtssps", "wtssall", "oversamp"] + [v for _, v, _, _ in INDICATORS]))
 df = pd.read_parquet(os.path.join(INP, "gss_all.parquet"), columns=cols)
 df["wtssall_oversamp"] = df["wtssall"] * df["oversamp"]
 Y = {y: df[df.year == y] for y in (FIRST_YEAR, BASE_YEAR, EDITION_YEAR)}

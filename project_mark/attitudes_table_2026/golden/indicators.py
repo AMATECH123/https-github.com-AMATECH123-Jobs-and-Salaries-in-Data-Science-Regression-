@@ -2,10 +2,10 @@
 # order, published label, GSS variable, response codes counted, response wording as printed in the compendium
 INDICATORS = [
     ("Very happy", "happy", [1], "very happy"),
-    ("Most people can be trusted", "trust", [1], "most people can be trusted"),
+    ("Own health is excellent", "health", [1], "excellent"),
     ("Favours the death penalty for persons convicted of murder", "cappun", [1], "favor"),
     ("Favours a police permit before a person can buy a gun", "gunlaw", [1], "favor"),
-    ("Use of marijuana should be made legal", "grass", [1], "should be legal"),
+    ("A great deal of confidence in the people running television", "contv", [1], "a great deal"),
     ("Abortion should be possible if the woman wants it for any reason", "abany", [1], "yes"),
     ("Too little is being spent on welfare", "natfare", [1], "too little"),
     ("Too little is being spent on improving and protecting the environment", "natenvir", [1], "too little"),
@@ -17,9 +17,9 @@ INDICATORS = [
     ("No religious preference", "relig", [4], "none"),
     ("A great deal of confidence in the people running the press", "conpress", [1], "a great deal"),
     ("A great deal of confidence in the people running medicine", "conmedic", [1], "a great deal"),
-    ("A person with an incurable disease has the right to end their own life", "suicide1", [1], "yes"),
-    ("The Bible is the actual word of God", "bible", [1], "word of god"),
-    ("People get ahead by their own hard work", "getahead", [1], "hard work most important"),
+    ("Moderate, middle of the road", "polviews", [4], "moderate, middle of the road"),
+    ("Identifies with the lower class", "class", [1], "lower class"),
+    ("Strongly agrees that America is a better country than most other countries", "ambetter", [1], "strongly agree"),
     ("A good idea for older people to share a home with their grown children", "aged", [1], "a good idea"),
 ]
 FIRST_YEAR, BASE_YEAR, EDITION_YEAR = 1987, 2014, 2024
