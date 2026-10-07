@@ -1,0 +1,117 @@
+{
+ "carried": {
+  "year": 2018,
+  "figure": 33.847902968059635,
+  "figure_printed": "33.8",
+  "se": 1.68,
+  "n": 1556
+ },
+ "edition_year_figure": null,
+ "decade_change": null,
+ "withheld": [
+  {
+   "year": 2021,
+   "status": "no figure",
+   "n": 0,
+   "reason": "standard question not fielded; 2664 respondents received the experimental versions TRUSTV and TRUSTNV only (rule 3)"
+  },
+  {
+   "year": 2022,
+   "status": "withdrawn",
+   "n": 1198,
+   "reason": "standard question fielded only to 1198 in person, phone and multimode respondents; 1167 web and multimode respondents received the experimental versions TRUSTV and TRUSTNV, so the figure is not from the full sample (rule 3)"
+  },
+  {
+   "year": 2024,
+   "status": "not published",
+   "n": 946,
+   "reason": "standard question fielded only to 946 in person, phone and multimode respondents; 1218 web and multimode respondents received the experimental versions TRUSTV and TRUSTNV, so the figure is not from the full sample (rule 3)"
+  }
+ ],
+ "previous_reproduced": 30,
+ "previous_withdrawn": [
+  2022
+ ],
+ "research": {
+  "figure": 24.8,
+  "n": 946,
+  "sample": 3309,
+  "modes": {
+   "in person": 755,
+   "phone": 156,
+   "multimode": 35
+  },
+  "web_in_sample": 1762
+ },
+ "editor": {
+  "figure": 26.2,
+  "n": 1198,
+  "sample": 3544,
+  "modes": {
+   "in person": 1036,
+   "phone": 132,
+   "multimode": 30
+  },
+  "web_in_sample": 1633
+ },
+ "versions_2024": {
+  "standard": {
+   "n": 946,
+   "p": 24.8,
+   "depends": 10.5
+  },
+  "trustv": {
+   "n": 587,
+   "p": 15.7,
+   "depends": 39.6
+  },
+  "trustnv": {
+   "n": 631,
+   "p": 35.4,
+   "depends": 0.1
+  },
+  "all_pooled": {
+   "n": 2164,
+   "p": 25.4,
+   "depends": 15.6
+  }
+ },
+ "versions_2022": {
+  "standard": {
+   "n": 1198,
+   "p": 26.2,
+   "depends": 8.8
+  },
+  "trustv": {
+   "n": 577,
+   "p": 17.1,
+   "depends": 38.5
+  },
+  "trustnv": {
+   "n": 590,
+   "p": 30.3,
+   "depends": 0.5
+  }
+ },
+ "p1987_wtssps": 43.1,
+ "p1987_wtssps_x_oversamp": 45.2,
+ "high": {
+  "year": 1984,
+  "figure": 49.2
+ },
+ "low": {
+  "year": 2014,
+  "figure": 29.6
+ },
+ "largest_consecutive": {
+  "from": 1983,
+  "to": 1984,
+  "change": 14.36,
+  "se": 2.66,
+  "t": 5.41
+ },
+ "context_2014_2018": {
+  "change": 4.23,
+  "se": 2.26
+ }
+}

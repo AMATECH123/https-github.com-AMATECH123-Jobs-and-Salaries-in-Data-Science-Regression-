@@ -1,0 +1,10 @@
+file,source,pulled,licence
+gss_all.parquet,"NORC GSS Cumulative Data File 1972-2024 Release 3 via github.com/kjhealy/gssr (data/gss_all.rda), converted to Parquet with values unchanged",2026-10-07,"GSS public use; gssr MIT"
+gssr_README.md,github.com/kjhealy/gssr,2026-10-07,MIT
+gssr_NEWS.md,github.com/kjhealy/gssr,2026-10-07,MIT
+gssr_DESCRIPTION.txt,github.com/kjhealy/gssr,2026-10-07,MIT
+gssr_data_documentation.R,github.com/kjhealy/gssr (R/data.R),2026-10-07,MIT
+gssr_LICENSE.md,github.com/kjhealy/gssr,2026-10-07,MIT
+trust_series_2024_edition.csv,"scenario document by the task author, computed from gss_all.parquet",2026-10-07,n/a
+edition_2024_method_note.md,"scenario document by the task author",2026-10-07,n/a
+attitudes_series_standard.md,"scenario document by the task author",2026-10-07,n/a
