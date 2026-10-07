@@ -1,0 +1,63 @@
+{
+ "journeys": 38,
+ "mispriced": 18,
+ "verdict": "fails acceptance",
+ "net_difference": 7.15,
+ "over": 17.05,
+ "under": -9.9,
+ "no_fare_journeys": [
+  "J04",
+  "J06",
+  "J08",
+  "J10",
+  "J25",
+  "J31",
+  "J32",
+  "J37"
+ ],
+ "largest_error": {
+  "journey": "J28",
+  "certified": 4.75,
+  "vendor": 12.25,
+  "error": 7.5
+ },
+ "ninety_minute_changes": [
+  [
+   "J19",
+   2.4,
+   4.1
+  ]
+ ],
+ "groups": {
+  "cash or medium not valid for a leg (no fare on the medium)": [
+   "J04",
+   "J06",
+   "J08",
+   "J10",
+   "J25",
+   "J31",
+   "J32",
+   "J37"
+  ],
+  "CharlieTicket priced as a local bus fare": [
+   "J03"
+  ],
+  "transfer applied outside the two hour window or beyond the allowed count": [
+   "J13",
+   "J16",
+   "J38"
+  ],
+  "transfer discount given to a medium or product that has none": [
+   "J11",
+   "J15"
+  ],
+  "free Silver Line from the airport terminals charged": [
+   "J20",
+   "J21"
+  ],
+  "commuter rail interzone fare priced as a zone fare from Boston": [
+   "J27",
+   "J28"
+  ]
+ }
+}

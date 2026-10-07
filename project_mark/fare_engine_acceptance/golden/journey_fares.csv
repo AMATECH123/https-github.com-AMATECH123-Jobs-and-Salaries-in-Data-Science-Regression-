@@ -1,0 +1,39 @@
+journey_id,description,fare_medium,legs,certified_fare,products_by_leg,vendor_fare,difference,vendor_matches
+J01,"CharlieCard, one bus",charliecard,1,1.70,prod_local_bus_smartcard,1.70,+0.00,Yes
+J02,"Cash, one bus",cash,1,1.70,prod_local_bus_cash,1.70,+0.00,Yes
+J03,CharlieTicket on a bus,charlieticket,1,2.40,prod_rapid_transit_quick_subway,1.70,-0.70,No
+J04,mTicket on a bus,mticket,1,no fare on this medium,none on this medium,1.70,n/a,No
+J05,"Contactless, subway",contactless_credit_debit,1,2.40,prod_rapid_transit_smartcard,2.40,+0.00,Yes
+J06,Cash at a subway fare gate,cash,1,no fare on this medium,none on this medium,2.40,n/a,No
+J07,Cash boarding a surface Green Line stop,cash,1,2.40,prod_rapid_transit_cash,2.40,+0.00,Yes
+J08,Cash boarding Green Line underground,cash,1,no fare on this medium,none on this medium,2.40,n/a,No
+J09,CharlieCard bus then subway within window,charliecard,2,2.40,prod_local_bus_smartcard | covered by transfer (prod_transfer_local_bus_to_rapid_transit),2.40,+0.00,Yes
+J10,Cash bus then subway,cash,2,no fare on this medium,none on this medium,2.40,n/a,No
+J11,CharlieTicket bus then subway,charlieticket,2,4.80,prod_rapid_transit_quick_subway | prod_rapid_transit_quick_subway,2.40,-2.40,No
+J12,CharlieCard subway then bus,charliecard,2,2.40,prod_rapid_transit_smartcard | covered by transfer (none),2.40,+0.00,Yes
+J13,CharlieCard subway then bus after the window,charliecard,2,4.10,prod_rapid_transit_smartcard | prod_local_bus_smartcard,2.40,-1.70,No
+J14,CharlieCard bus then bus,charliecard,2,1.70,prod_local_bus_smartcard | covered by transfer (none),1.70,+0.00,Yes
+J15,Cash bus then bus,cash,2,3.40,prod_local_bus_cash | prod_local_bus_cash,1.70,-1.70,No
+J16,CharlieCard three buses,charliecard,3,3.40,prod_local_bus_smartcard | covered by transfer (none) | prod_local_bus_smartcard,1.70,-1.70,No
+J17,"CharlieCard bus, subway, bus",charliecard,3,2.40,prod_local_bus_smartcard | covered by transfer (prod_transfer_local_bus_to_rapid_transit) | covered by transfer (none),2.40,+0.00,Yes
+J18,CharlieCard subway then subway,charliecard,2,2.40,prod_rapid_transit_smartcard | covered by transfer (none),2.40,+0.00,Yes
+J19,Contactless bus then subway just inside the window,contactless_credit_debit,2,2.40,prod_local_bus_smartcard | covered by transfer (prod_transfer_local_bus_to_rapid_transit),2.40,+0.00,Yes
+J20,Cash SL1 from Terminal A,cash,1,0.00,prod_free_fare,2.40,+2.40,No
+J21,CharlieCard SL1 from Terminal A then Red Line,charliecard,2,0.00,prod_free_fare | covered by transfer (none),2.40,+2.40,No
+J22,CharlieCard SL1 toward the airport,charliecard,1,2.40,prod_rapid_transit_smartcard,2.40,+0.00,Yes
+J23,CharlieCard Blue Line from Airport,charliecard,1,2.40,prod_rapid_transit_smartcard,2.40,+0.00,Yes
+J24,CharlieCard SL3 Chelsea to South Station,charliecard,1,2.40,prod_rapid_transit_smartcard,2.40,+0.00,Yes
+J25,Cash Mattapan trolley,cash,1,no fare on this medium,none on this medium,2.40,n/a,No
+J26,mTicket North Station to Salem,mticket,1,8.00,prod_cr_zone_3,8.00,+0.00,Yes
+J27,Cash Lynn to Salem,cash,1,3.25,prod_cr_inter_2,8.00,+4.75,No
+J28,mTicket Beverly to Newburyport,mticket,1,4.75,prod_cr_inter_5,12.25,+7.50,No
+J29,mTicket Four Corners to South Station,mticket,1,2.40,prod_cr_zone_1a,2.40,+0.00,Yes
+J30,mTicket Readville to South Station,mticket,1,7.00,prod_cr_zone_2,7.00,+0.00,Yes
+J31,CharlieCard North Station to Chelsea,charliecard,1,no fare on this medium,none on this medium,2.40,n/a,No
+J32,Contactless North Station to Chelsea,contactless_credit_debit,1,no fare on this medium,none on this medium,2.40,n/a,No
+J33,mTicket Porter to Waltham,mticket,1,7.00,prod_cr_zone_2,7.00,+0.00,Yes
+J34,Cash Hingham ferry to Long Wharf,cash,1,9.75,prod_ferry_f1f2h,9.75,+0.00,Yes
+J35,Cash East Boston ferry,cash,1,2.40,prod_boat_zone_1a,2.40,+0.00,Yes
+J36,Contactless Winthrop ferry to Boston,contactless_credit_debit,1,6.50,prod_boat_zone_1,6.50,+0.00,Yes
+J37,mTicket Hingham ferry then Blue Line,mticket,2,no fare on this medium,none on this medium,12.15,n/a,No
+J38,"Contactless subway, bus, bus",contactless_credit_debit,3,4.10,prod_rapid_transit_smartcard | covered by transfer (none) | prod_local_bus_smartcard,2.40,-1.70,No

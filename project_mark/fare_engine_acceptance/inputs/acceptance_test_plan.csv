@@ -1,0 +1,56 @@
+journey_id,description,fare_medium,leg,route_id,trip_id,board_stop_id,board_stop,scheduled_departure,alight_stop_id,alight_stop,scheduled_arrival
+J01,"CharlieCard, one bus",charliecard,1,1,78181045,64,Nubian,09:09:00,110,Massachusetts Ave opp Holyoke St,09:49:00
+J02,"Cash, one bus",cash,1,1,78181045,64,Nubian,09:09:00,110,Massachusetts Ave opp Holyoke St,09:49:00
+J03,CharlieTicket on a bus,charlieticket,1,66,78174765,64000,Nubian,09:00:00,1363,Huntington Ave @ Fenwood Rd,09:13:00
+J04,mTicket on a bus,mticket,1,66,78174765,64000,Nubian,09:00:00,1363,Huntington Ave @ Fenwood Rd,09:13:00
+J05,"Contactless, subway",contactless_credit_debit,1,Red,77871034,70061,Alewife,09:02:00,70079,South Station,09:22:00
+J06,Cash at a subway fare gate,cash,1,Red,77871034,70061,Alewife,09:02:00,70079,South Station,09:22:00
+J07,Cash boarding a surface Green Line stop,cash,1,Green-B,77745698,70106,Boston College,09:04:00,70200,Park Street,09:49:00
+J08,Cash boarding Green Line underground,cash,1,Green-B,77745785,70196,Park Street,09:00:00,70107,Boston College,09:43:00
+J09,CharlieCard bus then subway within window,charliecard,1,39,78591281,1164,Centre St @ Myrtle St,09:03:00,10642,Forest Hills,09:13:00
+J09,CharlieCard bus then subway within window,charliecard,2,Orange,77798221,70001,Forest Hills,09:14:00,70021,Downtown Crossing,09:29:00
+J10,Cash bus then subway,cash,1,39,78591281,1164,Centre St @ Myrtle St,09:03:00,10642,Forest Hills,09:13:00
+J10,Cash bus then subway,cash,2,Orange,77798221,70001,Forest Hills,09:14:00,70021,Downtown Crossing,09:29:00
+J11,CharlieTicket bus then subway,charlieticket,1,39,78591281,1164,Centre St @ Myrtle St,09:03:00,10642,Forest Hills,09:13:00
+J11,CharlieTicket bus then subway,charlieticket,2,Orange,77798221,70001,Forest Hills,09:14:00,70021,Downtown Crossing,09:29:00
+J12,CharlieCard subway then bus,charliecard,1,Orange,77798236,70020,Downtown Crossing,09:01:00,70001,Forest Hills,09:17:00
+J12,CharlieCard subway then bus,charliecard,2,39,78591328,10642,Forest Hills,09:18:00,6570,S Huntington Ave @ Perkins St,09:27:00
+J13,CharlieCard subway then bus after the window,charliecard,1,Orange,77798236,70020,Downtown Crossing,09:01:00,70001,Forest Hills,09:17:00
+J13,CharlieCard subway then bus after the window,charliecard,2,39,78591232,10642,Forest Hills,11:39:00,6570,S Huntington Ave @ Perkins St,11:48:00
+J14,CharlieCard bus then bus,charliecard,1,66,78174765,64000,Nubian,09:00:00,1363,Huntington Ave @ Fenwood Rd,09:13:00
+J14,CharlieCard bus then bus,charliecard,2,39,78590646,1363,Huntington Ave @ Fenwood Rd,09:13:00,10642,Forest Hills,09:34:00
+J15,Cash bus then bus,cash,1,66,78174765,64000,Nubian,09:00:00,1363,Huntington Ave @ Fenwood Rd,09:13:00
+J15,Cash bus then bus,cash,2,39,78590646,1363,Huntington Ave @ Fenwood Rd,09:13:00,10642,Forest Hills,09:34:00
+J16,CharlieCard three buses,charliecard,1,66,78174765,64000,Nubian,09:00:00,1363,Huntington Ave @ Fenwood Rd,09:13:00
+J16,CharlieCard three buses,charliecard,2,39,78590646,1363,Huntington Ave @ Fenwood Rd,09:13:00,10642,Forest Hills,09:34:00
+J16,CharlieCard three buses,charliecard,3,32,78942303,875,Forest Hills,09:43:00,6496,Hyde Park Ave @ Cummins Hwy,09:48:00
+J17,"CharlieCard bus, subway, bus",charliecard,1,39,78591281,1164,Centre St @ Myrtle St,09:03:00,10642,Forest Hills,09:13:00
+J17,"CharlieCard bus, subway, bus",charliecard,2,Orange,77798221,70001,Forest Hills,09:14:00,70011,Ruggles,09:22:00
+J17,"CharlieCard bus, subway, bus",charliecard,3,15,78181352,17867,Ruggles,09:29:00,64000,Nubian,09:40:00
+J18,CharlieCard subway then subway,charliecard,1,Orange,77797597,70001,Forest Hills,09:00:00,70021,Downtown Crossing,09:15:00
+J18,CharlieCard subway then subway,charliecard,2,Red,77871282,70078,Downtown Crossing,09:17:00,70061,Alewife,09:37:00
+J19,Contactless bus then subway just inside the window,contactless_credit_debit,1,39,78591281,1164,Centre St @ Myrtle St,09:03:00,10642,Forest Hills,09:13:00
+J19,Contactless bus then subway just inside the window,contactless_credit_debit,2,Orange,77798275,70001,Forest Hills,10:58:00,70021,Downtown Crossing,11:13:00
+J20,Cash SL1 from Terminal A,cash,1,741,78591967,17091,Terminal A,09:05:00,74617,South Station,09:30:00
+J21,CharlieCard SL1 from Terminal A then Red Line,charliecard,1,741,78591967,17091,Terminal A,09:05:00,74617,South Station,09:30:00
+J21,CharlieCard SL1 from Terminal A then Red Line,charliecard,2,Red,77871284,70080,South Station,09:33:00,70061,Alewife,09:54:00
+J22,CharlieCard SL1 toward the airport,charliecard,1,741,78592124,84611,South Station,09:05:00,17091,Terminal A,09:22:00
+J23,CharlieCard Blue Line from Airport,charliecard,1,Blue,78879055,70047,Airport,09:02:00,70039,Government Center,09:10:00
+J24,CharlieCard SL3 Chelsea to South Station,charliecard,1,743,78591837,74630,Chelsea,09:08:00,74617,South Station,09:40:00
+J25,Cash Mattapan trolley,cash,1,Mattapan,77752726,70261,Ashmont,09:03:00,70275,Mattapan,09:13:00
+J26,mTicket North Station to Salem,mticket,1,CR-Newburyport,NorthBase-830336-27,BNT-0000,North Station,09:05:00,ER-0168-S,Salem,09:37:00
+J27,Cash Lynn to Salem,cash,1,CR-Newburyport,NorthBase-830336-27,ER-0117-01,Lynn Interim,09:27:00,ER-0168-S,Salem,09:37:00
+J28,mTicket Beverly to Newburyport,mticket,1,CR-Newburyport,NorthBase-830316-125,ER-0183-01,Beverly,09:11:00,ER-0362-01,Newburyport,09:43:00
+J29,mTicket Four Corners to South Station,mticket,1,CR-Fairmount,FBWMLConstruction-860211-1626,DB-2249-02,Four Corners/Geneva,09:14:00,NEC-2287,South Station,09:30:00
+J30,mTicket Readville to South Station,mticket,1,CR-Fairmount,FBWMLConstruction-860211-1626,FB-0095-04,Readville,09:00:00,NEC-2287,South Station,09:30:00
+J31,CharlieCard North Station to Chelsea,charliecard,1,CR-Newburyport,NorthBase-830336-27,BNT-0000,North Station,09:05:00,ER-0042-01,Chelsea,09:16:00
+J32,Contactless North Station to Chelsea,contactless_credit_debit,1,CR-Newburyport,NorthBase-830336-27,BNT-0000,North Station,09:05:00,ER-0042-01,Chelsea,09:16:00
+J33,mTicket Porter to Waltham,mticket,1,CR-Fitchburg,NorthBase-825658-1411,FR-0034-01,Porter,09:40:00,FR-0098-01,Waltham,09:52:00
+J34,Cash Hingham ferry to Long Wharf,cash,1,Boat-F1,Boat-F1-0915-Hingham-F1-A-AM-Weekday-Fall-26,Boat-Hingham,Hingham (Hewitts Cove),09:15:00,Boat-Rowes,Rowes Wharf,09:45:00
+J35,Cash East Boston ferry,cash,1,Boat-EastBoston,Boat-EastBoston-0900-Lewis-F3-AM-Weekday-Fall-26,Boat-Lewis,East Boston (Lewis Mall),09:00:00,Boat-Long-North-5B,Long Wharf (North) - Gate 5B,09:10:00
+J36,Contactless Winthrop ferry to Boston,contactless_credit_debit,1,Boat-F6,Boat-F6-0910-Winthrop-F6-A-Weekday-Fall-26,Boat-Winthrop,Winthrop (Winthrop Landing),09:10:00,Boat-Aquarium,Central Wharf (Aquarium),09:35:00
+J37,mTicket Hingham ferry then Blue Line,mticket,1,Boat-F1,Boat-F1-0915-Hingham-F1-A-AM-Weekday-Fall-26,Boat-Hingham,Hingham (Hewitts Cove),09:15:00,Boat-Rowes,Rowes Wharf,09:45:00
+J37,mTicket Hingham ferry then Blue Line,mticket,2,Blue,78879071,70044,Aquarium,09:46:00,70048,Airport,09:51:00
+J38,"Contactless subway, bus, bus",contactless_credit_debit,1,Orange,77798236,70020,Downtown Crossing,09:01:00,70001,Forest Hills,09:17:00
+J38,"Contactless subway, bus, bus",contactless_credit_debit,2,39,78591328,10642,Forest Hills,09:18:00,6570,S Huntington Ave @ Perkins St,09:27:00
+J38,"Contactless subway, bus, bus",contactless_credit_debit,3,39,78590629,61365,S Huntington Ave @ Perkins St,09:27:00,10642,Forest Hills,09:41:00
