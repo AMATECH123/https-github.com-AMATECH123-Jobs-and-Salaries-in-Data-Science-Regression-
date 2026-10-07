@@ -259,3 +259,10 @@ divided the person weight by the number of adults and said why.
 Reading: a deterministic, fair task on honest official data with a written standard, however many quiet
 conventions it carries, is solved by the current platform models. The remaining route is to learn from the
 program which tasks were approved recently and what the models failed on there.
+
+### Experiment, exact combinatorial optimisation, 2026-10-07
+Minimum fleet for one MBTA garage's summer weekday schedule (1,865 trips, 43 terminals, layover and deadhead
+rule). Exact answer 108 (minimum path cover by maximum matching); greedy first fit 112; greedy best fit 109;
+peak concurrency 93. A fresh model, offered 93 and 112 as drafts, certified 108 by Hopcroft Karp, cross checked
+with a second matching algorithm, identified both drafts' methods exactly, then refined the assignment with the
+Hungarian algorithm and reported a layover sensitivity. Combinatorial optimisation is not a weakness either.
