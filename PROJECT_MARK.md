@@ -244,3 +244,18 @@ adopted rule, and the CSV column set and control row account for the rest. The t
 match. Names and addresses match loosely across two systems but the registration identifier is the true key
 and sits in a crosswalk file. Collapsing on name alone merges two legitimately separate organizations and
 changes the count that feeds the tier.
+
+## Record of results, 2026-10-05 to 2026-10-07
+Ten tasks submitted across three datasets (MBTA GTFS and ridership, NOAA GHCN Daily, NORC GSS), objectives ETL
+and Forecasting. Platform scores: 39 (version with an ambiguous convention, headline reached), 51, then 92 to
+100 on every clean task. Traps tried and caught by both platform models every time: counting convention,
+version drift, data clock offset, quality flags and accumulations, co located stations, eligibility tests in
+order, a shifted window found by search, a back test gate, design based variance, same weight across years,
+oversample weight already embedded, wording to variable mapping, a stale codebook year list, a hold where
+every offered figure fails, and a quiet second hold behind a loud one. A controlled experiment on the wrong
+unit trap (household share from a one adult per household sample) was also caught unprompted: the model
+divided the person weight by the number of adults and said why.
+
+Reading: a deterministic, fair task on honest official data with a written standard, however many quiet
+conventions it carries, is solved by the current platform models. The remaining route is to learn from the
+program which tasks were approved recently and what the models failed on there.
