@@ -13,3 +13,9 @@ golden does. No reading differed from the golden.
 Reading: the task is deterministic and the package is final. The strongest local model solved the hold,
 including the quiet 2022 withdrawal, so the platform's rollouts decide. The first thing it did was tabulate
 respondents by interview mode for every year of the variable, which is the check that defeats both traps.
+
+### Platform rubric evaluation, 2026-10-07
+Failed the bar: 100 percent and 100 percent against a 26 criterion rubric. Both responses carried 2018 at 33.8,
+published no 2024 figure and no change, withdrew 2022, rejected both drafts for the mode restriction, noted
+2021, reproduced 29 of 30 rows, and matched the high, low, largest change, 1987 figure and 2018 error. The hold
+decision, the handbook's most frequent decisive trap family, did not slow either model. Tenth task in a row.
