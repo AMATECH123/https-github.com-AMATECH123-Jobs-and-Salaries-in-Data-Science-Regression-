@@ -30,3 +30,12 @@ year list for CLASS and followed the file, as the golden does. No reading differ
 
 Reading: the task is deterministic and the package is final. The strongest local model solved it in full,
 including the design based variance, so the platform's rollouts decide whether it clears the 50 percent bar.
+
+### Platform rubric evaluation, 2026-10-07
+Failed the bar. Both responses certified exactly the nine indicators, rejected both drafts for the right reasons,
+reproduced the restatement, both movers, the closest call, the 1987 column without OVERSAMP and the continuity
+gate. Response 1 lost only the three one point chart criteria (its chart labels were displaced from its marks);
+Response 2 passed every criterion shown. Roughly 97 and 100 percent against a 26 plus criterion rubric. Ninth
+task in a row reached by both platform models: the models read every file, implement design based variance
+from the strata and PSUs without being told how, and test each draft against the file. A written standard over
+honest official data does not stump them, however many quiet conventions it carries.
