@@ -9,3 +9,10 @@ figures, found TRUSTV and TRUSTNV by name search, read the experiment off the "d
 percent in one version, 36 to 40 in the other) and the helpful and fair parallels, and crosstabbed year by
 mode by ballot by form to establish who got the standard question. It even inferred the lonely PSU variant
 from which years reproduced. Removing the data dictionary and overview did not slow it.
+
+### Platform rubric evaluation, 2026-10-07
+Failed the bar: 95 and 100 percent against a 28 criterion rubric. Response 1 lost only a CSV column naming
+point and the closing requirement's wording; both carried 2018 at 33.8 on 1,556 respondents, rejected a 2024
+figure on the 946 non web respondents, withdrew 2022, found 2021 unfielded, and matched every figure. Removing
+the codebook, the provenance note and the draft tables changed nothing. Eleventh submission reached by both
+platform models.
