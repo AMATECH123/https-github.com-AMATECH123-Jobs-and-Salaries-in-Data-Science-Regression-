@@ -112,8 +112,8 @@ ax.set_ylim(-0.8, len(labels) - 0.2)
 ax.set_xlabel("Change 2014 to 2024, percentage points, with 95 percent interval under the survey design")
 ax.set_title(f"Attitudes table 2026: decade change by indicator\n{F['moved_n']} of {len(upd)} updated indicators reported as moved; {len(nu)} not updated", fontsize=12)
 from matplotlib.lines import Line2D
-ax.legend(handles=[Line2D([], [], color="#b2182b", marker="o", lw=2, label="reported as moved"), Line2D([], [], color="#7f7f7f", marker="o", lw=2, label="not reported")], loc="lower right")
-ax.set_xlim(-22, 22); ax.grid(axis="x", alpha=0.3); plt.tight_layout(); fig.savefig(os.path.join(HERE, "decade_change_2014_2024.png"), dpi=150); plt.close(fig)
+ax.legend(handles=[Line2D([], [], color="#b2182b", marker="o", lw=2, label="reported as moved"), Line2D([], [], color="#7f7f7f", marker="o", lw=2, label="not reported")], loc="upper left")
+ax.set_xlim(-22, 22); ax.grid(axis="x", alpha=0.3); plt.tight_layout(); fig.savefig(os.path.join(HERE, "decade_change_2014_2024.png"), dpi=150, bbox_inches="tight"); plt.close(fig)
 
 # 8. Deliverable 3: the memo
 from reportlab.lib.pagesizes import letter
