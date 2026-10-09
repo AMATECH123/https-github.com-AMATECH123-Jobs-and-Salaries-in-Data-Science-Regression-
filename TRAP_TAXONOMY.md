@@ -1,6 +1,6 @@
 # Project Mark trap taxonomy (relayed by the user from the program guide, 2026-10-09)
 
-Recorded as given, 125 traps in 12 families. 'Measured' marks the traps the guide shows as measured.
+Recorded as given, 122 traps in 12 families. 'Measured' marks the traps the guide shows as measured.
 
 | Trap | Family | Measured |
 |---|---|---|
