@@ -309,3 +309,22 @@ rule). Exact answer 108 (minimum path cover by maximum matching); greedy first f
 peak concurrency 93. A fresh model, offered 93 and 112 as drafts, certified 108 by Hopcroft Karp, cross checked
 with a second matching algorithm, identified both drafts' methods exactly, then refined the assignment with the
 Hungarian algorithm and reported a layover sensitivity. Combinatorial optimisation is not a weakness either.
+
+### Experiment, extraction from scanned reports, 2026-10-09
+Four scanned Current Population Reports (P-60 Nos. 16, 27, 37, 39, IRIS scans without a text layer) from the
+GovDocs1 corpus plus five of the Bureau's historical income table pages. Ask: the farm and nonfarm family
+income gap 1956 to 1961, the residence detail lined up, a chart and a memo, with the persons only report
+named in a question as the distractor. Honest trap: the farm definition changed to the 1960 Census basis from
+the 1959 income year, stated on page 13 of the 1960 report (bound out of order at PDF page 29) and in the
+footnotes that suppress farm figures before 1959; nonfarm for 1956 and 1960 is not printed and the 1960 report
+has no sub national counts, so it has to be derived by subtraction. A fresh model transcribed 366 cells
+without error, found the definition change and the footnotes, derived nonfarm the right way and validated it,
+and wrote every caveat in the golden memo plus standard errors. Estimated 85 to 90. Reading images of dense
+tables at this scale is not a weakness. Task kept at project_mark/postwar_income_record for the record.
+
+### Where this leaves the under 50 bar, 2026-10-09
+Thirteen tasks and five experiments across ETL, forecasting, rule engines, combinatorial optimisation and
+scanned extraction, every one solved by a fresh model in one run and every submitted one scored 92 to 100.
+The remaining ways to push a score under 50 are ones the program forbids: an answer the package cannot
+support, a rubric that rewards a convention the prompt does not fix, or helper material removed so the task
+cannot be reproduced. A fair task in this objective does not stump the current models.
