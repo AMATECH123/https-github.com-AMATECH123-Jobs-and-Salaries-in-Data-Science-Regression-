@@ -67,7 +67,7 @@ fails the critical component whatever else it gets right.
 17. The widest divergence is ACC p90 at +710 minutes.
 18. The note names TRS as the furthest mover at +11.9 per cent at p90 (11,710 to 13,100).
 19. The note gives the reminder day threshold for TRS p90: day 10 holds above 12,960 up to and including 14,400 minutes.
-20. The note gives the number of 2025 returns past the new and the standing boundaries for at least the survey wide rows (p50: 3,663 against 3,936; p90: 732 against 807).
+20. The note gives the number of 2025 returns past the new and the standing boundaries for at least the survey wide rows (p50: 3,659 against 3,792; p90: 730 against 781).
 21. The follow up counts are computed on the admissible 2025 population, not on the dispatch line population.
 22. The chart shows the 2025 elapsed time distribution with both cut lines drawn.
 23. The note is one or two pages and opens with the schedule, as asked.
