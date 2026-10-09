@@ -1,0 +1,9 @@
+file,source,pulled,licence
+MBTA_GTFS.zip,"MBTA GTFS schedule feed as published at https://cdn.mbta.com/MBTA_GTFS.zip (feed version Fall 2026, 2026-10-02T16:00:50+00:00, version D)",2026-10-05,"MassDOT Developers License Agreement"
+gtfs_schedule_reference.pdf,"General Transit Feed Specification, schedule reference, github.com/google/transit (gtfs/spec/en/reference.md), rendered to PDF by the task author without change to the text",2026-10-05,"Apache License 2.0 (gtfs_spec_LICENSE.txt)"
+mbta_gtfs_reference.pdf,"MBTA GTFS documentation, github.com/mbta/gtfs-documentation (reference/gtfs.md), rendered to PDF by the task author without change to the text",2026-10-05,"Published by the MBTA for developers"
+gtfs_spec_LICENSE.txt,github.com/google/transit (LICENSE),2026-10-05,Apache License 2.0
+massdot_developers_license_agreement.pdf,github.com/mbta/gtfs-documentation (developers-license-agreement.pdf),2026-10-05,licence text
+acceptance_test_plan.csv,"scenario document by the task author: 38 journeys on scheduled trips of the feed, 15 October 2026",2026-10-07,n/a
+vendor_results.csv,"scenario document by the task author: the vendor engine prices for the test plan",2026-10-07,n/a
+fare_acceptance_standard.md,"scenario document by the task author",2026-10-07,n/a

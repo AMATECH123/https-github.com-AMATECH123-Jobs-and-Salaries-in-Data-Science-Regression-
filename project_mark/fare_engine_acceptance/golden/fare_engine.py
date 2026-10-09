@@ -45,22 +45,25 @@ class Feed:
         if media in pm: return pm[media]
         if '' in pm: return pm['']
         return None
-    def leg_rules(self, leg, date, as_transfer):
+    def leg_rules(self, leg, date, as_transfer, media=None):
         """All leg rule records matching a leg (dict with network, from_stop, to_stop, dep, arr)."""
         fa = self.stop_areas.get(leg['from_stop'], set()); ta = self.stop_areas.get(leg['to_stop'], set())
+        # empty entry semantics are applied within the rules of the leg's network (the candidate set after the
+        # network filter), which is the reading that matches fares as charged; the exclusion lists are the
+        # areas listed in that candidate set
+        cand = self.lr[(self.lr.network_id == leg['network']) | ((self.lr.network_id == '') & (leg['network'] not in self.listed_net))]
+        if media is not None:
+            cand = cand[[self.amount(p, media) is not None for p in cand.fare_product_id]]
+        listed_from = set(cand.from_area_id) - {''}; listed_to = set(cand.to_area_id) - {''}
         out = []
-        for r in self.lr.itertuples():
+        for r in cand.itertuples():
             if r.tonly and not as_transfer: continue
-            # network
-            if r.network_id: 
-                if r.network_id != leg['network']: continue
-            elif leg['network'] in self.listed_net: continue
             if r.from_area_id:
                 if r.from_area_id not in fa: continue
-            elif fa & self.listed_from: continue
+            elif fa & listed_from: continue
             if r.to_area_id:
                 if r.to_area_id not in ta: continue
-            elif ta & self.listed_to: continue
+            elif ta & listed_to: continue
             if not self.timeframe_ok(r.from_timeframe_group_id, date, leg['dep']): continue
             if not self.timeframe_ok(r.to_timeframe_group_id, date, leg['arr']): continue
             out.append(r)
@@ -102,7 +105,7 @@ class Feed:
             eff.append(cur); i = j + 1
         best = (None, None)
         def options(k, as_transfer):
-            rules = self.leg_rules(eff[k], date, as_transfer)
+            rules = self.leg_rules(eff[k], date, as_transfer, media)
             opts = []
             for r in rules:
                 amt = self.amount(r.fare_product_id, media)

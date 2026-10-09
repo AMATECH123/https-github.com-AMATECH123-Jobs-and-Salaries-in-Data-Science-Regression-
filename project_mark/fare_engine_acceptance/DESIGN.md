@@ -39,3 +39,17 @@ The engine in golden/fare_engine.py follows the specification text step by step.
 places the specification leaves open: the journey fare is the lowest total the rules allow on the medium, and a
 leg with no product on the medium makes the journey one with no fare on that medium. Window edge cases sit at
 115 minutes (inside) and 158 minutes (outside).
+
+## Revision under the program's 9 October rules
+- Two large files: the feed (stop_times, 3.16 million rows, inside MBTA_GTFS.zip) and the GTFS Schedule
+  reference rendered to a 37 page PDF from the published markdown, with the MBTA's own documentation as a
+  15 page PDF beside it. The markdown originals are kept in golden/source_markdown and are not shipped.
+- The distractor is the vendor's results sheet, labelled in the prompt by role ("reads as though every journey
+  prices cleanly ... before we take their word for it"), never inside the file.
+- The prompt is now a natural ask of 920 characters: the situation, the decision, the three files wanted and
+  what each is for. No column list, no chart marks, no memo paragraphs. The golden deliverables are unchanged
+  in content; the rubric is generated from them, so what the memo must cover (the verdict, the count and net
+  amount, the error groups, the largest error, the window sensitivity) is no longer announced to the reader.
+- Golden semantics corrected after the first dry run: empty area entries in fare_leg_rules are resolved within
+  the rules of the leg's network that offer a product on the medium, which gives cash a fare on the Mattapan
+  trolley (J25, 2.40). Seventeen journeys mispriced, net +7.15 USD.

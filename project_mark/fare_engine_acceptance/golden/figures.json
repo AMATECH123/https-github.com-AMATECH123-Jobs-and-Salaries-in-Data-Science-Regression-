@@ -1,6 +1,6 @@
 {
  "journeys": 38,
- "mispriced": 18,
+ "mispriced": 17,
  "verdict": "fails acceptance",
  "net_difference": 7.15,
  "over": 17.05,
@@ -10,7 +10,6 @@
   "J06",
   "J08",
   "J10",
-  "J25",
   "J31",
   "J32",
   "J37"
@@ -34,7 +33,6 @@
    "J06",
    "J08",
    "J10",
-   "J25",
    "J31",
    "J32",
    "J37"
