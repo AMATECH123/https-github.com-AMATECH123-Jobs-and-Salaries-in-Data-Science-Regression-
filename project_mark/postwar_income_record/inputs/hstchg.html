@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 TRANSITIONAL//EN"
+                     "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html lang="en">
+<head>
+<script>
+if (document.layers)
+  WM_scaleFont(initialFontSize, fontUnits);
+</script>
+<TITLE>Changes in Methodology for the March Current Population Survey
+</TITLE>
+<META NAME="Description" CONTENT="Detailed historical income and poverty tables from the March Current Population Survey 1947-1997. Census Bureau data on: household income, share of aggregate income, income quintiles, per capita income, family income, and median income, and poverty by age, sex, race, Hispanic origin, state, and other characteristics.">
+<META NAME="Keywords" CONTENT="income, incomes, poverty, family income, household income, per capita income, money income, median income, average income, mean income, income and race, income and age, income and sex, income and gender, historical income, income by race, income by age, income by sex, income by education, share of aggregate income, income quintiles ">
+<link REL="stylesheet" HREF="/main/.in/style.css" TYPE="text/css" />
+<link rel="stylesheet" type="text/css" href="/hhes/www/stylesheets/hhes_redesign.css" /> </head>
+<body>
+
+<script language="JavaScript">
+<!--
+
+function WM_scaleFont(targetSize, initialFontSize, fontUnit) {
+
+  // This checks for the existence of the document objects and 
+  // properties where we store the passed variables.
+  if (typeof document.WM == 'undefined'){
+    document.WM = new Object;
+  }
+  if (typeof document.WM.WM_scaleFont == 'undefined') {
+    document.WM.WM_scaleFont = new Object;
+    document.WM.WM_scaleFont.screenTarget = targetSize;
+    document.WM.WM_scaleFont.targetBodyFontSize = initialFontSize;
+    document.WM.WM_scaleFont.fontUnit = fontUnit;
+  }
+  // The actual screen width is gotten here.
+  if (document.all) {
+    var screenWidth = document.body.offsetWidth;
+  } else if (document.layers) {
+    var screenWidth = window.innerWidth;
+  }
+  // This one line is the core of the routine. It takes the 
+  // targeted font size and divides it by the actual width 
+  // times the targeted width.
+  var scaledFont = parseInt(document.WM.WM_scaleFont.targetBodyFontSize) * (screenWidth / document.WM.WM_scaleFont.screenTarget);
+  // Now this new font size is applied to the body. 
+  // For IE, it changes the body's style declaration and 
+  // sets things up such that on resize this function is 
+  //called again. For Netscape, it writes out a style tag 
+  // in the head, and then depends on WM_netscapeCssFix() 
+  // to reload the page if it's been resized. 
+  if (document.all) {
+    document.body.style.fontSize = scaledFont + document.WM.WM_scaleFont.fontUnit;
+    window.onresize = WM_scaleFont;
+  } else if(document.layers) {
+    var netscapeScaleReturn = '<style type="text/css">\nBODY {font-size: ' + scaledFont + document.WM.WM_scaleFont.fontUnit + '}\n</style>';
+    document.writeln(netscapeScaleReturn);
+  }
+}
+
+
+// -->
+
+</script>
+<!-- top banner and navigation bar -->
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+<tr align="left" valign="top">
+<td colspan="2"><a href="/"><img src="/main/www/img/cb_head.gif" alt="U.S. Census Bureau" width="639" height="25" border="0"></a></td>
+</tr>
+<tr align="left" valign="top">
+<td align="left" valign="middle" class="masthead" height="20">
+<strong><font size="+2">&nbsp;Income </font></strong>
+</td>
+<td align="right" class="masthead" valign="middle">
+<br />
+
+	<form name="gs" method="GET" action="http://search.census.gov/search">
+	<input type="text" name="q" size="32" maxlength="256" value="">
+	<input type="submit" name="btnG" value="Search This Site">
+	<br /><br />
+	<input type="hidden" name="filter" value="0" />
+	<input type="hidden" name="entqr" value="0">
+	<input type="hidden" name="output" value="xml_no_dtd">
+	<input type="hidden" name="ud" value="1">
+	<input type="hidden" name="ie" value="UTF-8">
+	<input type="hidden" name="client" value="subsite">
+	<input type="hidden" name="proxystylesheet" value="subsite">
+	<input type="hidden" name="hq" value="inurl:www.census.gov/hhes/www/income">
+	<input type="hidden" name="subtitle" value="hhes-income">
+	</form>
+
+
+</td>
+</tr>
+<tr align="left" valign="top">
+<td colspan="2" valign="middle">
+<div id="topnav"> <ul>
+<font size="2%"><li><a href="/hhes/www/income/income.html">Income Main</a>
+</li>
+<li><a href="/hhes/www/income/overview.html">Overview</a>
+</li>
+<li><a href="/hhes/www/income/reports.html">Reports</a>
+</li>
+<li><a href="/hhes/www/income/definitions.html">Definitions</a>
+</li>
+<li><a href="/hhes/www/income/related.html">Related Topics</a>
+</li>
+<li><a href="/hhes/www/income/microdata.html">Micro Data Access</a>
+</li>
+<li><a href="/hhes/www/income/faq.html">FAQ</a>
+</li>
+</font>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<br />
+
+<!-- end top banner and navigation bar -->
+
+<p> </p>
+
+<P ALIGN="CENTER"><STRONG>Changes in Methodology for the March Current Population Survey</STRONG></P>
+
+<P ALIGN="CENTER">(This chart is produced by the Income Surveys Branch as a convenience 
+  to our users. If you have any questions, please Call 301-763-3243)</P>
+
+<BR WP="BR1"><BR WP="BR2">
+<div align="center">
+<TABLE BORDER="1" WIDTH="99%" CELLPADDING="1" CELLSPACING="1">
+<TR VALIGN="TOP"><TD WIDTH="106">Income Year</TD>
+<TD WIDTH="779">Change</TD></TR>
+<TR VALIGN="TOP"><TD COLSPAN="2"></TD></TR>
+<TR VALIGN="TOP"><TD>1947</TD>
+<TD>Data based on 1940 census population controls.</TD></TR>
+<TR VALIGN="TOP"><TD>1949</TD>
+<TD>Implementation of expanded income questions to show wage and salary, farm self-employment, nonfarm self-employment
+and all other nonearned income separately.</TD></TR>
+<TR VALIGN="TOP"><TD>1952</TD>
+<TD>Implementation of 1950 census population controls.</TD></TR>
+<TR VALIGN="TOP"><TD>1961</TD>
+<TD>Implementation of first hotdeck procedure to impute missing income entries (all income data imputed if any missing). 
+Introduction of 1960 census-based sample design.</TD></TR>
+<TR VALIGN="TOP"><TD>1962</TD>
+<TD>Full implementation of 1960 census-based sample design and population controls.</TD></TR>
+<TR VALIGN="TOP"><TD>1965</TD>
+<TD>Implementation of new procedures to impute missing data only.</TD></TR>
+<TR VALIGN="TOP"><TD>1966</TD>
+<TD>Questionnaire expanded to ask eight income questions.</TD></TR>
+<TR VALIGN="TOP"><TD>1967</TD>
+<TD>Implementation of a new March CPS processing system.</TD></TR>
+<TR VALIGN="TOP"><TD>1971</TD>
+<TD>Introduction of 1970 census-based sample design and population controls.</TD></TR>
+<TR VALIGN="TOP"><TD>1972</TD>
+<TD>Full implementation of 1970 census-based sample design.</TD></TR>
+<TR VALIGN="TOP"><TD>1974</TD>
+<TD>Implementation of a new March CPS processing system.  Questionnaire expanded to ask 11 income questions.</TD></TR>
+<TR VALIGN="TOP"><TD>1975</TD>
+<TD>These estimates were derived using Pareto interpolation and may differ from published data which were derived using linear
+interpolation.</TD></TR>
+<TR VALIGN="TOP"><TD>1976</TD>
+<TD>First year medians are derived using both Pareto and linear interpolation.  Prior to this year all medians were derived using
+linear interpolation.</TD></TR>
+<TR VALIGN="TOP"><TD>1979</TD>
+<TD>Implementation of 1980 census population controls.  Questionnaire expanded to show 27 possible values from 51 possible
+sources of income.</TD></TR>
+<TR VALIGN="TOP"><TD>1983</TD>
+<TD>Implementation of Hispanic population weighting controls and introduction of 1980 census-based sample design.</TD></TR>
+<TR VALIGN="TOP"><TD>1985</TD>
+<TD>Recording of amounts for earnings from longest job increased to $299,999.  Full implementation of 1980 census-based
+sample design.</TD></TR>
+<TR VALIGN="TOP"><TD>1987</TD>
+<TD>Implementation of a new March CPS processing system.</TD></TR>
+<TR VALIGN="TOP"><TD>1992</TD>
+<TD>Implementation of 1990 census population controls.</TD></TR>
+<TR VALIGN="TOP"><TD>1993</TD>
+<TD>Data collection method changed from paper and pencil to computer-assisted interviewing.  In addition, the March 1994
+income supplement was revised to allow for the coding of different income amounts on selected questionnaire items.  Limits
+either increased or decreased in the following categories: earnings increased to $999,999; social security increased to
+$49,999; supplemental security income and public assistance increased to $24,999; veterans' benefits increased to $99,999;
+child support and alimony decreased to $49,999.</TD></TR>
+<TR VALIGN="TOP"><TD>1994</TD>
+<TD>Introduction of 1990 census-based sample design.</TD></TR>
+<TR VALIGN="TOP"><TD>1995</TD>
+<TD>Full implementation of the 1990 census-based sample design and metropolitan definitions, 7,000 household sample
+reduction, and revised race edits.</TD></TR>
+<TR VALIGN="TOP"><TD>1999</TD>
+      <TD>Starting in 1999, alternative income definition 7 includes federal EIC 
+        and EIC for the nine states that use federal eligibility rules to compute 
+        the state credit as a percentage of the federal EIC. The nine states are: 
+        Iowa, Kansas, Massachusetts, Maryland, New York, Oregon, Rhode Island, 
+        Vermont, and Wisconsin. Also starting in 1999, when looking at the quintiles 
+        in the historical income series, you will notice that the 50th percentile 
+        is based on micro-sorted data and may differ from the median published 
+        in the income report which is based on linearly interpolated grouped data. 
+        The Census Bureau started using the Bureau of Labor Statistics' CPI-U-RS 
+        series as an inflation factor in income year 2000. You may access information 
+        on the CPI-U-RS series and the differences between this series and the 
+        CPI-U-X1 series at /hhes/income/income01/cpiurstxt.html</TD>
+    </TR>
+<TR VALIGN="TOP"><TD>2000</TD>
+  <TD>There are two versions of the 2000 income data available. One version is based 
+    on the traditional sample of about 50,000 households and reflects the use 
+    of 1990 census population controls. The second version is based on a sample 
+    of 78,000 households, reflecting a 28,000 household sample expansion and the 
+    use of Census 2000 population controls. Please check the table footnotes and 
+    headnotes to ascertain which data is being displayed.</TD></TR></TABLE></div>
+
+<hr>Go to <A HREF="../../poverty.html">Poverty Statistics</a> 
+<!-- bottom contact and source info -->
+<hr />
+Contact the Demographic Call Center Staff at 301-763-2422 or 1-866-758-1060 (toll free) or visit
+<a href="https://ask.census.gov/cgi-bin/askcensus.cfg/php/enduser/std_alp.php">ask.census.gov</a> for further information on Income Data.
+<hr /><br />
+<div align="center">
+<em>Source: U.S. Census Bureau, Housing and Household Economic Statistics Division</em>
+<br /></div>
+<!-- end bottom contact and source info -->
+
+
+<div align="center">Last Revised: <i>August 26, 2008</i></div><br />
+<!-- bottom footer and bottom navigation bar -->
+
+<div align="center">
+<table>
+<tr align="left" valign="top">
+<td colspan="2" valign="middle">
+<div id="bottomnav"> <ul>
+<font size="2%"><li><a href="/hhes/www/income/income.html">Income Main</a>
+</li>
+<li><a href="/hhes/www/income/overview.html">Overview</a>
+</li>
+<li><a href="/hhes/www/income/reports.html">Reports</a>
+</li>
+<li><a href="/hhes/www/income/definitions.html">Definitions</a>
+</li>
+<li><a href="/hhes/www/income/related.html">Related Topics</a>
+</li>
+<li><a href="/hhes/www/income/microdata.html">Micro Data Access</a>
+</li>
+<li><a href="/hhes/www/income/faq.html">FAQ</a>
+</li>
+</font>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<!-- end footer and bottom navigation bar -->
+
+<div id="cb_footer">
+
+<span style="height: 0; width: 0;  overflow: hidden;  position: absolute; font-size: 0;"><a href="#SKIP" title="Skip Navigation">Skip this navigation</a></span> <br />
+
+<div style="font: bold 11px Arial, Helvetica, sans-serif; color: #000; text-decoration: none; text-align: center; border-top: 1px solid #0055BB; padding: 6px 0 10px 0;">
+
+Census Bureau Links: &nbsp; <a href="http://www.census.gov/index.html" style="font-weight: normal; text-decoration: underline; color: #05b;" target="_top">Home</a>
+
+&#183; <a href="/main/www/srchtool.html" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Search</a>
+
+&#183; <a href="/main/www/subjects.html" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Subjects A-Z</a>
+
+&#183; <a href="https://ask.census.gov/" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">FAQs</a>
+
+&#183; <a href="/main/www/access.html" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Data Tools</a>
+
+&#183; <a href="/mp/www/cat/" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Catalog</a>
+
+&#183; <a href="/main/www/cen2000.html" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Census 2000</a>
+
+&#183; <a href="/quality/" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Quality</a>
+
+&#183; <a href="/privacy/" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Privacy Policy</a>
+
+&#183; <a href="/main/www/contacts.html" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Contact Us</a>
+<br />
+<br />
+<img src="/main/www/img/wordmarktl.gif"  width="217" height="35" alt="U.S. Census Bureau: Helping You Make Informed Decisions" style=" margin-top: -6px;" />
+<a name="SKIP"> </a>
+</div>
+
+<div style="font: normal 11px Arial, Helvetica, sans-serif; color: #000; text-decoration: none; text-align: center;">
+	 Page Last Modified: August 26, 2008
+</div>
+
+</div>
+
+<!-- Foresee Survey -->
+<script type="text/javascript" src="/fsrscripts/triggerParams.js"></script>
+<script type="text/javascript" src="/fsrscripts/stdLauncher.js"></script>
+<script type="text/javascript">Poll();</script>
+<!-- End Foresee Survey -->
+</body>
+</html>

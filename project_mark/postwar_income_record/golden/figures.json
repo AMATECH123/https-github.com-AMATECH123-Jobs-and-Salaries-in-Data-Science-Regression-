@@ -1,0 +1,329 @@
+{
+ "recommendation": "Do not read the farm figures of the 1956 report against those of the 1960 and 1961 reports as one series. The farm definition changed to the 1960 Census definition from the 1959 income year, so the like for like farm and nonfarm comparison these reports support runs 1959 to 1961 (Table 19 of the 1961 report). The 1956 residence detail stands on its own under the 1950 Census definitions.",
+ "farm_definition_change": {
+  "where": "P-60 No. 37 page 13; footnote 1 to Table 17 (No. 37) and Table 19 (No. 39)",
+  "effect": "reduced the farm population 14 and over by about one fifth"
+ },
+ "farm_families_thousands": {
+  "1956_old_definition": 4908,
+  "1960_new_definition": 3490,
+  "1961_new_definition": 3490
+ },
+ "all_families_thousands": {
+  "1956": 43445,
+  "1960": 45435,
+  "1961": 46341
+ },
+ "farm_share_of_families_pct": {
+  "1956": 11.3,
+  "1961": 7.5
+ },
+ "table1_medians": {
+  "1956": {
+   "total": 4783,
+   "urban": 5221,
+   "rural_nonfarm": 4619,
+   "rural_farm": 2371
+  },
+  "1960": {
+   "total": 5620,
+   "urban": 5911,
+   "rural_nonfarm": 5620,
+   "rural_farm": 2875
+  },
+  "1961": {
+   "total": 5737,
+   "nonfarm": 5924,
+   "farm": 3241
+  }
+ },
+ "comparable_series_1959_1961_families": {
+  "1959": {
+   "total": 5417,
+   "nonfarm": 5619,
+   "farm": 2799
+  },
+  "1960": {
+   "total": 5625,
+   "nonfarm": 5813,
+   "farm": 2876
+  },
+  "1961": {
+   "total": 5744,
+   "nonfarm": 5930,
+   "farm": 3238
+  }
+ },
+ "old_definition_series_families": {
+  "1956": {
+   "total": 4787,
+   "nonfarm": 5061,
+   "farm": 2375
+  },
+  "1955": {
+   "total": 4420,
+   "nonfarm": 4705,
+   "farm": 2117
+  },
+  "1954": {
+   "total": 4167,
+   "nonfarm": 4406,
+   "farm": 1968
+  }
+ },
+ "farm_to_nonfarm_median_ratio": {
+  "1959": 0.498,
+  "1961": 0.546,
+  "1956_old_definition": 0.469
+ },
+ "naive_change_not_to_report": {
+  "farm_median_1956_table1": 2371,
+  "farm_median_1961_table1": 3241,
+  "pct_change": 36.7
+ },
+ "comparable_change_1959_1961": {
+  "farm_pct": 15.7,
+  "nonfarm_pct": 5.5
+ },
+ "derived_nonfarm": {
+  "1956_families": {
+   "number": 38537,
+   "pct16": [
+    2.1,
+    2.4,
+    3.5,
+    3.9,
+    4.6,
+    4.8,
+    6.1,
+    6.4,
+    8.4,
+    7.2,
+    14.7,
+    10.5,
+    17.0,
+    6.4,
+    1.7,
+    0.6
+   ],
+   "pct": [
+    2.1,
+    2.4,
+    3.5,
+    3.9,
+    4.6,
+    4.8,
+    6.1,
+    6.4,
+    8.4,
+    7.2,
+    14.7,
+    10.5,
+    17.0,
+    6.4,
+    1.7,
+    0.6
+   ],
+   "median_interp": 5051,
+   "total_interp_vs_printed": [
+    4783,
+    4783
+   ]
+  },
+  "1956_unrelated": {
+   "number": 9107,
+   "pct16": [
+    16.8,
+    22.1,
+    11.6,
+    8.9,
+    7.8,
+    5.5,
+    6.0,
+    5.7,
+    4.6,
+    3.4,
+    3.9,
+    1.7,
+    1.4,
+    0.4,
+    0.1,
+    0.2
+   ],
+   "pct": [
+    16.8,
+    22.1,
+    11.6,
+    8.9,
+    7.8,
+    5.5,
+    6.0,
+    5.7,
+    4.6,
+    3.4,
+    3.9,
+    1.7,
+    1.4,
+    0.4,
+    0.1,
+    0.2
+   ],
+   "median_interp": 1481,
+   "total_interp_vs_printed": [
+    1428,
+    1426
+   ]
+  },
+  "1960_families": {
+   "number": 41945,
+   "pct16": [
+    1.9,
+    2.0,
+    3.3,
+    3.8,
+    4.2,
+    3.9,
+    4.7,
+    4.8,
+    5.2,
+    5.4,
+    13.4,
+    11.3,
+    20.9,
+    11.1,
+    3.0,
+    0.9
+   ],
+   "pct": [
+    1.9,
+    2.0,
+    3.3,
+    3.8,
+    4.2,
+    3.9,
+    4.7,
+    4.8,
+    5.2,
+    5.4,
+    13.4,
+    11.3,
+    9.0,
+    11.9,
+    11.1,
+    3.0,
+    0.9
+   ],
+   "median_interp": 5799,
+   "total_interp_vs_printed": [
+    5620,
+    5620
+   ]
+  },
+  "1960_unrelated": {
+   "number": 10528,
+   "pct16": [
+    14.0,
+    18.8,
+    13.1,
+    7.2,
+    7.4,
+    5.6,
+    5.4,
+    5.0,
+    5.4,
+    4.1,
+    6.1,
+    3.4,
+    3.2,
+    0.9,
+    0.1,
+    0.2
+   ],
+   "pct": [
+    14.0,
+    18.8,
+    13.1,
+    7.2,
+    7.4,
+    5.6,
+    5.4,
+    5.0,
+    5.4,
+    4.1,
+    6.1,
+    3.4,
+    1.7,
+    1.5,
+    0.9,
+    0.1,
+    0.2
+   ],
+   "median_interp": 1781,
+   "total_interp_vs_printed": [
+    1719,
+    1720
+   ]
+  }
+ },
+ "method_checks": {
+  "1956_families": {
+   "urban_plus_rural_nonfarm_count": 38537,
+   "max_abs_diff_pct_points": 0.10000000000000142,
+   "weighted_median_interp": 5061
+  },
+  "1956_unrelated": {
+   "urban_plus_rural_nonfarm_count": 9107,
+   "max_abs_diff_pct_points": 0.10000000000000053,
+   "weighted_median_interp": 1481
+  },
+  "1961_families": {
+   "derived_nonfarm_count": 42851,
+   "printed_nonfarm_count": 42851,
+   "max_abs_diff_vs_printed_pct_points": 0.10000000000000053,
+   "interp_median_printed_nonfarm_col": 5929,
+   "printed_nonfarm_median": 5924
+  }
+ },
+ "families_under_3000_pct": {
+  "1956_farm": 60.0,
+  "1956_total": 25.6,
+  "1961_farm": 46.7,
+  "1961_nonfarm": 19.3,
+  "1961_total": 21.4
+ },
+ "modern_revisions": {
+  "1956": {
+   "contemporaneous_count": 43445,
+   "modern_F7_count": 43497,
+   "contemporaneous_median": 4783,
+   "modern_F7_median": 4780
+  },
+  "1959": {
+   "contemporaneous_count": 45062,
+   "modern_F7_count": 45111,
+   "contemporaneous_median": 5417,
+   "modern_F7_median": 5417
+  },
+  "1960": {
+   "contemporaneous_count": 45435,
+   "modern_F7_count": 45539,
+   "contemporaneous_median": 5620,
+   "modern_F7_median": 5620
+  },
+  "1961": {
+   "contemporaneous_count": 46341,
+   "modern_F7_count": 46418,
+   "contemporaneous_median": 5737,
+   "modern_F7_median": 5735
+  }
+ },
+ "other_breaks": [
+  "1959 and 1960 include Alaska and Hawaii for the first time (No. 37 page 1 and page 13)",
+  "household definition moved from dwelling unit (1950 rules) to housing unit (1960 rules) in 1960 (No. 37 page 13)",
+  "1961 income nonresponse imputed from similar households for the first time, earlier years based on complete reporters only (No. 39 page 13)",
+  "the 1960 report prints no urban or rural nonfarm counts for 1960, only the national and rural farm counts",
+  "the 1960 scan has pages 9 to 16 bound after pages 17 to 24, and pages 17 to 24 appear twice"
+ ],
+ "persons_report": "P-60 No. 16 (May 1955) covers income of persons 14 and over for 1953 only; it has no family or residence tables and adds nothing to the family record",
+ "cells_in_csv": 1160
+}

@@ -1,0 +1,642 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"                          
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">                              
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">                     
+<head>                                                                                  
+<script type="text/javascript">                                                         
+if (document.layers)                                                                    
+WM_scaleFont(initialFontSize, fontUnits);                                               
+</script>                                                                               
+<title>Historical Income Tables - Families</title>                                      
+<meta name="Description" content="Detailed historical income and poverty                
+tables from the March Current Population Survey 1947-2005. Census Bureau                
+data on: household income, share of aggregate income, income quintiles, per             
+capita income, family income, and median income, and poverty by age, sex,               
+race, Hispanic origin, state, and other characteristics.">                              
+<meta name="Keywords" content="income, incomes, poverty, family income,                 
+household income, per capita income, money income, median income, average               
+income, mean income, income and race, income and age, income and sex, income            
+and gender, historical income, income by race, income by age, income by sex,            
+income by education, share of aggregate income, income quintiles ">                     
+<link rel="stylesheet" href="/main/.in/style.css" type="text/css" />                    
+<link rel="stylesheet" type="text/css" href="/hhes/www/stylesheets/hhes_redesign.css" />
+</head>                                                                                 
+<body>                                                                                  
+                                                                                        
+<script language="JavaScript">
+<!--
+
+function WM_scaleFont(targetSize, initialFontSize, fontUnit) {
+
+  // This checks for the existence of the document objects and 
+  // properties where we store the passed variables.
+  if (typeof document.WM == 'undefined'){
+    document.WM = new Object;
+  }
+  if (typeof document.WM.WM_scaleFont == 'undefined') {
+    document.WM.WM_scaleFont = new Object;
+    document.WM.WM_scaleFont.screenTarget = targetSize;
+    document.WM.WM_scaleFont.targetBodyFontSize = initialFontSize;
+    document.WM.WM_scaleFont.fontUnit = fontUnit;
+  }
+  // The actual screen width is gotten here.
+  if (document.all) {
+    var screenWidth = document.body.offsetWidth;
+  } else if (document.layers) {
+    var screenWidth = window.innerWidth;
+  }
+  // This one line is the core of the routine. It takes the 
+  // targeted font size and divides it by the actual width 
+  // times the targeted width.
+  var scaledFont = parseInt(document.WM.WM_scaleFont.targetBodyFontSize) * (screenWidth / document.WM.WM_scaleFont.screenTarget);
+  // Now this new font size is applied to the body. 
+  // For IE, it changes the body's style declaration and 
+  // sets things up such that on resize this function is 
+  //called again. For Netscape, it writes out a style tag 
+  // in the head, and then depends on WM_netscapeCssFix() 
+  // to reload the page if it's been resized. 
+  if (document.all) {
+    document.body.style.fontSize = scaledFont + document.WM.WM_scaleFont.fontUnit;
+    window.onresize = WM_scaleFont;
+  } else if(document.layers) {
+    var netscapeScaleReturn = '<style type="text/css">\nBODY {font-size: ' + scaledFont + document.WM.WM_scaleFont.fontUnit + '}\n</style>';
+    document.writeln(netscapeScaleReturn);
+  }
+}
+
+
+// -->
+
+</script>
+<!-- top banner and navigation bar -->
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+<tr align="left" valign="top">
+<td colspan="2"><a href="/"><img src="/main/www/img/cb_head.gif" alt="U.S. Census Bureau" width="639" height="25" border="0"></a></td>
+</tr>
+<tr align="left" valign="top">
+<td align="left" valign="middle" class="masthead" height="20">
+<strong><font size="+2">&nbsp;Income </font></strong>
+</td>
+<td align="right" class="masthead" valign="middle">
+<br />
+
+	<form name="gs" method="GET" action="http://search.census.gov/search">
+	<input type="text" name="q" size="32" maxlength="256" value="">
+	<input type="submit" name="btnG" value="Search This Site">
+	<br /><br />
+	<input type="hidden" name="filter" value="0" />
+	<input type="hidden" name="entqr" value="0">
+	<input type="hidden" name="output" value="xml_no_dtd">
+	<input type="hidden" name="ud" value="1">
+	<input type="hidden" name="ie" value="UTF-8">
+	<input type="hidden" name="client" value="subsite">
+	<input type="hidden" name="proxystylesheet" value="subsite">
+	<input type="hidden" name="hq" value="inurl:www.census.gov/hhes/www/income">
+	<input type="hidden" name="subtitle" value="hhes-income">
+	</form>
+
+
+</td>
+</tr>
+<tr align="left" valign="top">
+<td colspan="2" valign="middle">
+<div id="topnav"> <ul>
+<font size="2%"><li><a href="/hhes/www/income/income.html">Income Main</a>
+</li>
+<li><a href="/hhes/www/income/overview.html">Overview</a>
+</li>
+<li><a href="/hhes/www/income/reports.html">Reports</a>
+</li>
+<li><a href="/hhes/www/income/definitions.html">Definitions</a>
+</li>
+<li><a href="/hhes/www/income/related.html">Related Topics</a>
+</li>
+<li><a href="/hhes/www/income/microdata.html">Micro Data Access</a>
+</li>
+<li><a href="/hhes/www/income/faq.html">FAQ</a>
+</li>
+</font>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<br />
+
+<!-- end top banner and navigation bar -->
+                   
+<p></p>                                                                                 
+<h1>Historical Income Tables - Families                                                 
+<br /></h1>                                                                             
+<pre>                                                                                   
+
+
+
+  Table F-7 Type of Family, All Races
+  by Median and Mean Income: 1947 to 2006
+
+  (Families as of March of the following year.  Income in current
+  and 2006 CPI-U-RS adjusted dollars 28/)
+  ___________________________________________________________________
+                              Median income          Mean income
+  Type of                  ____________________  ____________________
+  family         Number    Current       2006    Current       2006
+  and year      (thous.)   dollars    dollars    dollars    dollars
+  ___________________________________________________________________
+  ALL FAMILIES
+  2006             78,454    $58,407    $58,407    $77,315    $77,315
+  2005             77,418     56,194     58,036     73,304     75,707
+  2004 35/         76,866     54,061     57,705     70,389     75,134
+  2003             76,232     52,680     57,751     68,563     75,163
+  2002             75,616     51,680     57,920     66,970     75,056
+  2001             74,340     51,407     58,545     66,863     76,147
+  2000 30/         73,778     50,732     59,398     65,773     77,008
+  1999 29/         73,206     48,831     59,088     62,567     75,709
+  1998             71,551     46,737     57,734     59,589     73,610
+  1997             70,884     44,568     55,823     56,902     71,272
+  1996             70,241     42,300     54,127     53,676     68,684
+  1995 25/         69,597     40,611     53,349     51,353     67,461
+  1994 24/         69,313     38,782     52,173     49,340     66,377
+  1993 23/         68,506     36,959     50,782     47,221     64,882
+  1992 22/         68,216     36,573     51,494     44,221     62,263
+  1991             67,173     35,939     51,885     43,237     62,421
+  1990             66,322     35,353     52,869     42,652     63,784
+  1989             66,090     34,213     53,714     41,506     65,164
+  1988             65,837     32,191     52,720     38,608     63,229
+  1987 21/         65,204     30,970     52,582     36,884     62,622
+  1986             64,491     29,458     51,704     34,924     61,298
+  1985 20/         63,558     27,735     49,561     32,944     58,870
+  1984 19/         62,706     26,433     48,857     31,052     57,394
+  1983             61,997     24,580     47,291     28,638     55,099
+  1982             61,393     23,433     47,009     27,391     54,949
+  1981             61,019     22,388     47,623     25,838     54,961
+  1980             60,309     21,023     48,976     23,974     55,851
+  1979 18/         59,550     19,587     50,697     22,316     57,760
+  1978             57,804     17,640     50,031     20,091     56,982
+  1977             57,215     16,009     47,403     18,264     54,080
+  1976 17/         56,710     14,958     47,118     16,870     53,141
+  1975 16/         56,245     13,719     45,694     15,546     51,779
+  1974 16/         55,698     12,902     46,532     14,711     53,056
+  1973             55,053     12,051     47,768     13,622     53,996
+  1972 14/         54,373     11,116     46,820     12,625     53,176
+  1971 13/         53,296     10,285     44,654     11,583     50,289
+  1970             52,227      9,867     44,741     11,106     50,360
+  1969             51,586      9,433     44,833     10,577     50,270
+  1968             50,823      8,632     42,813      9,670     47,961
+  1967 12/         50,111      7,933     40,923      8,801     45,400
+  1966 11/         49,214      7,532     40,040      8,395     44,628
+  1965 10/         48,509      6,957     38,007      7,704     42,088
+  1964             47,956      6,569     36,493      7,336     40,754
+  1963             47,540      6,249     35,177      6,998     39,394
+  1962 9/          47,059      5,956     33,980      6,670     38,054
+  1961 8/          46,418      5,735     33,038      6,471     37,277
+  1960             45,539      5,620     32,693      6,227     36,224
+  1959             45,111      5,417     32,079      5,976     35,390
+  1958             44,232      5,087     30,307      5,565     33,155
+  1957             43,696      4,966     30,444      5,443     33,368
+  1956             43,497      4,780     30,243      5,341     33,792
+  1955             42,889      4,418     28,377      4,962     31,871
+  1954             41,951      4,167     26,649      4,684     29,955
+  1953             41,202      4,242     27,365      4,706     30,358
+  1952 7/          40,832      3,890     25,259      4,457     28,941
+  1951             40,578      3,709     24,569      4,194     27,782
+  1950             39,929      3,319     23,738      3,815     27,286
+  1949 6/          39,303      3,107     22,493      3,569     25,838
+  1948             38,624      3,187     22,794      3,671     26,256
+  1947 5/          37,237      3,031     23,433      3,546     27,414
+
+
+
+  MARRIED-COUPLE FAMILIES
+  2006             58,964    $69,404    $69,404    $88,600    $88,600
+  2005             58,189     65,906     68,067     83,570     86,310
+  2004 35/         57,983     63,626     67,915     80,398     85,818
+  2003             57,725     62,281     68,276     78,275     85,810
+  2002             57,327     61,130     68,511     76,349     85,568
+  2001             56,755     60,335     68,712     76,008     86,561
+  2000 30/         56,598     59,099     69,194     74,230     86,910
+  1999 29/         56,290     56,501     68,369     70,727     85,583
+  1998             54,778     54,180     66,928     67,875     83,846
+  1997             54,321     51,591     64,620     64,678     81,012
+  1996             53,604     49,707     63,605     61,214     78,330
+  1995 25/         53,570     47,062     61,824     58,377     76,688
+  1994 24/         53,865     44,959     60,483     55,944     75,261
+  1993 23/         53,181     43,005     59,089     53,472     73,471
+  1992 22/         53,090     41,890     58,981     49,755     70,054
+  1991             52,457     40,995     59,184     48,480     69,990
+  1990             52,147     39,895     59,661     47,528     71,076
+  1989             52,317     38,547     60,518     45,995     72,212
+  1988             52,100     36,389     59,595     42,801     70,096
+  1987 21/         51,675     34,879     59,218     40,818     69,302
+  1986             51,537     32,805     57,579     38,672     67,877
+  1985 20/         50,933     31,100     55,575     36,267     64,808
+  1984 19/         50,350     29,612     54,732     34,156     63,131
+  1983             50,090     27,286     52,498     31,467     60,542
+  1982             49,908     26,019     52,197     29,992     60,167
+  1981             49,630     25,065     53,317     28,253     60,099
+  1980             49,294     23,141     53,911     26,128     60,869
+  1979 18/         49,112     21,429     55,464     24,222     62,693
+  1978             47,692     19,340     54,852     21,804     61,841
+  1977             47,385     17,616     52,161     19,798     58,622
+  1976 17/         47,497     16,203     51,039     18,206     57,349
+  1975 16/         47,318     14,867     49,518     16,693     55,600
+  1974 16/         47,069     13,923     50,214     15,767     56,865
+  1973             46,812     13,028     51,641     14,594     57,849
+  1972 14/         46,314     11,903     50,135     13,477     56,764
+  1971 13/         45,752     10,990     47,715     12,336     53,558
+  1970             44,739     10,516     47,684     11,774     53,389
+  1969             44,436     10,001     47,533     11,187     53,170
+  1968             43,841      9,144     45,352     10,222     50,699
+  1967 12/         43,292      8,441     43,543      9,508     49,047
+  1966 11/         42,553      7,838     41,667       (NA)       (NA)
+  1965 10/         42,108      7,265     39,689       (NA)       (NA)
+  1964             41,647      6,932     38,510       (NA)       (NA)
+  1963             41,311      6,593     37,114       (NA)       (NA)
+  1962 9/          40,923      6,263     35,732       (NA)       (NA)
+  1961 8/          40,405      6,037     34,777       (NA)       (NA)
+  1960             39,624      5,873     34,165       (NA)       (NA)
+  1959             39,335      5,662     33,530       (NA)       (NA)
+  1958             38,585      5,315     31,665       (NA)       (NA)
+  1957             38,112      5,157     31,615       (NA)       (NA)
+  1956             37,849      4,973     31,464       (NA)       (NA)
+  1955             37,200      4,599     29,539       (NA)       (NA)
+  1954             36,395      4,333     27,711       (NA)       (NA)
+  1953               (NA)      4,371     28,197       (NA)       (NA)
+  1952 7/          35,782      4,061     26,370       (NA)       (NA)
+  1951             35,196      3,837     25,417       (NA)       (NA)
+  1950             34,556      3,446     24,646       (NA)       (NA)
+  1949 6/          34,291      3,195     23,131       (NA)       (NA)
+  1948             33,538      3,272     23,402       (NA)       (NA)
+  1947 5/          32,288      3,109     24,036       (NA)       (NA)
+
+
+
+  --Wife in Paid Labor Force
+  2006             36,315    $82,788    $82,788   $101,513   $101,513
+  2005             35,432     78,755     81,337     95,900     99,044
+  2004 35/         34,904     76,854     82,035     92,273     98,493
+  2003             35,097     75,170     82,406     89,840     98,488
+  2002             35,381     72,806     81,597     87,496     98,060
+  2001             34,917     70,834     80,669     85,553     97,432
+  2000 30/         34,942     69,235     81,062     83,670     97,962
+  1999 29/         34,730     66,478     80,442     80,058     96,874
+  1998             33,680     63,751     78,751     76,431     94,415
+  1997             33,535     60,669     75,990       (NA)       (NA)
+  1996             33,242     58,381     74,704       (NA)       (NA)
+  1995 25/         32,677     55,823     73,333       (NA)       (NA)
+  1994 24/         32,902     53,309     71,716       (NA)       (NA)
+  1993 23/         32,194     51,204     70,355       (NA)       (NA)
+  1992 22/         31,389     49,775     70,083       (NA)       (NA)
+  1991             30,923     48,169     69,541       (NA)       (NA)
+  1990             30,298     46,777     69,953       (NA)       (NA)
+  1989             30,188     45,266     71,067       (NA)       (NA)
+  1988             29,713     42,709     69,945       (NA)       (NA)
+  1987 21/         29,010     40,751     69,188       (NA)       (NA)
+  1986             28,498     38,346     67,304     43,635     76,588
+  1985 20/         27,489     36,431     65,101     41,058     73,369
+  1984 19/         26,938     34,668     64,077     38,570     71,289
+  1983             26,177     32,107     61,773     35,751     68,784
+  1982             25,480     30,342     60,869     33,729     67,664
+  1981             25,002     29,247     62,213     31,757     67,552
+  1980             24,752     26,879     62,619     29,291     68,238
+  1979 18/         24,187     24,861     64,347     27,236     70,495
+  1978             23,005     22,109     62,706     24,445     69,331
+  1977             21,936     20,268     60,014     22,153     65,595
+  1976 17/         21,554     18,731     59,003     20,396     64,247
+  1975 16/         20,833     17,237     57,411     18,633     62,061
+  1974 16/         20,404     16,221     58,502     17,538     63,252
+  1973             19,464     15,237     60,397     16,439     65,162
+  1972 14/         18,888     13,897     58,533     15,094     63,575
+  1971 13/         18,274     12,853     55,803     13,882     60,271
+  1970             17,568     12,276     55,665     13,315     60,376
+  1969             17,464     11,629     55,270     12,576     59,771
+  1968             16,638     10,686     53,000     11,490     56,988
+  1967 12/         15,845      9,956     51,358     10,803     55,728
+  1966 11/         15,005      9,246     49,152       (NA)       (NA)
+  1965 10/         14,183      8,597     46,966       (NA)       (NA)
+  1964             13,647      8,170     45,387       (NA)       (NA)
+  1963             13,398      7,789     43,846       (NA)       (NA)
+  1962 9/          13,028      7,461     42,567       (NA)       (NA)
+  1961 8/          12,366      7,188     41,408       (NA)       (NA)
+  1960             12,007      6,900     40,139       (NA)       (NA)
+  1959             11,265      6,705     39,707       (NA)       (NA)
+  1958             11,014      6,214     37,021       (NA)       (NA)
+  1957             10,696      6,141     37,647       (NA)       (NA)
+  1956             10,266      5,957     37,689       (NA)       (NA)
+  1955              9,786      5,622     36,110       (NA)       (NA)
+  1954              9,005      5,336     34,125       (NA)       (NA)
+  1953               (NA)      5,405     34,868       (NA)       (NA)
+  1952 7/           9,154      4,900     31,818       (NA)       (NA)
+  1951              8,044      4,631     30,676       (NA)       (NA)
+  1950               (NA)      4,003     28,630       (NA)       (NA)
+  1949 6/            (NA)      3,857     27,923       (NA)       (NA)
+  1948               (NA)       (NA)       (NA)       (NA)       (NA)
+  1947 5/            (NA)       (NA)       (NA)       (NA)       (NA)
+
+
+
+  --Wife Not in Paid Labor Force
+  2006             22,649    $45,757    $45,757    $67,896    $67,896
+  2005             22,756     44,457     45,915     64,372     66,483
+  2004 35/         23,080     42,215     45,061     62,439     66,648
+  2003             22,629     41,122     45,080     60,339     66,147
+  2002             21,946     40,102     44,944     58,379     65,428
+  2001             21,838     40,782     46,444     60,746     69,180
+  2000 30/         21,657     39,982     46,812     58,999     69,077
+  1999 29/         21,559     38,480     46,563     55,695     67,394
+  1998             21,098     37,161     45,905     54,217     66,974
+  1997             20,786     36,027     45,125       (NA)       (NA)
+  1996             20,362     33,748     43,184       (NA)       (NA)
+  1995 25/         20,893     32,375     42,530       (NA)       (NA)
+  1994 24/         20,962     31,176     41,941       (NA)       (NA)
+  1993 23/         20,988     30,218     41,520       (NA)       (NA)
+  1992 22/         21,701     30,174     42,485       (NA)       (NA)
+  1991             21,534     30,075     43,419       (NA)       (NA)
+  1990             21,849     30,265     45,260       (NA)       (NA)
+  1989             22,129     28,747     45,132       (NA)       (NA)
+  1988             22,387     27,220     44,579       (NA)       (NA)
+  1987 21/         22,664     26,640     45,230       (NA)       (NA)
+  1986             23,038     25,803     45,289     32,533     57,101
+  1985 20/         23,445     24,556     43,881     30,650     54,770
+  1984 19/         23,412     23,582     43,587     29,078     53,745
+  1983             23,913     21,890     42,116     26,777     51,518
+  1982             24,428     21,299     42,728     26,094     52,347
+  1981             24,628     20,325     43,234     24,696     52,532
+  1980             24,542     18,972     44,198     22,938     53,438
+  1979 18/         24,925     17,706     45,828     21,297     55,123
+  1978             24,686     16,156     45,822     19,343     54,861
+  1977             25,449     15,063     44,602     17,768     52,611
+  1976 17/         25,944     13,931     43,883     16,386     51,616
+  1975 16/         26,486     12,752     42,473     15,166     50,514
+  1974 16/         26,665     12,231     44,112     14,411     51,974
+  1973             27,348     11,418     45,259     13,281     52,644
+  1972 14/         27,426     10,556     44,461     12,363     52,072
+  1971 13/         27,478      9,744     42,305     11,307     49,091
+  1970             27,172      9,304     42,189     10,778     48,872
+  1969             26,972      8,879     42,200     10,288     48,897
+  1968             27,203      8,215     40,745      9,447     46,855
+  1967 12/         27,447      7,611     39,262      8,760     45,189
+  1966 11/         27,548      7,128     37,892       (NA)       (NA)
+  1965 10/         27,925      6,592     36,013       (NA)       (NA)
+  1964             28,000      6,338     35,210       (NA)       (NA)
+  1963             27,913      6,039     33,995       (NA)       (NA)
+  1962 9/          27,895      5,764     32,885       (NA)       (NA)
+  1961 8/          28,039      5,592     32,214       (NA)       (NA)
+  1960             27,617      5,520     32,111       (NA)       (NA)
+  1959             28,070      5,317     31,487       (NA)       (NA)
+  1958             27,571      4,983     29,687       (NA)       (NA)
+  1957             27,416      4,833     29,628       (NA)       (NA)
+  1956             27,583      4,645     29,389       (NA)       (NA)
+  1955             27,414      4,326     27,786       (NA)       (NA)
+  1954             27,390      4,051     25,907       (NA)       (NA)
+  1953               (NA)      4,117     26,559       (NA)       (NA)
+  1952 7/          26,628      3,812     24,753       (NA)       (NA)
+  1951             27,152      3,634     24,072       (NA)       (NA)
+  1950               (NA)      3,315     23,709       (NA)       (NA)
+  1949 6/            (NA)      3,058     22,139       (NA)       (NA)
+  1948               (NA)       (NA)       (NA)       (NA)       (NA)
+  1947 5/            (NA)       (NA)       (NA)       (NA)       (NA)
+
+
+
+  MALE HOUSEHOLDER, NO SPOUSE PRESENT
+  2006              5,067    $41,844    $41,844    $55,030    $55,030
+  2005              5,134     41,111     42,459     54,511     56,298
+  2004 35/          4,901     40,361     43,082     51,831     55,325
+  2003              4,717     38,032     41,693     49,728     54,515
+  2002              4,663     37,739     42,296     48,405     54,250
+  2001              4,440     36,590     41,670     47,258     53,820
+  2000 30/          4,277     37,727     44,171     52,318     61,255
+  1999 29/          4,099     37,339     45,182     48,845     59,105
+  1998              3,977     35,681     44,077     43,913     54,245
+  1997              3,911     32,960     41,284     42,546     53,290
+  1996              3,847     31,600     40,435     40,013     51,201
+  1995 25/          3,513     30,358     39,880     37,238     48,918
+  1994 24/          3,228     27,751     37,333     34,663     46,632
+  1993 23/          2,914     26,467     36,366     33,585     46,146
+  1992 22/          3,065     27,576     38,827     34,070     47,970
+  1991              3,025     28,351     40,930     34,611     49,967
+  1990              2,907     29,046     43,437     34,685     51,870
+  1989              2,884     27,847     43,719     34,756     54,567
+  1988              2,847     26,827     43,935     32,501     53,228
+  1987 21/          2,834     25,208     42,799     30,786     52,269
+  1986              2,510     24,962     43,813     29,472     51,729
+  1985 20/          2,414     22,622     40,425     27,525     49,186
+  1984 19/          2,228     23,325     43,112     27,037     49,973
+  1983              2,030     21,845     42,029     24,949     48,001
+  1982              2,016     20,140     40,403     22,907     45,954
+  1981              1,986     19,889     42,307     22,607     48,089
+  1980              1,933     17,519     40,813     20,820     48,504
+  1979 18/          1,733     16,808     43,504     20,047     51,887
+  1978              1,655     15,966     45,283     18,784     53,275
+  1977              1,594     14,518     42,988     16,355     48,427
+  1976 17/          1,500     12,860     40,509     14,733     46,409
+  1975 16/          1,444     12,995     43,283     14,686     48,915
+  1974 16/          1,399     11,658     42,045     13,343     48,123
+  1973              1,438     10,742     42,580     12,219     48,434
+  1972 14/          1,453     10,305     43,404     11,657     49,099
+  1971 13/          1,353      8,722     37,868      9,911     43,030
+  1970              1,258      9,012     40,865     10,476     47,503
+  1969              1,221      8,340     39,638      9,662     45,922
+  1968              1,229      7,321     36,311      8,185     40,596
+  1967 12/          1,210      6,814     35,150      7,899     40,747
+  1966 11/          1,197      6,432     34,192       (NA)       (NA)
+  1965 10/          1,179      6,148     33,587       (NA)       (NA)
+  1964              1,182      5,792     32,177       (NA)       (NA)
+  1963              1,243      5,710     32,143       (NA)       (NA)
+  1962 9/           1,334      5,711     32,582       (NA)       (NA)
+  1961 8/           1,293      5,069     29,201       (NA)       (NA)
+  1960              1,202      4,860     28,272       (NA)       (NA)
+  1959              1,233      4,613     27,318       (NA)       (NA)
+  1958              1,285      4,260     25,380       (NA)       (NA)
+  1957              1,292      4,581     28,084       (NA)       (NA)
+  1956              1,230      4,167     26,364       (NA)       (NA)
+  1955              1,404      4,190     26,912       (NA)       (NA)
+  1954              1,314      4,014     25,671       (NA)       (NA)
+  1953               (NA)      4,113     26,533       (NA)       (NA)
+  1952 7/           1,396      3,615     23,474       (NA)       (NA)
+  1951              1,216      3,452     22,867       (NA)       (NA)
+  1950              1,226      3,115     22,279       (NA)       (NA)
+  1949 6/           1,265      2,821     20,423       (NA)       (NA)
+  1948              1,287      3,295     23,566       (NA)       (NA)
+  1947 5/           1,234      2,936     22,698       (NA)       (NA)
+
+
+
+  FEMALE HOUSEHOLDER, NO SPOUSE PRESENT
+  2006             14,424    $28,829    $28,829    $39,012    $39,012
+  2005             14,095     27,244     28,137     37,766     39,004
+  2004 35/         13,981     26,969     28,787     35,385     37,770
+  2003             13,791     26,550     29,106     34,354     37,661
+  2002             13,626     26,423     29,613     33,864     37,953
+  2001             13,146     25,745     29,320     34,004     38,725
+  2000 30/         12,903     25,716     30,109     33,139     38,800
+  1999 29/         12,818     23,762     28,753     31,123     37,660
+  1998             12,796     22,163     27,378     28,990     35,811
+  1997             12,652     21,023     26,332     27,954     35,013
+  1996             12,790     19,911     25,478     26,196     33,520
+  1995 25/         12,514     19,691     25,867     25,249     33,169
+  1994 24/         12,220     18,236     24,533     24,105     32,428
+  1993 23/         12,411     17,443     23,967     23,635     32,475
+  1992 22/         12,061     17,025     23,971     22,441     31,597
+  1991             11,692     16,692     24,098     21,946     31,683
+  1990             11,268     16,932     25,321     22,140     33,109
+  1989             10,890     16,442     25,814     21,730     34,116
+  1988             10,890     15,346     25,132     20,144     32,990
+  1987 21/         10,696     14,683     24,929     19,489     33,089
+  1986             10,445     13,647     23,953     17,743     31,142
+  1985 20/         10,211     13,660     24,410     17,647     31,535
+  1984 19/         10,129     12,803     23,664     16,501     30,499
+  1983              9,878     11,789     22,682     15,052     28,960
+  1982              9,469     11,484     23,038     14,635     29,359
+  1981              9,403     10,960     23,314     13,773     29,297
+  1980              9,082     10,408     24,247     12,953     30,176
+  1979 18/          8,705      9,880     25,572     12,014     31,096
+  1978              8,458      8,537     24,213     10,689     30,316
+  1977              8,236      7,765     22,992      9,811     29,050
+  1976 17/          7,713      7,211     22,715      9,058     28,533
+  1975 16/          7,482      6,844     22,795      8,463     28,188
+  1974 16/          7,230      6,488     23,399      8,106     29,235
+  1973              6,804      5,797     22,978      7,228     28,651
+  1972 14/          6,607      5,342     22,500      6,862     28,902
+  1971 13/          6,191      5,114     22,203      6,388     27,734
+  1970              5,950      5,093     23,094      6,213     28,173
+  1969              5,580      4,822     22,918      5,915     28,113
+  1968              5,439      4,477     22,205      5,549     27,522
+  1967 12/          5,333      4,294     22,151      5,305     27,366
+  1966 11/          5,172      4,010     21,317       (NA)       (NA)
+  1965 10/          4,992      3,532     19,296       (NA)       (NA)
+  1964              5,006      3,458     19,210       (NA)       (NA)
+  1963              4,882      3,211     18,076       (NA)       (NA)
+  1962 9/           4,741      3,131     17,863       (NA)       (NA)
+  1961 8/           4,643      2,993     17,242       (NA)       (NA)
+  1960              4,609      2,968     17,266       (NA)       (NA)
+  1959              4,494      2,764     16,368       (NA)       (NA)
+  1958              4,332      2,741     16,330       (NA)       (NA)
+  1957              4,310      2,763     16,938       (NA)       (NA)
+  1956              4,366      2,754     17,424       (NA)       (NA)
+  1955              4,239      2,471     15,871       (NA)       (NA)
+  1954              4,225      2,294     14,671       (NA)       (NA)
+  1953               (NA)      2,455     15,837       (NA)       (NA)
+  1952 7/           3,842      2,235     14,513       (NA)       (NA)
+  1951              4,030      2,220     14,706       (NA)       (NA)
+  1950              4,040      1,922     13,746       (NA)       (NA)
+  1949 6/           3,637      2,103     15,225       (NA)       (NA)
+  1948              3,713      2,064     14,762       (NA)       (NA)
+  1947 5/           3,757      2,172     16,792       (NA)       (NA)
+ 
+                                                                                                                                                                                                        
+ 
+ 
+
+See separate page for                                                                         
+<A HREF="http://www.census.gov/hhes/www/income/histinc/ftnotes.html">Footnotes</a>            
+See separate page for                                                                         
+<A HREF="http://www.census.gov/main/www/citation.html">Suggested Citations</a>               
+                                                                                              
+SOURCE:  U.S. Census Bureau, Current Population Survey, Annual Social and Economic Supplements
+                                                                                              
+FOR MORE INFORMATION CONTACT:                                                                 
+Income Surveys Branch                                                                         
+Housing & Household Economic Statistics Division                                              
+U.S. Census Bureau                                                                            
+U.S. Department of Commerce                                                                   
+Washington, D.C.  20233-8500                                                                  
+                                                                                              
+ 
+                                                                                                                                                                                                        
+ 
+ 
+
+</pre>                                                                           
+<br />                                                                           
+Go to <a href="incfamdet.html">Historical Income Tables - Families</a><br />     
+Go to <a href="histinctb.html">Historical Income Tables Index</a><br />          
+Go to <a href="../../poverty.html">Poverty Statistics</a>                        
+<br /><br />                                                                     
+                                                                                 
+<!-- bottom contact and source info -->
+<hr />
+Contact the Demographic Call Center Staff at 301-763-2422 or 1-866-758-1060 (toll free) or visit
+<a href="https://ask.census.gov/cgi-bin/askcensus.cfg/php/enduser/std_alp.php">ask.census.gov</a> for further information on Income Data.
+<hr /><br />
+<div align="center">
+<em>Source: U.S. Census Bureau, Housing and Household Economic Statistics Division</em>
+<br /></div>
+<!-- end bottom contact and source info -->
+
+                                              
+                                                                                 
+<!-- bottom footer and bottom navigation bar -->
+
+<div align="center">
+<table>
+<tr align="left" valign="top">
+<td colspan="2" valign="middle">
+<div id="bottomnav"> <ul>
+<font size="2%"><li><a href="/hhes/www/income/income.html">Income Main</a>
+</li>
+<li><a href="/hhes/www/income/overview.html">Overview</a>
+</li>
+<li><a href="/hhes/www/income/reports.html">Reports</a>
+</li>
+<li><a href="/hhes/www/income/definitions.html">Definitions</a>
+</li>
+<li><a href="/hhes/www/income/related.html">Related Topics</a>
+</li>
+<li><a href="/hhes/www/income/microdata.html">Micro Data Access</a>
+</li>
+<li><a href="/hhes/www/income/faq.html">FAQ</a>
+</li>
+</font>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<!-- end footer and bottom navigation bar -->
+         
+<div id="cb_footer">
+
+<span style="height: 0; width: 0;  overflow: hidden;  position: absolute; font-size: 0;"><a href="#SKIP" title="Skip Navigation">Skip this navigation</a></span> <br />
+
+<div style="font: bold 11px Arial, Helvetica, sans-serif; color: #000; text-decoration: none; text-align: center; border-top: 1px solid #0055BB; padding: 6px 0 10px 0;">
+
+Census Bureau Links: &nbsp; <a href="http://www.census.gov/index.html" style="font-weight: normal; text-decoration: underline; color: #05b;" target="_top">Home</a>
+
+&#183; <a href="/main/www/srchtool.html" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Search</a>
+
+&#183; <a href="/main/www/subjects.html" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Subjects A-Z</a>
+
+&#183; <a href="https://ask.census.gov/" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">FAQs</a>
+
+&#183; <a href="/main/www/access.html" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Data Tools</a>
+
+&#183; <a href="/mp/www/cat/" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Catalog</a>
+
+&#183; <a href="/main/www/cen2000.html" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Census 2000</a>
+
+&#183; <a href="/quality/" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Quality</a>
+
+&#183; <a href="/privacy/" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Privacy Policy</a>
+
+&#183; <a href="/main/www/contacts.html" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Contact Us</a>
+<br />
+<br />
+<img src="/main/www/img/wordmarktl.gif"  width="217" height="35" alt="U.S. Census Bureau: Helping You Make Informed Decisions" style=" margin-top: -6px;" />
+<a name="SKIP"> </a>
+</div>
+
+<div style="font: normal 11px Arial, Helvetica, sans-serif; color: #000; text-decoration: none; text-align: center;">
+	 Page Last Modified: August 15, 2008
+</div>
+
+</div>
+
+<!-- Foresee Survey -->
+<script type="text/javascript" src="/fsrscripts/triggerParams.js"></script>
+<script type="text/javascript" src="/fsrscripts/stdLauncher.js"></script>
+<script type="text/javascript">Poll();</script>
+<!-- End Foresee Survey -->                                   
+</body>                                                                          
+</html>                                                                          

@@ -1,0 +1,394 @@
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"                          
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">                              
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">                     
+<head>                                                                                  
+<script type="text/javascript">                                                         
+if (document.layers)                                                                    
+WM_scaleFont(initialFontSize, fontUnits);                                               
+</script>                                                                               
+<title>Historical Income Tables - Families</title>                                      
+<meta name="Description" content="Detailed historical income and poverty                
+tables from the March Current Population Survey 1947-2007. Census Bureau                
+data on: household income, share of aggregate income, income quintiles, per             
+capita income, family income, and median income, and poverty by age, sex,               
+race, Hispanic origin, state, and other characteristics.">                              
+<meta name="Keywords" content="income, incomes, poverty, family income,                 
+household income, per capita income, money income, median income, average               
+income, mean income, income and race, income and age, income and sex, income            
+and gender, historical income, income by race, income by age, income by sex,            
+income by education, share of aggregate income, income quintiles ">                     
+<link rel="stylesheet" href="/main/.in/style.css" type="text/css" />                    
+<link rel="stylesheet" type="text/css" href="/hhes/www/stylesheets/hhes_redesign.css" />
+</head>                                                                                 
+<body>                                                                                  
+                                                                                        
+<script language="JavaScript">
+<!--
+
+function WM_scaleFont(targetSize, initialFontSize, fontUnit) {
+
+  // This checks for the existence of the document objects and 
+  // properties where we store the passed variables.
+  if (typeof document.WM == 'undefined'){
+    document.WM = new Object;
+  }
+  if (typeof document.WM.WM_scaleFont == 'undefined') {
+    document.WM.WM_scaleFont = new Object;
+    document.WM.WM_scaleFont.screenTarget = targetSize;
+    document.WM.WM_scaleFont.targetBodyFontSize = initialFontSize;
+    document.WM.WM_scaleFont.fontUnit = fontUnit;
+  }
+  // The actual screen width is gotten here.
+  if (document.all) {
+    var screenWidth = document.body.offsetWidth;
+  } else if (document.layers) {
+    var screenWidth = window.innerWidth;
+  }
+  // This one line is the core of the routine. It takes the 
+  // targeted font size and divides it by the actual width 
+  // times the targeted width.
+  var scaledFont = parseInt(document.WM.WM_scaleFont.targetBodyFontSize) * (screenWidth / document.WM.WM_scaleFont.screenTarget);
+  // Now this new font size is applied to the body. 
+  // For IE, it changes the body's style declaration and 
+  // sets things up such that on resize this function is 
+  //called again. For Netscape, it writes out a style tag 
+  // in the head, and then depends on WM_netscapeCssFix() 
+  // to reload the page if it's been resized. 
+  if (document.all) {
+    document.body.style.fontSize = scaledFont + document.WM.WM_scaleFont.fontUnit;
+    window.onresize = WM_scaleFont;
+  } else if(document.layers) {
+    var netscapeScaleReturn = '<style type="text/css">\nBODY {font-size: ' + scaledFont + document.WM.WM_scaleFont.fontUnit + '}\n</style>';
+    document.writeln(netscapeScaleReturn);
+  }
+}
+
+
+// -->
+
+</script>
+<!-- top banner and navigation bar -->
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+<tr align="left" valign="top">
+<td colspan="2"><a href="/"><img src="/main/www/img/cb_head.gif" alt="U.S. Census Bureau" width="639" height="25" border="0"></a></td>
+</tr>
+<tr align="left" valign="top">
+<td align="left" valign="middle" class="masthead" height="20">
+<strong><font size="+2">&nbsp;Income </font></strong>
+</td>
+<td align="right" class="masthead" valign="middle">
+<br />
+
+	<form name="gs" method="GET" action="http://search.census.gov/search">
+	<input type="text" name="q" size="32" maxlength="256" value="">
+	<input type="submit" name="btnG" value="Search This Site">
+	<br /><br />
+	<input type="hidden" name="filter" value="0" />
+	<input type="hidden" name="entqr" value="0">
+	<input type="hidden" name="output" value="xml_no_dtd">
+	<input type="hidden" name="ud" value="1">
+	<input type="hidden" name="ie" value="UTF-8">
+	<input type="hidden" name="client" value="subsite">
+	<input type="hidden" name="proxystylesheet" value="subsite">
+	<input type="hidden" name="hq" value="inurl:www.census.gov/hhes/www/income">
+	<input type="hidden" name="subtitle" value="hhes-income">
+	</form>
+
+
+</td>
+</tr>
+<tr align="left" valign="top">
+<td colspan="2" valign="middle">
+<div id="topnav"> <ul>
+<font size="2%"><li><a href="/hhes/www/income/income.html">Income Main</a>
+</li>
+<li><a href="/hhes/www/income/overview.html">Overview</a>
+</li>
+<li><a href="/hhes/www/income/reports.html">Reports</a>
+</li>
+<li><a href="/hhes/www/income/definitions.html">Definitions</a>
+</li>
+<li><a href="/hhes/www/income/related.html">Related Topics</a>
+</li>
+<li><a href="/hhes/www/income/microdata.html">Micro Data Access</a>
+</li>
+<li><a href="/hhes/www/income/faq.html">FAQ</a>
+</li>
+</font>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<br />
+
+<!-- end top banner and navigation bar -->
+                   
+<p></p>                                                                                 
+<h1>Historical Income Tables - Families                                                 
+<br /></h1>                                                                             
+<pre>                                                                                   
+
+
+
+ Table F-1. Income Limits for Each Fifth and Top 5 Percent of
+ Families (All Races):  1947 to 2007
+
+ (Families as of March of the following year.  Income in current
+ and 2007 CPI-U-RS adjusted dollars 28/)
+ ________________________________________________________________________
+                         Upper limit of each fifth (dollars)        Lower
+                        _______________________________________  limit of
+                                                                    top 5
+               Number                                             percent
+ Year         (thous.)   Lowest    Second     Third    Fourth   (dollars)
+ ________________________________________________________________________
+
+ Current Dollars
+ 2007            77,908   $27,864   $49,510   $75,000  $112,638  $197,216
+ 2006            78,454    27,000    47,000    71,200   109,150   191,060
+ 2005            77,418    25,616    45,021    68,304   103,100   184,500
+ 2004 35/        76,866    24,772    43,400    65,818   100,000   173,640
+ 2003            76,232    24,117    42,057    65,000    98,200   170,082
+ 2002            75,616    24,000    41,440    63,000    94,469   164,323
+ 2001            74,340    24,000    41,127    62,500    94,150   164,104
+ 2000 30/        73,778    24,000    40,840    61,325    91,374   160,120
+ 1999 29/        73,206    22,796    39,492    59,270    88,033   155,020
+ 1998            71,551    21,600    37,692    56,020    83,693   145,199
+ 1997            70,884    20,586    36,000    53,616    80,000   137,080
+ 1996            70,241    19,680    34,315    51,086    75,316   128,000
+ 1995 25/        69,597    19,070    32,985    48,985    72,260   123,656
+ 1994 24/        69,313    17,940    31,300    47,000    69,998   120,043
+ 1993 23/        68,506    16,970    30,000    45,030    66,794   113,182
+ 1992 22/        68,216    16,713    29,674    44,000    64,050   106,012
+ 1991            67,173    17,000    29,111    43,000    62,991   102,824
+ 1990            66,322    16,846    29,044    42,040    61,490   102,358
+ 1989            66,090    16,003    28,000    40,800    59,550    98,963
+ 1988            65,837    15,102    26,182    38,500    55,906    92,001
+ 1987 21/        65,204    14,598    25,182    36,801    53,330    86,949
+ 1986            64,491    14,000    24,100    35,120    50,570    83,400
+ 1985 20/        63,558    13,285    22,886    33,152    48,229    78,965
+ 1984            62,706    12,575    21,874    31,684    45,563    74,600
+ 1983 19/        62,015    11,835    20,271    29,475    42,147    69,363
+ 1982            61,393    11,399    19,522    27,950    40,102    65,313
+ 1981            61,019    11,015    18,750    26,758    37,800    59,992
+ 1980            60,309    10,400    17,510    24,800    34,800    55,000
+ 1979 18/        59,550     9,861    16,215    22,972    31,632    50,746
+ 1978            57,804     8,808    14,800    20,720    28,800    45,660
+ 1977            57,215     8,000    13,397    18,940    26,096    41,350
+ 1976 17/        56,710     7,505    12,499    17,386    24,012    37,740
+ 1975 16/        56,245     6,987    11,505    16,000    22,153    34,700
+ 1974 16/15/     55,698     6,707    10,958    15,078    20,828    32,714
+ 1973            55,053     6,081    10,034    14,000    19,253    30,015
+ 1972 14/        54,373     5,612     9,300    12,855    17,760    27,836
+ 1971 13/        53,296     5,211     8,628    11,826    16,218    25,325
+ 1970            52,227     5,100     8,320    11,299    15,531    24,250
+ 1969            51,586     5,000     8,000    10,800    14,751    22,703
+ 1968            50,823     4,544     7,300     9,960    13,400    20,590
+ 1967 12/        50,111     4,109     6,745     9,045    12,400    19,924
+ 1966 11/        49,214     3,935     6,398     8,563    11,640    18,000
+ 1965 10/        48,509     3,500     5,863     7,910    10,800    16,695
+ 1964            47,956     3,250     5,500     7,500    10,201    15,788
+ 1963            47,540     3,096     5,200     7,134     9,969    15,144
+ 1962 9/         47,059     3,000     5,000     6,800     9,500    14,900
+ 1961 8/         46,418     2,800     4,820     6,560     9,035    14,600
+ 1960            45,539     2,784     4,800     6,364     8,800    13,536
+ 1959            45,111     2,677     4,565     6,081     8,380    12,800
+ 1958            44,232     2,530     4,291     5,720     7,800    12,000
+ 1957            43,696     2,488     4,234     5,594     7,505    11,494
+ 1956            43,497     2,438     4,103     5,443     7,380    11,438
+ 1955            42,889     2,221     3,780     5,082     6,883    10,605
+ 1954            41,951     2,012     3,539     4,791     6,564    10,402
+ 1953            41,202     2,139     3,630     4,871     6,560    10,202
+ 1952 7/         40,832     2,053     3,321     4,493     6,077     9,455
+ 1951            40,578     1,953     3,184     4,212     5,751     9,013
+ 1950            39,929     1,661     2,856     3,801     5,283     8,615
+ 1949 6/         39,303     1,543     2,636     3,556     5,025     8,066
+ 1948            38,624     1,655     2,721     3,633     5,068     8,253
+ 1947 5/         37,237     1,584     2,556     3,466     4,918     8,072
+
+
+
+ 2007 Dollars
+ 2007            77,908   $27,864   $49,510   $75,000  $112,638  $197,216
+ 2006            78,454    27,766    48,333    73,220   112,246   196,480
+ 2005            77,418    27,206    47,816    72,545   109,501   195,955
+ 2004 35/        76,866    27,192    47,640    72,248   109,769   190,603
+ 2003            76,232    27,189    47,413    73,278   110,707   191,744
+ 2002            75,616    27,661    47,761    72,610   108,879   189,388
+ 2001            74,340    28,108    48,166    73,197   110,264   192,191
+ 2000 30/        73,778    28,897    49,173    73,837   110,017   192,790
+ 1999 29/        73,206    28,367    49,143    73,754   109,547   192,904
+ 1998            71,551    27,439    47,882    71,164   106,318   184,452
+ 1997            70,884    26,516    46,371    69,061   103,046   176,569
+ 1996            70,241    25,897    45,155    67,224    99,109   168,436
+ 1995 25/        69,597    25,762    44,560    66,175    97,618   167,051
+ 1994 24/        69,313    24,819    43,302    65,023    96,840   166,075
+ 1993 23/        68,506    23,978    42,390    63,627    94,379   159,925
+ 1992 22/        68,216    24,199    42,966    63,709    92,740   153,498
+ 1991            67,173    25,239    43,219    63,840    93,519   152,657
+ 1990            66,322    25,907    44,666    64,652    94,564   157,414
+ 1989            66,090    25,837    45,207    65,873    96,145   159,779
+ 1988            65,837    25,435    44,095    64,841    94,156   154,946
+ 1987 21/        65,204    25,488    43,967    64,254    93,113   151,812
+ 1986            64,491    25,270    43,500    63,391    91,278   150,535
+ 1985 20/        63,558    24,413    42,057    60,922    88,628   145,111
+ 1984            62,706    23,902    41,577    60,223    86,604   141,796
+ 1983 19/        62,015    23,416    40,107    58,318    83,390   137,239
+ 1982            61,393    23,516    40,274    57,661    82,731   134,741
+ 1981            61,019    24,095    41,016    58,533    82,688   131,233
+ 1980            60,309    24,916    41,950    59,415    83,372   131,766
+ 1979 18/        59,550    26,247    43,160    61,145    84,195   135,071
+ 1978            57,804    25,690    43,167    60,433    84,000   133,175
+ 1977            57,215    24,933    41,754    59,030    81,333   128,875
+ 1976 17/        56,710    24,867    41,414    57,606    79,561   125,047
+ 1975 16/        56,245    24,483    40,314    56,064    77,625   121,590
+ 1974 16/15/     55,698    25,433    41,553    57,176    78,980   124,052
+ 1973            55,053    25,365    41,854    58,397    80,309   125,200
+ 1972 14/        54,373    24,874    41,221    56,977    78,718   123,378
+ 1971 13/        53,296    23,789    39,389    53,988    74,039   115,614
+ 1970            52,227    24,303    39,647    53,843    74,009   115,558
+ 1969            51,586    25,000    40,000    54,000    73,755   113,515
+ 1968            50,823    23,733    38,128    52,021    69,988   107,541
+ 1967 12/        50,111    22,303    36,611    49,095    67,305   108,144
+ 1966 11/        49,214    22,026    35,812    47,931    65,154   100,754
+ 1965 10/        48,509    20,147    33,748    45,531    62,166    96,099
+ 1964            47,956    18,995    32,145    43,834    59,620    92,273
+ 1963            47,540    18,341    30,805    42,263    59,058    89,715
+ 1962 9/         47,059    18,018    30,030    40,840    57,056    89,488
+ 1961 8/         46,418    16,984    29,237    39,791    54,804    88,560
+ 1960            45,539    17,057    29,408    38,991    53,915    82,932
+ 1959            45,111    16,670    28,426    37,866    52,182    79,706
+ 1958            44,232    15,884    26,940    35,912    48,971    75,340
+ 1957            43,696    16,051    27,315    36,088    48,417    74,151
+ 1956            43,497    16,244    27,338    36,267    49,173    76,212
+ 1955            42,889    15,029    25,578    34,388    46,575    71,761
+ 1954            41,951    13,554    23,841    32,276    44,220    70,075
+ 1953            41,202    14,539    24,673    33,108    44,588    69,342
+ 1952 7/         40,832    14,048    22,725    30,744    41,583    64,698
+ 1951            40,578    13,608    22,186    29,349    40,073    62,802
+ 1950            39,929    12,488    21,473    28,578    39,720    64,772
+ 1949 6/         39,303    11,746    20,067    27,070    38,253    61,402
+ 1948            38,624    12,443    20,458    27,315    38,104    62,050
+ 1947 5/         37,237    12,862    20,755    28,144    39,934    65,545
+ 
+                                                                                                                                                                                                        
+ 
+ 
+
+See separate page for                                                                                               
+<A HREF="http://www.census.gov/hhes/www/income/histinc/ftnotes.html">Footnotes</a>                                  
+See separate page for                                                                                               
+<A HREF="http://www.census.gov/main/www/citation.html"> Suggested Citations</a>                                     
+                                                                                                                    
+                                                                                                                    
+Source: U.S. Census Bureau, Current Population Survey, Annual Social and Economic Supplements.                      
+For information on confidentiality protection, sampling error, nonsampling error, and definitions, see              
+<a href="http://www.census.gov/apsd/techdoc/cps/cpsmar08.pdf">www.census.gov/apsd/techdoc/cps/cpsmar08.pdf</a>[PDF].
+                                                                                                                    
+FOR MORE INFORMATION CONTACT:                                                                                       
+Income Surveys Branch                                                                                               
+Housing & Household Economic Statistics Division                                                                    
+U.S. Census Bureau                                                                                                  
+U.S. Department of Commerce                                                                                         
+Washington, D.C.  20233-8500                                                                                        
+ 
+                                                                                                                                                                                                        
+ 
+ 
+
+</pre>                                                                           
+<br />                                                                           
+Go to <a href="incfamdet.html">Historical Income Tables - Families</a><br />     
+Go to <a href="histinctb.html">Historical Income Tables Index</a><br />          
+Go to <a href="../../poverty.html">Poverty Statistics</a>                        
+<br /><br />                                                                     
+                                                                                 
+<!-- bottom contact and source info -->
+<hr />
+Contact the Demographic Call Center Staff at 301-763-2422 or 1-866-758-1060 (toll free) or visit
+<a href="https://ask.census.gov/cgi-bin/askcensus.cfg/php/enduser/std_alp.php">ask.census.gov</a> for further information on Income Data.
+<hr /><br />
+<div align="center">
+<em>Source: U.S. Census Bureau, Housing and Household Economic Statistics Division</em>
+<br /></div>
+<!-- end bottom contact and source info -->
+
+                                              
+                                                                                 
+<!-- bottom footer and bottom navigation bar -->
+
+<div align="center">
+<table>
+<tr align="left" valign="top">
+<td colspan="2" valign="middle">
+<div id="bottomnav"> <ul>
+<font size="2%"><li><a href="/hhes/www/income/income.html">Income Main</a>
+</li>
+<li><a href="/hhes/www/income/overview.html">Overview</a>
+</li>
+<li><a href="/hhes/www/income/reports.html">Reports</a>
+</li>
+<li><a href="/hhes/www/income/definitions.html">Definitions</a>
+</li>
+<li><a href="/hhes/www/income/related.html">Related Topics</a>
+</li>
+<li><a href="/hhes/www/income/microdata.html">Micro Data Access</a>
+</li>
+<li><a href="/hhes/www/income/faq.html">FAQ</a>
+</li>
+</font>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<!-- end footer and bottom navigation bar -->
+         
+<div id="cb_footer">
+
+<span style="height: 0; width: 0;  overflow: hidden;  position: absolute; font-size: 0;"><a href="#SKIP" title="Skip Navigation">Skip this navigation</a></span> <br />
+
+<div style="font: bold 11px Arial, Helvetica, sans-serif; color: #000; text-decoration: none; text-align: center; border-top: 1px solid #0055BB; padding: 6px 0 10px 0;">
+
+Census Bureau Links: &nbsp; <a href="http://www.census.gov/index.html" style="font-weight: normal; text-decoration: underline; color: #05b;" target="_top">Home</a>
+
+&#183; <a href="/main/www/srchtool.html" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Search</a>
+
+&#183; <a href="/main/www/a2z/" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Subjects A-Z</a>
+
+&#183; <a href="https://ask.census.gov/" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">FAQs</a>
+
+&#183; <a href="/main/www/access.html" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Data Tools</a>
+
+&#183; <a href="/mp/www/cat/" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Catalog</a>
+
+&#183; <a href="/2010census/" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Census 2010</a>
+
+&#183; <a href="/quality/" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Quality</a>
+
+&#183; <a href="/privacy/" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Privacy Policy</a>
+
+&#183; <a href="/main/www/contacts.html" target="_top" style="font-weight: normal; color: #05B; text-decoration: underline; display: inline;">Contact Us</a>
+<br />
+<br />
+<img src="/main/www/img/wordmarktl.gif"  width="217" height="35" alt="U.S. Census Bureau: Helping You Make Informed Decisions" style=" margin-top: -6px;" />
+<a name="SKIP"> </a>
+</div>
+
+<div style="font: normal 11px Arial, Helvetica, sans-serif; color: #000; text-decoration: none; text-align: center;">
+     Page Last Modified: August 26, 2008
+</div>
+
+</div>
+
+<!-- Foresee Survey -->
+<script type="text/javascript" src="/fsrscripts/triggerParams.js"></script>
+<script type="text/javascript" src="/fsrscripts/stdLauncher.js"></script>
+<script type="text/javascript">Poll();</script>
+<!-- End Foresee Survey -->                                   
+</body>                                                                          
+</html>                                                                          
