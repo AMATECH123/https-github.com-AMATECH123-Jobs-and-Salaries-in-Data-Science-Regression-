@@ -77,3 +77,17 @@ fails the critical component whatever else it gets right.
 ## Expected failure modes (from the example)
 Compile at the dispatch line grain, run back, see 19 of 24, try one correction, see 15, revert, adopt the
 natural schedule or the standing one, and report the reconciliation as a diagnostic rather than a gate.
+
+## Traps used, named from the program's taxonomy (TRAP_TAXONOMY.md)
+Published controls that pin the method: never tests its reading against the filed control; admits a failed
+back test, then ships anyway; settles for a close but inexact control match; rejects each needed fix because
+alone it scores zero; drops fixes that do not help singly; sets open method knobs by its own judgment.
+Wrong unit of count or entity: counts file rows instead of the real unit (dispatch lines against forms).
+Wrong population or scope: takes the population a flag or filter suggests (the reissue flag); the relief
+exclusion is the fix the rules do not name but the control requires.
+Governing rule read loosely: picks from the offered slate when none qualifies; writes a binding limit up as a
+risk (clause 6 reported as a diagnostic).
+Decoy figures and stakeholder views: follows last year's precedent the current standard overrides (the 2025
+schedule and the 2018 sheet).
+Thin margins and the last check: lands on the wrong side of a band cut (TRS p90 at 13,100 against the 12,960
+day boundary, 140 minutes); never states the comparison that decides the call.
