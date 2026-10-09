@@ -68,8 +68,11 @@ rows = []
 for s in strata + ["ALL"]:
     for sh in ("p50", "p90"):
         b = sched[s][sh]; st = standing[(s, sh)]
+        vals = pop[(s, 2025)] if s != "ALL" else [x for t in strata for x in pop[(t, 2025)]]
         rows.append({"stratum": s, "share": sh, "boundary_minutes": b, "reminder_day": math.ceil(b / 1440),
-                     "standing_2025_boundary_minutes": st, "movement_vs_2025_pct": f"{100 * (b - st) / st:.1f}"})
+                     "standing_2025_boundary_minutes": st, "movement_vs_2025_pct": f"{100 * (b - st) / st:.1f}",
+                     "returns_2025_past_new_boundary": sum(1 for x in vals if x > b),
+                     "returns_2025_past_standing_boundary": sum(1 for x in vals if x > st)})
 with open(os.path.join(HERE, "followup_schedule_2026.csv"), "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
 mover = max((r for r in rows if r["stratum"] != "ALL"), key=lambda r: abs(float(r["movement_vs_2025_pct"])))
@@ -82,6 +85,7 @@ figures = {"adopted_compilation": ADOPT, "matches": {n: v[0] for n, v in results
            "rejected_closest": rejected, "rejected_schedule": rsched, "divergence_minutes": diverg, "largest_divergence": [worst, diverg[worst]],
            "furthest_mover": mover, "reminder_day_threshold": threshold, "forms_2025_total": total_forms_2025, "forms_2025_kept": kept_2025,
            "published_vs_compiled": {f"{s}_{y}": [published[(s, y)], comp_means[(s, y)]] for (s, y) in sorted(published)},
+           "returns_past_boundary": {f"{r['stratum']} {r['share']}": [r["returns_2025_past_new_boundary"], r["returns_2025_past_standing_boundary"]] for r in rows},
            "legacy_sheet": "superseded parameter sheet (p60 and p95, 15 minute rounding, pooled two years, questionnaire unit); no use under COS 2019"}
 json.dump(figures, open(os.path.join(HERE, "figures.json"), "w"), indent=1)
 # chart
@@ -119,6 +123,9 @@ story = [Paragraph("Business Activity Survey: follow up schedule for 2026", ss["
  Pg(f"<b>Closest reading that does not stand.</b> One observation per dispatch line with every return kept misses five published means (differences of {', '.join(str(results[rejected][2][k] - published[k]) for k in sorted(published) if results[rejected][2][k] != published[k])} minutes) and cannot reach the Board under clause 6.2. Its 2025 schedule parts from the adopted one by: "
     + "; ".join(f"{k} {v:+,}" for k, v in diverg.items()) + f" minutes. The widest gap is {worst}, {diverg[worst]:+,} minutes."),
  Pg(f"<b>Furthest movement.</b> {mover['stratum']} moves furthest against the standing schedule, {mover['movement_vs_2025_pct']} per cent at {mover['share']} ({mover['standing_2025_boundary_minutes']:,} to {mb:,} minutes). Its reminder day is {day}; day {day} holds for any boundary above {threshold['previous_day_up_to_and_including']:,} minutes up to and including {threshold['day_holds_up_to_and_including']:,}, so the boundary would have to fall to {threshold['previous_day_up_to_and_including']:,} or below to come forward a day, or rise above {threshold['day_holds_up_to_and_including']:,} to move out a day."),
+ Pg("<b>Returns that would have drawn follow up.</b> Of the 2025 returns in the schedule population, the number received after the boundary, that is the number a reminder or escalation would have gone to, under the new boundaries and under the standing ones: "
+    + "; ".join(f"{r['stratum']} {r['share']} {r['returns_2025_past_new_boundary']:,} against {r['returns_2025_past_standing_boundary']:,}" for r in rows) + ". The survey wide first reminder would have gone to "
+    + f"{[r for r in rows if r['stratum']=='ALL' and r['share']=='p50'][0]['returns_2025_past_new_boundary']:,} returns under the new boundary against {[r for r in rows if r['stratum']=='ALL' and r['share']=='p50'][0]['returns_2025_past_standing_boundary']:,} under the standing one."),
  Pg("The 2018 parameter sheet predates the standard (p60 and p95 shares, 15 minute rounding, two pooled years, questionnaire unit) and has no use under COS 2019; the standing schedule is not carried forward by default (clause 6.3), and is not needed, since an admissible compilation exists."),
  Spacer(1, 4), Image(os.path.join(HERE, "elapsed_time_2025.png"), width=440, height=247)]
 doc.build(story)

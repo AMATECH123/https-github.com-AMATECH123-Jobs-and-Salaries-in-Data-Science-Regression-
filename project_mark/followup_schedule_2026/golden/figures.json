@@ -95,7 +95,9 @@
   "boundary_minutes": 13100,
   "reminder_day": 10,
   "standing_2025_boundary_minutes": 11710,
-  "movement_vs_2025_pct": "11.9"
+  "movement_vs_2025_pct": "11.9",
+  "returns_2025_past_new_boundary": 125,
+  "returns_2025_past_standing_boundary": 164
  },
  "reminder_day_threshold": {
   "reminder_day": 10,
@@ -200,6 +202,64 @@
   "WRT_2024": [
    3810,
    3810
+  ]
+ },
+ "returns_past_boundary": {
+  "MFG p50": [
+   623,
+   633
+  ],
+  "MFG p90": [
+   124,
+   147
+  ],
+  "CON p50": [
+   559,
+   557
+  ],
+  "CON p90": [
+   110,
+   100
+  ],
+  "WRT p50": [
+   610,
+   584
+  ],
+  "WRT p90": [
+   122,
+   111
+  ],
+  "TRS p50": [
+   628,
+   679
+  ],
+  "TRS p90": [
+   125,
+   164
+  ],
+  "ACC p50": [
+   631,
+   658
+  ],
+  "ACC p90": [
+   126,
+   148
+  ],
+  "PRO p50": [
+   604,
+   622
+  ],
+  "PRO p90": [
+   120,
+   146
+  ],
+  "ALL p50": [
+   3659,
+   3792
+  ],
+  "ALL p90": [
+   730,
+   781
   ]
  },
  "legacy_sheet": "superseded parameter sheet (p60 and p95, 15 minute rounding, pooled two years, questionnaire unit); no use under COS 2019"

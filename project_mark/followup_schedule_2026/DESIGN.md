@@ -39,27 +39,40 @@ TRS 2022, ACC 2024) carry relief returns tuned so the natural reading coincides 
 followup_schedule_2026.csv (14 rows), followup_note_2026.pdf (2 pages, table, basis, Annex A, rejected reading,
 furthest mover, threshold, chart), elapsed_time_2025.png, figures.json; solve.py rebuilds them from inputs only.
 
-## Rubric (20 items, 5 each)
-1. followup_schedule_2026.csv has one row per stratum per share plus survey wide rows (14 rows).
-2. Boundaries are whole minutes on multiples of 10 and reminder days equal boundary / 1,440 rounded up.
-3. Adopted schedule matches the admissible one on at least 12 of the 14 boundaries exactly.
-4. TRS p90 = 13,100 and ACC p90 = 21,630 (the two boundaries most sensitive to the definitions).
-5. Survey wide boundaries 5,070 and 13,630.
-6. Movement column is per cent to one decimal against the 2025 schedule and is correct for TRS p90 (+11.9).
-7. The note opens with the adopted schedule and names the compilation (one observation per form, earliest dispatch, relief returns excluded).
-8. The note shows the 24 published means beside compiled means with the difference, all differences zero.
-9. The note states that the natural reading (per dispatch line, every return kept) reproduces 19 of 24 and is therefore inadmissible under clause 6.
-10. The note does not adopt the natural reading or carry the 2025 schedule forward.
-11. The note identifies the burden relief register as the source of the exclusion, with dates compared against dispatch dates.
-12. The note identifies combined forms (one receipt closing several dispatches) and the earliest dispatch timing.
-13. The note gives the rejected reading's schedule and its divergence in minutes, with ACC p90 (+710) as the widest.
-14. The note names TRS as the furthest mover with +11.9 per cent at p90.
-15. The note gives the reminder day threshold for TRS p90 (day 10 holds above 12,960 up to 14,400 minutes).
-16. The chart shows the 2025 elapsed time distribution with both cut lines drawn.
-17. The note is one or two pages.
-18. The 2018 parameter sheet is set aside as superseded.
-19. Reissued dispatches are kept (dropping them is shown to fail, or not done).
-20. No figure in the note contradicts the CSV.
+## Critical component
+The adopted schedule must rest on the one compilation that reproduces all 24 published means: one observation per
+form received, timed from the earliest dispatch the form closes, with forms excluded where the dispatch fell inside
+the enterprise's burden relief window. Every figure in both deliverables follows from that population: the fourteen
+boundaries, the movements, the rejected reading's divergence, the furthest mover, the reminder day threshold and
+the follow up counts. A submission that adopts the dispatch line reading, or carries the 2025 schedule forward,
+fails the critical component whatever else it gets right.
+
+## Rubric (25 items, 4 each)
+1. followup_schedule_2026.csv has one row per stratum per share plus the two survey wide rows (14 rows).
+2. Boundaries are whole minutes on multiples of 10.
+3. Reminder days equal the boundary divided by 1,440 rounded up, on every row.
+4. The adopted schedule matches the admissible one on at least 12 of the 14 boundaries exactly.
+5. TRS p90 = 13,100 and ACC p90 = 21,630, the two boundaries most sensitive to the definitions.
+6. Survey wide boundaries 5,070 (p50) and 13,630 (p90).
+7. Movement is per cent to one decimal against the 2025 schedule and correct for TRS p90 (+11.9) and CON p90 (-3.9).
+8. The note opens with the adopted schedule and names the compilation: one observation per form, earliest dispatch, relief returns excluded.
+9. The note states the population kept (7,326 of 7,574 forms received in 2025) or an equivalent count.
+10. The note shows all 24 published means beside the compiled means with the difference on each, all zero.
+11. The note states that the natural reading (per dispatch line, every return kept) reproduces 19 of 24 and is inadmissible under clause 6.
+12. The note states that correcting the unit alone or the population alone reproduces fewer means (15 and 15), or otherwise shows the combination was required.
+13. The note does not adopt the natural reading and does not carry the 2025 schedule forward.
+14. The note identifies the burden relief register as the source of the exclusion and the test as dispatch date inside the window, both ends inclusive.
+15. The note identifies combined forms (one receipt closing several dispatches) and timing from the earliest dispatch.
+16. The note gives the rejected reading's schedule divergence in minutes for every stratum and share.
+17. The widest divergence is ACC p90 at +710 minutes.
+18. The note names TRS as the furthest mover at +11.9 per cent at p90 (11,710 to 13,100).
+19. The note gives the reminder day threshold for TRS p90: day 10 holds above 12,960 up to and including 14,400 minutes.
+20. The note gives the number of 2025 returns past the new and the standing boundaries for at least the survey wide rows (p50: 3,663 against 3,936; p90: 732 against 807).
+21. The follow up counts are computed on the admissible 2025 population, not on the dispatch line population.
+22. The chart shows the 2025 elapsed time distribution with both cut lines drawn.
+23. The note is one or two pages and opens with the schedule, as asked.
+24. The 2018 parameter sheet is set aside as superseded, with its differences from COS 2019 stated.
+25. Reissued dispatches are kept, and no figure in the note contradicts the CSV.
 
 ## Expected failure modes (from the example)
 Compile at the dispatch line grain, run back, see 19 of 24, try one correction, see 15, revert, adopt the
