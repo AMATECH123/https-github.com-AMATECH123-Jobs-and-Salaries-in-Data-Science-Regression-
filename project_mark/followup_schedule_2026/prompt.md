@@ -1,6 +1,6 @@
 I run collection operations for the Business Activity Survey and I have to put the 2026 follow up schedule to the Statistics Board in March. The schedule is the elapsed time after dispatch at which we send the first reminder and the escalation, one boundary per stratum at each committed share plus the survey wide boundary, and the Board adopts it as one schedule, as it stands. Tell me what schedule to adopt and why.
 
-The move to the new collection platform lost the compilation programs and the parameter sheets, so it has to be rebuilt from the dispatch log, the receipt log and the link table. What survived is in the folder: COS 2019; the mean elapsed response times the Bulletin published for each stratum for 2021 to 2024; the 2025 schedule the Board adopted; the registers; and a handover note from the collection desk.
+The move to the new collection platform lost the compilation programs and the parameter sheets, so the schedule has to be rebuilt from the records. Everything that survived the move is in the folder, along with COS 2019 and what the Bulletin published for 2021 to 2024.
 
 Two files. followup_schedule_2026.csv is what the collection system loads: one row per stratum per share with the 2026 boundary in whole minutes, the reminder day it implies, the movement against the 2025 schedule in per cent to one decimal, and the survey wide rows.
 
