@@ -153,6 +153,34 @@ beats the headline trap, misses the quiet one (4).
 - Office hours Monday–Friday via the Slack link.
 - Starter data kits are a foundation, not a finished submission; you still own file count, mess, and the answer.
 
+## Program update, Slack post by Vincent (Handshake AI), recorded 2026-10-09
+These rules apply to every new task and sit above the 9/5 rules where they differ.
+- Rollouts. Two model rollouts per task, run at the very beginning. The average of the two must be under 50
+  percent, no exceptions. There is no longer a sequence of rollouts at the end. (The handbook's separate
+  "at least one model stumped" check is no longer part of the gate; the average is the gate.)
+- Large, complicated inputs. The package must contain at least two files that are complicated and large, from:
+  a 10 to 20 or more page PDF or DOCX; a CSV of 25,000 or more rows; a large database file; a multi page PPT.
+  These are in addition to the 9/5 rules (10 or more files, 3 or more formats, one table over 10,000 rows).
+- One distractor. The package must contain exactly one distractor file, and the distractor is labelled inside
+  the task itself, in a question in the prompt, not inside the input files. Examples given: a dashboard or BI
+  extract with a headline KPI that seems to answer the question but is wrong; data that is outdated or refers
+  to a year or business unit no longer relevant; a rule that has been amended or superseded.
+
+### What this changes in how a task is built here
+1. The prompt now carries a question that points at the distractor by role (for example, "the dashboard
+   extract says X; say whether it answers the question and why not"), so the rubric can score the refusal of
+   the distractor. The distractor file itself carries no label.
+2. The two large files are planned first. Real options reachable from this session: the MBTA GTFS stop_times
+   table (over 2 million rows) or any 25,000 plus row extract of it; the GSS cumulative file as a database file
+   (SQLite or Parquet, 75,699 rows by 6,942 columns); the GTFS Schedule reference or the MassDOT licence as a
+   long PDF or DOCX; NOAA documentation PDFs. A long PDF or DOCX must be a real published document, never one
+   written by the task author (the 9/5 ban on LLM generated PDF, DOCX and PPTX stands).
+3. The distractor is honest in the handbook's sense: a real file that is wrong for the question (stale
+   vintage, superseded rule, wrong unit or population), never a corrupted or fabricated one.
+4. The gate is now the average of two rollouts under 50 percent. A task that one model solves and the other
+   does not can pass; a task both models solve cannot. The dry run before upload stays, and a task whose dry
+   run is solved in full is not uploaded.
+
 ## Objective lock: Data Extraction and Conformation (ETL / Pipeline Build)
 Every task I build sits under this objective. The handbook defines it as work that reconciles messy multi source
 inputs into one analysis ready, contract conforming dataset. The handbook lists 18 traps for this objective.
