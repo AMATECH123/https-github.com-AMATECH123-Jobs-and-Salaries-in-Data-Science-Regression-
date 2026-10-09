@@ -181,6 +181,21 @@ These rules apply to every new task and sit above the 9/5 rules where they diffe
    does not can pass; a task both models solve cannot. The dry run before upload stays, and a task whose dry
    run is solved in full is not uploaded.
 
+### Prompt guidance from the program, recorded 2026-10-09
+- Be clear about why the task is necessary and what the recommendation should offer. No backstory, but enough
+  context of the situation for the reader to know why the work is being done and why the recommendation is
+  needed. That context is the foundation of what is to be accomplished.
+- Do not overspecify. Let the model decide what analysis to run and how to present the results in the
+  documents. Guidelines yes; a checklist of what must be done or included, no.
+- Write a natural ask, the way the task would be handed over in the real world, not a list of demands.
+
+What this means against the prompts written so far. Every prompt in this project named the columns of the CSV,
+the marks on the chart and the paragraphs of the memo, one after another. That reads as a checklist, and it
+also hands the model the rubric: each named ask became a criterion the model could see coming. The next
+prompts state the situation, the decision, the one or two files wanted and what they are for, and leave the
+analysis and the layout to the reader. The rubric is still generated from the golden, so a reader who leaves
+out what the situation plainly calls for loses the points without having been told what they were.
+
 ## Objective lock: Data Extraction and Conformation (ETL / Pipeline Build)
 Every task I build sits under this objective. The handbook defines it as work that reconciles messy multi source
 inputs into one analysis ready, contract conforming dataset. The handbook lists 18 traps for this objective.
