@@ -48,7 +48,7 @@ the follow up counts. A submission that adopts the dispatch line reading, or car
 fails the critical component whatever else it gets right.
 
 ## Rubric (25 items, 4 each)
-1. followup_schedule_2026.csv has one row per stratum per share plus the two survey wide rows (14 rows).
+1. The schedule CSV has one row per stratum per share plus the two survey wide rows (14 rows).
 2. Boundaries are whole minutes on multiples of 10.
 3. Reminder days equal the boundary divided by 1,440 rounded up, on every row.
 4. The adopted schedule matches the admissible one on at least 12 of the 14 boundaries exactly.
