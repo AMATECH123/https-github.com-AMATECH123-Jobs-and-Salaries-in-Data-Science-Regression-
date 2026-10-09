@@ -328,3 +328,13 @@ scanned extraction, every one solved by a fresh model in one run and every submi
 The remaining ways to push a score under 50 are ones the program forbids: an answer the package cannot
 support, a rubric that rewards a convention the prompt does not fix, or helper material removed so the task
 cannot be reproduced. A fair task in this objective does not stump the current models.
+
+### Program stump example and a task built on it, 2026-10-09
+The program's batch 14 example (Halberth cover schedule, platform model 0.13 over four runs) is constructed
+data with an exact reproduction gate on 24 published means and two hidden definitions that interact so that
+either correction alone matches fewer means than the natural reading. The platform model searched one step at
+a time, retreated, and adopted the natural schedule. Built the same structure in Survey Research and Official
+Statistics (project_mark/followup_schedule_2026): natural 19 of 24, each correction alone 15, both 24, the
+plausible wrong correction 1. My dry run model enumerated the whole grid and solved it; it cannot distinguish
+this pattern from the ones the platform solved. Recommended for submission on the strength of the program's
+own result on the pattern.
