@@ -1,0 +1,11 @@
+Collection desk, handover note, January 2026
+
+Things worth knowing about the records now that the old programs are gone.
+
+Enterprises with several reporting units are dispatched one questionnaire per unit but most of them return one combined form for the enterprise. The receipt log has one row per form received; the link table says which dispatches a form closed.
+
+A questionnaire reissued after a reported non delivery keeps its original dispatch row, with the reissue timestamp written over the original and the flag set.
+
+The burden relief register was kept beside the dispatch log by the former analyst. Enterprises on the register are not chased while their relief runs.
+
+The Bulletin means are the figures the Office published. Nobody here has reproduced them since the migration.

@@ -1,0 +1,40 @@
+{
+ "dispatch_log.csv": {
+  "dispatch_id": "identifier of the questionnaire dispatch",
+  "reporting_unit_id": "reporting unit the questionnaire was addressed to",
+  "enterprise_id": "enterprise the reporting unit belongs to",
+  "stratum": "industry stratum code, see strata.csv",
+  "reference_quarter": "survey reference quarter the questionnaire relates to",
+  "dispatch_ts": "timestamp of dispatch, minute precision, local time",
+  "channel": "web or paper",
+  "reissue_flag": "Y when the questionnaire was reissued after a reported non delivery; the row carries the reissue timestamp"
+ },
+ "receipt_log.csv": {
+  "receipt_id": "identifier of the form received",
+  "enterprise_id": "enterprise that returned the form",
+  "receipt_ts": "timestamp of receipt, minute precision, local time",
+  "channel": "web or paper",
+  "receiving_office": "office that logged the receipt"
+ },
+ "receipt_dispatch_link.csv": {
+  "receipt_id": "form received",
+  "dispatch_id": "dispatch closed by that form; a form may close several dispatches"
+ },
+ "burden_relief_register.csv": {
+  "enterprise_id": "enterprise granted relief",
+  "relief_start": "first day of relief, inclusive",
+  "relief_end": "last day of relief, inclusive",
+  "reason": "ground for relief"
+ },
+ "published_mean_elapsed_times.csv": {
+  "reference_year": "year of receipt",
+  "stratum": "industry stratum code",
+  "mean_elapsed_minutes": "mean elapsed time in whole minutes as published in the Collection Performance Bulletin"
+ },
+ "adopted_followup_schedule_2025.csv": {
+  "stratum": "industry stratum code, ALL for the survey wide boundary",
+  "share": "p50 or p90",
+  "boundary_minutes": "boundary adopted for 2025, whole minutes",
+  "reminder_day": "reminder day implied by the boundary"
+ }
+}

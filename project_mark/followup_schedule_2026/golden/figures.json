@@ -1,0 +1,206 @@
+{
+ "adopted_compilation": "one observation per form, timed from the earliest dispatch, relief returns excluded",
+ "matches": {
+  "one observation per dispatch line, every return kept": 19,
+  "one observation per dispatch line, relief returns excluded": 15,
+  "one observation per form, timed from the earliest dispatch, every return kept": 15,
+  "one observation per form, timed from the latest dispatch, relief returns excluded": 15,
+  "one observation per form, timed from the earliest dispatch, reissued dispatches dropped, relief excluded": 1,
+  "one observation per form, timed from the earliest dispatch, relief returns excluded": 24
+ },
+ "schedule_2026": {
+  "MFG": {
+   "p50": 4670,
+   "p90": 10690
+  },
+  "CON": {
+   "p50": 7260,
+   "p90": 15390
+  },
+  "WRT": {
+   "p50": 3000,
+   "p90": 6660
+  },
+  "TRS": {
+   "p50": 5790,
+   "p90": 13100
+  },
+  "ACC": {
+   "p50": 10290,
+   "p90": 21630
+  },
+  "PRO": {
+   "p50": 2080,
+   "p90": 5370
+  },
+  "ALL": {
+   "p50": 5070,
+   "p90": 13630
+  }
+ },
+ "rejected_closest": "one observation per dispatch line, every return kept",
+ "rejected_schedule": {
+  "MFG": {
+   "p50": 4630,
+   "p90": 11080
+  },
+  "CON": {
+   "p50": 7230,
+   "p90": 15620
+  },
+  "WRT": {
+   "p50": 2970,
+   "p90": 6830
+  },
+  "TRS": {
+   "p50": 5790,
+   "p90": 13450
+  },
+  "ACC": {
+   "p50": 10360,
+   "p90": 22340
+  },
+  "PRO": {
+   "p50": 2070,
+   "p90": 5390
+  },
+  "ALL": {
+   "p50": 5010,
+   "p90": 13970
+  }
+ },
+ "divergence_minutes": {
+  "MFG p50": -40,
+  "MFG p90": 390,
+  "CON p50": -30,
+  "CON p90": 230,
+  "WRT p50": -30,
+  "WRT p90": 170,
+  "TRS p50": 0,
+  "TRS p90": 350,
+  "ACC p50": 70,
+  "ACC p90": 710,
+  "PRO p50": -10,
+  "PRO p90": 20,
+  "ALL p50": -60,
+  "ALL p90": 340
+ },
+ "largest_divergence": [
+  "ACC p90",
+  710
+ ],
+ "furthest_mover": {
+  "stratum": "TRS",
+  "share": "p90",
+  "boundary_minutes": 13100,
+  "reminder_day": 10,
+  "standing_2025_boundary_minutes": 11710,
+  "movement_vs_2025_pct": "11.9"
+ },
+ "reminder_day_threshold": {
+  "reminder_day": 10,
+  "day_holds_up_to_and_including": 14400,
+  "previous_day_up_to_and_including": 12960
+ },
+ "forms_2025_total": 7574,
+ "forms_2025_kept": 7326,
+ "published_vs_compiled": {
+  "ACC_2021": [
+   11882,
+   11882
+  ],
+  "ACC_2022": [
+   11555,
+   11555
+  ],
+  "ACC_2023": [
+   11636,
+   11636
+  ],
+  "ACC_2024": [
+   11660,
+   11660
+  ],
+  "CON_2021": [
+   8489,
+   8489
+  ],
+  "CON_2022": [
+   8092,
+   8092
+  ],
+  "CON_2023": [
+   8743,
+   8743
+  ],
+  "CON_2024": [
+   8689,
+   8689
+  ],
+  "MFG_2021": [
+   5415,
+   5415
+  ],
+  "MFG_2022": [
+   5475,
+   5475
+  ],
+  "MFG_2023": [
+   5335,
+   5335
+  ],
+  "MFG_2024": [
+   5489,
+   5489
+  ],
+  "PRO_2021": [
+   2386,
+   2386
+  ],
+  "PRO_2022": [
+   2624,
+   2624
+  ],
+  "PRO_2023": [
+   2503,
+   2503
+  ],
+  "PRO_2024": [
+   2565,
+   2565
+  ],
+  "TRS_2021": [
+   5985,
+   5985
+  ],
+  "TRS_2022": [
+   6325,
+   6325
+  ],
+  "TRS_2023": [
+   6293,
+   6293
+  ],
+  "TRS_2024": [
+   6576,
+   6576
+  ],
+  "WRT_2021": [
+   3682,
+   3682
+  ],
+  "WRT_2022": [
+   3567,
+   3567
+  ],
+  "WRT_2023": [
+   3565,
+   3565
+  ],
+  "WRT_2024": [
+   3810,
+   3810
+  ]
+ },
+ "legacy_sheet": "superseded parameter sheet (p60 and p95, 15 minute rounding, pooled two years, questionnaire unit); no use under COS 2019"
+}

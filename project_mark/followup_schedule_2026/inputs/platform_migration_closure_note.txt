@@ -1,0 +1,7 @@
+Collection platform migration, closure note, 28 November 2025
+
+Migrated to the new platform: dispatch log, receipt log, receipt to dispatch links, enterprise and reporting unit registers, burden relief register, stratum list, from 1 January 2021. Records before 2021 were not migrated and are held on the archived platform in read only form.
+
+Not migrated and not recoverable: the SAS compilation programs for the Collection Performance Bulletin and for the follow up schedule, the parameter sheets for the 2021 to 2025 schedules, and the working papers of the former collection analyst.
+
+Timestamps were carried across at minute precision. Identifiers are unchanged.

@@ -1,0 +1,1411 @@
+enterprise_id,relief_start,relief_end,reason
+E01682,2021-01-01,2021-03-19,new business relief
+E01014,2021-01-02,2021-05-23,new business relief
+E01009,2021-01-02,2021-05-01,insolvency administration
+E01436,2021-01-02,2021-05-22,new business relief
+E01647,2021-01-04,2021-04-08,flood damage
+E01434,2021-01-04,2021-04-18,fire at premises
+E01831,2021-01-04,2021-05-24,flood damage
+E01887,2021-01-05,2021-04-01,new business relief
+E00390,2021-01-05,2021-06-05,new business relief
+E00854,2021-01-05,2021-04-26,ownership transfer
+E00727,2021-01-05,2021-04-08,insolvency administration
+E00049,2021-01-06,2021-06-01,insolvency administration
+E01329,2021-01-07,2021-04-19,new business relief
+E00202,2021-01-07,2021-05-08,insolvency administration
+E00297,2021-01-07,2021-06-05,flood damage
+E02154,2021-01-08,2021-03-27,new business relief
+E02421,2021-01-09,2021-05-25,fire at premises
+E02113,2021-01-09,2021-06-15,insolvency administration
+E00068,2021-01-10,2021-04-20,flood damage
+E03176,2021-01-10,2021-05-27,fire at premises
+E00411,2021-01-10,2021-03-27,new business relief
+E02217,2021-01-11,2021-06-02,new business relief
+E01674,2021-01-12,2021-06-03,ownership transfer
+E01242,2021-01-13,2021-06-20,fire at premises
+E00211,2021-01-13,2021-05-27,fire at premises
+E01113,2021-01-13,2021-04-28,fire at premises
+E00042,2021-01-14,2021-04-15,new business relief
+E00152,2021-01-14,2021-06-01,fire at premises
+E03020,2021-01-15,2021-04-17,flood damage
+E02528,2021-01-15,2021-05-02,fire at premises
+E01294,2021-01-18,2021-05-16,new business relief
+E00910,2021-01-18,2021-04-22,new business relief
+E02473,2021-01-18,2021-06-07,insolvency administration
+E02816,2021-01-18,2021-05-16,fire at premises
+E01056,2021-01-19,2021-05-07,insolvency administration
+E00399,2021-01-19,2021-06-28,insolvency administration
+E02462,2021-01-19,2021-04-10,flood damage
+E01529,2021-01-19,2021-06-06,fire at premises
+E01536,2021-01-19,2021-05-26,insolvency administration
+E01751,2021-01-21,2021-05-22,fire at premises
+E02192,2021-01-21,2021-05-04,new business relief
+E00575,2021-01-21,2021-05-09,fire at premises
+E02212,2021-01-21,2021-05-25,flood damage
+E01776,2021-04-01,2021-06-29,fire at premises
+E00364,2021-04-01,2021-08-10,new business relief
+E00925,2021-04-02,2021-08-09,new business relief
+E03033,2021-04-03,2021-07-18,flood damage
+E02799,2021-04-03,2021-08-31,ownership transfer
+E01681,2021-04-06,2021-06-30,ownership transfer
+E00507,2021-04-06,2021-08-23,fire at premises
+E01399,2021-04-07,2021-08-20,flood damage
+E02029,2021-04-08,2021-07-27,flood damage
+E01748,2021-04-08,2021-08-06,new business relief
+E03053,2021-04-09,2021-08-14,fire at premises
+E00568,2021-04-10,2021-06-28,new business relief
+E00231,2021-04-10,2021-07-19,flood damage
+E01917,2021-04-11,2021-07-16,new business relief
+E02665,2021-04-11,2021-08-15,fire at premises
+E01005,2021-04-11,2021-07-23,new business relief
+E02391,2021-04-12,2021-08-26,insolvency administration
+E02059,2021-04-12,2021-07-30,insolvency administration
+E01337,2021-04-13,2021-08-11,insolvency administration
+E01458,2021-04-13,2021-07-25,ownership transfer
+E02984,2021-04-15,2021-07-10,fire at premises
+E00092,2021-04-15,2021-07-04,ownership transfer
+E01300,2021-04-15,2021-08-27,insolvency administration
+E00131,2021-04-16,2021-09-12,insolvency administration
+E01595,2021-04-17,2021-09-21,insolvency administration
+E02187,2021-04-17,2021-08-03,insolvency administration
+E02267,2021-04-17,2021-07-19,fire at premises
+E01983,2021-04-18,2021-07-03,flood damage
+E01360,2021-04-20,2021-08-18,new business relief
+E02068,2021-04-20,2021-09-24,ownership transfer
+E01598,2021-04-21,2021-09-27,new business relief
+E02964,2021-04-21,2021-07-07,ownership transfer
+E00996,2021-07-01,2021-11-24,flood damage
+E02167,2021-07-01,2021-11-05,ownership transfer
+E01088,2021-07-02,2021-10-17,insolvency administration
+E02989,2021-07-02,2021-11-19,ownership transfer
+E03178,2021-07-02,2021-10-31,insolvency administration
+E01452,2021-07-02,2021-10-21,new business relief
+E01025,2021-07-03,2021-10-23,insolvency administration
+E02001,2021-07-06,2021-12-03,insolvency administration
+E01594,2021-07-07,2021-12-13,new business relief
+E00716,2021-07-07,2021-10-18,fire at premises
+E01568,2021-07-07,2021-11-04,new business relief
+E00253,2021-07-08,2021-10-19,insolvency administration
+E00713,2021-07-08,2021-10-22,fire at premises
+E02780,2021-07-08,2021-10-11,new business relief
+E01780,2021-07-08,2021-10-05,ownership transfer
+E01645,2021-07-09,2021-11-03,fire at premises
+E00942,2021-07-09,2021-11-11,fire at premises
+E03188,2021-07-09,2021-11-17,ownership transfer
+E02049,2021-07-11,2021-11-27,insolvency administration
+E01442,2021-07-11,2021-12-07,new business relief
+E02465,2021-07-11,2021-12-15,fire at premises
+E02459,2021-07-11,2021-11-21,fire at premises
+E00220,2021-07-13,2021-10-05,ownership transfer
+E01186,2021-07-14,2021-11-23,new business relief
+E00937,2021-07-14,2021-12-01,fire at premises
+E02756,2021-07-16,2021-12-16,ownership transfer
+E03089,2021-07-17,2021-10-22,flood damage
+E02590,2021-07-19,2021-11-26,ownership transfer
+E02671,2021-07-19,2021-11-14,insolvency administration
+E00344,2021-07-20,2021-11-11,fire at premises
+E01895,2021-07-21,2021-11-14,ownership transfer
+E02606,2021-07-21,2021-12-24,ownership transfer
+E02664,2021-07-21,2021-11-02,insolvency administration
+E03109,2021-07-21,2021-11-14,ownership transfer
+E01468,2021-07-21,2021-11-14,ownership transfer
+E00466,2022-01-01,2022-04-23,ownership transfer
+E02779,2022-01-01,2022-04-14,ownership transfer
+E02298,2022-01-01,2022-04-30,fire at premises
+E03122,2022-01-01,2022-04-21,flood damage
+E00054,2022-01-02,2022-04-23,flood damage
+E00725,2022-01-02,2022-04-11,new business relief
+E01215,2022-01-02,2022-06-06,fire at premises
+E00208,2022-01-02,2022-04-26,flood damage
+E01550,2022-01-02,2022-05-09,insolvency administration
+E00362,2022-01-02,2022-03-25,ownership transfer
+E00401,2022-01-02,2022-04-21,insolvency administration
+E00391,2022-01-03,2022-05-12,flood damage
+E00552,2022-01-03,2022-05-31,new business relief
+E02548,2022-01-03,2022-05-22,fire at premises
+E00232,2022-01-03,2022-04-24,fire at premises
+E02907,2022-01-03,2022-03-21,new business relief
+E00661,2022-01-03,2022-05-14,fire at premises
+E00066,2022-01-04,2022-05-23,flood damage
+E00136,2022-01-04,2022-05-23,new business relief
+E01519,2022-01-04,2022-04-10,fire at premises
+E02281,2022-01-04,2022-04-15,fire at premises
+E02750,2022-01-04,2022-04-26,flood damage
+E01725,2022-01-05,2022-06-14,flood damage
+E01618,2022-01-05,2022-04-17,fire at premises
+E00288,2022-01-05,2022-03-21,insolvency administration
+E01561,2022-01-05,2022-03-25,ownership transfer
+E03157,2022-01-05,2022-04-12,fire at premises
+E00109,2022-01-05,2022-03-22,insolvency administration
+E01826,2022-01-05,2022-03-26,fire at premises
+E00726,2022-01-06,2022-04-29,flood damage
+E01340,2022-01-06,2022-04-05,fire at premises
+E02476,2022-01-06,2022-03-27,new business relief
+E01750,2022-01-06,2022-04-15,fire at premises
+E02052,2022-01-06,2022-05-28,fire at premises
+E00138,2022-01-06,2022-04-06,new business relief
+E00185,2022-01-06,2022-05-12,new business relief
+E02996,2022-01-06,2022-04-17,ownership transfer
+E02991,2022-01-06,2022-04-13,insolvency administration
+E01954,2022-01-06,2022-04-20,ownership transfer
+E01925,2022-01-07,2022-05-21,new business relief
+E01321,2022-01-07,2022-04-01,insolvency administration
+E00705,2022-01-07,2022-04-08,flood damage
+E00905,2022-01-07,2022-03-25,fire at premises
+E00077,2022-01-07,2022-06-07,flood damage
+E01002,2022-01-07,2022-06-08,fire at premises
+E02786,2022-01-08,2022-04-06,ownership transfer
+E00343,2022-01-08,2022-05-01,new business relief
+E01998,2022-01-08,2022-04-13,new business relief
+E02475,2022-01-08,2022-05-20,new business relief
+E02235,2022-01-08,2022-03-29,fire at premises
+E00169,2022-01-08,2022-04-26,ownership transfer
+E02369,2022-01-09,2022-05-11,new business relief
+E01446,2022-01-09,2022-06-18,new business relief
+E01373,2022-01-09,2022-06-01,insolvency administration
+E01920,2022-01-10,2022-04-22,new business relief
+E00777,2022-01-10,2022-05-15,fire at premises
+E01754,2022-01-10,2022-06-02,insolvency administration
+E01555,2022-01-10,2022-04-05,new business relief
+E00050,2022-01-11,2022-04-27,new business relief
+E02537,2022-01-11,2022-05-06,fire at premises
+E00328,2022-01-11,2022-03-30,fire at premises
+E02826,2022-01-11,2022-04-29,flood damage
+E01665,2022-01-11,2022-06-02,ownership transfer
+E00700,2022-01-11,2022-05-09,fire at premises
+E02882,2022-01-12,2022-03-29,flood damage
+E00174,2022-01-12,2022-04-29,fire at premises
+E03166,2022-01-12,2022-03-28,insolvency administration
+E02687,2022-01-12,2022-04-05,insolvency administration
+E01456,2022-01-12,2022-05-31,new business relief
+E00189,2022-01-12,2022-05-31,ownership transfer
+E00406,2022-01-12,2022-04-29,flood damage
+E01291,2022-01-12,2022-04-30,new business relief
+E02579,2022-01-12,2022-05-22,new business relief
+E01427,2022-01-13,2022-04-14,ownership transfer
+E00605,2022-01-13,2022-06-20,flood damage
+E00655,2022-01-13,2022-05-21,fire at premises
+E02408,2022-01-13,2022-05-13,new business relief
+E02007,2022-01-13,2022-05-22,new business relief
+E03102,2022-01-13,2022-05-18,flood damage
+E00767,2022-01-14,2022-04-08,fire at premises
+E02794,2022-01-14,2022-06-13,new business relief
+E00771,2022-01-14,2022-06-02,new business relief
+E00292,2022-01-14,2022-06-16,new business relief
+E01003,2022-01-14,2022-04-16,fire at premises
+E00268,2022-01-15,2022-06-14,flood damage
+E02020,2022-01-15,2022-06-03,flood damage
+E00284,2022-01-15,2022-06-02,insolvency administration
+E01942,2022-01-15,2022-05-04,insolvency administration
+E01349,2022-01-15,2022-06-23,ownership transfer
+E00699,2022-01-16,2022-05-11,fire at premises
+E03027,2022-01-16,2022-05-21,fire at premises
+E01417,2022-01-16,2022-04-12,new business relief
+E00628,2022-01-17,2022-05-17,ownership transfer
+E02448,2022-01-17,2022-06-25,fire at premises
+E02787,2022-01-17,2022-05-31,insolvency administration
+E01596,2022-01-17,2022-04-23,new business relief
+E02201,2022-01-17,2022-06-15,ownership transfer
+E02500,2022-01-17,2022-06-10,new business relief
+E03002,2022-01-17,2022-06-06,new business relief
+E02759,2022-01-18,2022-05-15,insolvency administration
+E01698,2022-01-18,2022-05-26,fire at premises
+E01531,2022-01-18,2022-05-21,insolvency administration
+E02601,2022-01-18,2022-06-21,ownership transfer
+E00506,2022-01-18,2022-04-30,fire at premises
+E00369,2022-01-18,2022-06-21,insolvency administration
+E02566,2022-01-19,2022-05-21,ownership transfer
+E01221,2022-01-19,2022-06-15,fire at premises
+E01004,2022-01-19,2022-06-24,fire at premises
+E01162,2022-01-19,2022-05-14,ownership transfer
+E03086,2022-01-19,2022-04-15,new business relief
+E00773,2022-01-19,2022-05-28,ownership transfer
+E02404,2022-01-20,2022-06-01,fire at premises
+E01277,2022-01-20,2022-05-17,insolvency administration
+E00857,2022-01-20,2022-05-04,new business relief
+E01473,2022-01-20,2022-04-14,new business relief
+E01800,2022-01-21,2022-05-24,fire at premises
+E01570,2022-01-21,2022-06-25,insolvency administration
+E00701,2022-04-01,2022-08-12,new business relief
+E01962,2022-04-01,2022-06-19,new business relief
+E02239,2022-04-01,2022-08-26,ownership transfer
+E01230,2022-04-01,2022-08-10,new business relief
+E02434,2022-04-01,2022-08-20,fire at premises
+E00263,2022-04-02,2022-07-03,fire at premises
+E03103,2022-04-02,2022-08-28,fire at premises
+E02055,2022-04-02,2022-08-14,fire at premises
+E00808,2022-04-02,2022-07-31,fire at premises
+E00372,2022-04-02,2022-08-31,ownership transfer
+E02422,2022-04-02,2022-08-30,fire at premises
+E02948,2022-04-02,2022-08-20,new business relief
+E01915,2022-04-03,2022-08-31,flood damage
+E02994,2022-04-03,2022-07-13,new business relief
+E00677,2022-04-03,2022-08-19,ownership transfer
+E02071,2022-04-03,2022-07-11,new business relief
+E02363,2022-04-04,2022-07-21,fire at premises
+E01141,2022-04-04,2022-08-29,ownership transfer
+E00256,2022-04-04,2022-08-29,insolvency administration
+E00801,2022-04-04,2022-06-21,insolvency administration
+E02597,2022-04-04,2022-08-27,ownership transfer
+E00107,2022-04-04,2022-08-06,fire at premises
+E01663,2022-04-04,2022-07-29,fire at premises
+E00580,2022-04-04,2022-09-05,ownership transfer
+E01173,2022-04-05,2022-07-15,new business relief
+E01678,2022-04-05,2022-06-29,flood damage
+E01400,2022-04-05,2022-07-21,flood damage
+E03084,2022-04-05,2022-07-05,ownership transfer
+E00615,2022-04-05,2022-07-27,fire at premises
+E01953,2022-04-05,2022-08-28,ownership transfer
+E03105,2022-04-06,2022-08-19,new business relief
+E00572,2022-04-06,2022-07-07,new business relief
+E01074,2022-04-06,2022-09-01,insolvency administration
+E01635,2022-04-06,2022-07-10,insolvency administration
+E01755,2022-04-07,2022-07-25,fire at premises
+E02221,2022-04-07,2022-08-30,flood damage
+E02024,2022-04-07,2022-08-16,flood damage
+E00703,2022-04-07,2022-07-12,fire at premises
+E02371,2022-04-07,2022-09-09,insolvency administration
+E01066,2022-04-07,2022-08-25,new business relief
+E00168,2022-04-08,2022-07-12,ownership transfer
+E00171,2022-04-08,2022-07-22,fire at premises
+E01000,2022-04-08,2022-06-24,flood damage
+E03195,2022-04-08,2022-07-11,flood damage
+E03121,2022-04-08,2022-09-12,insolvency administration
+E02112,2022-04-08,2022-08-19,insolvency administration
+E00971,2022-04-08,2022-07-29,ownership transfer
+E02562,2022-04-08,2022-07-27,ownership transfer
+E00690,2022-04-09,2022-09-09,new business relief
+E00504,2022-04-09,2022-08-15,flood damage
+E02842,2022-04-09,2022-08-09,flood damage
+E00969,2022-04-09,2022-08-31,insolvency administration
+E02669,2022-04-10,2022-07-01,fire at premises
+E00788,2022-04-10,2022-09-01,insolvency administration
+E00251,2022-04-10,2022-08-01,insolvency administration
+E01094,2022-04-10,2022-08-25,ownership transfer
+E01017,2022-04-10,2022-09-03,flood damage
+E01386,2022-04-11,2022-07-04,ownership transfer
+E02407,2022-04-11,2022-09-11,ownership transfer
+E02457,2022-04-11,2022-07-02,ownership transfer
+E02811,2022-04-11,2022-07-04,flood damage
+E00094,2022-04-12,2022-08-12,flood damage
+E02054,2022-04-12,2022-08-11,fire at premises
+E02879,2022-04-12,2022-08-07,fire at premises
+E02564,2022-04-12,2022-09-09,new business relief
+E00476,2022-04-14,2022-07-17,fire at premises
+E02912,2022-04-14,2022-08-10,flood damage
+E00522,2022-04-14,2022-09-14,insolvency administration
+E02558,2022-04-14,2022-07-02,new business relief
+E00457,2022-04-14,2022-08-04,fire at premises
+E00877,2022-04-14,2022-07-27,flood damage
+E01944,2022-04-15,2022-07-18,fire at premises
+E00518,2022-04-15,2022-08-04,insolvency administration
+E01196,2022-04-15,2022-08-07,flood damage
+E01854,2022-04-15,2022-08-26,new business relief
+E01501,2022-04-16,2022-08-22,new business relief
+E00467,2022-04-16,2022-07-05,new business relief
+E02518,2022-04-16,2022-08-31,insolvency administration
+E02484,2022-04-16,2022-08-24,new business relief
+E00765,2022-04-16,2022-08-14,insolvency administration
+E03061,2022-04-16,2022-09-22,new business relief
+E02965,2022-04-17,2022-08-24,insolvency administration
+E01661,2022-04-17,2022-09-11,ownership transfer
+E01593,2022-04-17,2022-07-29,ownership transfer
+E01871,2022-04-17,2022-07-13,new business relief
+E00978,2022-04-17,2022-08-07,fire at premises
+E00525,2022-04-17,2022-08-11,new business relief
+E00936,2022-04-17,2022-07-28,new business relief
+E00524,2022-04-17,2022-08-28,new business relief
+E02527,2022-04-17,2022-07-10,fire at premises
+E00960,2022-04-17,2022-08-26,new business relief
+E00559,2022-04-17,2022-08-25,ownership transfer
+E02517,2022-04-18,2022-09-24,ownership transfer
+E00884,2022-04-18,2022-07-16,new business relief
+E00014,2022-04-18,2022-08-29,new business relief
+E03051,2022-04-18,2022-08-11,ownership transfer
+E01493,2022-04-18,2022-07-06,new business relief
+E01051,2022-04-18,2022-08-09,insolvency administration
+E02903,2022-04-19,2022-09-20,fire at premises
+E02947,2022-04-19,2022-09-15,fire at premises
+E02544,2022-04-19,2022-09-10,fire at premises
+E00988,2022-04-19,2022-07-15,insolvency administration
+E00886,2022-04-19,2022-07-11,ownership transfer
+E02603,2022-04-19,2022-09-23,ownership transfer
+E00266,2022-04-19,2022-09-26,new business relief
+E00569,2022-04-20,2022-08-19,flood damage
+E01816,2022-04-20,2022-09-06,insolvency administration
+E00966,2022-04-20,2022-09-14,flood damage
+E02893,2022-04-21,2022-08-15,ownership transfer
+E01050,2022-04-21,2022-08-02,fire at premises
+E01383,2022-04-21,2022-08-27,new business relief
+E00913,2022-04-21,2022-08-07,fire at premises
+E01716,2022-07-01,2022-10-02,new business relief
+E01841,2022-07-01,2022-10-19,insolvency administration
+E03135,2022-07-01,2022-11-24,flood damage
+E00221,2022-07-01,2022-10-06,insolvency administration
+E00940,2022-07-01,2022-09-23,flood damage
+E00055,2022-07-01,2022-11-12,insolvency administration
+E02530,2022-07-02,2022-10-12,insolvency administration
+E00576,2022-07-02,2022-10-25,flood damage
+E02751,2022-07-02,2022-10-27,new business relief
+E02270,2022-07-02,2022-10-29,insolvency administration
+E02635,2022-07-02,2022-11-14,new business relief
+E01747,2022-07-02,2022-09-20,ownership transfer
+E01911,2022-07-02,2022-11-02,new business relief
+E03063,2022-07-02,2022-09-25,flood damage
+E02030,2022-07-03,2022-11-15,flood damage
+E02360,2022-07-03,2022-12-09,ownership transfer
+E00485,2022-07-03,2022-10-07,new business relief
+E01912,2022-07-03,2022-10-05,flood damage
+E00063,2022-07-03,2022-10-06,insolvency administration
+E01322,2022-07-03,2022-10-28,fire at premises
+E02617,2022-07-04,2022-11-23,flood damage
+E01470,2022-07-05,2022-12-01,fire at premises
+E01798,2022-07-05,2022-11-01,flood damage
+E01378,2022-07-05,2022-10-16,new business relief
+E01460,2022-07-05,2022-09-24,new business relief
+E02863,2022-07-05,2022-09-30,ownership transfer
+E02891,2022-07-06,2022-09-24,flood damage
+E03013,2022-07-06,2022-12-04,fire at premises
+E00407,2022-07-06,2022-12-08,new business relief
+E00918,2022-07-07,2022-11-27,new business relief
+E02441,2022-07-07,2022-10-05,flood damage
+E01241,2022-07-07,2022-11-07,flood damage
+E00236,2022-07-07,2022-09-27,fire at premises
+E02813,2022-07-07,2022-09-29,ownership transfer
+E01160,2022-07-07,2022-11-16,ownership transfer
+E02163,2022-07-08,2022-11-14,ownership transfer
+E00604,2022-07-08,2022-10-15,flood damage
+E00962,2022-07-09,2022-10-01,ownership transfer
+E01978,2022-07-09,2022-10-01,flood damage
+E03131,2022-07-09,2022-10-29,new business relief
+E00692,2022-07-09,2022-09-29,insolvency administration
+E01368,2022-07-09,2022-12-02,new business relief
+E02547,2022-07-09,2022-10-11,insolvency administration
+E02966,2022-07-10,2022-11-04,insolvency administration
+E01664,2022-07-10,2022-11-01,flood damage
+E02999,2022-07-10,2022-11-08,fire at premises
+E01790,2022-07-10,2022-10-01,insolvency administration
+E00834,2022-07-10,2022-11-01,flood damage
+E01909,2022-07-10,2022-11-28,flood damage
+E01315,2022-07-10,2022-09-27,insolvency administration
+E01478,2022-07-10,2022-12-15,fire at premises
+E01601,2022-07-10,2022-10-19,fire at premises
+E03159,2022-07-10,2022-10-19,flood damage
+E01049,2022-07-11,2022-09-30,insolvency administration
+E01245,2022-07-11,2022-12-09,ownership transfer
+E02351,2022-07-11,2022-12-17,new business relief
+E00540,2022-07-11,2022-10-02,ownership transfer
+E03179,2022-07-12,2022-10-10,flood damage
+E02905,2022-07-12,2022-10-13,flood damage
+E01987,2022-07-12,2022-11-10,insolvency administration
+E01931,2022-07-12,2022-12-17,new business relief
+E03134,2022-07-13,2022-11-21,fire at premises
+E02452,2022-07-13,2022-12-15,ownership transfer
+E00313,2022-07-13,2022-12-14,flood damage
+E01027,2022-07-13,2022-10-12,flood damage
+E00091,2022-07-14,2022-10-16,fire at premises
+E00629,2022-07-14,2022-11-19,insolvency administration
+E02156,2022-07-14,2022-12-16,flood damage
+E00732,2022-07-14,2022-11-02,flood damage
+E02477,2022-07-14,2022-12-08,new business relief
+E00721,2022-07-14,2022-12-10,ownership transfer
+E01117,2022-07-14,2022-10-14,flood damage
+E00797,2022-07-15,2022-09-30,fire at premises
+E00446,2022-07-15,2022-10-23,insolvency administration
+E01502,2022-07-16,2022-12-20,fire at premises
+E01480,2022-07-16,2022-11-03,new business relief
+E02061,2022-07-17,2022-11-03,insolvency administration
+E02423,2022-07-17,2022-11-29,flood damage
+E00155,2022-07-17,2022-11-21,flood damage
+E00923,2022-07-17,2022-12-11,ownership transfer
+E01849,2022-07-17,2022-12-13,insolvency administration
+E01184,2022-07-18,2022-12-23,new business relief
+E00534,2022-07-18,2022-10-20,flood damage
+E01756,2022-07-18,2022-11-28,fire at premises
+E03139,2022-07-18,2022-10-30,new business relief
+E02735,2022-07-18,2022-10-06,flood damage
+E01380,2022-07-19,2022-10-12,ownership transfer
+E01728,2022-07-19,2022-11-15,flood damage
+E00241,2022-07-19,2022-11-02,fire at premises
+E02451,2022-07-19,2022-12-26,ownership transfer
+E02175,2022-07-20,2022-10-23,fire at premises
+E00729,2022-07-20,2022-10-12,insolvency administration
+E02330,2022-07-20,2022-12-22,fire at premises
+E01785,2022-07-20,2022-12-27,ownership transfer
+E00758,2022-07-20,2022-11-09,new business relief
+E01752,2022-07-21,2022-11-22,new business relief
+E01126,2022-07-21,2022-11-01,ownership transfer
+E01932,2022-07-21,2022-12-26,new business relief
+E00317,2022-07-21,2022-11-30,fire at premises
+E01718,2022-07-21,2022-10-11,new business relief
+E00641,2022-07-21,2022-11-01,ownership transfer
+E01855,2023-01-01,2023-05-09,fire at premises
+E02623,2023-01-01,2023-05-18,new business relief
+E02763,2023-01-01,2023-04-20,new business relief
+E00414,2023-01-01,2023-03-31,flood damage
+E02083,2023-01-01,2023-04-10,fire at premises
+E00434,2023-01-02,2023-04-26,new business relief
+E01691,2023-01-02,2023-04-25,insolvency administration
+E02160,2023-01-03,2023-05-12,fire at premises
+E02940,2023-01-03,2023-06-02,new business relief
+E02726,2023-01-03,2023-05-08,ownership transfer
+E01640,2023-01-03,2023-04-09,fire at premises
+E00850,2023-01-03,2023-06-09,insolvency administration
+E00926,2023-01-04,2023-04-15,flood damage
+E00326,2023-01-04,2023-05-01,fire at premises
+E03150,2023-01-05,2023-06-07,new business relief
+E01557,2023-01-05,2023-05-29,fire at premises
+E01171,2023-01-05,2023-05-17,fire at premises
+E01772,2023-01-05,2023-04-30,fire at premises
+E01102,2023-01-05,2023-05-16,fire at premises
+E01190,2023-01-05,2023-04-12,flood damage
+E01696,2023-01-05,2023-06-14,insolvency administration
+E02440,2023-01-06,2023-04-14,ownership transfer
+E01311,2023-01-06,2023-05-08,new business relief
+E00158,2023-01-06,2023-03-23,new business relief
+E00668,2023-01-06,2023-06-14,insolvency administration
+E02952,2023-01-06,2023-04-20,insolvency administration
+E01995,2023-01-07,2023-05-26,new business relief
+E01408,2023-01-07,2023-04-10,fire at premises
+E00073,2023-01-07,2023-04-17,insolvency administration
+E00007,2023-01-08,2023-06-10,ownership transfer
+E01686,2023-01-08,2023-04-20,ownership transfer
+E01949,2023-01-09,2023-03-30,insolvency administration
+E02557,2023-01-10,2023-04-30,new business relief
+E00736,2023-01-11,2023-05-18,ownership transfer
+E01144,2023-01-11,2023-04-30,fire at premises
+E01993,2023-01-11,2023-06-01,flood damage
+E01203,2023-01-11,2023-04-05,flood damage
+E03050,2023-01-11,2023-05-03,ownership transfer
+E00581,2023-01-12,2023-04-14,fire at premises
+E02130,2023-01-12,2023-04-11,new business relief
+E01457,2023-01-12,2023-05-03,fire at premises
+E02580,2023-01-12,2023-04-06,fire at premises
+E01814,2023-01-12,2023-05-07,ownership transfer
+E00731,2023-01-12,2023-04-20,ownership transfer
+E02244,2023-01-12,2023-06-15,ownership transfer
+E02867,2023-01-13,2023-06-17,fire at premises
+E00638,2023-01-13,2023-05-16,fire at premises
+E00992,2023-01-13,2023-06-19,new business relief
+E03146,2023-01-13,2023-04-13,new business relief
+E02688,2023-01-13,2023-05-21,insolvency administration
+E02739,2023-01-13,2023-04-30,ownership transfer
+E00017,2023-01-13,2023-04-05,flood damage
+E01421,2023-01-13,2023-05-24,new business relief
+E02765,2023-01-13,2023-04-18,ownership transfer
+E02483,2023-01-13,2023-06-15,flood damage
+E01118,2023-01-14,2023-04-24,new business relief
+E01081,2023-01-14,2023-06-06,new business relief
+E00852,2023-01-14,2023-06-18,flood damage
+E00829,2023-01-15,2023-04-07,flood damage
+E00807,2023-01-15,2023-05-15,ownership transfer
+E01097,2023-01-15,2023-04-23,ownership transfer
+E01130,2023-01-15,2023-06-02,flood damage
+E02245,2023-01-15,2023-05-27,new business relief
+E03138,2023-01-16,2023-05-12,ownership transfer
+E02773,2023-01-16,2023-05-14,new business relief
+E01745,2023-01-16,2023-05-02,fire at premises
+E00359,2023-01-17,2023-04-16,fire at premises
+E02645,2023-01-17,2023-04-06,ownership transfer
+E02748,2023-01-17,2023-06-07,fire at premises
+E00024,2023-01-18,2023-05-23,ownership transfer
+E01730,2023-01-18,2023-04-26,fire at premises
+E00935,2023-01-19,2023-04-18,new business relief
+E02223,2023-01-19,2023-05-31,new business relief
+E00148,2023-01-19,2023-06-23,fire at premises
+E01544,2023-01-19,2023-06-15,ownership transfer
+E00916,2023-01-19,2023-04-30,fire at premises
+E00597,2023-01-19,2023-04-27,insolvency administration
+E01210,2023-01-20,2023-05-11,fire at premises
+E00516,2023-01-20,2023-06-20,insolvency administration
+E01042,2023-01-20,2023-05-06,ownership transfer
+E01397,2023-01-20,2023-04-19,flood damage
+E00756,2023-01-21,2023-06-09,flood damage
+E00520,2023-01-21,2023-04-12,fire at premises
+E00023,2023-01-21,2023-05-02,ownership transfer
+E00039,2023-01-21,2023-04-24,fire at premises
+E01314,2023-04-01,2023-09-05,flood damage
+E02649,2023-04-01,2023-08-03,flood damage
+E02953,2023-04-01,2023-08-22,flood damage
+E02014,2023-04-02,2023-08-28,ownership transfer
+E00376,2023-04-02,2023-08-28,ownership transfer
+E00748,2023-04-03,2023-09-07,ownership transfer
+E00346,2023-04-03,2023-07-31,insolvency administration
+E02749,2023-04-03,2023-08-16,flood damage
+E00087,2023-04-03,2023-09-03,new business relief
+E00305,2023-04-03,2023-06-29,fire at premises
+E01504,2023-04-04,2023-07-18,flood damage
+E00423,2023-04-04,2023-07-08,insolvency administration
+E02675,2023-04-04,2023-08-03,fire at premises
+E02695,2023-04-04,2023-09-11,flood damage
+E01392,2023-04-04,2023-07-04,new business relief
+E00512,2023-04-04,2023-07-10,flood damage
+E00170,2023-04-05,2023-08-29,flood damage
+E00824,2023-04-05,2023-08-27,flood damage
+E00133,2023-04-05,2023-08-26,flood damage
+E03136,2023-04-05,2023-07-27,insolvency administration
+E02108,2023-04-06,2023-07-05,new business relief
+E01047,2023-04-06,2023-08-01,flood damage
+E00432,2023-04-07,2023-08-08,ownership transfer
+E01169,2023-04-07,2023-08-25,ownership transfer
+E03110,2023-04-07,2023-08-23,insolvency administration
+E01316,2023-04-08,2023-07-19,ownership transfer
+E00900,2023-04-08,2023-09-13,new business relief
+E02626,2023-04-08,2023-08-26,ownership transfer
+E01085,2023-04-09,2023-07-27,fire at premises
+E02419,2023-04-09,2023-07-21,ownership transfer
+E02123,2023-04-10,2023-09-04,fire at premises
+E02400,2023-04-10,2023-06-26,flood damage
+E02818,2023-04-10,2023-06-30,fire at premises
+E01364,2023-04-10,2023-08-18,flood damage
+E01812,2023-04-10,2023-09-07,flood damage
+E01307,2023-04-10,2023-08-25,new business relief
+E01355,2023-04-11,2023-08-29,ownership transfer
+E02150,2023-04-11,2023-09-14,new business relief
+E00210,2023-04-11,2023-07-12,ownership transfer
+E01192,2023-04-11,2023-08-01,ownership transfer
+E00606,2023-04-11,2023-06-29,fire at premises
+E02373,2023-04-12,2023-08-07,insolvency administration
+E02153,2023-04-12,2023-07-30,flood damage
+E01401,2023-04-12,2023-07-02,flood damage
+E02034,2023-04-12,2023-08-21,new business relief
+E01253,2023-04-12,2023-07-11,fire at premises
+E00495,2023-04-12,2023-08-26,fire at premises
+E01991,2023-04-12,2023-08-15,ownership transfer
+E02412,2023-04-12,2023-07-11,fire at premises
+E02832,2023-04-13,2023-09-10,fire at premises
+E00205,2023-04-13,2023-09-09,fire at premises
+E03091,2023-04-13,2023-06-28,insolvency administration
+E00450,2023-04-13,2023-07-15,ownership transfer
+E03140,2023-04-14,2023-08-04,new business relief
+E02296,2023-04-14,2023-07-24,insolvency administration
+E00470,2023-04-15,2023-09-13,fire at premises
+E02685,2023-04-15,2023-07-16,new business relief
+E00791,2023-04-15,2023-08-02,flood damage
+E01075,2023-04-16,2023-07-18,ownership transfer
+E00271,2023-04-17,2023-08-18,insolvency administration
+E03070,2023-04-17,2023-09-19,ownership transfer
+E02904,2023-04-17,2023-08-25,ownership transfer
+E01284,2023-04-19,2023-07-09,insolvency administration
+E00254,2023-04-20,2023-09-08,new business relief
+E00794,2023-04-21,2023-08-27,new business relief
+E00379,2023-04-21,2023-08-31,flood damage
+E01499,2023-07-01,2023-11-02,new business relief
+E01231,2023-07-01,2023-11-03,insolvency administration
+E01404,2023-07-01,2023-10-11,new business relief
+E03175,2023-07-01,2023-11-08,fire at premises
+E00815,2023-07-01,2023-11-24,insolvency administration
+E02854,2023-07-01,2023-10-16,ownership transfer
+E00121,2023-07-04,2023-11-21,insolvency administration
+E02253,2023-07-04,2023-10-16,new business relief
+E02850,2023-07-04,2023-12-08,new business relief
+E01576,2023-07-05,2023-09-19,new business relief
+E00469,2023-07-05,2023-12-03,ownership transfer
+E02697,2023-07-06,2023-09-20,insolvency administration
+E01959,2023-07-06,2023-10-14,flood damage
+E02262,2023-07-06,2023-09-24,flood damage
+E01704,2023-07-07,2023-09-22,new business relief
+E01608,2023-07-07,2023-11-29,ownership transfer
+E01643,2023-07-07,2023-10-21,flood damage
+E02998,2023-07-07,2023-09-23,new business relief
+E01209,2023-07-07,2023-10-22,ownership transfer
+E01906,2023-07-08,2023-11-11,insolvency administration
+E00752,2023-07-08,2023-11-09,ownership transfer
+E01548,2023-07-09,2023-11-08,ownership transfer
+E01142,2023-07-09,2023-11-22,ownership transfer
+E01837,2023-07-09,2023-11-08,fire at premises
+E02215,2023-07-09,2023-11-29,flood damage
+E02219,2023-07-09,2023-11-04,flood damage
+E01188,2023-07-10,2023-10-18,new business relief
+E02877,2023-07-10,2023-09-28,ownership transfer
+E00511,2023-07-10,2023-10-14,new business relief
+E02686,2023-07-10,2023-11-19,fire at premises
+E00973,2023-07-11,2023-10-31,insolvency administration
+E00885,2023-07-11,2023-11-10,ownership transfer
+E00353,2023-07-11,2023-12-14,flood damage
+E03068,2023-07-11,2023-09-24,ownership transfer
+E01398,2023-07-11,2023-10-09,fire at premises
+E00873,2023-07-12,2023-09-27,flood damage
+E02084,2023-07-12,2023-10-10,flood damage
+E02593,2023-07-12,2023-11-11,ownership transfer
+E03069,2023-07-12,2023-10-26,insolvency administration
+E01048,2023-07-13,2023-10-14,ownership transfer
+E03034,2023-07-13,2023-11-29,new business relief
+E00277,2023-07-14,2023-11-14,flood damage
+E01407,2023-07-14,2023-11-05,new business relief
+E02417,2023-07-14,2023-12-20,insolvency administration
+E02152,2023-07-15,2023-10-05,flood damage
+E01965,2023-07-15,2023-10-17,flood damage
+E00475,2023-07-15,2023-10-25,ownership transfer
+E02717,2023-07-16,2023-12-20,insolvency administration
+E00739,2023-07-16,2023-11-11,new business relief
+E01994,2023-07-16,2023-10-29,flood damage
+E02146,2023-07-17,2023-12-10,ownership transfer
+E00598,2023-07-17,2023-11-11,new business relief
+E00360,2023-07-18,2023-10-15,fire at premises
+E02550,2023-07-18,2023-12-03,fire at premises
+E01702,2023-07-18,2023-12-11,flood damage
+E01660,2023-07-18,2023-11-14,fire at premises
+E01165,2023-07-19,2023-12-20,insolvency administration
+E02114,2023-07-19,2023-11-19,flood damage
+E01079,2023-07-19,2023-10-08,ownership transfer
+E00381,2023-07-19,2023-10-26,ownership transfer
+E01977,2023-07-20,2023-10-08,insolvency administration
+E02443,2023-07-20,2023-11-20,insolvency administration
+E01807,2023-07-21,2023-12-07,flood damage
+E02299,2023-07-21,2023-11-04,insolvency administration
+E00693,2023-07-21,2023-11-13,new business relief
+E01675,2023-07-21,2023-11-10,ownership transfer
+E02442,2023-07-21,2023-11-14,ownership transfer
+E01218,2023-07-21,2023-12-27,ownership transfer
+E01897,2023-07-21,2023-12-06,fire at premises
+E00731,2024-01-01,2024-05-15,ownership transfer
+E00733,2024-01-01,2024-05-15,flood damage
+E02764,2024-01-02,2024-05-18,ownership transfer
+E02048,2024-01-02,2024-06-03,insolvency administration
+E02340,2024-01-02,2024-05-15,flood damage
+E01891,2024-01-02,2024-05-02,ownership transfer
+E01079,2024-01-02,2024-04-09,ownership transfer
+E00071,2024-01-02,2024-05-08,fire at premises
+E02010,2024-01-03,2024-04-30,insolvency administration
+E00046,2024-01-03,2024-05-22,flood damage
+E00849,2024-01-03,2024-04-21,fire at premises
+E00827,2024-01-03,2024-05-23,fire at premises
+E00977,2024-01-03,2024-04-23,new business relief
+E01947,2024-01-03,2024-05-13,new business relief
+E02932,2024-01-04,2024-05-26,new business relief
+E02895,2024-01-04,2024-04-27,insolvency administration
+E01458,2024-01-04,2024-05-16,fire at premises
+E01957,2024-01-04,2024-05-02,new business relief
+E01830,2024-01-04,2024-05-18,fire at premises
+E02888,2024-01-05,2024-03-20,flood damage
+E02037,2024-01-05,2024-06-07,insolvency administration
+E01178,2024-01-05,2024-04-04,ownership transfer
+E00355,2024-01-06,2024-06-01,insolvency administration
+E00663,2024-01-06,2024-05-10,flood damage
+E00805,2024-01-06,2024-06-14,flood damage
+E02470,2024-01-06,2024-03-21,fire at premises
+E01272,2024-01-07,2024-05-28,new business relief
+E02759,2024-01-07,2024-05-25,flood damage
+E01539,2024-01-07,2024-03-23,flood damage
+E01597,2024-01-07,2024-05-29,ownership transfer
+E00436,2024-01-07,2024-04-22,insolvency administration
+E01949,2024-01-07,2024-03-31,flood damage
+E00178,2024-01-07,2024-05-10,flood damage
+E03151,2024-01-08,2024-06-09,ownership transfer
+E02799,2024-01-08,2024-05-26,ownership transfer
+E02840,2024-01-08,2024-05-28,ownership transfer
+E01145,2024-01-08,2024-05-18,fire at premises
+E00996,2024-01-08,2024-05-31,fire at premises
+E01973,2024-01-08,2024-03-26,new business relief
+E01487,2024-01-09,2024-05-18,insolvency administration
+E01698,2024-01-09,2024-06-05,insolvency administration
+E00201,2024-01-09,2024-06-07,fire at premises
+E00092,2024-01-09,2024-06-06,new business relief
+E00133,2024-01-09,2024-06-06,new business relief
+E02771,2024-01-10,2024-04-05,ownership transfer
+E01880,2024-01-10,2024-04-27,ownership transfer
+E02905,2024-01-11,2024-04-08,insolvency administration
+E02368,2024-01-11,2024-05-31,flood damage
+E03097,2024-01-11,2024-04-03,flood damage
+E00051,2024-01-11,2024-05-19,fire at premises
+E01993,2024-01-11,2024-04-11,new business relief
+E00630,2024-01-12,2024-05-11,flood damage
+E00714,2024-01-12,2024-03-30,insolvency administration
+E02282,2024-01-12,2024-05-09,new business relief
+E01569,2024-01-12,2024-05-15,flood damage
+E02891,2024-01-13,2024-05-10,insolvency administration
+E00016,2024-01-13,2024-04-02,flood damage
+E00896,2024-01-13,2024-06-18,fire at premises
+E01229,2024-01-13,2024-04-25,fire at premises
+E00957,2024-01-14,2024-05-11,new business relief
+E02841,2024-01-14,2024-05-31,ownership transfer
+E02784,2024-01-14,2024-05-06,new business relief
+E02938,2024-01-14,2024-04-11,insolvency administration
+E00568,2024-01-14,2024-06-10,fire at premises
+E00956,2024-01-14,2024-06-08,flood damage
+E02845,2024-01-14,2024-04-01,ownership transfer
+E03033,2024-01-14,2024-05-27,insolvency administration
+E01045,2024-01-14,2024-04-19,fire at premises
+E01364,2024-01-14,2024-03-29,flood damage
+E02141,2024-01-14,2024-06-11,fire at premises
+E01970,2024-01-14,2024-04-27,new business relief
+E01350,2024-01-14,2024-06-17,new business relief
+E00214,2024-01-14,2024-06-10,fire at premises
+E00895,2024-01-14,2024-04-24,fire at premises
+E02033,2024-01-15,2024-06-06,fire at premises
+E01451,2024-01-15,2024-03-31,insolvency administration
+E00182,2024-01-15,2024-05-15,flood damage
+E03166,2024-01-15,2024-06-09,new business relief
+E01841,2024-01-15,2024-05-02,ownership transfer
+E02770,2024-01-15,2024-05-02,flood damage
+E01633,2024-01-15,2024-05-22,insolvency administration
+E01434,2024-01-15,2024-05-23,ownership transfer
+E01971,2024-01-15,2024-05-09,fire at premises
+E00250,2024-01-15,2024-06-16,new business relief
+E02829,2024-01-16,2024-06-16,new business relief
+E02767,2024-01-16,2024-05-05,insolvency administration
+E02243,2024-01-17,2024-04-08,new business relief
+E00767,2024-01-17,2024-04-07,fire at premises
+E01907,2024-01-17,2024-06-16,ownership transfer
+E02825,2024-01-17,2024-06-01,ownership transfer
+E00995,2024-01-17,2024-04-06,ownership transfer
+E00422,2024-01-17,2024-05-02,insolvency administration
+E00411,2024-01-17,2024-05-12,new business relief
+E02741,2024-01-18,2024-04-10,flood damage
+E02196,2024-01-18,2024-06-07,fire at premises
+E00151,2024-01-18,2024-04-06,flood damage
+E02222,2024-01-20,2024-04-28,insolvency administration
+E00584,2024-01-20,2024-04-19,fire at premises
+E00365,2024-01-20,2024-05-01,insolvency administration
+E00130,2024-01-20,2024-05-17,ownership transfer
+E00387,2024-01-20,2024-06-17,insolvency administration
+E00797,2024-01-21,2024-04-09,ownership transfer
+E01009,2024-01-21,2024-04-14,new business relief
+E02038,2024-01-21,2024-06-01,fire at premises
+E02287,2024-01-21,2024-05-30,insolvency administration
+E00605,2024-04-01,2024-08-11,fire at premises
+E03062,2024-04-01,2024-08-26,new business relief
+E03078,2024-04-01,2024-07-24,ownership transfer
+E00390,2024-04-01,2024-06-23,insolvency administration
+E00053,2024-04-01,2024-07-12,fire at premises
+E00352,2024-04-01,2024-06-25,ownership transfer
+E00087,2024-04-01,2024-07-13,fire at premises
+E02416,2024-04-02,2024-06-26,insolvency administration
+E00868,2024-04-02,2024-08-16,ownership transfer
+E01222,2024-04-02,2024-08-26,new business relief
+E01488,2024-04-02,2024-09-01,flood damage
+E02391,2024-04-02,2024-07-06,flood damage
+E02668,2024-04-02,2024-08-09,new business relief
+E01976,2024-04-02,2024-07-30,insolvency administration
+E02118,2024-04-02,2024-07-27,new business relief
+E00467,2024-04-03,2024-09-05,ownership transfer
+E02025,2024-04-03,2024-08-18,insolvency administration
+E01800,2024-04-03,2024-08-04,insolvency administration
+E00830,2024-04-03,2024-06-23,fire at premises
+E01470,2024-04-03,2024-08-12,insolvency administration
+E01455,2024-04-03,2024-06-27,fire at premises
+E02481,2024-04-03,2024-07-21,flood damage
+E00696,2024-04-03,2024-08-03,new business relief
+E01674,2024-04-03,2024-08-14,new business relief
+E00713,2024-04-03,2024-08-30,flood damage
+E00357,2024-04-03,2024-09-05,new business relief
+E01890,2024-04-04,2024-08-26,fire at premises
+E02549,2024-04-04,2024-07-26,new business relief
+E00301,2024-04-04,2024-06-24,flood damage
+E00009,2024-04-04,2024-07-24,ownership transfer
+E02078,2024-04-04,2024-06-30,insolvency administration
+E01253,2024-04-04,2024-08-20,ownership transfer
+E00750,2024-04-04,2024-06-26,ownership transfer
+E00427,2024-04-04,2024-06-19,insolvency administration
+E01682,2024-04-05,2024-08-29,new business relief
+E00984,2024-04-05,2024-08-30,new business relief
+E00606,2024-04-05,2024-09-12,insolvency administration
+E00493,2024-04-05,2024-08-26,new business relief
+E01619,2024-04-05,2024-07-17,fire at premises
+E00708,2024-04-05,2024-06-24,new business relief
+E00251,2024-04-06,2024-08-05,fire at premises
+E01896,2024-04-06,2024-07-09,flood damage
+E00157,2024-04-06,2024-07-14,new business relief
+E00260,2024-04-06,2024-07-16,ownership transfer
+E02903,2024-04-07,2024-07-17,ownership transfer
+E00437,2024-04-07,2024-07-29,flood damage
+E02870,2024-04-07,2024-07-14,ownership transfer
+E02807,2024-04-07,2024-09-05,insolvency administration
+E03091,2024-04-07,2024-08-30,new business relief
+E01668,2024-04-08,2024-07-04,insolvency administration
+E02263,2024-04-08,2024-07-10,ownership transfer
+E00787,2024-04-08,2024-07-30,flood damage
+E00682,2024-04-08,2024-07-17,flood damage
+E03178,2024-04-08,2024-06-28,ownership transfer
+E00296,2024-04-08,2024-09-07,insolvency administration
+E01412,2024-04-08,2024-09-01,new business relief
+E02444,2024-04-09,2024-07-27,ownership transfer
+E00819,2024-04-09,2024-07-24,ownership transfer
+E02746,2024-04-09,2024-08-25,insolvency administration
+E00812,2024-04-09,2024-09-11,new business relief
+E01963,2024-04-09,2024-08-03,new business relief
+E00911,2024-04-09,2024-07-01,new business relief
+E00930,2024-04-09,2024-07-27,fire at premises
+E02673,2024-04-09,2024-08-29,flood damage
+E01875,2024-04-11,2024-07-05,new business relief
+E00144,2024-04-11,2024-07-30,ownership transfer
+E03045,2024-04-11,2024-06-27,new business relief
+E01279,2024-04-11,2024-08-06,insolvency administration
+E02721,2024-04-11,2024-08-14,flood damage
+E02560,2024-04-11,2024-07-16,new business relief
+E00478,2024-04-11,2024-07-14,flood damage
+E03073,2024-04-12,2024-06-29,new business relief
+E02138,2024-04-12,2024-08-14,flood damage
+E00255,2024-04-13,2024-07-24,new business relief
+E03170,2024-04-13,2024-07-02,flood damage
+E02074,2024-04-13,2024-07-24,ownership transfer
+E02697,2024-04-13,2024-07-17,insolvency administration
+E00848,2024-04-14,2024-08-26,ownership transfer
+E02461,2024-04-14,2024-07-13,flood damage
+E00660,2024-04-15,2024-08-23,new business relief
+E00366,2024-04-15,2024-09-10,insolvency administration
+E01898,2024-04-15,2024-07-20,flood damage
+E01301,2024-04-16,2024-07-02,new business relief
+E00631,2024-04-16,2024-07-26,insolvency administration
+E01581,2024-04-16,2024-08-16,flood damage
+E02587,2024-04-16,2024-09-02,fire at premises
+E02670,2024-04-17,2024-08-03,new business relief
+E01689,2024-04-17,2024-07-03,flood damage
+E01948,2024-04-17,2024-07-16,ownership transfer
+E00687,2024-04-17,2024-07-07,ownership transfer
+E00931,2024-04-17,2024-08-14,insolvency administration
+E00791,2024-04-17,2024-08-13,insolvency administration
+E00247,2024-04-18,2024-08-02,new business relief
+E00445,2024-04-18,2024-09-03,new business relief
+E03153,2024-04-18,2024-08-31,flood damage
+E02129,2024-04-18,2024-09-01,insolvency administration
+E00887,2024-04-18,2024-09-19,insolvency administration
+E01529,2024-04-18,2024-09-13,ownership transfer
+E00507,2024-04-18,2024-07-03,new business relief
+E02941,2024-04-19,2024-08-23,new business relief
+E00944,2024-04-19,2024-07-20,fire at premises
+E02209,2024-04-19,2024-09-24,new business relief
+E02332,2024-04-19,2024-08-18,insolvency administration
+E02984,2024-04-19,2024-08-01,new business relief
+E02990,2024-04-20,2024-07-22,fire at premises
+E02610,2024-04-20,2024-09-22,fire at premises
+E02620,2024-04-20,2024-07-29,ownership transfer
+E02169,2024-04-20,2024-09-26,ownership transfer
+E02428,2024-04-20,2024-08-20,fire at premises
+E01081,2024-04-20,2024-08-02,ownership transfer
+E01342,2024-04-21,2024-07-26,insolvency administration
+E02551,2024-04-21,2024-09-26,ownership transfer
+E02438,2024-04-21,2024-08-02,insolvency administration
+E01439,2024-04-21,2024-08-11,ownership transfer
+E02810,2024-04-21,2024-09-22,fire at premises
+E01309,2024-04-21,2024-08-11,ownership transfer
+E02219,2024-04-21,2024-07-15,new business relief
+E00550,2024-07-01,2024-10-25,fire at premises
+E03188,2024-07-01,2024-11-24,fire at premises
+E01317,2024-07-01,2024-10-26,new business relief
+E01630,2024-07-01,2024-11-21,ownership transfer
+E00297,2024-07-02,2024-12-09,flood damage
+E02756,2024-07-02,2024-09-26,ownership transfer
+E03168,2024-07-02,2024-09-17,fire at premises
+E01265,2024-07-02,2024-11-10,new business relief
+E00698,2024-07-03,2024-10-18,insolvency administration
+E02965,2024-07-03,2024-11-08,ownership transfer
+E02404,2024-07-03,2024-09-26,ownership transfer
+E02641,2024-07-03,2024-12-10,new business relief
+E00754,2024-07-04,2024-09-25,ownership transfer
+E02407,2024-07-04,2024-11-13,new business relief
+E02236,2024-07-04,2024-09-18,new business relief
+E01594,2024-07-04,2024-11-19,insolvency administration
+E01810,2024-07-04,2024-09-19,ownership transfer
+E01694,2024-07-04,2024-12-01,fire at premises
+E01090,2024-07-04,2024-10-26,new business relief
+E00860,2024-07-04,2024-11-06,ownership transfer
+E00473,2024-07-04,2024-10-01,new business relief
+E01007,2024-07-05,2024-10-07,new business relief
+E00224,2024-07-05,2024-10-29,flood damage
+E01903,2024-07-05,2024-10-25,fire at premises
+E03028,2024-07-05,2024-10-17,fire at premises
+E03143,2024-07-06,2024-10-13,new business relief
+E00049,2024-07-06,2024-10-30,fire at premises
+E01089,2024-07-06,2024-10-06,flood damage
+E00514,2024-07-06,2024-10-05,ownership transfer
+E00305,2024-07-06,2024-11-23,ownership transfer
+E02729,2024-07-06,2024-10-12,fire at premises
+E02250,2024-07-06,2024-10-04,insolvency administration
+E00771,2024-07-07,2024-11-23,ownership transfer
+E01924,2024-07-07,2024-11-30,fire at premises
+E01336,2024-07-08,2024-10-26,insolvency administration
+E01780,2024-07-08,2024-10-10,new business relief
+E01169,2024-07-08,2024-12-03,fire at premises
+E02363,2024-07-09,2024-10-13,ownership transfer
+E00710,2024-07-09,2024-12-07,flood damage
+E02625,2024-07-09,2024-12-12,insolvency administration
+E01654,2024-07-09,2024-10-28,new business relief
+E01716,2024-07-10,2024-10-02,fire at premises
+E02410,2024-07-10,2024-11-17,fire at premises
+E00131,2024-07-10,2024-09-27,insolvency administration
+E01893,2024-07-10,2024-10-31,flood damage
+E01829,2024-07-10,2024-12-17,insolvency administration
+E01691,2024-07-10,2024-12-04,flood damage
+E02805,2024-07-10,2024-10-14,flood damage
+E00035,2024-07-11,2024-12-04,flood damage
+E01056,2024-07-11,2024-10-05,ownership transfer
+E01707,2024-07-11,2024-12-18,ownership transfer
+E00368,2024-07-11,2024-11-11,ownership transfer
+E02022,2024-07-11,2024-12-17,flood damage
+E00529,2024-07-11,2024-09-24,insolvency administration
+E00326,2024-07-11,2024-12-03,flood damage
+E00307,2024-07-12,2024-11-06,ownership transfer
+E01261,2024-07-12,2024-12-17,fire at premises
+E00968,2024-07-12,2024-12-09,flood damage
+E01897,2024-07-12,2024-12-13,fire at premises
+E01192,2024-07-12,2024-11-21,flood damage
+E02319,2024-07-13,2024-11-19,fire at premises
+E01232,2024-07-13,2024-11-13,fire at premises
+E02171,2024-07-13,2024-10-19,insolvency administration
+E02146,2024-07-13,2024-10-22,ownership transfer
+E01578,2024-07-13,2024-10-26,ownership transfer
+E01391,2024-07-14,2024-10-28,insolvency administration
+E02187,2024-07-14,2024-09-30,ownership transfer
+E02310,2024-07-14,2024-10-30,ownership transfer
+E03175,2024-07-14,2024-11-09,insolvency administration
+E02776,2024-07-15,2024-11-23,new business relief
+E01842,2024-07-15,2024-11-12,flood damage
+E02370,2024-07-15,2024-12-19,insolvency administration
+E00875,2024-07-15,2024-11-12,ownership transfer
+E02865,2024-07-15,2024-10-10,fire at premises
+E02972,2024-07-15,2024-12-04,insolvency administration
+E02159,2024-07-16,2024-10-13,ownership transfer
+E00449,2024-07-16,2024-12-16,new business relief
+E00292,2024-07-16,2024-11-18,fire at premises
+E00929,2024-07-16,2024-11-05,fire at premises
+E00854,2024-07-16,2024-11-24,ownership transfer
+E03111,2024-07-16,2024-10-18,fire at premises
+E01796,2024-07-16,2024-11-04,flood damage
+E02882,2024-07-17,2024-11-03,fire at premises
+E02249,2024-07-17,2024-10-29,fire at premises
+E01643,2024-07-17,2024-10-13,flood damage
+E00475,2024-07-17,2024-12-10,insolvency administration
+E02588,2024-07-17,2024-12-05,fire at premises
+E02894,2024-07-18,2024-10-10,insolvency administration
+E00231,2024-07-18,2024-10-01,ownership transfer
+E01734,2024-07-19,2024-11-20,new business relief
+E02548,2024-07-19,2024-11-14,flood damage
+E01170,2024-07-19,2024-11-05,flood damage
+E02225,2024-07-19,2024-10-28,new business relief
+E01964,2024-07-19,2024-12-19,fire at premises
+E02578,2024-07-20,2024-10-13,flood damage
+E02512,2024-07-20,2024-11-02,fire at premises
+E01247,2024-07-20,2024-10-08,fire at premises
+E02283,2024-07-20,2024-12-06,ownership transfer
+E02576,2024-07-20,2024-10-16,insolvency administration
+E03034,2024-07-20,2024-10-09,fire at premises
+E02918,2024-07-20,2024-10-03,ownership transfer
+E02801,2024-07-20,2024-12-07,insolvency administration
+E00901,2024-07-21,2024-11-26,insolvency administration
+E00942,2024-07-21,2024-11-20,flood damage
+E00202,2024-07-21,2024-10-24,insolvency administration
+E01857,2024-07-21,2024-10-05,flood damage
+E02450,2024-07-21,2024-11-18,fire at premises
+E00458,2024-07-21,2024-10-24,new business relief
+E00223,2025-01-01,2025-06-04,new business relief
+E01661,2025-01-01,2025-05-16,new business relief
+E00581,2025-01-01,2025-04-11,insolvency administration
+E01544,2025-01-01,2025-04-05,new business relief
+E02218,2025-01-01,2025-04-18,fire at premises
+E02459,2025-01-01,2025-03-28,ownership transfer
+E02705,2025-01-01,2025-06-07,ownership transfer
+E01879,2025-01-01,2025-04-19,flood damage
+E02716,2025-01-01,2025-05-25,fire at premises
+E00355,2025-01-02,2025-04-04,new business relief
+E01907,2025-01-02,2025-05-14,insolvency administration
+E02453,2025-01-02,2025-05-08,fire at premises
+E02735,2025-01-02,2025-05-17,insolvency administration
+E01317,2025-01-02,2025-04-14,flood damage
+E00453,2025-01-02,2025-05-02,new business relief
+E01663,2025-01-02,2025-05-27,insolvency administration
+E02589,2025-01-02,2025-05-19,new business relief
+E02354,2025-01-02,2025-04-02,flood damage
+E00958,2025-01-03,2025-05-27,ownership transfer
+E00733,2025-01-03,2025-05-25,insolvency administration
+E01250,2025-01-03,2025-03-24,fire at premises
+E02796,2025-01-03,2025-05-30,flood damage
+E00702,2025-01-03,2025-06-05,new business relief
+E02084,2025-01-04,2025-05-28,new business relief
+E01916,2025-01-04,2025-04-02,new business relief
+E02835,2025-01-04,2025-05-09,flood damage
+E02491,2025-01-04,2025-04-16,insolvency administration
+E01098,2025-01-04,2025-04-22,insolvency administration
+E00140,2025-01-04,2025-05-11,ownership transfer
+E01368,2025-01-04,2025-05-11,fire at premises
+E00922,2025-01-05,2025-05-12,ownership transfer
+E00830,2025-01-05,2025-04-20,flood damage
+E01607,2025-01-05,2025-05-06,fire at premises
+E01829,2025-01-05,2025-06-07,flood damage
+E00186,2025-01-06,2025-05-08,new business relief
+E03027,2025-01-06,2025-06-14,ownership transfer
+E00596,2025-01-06,2025-04-24,insolvency administration
+E02268,2025-01-06,2025-05-07,fire at premises
+E02207,2025-01-06,2025-04-25,new business relief
+E01244,2025-01-06,2025-05-20,insolvency administration
+E02575,2025-01-06,2025-04-17,flood damage
+E02525,2025-01-06,2025-03-23,fire at premises
+E02876,2025-01-06,2025-05-13,flood damage
+E01446,2025-01-06,2025-05-12,flood damage
+E01020,2025-01-06,2025-03-22,flood damage
+E03007,2025-01-07,2025-04-01,new business relief
+E03185,2025-01-07,2025-05-22,ownership transfer
+E01267,2025-01-07,2025-04-15,fire at premises
+E00129,2025-01-07,2025-04-03,insolvency administration
+E02501,2025-01-07,2025-06-13,new business relief
+E02688,2025-01-08,2025-06-09,insolvency administration
+E01593,2025-01-08,2025-06-12,fire at premises
+E01897,2025-01-08,2025-04-21,insolvency administration
+E02033,2025-01-09,2025-04-16,flood damage
+E00552,2025-01-09,2025-05-27,fire at premises
+E00171,2025-01-09,2025-04-10,insolvency administration
+E02602,2025-01-09,2025-05-15,insolvency administration
+E02982,2025-01-09,2025-04-12,ownership transfer
+E02361,2025-01-09,2025-05-01,insolvency administration
+E02332,2025-01-09,2025-04-02,fire at premises
+E00806,2025-01-09,2025-05-21,ownership transfer
+E01349,2025-01-09,2025-04-10,flood damage
+E01686,2025-01-10,2025-04-05,insolvency administration
+E00209,2025-01-10,2025-06-02,flood damage
+E03171,2025-01-10,2025-06-15,flood damage
+E02751,2025-01-10,2025-05-08,flood damage
+E01046,2025-01-10,2025-04-22,ownership transfer
+E02394,2025-01-10,2025-04-30,flood damage
+E02910,2025-01-11,2025-06-11,insolvency administration
+E00007,2025-01-11,2025-04-23,fire at premises
+E02294,2025-01-11,2025-04-06,new business relief
+E01100,2025-01-11,2025-04-14,ownership transfer
+E02001,2025-01-11,2025-04-27,insolvency administration
+E02328,2025-01-11,2025-04-13,flood damage
+E00978,2025-01-11,2025-05-20,ownership transfer
+E01754,2025-01-11,2025-03-30,flood damage
+E02036,2025-01-11,2025-05-09,new business relief
+E00645,2025-01-12,2025-05-20,new business relief
+E01279,2025-01-12,2025-04-02,ownership transfer
+E02851,2025-01-12,2025-05-26,new business relief
+E00966,2025-01-13,2025-05-15,ownership transfer
+E01295,2025-01-13,2025-06-11,flood damage
+E02342,2025-01-13,2025-04-20,ownership transfer
+E02380,2025-01-13,2025-04-30,flood damage
+E02679,2025-01-13,2025-05-01,ownership transfer
+E01253,2025-01-13,2025-06-02,flood damage
+E00601,2025-01-14,2025-04-04,insolvency administration
+E00937,2025-01-14,2025-05-01,insolvency administration
+E02312,2025-01-14,2025-04-07,new business relief
+E00326,2025-01-14,2025-06-02,insolvency administration
+E00693,2025-01-15,2025-05-02,insolvency administration
+E01404,2025-01-15,2025-04-07,insolvency administration
+E02283,2025-01-15,2025-05-17,fire at premises
+E00317,2025-01-15,2025-05-19,flood damage
+E01918,2025-01-15,2025-05-09,insolvency administration
+E00401,2025-01-15,2025-05-08,ownership transfer
+E00544,2025-01-15,2025-05-10,ownership transfer
+E01611,2025-01-16,2025-04-29,flood damage
+E02745,2025-01-16,2025-04-15,fire at premises
+E00871,2025-01-16,2025-04-30,insolvency administration
+E00996,2025-01-16,2025-05-07,insolvency administration
+E01260,2025-01-16,2025-06-15,ownership transfer
+E02849,2025-01-16,2025-05-03,flood damage
+E00439,2025-01-16,2025-04-14,new business relief
+E00691,2025-01-17,2025-04-15,fire at premises
+E02677,2025-01-17,2025-05-15,fire at premises
+E01288,2025-01-17,2025-06-02,flood damage
+E03183,2025-01-17,2025-04-02,insolvency administration
+E02630,2025-01-17,2025-04-27,new business relief
+E02759,2025-01-18,2025-04-12,fire at premises
+E02256,2025-01-18,2025-06-16,ownership transfer
+E00761,2025-01-18,2025-04-12,insolvency administration
+E03074,2025-01-18,2025-04-07,insolvency administration
+E01121,2025-01-18,2025-05-16,new business relief
+E00679,2025-01-18,2025-05-25,insolvency administration
+E02613,2025-01-18,2025-06-09,new business relief
+E02566,2025-01-19,2025-05-23,insolvency administration
+E01438,2025-01-19,2025-04-17,new business relief
+E00729,2025-01-19,2025-05-31,insolvency administration
+E02124,2025-01-19,2025-05-07,insolvency administration
+E02261,2025-01-19,2025-05-08,flood damage
+E00805,2025-01-19,2025-06-06,new business relief
+E03131,2025-01-19,2025-05-09,ownership transfer
+E00084,2025-01-20,2025-06-07,ownership transfer
+E00573,2025-01-20,2025-06-06,ownership transfer
+E02185,2025-01-20,2025-04-27,new business relief
+E02125,2025-01-20,2025-04-10,new business relief
+E01009,2025-01-20,2025-05-20,flood damage
+E02370,2025-01-20,2025-04-22,insolvency administration
+E00339,2025-01-21,2025-06-07,new business relief
+E02798,2025-01-21,2025-06-22,flood damage
+E00718,2025-01-21,2025-06-29,fire at premises
+E01891,2025-01-21,2025-04-06,flood damage
+E00720,2025-01-21,2025-06-18,insolvency administration
+E01817,2025-01-21,2025-06-27,new business relief
+E00117,2025-04-01,2025-09-04,new business relief
+E00550,2025-04-01,2025-08-10,new business relief
+E01235,2025-04-01,2025-08-08,ownership transfer
+E01493,2025-04-01,2025-08-14,insolvency administration
+E00305,2025-04-01,2025-06-27,new business relief
+E01988,2025-04-01,2025-08-05,ownership transfer
+E03102,2025-04-01,2025-07-07,fire at premises
+E01142,2025-04-02,2025-07-29,insolvency administration
+E02062,2025-04-02,2025-07-01,ownership transfer
+E01799,2025-04-02,2025-07-09,insolvency administration
+E01257,2025-04-02,2025-08-07,flood damage
+E01670,2025-04-02,2025-08-03,ownership transfer
+E02135,2025-04-02,2025-06-26,fire at premises
+E01980,2025-04-03,2025-06-24,new business relief
+E00875,2025-04-03,2025-07-10,ownership transfer
+E01099,2025-04-03,2025-07-08,insolvency administration
+E01297,2025-04-03,2025-08-28,new business relief
+E00052,2025-04-03,2025-08-14,flood damage
+E00032,2025-04-03,2025-07-13,flood damage
+E00302,2025-04-03,2025-07-03,fire at premises
+E01697,2025-04-03,2025-08-14,insolvency administration
+E01049,2025-04-04,2025-08-28,new business relief
+E00538,2025-04-04,2025-07-04,fire at premises
+E01225,2025-04-04,2025-07-13,fire at premises
+E00298,2025-04-04,2025-07-09,ownership transfer
+E00936,2025-04-04,2025-09-02,flood damage
+E03141,2025-04-04,2025-09-09,insolvency administration
+E02023,2025-04-04,2025-07-16,insolvency administration
+E00780,2025-04-05,2025-08-13,fire at premises
+E00284,2025-04-05,2025-09-09,flood damage
+E02804,2025-04-05,2025-06-25,fire at premises
+E00071,2025-04-05,2025-08-20,insolvency administration
+E02846,2025-04-05,2025-08-31,new business relief
+E00478,2025-04-05,2025-08-07,fire at premises
+E00372,2025-04-05,2025-09-01,new business relief
+E02886,2025-04-06,2025-08-22,new business relief
+E02578,2025-04-06,2025-07-29,fire at premises
+E01012,2025-04-06,2025-09-02,fire at premises
+E02037,2025-04-06,2025-08-02,new business relief
+E02913,2025-04-06,2025-07-23,fire at premises
+E01635,2025-04-06,2025-08-03,fire at premises
+E02547,2025-04-06,2025-07-14,new business relief
+E01082,2025-04-07,2025-08-25,fire at premises
+E01280,2025-04-07,2025-08-12,insolvency administration
+E02107,2025-04-07,2025-07-04,insolvency administration
+E01863,2025-04-07,2025-07-10,fire at premises
+E02894,2025-04-08,2025-06-23,new business relief
+E01283,2025-04-08,2025-08-24,fire at premises
+E00873,2025-04-08,2025-06-24,fire at premises
+E00905,2025-04-08,2025-08-10,new business relief
+E00844,2025-04-08,2025-08-01,ownership transfer
+E02213,2025-04-08,2025-08-26,ownership transfer
+E02841,2025-04-09,2025-09-12,new business relief
+E00503,2025-04-09,2025-08-27,new business relief
+E02181,2025-04-09,2025-08-20,fire at premises
+E01819,2025-04-09,2025-08-08,ownership transfer
+E03015,2025-04-09,2025-07-22,ownership transfer
+E01991,2025-04-09,2025-07-22,new business relief
+E01765,2025-04-09,2025-07-15,ownership transfer
+E00320,2025-04-09,2025-07-22,new business relief
+E01841,2025-04-10,2025-08-22,insolvency administration
+E00994,2025-04-10,2025-09-03,new business relief
+E02655,2025-04-10,2025-07-19,new business relief
+E00827,2025-04-10,2025-07-05,ownership transfer
+E02938,2025-04-10,2025-07-16,fire at premises
+E01594,2025-04-10,2025-07-21,flood damage
+E01687,2025-04-10,2025-08-12,insolvency administration
+E02257,2025-04-10,2025-07-26,new business relief
+E00750,2025-04-10,2025-07-10,ownership transfer
+E01758,2025-04-10,2025-09-11,insolvency administration
+E03126,2025-04-11,2025-09-01,ownership transfer
+E00648,2025-04-11,2025-09-06,new business relief
+E01913,2025-04-11,2025-07-29,flood damage
+E03162,2025-04-11,2025-07-13,insolvency administration
+E02694,2025-04-11,2025-08-06,fire at premises
+E00206,2025-04-11,2025-07-09,new business relief
+E00324,2025-04-11,2025-08-28,ownership transfer
+E03154,2025-04-11,2025-08-23,ownership transfer
+E00732,2025-04-11,2025-09-17,fire at premises
+E01451,2025-04-12,2025-09-02,ownership transfer
+E02319,2025-04-12,2025-08-04,flood damage
+E01415,2025-04-12,2025-08-29,new business relief
+E00928,2025-04-12,2025-07-22,fire at premises
+E00128,2025-04-12,2025-07-10,insolvency administration
+E02756,2025-04-12,2025-06-30,insolvency administration
+E01956,2025-04-13,2025-09-11,flood damage
+E00470,2025-04-13,2025-07-27,fire at premises
+E00213,2025-04-13,2025-09-02,flood damage
+E02813,2025-04-13,2025-09-01,ownership transfer
+E02954,2025-04-13,2025-07-04,new business relief
+E02783,2025-04-13,2025-08-11,flood damage
+E00840,2025-04-13,2025-08-02,flood damage
+E01875,2025-04-14,2025-08-03,ownership transfer
+E02522,2025-04-14,2025-07-06,fire at premises
+E00901,2025-04-14,2025-09-05,new business relief
+E01512,2025-04-14,2025-09-11,fire at premises
+E02500,2025-04-14,2025-08-20,insolvency administration
+E02016,2025-04-14,2025-09-13,fire at premises
+E01291,2025-04-14,2025-08-24,new business relief
+E02788,2025-04-14,2025-08-13,fire at premises
+E00510,2025-04-14,2025-08-09,new business relief
+E01698,2025-04-15,2025-08-09,fire at premises
+E02430,2025-04-15,2025-06-30,ownership transfer
+E01448,2025-04-15,2025-09-15,new business relief
+E03159,2025-04-15,2025-08-29,new business relief
+E01795,2025-04-15,2025-08-29,insolvency administration
+E02382,2025-04-15,2025-07-07,fire at premises
+E01816,2025-04-16,2025-08-18,new business relief
+E00353,2025-04-16,2025-07-12,flood damage
+E00756,2025-04-16,2025-08-01,ownership transfer
+E00600,2025-04-16,2025-09-01,flood damage
+E01434,2025-04-16,2025-07-24,fire at premises
+E02606,2025-04-16,2025-07-16,ownership transfer
+E02201,2025-04-16,2025-07-02,fire at premises
+E01942,2025-04-16,2025-08-15,insolvency administration
+E00836,2025-04-16,2025-08-17,ownership transfer
+E00054,2025-04-17,2025-08-23,insolvency administration
+E00656,2025-04-17,2025-08-25,ownership transfer
+E01470,2025-04-17,2025-09-04,ownership transfer
+E01214,2025-04-17,2025-08-18,fire at premises
+E00768,2025-04-17,2025-07-18,ownership transfer
+E02222,2025-04-17,2025-08-10,flood damage
+E02534,2025-04-17,2025-09-11,insolvency administration
+E01625,2025-04-17,2025-07-12,fire at premises
+E01987,2025-04-17,2025-09-09,insolvency administration
+E00288,2025-04-17,2025-07-18,flood damage
+E02242,2025-04-17,2025-08-28,fire at premises
+E02387,2025-04-17,2025-08-31,fire at premises
+E01606,2025-04-18,2025-08-16,ownership transfer
+E00445,2025-04-18,2025-07-02,flood damage
+E00086,2025-04-18,2025-07-13,fire at premises
+E00777,2025-04-18,2025-09-24,flood damage
+E02041,2025-04-18,2025-07-04,new business relief
+E03157,2025-04-18,2025-09-24,flood damage
+E00862,2025-04-18,2025-09-16,flood damage
+E03001,2025-04-18,2025-09-25,ownership transfer
+E01653,2025-04-18,2025-07-03,fire at premises
+E02567,2025-04-18,2025-07-05,ownership transfer
+E03065,2025-04-19,2025-08-24,ownership transfer
+E01040,2025-04-19,2025-09-16,insolvency administration
+E02368,2025-04-19,2025-07-11,flood damage
+E01384,2025-04-19,2025-08-29,new business relief
+E01166,2025-04-19,2025-09-01,new business relief
+E00944,2025-04-20,2025-09-16,insolvency administration
+E01319,2025-04-20,2025-09-20,fire at premises
+E02899,2025-04-20,2025-07-29,insolvency administration
+E01303,2025-04-20,2025-07-19,flood damage
+E01014,2025-04-20,2025-08-16,fire at premises
+E00165,2025-04-20,2025-09-02,flood damage
+E01045,2025-04-20,2025-09-03,fire at premises
+E01881,2025-04-21,2025-09-03,insolvency administration
+E02159,2025-04-21,2025-08-24,insolvency administration
+E01900,2025-04-21,2025-09-02,fire at premises
+E01588,2025-04-21,2025-09-15,insolvency administration
+E00625,2025-04-21,2025-09-09,fire at premises
+E01265,2025-04-21,2025-08-24,flood damage
+E02055,2025-04-21,2025-09-26,insolvency administration
+E00932,2025-04-21,2025-07-20,fire at premises
+E02021,2025-04-21,2025-09-01,insolvency administration
+E00250,2025-04-21,2025-08-01,insolvency administration
+E02030,2025-07-01,2025-10-12,insolvency administration
+E02634,2025-07-01,2025-11-06,ownership transfer
+E00224,2025-07-01,2025-12-02,new business relief
+E01856,2025-07-01,2025-11-04,insolvency administration
+E01231,2025-07-02,2025-10-21,flood damage
+E01591,2025-07-02,2025-11-08,insolvency administration
+E02872,2025-07-02,2025-12-03,fire at premises
+E00451,2025-07-02,2025-11-05,ownership transfer
+E01150,2025-07-02,2025-11-28,ownership transfer
+E00867,2025-07-02,2025-11-17,insolvency administration
+E02942,2025-07-02,2025-09-28,flood damage
+E02007,2025-07-02,2025-10-06,fire at premises
+E01497,2025-07-03,2025-09-27,insolvency administration
+E02664,2025-07-03,2025-11-23,fire at premises
+E01038,2025-07-03,2025-10-28,insolvency administration
+E01903,2025-07-03,2025-11-07,insolvency administration
+E00731,2025-07-03,2025-11-25,fire at premises
+E01846,2025-07-03,2025-10-07,insolvency administration
+E01333,2025-07-03,2025-10-25,ownership transfer
+E02521,2025-07-04,2025-11-22,new business relief
+E02443,2025-07-04,2025-11-19,insolvency administration
+E01571,2025-07-04,2025-11-16,flood damage
+E02700,2025-07-05,2025-09-20,fire at premises
+E03041,2025-07-05,2025-11-22,insolvency administration
+E01965,2025-07-05,2025-10-29,new business relief
+E01321,2025-07-05,2025-11-03,flood damage
+E01797,2025-07-05,2025-11-05,new business relief
+E00420,2025-07-05,2025-11-10,new business relief
+E01196,2025-07-05,2025-09-24,fire at premises
+E00669,2025-07-05,2025-09-19,insolvency administration
+E01759,2025-07-06,2025-09-19,flood damage
+E02038,2025-07-06,2025-10-13,fire at premises
+E00842,2025-07-06,2025-10-03,fire at premises
+E01654,2025-07-06,2025-10-04,ownership transfer
+E02203,2025-07-06,2025-10-20,insolvency administration
+E03175,2025-07-06,2025-11-20,fire at premises
+E00398,2025-07-06,2025-11-29,fire at premises
+E00551,2025-07-07,2025-11-13,insolvency administration
+E01338,2025-07-07,2025-10-02,new business relief
+E00776,2025-07-07,2025-10-27,new business relief
+E03073,2025-07-08,2025-10-09,fire at premises
+E02243,2025-07-08,2025-12-01,flood damage
+E01642,2025-07-08,2025-10-29,insolvency administration
+E02142,2025-07-08,2025-11-26,ownership transfer
+E00010,2025-07-09,2025-12-10,insolvency administration
+E02122,2025-07-09,2025-10-26,fire at premises
+E00829,2025-07-09,2025-11-30,insolvency administration
+E00892,2025-07-09,2025-11-08,fire at premises
+E02939,2025-07-09,2025-11-06,ownership transfer
+E03036,2025-07-09,2025-10-11,flood damage
+E01161,2025-07-09,2025-12-12,new business relief
+E02963,2025-07-09,2025-09-30,flood damage
+E00737,2025-07-10,2025-10-03,insolvency administration
+E01934,2025-07-10,2025-10-11,flood damage
+E02318,2025-07-10,2025-09-29,new business relief
+E01867,2025-07-10,2025-11-23,insolvency administration
+E00319,2025-07-10,2025-11-04,flood damage
+E00307,2025-07-11,2025-09-25,ownership transfer
+E02593,2025-07-11,2025-10-18,ownership transfer
+E01382,2025-07-11,2025-11-07,ownership transfer
+E02810,2025-07-11,2025-11-02,flood damage
+E02496,2025-07-11,2025-10-15,flood damage
+E02789,2025-07-11,2025-10-02,ownership transfer
+E00166,2025-07-11,2025-11-25,ownership transfer
+E02874,2025-07-11,2025-12-08,new business relief
+E01742,2025-07-11,2025-09-28,flood damage
+E02196,2025-07-12,2025-10-24,fire at premises
+E00272,2025-07-12,2025-11-06,new business relief
+E01062,2025-07-12,2025-12-06,insolvency administration
+E00427,2025-07-12,2025-10-25,flood damage
+E02193,2025-07-12,2025-10-08,ownership transfer
+E02562,2025-07-12,2025-12-11,fire at premises
+E01936,2025-07-13,2025-12-12,insolvency administration
+E03078,2025-07-13,2025-10-23,fire at premises
+E00035,2025-07-13,2025-10-26,fire at premises
+E01401,2025-07-13,2025-10-08,flood damage
+E00202,2025-07-13,2025-12-08,ownership transfer
+E03156,2025-07-13,2025-12-14,flood damage
+E00414,2025-07-13,2025-09-29,ownership transfer
+E01422,2025-07-13,2025-12-05,flood damage
+E00985,2025-07-15,2025-10-29,insolvency administration
+E02850,2025-07-15,2025-12-04,fire at premises
+E01676,2025-07-15,2025-12-15,insolvency administration
+E00208,2025-07-15,2025-10-10,flood damage
+E01613,2025-07-15,2025-12-09,ownership transfer
+E02274,2025-07-15,2025-10-04,new business relief
+E02434,2025-07-15,2025-11-04,fire at premises
+E02073,2025-07-16,2025-11-15,flood damage
+E02975,2025-07-16,2025-12-15,flood damage
+E02480,2025-07-16,2025-12-16,ownership transfer
+E01631,2025-07-16,2025-10-10,new business relief
+E01421,2025-07-16,2025-12-11,ownership transfer
+E01578,2025-07-16,2025-11-30,flood damage
+E01237,2025-07-16,2025-10-17,insolvency administration
+E02920,2025-07-16,2025-12-14,new business relief
+E02334,2025-07-16,2025-11-17,fire at premises
+E02831,2025-07-16,2025-11-12,fire at premises
+E01924,2025-07-17,2025-10-14,fire at premises
+E02689,2025-07-17,2025-11-09,insolvency administration
+E01278,2025-07-17,2025-12-01,new business relief
+E03032,2025-07-17,2025-12-15,fire at premises
+E02466,2025-07-17,2025-12-15,new business relief
+E02902,2025-07-17,2025-10-07,insolvency administration
+E03059,2025-07-17,2025-11-03,ownership transfer
+E03167,2025-07-18,2025-11-19,ownership transfer
+E00982,2025-07-18,2025-10-10,insolvency administration
+E02921,2025-07-18,2025-10-02,insolvency administration
+E02599,2025-07-18,2025-11-27,fire at premises
+E00042,2025-07-18,2025-11-13,ownership transfer
+E00577,2025-07-18,2025-12-03,flood damage
+E02295,2025-07-18,2025-11-04,insolvency administration
+E02186,2025-07-19,2025-10-03,new business relief
+E02209,2025-07-19,2025-10-16,insolvency administration
+E02499,2025-07-19,2025-11-05,ownership transfer
+E02076,2025-07-19,2025-11-18,fire at premises
+E01275,2025-07-19,2025-11-19,new business relief
+E01239,2025-07-19,2025-11-16,ownership transfer
+E01499,2025-07-20,2025-11-18,new business relief
+E02358,2025-07-20,2025-10-15,insolvency administration
+E02809,2025-07-20,2025-11-05,flood damage
+E02570,2025-07-20,2025-11-23,new business relief
+E03119,2025-07-21,2025-12-05,new business relief
+E02891,2025-07-21,2025-11-25,fire at premises
+E00313,2025-07-21,2025-11-16,insolvency administration
+E00683,2025-07-21,2025-11-17,ownership transfer

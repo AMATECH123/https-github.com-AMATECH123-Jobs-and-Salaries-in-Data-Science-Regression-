@@ -1,0 +1,8 @@
+Follow up parameters, Business Activity Survey, 2018 (pre COS)
+
+Unit: questionnaire.
+Reminder share: 60 per cent of questionnaires returned.
+Escalation share: 95 per cent of questionnaires returned.
+Rounding: boundaries rounded to the nearest 15 minutes.
+Population: all questionnaires returned in the two preceding years, pooled.
+Superseded by the Collection Operations Standard from 1 January 2020.
